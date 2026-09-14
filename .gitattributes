@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# The frozen source package is byte-preserved and verified by MANIFEST.sha256.
+provenance/source_package/frozen/** -text
