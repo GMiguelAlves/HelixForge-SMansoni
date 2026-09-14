@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA602528",
+  "status": "NOT_STARTED",
+  "role": "FIRST_REAL_SCHISTOSOMA_RNASEQ_PROJECT",
+  "execution_class": "OPERATIONAL_CALIBRATION_RUN",
+  "helixforge_release": "v1.0.0",
+  "helixforge_commit": "14dc5a75d6c63f20d10c135f0c75138ea76dcc12",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "analysis_mode": "import",
+  "benchmark": false
+}

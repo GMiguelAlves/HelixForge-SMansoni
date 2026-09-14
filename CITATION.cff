@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this project, cite HelixForge-SMansoni, HelixForge v1.0.0, and the original datasets."
+title: "HelixForge-SMansoni"
+type: software
+authors:
+  - family-names: "Alves"
+    given-names: "Gustavo Miguel Caxias"
+repository-code: "https://github.com/GMiguelAlves/HelixForge-SMansoni"
+url: "https://github.com/GMiguelAlves/HelixForge-SMansoni"
+license: "Apache-2.0"
+keywords:
+  - Schistosoma mansoni
+  - RNA-seq
+  - ChIP-seq
+  - multi-omics
+  - Nextflow
+  - HelixForge
+abstract: >-
+  Reproducible transcriptomic and multi-omic analysis of Schistosoma mansoni
+  using the organism-agnostic HelixForge workflow framework.
+references:
+  - type: software
+    title: "HelixForge"
+    version: "1.0.0"
+    repository-code: "https://github.com/GMiguelAlves/HelixForge"
+    authors:
+      - family-names: "Alves"
+        given-names: "Gustavo Miguel Caxias"
+

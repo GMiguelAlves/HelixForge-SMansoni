@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJEB32839",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjeb32839_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJEB32839",
+  "contrasts": [
+    {
+      "id": "condition__miracidium_mixed_vs_egg_mixed",
+      "factor": "condition",
+      "numerator": "miracidium_mixed",
+      "denominator": "egg_mixed",
+      "description": "miracidium_mixed versus egg_mixed",
+      "direction": "miracidium_mixed/egg_mixed"
+    },
+    {
+      "id": "condition__sporocyst_1d_mixed_vs_miracidium_mixed",
+      "factor": "condition",
+      "numerator": "sporocyst_1d_mixed",
+      "denominator": "miracidium_mixed",
+      "description": "sporocyst_1d_mixed versus miracidium_mixed",
+      "direction": "sporocyst_1d_mixed/miracidium_mixed"
+    },
+    {
+      "id": "condition__sporocyst_5d_mixed_vs_sporocyst_1d_mixed",
+      "factor": "condition",
+      "numerator": "sporocyst_5d_mixed",
+      "denominator": "sporocyst_1d_mixed",
+      "description": "sporocyst_5d_mixed versus sporocyst_1d_mixed",
+      "direction": "sporocyst_5d_mixed/sporocyst_1d_mixed"
+    },
+    {
+      "id": "condition__sporocyst_32d_mixed_vs_sporocyst_5d_mixed",
+      "factor": "condition",
+      "numerator": "sporocyst_32d_mixed",
+      "denominator": "sporocyst_5d_mixed",
+      "description": "sporocyst_32d_mixed versus sporocyst_5d_mixed",
+      "direction": "sporocyst_32d_mixed/sporocyst_5d_mixed"
+    },
+    {
+      "id": "condition__cercaria_mixed_vs_sporocyst_32d_mixed",
+      "factor": "condition",
+      "numerator": "cercaria_mixed",
+      "denominator": "sporocyst_32d_mixed",
+      "description": "cercaria_mixed versus sporocyst_32d_mixed",
+      "direction": "cercaria_mixed/sporocyst_32d_mixed"
+    },
+    {
+      "id": "condition__schistosomulum_2d_mixed_vs_cercaria_mixed",
+      "factor": "condition",
+      "numerator": "schistosomulum_2d_mixed",
+      "denominator": "cercaria_mixed",
+      "description": "schistosomulum_2d_mixed versus cercaria_mixed",
+      "direction": "schistosomulum_2d_mixed/cercaria_mixed"
+    },
+    {
+      "id": "condition__juvenile_26d_female_vs_schistosomulum_2d_female",
+      "factor": "condition",
+      "numerator": "juvenile_26d_female",
+      "denominator": "schistosomulum_2d_female",
+      "description": "juvenile_26d_female versus schistosomulum_2d_female",
+      "direction": "juvenile_26d_female/schistosomulum_2d_female"
+    },
+    {
+      "id": "condition__juvenile_26d_male_vs_schistosomulum_2d_male",
+      "factor": "condition",
+      "numerator": "juvenile_26d_male",
+      "denominator": "schistosomulum_2d_male",
+      "description": "juvenile_26d_male versus schistosomulum_2d_male",
+      "direction": "juvenile_26d_male/schistosomulum_2d_male"
+    },
+    {
+      "id": "condition__sporocyst_32d_female_vs_sporocyst_32d_male",
+      "factor": "condition",
+      "numerator": "sporocyst_32d_female",
+      "denominator": "sporocyst_32d_male",
+      "description": "sporocyst_32d_female versus sporocyst_32d_male",
+      "direction": "sporocyst_32d_female/sporocyst_32d_male"
+    },
+    {
+      "id": "condition__cercaria_female_vs_cercaria_male",
+      "factor": "condition",
+      "numerator": "cercaria_female",
+      "denominator": "cercaria_male",
+      "description": "cercaria_female versus cercaria_male",
+      "direction": "cercaria_female/cercaria_male"
+    },
+    {
+      "id": "condition__schistosomulum_2d_female_vs_schistosomulum_2d_male",
+      "factor": "condition",
+      "numerator": "schistosomulum_2d_female",
+      "denominator": "schistosomulum_2d_male",
+      "description": "schistosomulum_2d_female versus schistosomulum_2d_male",
+      "direction": "schistosomulum_2d_female/schistosomulum_2d_male"
+    },
+    {
+      "id": "condition__juvenile_26d_female_vs_juvenile_26d_male",
+      "factor": "condition",
+      "numerator": "juvenile_26d_female",
+      "denominator": "juvenile_26d_male",
+      "description": "juvenile_26d_female versus juvenile_26d_male",
+      "direction": "juvenile_26d_female/juvenile_26d_male"
+    }
+  ]
+}

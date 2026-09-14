@@ -1,0 +1,11 @@
+dataset	sample_id	source_sample_name	biosample	condition	stage	tissue	sex	infection_mode	treatment	time_hours	batch	replicate	technical_runs
+PRJNA602528	pzq_0h	PZQ_0hr	SAMN13898155	time_0h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	0	not_declared	1	1
+PRJNA602528	pzq_0p25h	PZQ_15min	SAMN13898156	time_0p25h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	0.25	not_declared	1	1
+PRJNA602528	pzq_1h	PZQ_1hr	SAMN13898157	time_1h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	1	not_declared	1	1
+PRJNA602528	pzq_3h	PZQ_3hr	SAMN13898158	time_3h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	3	not_declared	1	1
+PRJNA602528	pzq_6h	PZQ_6hr	SAMN13898159	time_6h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	6	not_declared	1	1
+PRJNA602528	pzq_9h	PZQ_9hr	SAMN13898160	time_9h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	9	not_declared	1	1
+PRJNA602528	pzq_12h	PZQ_12hr	SAMN13898161	time_12h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	12	not_declared	1	1
+PRJNA602528	pzq_24h	PZQ_24hr	SAMN13898162	time_24h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	24	not_declared	1	1
+PRJNA602528	pzq_48h	PZQ_48hr	SAMN13898163	time_48h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	48	not_declared	1	1
+PRJNA602528	pzq_96h	PZQ_96hr	SAMN13898164	time_96h	adult	whole_worm_pair	mixed_paired	mixed_sex	pzq_400mgkg	96	not_declared	1	1

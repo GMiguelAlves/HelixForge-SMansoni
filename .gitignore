@@ -1,0 +1,59 @@
+# Local configuration and credentials
+config/server.env
+.env
+*.pem
+*.key
+
+# Nextflow state and heavy execution data
+.nextflow/
+.nextflow.*
+work/
+**/work/
+cache/
+data/
+downloads/
+scratch/
+
+# Sequencing, alignment, tracks, references, and indexes
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.bigWig
+*.bw
+*.fa
+*.fasta
+*.fna
+*.gtf
+*.gff
+*.gff3
+*.saf
+*.bt2
+*.bt2l
+*.sif
+salmon_index*/
+reference/data/
+
+# Large or transient logs
+*.log
+*.out
+*.err
+*.part
+tmp/
+temp/
+
+# Language and editor state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.idea/
+.vscode/
+
+# Keep intentional empty structure
+!**/.gitkeep
+
