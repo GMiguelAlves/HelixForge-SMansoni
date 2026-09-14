@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${HF_PACKAGE_ROOT:?source env/server.env}"
+project=${1:?usage: submit_downloads.sh PROJECT}
+manifest="${HF_PACKAGE_ROOT}/studies/${project}/runs.tsv"
+[[ -s "$manifest" ]]
+count=$(($(wc -l < "$manifest") - 1))
+mkdir -p "${HF_DATA_ROOT}/${project}/logs"
+sbatch --job-name="dl_${project}"   --array="1-${count}%${HF_DOWNLOAD_CONCURRENCY:-12}"   --cpus-per-task=1 --mem=2G --time=24:00:00   --output="${HF_DATA_ROOT}/${project}/logs/download_%A_%a.out"   --error="${HF_DATA_ROOT}/${project}/logs/download_%A_%a.err"   "${HF_PACKAGE_ROOT}/scripts/download_fastq_array.sh" "$manifest"

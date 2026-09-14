@@ -1,0 +1,9 @@
+source_id	description	url	retrieved
+wormbase_species	WormBase ParaSite S. mansoni species page	https://parasite.wormbase.org/Schistosoma_mansoni_prjea36577/Info/Index	2026-09-11
+wormbase_ftp	WBPS19 reference directory	https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/	2026-09-11
+ena_api	ENA filereport API	https://www.ebi.ac.uk/ena/portal/api/filereport	2026-09-11
+buddenborg_metadata	Author-curated PRJEB32839 metadata	https://raw.githubusercontent.com/SKBuddenborg/Smansoni_rnaseq/refs/heads/main/01_METADATA/RNAseq_metadata.tsv	2026-09-11
+buddenborg_article	Buddenborg et al. 2023	https://doi.org/10.1038/s41597-023-02674-2	2026-09-11
+lu_article	Lu et al. 2016	https://doi.org/10.1038/srep31150	2026-09-11
+mccusker_article	McCusker et al. 2021	https://doi.org/10.1371/journal.pntd.0008869	2026-09-11
+helixforge	HelixForge public master reviewed	https://github.com/GMiguelAlves/HelixForge/tree/8a1eac201d34861a9f8d3cd595b472a5ca76cc97	2026-09-11

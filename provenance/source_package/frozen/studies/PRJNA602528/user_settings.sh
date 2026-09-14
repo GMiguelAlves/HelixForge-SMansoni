@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+: "${HF_PACKAGE_ROOT:?source env/server.env before running}"
+: "${HF_DATA_ROOT:?set HF_DATA_ROOT}"
+: "${HF_REFERENCE_ROOT:?set HF_REFERENCE_ROOT}"
+: "${HF_RESULTS_ROOT:?set HF_RESULTS_ROOT}"
+
+export PIPELINE_NAME="smansoni_prjna602528_wbps19"
+export ORGANISM_NAME="Schistosoma_mansoni"
+export REFERENCE_ID="Schistosoma_mansoni_SM_V10_WBPS19"
+export PIPELINE_PROJECTS="PRJNA602528"
+export SCRATCH_ROOT="${HF_DATA_ROOT}"
+export METADATA_FINAL="${HF_PACKAGE_ROOT}/studies/PRJNA602528/metadata.csv"
+export METADATA_FINAL_NEW="${METADATA_FINAL}"
+
+export REF_GENOME_FA="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa"
+export REF_TRANSCRIPTS_FA="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa"
+export REF_GTF="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf"
+export REF_GFF3="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gff3"
+export SALMON_INDEX_DIR="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/salmon_index_k31"
+export QUANT_DIR="${HF_RESULTS_ROOT}/PRJNA602528/compatibility/quants"
+
+export QUANT_METHOD="salmon"
+export SALMON_KMER_SIZE=31
+export TRIM_QUALITY=20
+export TRIM_LENGTH=20
+export RUN_BATCH_CORRECTION=0
+export RUN_GENE_REPORT=0
+export FASTQ_LAYOUT="paired"

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "status": "PINNED_FOR_DOWNLOAD",
+  "species": "Schistosoma mansoni",
+  "taxon_id": 6183,
+  "assembly": "SM_V10",
+  "wormbase_parasite_release": "WBPS19",
+  "wormbase_parasite_release_date": "2024-03",
+  "annotation_version": "2022-11-WormBase",
+  "bioproject": "PRJEA36577",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "artifacts": [
+    {
+      "role": "genome",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa.gz",
+      "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa.gz"
+    },
+    {
+      "role": "transcriptome",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa.gz",
+      "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa.gz"
+    },
+    {
+      "role": "annotation_gff3",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gff3.gz",
+      "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gff3.gz"
+    },
+    {
+      "role": "annotation_gtf",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf.gz",
+      "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf.gz"
+    }
+  ],
+  "selection_note": "WBPS19 is the newest release exposed by the live WormBase ParaSite S. mansoni page checked on 2026-09-11."
+}

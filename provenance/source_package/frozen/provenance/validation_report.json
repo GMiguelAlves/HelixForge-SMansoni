@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "validated_against_helixforge_commit": "8a1eac201d34861a9f8d3cd595b472a5ca76cc97",
+  "checks": {
+    "package_internal_contracts": "PASS",
+    "helixforge_rnaseq_metadata_validator": {
+      "status": "PASS",
+      "technical_runs": {
+        "PRJEB32839": 150,
+        "PRJEB14695": 138,
+        "PRJNA597909": 20,
+        "PRJNA602528": 10
+      }
+    },
+    "helixforge_de_preflight": {
+      "status": "PASS",
+      "PRJEB32839_contrasts": 12,
+      "PRJEB14695_contrasts": 6,
+      "PRJNA597909_contrasts": 4,
+      "PRJNA602528": "NOT_APPLICABLE_BLOCKED_BY_DESIGN"
+    },
+    "json_parse": "PASS",
+    "bash_syntax": "PASS",
+    "package_sha256_manifest": "PASS",
+    "zip_integrity": "PASS"
+  },
+  "scope_note": "Structural validation used minimal placeholder FASTQ/reference files; real downloads and scientific execution remain server checkpoints."
+}

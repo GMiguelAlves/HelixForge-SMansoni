@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED",
+  "project": "PRJNA602528",
+  "reason": "one public library per time point; categorical time model is saturated and has no biological replication",
+  "required_resolution": "obtain independent biological replicate FASTQs or define a separately reviewed time-series method outside Differential Expression API 1.0",
+  "do_not_pass_to": "--rnaseq_de_spec"
+}

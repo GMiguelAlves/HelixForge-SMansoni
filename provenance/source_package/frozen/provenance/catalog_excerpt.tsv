@@ -1,0 +1,5 @@
+project	catalog_runs	selected_runs	samples	fastq_gb	decision
+PRJEB32839	180	150	75	361.349781687	freeze author-published 75-sample set
+PRJEB14695	138	138	23	89.131626404	group six technical runs per BioSample
+PRJNA597909	20	20	20	33.199877299	full analysis
+PRJNA602528	10	10	10	17.455857588	quantification/import only; DE blocked

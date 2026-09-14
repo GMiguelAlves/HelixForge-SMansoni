@@ -1,0 +1,11 @@
+dataset,sample_id,file_prefix,run_accession,condition,stage,tissue,sex,infection_mode,treatment,time_hours,batch,replicate,biosample,library_name,technical_unit
+PRJNA602528,pzq_0h,pzq_0h,SRR10947824,time_0h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,0,not_declared,1,SAMN13898155,PZQ_0hr,run_1
+PRJNA602528,pzq_0p25h,pzq_0p25h,SRR10947823,time_0p25h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,0.25,not_declared,1,SAMN13898156,PZQ_15min,run_1
+PRJNA602528,pzq_12h,pzq_12h,SRR10947818,time_12h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,12,not_declared,1,SAMN13898161,PZQ_12hr,run_1
+PRJNA602528,pzq_1h,pzq_1h,SRR10947822,time_1h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,1,not_declared,1,SAMN13898157,PZQ_1hr,run_1
+PRJNA602528,pzq_24h,pzq_24h,SRR10947817,time_24h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,24,not_declared,1,SAMN13898162,PZQ_24hr,run_1
+PRJNA602528,pzq_3h,pzq_3h,SRR10947821,time_3h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,3,not_declared,1,SAMN13898158,PZQ_3hr,run_1
+PRJNA602528,pzq_48h,pzq_48h,SRR10947816,time_48h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,48,not_declared,1,SAMN13898163,PZQ_48hr,run_1
+PRJNA602528,pzq_6h,pzq_6h,SRR10947820,time_6h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,6,not_declared,1,SAMN13898159,PZQ_6hr,run_1
+PRJNA602528,pzq_96h,pzq_96h,SRR10947815,time_96h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,96,not_declared,1,SAMN13898164,PZQ_96hr,run_1
+PRJNA602528,pzq_9h,pzq_9h,SRR10947819,time_9h,adult,whole_worm_pair,mixed_paired,mixed_sex,pzq_400mgkg,9,not_declared,1,SAMN13898160,PZQ_9hr,run_1

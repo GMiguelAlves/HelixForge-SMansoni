@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-09-11T21:59:29.875331+00:00",
+  "helixforge_commit": "8a1eac201d34861a9f8d3cd595b472a5ca76cc97",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "projects": {
+    "PRJEB32839": {
+      "runs": 150,
+      "samples": 75,
+      "run_mode": "full"
+    },
+    "PRJEB14695": {
+      "runs": 138,
+      "samples": 23,
+      "run_mode": "full"
+    },
+    "PRJNA597909": {
+      "runs": 20,
+      "samples": 20,
+      "run_mode": "full"
+    },
+    "PRJNA602528": {
+      "runs": 10,
+      "samples": 10,
+      "run_mode": "import"
+    }
+  },
+  "structural_pipeline_changes": false
+}
