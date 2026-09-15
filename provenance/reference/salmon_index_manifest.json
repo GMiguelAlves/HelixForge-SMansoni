@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "status": "VERIFIED_REUSED",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "salmon_version": "1.10.3",
+  "index_version": 5,
+  "kmer_size": 31,
+  "file_count": 15,
+  "size_bytes": 158307779,
+  "composite_sha256": "88cf26aec437dc27959fa47afc8106f31943818e2260174796f0a0547223087b",
+  "original_build_date": "2025-09-12",
+  "validation_date": "2026-09-14",
+  "build_command_template": "salmon index -t <transcriptome.fa> -i <salmon_index_k31> -p 16 -k 31",
+  "reuse_note": "The existing persistent index was reused after validating its release identity, Salmon metadata, k-mer size, file inventory and transcriptome compatibility."
+}

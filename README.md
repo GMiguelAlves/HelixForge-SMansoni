@@ -32,9 +32,11 @@ a specialized fork and does not copy the HelixForge core.
 | Reference ID | `Schistosoma_mansoni_SM_V10_WBPS19` |
 
 Raw FASTA, transcriptome, GFF3, GTF, and Salmon indexes are not committed.
-Their sources, filenames, release identity, retrieval date, and post-download
-checksum policy are frozen in
+Their sources, filenames, release identity, retrieval date, and verified
+checksums are frozen in
 [`config/reference/reference_manifest.json`](config/reference/reference_manifest.json).
+The validation metrics and reusable-index provenance are recorded under
+[`provenance/reference/`](provenance/reference/).
 
 ## Initial studies
 
@@ -58,7 +60,9 @@ run inside Slurm allocations. Persistent results, terminal manifests,
 provenance, and compact audit packages are retained; FASTQs, work directories,
 indexes, and other reproducible intermediates are removed after acceptance.
 
-See [server execution](docs/server_execution.md) before staging any data.
+See [server execution](docs/server_execution.md) and the
+[server preparation report](docs/server_preparation_report.md) before staging
+any data.
 
 ## Repository structure
 

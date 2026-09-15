@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "genome": {
+    "path": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+    "sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+    "sequence_count": 10,
+    "total_bases": 391422299,
+    "duplicate_ids": [],
+    "invalid_characters": {}
+  },
+  "transcriptome": {
+    "path": "schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa",
+    "sha256": "b794519faf24d6d8ae9a849467e567f0ca20c9c8c4e4585fdd060353a9a72a47",
+    "sequence_count": 10960,
+    "total_bases": 39461259,
+    "duplicate_ids": [],
+    "invalid_characters": {}
+  },
+  "gff3": {
+    "path": "schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gff3",
+    "sha256": "151b427d6ef127870d4930ba95eb4e59a660f83297f3c95091c78751ced7ffff",
+    "records": 1500427,
+    "contig_count": 10,
+    "feature_counts": {
+      "cds": 86217,
+      "exon": 88812,
+      "five_prime_utr": 12693,
+      "gene": 9920,
+      "low_complexity_region": 401413,
+      "mrna": 10935,
+      "nucleotide_match": 50769,
+      "pseudogene": 25,
+      "repeat_region": 750929,
+      "tandem_repeat": 77636,
+      "three_prime_utr": 11078
+    },
+    "gene_id_count": 9920,
+    "transcript_id_count": 10935
+  },
+  "gtf": {
+    "path": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+    "sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+    "records": 241537,
+    "contig_count": 10,
+    "feature_counts": {
+      "cds": 86178,
+      "exon": 88812,
+      "five_prime_utr": 12693,
+      "gene": 9920,
+      "selenocysteine": 1,
+      "start_codon": 10941,
+      "stop_codon": 10954,
+      "three_prime_utr": 11078,
+      "transcript": 10960
+    },
+    "gene_id_count": 9920,
+    "transcript_id_count": 10960
+  },
+  "contig_compatibility": {
+    "status": "PASS",
+    "gff3_missing_from_genome": [],
+    "gtf_missing_from_genome": []
+  },
+  "tx2gene": {
+    "path": "tx2gene.tsv",
+    "sha256": "40fda6deef330d702cfa45f78fe967b2d73f93579bbd7b25089ef998f3f43f0d",
+    "rows": 10960,
+    "genes": 9920,
+    "transcripts": 10960,
+    "duplicate_pairs": 0,
+    "multi_gene_transcripts": [],
+    "transcriptome_mapped": 10960,
+    "transcriptome_unmapped": 0,
+    "annotation_only_transcripts": 0
+  },
+  "salmon_index": {
+    "indexVersion": 5,
+    "hasAuxIndex": false,
+    "auxKmerLength": 31,
+    "indexType": 2,
+    "salmonVersion": "1.10.3"
+  },
+  "errors": []
+}
