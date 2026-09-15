@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -133,13 +134,16 @@ class ProjectContracts(unittest.TestCase):
         self.assertFalse(state["prjna602528"]["fastq_downloaded"])
         self.assertFalse(state["prjna602528"]["scientific_workflow_executed"])
 
+        tracked = subprocess.run(
+            ["git", "-C", str(ROOT), "ls-files", "-z"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.split("\0")
         tracked_text = "\n".join(
-            path.read_text(encoding="utf-8", errors="ignore")
-            for path in ROOT.rglob("*")
-            if path.is_file()
-            and ".git" not in path.parts
-            and "__pycache__" not in path.parts
-            and path.suffix != ".pyc"
+            (ROOT / relative).read_text(encoding="utf-8", errors="ignore")
+            for relative in tracked
+            if relative and (ROOT / relative).is_file()
         )
         forbidden = (
             "/home/" + "ra236875",
