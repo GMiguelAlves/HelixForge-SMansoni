@@ -16,8 +16,9 @@ keywords:
   - Nextflow
   - HelixForge
 abstract: >-
-  Reproducible transcriptomic and multi-omic analysis of Schistosoma mansoni
-  using the organism-agnostic HelixForge workflow framework.
+  Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
+  Schistosoma mansoni using the organism-agnostic HelixForge workflow
+  framework.
 references:
   - type: software
     title: "HelixForge"
@@ -26,4 +27,3 @@ references:
     authors:
       - family-names: "Alves"
         given-names: "Gustavo Miguel Caxias"
-
