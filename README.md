@@ -30,8 +30,8 @@ design, metadata, and execution contracts are reviewed.
 
 | Dependency | Frozen value |
 |---|---|
-| HelixForge release | [`v1.0.0`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.0.0) |
-| HelixForge commit | `14dc5a75d6c63f20d10c135f0c75138ea76dcc12` |
+| HelixForge release | [`v1.0.1`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.0.1) |
+| HelixForge commit | `e41d221657b8e0bf2700bccd547e15032ccac36f` |
 | Nextflow | `25.10.7` |
 | Java | `21` |
 
@@ -51,6 +51,8 @@ checksums are frozen in
 [`config/reference/reference_manifest.json`](config/reference/reference_manifest.json).
 The validation metrics and reusable-index provenance are recorded under
 [`provenance/reference/`](provenance/reference/).
+HelixForge `v1.0.1` validates and consumes that immutable index explicitly;
+it does not depend on `-resume` to avoid rebuilding it.
 
 ## Initial studies
 

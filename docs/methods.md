@@ -2,16 +2,24 @@
 
 ## Current RNA-seq methodology
 
-This project executes the released HelixForge v1.0.0 RNA-seq workflow. The
+This project executes the released HelixForge v1.0.1 RNA-seq workflow. The
 supported production route is run-level metadata validation, reference-bundle
 validation, FastQC, Trim Galore, post-trim QC, technical-run consolidation,
-Salmon quantification, tximport under the `production_v1` policy, DESeq2 when
+validation and reuse of a prebuilt Salmon index, Salmon quantification,
+tximport under the `production_v1` policy, DESeq2 when
 the design is estimable, and terminal manifest generation.
 
 HelixForge owns workflow implementation, process resources, scientific API
 contracts, terminal schemas, and generic provenance. The exact software release
 and commit are pinned in this repository and must be verified before every
 run. This project does not copy or modify the HelixForge core.
+
+The preparation preflight originally certified HelixForge `v1.0.0`. Before
+the first scientific execution, it was found that the quantification graph
+could only reuse an index indirectly through task cache. HelixForge `v1.0.1`
+added an explicit manifest-validated prebuilt-index path. The project pin was
+updated before scientific execution; no scientific defaults or results were
+changed.
 
 ## Schistosoma-specific decisions
 

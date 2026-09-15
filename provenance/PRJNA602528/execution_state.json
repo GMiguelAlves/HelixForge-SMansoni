@@ -1,12 +1,74 @@
 {
   "schema_version": "1.0",
   "study": "PRJNA602528",
-  "status": "NOT_STARTED",
+  "status": "READY_FOR_WORKFLOW",
+  "phase": "PRE_WORKFLOW_COMPLETE",
   "role": "FIRST_REAL_SCHISTOSOMA_RNASEQ_PROJECT",
   "execution_class": "OPERATIONAL_CALIBRATION_RUN",
-  "helixforge_release": "v1.0.0",
-  "helixforge_commit": "14dc5a75d6c63f20d10c135f0c75138ea76dcc12",
+  "helixforge_release": "v1.0.1",
+  "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
   "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
   "analysis_mode": "import",
-  "benchmark": false
+  "benchmark": false,
+  "source_state": {
+    "helixforge_smansoni_commit": "9d7b89372aba56a10aa61650d6ba1b275bae5448",
+    "preparation_pr_merged": true,
+    "ci": "PASS"
+  },
+  "contract": {
+    "mode": "IMPORT_ONLY",
+    "differential_expression": "BLOCKED",
+    "one_project_at_a_time": true
+  },
+  "acquisition": {
+    "runs": 10,
+    "samples": 10,
+    "fastq_files_expected": 20,
+    "compressed_bytes_expected": 17455857588,
+    "download_job_id": "19300",
+    "array_tasks": 10,
+    "maximum_concurrent_tasks": 5,
+    "completion": true,
+    "integrity_job_id": "19310",
+    "download_wall_seconds": 2623,
+    "integrity": "PASS",
+    "fastq_files_observed": 20,
+    "compressed_bytes_observed": 17455857588,
+    "r1_bytes": 8682138148,
+    "r2_bytes": 8773719440,
+    "pairing": "PASS",
+    "gzip": "PASS",
+    "official_md5": "PASS_20_OF_20"
+  },
+  "execution": {
+    "workflow_session_uuid": null,
+    "process_status": "READY_FOR_SUBMISSION",
+    "runtime_preflight": "PASS",
+    "prebuilt_index_validation": "PASS",
+    "prebuilt_index_validation_job_id": "19334",
+    "resume_used": false
+  },
+  "storage": {
+    "scratch_project_bytes_before_download": 3,
+    "scratch_available_bytes_before_download": 6299126988800,
+    "scratch_project_bytes_after_download": 17456249357,
+    "raw_fastq_bytes_after_download": 17455857588,
+    "scratch_available_bytes_after_download": 5986327003136,
+    "warning_threshold_bytes": 107374182400,
+    "stop_threshold_bytes": 161061273600,
+    "persistent_copy": "PENDING",
+    "audit_package": "PENDING",
+    "cleanup": "PENDING"
+  },
+  "safety": {
+    "fastq_download_started": true,
+    "scientific_workflow_started": false,
+    "other_projects_started": false
+  },
+  "resolved_blocker": {
+    "code": "SALMON_INDEX_REUSE_CONFLICT",
+    "status": "RESOLVED_BEFORE_SCIENTIFIC_EXECUTION",
+    "detail": "HelixForge v1.0.1 validates and consumes the existing Salmon index without scheduling SALMON_INDEX.",
+    "resolution": "HelixForge PR 79 and release v1.0.1; real read-only index validation passed in Slurm job 19334."
+  }
 }
