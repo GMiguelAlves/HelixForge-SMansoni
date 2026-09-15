@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "prepared_at": "2026-09-14",
+  "status": "PASS_PENDING_CI",
+  "software": {
+    "helixforge_release": "v1.0.0",
+    "helixforge_commit": "14dc5a75d6c63f20d10c135f0c75138ea76dcc12",
+    "helixforge_smansoni_preparation_base_commit": "1262bfc3af97abb73950f119f8c61ff86274f04b",
+    "nextflow": "25.10.7",
+    "java": "21.0.12",
+    "salmon": "1.10.3",
+    "r": "4.3.3",
+    "rtracklayer": "1.62.0"
+  },
+  "storage": {
+    "path_policy": {
+      "software_and_projects": "${HOME}/<project>",
+      "shared_reference": "${REFERENCE_ROOT}/SM_V10_WBPS19",
+      "project_scratch": "${SCRATCH_PROJECT_ROOT}/PRJNA602528",
+      "persistent_results": "${PERSISTENT_RESULTS_ROOT}/PRJNA602528",
+      "nextflow_home": "${HOME}/.helixforge/nxf-home",
+      "nextflow_cache": "${HOME}/.helixforge/nxf-cache"
+    },
+    "home_used_bytes_for_user": 35087294172,
+    "home_available_bytes_shared_filesystem": 702530191360,
+    "scratch_used_bytes_for_user_before_project": 3,
+    "scratch_available_bytes_shared_filesystem": 6299499495424,
+    "reference_storage_bytes": 260553475,
+    "salmon_index_bytes": 158307779,
+    "persistent_project_checkout_bytes": 1085747,
+    "scratch_warning_threshold_bytes": 107374182400,
+    "scratch_stop_threshold_bytes": 161061273600,
+    "one_project_at_a_time": true
+  },
+  "slurm": {
+    "status": "PASS",
+    "partition": "general",
+    "queue_size": 5,
+    "submit_rate_limit": "10 sec",
+    "nested_submission": false,
+    "sanity_job": {
+      "status": "PASS",
+      "cpus": 1,
+      "memory": "1 GB",
+      "scientific_workflow_executed": false
+    }
+  },
+  "reference": {
+    "organism": "Schistosoma mansoni",
+    "assembly": "SM_V10",
+    "source": "WormBase ParaSite",
+    "release": "WBPS19",
+    "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "validation": "PASS",
+    "annotation_compatibility": "PASS",
+    "tx2gene": "PASS",
+    "salmon_index": "PASS_REUSED_VERIFIED",
+    "checksums": "provenance/reference/reference_checksums.sha256",
+    "validation_report": "provenance/reference/reference_validation.json",
+    "index_manifest": "provenance/reference/salmon_index_manifest.json"
+  },
+  "prjna602528": {
+    "runs": 10,
+    "samples": 10,
+    "layout": "PAIRED",
+    "mode": "IMPORT_ONLY",
+    "differential_expression": "BLOCKED",
+    "fastq_urls_checked": 20,
+    "fastq_url_status": "PASS",
+    "fastq_downloaded": false,
+    "scientific_workflow_executed": false
+  },
+  "preflight": {
+    "helixforge_pin": "PASS",
+    "environment": "PASS",
+    "slurm": "PASS",
+    "storage": "PASS",
+    "permissions": "PASS",
+    "reference": "PASS",
+    "metadata": "PASS",
+    "import_only_contract": "PASS",
+    "tests": "PENDING_LOCAL_AND_CI",
+    "ci": "PENDING"
+  },
+  "public_record_note": "Personal hostnames and absolute server paths are deliberately omitted. Exact operational paths and raw scheduler logs remain in the private server audit directory."
+}

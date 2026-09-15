@@ -100,6 +100,33 @@ def validate(root: Path) -> list[str]:
         "genome", "transcriptome", "annotation_gff3", "annotation_gtf",
     }:
         errors.append("reference manifest: incomplete artifact roles")
+    if reference.get("status") != "VERIFIED":
+        errors.append("reference manifest: reference is not verified")
+    if reference.get("checksums", {}).get("status") != "VERIFIED":
+        errors.append("reference manifest: checksum set is not verified")
+    for item in reference.get("artifacts", []):
+        if item.get("checksum_status") != "VERIFIED":
+            errors.append(f"reference manifest: unverified {item.get('role')} artifact")
+        if not re.fullmatch(r"[0-9a-f]{64}", item.get("sha256", "")):
+            errors.append(f"reference manifest: invalid {item.get('role')} SHA-256")
+
+    reference_validation = json.loads(
+        (root / "provenance" / "reference" / "reference_validation.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    if reference_validation.get("status") != "PASS":
+        errors.append("reference validation: status is not PASS")
+    if reference_validation.get("contig_compatibility", {}).get("status") != "PASS":
+        errors.append("reference validation: contig compatibility failed")
+
+    server_state = json.loads(
+        (root / "provenance" / "server_preparation_state.json").read_text(encoding="utf-8")
+    )
+    if server_state.get("prjna602528", {}).get("mode") != "IMPORT_ONLY":
+        errors.append("server preparation: PRJNA602528 is not import-only")
+    if server_state.get("prjna602528", {}).get("differential_expression") != "BLOCKED":
+        errors.append("server preparation: differential expression is not blocked")
 
     return errors
 
@@ -113,4 +140,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
