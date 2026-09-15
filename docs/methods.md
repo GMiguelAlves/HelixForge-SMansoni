@@ -1,6 +1,6 @@
 # Methods
 
-## HelixForge methodology
+## Current RNA-seq methodology
 
 This project executes the released HelixForge v1.0.0 RNA-seq workflow. The
 supported production route is run-level metadata validation, reference-bundle
@@ -30,10 +30,22 @@ Study-specific conditions, contrasts, exclusions, and design limitations are
 kept under `config/<study>/` and `metadata/<study>/`. They are not promoted to
 generic HelixForge defaults.
 
+## ChIP-seq and integration methodology
+
+This repository also owns the future *S. mansoni* ChIP-seq applications and
+the integration of their accepted evidence with RNA-seq results. Those
+analyses will use the released HelixForge ChIP-seq and Integrative workflows,
+but will receive independent study metadata, reference compatibility checks,
+scientific contracts, provenance, and acceptance reports here.
+
+Integration will consume accepted terminal manifests rather than untracked
+paths into upstream work directories. No ChIP-seq or integrative result is
+implied by completion of an RNA-seq study.
+
 ## Current boundary
 
-Repository initialization and metadata/reference curation are complete.
-Scientific processing has not started. Cross-study meta-analysis, atlas
-construction, coexpression, candidate prioritization, and epigenomic
-integration require separate preregistration and are out of scope here.
-
+Repository initialization and metadata/reference curation are complete. The
+first execution phase begins with RNA-seq. ChIP-seq, RNA-seq/ChIP-seq
+integration, cross-study meta-analysis, atlas construction, coexpression, and
+candidate prioritization remain planned parts of the repository, but require
+separate preregistration before execution.

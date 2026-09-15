@@ -1,7 +1,8 @@
 # HelixForge-SMansoni
 
-Reproducible transcriptomic and multi-omic analysis of *Schistosoma mansoni*
-using [HelixForge](https://github.com/GMiguelAlves/HelixForge).
+Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
+*Schistosoma mansoni* using
+[HelixForge](https://github.com/GMiguelAlves/HelixForge).
 
 ```text
 PROJECT_STATUS = PROJECT_INITIALIZED
@@ -13,6 +14,19 @@ DATA_ANALYSIS_STATUS = DATA_ANALYSIS_NOT_YET_COMPLETE
 HelixForge is the organism-agnostic workflow software. This repository is a
 scientific project that pins and uses a released HelixForge version; it is not
 a specialized fork and does not copy the HelixForge core.
+
+## Scientific scope
+
+This is the species-specific analysis repository for the complete project. It
+will hold the registered RNA-seq analyses, ChIP-seq analyses, and integration
+of evidence across both modalities. Each dataset remains independently
+configured and auditable, while accepted terminal manifests provide the
+boundary for later integration.
+
+The studies currently registered below are the first RNA-seq execution series.
+Their presence does not restrict the repository to transcriptomics. ChIP-seq
+datasets and integrative analyses are added only after their own scientific
+design, metadata, and execution contracts are reviewed.
 
 | Dependency | Frozen value |
 |---|---|
@@ -74,7 +88,8 @@ any data.
 - `results/`: versionable summaries, tables, figures, reports, and terminal
   manifests; no raw or heavy intermediate data.
 - `provenance/`: frozen input-package evidence and per-study execution records.
-- `analyses/`: reserved for later cross-study, atlas, and candidate analyses.
+- `analyses/`: cross-study, RNA-seq/ChIP-seq integration, atlas, and candidate
+  analyses introduced under separately reviewed contracts.
 - `docs/`: methods, operational policy, dictionary, and limitations.
 
 ## Reproducibility
