@@ -1,0 +1,31 @@
+{
+  "genes_imported": 9914,
+  "mapping_percent_max": 89.4950117187503,
+  "mapping_percent_min": 68.55030094459555,
+  "matrix_checks": {
+    "counts_matrix.tsv": {
+      "rows": 9914,
+      "samples": 10,
+      "sha256": "9891d4572487f032eff01bad40ad41692fbe084e7a23f0a321105fab28cc35ca"
+    },
+    "length_matrix.tsv": {
+      "rows": 9914,
+      "samples": 10,
+      "sha256": "2457875067a7ee1e8c0109c8231d4571cf8b3e09997b3433e249221608eca13b"
+    },
+    "tpm_matrix.tsv": {
+      "rows": 9914,
+      "samples": 10,
+      "sha256": "e4af7babc8607aab99b649037fe643b451d86d3adab280921260f73596518cca"
+    }
+  },
+  "samples": 10,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "study": "PRJNA602528",
+  "sum_counts": 189570288.95400017,
+  "sum_tpm": 9999999.99999199,
+  "transcripts_quantified": 10913,
+  "trim_retention_percent_max": 99.94818292592093,
+  "trim_retention_percent_min": 99.89656416417246
+}

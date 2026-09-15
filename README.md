@@ -5,8 +5,8 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 [HelixForge](https://github.com/GMiguelAlves/HelixForge).
 
 ```text
-PROJECT_STATUS = PROJECT_INITIALIZED
-DATA_ANALYSIS_STATUS = DATA_ANALYSIS_NOT_YET_COMPLETE
+PROJECT_STATUS = ACTIVE
+DATA_ANALYSIS_STATUS = PRJNA602528_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -58,15 +58,16 @@ it does not depend on `-resume` to avoid rebuilding it.
 
 | Order | Study | Runs | Biological samples | Initial execution |
 |---:|---|---:|---:|---|
-| 1 | `PRJNA602528` | 10 | 10 | operational calibration through Import; DE blocked by design |
+| 1 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
 | 2 | `PRJNA597909` | 20 | 20 | full RNA-seq |
 | 3 | `PRJEB14695` | 138 | 23 | full RNA-seq |
 | 4 | `PRJEB32839` | 150 | 75 | full RNA-seq |
 
-`PRJNA602528` is the first real *S. mansoni* application and operational
-calibration run. It is not a new benchmark of HelixForge. Its public design has
-one library per time point, so the frozen project stops after tximport and does
-not perform DESeq2 inference.
+`PRJNA602528` is the first completed real *S. mansoni* application and
+operational calibration run. It is not a new benchmark of HelixForge. Its
+public design has one library per time point, so the frozen project stops after
+tximport and does not perform DESeq2 inference. The compact accepted products
+and execution report are available under [`results/PRJNA602528/`](results/PRJNA602528/).
 
 ## Execution policy
 
@@ -102,9 +103,9 @@ execution must record the HelixForge tag and commit, reference checksums,
 commands, environment, Slurm metadata, terminal manifest, and an execution
 summary under `provenance/<study>/`.
 
-This initialization does not start downloads, processing, meta-analysis,
-atlas construction, coexpression, candidate prioritization, or epigenomic
-integration.
+Completion of `PRJNA602528` does not authorize processing of another study,
+meta-analysis, atlas construction, coexpression, candidate prioritization, or
+epigenomic integration. Each requires its own reviewed execution contract.
 
 ## Administrative validation
 

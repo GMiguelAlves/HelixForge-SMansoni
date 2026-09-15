@@ -24,6 +24,11 @@ STUDIES = {
 }
 
 
+def read_tsv(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
 class ProjectContracts(unittest.TestCase):
     def test_registered_study_counts(self) -> None:
         for study, (runs_expected, samples_expected) in STUDIES.items():
@@ -73,6 +78,7 @@ class ProjectContracts(unittest.TestCase):
                 "READY_FOR_WORKFLOW",
                 "WORKFLOW_RUNNING",
                 "WORKFLOW_COMPLETE",
+                "READY_FOR_REVIEW",
                 "ACCEPTED",
             },
         )
@@ -172,6 +178,50 @@ class ProjectContracts(unittest.TestCase):
         )
         for token in forbidden:
             self.assertNotIn(token, tracked_text)
+
+    def test_prjna602528_import_only_results_are_complete(self) -> None:
+        result_root = ROOT / "results/PRJNA602528"
+        manifest_path = result_root / "manifests/rnaseq_run_manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual("rnaseq_run_manifest", manifest["type"])
+        self.assertEqual("complete", manifest["status"])
+        self.assertEqual("salmon", manifest["quantification_method"])
+        self.assertEqual([], manifest["contrasts"])
+        self.assertEqual(10, len(manifest["samples"]))
+        self.assertEqual(12, len(manifest["artifacts"]))
+
+        for artifact in manifest["artifacts"]:
+            self.assertEqual("manifest_relative", artifact["location"]["kind"])
+            path = (manifest_path.parent / artifact["location"]["path"]).resolve()
+            self.assertTrue(path.is_file(), artifact["artifact_id"])
+            observed = hashlib.sha256(path.read_bytes()).hexdigest()
+            self.assertEqual(artifact["checksum"]["value"], observed)
+
+        with (result_root / "expression/counts_matrix.tsv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            rows = list(csv.reader(handle, delimiter="\t"))
+        self.assertEqual(10, len(rows[0]) - 1)
+        self.assertEqual(9914, len(rows) - 1)
+
+        qc_rows = read_tsv(result_root / "qc/PRJNA602528_qc_summary.tsv")
+        self.assertEqual(10, len(qc_rows))
+        self.assertEqual(1, sum(row["qc_flag"] == "REVIEW" for row in qc_rows))
+
+        report = (result_root / "reports/PRJNA602528_execution_report.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("DIFFERENTIAL_EXPRESSION = NOT_PERFORMED_BY_DESIGN", report)
+        self.assertTrue(report.rstrip().endswith("READY_FOR_PRJNA602528_REVIEW"))
+
+        state = json.loads(
+            (ROOT / "provenance/PRJNA602528/execution_state.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("NOT_APPLICABLE", state["validation"]["differential_expression"])
+        self.assertEqual("PASS", state["validation"]["cleanup"])
+        self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
 
     def test_all_json_documents_parse(self) -> None:
         for path in ROOT.rglob("*.json"):

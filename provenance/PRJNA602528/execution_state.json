@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "study": "PRJNA602528",
-  "status": "READY_FOR_WORKFLOW",
-  "phase": "PRE_WORKFLOW_COMPLETE",
+  "status": "READY_FOR_REVIEW",
+  "phase": "COMPLETE",
   "role": "FIRST_REAL_SCHISTOSOMA_RNASEQ_PROJECT",
   "execution_class": "OPERATIONAL_CALIBRATION_RUN",
   "helixforge_release": "v1.0.1",
@@ -11,7 +11,7 @@
   "analysis_mode": "import",
   "benchmark": false,
   "source_state": {
-    "helixforge_smansoni_commit": "9d7b89372aba56a10aa61650d6ba1b275bae5448",
+    "helixforge_smansoni_commit": "c97fa2689cf326579a1fee31ef3c476808eda813",
     "preparation_pr_merged": true,
     "ci": "PASS"
   },
@@ -41,12 +41,18 @@
     "official_md5": "PASS_20_OF_20"
   },
   "execution": {
-    "workflow_session_uuid": null,
-    "process_status": "READY_FOR_SUBMISSION",
+    "workflow_session_uuid": "c871a46c-003b-4265-9b5d-fd7b263cda57",
+    "run_name": "determined_rutherford",
+    "process_status": "PASS_WITH_LIMITATIONS",
     "runtime_preflight": "PASS",
     "prebuilt_index_validation": "PASS",
     "prebuilt_index_validation_job_id": "19334",
-    "resume_used": false
+    "resume_used": true,
+    "resume_behavior": "NOT_REUSED_ON_SHARED_NFS",
+    "controlled_post_qc_reentry": true,
+    "post_qc_tasks_succeeded": 30,
+    "post_qc_tasks_failed": 0,
+    "post_qc_wall_seconds": 304
   },
   "storage": {
     "scratch_project_bytes_before_download": 3,
@@ -56,14 +62,38 @@
     "scratch_available_bytes_after_download": 5986327003136,
     "warning_threshold_bytes": 107374182400,
     "stop_threshold_bytes": 161061273600,
-    "persistent_copy": "PENDING",
-    "audit_package": "PENDING",
-    "cleanup": "PENDING"
+    "scratch_project_bytes_completion_checkpoint": 115315521194,
+    "scratch_multiplier_completion_checkpoint": 6.606121791075648,
+    "scratch_project_bytes_before_cleanup": 97859705391,
+    "scratch_project_bytes_after_cleanup": 0,
+    "scratch_bytes_recovered": 97859705391,
+    "persistent_copy": "PASS",
+    "audit_package": "PASS",
+    "audit_archive": "helixforge-smansoni-PRJNA602528-2026-09-15.zip",
+    "audit_archive_sha256": "be4b097ec75ee170f7dac0133d8001d9e421b15d1cb268da6434c603b76d3cfd",
+    "cleanup": "PASS",
+    "cleanup_job_id": "19519"
   },
   "safety": {
     "fastq_download_started": true,
-    "scientific_workflow_started": false,
+    "scientific_workflow_started": true,
     "other_projects_started": false
+  },
+  "validation": {
+    "data_acquisition": "PASS",
+    "fastq_integrity": "PASS",
+    "reference_integrity": "PASS",
+    "technical_execution": "PASS_WITH_LIMITATIONS",
+    "qc": "PASS",
+    "expression_import": "PASS",
+    "differential_expression": "NOT_APPLICABLE",
+    "terminal_manifest": "PASS",
+    "provenance": "PASS",
+    "scratch_calibration": "PASS_WITH_LIMITATIONS",
+    "persistent_copy": "PASS",
+    "audit_package": "PASS",
+    "cleanup": "PASS",
+    "analysis": "PASS_WITH_LIMITATIONS"
   },
   "resolved_blocker": {
     "code": "SALMON_INDEX_REUSE_CONFLICT",

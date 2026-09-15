@@ -52,8 +52,10 @@ implied by completion of an RNA-seq study.
 
 ## Current boundary
 
-Repository initialization and metadata/reference curation are complete. The
-first execution phase begins with RNA-seq. ChIP-seq, RNA-seq/ChIP-seq
-integration, cross-study meta-analysis, atlas construction, coexpression, and
-candidate prioritization remain planned parts of the repository, but require
-separate preregistration before execution.
+Repository initialization and metadata/reference curation are complete.
+`PRJNA602528` completed QC, Salmon quantification, tximport, terminal-manifest
+validation, persistence, and cleanup under its `IMPORT_ONLY` contract. Its
+temporal figures are descriptive and no DESeq2 inference was performed.
+ChIP-seq, RNA-seq/ChIP-seq integration, cross-study meta-analysis, atlas
+construction, coexpression, and candidate prioritization remain planned parts
+of the repository, but require separate preregistration before execution.

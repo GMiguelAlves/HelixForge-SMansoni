@@ -1,0 +1,8 @@
+{
+  "errors": [],
+  "filesystem": "PASS",
+  "manifest": "rnaseq_run_manifest.json",
+  "schema": "PASS",
+  "schema_version": "1.0",
+  "semantic": "PASS"
+}

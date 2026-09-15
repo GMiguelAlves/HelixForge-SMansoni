@@ -1,0 +1,16 @@
+{
+  "bytes_recovered": 97859705391,
+  "job_id": "19519",
+  "other_projects_touched": false,
+  "raw_fastq_removed": true,
+  "salmon_index_preserved": true,
+  "schema_version": "1.0",
+  "scratch_bytes_after_cleanup": 0,
+  "scratch_bytes_before_cleanup": 97859705391,
+  "shared_reference_preserved": true,
+  "status": "PASS",
+  "study": "PRJNA602528",
+  "temporary_qc_removed": true,
+  "trimmed_fastq_removed": true,
+  "workdirs_removed": true
+}
