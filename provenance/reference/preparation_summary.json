@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "prepared_at": "2026-09-14",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "official_artifacts_verified": 4,
+  "reference_directory_bytes_excluding_symlink_targets": 260553475,
+  "salmon_index_bytes": 158307779,
+  "elapsed_seconds": 176,
+  "resources": {
+    "cpus": 2,
+    "memory_requested": "16 GB",
+    "max_rss_kib": 1217796
+  },
+  "reuse": {
+    "genome": true,
+    "gff3": true,
+    "salmon_index": true,
+    "transcriptome": false,
+    "canonical_gtf": false,
+    "tx2gene": false
+  },
+  "scientific_workflow_executed": false,
+  "fastq_downloaded": false
+}

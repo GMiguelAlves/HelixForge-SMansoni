@@ -3,12 +3,19 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import subprocess
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 HELIXFORGE_V1_COMMIT = "14dc5a75d6c63f20d10c135f0c75138ea76dcc12"
+REFERENCE_SHA256 = {
+    "genome": "d93a8ff7541d6108b0db088b43e9dc275de45b1d263cd42253877944cceaa1a9",
+    "transcriptome": "ef6f9807ba3060d901f3bc89eca6eca2bd0598d162981c7fd3417bc26701dbb4",
+    "annotation_gff3": "746fef90d8eb3525d9f2ac0c44f7fd4a8193ac109afe1398deb987a06e6685dd",
+    "annotation_gtf": "8b30f5b141ed38b9a99222a18e006880eda38758cd4709a0464141c2a59ccd55",
+}
 STUDIES = {
     "PRJNA602528": (10, 10),
     "PRJNA597909": (20, 20),
@@ -38,7 +45,15 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("Schistosoma mansoni", reference["organism"]["scientific_name"])
         self.assertEqual("SM_V10", reference["assembly"])
         self.assertEqual("WBPS19", reference["wormbase_parasite_release"])
-        self.assertEqual("PENDING_VERIFIED_DOWNLOAD", reference["checksums"]["status"])
+        self.assertEqual("VERIFIED", reference["status"])
+        self.assertEqual("VERIFIED", reference["checksums"]["status"])
+        self.assertEqual(
+            REFERENCE_SHA256,
+            {item["role"]: item["sha256"] for item in reference["artifacts"]},
+        )
+        self.assertTrue(
+            all(item["checksum_status"] == "VERIFIED" for item in reference["artifacts"])
+        )
 
     def test_first_project_is_calibration_not_benchmark(self) -> None:
         state = json.loads(
@@ -91,6 +106,57 @@ class ProjectContracts(unittest.TestCase):
         server_template = (ROOT / "config/server.env.template").read_text(encoding="utf-8")
         self.assertIn(HELIXFORGE_V1_COMMIT, readme)
         self.assertIn(HELIXFORGE_V1_COMMIT, server_template)
+
+    def test_reference_validation_record_is_consistent(self) -> None:
+        validation = json.loads(
+            (ROOT / "provenance/reference/reference_validation.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        index = json.loads(
+            (ROOT / "provenance/reference/salmon_index_manifest.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("PASS", validation["status"])
+        self.assertEqual("PASS", validation["contig_compatibility"]["status"])
+        self.assertEqual(10960, validation["tx2gene"]["transcriptome_mapped"])
+        self.assertEqual(0, validation["tx2gene"]["transcriptome_unmapped"])
+        self.assertEqual("VERIFIED_REUSED", index["status"])
+        self.assertEqual("1.10.3", index["salmon_version"])
+        self.assertEqual(31, index["kmer_size"])
+
+    def test_server_preparation_record_is_sanitized(self) -> None:
+        state_path = ROOT / "provenance/server_preparation_state.json"
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        self.assertEqual("IMPORT_ONLY", state["prjna602528"]["mode"])
+        self.assertEqual("BLOCKED", state["prjna602528"]["differential_expression"])
+        self.assertFalse(state["prjna602528"]["fastq_downloaded"])
+        self.assertFalse(state["prjna602528"]["scientific_workflow_executed"])
+
+        tracked = subprocess.run(
+            ["git", "-C", str(ROOT), "ls-files", "-z"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.split("\0")
+        tracked_text = "\n".join(
+            (ROOT / relative).read_text(encoding="utf-8", errors="ignore")
+            for relative in tracked
+            if relative and (ROOT / relative).is_file()
+        )
+        forbidden = (
+            "/home/" + "ra236875",
+            "/scratch/" + "Schisto-epigenetics",
+            "C:\\Users\\" + "dilci",
+            "BEGIN OPENSSH " + "PRIVATE KEY",
+        )
+        for token in forbidden:
+            self.assertNotIn(token, tracked_text)
+
+    def test_all_json_documents_parse(self) -> None:
+        for path in ROOT.rglob("*.json"):
+            json.loads(path.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

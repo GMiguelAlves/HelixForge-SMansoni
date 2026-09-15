@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "status": "PINNED_FOR_DOWNLOAD",
+  "status": "VERIFIED",
   "organism": {
     "scientific_name": "Schistosoma mansoni",
     "taxon_id": 6183
@@ -19,35 +19,35 @@
       "role": "genome",
       "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa.gz",
       "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa.gz",
-      "sha256": null,
-      "checksum_status": "PENDING_VERIFIED_DOWNLOAD"
+      "sha256": "d93a8ff7541d6108b0db088b43e9dc275de45b1d263cd42253877944cceaa1a9",
+      "checksum_status": "VERIFIED"
     },
     {
       "role": "transcriptome",
       "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa.gz",
       "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa.gz",
-      "sha256": null,
-      "checksum_status": "PENDING_VERIFIED_DOWNLOAD"
+      "sha256": "ef6f9807ba3060d901f3bc89eca6eca2bd0598d162981c7fd3417bc26701dbb4",
+      "checksum_status": "VERIFIED"
     },
     {
       "role": "annotation_gff3",
       "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gff3.gz",
       "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gff3.gz",
-      "sha256": null,
-      "checksum_status": "PENDING_VERIFIED_DOWNLOAD"
+      "sha256": "746fef90d8eb3525d9f2ac0c44f7fd4a8193ac109afe1398deb987a06e6685dd",
+      "checksum_status": "VERIFIED"
     },
     {
       "role": "annotation_gtf",
       "filename": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf.gz",
       "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf.gz",
-      "sha256": null,
-      "checksum_status": "PENDING_VERIFIED_DOWNLOAD"
+      "sha256": "8b30f5b141ed38b9a99222a18e006880eda38758cd4709a0464141c2a59ccd55",
+      "checksum_status": "VERIFIED"
     }
   ],
   "checksums": {
     "algorithm": "sha256",
-    "status": "PENDING_VERIFIED_DOWNLOAD",
+    "status": "VERIFIED",
     "generated_manifest": "reference_checksums.sha256"
   },
-  "selection_note": "WBPS19 was the newest release exposed for SM_V10 when curated on 2026-09-11. Raw files are excluded from Git."
+  "selection_note": "WBPS19 was the newest release exposed for SM_V10 when curated on 2026-09-11. The official compressed artifacts were retrieved and verified on 2026-09-14. Raw files are excluded from Git."
 }
