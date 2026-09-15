@@ -142,9 +142,9 @@ credential, token or SSH material.
 ## Validation and CI
 
 The reusable validator, compact contract tests, JSON/TSV checks, shell syntax
-checks, path/secrets scan and Nextflow configuration parsing are required to
-pass before the first dataset is acquired. CI status for this preparation
-change is recorded after the pull request checks complete.
+checks, path/secrets scan and Nextflow configuration parsing passed. The
+generic discovery command executed all 10 tests successfully, and the GitHub
+Actions `contracts` job passed for the preparation pull request.
 
 ## Limitations
 
@@ -160,7 +160,24 @@ change is recorded after the pull request checks complete.
 
 ## Readiness decision
 
-All scientific and operational preconditions are satisfied except the final
-repository test and CI confirmation. The first FASTQ acquisition remains
-forbidden until those checks pass and the state is promoted from
-`PASS_PENDING_CI` to `PASS`.
+All frozen scientific and operational preconditions are satisfied. The server
+is ready for the separately authorized acquisition and import-only execution
+of `PRJNA602528`. This report does not itself authorize or start that work.
+
+```text
+HELIXFORGE_ENVIRONMENT = PASS
+SLURM_ENVIRONMENT = PASS
+STORAGE_PREFLIGHT = PASS
+SM_V10_REFERENCE = PASS
+WBPS19_ANNOTATION = PASS
+REFERENCE_ANNOTATION_COMPATIBILITY = PASS
+TX2GENE_RESOURCE = PASS
+SALMON_INDEX = PASS
+PRJNA602528_METADATA = PASS
+PRJNA602528_CONFIG = PASS
+PRJNA602528_IMPORT_ONLY_CONTRACT = PASS
+TEST_SUITE = PASS
+CI = PASS
+
+SERVER_PREPARATION = PASS
+```

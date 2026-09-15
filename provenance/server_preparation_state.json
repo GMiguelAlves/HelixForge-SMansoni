@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "prepared_at": "2026-09-14",
-  "status": "PASS_PENDING_CI",
+  "status": "PASS",
   "software": {
     "helixforge_release": "v1.0.0",
     "helixforge_commit": "14dc5a75d6c63f20d10c135f0c75138ea76dcc12",
@@ -79,8 +79,8 @@
     "reference": "PASS",
     "metadata": "PASS",
     "import_only_contract": "PASS",
-    "tests": "PENDING_LOCAL_AND_CI",
-    "ci": "PENDING"
+    "tests": "PASS_10_OF_10",
+    "ci": "PASS"
   },
   "public_record_note": "Personal hostnames and absolute server paths are deliberately omitted. Exact operational paths and raw scheduler logs remain in the private server audit directory."
 }
