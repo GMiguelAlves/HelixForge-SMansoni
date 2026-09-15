@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HELIXFORGE_V1_COMMIT = "14dc5a75d6c63f20d10c135f0c75138ea76dcc12"
+HELIXFORGE_V1_COMMIT = "e41d221657b8e0bf2700bccd547e15032ccac36f"
 REFERENCE_SHA256 = {
     "genome": "d93a8ff7541d6108b0db088b43e9dc275de45b1d263cd42253877944cceaa1a9",
     "transcriptome": "ef6f9807ba3060d901f3bc89eca6eca2bd0598d162981c7fd3417bc26701dbb4",
@@ -64,7 +64,20 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("FIRST_REAL_SCHISTOSOMA_RNASEQ_PROJECT", state["role"])
         self.assertEqual("OPERATIONAL_CALIBRATION_RUN", state["execution_class"])
         self.assertFalse(state["benchmark"])
-        self.assertEqual("NOT_STARTED", state["status"])
+        self.assertIn(
+            state["status"],
+            {
+                "NOT_STARTED",
+                "ACQUISITION_IN_PROGRESS",
+                "BLOCKED_PRE_WORKFLOW_INDEX_REUSE_CONFLICT",
+                "READY_FOR_WORKFLOW",
+                "WORKFLOW_RUNNING",
+                "WORKFLOW_COMPLETE",
+                "ACCEPTED",
+            },
+        )
+        if state["status"] != "NOT_STARTED":
+            self.assertEqual("PASS", state["acquisition"]["integrity"])
 
     def test_frozen_source_package_checksums(self) -> None:
         frozen = ROOT / "provenance/source_package/frozen"
@@ -90,16 +103,22 @@ class ProjectContracts(unittest.TestCase):
                 offenders.append(str(path.relative_to(ROOT)))
         self.assertEqual([], offenders)
 
-    def test_all_execution_states_are_not_started(self) -> None:
-        for study in STUDIES:
+    def test_unstarted_projects_remain_frozen(self) -> None:
+        for study in set(STUDIES) - {"PRJNA602528"}:
             state = json.loads(
                 (ROOT / "provenance" / study / "execution_state.json").read_text(
                     encoding="utf-8"
                 )
             )
             self.assertEqual("NOT_STARTED", state["status"], study)
-            self.assertEqual("v1.0.0", state["helixforge_release"], study)
+            self.assertEqual("v1.0.1", state["helixforge_release"], study)
             self.assertEqual(HELIXFORGE_V1_COMMIT, state["helixforge_commit"], study)
+
+    def test_launcher_requires_validated_prebuilt_index(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        self.assertIn("--salmon_prebuilt_index", launcher)
+        self.assertIn("--salmon_prebuilt_index_manifest", launcher)
+        self.assertNotIn("salmon index ", launcher)
 
     def test_helixforge_release_pin_is_exact(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
