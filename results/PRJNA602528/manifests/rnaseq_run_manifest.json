@@ -1,0 +1,879 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "PRJNA602528.gene_counts",
+      "artifact_type": "gene_counts",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9891d4572487f032eff01bad40ad41692fbe084e7a23f0a321105fab28cc35ca"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../expression/counts_matrix.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "countsFromAbundance": "lengthScaledTPM",
+          "ignoreAfterBar": true,
+          "ignoreTxVersion": true
+        },
+        "producer_process": "TXIMPORT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "rnaseq.import"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "counts",
+      "sample_ids": [
+        "pzq_0h",
+        "pzq_0p25h",
+        "pzq_12h",
+        "pzq_1h",
+        "pzq_24h",
+        "pzq_3h",
+        "pzq_48h",
+        "pzq_6h",
+        "pzq_96h",
+        "pzq_9h"
+      ],
+      "source": {
+        "name": "tximport",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.gene_abundance",
+      "artifact_type": "gene_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e4af7babc8607aab99b649037fe643b451d86d3adab280921260f73596518cca"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../expression/tpm_matrix.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "countsFromAbundance": "lengthScaledTPM",
+          "ignoreAfterBar": true,
+          "ignoreTxVersion": true
+        },
+        "producer_process": "TXIMPORT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "rnaseq.import"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "abundance",
+      "sample_ids": [
+        "pzq_0h",
+        "pzq_0p25h",
+        "pzq_12h",
+        "pzq_1h",
+        "pzq_24h",
+        "pzq_3h",
+        "pzq_48h",
+        "pzq_6h",
+        "pzq_96h",
+        "pzq_9h"
+      ],
+      "source": {
+        "name": "tximport",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_0h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "dbd30b2e9b9af4eaf28792dbb9ab8743b8aa9f609e557948aff6d0517d3d092e"
+      },
+      "condition": "time_0h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_0h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_0h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_0h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_0p25h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c55738b4b83cc2fd078ebc3c164b55b7e8f7b58e37d61db0e9316e837f7632e5"
+      },
+      "condition": "time_0p25h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_0p25h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_0p25h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_0p25h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_12h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a73aaa1b56a38b83e3e238d2ace454de1bc1f1aa2080c6c5ff1dbfa7b2918187"
+      },
+      "condition": "time_12h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_12h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_12h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_12h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_1h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e7e15e5a2669f1d75600f737ec1016294ab34c817d36083c7a71ff048a8288e2"
+      },
+      "condition": "time_1h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_1h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_1h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_1h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_24h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e5353e4cb5bb1af7c2a7d5502cc05813025840d31d9c4d6e567f4fb3be651564"
+      },
+      "condition": "time_24h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_24h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_24h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_24h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_3h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ff9add35cbacce994929d9b7a041ff0eb246165696bcdf0d161fb6b43e99d958"
+      },
+      "condition": "time_3h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_3h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_3h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_3h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_48h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0a9781f097bcb1026458908dbf61b18bcb71b880acff9253ca13dad9e5509d27"
+      },
+      "condition": "time_48h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_48h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_48h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_48h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_6h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "8153062717201fb3a5b08fd1c3f78e6b9ecf03d345e1e419f76adaaf9026d8d1"
+      },
+      "condition": "time_6h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_6h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_6h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_6h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_96h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "dd7ae316ac9d81085a57dcbb7651509e10694d8c9b9d7313c3e15fb59a42bf88"
+      },
+      "condition": "time_96h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_96h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_96h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_96h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    },
+    {
+      "artifact_id": "PRJNA602528.pzq_9h.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3880b7345ac2c97fa584af8645e7ad6ce0c024d30e408801bc176e4e48b5ec69"
+      },
+      "condition": "time_9h",
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "../compatibility/quants/PRJNA602528/pzq_9h/quant.sf",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "study": "PRJNA602528"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {
+          "lib_type": "A",
+          "validate_mappings": true
+        },
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA602528.pzq_9h.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "pzq_9h"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": "adult"
+    }
+  ],
+  "batches": [
+    "not_declared"
+  ],
+  "conditions": [
+    "time_0h",
+    "time_0p25h",
+    "time_12h",
+    "time_1h",
+    "time_24h",
+    "time_3h",
+    "time_48h",
+    "time_6h",
+    "time_96h",
+    "time_9h"
+  ],
+  "contrasts": [],
+  "id": "PRJNA602528.rnaseq",
+  "integration_api_version": "1.0",
+  "provenance": {
+    "execution_metadata": null,
+    "parameters": {
+      "countsFromAbundance": "lengthScaledTPM",
+      "differential_expression": "NOT_APPLICABLE",
+      "mode": "IMPORT_ONLY"
+    },
+    "producer_process": "RUN_MANIFEST",
+    "producer_workflow": "rnaseq",
+    "software": [
+      {
+        "container": null,
+        "name": "HelixForge",
+        "version": "v1.0.1"
+      }
+    ],
+    "source_artifact_ids": [
+      "PRJNA602528.gene_counts",
+      "PRJNA602528.gene_abundance",
+      "PRJNA602528.pzq_0h.transcript_abundance",
+      "PRJNA602528.pzq_0p25h.transcript_abundance",
+      "PRJNA602528.pzq_12h.transcript_abundance",
+      "PRJNA602528.pzq_1h.transcript_abundance",
+      "PRJNA602528.pzq_24h.transcript_abundance",
+      "PRJNA602528.pzq_3h.transcript_abundance",
+      "PRJNA602528.pzq_48h.transcript_abundance",
+      "PRJNA602528.pzq_6h.transcript_abundance",
+      "PRJNA602528.pzq_96h.transcript_abundance",
+      "PRJNA602528.pzq_9h.transcript_abundance"
+    ],
+    "source_manifest_ids": [
+      "PRJNA602528.pzq_0h.quantification",
+      "PRJNA602528.pzq_0p25h.quantification",
+      "PRJNA602528.pzq_12h.quantification",
+      "PRJNA602528.pzq_1h.quantification",
+      "PRJNA602528.pzq_24h.quantification",
+      "PRJNA602528.pzq_3h.quantification",
+      "PRJNA602528.pzq_48h.quantification",
+      "PRJNA602528.pzq_6h.quantification",
+      "PRJNA602528.pzq_96h.quantification",
+      "PRJNA602528.pzq_9h.quantification",
+      "Schistosoma_mansoni_SM_V10_WBPS19",
+      "rnaseq.import"
+    ]
+  },
+  "quantification_method": "salmon",
+  "reference": {
+    "annotation_id": "annotation.0ba2e3ff9a63",
+    "assembly": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "display_name": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "metadata": {
+      "source_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+    },
+    "organism": "Schistosoma_mansoni",
+    "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "resources": {
+      "annotation": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      },
+      "fasta": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      },
+      "transcriptome": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "b794519faf24d6d8ae9a849467e567f0ca20c9c8c4e4585fdd060353a9a72a47"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      }
+    },
+    "source": {
+      "name": "Reference Bundle",
+      "type": "external",
+      "version": "1.0"
+    },
+    "species": "Schistosoma_mansoni"
+  },
+  "run": {
+    "created_at": "2026-09-15T15:20:47Z",
+    "git_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
+    "helixforge_version": "v1.0.1",
+    "nextflow_version": "25.10.7",
+    "profile": "slurm",
+    "run_id": "c871a46c-003b-4265-9b5d-fd7b263cda57",
+    "run_name": "determined_rutherford",
+    "source": {
+      "name": "HelixForge",
+      "type": "helixforge",
+      "version": "v1.0.1"
+    },
+    "workflow": "rnaseq"
+  },
+  "samples": [
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_0h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_0h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947824"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_0p25h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_0p25h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947823"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_12h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_12h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947818"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_1h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_1h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947822"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_24h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_24h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947817"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_3h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_3h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947821"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_48h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_48h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947816"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_6h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_6h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947820"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_96h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_96h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947815"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "time_9h",
+      "dataset": "PRJNA602528",
+      "sample_id": "pzq_9h",
+      "stage": "adult",
+      "technical_runs": [
+        "SRR10947819"
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "stages": [
+    "adult"
+  ],
+  "status": "complete",
+  "type": "rnaseq_run_manifest"
+}

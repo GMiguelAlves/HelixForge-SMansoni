@@ -1,0 +1,30 @@
+{
+  "components_bytes": {
+    "download_provenance": 1407,
+    "fastq_ftp": 17455857588,
+    "fastqc_merged": 21702949,
+    "fastqc_raw": 20785832,
+    "fastqc_trimmed_runs": 21718538,
+    "logs": 388752,
+    "multiqc_030": 15041962,
+    "raw": 17455857588,
+    "results": 0,
+    "state": 2528,
+    "trimmed_merged": 17332229574,
+    "trimmed_runs": 17332282721,
+    "work": 45571728879,
+    "work-post-qc-reentry": 87922876
+  },
+  "compressed_input_fastq_bytes": 17455857588,
+  "interpretation": "Completion checkpoint includes recoverable failed/resume work and is a conservative operational upper bound, not a controlled scaling estimate.",
+  "measurement": "completion_checkpoint_upper_bound",
+  "persistent_result_bytes_before_audit_archive": 79084657,
+  "project_scratch_bytes": 115315521194,
+  "schema_version": "1.0",
+  "scratch_multiplier": 6.606121791075648,
+  "stop_threshold_bytes": 161061273600,
+  "stop_threshold_crossed": false,
+  "study": "PRJNA602528",
+  "warning_threshold_bytes": 107374182400,
+  "warning_threshold_crossed": true
+}
