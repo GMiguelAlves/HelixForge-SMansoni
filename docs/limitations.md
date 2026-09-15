@@ -21,6 +21,7 @@
   explicitly excluded.
 - The HelixForge v1 `-resume` behavior was environment-dependent for complete
   workflows on shared HPC storage. Cache reuse must be verified operationally.
-- No cross-study meta-analysis, atlas, coexpression, candidate prioritization,
-  or epigenomic integration has been validated by this repository yet.
-
+- No ChIP-seq application, cross-study meta-analysis, atlas, coexpression,
+  candidate prioritization, or RNA-seq/ChIP-seq integration has been validated
+  by this repository yet. This describes the current validation state, not an
+  exclusion from the scientific scope.

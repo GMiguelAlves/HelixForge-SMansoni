@@ -1,6 +1,7 @@
 # Future analyses
 
-The `cross_study`, `atlas`, and `candidate_prioritization` directories are
-reserved for separately designed analyses. Repository initialization does not
-authorize or execute them.
-
+The `integration`, `cross_study`, `atlas`, and `candidate_prioritization`
+directories are reserved for separately designed analyses. This repository is
+the common home for RNA-seq, ChIP-seq, and their integration in *S. mansoni*;
+directory presence does not authorize an analysis before its contract is
+reviewed.
