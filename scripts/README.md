@@ -14,3 +14,8 @@ FASTA, annotations, tx2gene mapping and Salmon-index metadata. It reads large
 reference files but does not modify them; execute it in a Slurm allocation on
 the server. Site-specific `.sbatch` submission scripts are operational audit
 material and are deliberately not versioned here.
+
+`summarize/prjna602528_descriptive_figures.R` regenerates the descriptive
+PCA, sample-correlation, expression-trajectory, and QC figures published for
+PRJNA602528. These plots are descriptive products of the Import-only run and
+must not be interpreted as differential-expression inference.

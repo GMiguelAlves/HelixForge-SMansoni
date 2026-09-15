@@ -36,13 +36,14 @@ ONE PROJECT AT A TIME
 Only one study may hold heavy FASTQs, indexes under construction, work files,
 and unpublished intermediates in scratch. The frozen operational order is:
 
-1. `PRJNA602528` — Import-only operational calibration;
+1. `PRJNA602528` — Import-only operational calibration completed and cleaned;
 2. `PRJNA597909`;
 3. `PRJEB14695`;
 4. `PRJEB32839`.
 
-The order may change only with a documented operational reason. Do not start a
-second heavy study until the current study has passed acceptance and cleanup.
+The order may change only with a documented operational reason. `PRJNA602528`
+passed persistence and cleanup gates; starting another study still requires an
+explicitly reviewed project-specific authorization.
 
 ## Checkpoints
 
@@ -59,6 +60,10 @@ second heavy study until the current study has passed acceptance and cleanup.
 `-resume` requires both the Nextflow task database and unchanged work outputs.
 Its top-level persistence was environment-dependent during HelixForge v1
 validation; confirm cache reuse on this site rather than assuming it.
+During `PRJNA602528`, eligible QC tasks were not recovered from the shared NFS
+task cache. A controlled post-QC re-entry consumed the already validated merged
+FASTQs and completed the native Salmon and Import layers. This is an operational
+runtime limitation and did not alter scientific parameters or results.
 
 ## Persistent records
 
@@ -67,4 +72,3 @@ sized, figures, HTML reports, terminal manifests with their portable artifact
 bundles, performance summaries, commands, versions, checksums, Slurm metadata,
 and execution summaries. Raw FASTQs, BAMs, BigWigs, indexes, work directories,
 and large logs remain outside Git.
-

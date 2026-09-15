@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "study": "PRJEB14695",
   "status": "NOT_STARTED",
-  "helixforge_release": "v1.0.0",
-  "helixforge_commit": "14dc5a75d6c63f20d10c135f0c75138ea76dcc12",
+  "helixforge_release": "v1.0.1",
+  "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
   "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
   "analysis_mode": "full",
   "benchmark": false

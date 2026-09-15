@@ -1,11 +1,12 @@
 # HelixForge-SMansoni
 
-Reproducible transcriptomic and multi-omic analysis of *Schistosoma mansoni*
-using [HelixForge](https://github.com/GMiguelAlves/HelixForge).
+Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
+*Schistosoma mansoni* using
+[HelixForge](https://github.com/GMiguelAlves/HelixForge).
 
 ```text
-PROJECT_STATUS = PROJECT_INITIALIZED
-DATA_ANALYSIS_STATUS = DATA_ANALYSIS_NOT_YET_COMPLETE
+PROJECT_STATUS = ACTIVE
+DATA_ANALYSIS_STATUS = PRJNA602528_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -14,10 +15,23 @@ HelixForge is the organism-agnostic workflow software. This repository is a
 scientific project that pins and uses a released HelixForge version; it is not
 a specialized fork and does not copy the HelixForge core.
 
+## Scientific scope
+
+This is the species-specific analysis repository for the complete project. It
+will hold the registered RNA-seq analyses, ChIP-seq analyses, and integration
+of evidence across both modalities. Each dataset remains independently
+configured and auditable, while accepted terminal manifests provide the
+boundary for later integration.
+
+The studies currently registered below are the first RNA-seq execution series.
+Their presence does not restrict the repository to transcriptomics. ChIP-seq
+datasets and integrative analyses are added only after their own scientific
+design, metadata, and execution contracts are reviewed.
+
 | Dependency | Frozen value |
 |---|---|
-| HelixForge release | [`v1.0.0`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.0.0) |
-| HelixForge commit | `14dc5a75d6c63f20d10c135f0c75138ea76dcc12` |
+| HelixForge release | [`v1.0.1`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.0.1) |
+| HelixForge commit | `e41d221657b8e0bf2700bccd547e15032ccac36f` |
 | Nextflow | `25.10.7` |
 | Java | `21` |
 
@@ -37,20 +51,23 @@ checksums are frozen in
 [`config/reference/reference_manifest.json`](config/reference/reference_manifest.json).
 The validation metrics and reusable-index provenance are recorded under
 [`provenance/reference/`](provenance/reference/).
+HelixForge `v1.0.1` validates and consumes that immutable index explicitly;
+it does not depend on `-resume` to avoid rebuilding it.
 
 ## Initial studies
 
 | Order | Study | Runs | Biological samples | Initial execution |
 |---:|---|---:|---:|---|
-| 1 | `PRJNA602528` | 10 | 10 | operational calibration through Import; DE blocked by design |
+| 1 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
 | 2 | `PRJNA597909` | 20 | 20 | full RNA-seq |
 | 3 | `PRJEB14695` | 138 | 23 | full RNA-seq |
 | 4 | `PRJEB32839` | 150 | 75 | full RNA-seq |
 
-`PRJNA602528` is the first real *S. mansoni* application and operational
-calibration run. It is not a new benchmark of HelixForge. Its public design has
-one library per time point, so the frozen project stops after tximport and does
-not perform DESeq2 inference.
+`PRJNA602528` is the first completed real *S. mansoni* application and
+operational calibration run. It is not a new benchmark of HelixForge. Its
+public design has one library per time point, so the frozen project stops after
+tximport and does not perform DESeq2 inference. The compact accepted products
+and execution report are available under [`results/PRJNA602528/`](results/PRJNA602528/).
 
 ## Execution policy
 
@@ -74,7 +91,8 @@ any data.
 - `results/`: versionable summaries, tables, figures, reports, and terminal
   manifests; no raw or heavy intermediate data.
 - `provenance/`: frozen input-package evidence and per-study execution records.
-- `analyses/`: reserved for later cross-study, atlas, and candidate analyses.
+- `analyses/`: cross-study, RNA-seq/ChIP-seq integration, atlas, and candidate
+  analyses introduced under separately reviewed contracts.
 - `docs/`: methods, operational policy, dictionary, and limitations.
 
 ## Reproducibility
@@ -85,9 +103,9 @@ execution must record the HelixForge tag and commit, reference checksums,
 commands, environment, Slurm metadata, terminal manifest, and an execution
 summary under `provenance/<study>/`.
 
-This initialization does not start downloads, processing, meta-analysis,
-atlas construction, coexpression, candidate prioritization, or epigenomic
-integration.
+Completion of `PRJNA602528` does not authorize processing of another study,
+meta-analysis, atlas construction, coexpression, candidate prioritization, or
+epigenomic integration. Each requires its own reviewed execution contract.
 
 ## Administrative validation
 

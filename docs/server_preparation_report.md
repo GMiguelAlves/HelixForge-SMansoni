@@ -1,5 +1,13 @@
 # Server preparation report
 
+> **Runtime amendment (2026-09-15).** This preparation was originally
+> completed against HelixForge `v1.0.0`. Before any scientific workflow was
+> submitted, the project adopted HelixForge `v1.0.1`
+> (`e41d221657b8e0bf2700bccd547e15032ccac36f`) to use its explicit,
+> manifest-validated prebuilt Salmon-index path. The existing WBPS19 index
+> passed the read-only Slurm validation in job `19334`; no scientific default
+> or reference artifact changed.
+
 ## Scope
 
 This report records the infrastructure and reference preparation completed on

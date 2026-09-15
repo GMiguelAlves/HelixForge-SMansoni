@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HELIXFORGE_V1_COMMIT = "14dc5a75d6c63f20d10c135f0c75138ea76dcc12"
+HELIXFORGE_V1_COMMIT = "e41d221657b8e0bf2700bccd547e15032ccac36f"
 REFERENCE_SHA256 = {
     "genome": "d93a8ff7541d6108b0db088b43e9dc275de45b1d263cd42253877944cceaa1a9",
     "transcriptome": "ef6f9807ba3060d901f3bc89eca6eca2bd0598d162981c7fd3417bc26701dbb4",
@@ -22,6 +22,11 @@ STUDIES = {
     "PRJEB14695": (138, 23),
     "PRJEB32839": (150, 75),
 }
+
+
+def read_tsv(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
 
 
 class ProjectContracts(unittest.TestCase):
@@ -64,7 +69,21 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("FIRST_REAL_SCHISTOSOMA_RNASEQ_PROJECT", state["role"])
         self.assertEqual("OPERATIONAL_CALIBRATION_RUN", state["execution_class"])
         self.assertFalse(state["benchmark"])
-        self.assertEqual("NOT_STARTED", state["status"])
+        self.assertIn(
+            state["status"],
+            {
+                "NOT_STARTED",
+                "ACQUISITION_IN_PROGRESS",
+                "BLOCKED_PRE_WORKFLOW_INDEX_REUSE_CONFLICT",
+                "READY_FOR_WORKFLOW",
+                "WORKFLOW_RUNNING",
+                "WORKFLOW_COMPLETE",
+                "READY_FOR_REVIEW",
+                "ACCEPTED",
+            },
+        )
+        if state["status"] != "NOT_STARTED":
+            self.assertEqual("PASS", state["acquisition"]["integrity"])
 
     def test_frozen_source_package_checksums(self) -> None:
         frozen = ROOT / "provenance/source_package/frozen"
@@ -90,16 +109,22 @@ class ProjectContracts(unittest.TestCase):
                 offenders.append(str(path.relative_to(ROOT)))
         self.assertEqual([], offenders)
 
-    def test_all_execution_states_are_not_started(self) -> None:
-        for study in STUDIES:
+    def test_unstarted_projects_remain_frozen(self) -> None:
+        for study in set(STUDIES) - {"PRJNA602528"}:
             state = json.loads(
                 (ROOT / "provenance" / study / "execution_state.json").read_text(
                     encoding="utf-8"
                 )
             )
             self.assertEqual("NOT_STARTED", state["status"], study)
-            self.assertEqual("v1.0.0", state["helixforge_release"], study)
+            self.assertEqual("v1.0.1", state["helixforge_release"], study)
             self.assertEqual(HELIXFORGE_V1_COMMIT, state["helixforge_commit"], study)
+
+    def test_launcher_requires_validated_prebuilt_index(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        self.assertIn("--salmon_prebuilt_index", launcher)
+        self.assertIn("--salmon_prebuilt_index_manifest", launcher)
+        self.assertNotIn("salmon index ", launcher)
 
     def test_helixforge_release_pin_is_exact(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
@@ -153,6 +178,50 @@ class ProjectContracts(unittest.TestCase):
         )
         for token in forbidden:
             self.assertNotIn(token, tracked_text)
+
+    def test_prjna602528_import_only_results_are_complete(self) -> None:
+        result_root = ROOT / "results/PRJNA602528"
+        manifest_path = result_root / "manifests/rnaseq_run_manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual("rnaseq_run_manifest", manifest["type"])
+        self.assertEqual("complete", manifest["status"])
+        self.assertEqual("salmon", manifest["quantification_method"])
+        self.assertEqual([], manifest["contrasts"])
+        self.assertEqual(10, len(manifest["samples"]))
+        self.assertEqual(12, len(manifest["artifacts"]))
+
+        for artifact in manifest["artifacts"]:
+            self.assertEqual("manifest_relative", artifact["location"]["kind"])
+            path = (manifest_path.parent / artifact["location"]["path"]).resolve()
+            self.assertTrue(path.is_file(), artifact["artifact_id"])
+            observed = hashlib.sha256(path.read_bytes()).hexdigest()
+            self.assertEqual(artifact["checksum"]["value"], observed)
+
+        with (result_root / "expression/counts_matrix.tsv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            rows = list(csv.reader(handle, delimiter="\t"))
+        self.assertEqual(10, len(rows[0]) - 1)
+        self.assertEqual(9914, len(rows) - 1)
+
+        qc_rows = read_tsv(result_root / "qc/PRJNA602528_qc_summary.tsv")
+        self.assertEqual(10, len(qc_rows))
+        self.assertEqual(1, sum(row["qc_flag"] == "REVIEW" for row in qc_rows))
+
+        report = (result_root / "reports/PRJNA602528_execution_report.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("DIFFERENTIAL_EXPRESSION = NOT_PERFORMED_BY_DESIGN", report)
+        self.assertTrue(report.rstrip().endswith("READY_FOR_PRJNA602528_REVIEW"))
+
+        state = json.loads(
+            (ROOT / "provenance/PRJNA602528/execution_state.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("NOT_APPLICABLE", state["validation"]["differential_expression"])
+        self.assertEqual("PASS", state["validation"]["cleanup"])
+        self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
 
     def test_all_json_documents_parse(self) -> None:
         for path in ROOT.rglob("*.json"):

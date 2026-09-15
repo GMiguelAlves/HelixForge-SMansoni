@@ -82,5 +82,14 @@
     "tests": "PASS_10_OF_10",
     "ci": "PASS"
   },
+  "runtime_amendment": {
+    "date": "2026-09-15",
+    "status": "PASS",
+    "reason": "Explicit prebuilt Salmon-index reuse was required before the first scientific execution.",
+    "helixforge_release": "v1.0.1",
+    "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
+    "prebuilt_index_validation_job": "19334",
+    "scientific_workflow_started_before_amendment": false
+  },
   "public_record_note": "Personal hostnames and absolute server paths are deliberately omitted. Exact operational paths and raw scheduler logs remain in the private server audit directory."
 }
