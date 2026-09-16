@@ -1,0 +1,5 @@
+analysis_id	variable	contrast	status	n_samples	n_genes	n_significant
+smansoni_prjna597909_primary	condition	condition__juvenile_pzq_vs_juvenile_control	ok	20	9457	204
+smansoni_prjna597909_primary	condition	condition__adult_pzq_vs_adult_control	ok	20	9457	636
+smansoni_prjna597909_primary	condition	condition__adult_control_vs_juvenile_control	ok	20	9457	1131
+smansoni_prjna597909_primary	condition	condition__adult_pzq_vs_juvenile_pzq	ok	20	9457	1075

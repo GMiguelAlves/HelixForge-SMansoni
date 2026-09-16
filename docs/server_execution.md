@@ -37,7 +37,7 @@ Only one study may hold heavy FASTQs, indexes under construction, work files,
 and unpublished intermediates in scratch. The frozen operational order is:
 
 1. `PRJNA602528` — Import-only operational calibration completed and cleaned;
-2. `PRJNA597909`;
+2. `PRJNA597909` — Full RNA-seq completed, persisted, and cleaned;
 3. `PRJEB14695`;
 4. `PRJEB32839`.
 
@@ -64,6 +64,14 @@ During `PRJNA602528`, eligible QC tasks were not recovered from the shared NFS
 task cache. A controlled post-QC re-entry consumed the already validated merged
 FASTQs and completed the native Salmon and Import layers. This is an operational
 runtime limitation and did not alter scientific parameters or results.
+
+During `PRJNA597909`, a controlled `-resume` probe likewise did not reuse
+eligible shared-NFS cache entries and was stopped before expensive work
+repeated. The original scientific execution had already completed QC, Salmon,
+Import, and DESeq2. Only the terminal manifest was recovered under Slurm after
+correcting the host runtime order so that the certified Python environment
+provides `jsonschema`. Future site environments must keep this runtime order;
+compute jobs must not depend on Git being installed.
 
 ## Persistent records
 

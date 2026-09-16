@@ -1,0 +1,13 @@
+{
+  "failed_tasks": 1,
+  "max_actual_task_rss_bytes": 1485099008,
+  "max_actual_task_rss_process": "RNASEQ:RNASEQ_QC:FASTQC_TRIMMED (PRJNA597909.juvenile_control_r4.SRR10776760.trimmed.R2)",
+  "original_end": "2026-09-16T00:53:04-03:00",
+  "original_start": "2026-09-15T23:15:10-03:00",
+  "peak_running_tasks": 5,
+  "run_name": "elated_picasso",
+  "session_uuid": "65c83d56-a15d-48d9-ae11-42422f2e5d12",
+  "succeeded_tasks": 219,
+  "trace_reconstruction": "original trace was overwritten by one controlled resume attempt; reconstructed from frozen workdir .command.run/.command.trace files",
+  "wall_seconds": 5874
+}

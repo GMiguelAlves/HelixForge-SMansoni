@@ -1,10 +1,111 @@
 {
   "schema_version": "1.0",
   "study": "PRJNA597909",
-  "status": "NOT_STARTED",
+  "status": "READY_FOR_REVIEW",
+  "phase": "COMPLETE",
+  "role": "FIRST_FULL_SCHISTOSOMA_RNASEQ_PROJECT",
+  "execution_class": "FULL_NATIVE_RNASEQ_RUN",
   "helixforge_release": "v1.0.1",
   "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
   "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
   "analysis_mode": "full",
-  "benchmark": false
+  "benchmark": false,
+  "dataset": {
+    "runs": 20,
+    "samples": 20,
+    "layout": "PAIRED",
+    "fastq_files": 40,
+    "compressed_input_bytes": 33199877299,
+    "one_run_per_biological_sample": true
+  },
+  "design": {
+    "formula": "~ condition",
+    "variable": "condition",
+    "covariates": [],
+    "interaction": false,
+    "levels": {
+      "adult_control": 5,
+      "adult_pzq": 5,
+      "juvenile_control": 5,
+      "juvenile_pzq": 5
+    },
+    "contrast_count": 4,
+    "full_rank": true,
+    "contrasts_estimable": true
+  },
+  "acquisition": {
+    "completion": true,
+    "integrity": "PASS",
+    "fastq_files_observed": 40,
+    "compressed_bytes_observed": 33199877299,
+    "pairing": "PASS",
+    "gzip": "PASS",
+    "official_checksums": "PASS"
+  },
+  "execution": {
+    "process_status": "PASS_WITH_LIMITATIONS",
+    "scientific_tasks_succeeded": 219,
+    "scientific_tasks_failed": 0,
+    "terminal_manifest_recovered": true,
+    "scientific_stages_recomputed_during_recovery": false,
+    "wall_seconds": 5874,
+    "peak_running_tasks": 5,
+    "resume_required": true,
+    "resume_behavior": "NOT_REUSED_ON_SHARED_NFS",
+    "reentry_required": true,
+    "reentry_scope": "TERMINAL_MANIFEST_ONLY"
+  },
+  "science": {
+    "quantification": "Salmon 1.10.3",
+    "import_policy": "production_v1",
+    "counts_from_abundance": "lengthScaledTPM",
+    "genes": 9914,
+    "mapping_percent_min": 85.7756,
+    "mapping_percent_mean": 87.955385,
+    "mapping_percent_max": 89.9184,
+    "differential_expression_contrasts": 4
+  },
+  "storage": {
+    "preflight": "PASS",
+    "clean_project_bytes": 166215888896,
+    "clean_work_bytes": 66597888000,
+    "clean_multiplier": 5.006521180757693,
+    "scratch_bytes_recovered": 166370873344,
+    "scratch_bytes_after_cleanup": 0,
+    "persistent_copy": "PASS",
+    "audit_package": "PASS",
+    "audit_archive": "helixforge-smansoni-PRJNA597909-2026-09-16.zip",
+    "audit_archive_sha256": "1b99eea6143e9a493bdf3af88ab7ed878ce9f37f1e43636934d7b5694f4e4dd1",
+    "cleanup": "PASS"
+  },
+  "validation": {
+    "data_acquisition": "PASS",
+    "fastq_integrity": "PASS",
+    "reference_integrity": "PASS",
+    "salmon_index_reuse": "PASS",
+    "metadata": "PASS",
+    "statistical_design": "PASS",
+    "technical_execution": "PASS_WITH_LIMITATIONS",
+    "qc": "PASS",
+    "expression_import": "PASS",
+    "differential_expression": "PASS",
+    "terminal_manifest": "PASS",
+    "provenance": "PASS",
+    "scratch_calibration": "PASS",
+    "persistent_copy": "PASS",
+    "audit_package": "PASS",
+    "cleanup": "PASS",
+    "analysis": "PASS_WITH_LIMITATIONS"
+  },
+  "limitations": [
+    "terminal manifest required terminal-only runtime recovery",
+    "top-level resume did not reuse eligible cache entries on shared NFS",
+    "original trace and report were reconstructed from frozen task records"
+  ],
+  "safety": {
+    "other_projects_started": false,
+    "prjeb14695_started": false,
+    "prjeb32839_started": false,
+    "next_project_authorized": false
+  }
 }

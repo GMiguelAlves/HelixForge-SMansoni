@@ -1,0 +1,15 @@
+{
+  "nxf_cache_preserved": true,
+  "nxf_home_preserved": true,
+  "raw_removed": true,
+  "scratch_bytes_after_cleanup": 0,
+  "scratch_bytes_before_cleanup": 166370873344,
+  "scratch_bytes_recovered": 166370873344,
+  "shared_reference_preserved": true,
+  "shared_salmon_index_preserved": true,
+  "status": "PASS",
+  "study": "PRJNA597909",
+  "temporary_outputs_removed": true,
+  "trimmed_fastq_removed": true,
+  "workdir_removed": true
+}

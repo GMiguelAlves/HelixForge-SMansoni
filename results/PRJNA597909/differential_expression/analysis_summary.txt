@@ -1,0 +1,12 @@
+Analise DEG - smansoni_prjna597909_primary
+==============================
+
+Data: 2026-09-16 00:52:25
+Genes antes do filtro: see model_statistics.json
+Variaveis testadas: condition
+Covariaveis de design: 
+
+smansoni_prjna597909_primary	condition	condition__juvenile_pzq_vs_juvenile_control	ok	20	9457	204
+smansoni_prjna597909_primary	condition	condition__adult_pzq_vs_adult_control	ok	20	9457	636
+smansoni_prjna597909_primary	condition	condition__adult_control_vs_juvenile_control	ok	20	9457	1131
+smansoni_prjna597909_primary	condition	condition__adult_pzq_vs_juvenile_pzq	ok	20	9457	1075
