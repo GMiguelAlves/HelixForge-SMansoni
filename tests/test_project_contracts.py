@@ -110,7 +110,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual([], offenders)
 
     def test_unstarted_projects_remain_frozen(self) -> None:
-        for study in set(STUDIES) - {"PRJNA602528"}:
+        for study in set(STUDIES) - {"PRJNA602528", "PRJNA597909"}:
             state = json.loads(
                 (ROOT / "provenance" / study / "execution_state.json").read_text(
                     encoding="utf-8"
@@ -119,6 +119,30 @@ class ProjectContracts(unittest.TestCase):
             self.assertEqual("NOT_STARTED", state["status"], study)
             self.assertEqual("v1.0.1", state["helixforge_release"], study)
             self.assertEqual(HELIXFORGE_V1_COMMIT, state["helixforge_commit"], study)
+
+    def test_prjna597909_preflight_is_complete(self) -> None:
+        state = json.loads(
+            (ROOT / "provenance/PRJNA597909/execution_state.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        preflight = json.loads(
+            (ROOT / "provenance/PRJNA597909/preflight.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("READY_FOR_ACQUISITION", state["status"])
+        self.assertEqual("PREFLIGHT_COMPLETE", state["phase"])
+        self.assertTrue(state["design"]["full_rank"])
+        self.assertTrue(state["design"]["contrasts_estimable"])
+        self.assertGreater(
+            state["storage"]["projected_safe_requirement_bytes"],
+            state["storage"]["projected_peak_bytes"],
+        )
+        self.assertEqual("PASS", state["storage"]["status"])
+        self.assertEqual("PASS", preflight["status"])
+        self.assertEqual("PASS", preflight["gates"]["salmon_index_reuse"])
+        self.assertEqual("PASS", preflight["gates"]["report_contract_preflight"])
 
     def test_launcher_requires_validated_prebuilt_index(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
