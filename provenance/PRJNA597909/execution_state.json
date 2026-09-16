@@ -1,10 +1,80 @@
 {
   "schema_version": "1.0",
   "study": "PRJNA597909",
-  "status": "NOT_STARTED",
+  "status": "READY_FOR_ACQUISITION",
+  "phase": "PREFLIGHT_COMPLETE",
+  "role": "FIRST_FULL_SCHISTOSOMA_RNASEQ_PROJECT",
   "helixforge_release": "v1.0.1",
   "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
+  "helixforge_smansoni_commit": "c722f7de0987ee830eee6cd320f681fbab3854ff",
   "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
   "analysis_mode": "full",
-  "benchmark": false
+  "benchmark": false,
+  "source_state": {
+    "master_merge_commit": "79c3e8fcf06c8184115b08915b414665d600d127",
+    "previous_project_pr_merged": true,
+    "previous_project_ci": "PASS",
+    "working_tree": "CLEAN"
+  },
+  "dataset": {
+    "runs": 20,
+    "samples": 20,
+    "layout": "PAIRED",
+    "fastq_files_expected": 40,
+    "compressed_input_bytes_expected": 33199877299,
+    "one_run_per_biological_sample": true
+  },
+  "design": {
+    "formula": "~ condition",
+    "variable": "condition",
+    "covariates": [],
+    "interaction": false,
+    "levels": {
+      "adult_control": 5,
+      "adult_pzq": 5,
+      "juvenile_control": 5,
+      "juvenile_pzq": 5
+    },
+    "contrast_count": 4,
+    "full_rank": true,
+    "contrasts_estimable": true
+  },
+  "storage": {
+    "previous_multiplier": 6.606121791075648,
+    "projected_peak_bytes": 219322432886,
+    "projected_safe_requirement_bytes": 274153041108,
+    "previous_150_gib_limit_classification": "PROJECT_SPECIFIC_CONSERVATIVE_LIMIT",
+    "status": "PASS"
+  },
+  "preflight": {
+    "attempts": 3,
+    "pre_science_corrections": [
+      "remove_git_dependency_from_compute_preflight",
+      "use_canonical_salmon_index_validator"
+    ],
+    "final_status": "PASS",
+    "metadata": "PASS",
+    "statistical_design": "PASS",
+    "reference_integrity": "PASS",
+    "salmon_index_reuse": "PASS",
+    "data_acquisition_urls": "PASS",
+    "report_contract": "PASS",
+    "output_destinations": "PASS",
+    "storage": "PASS"
+  },
+  "acquisition": {
+    "status": "NOT_STARTED",
+    "integrity": "NOT_APPLICABLE"
+  },
+  "execution": {
+    "status": "NOT_STARTED",
+    "normal_execution_first": true,
+    "resume_required": false,
+    "reentry_required": false
+  },
+  "safety": {
+    "other_projects_started": false,
+    "prjeb14695_started": false,
+    "prjeb32839_started": false
+  }
 }
