@@ -1,0 +1,5 @@
+contrast	numerator	denominator	log2fc_sign	genes_tested	genes_after_independent_filtering	significant	up	down	status
+condition__juvenile_pzq_vs_juvenile_control	juvenile_pzq	juvenile_control	positive=juvenile_pzq; negative=juvenile_control	9457	8906	204	107	97	PASS
+condition__adult_pzq_vs_adult_control	adult_pzq	adult_control	positive=adult_pzq; negative=adult_control	9457	9452	636	338	298	PASS
+condition__adult_control_vs_juvenile_control	adult_control	juvenile_control	positive=adult_control; negative=juvenile_control	9457	9452	1131	757	374	PASS
+condition__adult_pzq_vs_juvenile_pzq	adult_pzq	juvenile_pzq	positive=adult_pzq; negative=juvenile_pzq	9457	9452	1075	763	312	PASS

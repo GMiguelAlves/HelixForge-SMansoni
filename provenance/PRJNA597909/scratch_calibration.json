@@ -1,0 +1,10 @@
+{
+  "clean_multiplier": 5.006521180757693,
+  "clean_project_bytes": 166215888896,
+  "clean_work_bytes": 66597888000,
+  "current_project_bytes_before_cleanup": 166370869248,
+  "current_work_bytes_before_cleanup": 66752757760,
+  "input_fastq_bytes": 33199877299,
+  "prjna602528_multiplier": 6.606121791075648,
+  "recovery_overhead_bytes": 154980352
+}
