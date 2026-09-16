@@ -1,0 +1,13 @@
+{
+  "fail": 0,
+  "fastqc_records": 120,
+  "outliers": "none_obvious_in_frozen_PCA_and_heatmap",
+  "pass": 20,
+  "review": 0,
+  "salmon_mapping_max_percent": 89.9184,
+  "salmon_mapping_mean_percent": 87.955385,
+  "salmon_mapping_min_percent": 85.7756,
+  "samples": 20,
+  "trim_retention_max_percent": 100.0,
+  "trim_retention_min_percent": 100.0
+}
