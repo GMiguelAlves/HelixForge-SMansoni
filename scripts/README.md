@@ -19,3 +19,8 @@ material and are deliberately not versioned here.
 PCA, sample-correlation, expression-trajectory, and QC figures published for
 PRJNA602528. These plots are descriptive products of the Import-only run and
 must not be interpreted as differential-expression inference.
+
+`run_study.sh` starts a clean native execution by default. Recovery with the
+same inputs, parameters, work directory, and task cache must be requested
+explicitly with `HF_RESUME=1`; the launcher never tests resume by interrupting
+or altering a normal run.

@@ -56,6 +56,10 @@ Repository initialization and metadata/reference curation are complete.
 `PRJNA602528` completed QC, Salmon quantification, tximport, terminal-manifest
 validation, persistence, and cleanup under its `IMPORT_ONLY` contract. Its
 temporal figures are descriptive and no DESeq2 inference was performed.
+`PRJNA597909` then completed the full native route for 20 paired-end samples,
+including four preregistered Wald contrasts under `~ condition`. Its public
+products include gene-level matrices, DE tables, PCA, heatmap, volcano plots,
+performance summaries, and a portable terminal bundle for later integration.
 ChIP-seq, RNA-seq/ChIP-seq integration, cross-study meta-analysis, atlas
 construction, coexpression, and candidate prioritization remain planned parts
 of the repository, but require separate preregistration before execution.

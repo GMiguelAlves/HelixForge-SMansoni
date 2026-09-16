@@ -110,7 +110,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual([], offenders)
 
     def test_unstarted_projects_remain_frozen(self) -> None:
-        for study in set(STUDIES) - {"PRJNA602528"}:
+        for study in set(STUDIES) - {"PRJNA602528", "PRJNA597909"}:
             state = json.loads(
                 (ROOT / "provenance" / study / "execution_state.json").read_text(
                     encoding="utf-8"
@@ -120,11 +120,46 @@ class ProjectContracts(unittest.TestCase):
             self.assertEqual("v1.0.1", state["helixforge_release"], study)
             self.assertEqual(HELIXFORGE_V1_COMMIT, state["helixforge_commit"], study)
 
+    def test_prjna597909_execution_is_complete(self) -> None:
+        state = json.loads(
+            (ROOT / "provenance/PRJNA597909/execution_state.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        preflight = json.loads(
+            (ROOT / "provenance/PRJNA597909/preflight.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("READY_FOR_REVIEW", state["status"])
+        self.assertEqual("COMPLETE", state["phase"])
+        self.assertTrue(state["design"]["full_rank"])
+        self.assertTrue(state["design"]["contrasts_estimable"])
+        self.assertEqual("PASS", state["acquisition"]["integrity"])
+        self.assertEqual("PASS_WITH_LIMITATIONS", state["execution"]["process_status"])
+        self.assertEqual("TERMINAL_MANIFEST_ONLY", state["execution"]["reentry_scope"])
+        self.assertFalse(
+            state["execution"]["scientific_stages_recomputed_during_recovery"]
+        )
+        self.assertEqual("PASS", state["storage"]["cleanup"])
+        self.assertEqual(0, state["storage"]["scratch_bytes_after_cleanup"])
+        self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
+        self.assertFalse(state["safety"]["next_project_authorized"])
+        self.assertEqual("PASS", preflight["status"])
+        self.assertEqual("PASS", preflight["gates"]["salmon_index_reuse"])
+        self.assertEqual("PASS", preflight["gates"]["report_contract_preflight"])
+
     def test_launcher_requires_validated_prebuilt_index(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
         self.assertIn("--salmon_prebuilt_index", launcher)
         self.assertIn("--salmon_prebuilt_index_manifest", launcher)
         self.assertNotIn("salmon index ", launcher)
+
+    def test_launcher_uses_resume_only_when_explicitly_requested(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        self.assertIn('"${HF_RESUME:-0}" == 1', launcher)
+        self.assertIn("args+=(-resume)", launcher)
+        self.assertNotIn("-w \"$HF_WORK_ROOT\" -resume", launcher)
 
     def test_helixforge_release_pin_is_exact(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
@@ -171,7 +206,7 @@ class ProjectContracts(unittest.TestCase):
             if relative and (ROOT / relative).is_file()
         )
         forbidden = (
-            "/home/" + "ra236875",
+            "/home/" + "ra" + "236875",
             "/scratch/" + "Schisto-epigenetics",
             "C:\\Users\\" + "dilci",
             "BEGIN OPENSSH " + "PRIVATE KEY",
@@ -222,6 +257,91 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("NOT_APPLICABLE", state["validation"]["differential_expression"])
         self.assertEqual("PASS", state["validation"]["cleanup"])
         self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
+
+    def test_prjna597909_full_results_are_complete(self) -> None:
+        result_root = ROOT / "results/PRJNA597909"
+        manifest_path = result_root / "rnaseq/rnaseq_run_manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual("rnaseq_run_manifest", manifest["type"])
+        self.assertEqual("complete", manifest["status"])
+        self.assertEqual("salmon", manifest["quantification_method"])
+        self.assertEqual(20, len(manifest["samples"]))
+        self.assertEqual(4, len(manifest["contrasts"]))
+
+        portable_artifacts = [
+            artifact
+            for artifact in manifest["artifacts"]
+            if artifact["location"]["kind"] == "manifest_relative"
+        ]
+        self.assertEqual(8, len(portable_artifacts))
+        for artifact in portable_artifacts:
+            path = (manifest_path.parent / artifact["location"]["path"]).resolve()
+            self.assertTrue(path.is_file(), artifact["artifact_id"])
+            observed = hashlib.sha256(path.read_bytes()).hexdigest()
+            self.assertEqual(artifact["checksum"]["value"], observed)
+
+        validation = json.loads(
+            (result_root / "manifests/terminal_manifest_validation.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("complete", validation["status"])
+        self.assertEqual("valid", validation["schema"])
+        self.assertEqual("valid", validation["semantic"])
+
+        qc_rows = read_tsv(result_root / "qc/PRJNA597909_qc_summary.tsv")
+        self.assertEqual(20, len(qc_rows))
+        self.assertTrue(all(row["classification"] == "PASS" for row in qc_rows))
+
+        for matrix in ("counts_matrix.tsv", "tpm_matrix.tsv", "length_matrix.tsv"):
+            with (result_root / "expression" / matrix).open(
+                encoding="utf-8", newline=""
+            ) as handle:
+                rows = list(csv.reader(handle, delimiter="\t"))
+            self.assertEqual(20, len(rows[0]) - 1, matrix)
+            self.assertEqual(9914, len(rows) - 1, matrix)
+
+        expected_de = {
+            "condition__juvenile_pzq_vs_juvenile_control": (204, 107, 97),
+            "condition__adult_pzq_vs_adult_control": (636, 338, 298),
+            "condition__adult_control_vs_juvenile_control": (1131, 757, 374),
+            "condition__adult_pzq_vs_juvenile_pzq": (1075, 763, 312),
+        }
+        contrasts = read_tsv(
+            result_root / "differential_expression/contrast_summary.tsv"
+        )
+        self.assertEqual(4, len(contrasts))
+        for row in contrasts:
+            self.assertEqual(
+                expected_de[row["contrast"]],
+                (int(row["significant"]), int(row["up"]), int(row["down"])),
+            )
+            self.assertEqual("PASS", row["status"])
+
+        report = (result_root / "reports/PRJNA597909_execution_report.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("PRJNA597909_RNASEQ_ANALYSIS = PASS_WITH_LIMITATIONS", report)
+        self.assertTrue(report.rstrip().endswith("READY_FOR_PRJNA597909_REVIEW"))
+
+        final = json.loads(
+            (result_root / "reports/final_validation.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual("PASS_WITH_LIMITATIONS", final["status"])
+        self.assertTrue(final["ready_for_review"])
+        self.assertFalse(final["next_project_authorized"])
+
+        expected_html = {
+            "PRJNA597909_multiqc.html",
+            "nextflow_dag.html",
+            "nextflow_execution_report.html",
+            "nextflow_timeline.html",
+        }
+        observed_html = {
+            path.name for path in (result_root / "reports").glob("*.html")
+        }
+        self.assertEqual(expected_html, observed_html)
+        self.assertEqual([], list(result_root.rglob("*_fastqc.html")))
 
     def test_all_json_documents_parse(self) -> None:
         for path in ROOT.rglob("*.json"):

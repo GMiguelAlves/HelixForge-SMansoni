@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA597909",
+  "status": "PASS",
+  "runtime": {
+    "nextflow": "25.10.7",
+    "java": "21.0.12",
+    "salmon": "1.10.3",
+    "deseq2": "1.42.1",
+    "bioconductor": "3.18"
+  },
+  "metadata": {
+    "runs": 20,
+    "samples": 20,
+    "layout": "PAIRED",
+    "fastq_urls": 40,
+    "one_run_per_sample": true,
+    "status": "PASS"
+  },
+  "statistical_design": {
+    "formula": "~ condition",
+    "levels": 4,
+    "replicates_per_level": 5,
+    "contrasts": 4,
+    "full_rank": true,
+    "contrasts_estimable": true,
+    "status": "PASS"
+  },
+  "storage": {
+    "input_bytes": 33199877299,
+    "previous_conservative_multiplier": 6.606121791075648,
+    "projected_peak_bytes": 219322432886,
+    "safety_factor": 1.25,
+    "projected_safe_requirement_bytes": 274153041108,
+    "status": "PASS"
+  },
+  "gates": {
+    "reference_integrity": "PASS",
+    "salmon_index_reuse": "PASS",
+    "data_acquisition_preflight": "PASS",
+    "report_contract_preflight": "PASS",
+    "output_destination_preflight": "PASS",
+    "storage_preflight": "PASS"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "counts_from_abundance": "lengthScaledTPM",
+  "ignoreAfterBar": true,
+  "ignoreTxVersion": true,
+  "matrices": {
+    "counts_matrix.tsv": {
+      "genes": 9914,
+      "samples": 20,
+      "sha256": "9baa72a856a8b3e5e41b9133311387362b7191f3698e0792f2b5c7c4f65816a6"
+    },
+    "length_matrix.tsv": {
+      "genes": 9914,
+      "samples": 20,
+      "sha256": "021e0ed5d4b85d2c62e51fab1949897b0256db176ec59dc2c0a469963a72d89e"
+    },
+    "tpm_matrix.tsv": {
+      "genes": 9914,
+      "samples": 20,
+      "sha256": "1cfd1bf790d1c3dc7385897a9ec04fa1af452197fe0e507ffae6d26865a504d6"
+    }
+  },
+  "samples": 20,
+  "transcripts_per_sample_max": 10913,
+  "transcripts_per_sample_min": 10913
+}
