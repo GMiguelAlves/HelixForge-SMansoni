@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = PRJNA602528_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = PRJNA597909_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -59,7 +59,7 @@ it does not depend on `-resume` to avoid rebuilding it.
 | Order | Study | Runs | Biological samples | Initial execution |
 |---:|---|---:|---:|---|
 | 1 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
-| 2 | `PRJNA597909` | 20 | 20 | full RNA-seq |
+| 2 | `PRJNA597909` | 20 | 20 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; DE enabled |
 | 3 | `PRJEB14695` | 138 | 23 | full RNA-seq |
 | 4 | `PRJEB32839` | 150 | 75 | full RNA-seq |
 
@@ -68,6 +68,14 @@ operational calibration run. It is not a new benchmark of HelixForge. Its
 public design has one library per time point, so the frozen project stops after
 tximport and does not perform DESeq2 inference. The compact accepted products
 and execution report are available under [`results/PRJNA602528/`](results/PRJNA602528/).
+
+`PRJNA597909` is the first complete native RNA-seq application in this
+project. All 20 paired-end samples passed QC, Salmon quantification and
+tximport completed, and all four frozen DESeq2 contrasts were estimated. The
+accepted tables, figures, portable terminal manifest, and report are available
+under [`results/PRJNA597909/`](results/PRJNA597909/). Its
+`PASS_WITH_LIMITATIONS` classification records terminal-runtime recovery and
+the shared-NFS `-resume` limitation; the scientific stages themselves passed.
 
 ## Execution policy
 
@@ -103,7 +111,7 @@ execution must record the HelixForge tag and commit, reference checksums,
 commands, environment, Slurm metadata, terminal manifest, and an execution
 summary under `provenance/<study>/`.
 
-Completion of `PRJNA602528` does not authorize processing of another study,
+Completion of `PRJNA597909` does not authorize processing of another study,
 meta-analysis, atlas construction, coexpression, candidate prioritization, or
 epigenomic integration. Each requires its own reviewed execution contract.
 
