@@ -126,6 +126,12 @@ class ProjectContracts(unittest.TestCase):
         self.assertIn("--salmon_prebuilt_index_manifest", launcher)
         self.assertNotIn("salmon index ", launcher)
 
+    def test_launcher_uses_resume_only_when_explicitly_requested(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        self.assertIn('"${HF_RESUME:-0}" == 1', launcher)
+        self.assertIn("args+=(-resume)", launcher)
+        self.assertNotIn("-w \"$HF_WORK_ROOT\" -resume", launcher)
+
     def test_helixforge_release_pin_is_exact(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         server_template = (ROOT / "config/server.env.template").read_text(encoding="utf-8")
