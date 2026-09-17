@@ -69,7 +69,9 @@
     "audit_archive": "helixforge-smansoni-PRJEB14695-2026-09-17.zip",
     "audit_archive_bytes": 193499002,
     "audit_archive_sha256": "74be44d2cf041d1849055fb9984c0b900aa8080f0ed8f1f0481b0400a9bc4a2f",
-    "cleanup": "PENDING"
+    "scratch_bytes_recovered": 417136095414,
+    "scratch_bytes_after_cleanup": 0,
+    "cleanup": "PASS"
   },
   "validation": {
     "data_acquisition": "PASS",
@@ -89,7 +91,7 @@
     "provenance": "PASS",
     "persistent_copy": "PASS",
     "audit_package": "PASS",
-    "cleanup": "PENDING",
+    "cleanup": "PASS",
     "analysis": "PASS_WITH_LIMITATIONS"
   },
   "limitations": [
