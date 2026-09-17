@@ -76,7 +76,7 @@ def main() -> int:
     accounting = json.loads(args.sample_accounting.read_text(encoding="utf-8"))
     require(integrity.get("status") == "PASS", "FASTQ integrity did not pass", errors)
     require(integrity.get("runs") == EXPECTED_RUNS, "unexpected run count", errors)
-    require(integrity.get("observed_fastq_files") == EXPECTED_FASTQS, "unexpected FASTQ count", errors)
+    require(integrity.get("fastq_files_observed") == EXPECTED_FASTQS, "unexpected FASTQ count", errors)
     require(accounting.get("status") == "PASS", "sample accounting did not pass", errors)
     require(accounting.get("biological_samples") == EXPECTED_SAMPLES, "unexpected biological sample count", errors)
     require(accounting.get("deseq2_observations") == EXPECTED_SAMPLES, "DESeq2 observations are not biological samples", errors)
