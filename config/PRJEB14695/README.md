@@ -25,3 +25,14 @@
 - `metadata/PRJEB14695/metadata.csv`: contrato run-level consumido pelo HelixForge.
 - `pipeline_config.sh` e `user_settings.sh`: adaptadores portáteis para o contrato atual.
 - `de_spec.json`: desenho/contrastes versionados, quando estimáveis.
+
+O launcher preserva integralmente os campos científicos de `de_spec.json` e
+materializa apenas uma cópia operacional no diretório de resultados. Nessa
+cópia, o `target_dir` relativo é resolvido sob a raiz isolada do projeto; os
+checksums do documento de origem e da cópia operacional ficam registrados em
+`pipeline_info/runtime_specs/de_spec.provenance.json`.
+
+O relatório de genes candidatos permanece desativado para este estudo porque
+não existe uma lista de candidatos definida antes da análise. Isso não remove
+os relatórios HTML de execução, QC e expressão diferencial exigidos para a
+revisão do projeto.
