@@ -161,6 +161,21 @@ class ProjectContracts(unittest.TestCase):
         self.assertIn("args+=(-resume)", launcher)
         self.assertNotIn("-w \"$HF_WORK_ROOT\" -resume", launcher)
 
+    def test_launcher_requires_certified_python_runtime(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        preflight = (ROOT / "scripts/validate/preflight_server.sh").read_text(
+            encoding="utf-8"
+        )
+        slurm = (ROOT / "config/slurm.config").read_text(encoding="utf-8")
+        template = (ROOT / "config/server.env.template").read_text(encoding="utf-8")
+        for source in (launcher, preflight, template):
+            self.assertIn("HF_CERTIFIED_RUNTIME_PATH", source)
+        self.assertIn("import jsonschema, sys", launcher)
+        self.assertIn("import jsonschema, sys", preflight)
+        self.assertIn('env PATH="$HF_CERTIFIED_RUNTIME_PATH"', launcher)
+        self.assertIn("env.PATH = hfEnv.HF_CERTIFIED_RUNTIME_PATH", slurm)
+        self.assertNotIn("--export=ALL", slurm)
+
     def test_helixforge_release_pin_is_exact(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         server_template = (ROOT / "config/server.env.template").read_text(encoding="utf-8")
