@@ -147,6 +147,17 @@ and checksums are retained separately in the verified private audit archive
 - Mapping percentages vary across biological samples; they are reported, not
   hidden or used for post-hoc sample removal.
 
+## Persistence and cleanup
+
+- Sanitized public results: preserved in the project repository
+- Private audit archive: verified and preserved in home storage
+- Raw FASTQs, workdir, scratch results, runtime state, and reproducible
+  intermediates: removed after persistence checks
+- Scratch space recovered: 417,136,095,414 bytes (approximately 388.5 GiB)
+- Remaining study-specific scratch footprint: 0 bytes
+- Shared reference bundle and validated Salmon index: preserved
+- Other registered studies: untouched
+
 ## Final classification
 
 ```text
@@ -166,6 +177,8 @@ DIFFERENTIAL_EXPRESSION = PASS
 TERMINAL_MANIFEST = PASS
 HTML_REPORTS = PASS
 PUBLIC_SANITIZATION = PASS
+PRIVATE_AUDIT_PACKAGE = PASS
+CLEANUP = PASS
 
 PRJEB14695_RNASEQ_ANALYSIS = PASS_WITH_LIMITATIONS
 ```
