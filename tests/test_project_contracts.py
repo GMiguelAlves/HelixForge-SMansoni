@@ -260,6 +260,13 @@ class ProjectContracts(unittest.TestCase):
         self.assertIn("HF_PROJECT_RESULTS_ROOT", launcher)
         self.assertIn("HF_PROJECT_RESULTS_ROOT", settings)
 
+    def test_launcher_resolves_de_outputs_inside_project_results(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        self.assertIn('runtime_spec_dir="$outdir/pipeline_info/runtime_specs"', launcher)
+        self.assertIn('args+=(--rnaseq_de_spec "$runtime_de_spec")', launcher)
+        self.assertIn('parts[0] == "results"', launcher)
+        self.assertIn('"scientific_fields_changed": False', launcher)
+
     def test_launcher_requires_certified_python_runtime(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
         preflight = (ROOT / "scripts/validate/preflight_server.sh").read_text(

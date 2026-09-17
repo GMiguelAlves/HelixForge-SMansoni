@@ -30,6 +30,50 @@ index_manifest="$HF_PACKAGE_ROOT/provenance/reference/salmon_index_manifest.json
 [[ -d "$SALMON_INDEX_DIR" ]] || { echo "Salmon index not found: $SALMON_INDEX_DIR" >&2; exit 2; }
 [[ -s "$index_manifest" ]] || { echo "Salmon index manifest not found: $index_manifest" >&2; exit 2; }
 args=(run "$HF_HELIXFORGE_ROOT" -profile "${HF_PROFILES:-apptainer,slurm}" -c "$HF_PACKAGE_ROOT/config/slurm.config" -w "$HF_WORK_ROOT" --workflow rnaseq --rnaseq_run_mode "$mode" --rnaseq_analysis_mode quantification --rnaseq_config "$config" --rnaseq_import_policy production_v1 --rnaseq_library_protocol full_length --rnaseq_counts_from_abundance lengthScaledTPM --salmon_prebuilt_index "$SALMON_INDEX_DIR" --salmon_prebuilt_index_manifest "$index_manifest" --salmon_validate_mappings true --rnaseq_report_enabled false --outdir "$outdir" -with-report "$outdir/execution_report.html" -with-trace "$outdir/trace.tsv" -with-timeline "$outdir/timeline.html" -with-dag "$outdir/dag.html")
+if [[ -n "${HF_RUN_NAME:-}" ]]; then args+=(-name "$HF_RUN_NAME"); fi
 if [[ "${HF_RESUME:-0}" == 1 ]]; then args+=(-resume); fi
-if [[ "$mode" == full ]]; then args+=(--rnaseq_de_spec "$HF_PACKAGE_ROOT/config/$project/de_spec.json"); fi
+if [[ "$mode" == full ]]; then
+    source_de_spec="$HF_PACKAGE_ROOT/config/$project/de_spec.json"
+    runtime_spec_dir="$outdir/pipeline_info/runtime_specs"
+    runtime_de_spec="$runtime_spec_dir/de_spec.json"
+    runtime_de_provenance="$runtime_spec_dir/de_spec.provenance.json"
+    mkdir -p "$runtime_spec_dir"
+    python3 - "$source_de_spec" "$runtime_de_spec" "$runtime_de_provenance" "$outdir" <<'PY'
+import hashlib
+import json
+import pathlib
+import sys
+
+source = pathlib.Path(sys.argv[1])
+runtime = pathlib.Path(sys.argv[2])
+provenance = pathlib.Path(sys.argv[3])
+outdir = pathlib.Path(sys.argv[4]).resolve()
+document = json.loads(source.read_text(encoding="utf-8"))
+declared = pathlib.Path(document["target_dir"])
+if declared.is_absolute():
+    resolved = declared
+else:
+    parts = declared.parts[1:] if declared.parts and declared.parts[0] == "results" else declared.parts
+    resolved = outdir.joinpath(*parts)
+document["target_dir"] = str(resolved)
+payload = json.dumps(document, indent=2, sort_keys=True) + "\n"
+runtime.write_text(payload, encoding="utf-8")
+provenance.write_text(
+    json.dumps(
+        {
+            "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+            "runtime_sha256": hashlib.sha256(payload.encode("utf-8")).hexdigest(),
+            "declared_target_dir": str(declared),
+            "resolved_target_dir": str(resolved),
+            "scientific_fields_changed": False,
+        },
+        indent=2,
+        sort_keys=True,
+    )
+    + "\n",
+    encoding="utf-8",
+)
+PY
+    args+=(--rnaseq_de_spec "$runtime_de_spec")
+fi
 env PATH="$HF_CERTIFIED_RUNTIME_PATH" "$nextflow_bin" "${args[@]}"
