@@ -17,7 +17,7 @@ export REF_TRANSCRIPTS_FA="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/schistosoma_manson
 export REF_GTF="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf"
 export REF_GFF3="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gff3"
 export SALMON_INDEX_DIR="${HF_REFERENCE_ROOT}/SM_V10_WBPS19/salmon_index_k31"
-export QUANT_DIR="${HF_RESULTS_ROOT}/PRJEB14695/compatibility/quants"
+export QUANT_DIR="${HF_PROJECT_RESULTS_ROOT:-${HF_RESULTS_ROOT}/PRJEB14695}/compatibility/quants"
 
 export QUANT_METHOD="salmon"
 export SALMON_KMER_SIZE=31

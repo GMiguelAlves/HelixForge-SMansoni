@@ -254,6 +254,12 @@ class ProjectContracts(unittest.TestCase):
         self.assertIn("args+=(-resume)", launcher)
         self.assertNotIn("-w \"$HF_WORK_ROOT\" -resume", launcher)
 
+    def test_launcher_allows_isolated_project_results(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        settings = (ROOT / "config/PRJEB14695/user_settings.sh").read_text(encoding="utf-8")
+        self.assertIn("HF_PROJECT_RESULTS_ROOT", launcher)
+        self.assertIn("HF_PROJECT_RESULTS_ROOT", settings)
+
     def test_launcher_requires_certified_python_runtime(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
         preflight = (ROOT / "scripts/validate/preflight_server.sh").read_text(

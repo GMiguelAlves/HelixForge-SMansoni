@@ -20,7 +20,7 @@ current=$(git -c safe.directory="$HF_HELIXFORGE_ROOT" -C "$HF_HELIXFORGE_ROOT" r
 nextflow_bin=${HF_NEXTFLOW_BIN:-$HF_HELIXFORGE_ROOT/nextflow}
 command -v "$nextflow_bin" >/dev/null 2>&1 || [[ -x "$nextflow_bin" ]]
 config="$HF_PACKAGE_ROOT/config/$project/pipeline_config.sh"
-outdir="$HF_RESULTS_ROOT/$project"
+outdir="${HF_PROJECT_RESULTS_ROOT:-$HF_RESULTS_ROOT/$project}"
 # Load only the tracked study settings needed to bind the immutable external
 # index. Nextflow remains responsible for all scientific execution.
 # shellcheck disable=SC1090
