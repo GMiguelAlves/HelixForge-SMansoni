@@ -258,6 +258,10 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("PASS", state["dataset"]["technical_run_aggregation"])
         self.assertEqual("PASS", state["execution"]["resume_cache_reuse"])
         self.assertEqual(815, state["execution"]["eligible_upstream_tasks_cached"])
+        self.assertEqual("PASS", state["storage"]["audit_package"])
+        self.assertEqual("PASS", state["storage"]["cleanup"])
+        self.assertEqual(417136095414, state["storage"]["scratch_bytes_recovered"])
+        self.assertEqual(0, state["storage"]["scratch_bytes_after_cleanup"])
         self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
         self.assertFalse(state["safety"]["next_project_authorized"])
 
