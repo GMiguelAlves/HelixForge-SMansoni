@@ -9,7 +9,9 @@ Use environment variables rather than committed absolute paths:
 - `HF_DATA_ROOT`: downloaded FASTQs on scratch;
 - `HF_REFERENCE_ROOT`: shared SM_V10/WBPS19 reference and Salmon index;
 - `HF_RESULTS_ROOT`: current study results;
-- `HF_WORK_ROOT`: current study Nextflow work directory.
+- `HF_WORK_ROOT`: current study Nextflow work directory;
+- `HF_CERTIFIED_RUNTIME_PATH`: complete site runtime path, with the certified
+  Python environment providing `jsonschema` before other Python installations.
 
 Copy `config/server.env.template` to the ignored `config/server.env`, set paths
 for the target site, and source it. Never commit usernames, credentials,
@@ -58,20 +60,17 @@ explicitly reviewed project-specific authorization.
 8. Remove only that study's verified reproducible intermediates from scratch.
 
 `-resume` requires both the Nextflow task database and unchanged work outputs.
-Its top-level persistence was environment-dependent during HelixForge v1
-validation; confirm cache reuse on this site rather than assuming it.
-During `PRJNA602528`, eligible QC tasks were not recovered from the shared NFS
-task cache. A controlled post-QC re-entry consumed the already validated merged
-FASTQs and completed the native Salmon and Import layers. This is an operational
-runtime limitation and did not alter scientific parameters or results.
+The earlier apparent shared-NFS persistence limitation was traced to direct JAR
+invocation and is resolved by the official Nextflow launcher. Future runs must
+retain the same launch directory, cache directory and work directory.
 
-During `PRJNA597909`, a controlled `-resume` probe likewise did not reuse
-eligible shared-NFS cache entries and was stopped before expensive work
-repeated. The original scientific execution had already completed QC, Salmon,
-Import, and DESeq2. Only the terminal manifest was recovered under Slurm after
-correcting the host runtime order so that the certified Python environment
-provides `jsonschema`. Future site environments must keep this runtime order;
-compute jobs must not depend on Git being installed.
+The site launcher exports the certified runtime path before starting Nextflow,
+and the site config injects only that `PATH` into compute processes. It does not
+request blanket export of the submission environment. Both the server preflight
+and the launcher require `python3 -c "import jsonschema"` to pass before
+scientific submission. This hardening prevents the terminal manifest failure
+observed during `PRJNA597909`; compute jobs must not depend on Git being
+installed.
 
 ## Persistent records
 
