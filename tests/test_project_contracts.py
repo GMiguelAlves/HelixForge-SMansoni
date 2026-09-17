@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 HELIXFORGE_V1_COMMIT = "e41d221657b8e0bf2700bccd547e15032ccac36f"
+PRJEB14695_HELIXFORGE_COMMIT = "42864266892d1165477bb3b33c919e1fabb28ad1"
 REFERENCE_SHA256 = {
     "genome": "d93a8ff7541d6108b0db088b43e9dc275de45b1d263cd42253877944cceaa1a9",
     "transcriptome": "ef6f9807ba3060d901f3bc89eca6eca2bd0598d162981c7fd3417bc26701dbb4",
@@ -203,7 +204,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual([], offenders)
 
     def test_unstarted_projects_remain_frozen(self) -> None:
-        for study in set(STUDIES) - {"PRJNA602528", "PRJNA597909"}:
+        for study in set(STUDIES) - {"PRJNA602528", "PRJNA597909", "PRJEB14695"}:
             state = json.loads(
                 (ROOT / "provenance" / study / "execution_state.json").read_text(
                     encoding="utf-8"
@@ -241,6 +242,24 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("PASS", preflight["status"])
         self.assertEqual("PASS", preflight["gates"]["salmon_index_reuse"])
         self.assertEqual("PASS", preflight["gates"]["report_contract_preflight"])
+
+    def test_prjeb14695_execution_is_complete(self) -> None:
+        state = json.loads(
+            (ROOT / "provenance/PRJEB14695/execution_state.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("READY_FOR_REVIEW", state["status"])
+        self.assertEqual("COMPLETE", state["phase"])
+        self.assertEqual(PRJEB14695_HELIXFORGE_COMMIT, state["helixforge_commit"])
+        self.assertEqual(138, state["dataset"]["runs"])
+        self.assertEqual(23, state["dataset"]["samples"])
+        self.assertEqual("PASS", state["dataset"]["run_to_sample_mapping"])
+        self.assertEqual("PASS", state["dataset"]["technical_run_aggregation"])
+        self.assertEqual("PASS", state["execution"]["resume_cache_reuse"])
+        self.assertEqual(815, state["execution"]["eligible_upstream_tasks_cached"])
+        self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
+        self.assertFalse(state["safety"]["next_project_authorized"])
 
     def test_launcher_requires_validated_prebuilt_index(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
@@ -461,6 +480,76 @@ class ProjectContracts(unittest.TestCase):
         observed_html = {
             path.name for path in (result_root / "reports").glob("*.html")
         }
+        self.assertEqual(expected_html, observed_html)
+        self.assertEqual([], list(result_root.rglob("*_fastqc.html")))
+
+    def test_prjeb14695_full_results_are_complete(self) -> None:
+        result_root = ROOT / "results/PRJEB14695"
+        manifest = json.loads(
+            (result_root / "manifests/rnaseq_run_manifest.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("rnaseq_run_manifest", manifest["type"])
+        self.assertEqual("complete", manifest["status"])
+        self.assertEqual("salmon", manifest["quantification_method"])
+        self.assertEqual(23, len(manifest["samples"]))
+        self.assertEqual(6, len(manifest["contrasts"]))
+
+        validation = json.loads(
+            (result_root / "manifests/terminal_manifest_validation.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("complete", validation["status"])
+        self.assertEqual("valid", validation["schema"])
+        self.assertEqual("valid", validation["semantic"])
+
+        for matrix in ("counts_matrix.tsv", "tpm_matrix.tsv", "length_matrix.tsv"):
+            with (result_root / "expression" / matrix).open(
+                encoding="utf-8", newline=""
+            ) as handle:
+                rows = list(csv.reader(handle, delimiter="\t"))
+            self.assertEqual(23, len(rows[0]) - 1, matrix)
+            self.assertEqual(9914, len(rows) - 1, matrix)
+
+        expected_significant = {
+            "condition__ovary_mixed_sex_vs_ovary_single_sex": 2777,
+            "condition__testis_mixed_sex_vs_testis_single_sex": 33,
+            "condition__whole_female_mixed_sex_vs_whole_female_single_sex": 1019,
+            "condition__whole_male_mixed_sex_vs_whole_male_single_sex": 214,
+            "condition__whole_female_mixed_sex_vs_whole_male_mixed_sex": 3,
+            "condition__whole_female_single_sex_vs_whole_male_single_sex": 587,
+        }
+        contrasts = read_tsv(result_root / "differential_expression/deg_summary.tsv")
+        self.assertEqual(6, len(contrasts))
+        for row in contrasts:
+            self.assertEqual(9517, int(row["n_genes"]))
+            self.assertEqual(23, int(row["n_samples"]))
+            self.assertEqual(expected_significant[row["contrast"]], int(row["n_significant"]))
+            self.assertEqual("ok", row["status"])
+
+        final = json.loads(
+            (result_root / "reports/final_validation.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual("PASS_WITH_LIMITATIONS", final["status"])
+        self.assertTrue(final["ready_for_review"])
+        self.assertEqual("PASS", final["gates"]["resume_cache_reuse"])
+        self.assertEqual({"CACHED": 815, "COMPLETED": 12}, final["trace"])
+
+        report = (result_root / "reports/PRJEB14695_execution_report.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("PRJEB14695_RNASEQ_ANALYSIS = PASS_WITH_LIMITATIONS", report)
+        self.assertTrue(report.rstrip().endswith("READY_FOR_PRJEB14695_REVIEW"))
+
+        expected_html = {
+            "PRJEB14695_multiqc.html",
+            "nextflow_dag.html",
+            "nextflow_execution_report.html",
+            "nextflow_timeline.html",
+        }
+        observed_html = {path.name for path in (result_root / "reports").glob("*.html")}
         self.assertEqual(expected_html, observed_html)
         self.assertEqual([], list(result_root.rglob("*_fastqc.html")))
 
