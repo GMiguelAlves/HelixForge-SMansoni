@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJEB14695",
+  "status": "PASS",
+  "completed_on": "2026-09-17",
+  "scope": "study_scratch_root",
+  "bytes_recovered": 417136095414,
+  "scratch_bytes_after_cleanup": 0,
+  "removed": [
+    "raw sequencing files",
+    "Nextflow work directory",
+    "temporary runtime state",
+    "scratch result copy",
+    "reproducible intermediates"
+  ],
+  "preserved": [
+    "sanitized public result bundle in Git",
+    "verified private audit archive in home storage",
+    "shared SM_V10/WBPS19 reference bundle",
+    "shared validated Salmon index",
+    "other registered studies"
+  ],
+  "audit_archive": "helixforge-smansoni-PRJEB14695-2026-09-17.zip",
+  "audit_archive_sha256": "74be44d2cf041d1849055fb9984c0b900aa8080f0ed8f1f0481b0400a9bc4a2f",
+  "next_project_authorized": false
+}
