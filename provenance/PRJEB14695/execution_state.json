@@ -1,10 +1,107 @@
 {
   "schema_version": "1.0",
   "study": "PRJEB14695",
-  "status": "NOT_STARTED",
+  "status": "READY_FOR_REVIEW",
+  "phase": "COMPLETE",
+  "role": "FULL_SCHISTOSOMA_RNASEQ_PROJECT_WITH_TECHNICAL_RUN_AGGREGATION",
+  "execution_class": "FULL_NATIVE_RNASEQ_RUN",
   "helixforge_release": "v1.0.1",
-  "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
+  "helixforge_commit": "42864266892d1165477bb3b33c919e1fabb28ad1",
   "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
   "analysis_mode": "full",
-  "benchmark": false
+  "benchmark": false,
+  "dataset": {
+    "runs": 138,
+    "samples": 23,
+    "layout": "PAIRED",
+    "fastq_files": 276,
+    "compressed_input_bytes": 89131626404,
+    "technical_runs_per_sample": 6,
+    "run_to_sample_mapping": "PASS",
+    "technical_run_aggregation": "PASS"
+  },
+  "design": {
+    "formula": "~ condition",
+    "variable": "condition",
+    "covariates": [],
+    "interaction": false,
+    "contrast_count": 6,
+    "full_rank": true,
+    "contrasts_estimable": true
+  },
+  "acquisition": {
+    "completion": true,
+    "integrity": "PASS",
+    "fastq_files_observed": 276,
+    "compressed_bytes_observed": 89131626404,
+    "pairing": "PASS",
+    "gzip": "PASS",
+    "official_checksums": "PASS"
+  },
+  "execution": {
+    "process_status": "PASS_WITH_LIMITATIONS",
+    "controlled_resume_succeeded": true,
+    "eligible_upstream_tasks_cached": 815,
+    "tasks_completed_after_fix": 12,
+    "tasks_failed_after_fix": 0,
+    "resume_cache_reuse": "PASS",
+    "initial_failure_scope": "IMPORT_SAMPLE_TABLE_VALIDATION",
+    "initial_failure_scientific_effect": false
+  },
+  "science": {
+    "quantification": "Salmon 1.10.3",
+    "import_policy": "production_v1",
+    "counts_from_abundance": "lengthScaledTPM",
+    "genes": 9914,
+    "mapping_percent_min": 39.18631012144091,
+    "mapping_percent_mean": 71.06903393656481,
+    "mapping_percent_max": 85.66846135536646,
+    "differential_expression_contrasts": 6
+  },
+  "storage": {
+    "preflight": "PASS",
+    "raw_bytes_before_cleanup": 89131626404,
+    "work_bytes_before_cleanup": 163831477870,
+    "results_bytes_before_cleanup": 703719628,
+    "state_bytes_before_cleanup": 39259871,
+    "persistent_copy": "PASS",
+    "audit_package": "PASS",
+    "audit_archive": "helixforge-smansoni-PRJEB14695-2026-09-17.zip",
+    "audit_archive_bytes": 193499002,
+    "audit_archive_sha256": "74be44d2cf041d1849055fb9984c0b900aa8080f0ed8f1f0481b0400a9bc4a2f",
+    "scratch_bytes_recovered": 417136095414,
+    "scratch_bytes_after_cleanup": 0,
+    "cleanup": "PASS"
+  },
+  "validation": {
+    "data_acquisition": "PASS",
+    "fastq_integrity": "PASS",
+    "reference_integrity": "PASS",
+    "salmon_index_reuse": "PASS",
+    "metadata": "PASS",
+    "run_to_sample_mapping": "PASS",
+    "technical_run_aggregation": "PASS",
+    "statistical_design": "PASS",
+    "technical_execution": "PASS_WITH_LIMITATIONS",
+    "resume_cache_reuse": "PASS",
+    "qc": "PASS",
+    "expression_import": "PASS",
+    "differential_expression": "PASS",
+    "terminal_manifest": "PASS",
+    "provenance": "PASS",
+    "persistent_copy": "PASS",
+    "audit_package": "PASS",
+    "cleanup": "PASS",
+    "analysis": "PASS_WITH_LIMITATIONS"
+  },
+  "limitations": [
+    "The first execution stopped at Import sample-table validation because technical_unit was incorrectly treated as invariant.",
+    "HelixForge PR 88 corrected the run-level field contract; the controlled resume reused all 815 eligible upstream tasks.",
+    "Candidate-gene reporting was not run because no candidate list was preregistered for this study."
+  ],
+  "safety": {
+    "other_projects_started": false,
+    "prjeb32839_started": false,
+    "next_project_authorized": false
+  }
 }

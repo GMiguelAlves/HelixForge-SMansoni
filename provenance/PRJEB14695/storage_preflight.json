@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJEB14695",
+  "status": "PASS",
+  "input_estimate_bytes": 89131626404,
+  "input_estimate_gb_decimal": 89.131626404,
+  "clean_footprint_multiplier": 5.007,
+  "projected_clean_peak_bytes": 446282053405,
+  "safety_margin_fraction": 0.25,
+  "safe_requirement_bytes": 557852566756,
+  "available_scratch_bytes_observed": 5062959366144,
+  "approved_project_limit_bytes": 697932185600,
+  "warning_threshold_bytes": 536870912000,
+  "stop_threshold_bytes": 644245094400,
+  "hard_limit_bytes": 697932185600,
+  "max_concurrent_jobs": 8,
+  "filesystem_scope": "/scratch",
+  "notes": [
+    "The approved project limit is self-imposed and does not imply an exclusive reservation of shared capacity.",
+    "Availability must be checked again immediately before acquisition and workflow submission."
+  ]
+}

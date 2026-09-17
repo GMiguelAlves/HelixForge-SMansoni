@@ -1,0 +1,61 @@
+{
+  "design": {
+    "all_contrasts_estimable": true,
+    "contrasts": 6,
+    "covariates": [],
+    "formula": "~ condition",
+    "full_rank": true,
+    "interactions": [],
+    "levels": [
+      "ovary_mixed_sex",
+      "ovary_single_sex",
+      "testis_mixed_sex",
+      "testis_single_sex",
+      "whole_female_mixed_sex",
+      "whole_female_single_sex",
+      "whole_male_mixed_sex",
+      "whole_male_single_sex"
+    ],
+    "matrix_columns": 8,
+    "matrix_rows": 23,
+    "rank": 8,
+    "reference_level": "ovary_mixed_sex",
+    "variable": "condition"
+  },
+  "ena_snapshot": {
+    "query": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJEB14695&result=read_run&fields=study_accession%2Csecondary_study_accession%2Crun_accession%2Cexperiment_accession%2Csample_accession%2Csecondary_sample_accession%2Csample_alias%2Csample_title%2Csample_description%2Cexperiment_title%2Clibrary_name%2Clibrary_layout%2Clibrary_strategy%2Clibrary_source%2Clibrary_selection%2Cinstrument_platform%2Cinstrument_model%2Cfastq_ftp%2Cfastq_md5%2Cfastq_bytes%2Cread_count%2Cbase_count%2Cfirst_public&format=tsv&download=false",
+    "rows": 138,
+    "sha256": "500e801d87ff8a7351bea137f27023c026203fea8c9d5df5632dc3a4c4c3fbba",
+    "source": "ENA Portal API"
+  },
+  "errors": [],
+  "gates": {
+    "accession_conflict": "PASS",
+    "biological_sample_accounting": "PASS",
+    "ena_reconciliation": "PASS",
+    "run_to_sample_mapping": "PASS",
+    "statistical_design_preflight": "PASS",
+    "technical_run_aggregation": "PASS"
+  },
+  "run_inventory": {
+    "duplicate_assignments": 0,
+    "ena_live": 138,
+    "expected": 138,
+    "frozen": 138,
+    "mapped": 138,
+    "orphan_runs": 0,
+    "unmapped": 0,
+    "workflow_metadata": 138
+  },
+  "sample_accounting": {
+    "aggregation_policy": "trim_each_run_then_concatenate_by_mate_before_salmon",
+    "biological_samples": 23,
+    "deseq2_observations": 23,
+    "runs_per_sample_max": 6,
+    "runs_per_sample_min": 6,
+    "technical_runs_are_independent_observations": false
+  },
+  "schema_version": "1.0",
+  "status": "PASS",
+  "study": "PRJEB14695"
+}

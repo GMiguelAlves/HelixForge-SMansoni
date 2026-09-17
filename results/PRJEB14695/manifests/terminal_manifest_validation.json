@@ -1,0 +1,9 @@
+{
+  "filesystem": "tracked_inputs_verified",
+  "manifest_id": "modest_mahavira.rnaseq",
+  "schema": "valid",
+  "schema_version": "1.0",
+  "semantic": "valid",
+  "status": "complete",
+  "type": "integration_manifest_validation"
+}

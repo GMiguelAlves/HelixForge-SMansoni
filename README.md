@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = PRJNA597909_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = PRJEB14695_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -60,7 +60,7 @@ it does not depend on `-resume` to avoid rebuilding it.
 |---:|---|---:|---:|---|
 | 1 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
 | 2 | `PRJNA597909` | 20 | 20 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; DE enabled |
-| 3 | `PRJEB14695` | 138 | 23 | full RNA-seq |
+| 3 | `PRJEB14695` | 138 | 23 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; technical runs aggregated before inference |
 | 4 | `PRJEB32839` | 150 | 75 | full RNA-seq |
 
 `PRJNA602528` is the first completed real *S. mansoni* application and
@@ -76,6 +76,20 @@ accepted tables, figures, portable terminal manifest, and report are available
 under [`results/PRJNA597909/`](results/PRJNA597909/). Its
 `PASS_WITH_LIMITATIONS` classification records terminal-runtime recovery and
 the shared-NFS `-resume` limitation; the scientific stages themselves passed.
+
+`PRJEB14695` completed the native RNA-seq path for 138 paired-end technical
+runs representing 23 biological samples. Run-to-sample mapping and aggregation
+were enforced as scientific gates before tximport and DESeq2. The first attempt
+exposed an overly strict validation of the run-level `technical_unit` field;
+the reviewed HelixForge correction was then validated by a controlled resume
+that reused all 815 eligible upstream tasks. The accepted matrices, six frozen
+contrasts, figures, HTML reports, terminal manifest, and validation summary are
+available under [`results/PRJEB14695/`](results/PRJEB14695/).
+
+The repository-wide baseline remains HelixForge `v1.0.1` at the commit listed
+above. `PRJEB14695` additionally pins the reviewed post-release contract fix at
+commit `42864266892d1165477bb3b33c919e1fabb28ad1`; this amendment is recorded in
+its execution state and does not rewrite the provenance of earlier studies.
 
 ## Execution policy
 
@@ -111,7 +125,7 @@ execution must record the HelixForge tag and commit, reference checksums,
 commands, environment, Slurm metadata, terminal manifest, and an execution
 summary under `provenance/<study>/`.
 
-Completion of `PRJNA597909` does not authorize processing of another study,
+Completion of `PRJEB14695` does not authorize processing of another study,
 meta-analysis, atlas construction, coexpression, candidate prioritization, or
 epigenomic integration. Each requires its own reviewed execution contract.
 

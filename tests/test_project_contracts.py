@@ -2,14 +2,18 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import importlib.util
 import json
+import shutil
 import subprocess
+import tempfile
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 HELIXFORGE_V1_COMMIT = "e41d221657b8e0bf2700bccd547e15032ccac36f"
+PRJEB14695_HELIXFORGE_COMMIT = "42864266892d1165477bb3b33c919e1fabb28ad1"
 REFERENCE_SHA256 = {
     "genome": "d93a8ff7541d6108b0db088b43e9dc275de45b1d263cd42253877944cceaa1a9",
     "transcriptome": "ef6f9807ba3060d901f3bc89eca6eca2bd0598d162981c7fd3417bc26701dbb4",
@@ -24,12 +28,102 @@ STUDIES = {
 }
 
 
+def load_prjeb14695_preflight():
+    path = ROOT / "scripts/validate/preflight_prjeb14695.py"
+    spec = importlib.util.spec_from_file_location("preflight_prjeb14695", path)
+    module = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    spec.loader.exec_module(module)
+    return module
+
+
+def write_ena_fixture(root: Path, destination: Path) -> None:
+    runs = read_tsv(root / "metadata/PRJEB14695/runs.tsv")
+    samples = {row["sample_id"]: row for row in read_tsv(root / "metadata/PRJEB14695/samples.tsv")}
+    fields = [
+        "run_accession", "study_accession", "secondary_study_accession",
+        "experiment_accession", "sample_accession", "secondary_sample_accession",
+        "sample_alias", "library_name", "library_layout", "library_strategy",
+        "library_source", "fastq_ftp", "fastq_md5", "fastq_bytes",
+        "read_count", "base_count", "first_public",
+    ]
+    with destination.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        for run in runs:
+            sample = samples[run["sample_id"]]
+            writer.writerow({
+                "run_accession": run["run_accession"],
+                "study_accession": "PRJEB14695",
+                "secondary_study_accession": "ERP016356",
+                "experiment_accession": run["experiment_accession"],
+                "sample_accession": run["biosample"],
+                "secondary_sample_accession": run["secondary_biosample"],
+                "sample_alias": sample["source_sample_name"],
+                "library_name": run["library_name"],
+                "library_layout": "PAIRED",
+                "library_strategy": "RNA-Seq",
+                "library_source": "TRANSCRIPTOMIC",
+                "fastq_ftp": ";".join((run["fastq_1_url"], run["fastq_2_url"])),
+                "fastq_md5": ";".join((run["fastq_1_md5"], run["fastq_2_md5"])),
+                "fastq_bytes": ";".join((run["fastq_1_bytes"], run["fastq_2_bytes"])),
+                "read_count": run["read_count"],
+                "base_count": run["base_count"],
+                "first_public": run["ena_first_public"],
+            })
+
+
 def read_tsv(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8", newline="") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
 class ProjectContracts(unittest.TestCase):
+    def test_prjeb14695_scientific_preflight_materializes_23_observations(self) -> None:
+        preflight = load_prjeb14695_preflight()
+        with tempfile.TemporaryDirectory() as temporary:
+            temporary_root = Path(temporary)
+            ena = temporary_root / "ena.tsv"
+            output = temporary_root / "output"
+            write_ena_fixture(ROOT, ena)
+            report = preflight.validate(ROOT, ena, output)
+            self.assertEqual("PASS", report["status"])
+            self.assertEqual("PASS", report["gates"]["run_to_sample_mapping"])
+            self.assertEqual("PASS", report["gates"]["technical_run_aggregation"])
+            self.assertEqual(138, report["run_inventory"]["mapped"])
+            self.assertEqual(23, report["sample_accounting"]["deseq2_observations"])
+            self.assertEqual(6, report["sample_accounting"]["runs_per_sample_min"])
+            self.assertEqual(6, report["sample_accounting"]["runs_per_sample_max"])
+            self.assertTrue(report["design"]["full_rank"])
+            self.assertTrue(report["design"]["all_contrasts_estimable"])
+            self.assertEqual(23, len(read_tsv(output / "technical_run_aggregation.tsv")))
+            self.assertEqual(138, len(read_tsv(output / "run_to_sample_mapping.tsv")))
+
+    def test_prjeb14695_scientific_preflight_rejects_conflicting_assignment(self) -> None:
+        preflight = load_prjeb14695_preflight()
+        with tempfile.TemporaryDirectory() as temporary:
+            temporary_root = Path(temporary)
+            project_root = temporary_root / "project"
+            shutil.copytree(ROOT / "metadata/PRJEB14695", project_root / "metadata/PRJEB14695")
+            shutil.copytree(ROOT / "config/PRJEB14695", project_root / "config/PRJEB14695")
+            ena = temporary_root / "ena.tsv"
+            output = temporary_root / "output"
+            write_ena_fixture(ROOT, ena)
+            metadata_path = project_root / "metadata/PRJEB14695/metadata.csv"
+            with metadata_path.open(encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle))
+                fields = list(rows[0])
+            conflicting = next(row for row in rows if row["sample_id"] != rows[0]["sample_id"])
+            rows[0]["sample_id"] = conflicting["sample_id"]
+            with metadata_path.open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
+                writer.writeheader()
+                writer.writerows(rows)
+            report = preflight.validate(project_root, ena, output)
+            self.assertEqual("FAIL", report["status"])
+            self.assertEqual("FAIL", report["gates"]["run_to_sample_mapping"])
+            self.assertTrue(any("run-to-sample conflicts" in error for error in report["errors"]))
+
     def test_registered_study_counts(self) -> None:
         for study, (runs_expected, samples_expected) in STUDIES.items():
             with (ROOT / "metadata" / study / "runs.tsv").open(
@@ -110,7 +204,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual([], offenders)
 
     def test_unstarted_projects_remain_frozen(self) -> None:
-        for study in set(STUDIES) - {"PRJNA602528", "PRJNA597909"}:
+        for study in set(STUDIES) - {"PRJNA602528", "PRJNA597909", "PRJEB14695"}:
             state = json.loads(
                 (ROOT / "provenance" / study / "execution_state.json").read_text(
                     encoding="utf-8"
@@ -149,6 +243,28 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("PASS", preflight["gates"]["salmon_index_reuse"])
         self.assertEqual("PASS", preflight["gates"]["report_contract_preflight"])
 
+    def test_prjeb14695_execution_is_complete(self) -> None:
+        state = json.loads(
+            (ROOT / "provenance/PRJEB14695/execution_state.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("READY_FOR_REVIEW", state["status"])
+        self.assertEqual("COMPLETE", state["phase"])
+        self.assertEqual(PRJEB14695_HELIXFORGE_COMMIT, state["helixforge_commit"])
+        self.assertEqual(138, state["dataset"]["runs"])
+        self.assertEqual(23, state["dataset"]["samples"])
+        self.assertEqual("PASS", state["dataset"]["run_to_sample_mapping"])
+        self.assertEqual("PASS", state["dataset"]["technical_run_aggregation"])
+        self.assertEqual("PASS", state["execution"]["resume_cache_reuse"])
+        self.assertEqual(815, state["execution"]["eligible_upstream_tasks_cached"])
+        self.assertEqual("PASS", state["storage"]["audit_package"])
+        self.assertEqual("PASS", state["storage"]["cleanup"])
+        self.assertEqual(417136095414, state["storage"]["scratch_bytes_recovered"])
+        self.assertEqual(0, state["storage"]["scratch_bytes_after_cleanup"])
+        self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
+        self.assertFalse(state["safety"]["next_project_authorized"])
+
     def test_launcher_requires_validated_prebuilt_index(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
         self.assertIn("--salmon_prebuilt_index", launcher)
@@ -160,6 +276,19 @@ class ProjectContracts(unittest.TestCase):
         self.assertIn('"${HF_RESUME:-0}" == 1', launcher)
         self.assertIn("args+=(-resume)", launcher)
         self.assertNotIn("-w \"$HF_WORK_ROOT\" -resume", launcher)
+
+    def test_launcher_allows_isolated_project_results(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        settings = (ROOT / "config/PRJEB14695/user_settings.sh").read_text(encoding="utf-8")
+        self.assertIn("HF_PROJECT_RESULTS_ROOT", launcher)
+        self.assertIn("HF_PROJECT_RESULTS_ROOT", settings)
+
+    def test_launcher_resolves_de_outputs_inside_project_results(self) -> None:
+        launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
+        self.assertIn('runtime_spec_dir="$outdir/pipeline_info/runtime_specs"', launcher)
+        self.assertIn('args+=(--rnaseq_de_spec "$runtime_de_spec")', launcher)
+        self.assertIn('parts[0] == "results"', launcher)
+        self.assertIn('"scientific_fields_changed": False', launcher)
 
     def test_launcher_requires_certified_python_runtime(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
@@ -210,7 +339,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertFalse(state["prjna602528"]["scientific_workflow_executed"])
 
         tracked = subprocess.run(
-            ["git", "-C", str(ROOT), "ls-files", "-z"],
+            ["git", "-c", f"safe.directory={ROOT.as_posix()}", "-C", str(ROOT), "ls-files", "-z"],
             check=True,
             capture_output=True,
             text=True,
@@ -355,6 +484,76 @@ class ProjectContracts(unittest.TestCase):
         observed_html = {
             path.name for path in (result_root / "reports").glob("*.html")
         }
+        self.assertEqual(expected_html, observed_html)
+        self.assertEqual([], list(result_root.rglob("*_fastqc.html")))
+
+    def test_prjeb14695_full_results_are_complete(self) -> None:
+        result_root = ROOT / "results/PRJEB14695"
+        manifest = json.loads(
+            (result_root / "manifests/rnaseq_run_manifest.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("rnaseq_run_manifest", manifest["type"])
+        self.assertEqual("complete", manifest["status"])
+        self.assertEqual("salmon", manifest["quantification_method"])
+        self.assertEqual(23, len(manifest["samples"]))
+        self.assertEqual(6, len(manifest["contrasts"]))
+
+        validation = json.loads(
+            (result_root / "manifests/terminal_manifest_validation.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual("complete", validation["status"])
+        self.assertEqual("valid", validation["schema"])
+        self.assertEqual("valid", validation["semantic"])
+
+        for matrix in ("counts_matrix.tsv", "tpm_matrix.tsv", "length_matrix.tsv"):
+            with (result_root / "expression" / matrix).open(
+                encoding="utf-8", newline=""
+            ) as handle:
+                rows = list(csv.reader(handle, delimiter="\t"))
+            self.assertEqual(23, len(rows[0]) - 1, matrix)
+            self.assertEqual(9914, len(rows) - 1, matrix)
+
+        expected_significant = {
+            "condition__ovary_mixed_sex_vs_ovary_single_sex": 2777,
+            "condition__testis_mixed_sex_vs_testis_single_sex": 33,
+            "condition__whole_female_mixed_sex_vs_whole_female_single_sex": 1019,
+            "condition__whole_male_mixed_sex_vs_whole_male_single_sex": 214,
+            "condition__whole_female_mixed_sex_vs_whole_male_mixed_sex": 3,
+            "condition__whole_female_single_sex_vs_whole_male_single_sex": 587,
+        }
+        contrasts = read_tsv(result_root / "differential_expression/deg_summary.tsv")
+        self.assertEqual(6, len(contrasts))
+        for row in contrasts:
+            self.assertEqual(9517, int(row["n_genes"]))
+            self.assertEqual(23, int(row["n_samples"]))
+            self.assertEqual(expected_significant[row["contrast"]], int(row["n_significant"]))
+            self.assertEqual("ok", row["status"])
+
+        final = json.loads(
+            (result_root / "reports/final_validation.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual("PASS_WITH_LIMITATIONS", final["status"])
+        self.assertTrue(final["ready_for_review"])
+        self.assertEqual("PASS", final["gates"]["resume_cache_reuse"])
+        self.assertEqual({"CACHED": 815, "COMPLETED": 12}, final["trace"])
+
+        report = (result_root / "reports/PRJEB14695_execution_report.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("PRJEB14695_RNASEQ_ANALYSIS = PASS_WITH_LIMITATIONS", report)
+        self.assertTrue(report.rstrip().endswith("READY_FOR_PRJEB14695_REVIEW"))
+
+        expected_html = {
+            "PRJEB14695_multiqc.html",
+            "nextflow_dag.html",
+            "nextflow_execution_report.html",
+            "nextflow_timeline.html",
+        }
+        observed_html = {path.name for path in (result_root / "reports").glob("*.html")}
         self.assertEqual(expected_html, observed_html)
         self.assertEqual([], list(result_root.rglob("*_fastqc.html")))
 

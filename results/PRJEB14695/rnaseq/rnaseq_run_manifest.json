@@ -1,0 +1,2157 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "PRJEB14695.ovary_mixed_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "acc6c7b759c085a83bc52bdfe3e83918ce657d09084191563786e95a5089f00f"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.ovary_mixed_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.ovary_mixed_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "ovary_mixed_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.ovary_mixed_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e2cb7bf9e6cb543203713f1e274a9a1bad9e87fba1416e8250bb2d52277a3136"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.ovary_mixed_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.ovary_mixed_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "ovary_mixed_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.ovary_mixed_sex_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c8cc4dbd6db2d04b35ee7ac392cab907b48cbe03bd3da087dbbf1ffd39510bdc"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.ovary_mixed_sex_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.ovary_mixed_sex_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "ovary_mixed_sex_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.ovary_single_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "05eb8e5e5ae1a55bcd9bebc700ee949d7d964befc5f691087bb639ab76697c0d"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.ovary_single_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.ovary_single_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "ovary_single_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.ovary_single_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "4685c813ddf1502aa53a7e6c29237a80c11c548d0cc4480a8e1b0a2589f5e085"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.ovary_single_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.ovary_single_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "ovary_single_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.testis_mixed_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2a45c8ab5209a00ea3a69df01e167490ff9c622de0f3f8849d387916e3881410"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.testis_mixed_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.testis_mixed_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "testis_mixed_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.testis_mixed_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b7c618efd24cb1f46a88fc904f165859d207c74918de25a8fd33fb038f7b0356"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.testis_mixed_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.testis_mixed_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "testis_mixed_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.testis_mixed_sex_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f773929e5a84c8951cdaef67cd35178dc0e635c6de66e117f53f40977b8df796"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.testis_mixed_sex_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.testis_mixed_sex_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "testis_mixed_sex_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.testis_single_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2166af3e35b796807cf528530814d6f129635077c285ba505f53e493441642de"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.testis_single_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.testis_single_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "testis_single_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.testis_single_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a834f3108ef5bd858f4ee27054e79a04d564cdede36cfee32f14c621b50bbc93"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.testis_single_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.testis_single_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "testis_single_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.testis_single_sex_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c09de6b3a88dee3f80ea4a2312f810b96cce066ee42800591fc2d7b5fa8c1ccb"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.testis_single_sex_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.testis_single_sex_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "testis_single_sex_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_female_mixed_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "34fbffaeed679de2d86630c83f52abc7331d4a576e0ca0476a0ae54e0890fa8d"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_female_mixed_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_female_mixed_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_female_mixed_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_female_mixed_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "adaa51ed0cabd21732ffbe329b7c44a8c5ca9056980407758be37574177ac132"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_female_mixed_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_female_mixed_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_female_mixed_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_female_mixed_sex_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e70dd78b449c772d3c6bc9a8a8dbf336785e688f614ace5fd3f66e25f9d68ee0"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_female_mixed_sex_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_female_mixed_sex_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_female_mixed_sex_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_female_single_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "30f9c0eb76a9da5922c90c423380fdfbcc2efde752b81901ad39a9eca1688ad3"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_female_single_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_female_single_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_female_single_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_female_single_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7917ffd8fbcd584ef68f7be41b3562f83cb1e2812ee8e84ee19120038fad6761"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_female_single_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_female_single_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_female_single_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_female_single_sex_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "57f512e5fce889d9e7c765c0c57a092281aef80d23e891b2d1780f056e1efe01"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_female_single_sex_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_female_single_sex_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_female_single_sex_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_male_mixed_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "abe87ac9ae8fad2655e9b7fdc8ed1a981bb87682acb5bf368cc71b53f54d36cf"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_male_mixed_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_male_mixed_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_male_mixed_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_male_mixed_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1569dd16ca275143c28e78ec1a002fef6cb33190ce1731ca8eced7ac5de17648"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_male_mixed_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_male_mixed_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_male_mixed_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_male_mixed_sex_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e457ad926838ede218993326819b67b76cbe0e17b782f6c8ce0eb009eea99111"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_male_mixed_sex_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_male_mixed_sex_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_male_mixed_sex_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_male_single_sex_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2db01f1911094e9ca175d2a386aee7e445527f0539e4973916b2b303166e2372"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_male_single_sex_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_male_single_sex_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_male_single_sex_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_male_single_sex_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "5de4f104904997ed9b2d152a1efedabc42fe8d44a8b517e0552027202fd4104f"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_male_single_sex_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_male_single_sex_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_male_single_sex_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB14695.whole_male_single_sex_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b0b9b5404d2a730e36e16482823a4e229c0aec5e4a1babc0032f79668df73070"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB14695.whole_male_single_sex_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB14695"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB14695.whole_male_single_sex_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "whole_male_single_sex_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "rnaseq.import.gene_abundance",
+      "artifact_type": "gene_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a25b7ab73ee7c55a27ebccb3e02ca19f94486755ae8feacc170169c7c6465dc4"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/rnaseq.import.gene_abundance/tpm_matrix.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "TXIMPORT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "rnaseq.import"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "abundance",
+      "sample_ids": [],
+      "source": {
+        "name": "salmon",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "rnaseq.import.gene_counts",
+      "artifact_type": "gene_counts",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3aa85f7404652b45027c0f02279c047ba04dcb9bcd882dcb6b75e125dacb3ecc"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/rnaseq.import.gene_counts/counts_matrix.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "TXIMPORT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "rnaseq.import"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "counts",
+      "sample_ids": [],
+      "source": {
+        "name": "salmon",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.condition.condition__ovary_mixed_sex_vs_ovary_single_sex.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7baf88f75432a54a1c4c08055219c1fb230cb8cb24e7a755e164873303d59b40"
+      },
+      "condition": null,
+      "contrast_id": "condition__ovary_mixed_sex_vs_ovary_single_sex",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.condition.condition__ovary_mixed_sex_vs_ovary_single_sex.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb14695_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary.condition.condition__ovary_mixed_sex_vs_ovary_single_sex"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.condition.condition__testis_mixed_sex_vs_testis_single_sex.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b4424d0e2f80d81e95625136af2042564964a33b36cec26cd4fa49752feb6883"
+      },
+      "condition": null,
+      "contrast_id": "condition__testis_mixed_sex_vs_testis_single_sex",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.condition.condition__testis_mixed_sex_vs_testis_single_sex.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb14695_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary.condition.condition__testis_mixed_sex_vs_testis_single_sex"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_female_single_sex.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3fd4f70f508f36fd661ebef1a1ed2ace0f2b9bfd2e2d6139ae299d5ffe02d860"
+      },
+      "condition": null,
+      "contrast_id": "condition__whole_female_mixed_sex_vs_whole_female_single_sex",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_female_single_sex.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb14695_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_female_single_sex"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_male_mixed_sex.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "de381fe4445dbe970698f636f2c659d06bda7161b08e90d0d06267afa32f67b4"
+      },
+      "condition": null,
+      "contrast_id": "condition__whole_female_mixed_sex_vs_whole_male_mixed_sex",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_male_mixed_sex.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb14695_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_male_mixed_sex"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.condition.condition__whole_female_single_sex_vs_whole_male_single_sex.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0f6e41103bcd966d0667f39637e31d746eb7d22c3fece4b04094919154ce1cf2"
+      },
+      "condition": null,
+      "contrast_id": "condition__whole_female_single_sex_vs_whole_male_single_sex",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.condition.condition__whole_female_single_sex_vs_whole_male_single_sex.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb14695_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary.condition.condition__whole_female_single_sex_vs_whole_male_single_sex"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.condition.condition__whole_male_mixed_sex_vs_whole_male_single_sex.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a80af2b7bd3c29ff6f39bf95b70b565f44de7ed247048153bad8fb77c27c4da4"
+      },
+      "condition": null,
+      "contrast_id": "condition__whole_male_mixed_sex_vs_whole_male_single_sex",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.condition.condition__whole_male_mixed_sex_vs_whole_male_single_sex.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb14695_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary.condition.condition__whole_male_mixed_sex_vs_whole_male_single_sex"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.condition.normalized_counts",
+      "artifact_type": "normalized_counts",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "57e44b0f558776755f451d58dc0b847e02661c37e89e85880ec6b723a3193db1"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.condition.normalized_counts/normalized_counts_condition.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb14695_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_MODEL",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary.condition"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "exploratory_expression",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb14695_primary.differential_expression_summary",
+      "artifact_type": "differential_expression_summary",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ec3cf749a16023a2a9d185b763a7a83f270bc1fcf6f1bdc7c76cfb61e368c8e0"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb14695_primary.differential_expression_summary/differential_expression_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DE_AGGREGATE",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb14695_primary"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "combined_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    }
+  ],
+  "batches": [
+    "not_declared"
+  ],
+  "conditions": [
+    "ovary_mixed_sex",
+    "ovary_single_sex",
+    "testis_mixed_sex",
+    "testis_single_sex",
+    "whole_female_mixed_sex",
+    "whole_female_single_sex",
+    "whole_male_mixed_sex",
+    "whole_male_single_sex"
+  ],
+  "contrasts": [
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__ovary_mixed_sex_vs_ovary_single_sex",
+      "covariates": [],
+      "denominator": "ovary_single_sex",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "ovary_mixed_sex versus ovary_single_sex",
+      "metadata": {},
+      "numerator": "ovary_mixed_sex"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__testis_mixed_sex_vs_testis_single_sex",
+      "covariates": [],
+      "denominator": "testis_single_sex",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "testis_mixed_sex versus testis_single_sex",
+      "metadata": {},
+      "numerator": "testis_mixed_sex"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__whole_female_mixed_sex_vs_whole_female_single_sex",
+      "covariates": [],
+      "denominator": "whole_female_single_sex",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "whole_female_mixed_sex versus whole_female_single_sex",
+      "metadata": {},
+      "numerator": "whole_female_mixed_sex"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__whole_male_mixed_sex_vs_whole_male_single_sex",
+      "covariates": [],
+      "denominator": "whole_male_single_sex",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "whole_male_mixed_sex versus whole_male_single_sex",
+      "metadata": {},
+      "numerator": "whole_male_mixed_sex"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__whole_female_mixed_sex_vs_whole_male_mixed_sex",
+      "covariates": [],
+      "denominator": "whole_male_mixed_sex",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "whole_female_mixed_sex versus whole_male_mixed_sex",
+      "metadata": {},
+      "numerator": "whole_female_mixed_sex"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__whole_female_single_sex_vs_whole_male_single_sex",
+      "covariates": [],
+      "denominator": "whole_male_single_sex",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "whole_female_single_sex versus whole_male_single_sex",
+      "metadata": {},
+      "numerator": "whole_female_single_sex"
+    }
+  ],
+  "id": "modest_mahavira.rnaseq",
+  "integration_api_version": "1.0",
+  "provenance": {
+    "execution_metadata": null,
+    "parameters": {},
+    "producer_process": "RUN_MANIFEST",
+    "producer_workflow": "rnaseq",
+    "software": [
+      {
+        "container": null,
+        "name": "HelixForge",
+        "version": "1.0.1"
+      }
+    ],
+    "source_artifact_ids": [
+      "PRJEB14695.ovary_mixed_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.ovary_mixed_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.ovary_mixed_sex_r3.quantification.transcript_abundance",
+      "PRJEB14695.ovary_single_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.ovary_single_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.testis_mixed_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.testis_mixed_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.testis_mixed_sex_r3.quantification.transcript_abundance",
+      "PRJEB14695.testis_single_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.testis_single_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.testis_single_sex_r3.quantification.transcript_abundance",
+      "PRJEB14695.whole_female_mixed_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.whole_female_mixed_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.whole_female_mixed_sex_r3.quantification.transcript_abundance",
+      "PRJEB14695.whole_female_single_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.whole_female_single_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.whole_female_single_sex_r3.quantification.transcript_abundance",
+      "PRJEB14695.whole_male_mixed_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.whole_male_mixed_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.whole_male_mixed_sex_r3.quantification.transcript_abundance",
+      "PRJEB14695.whole_male_single_sex_r1.quantification.transcript_abundance",
+      "PRJEB14695.whole_male_single_sex_r2.quantification.transcript_abundance",
+      "PRJEB14695.whole_male_single_sex_r3.quantification.transcript_abundance",
+      "rnaseq.import.gene_abundance",
+      "rnaseq.import.gene_counts",
+      "smansoni_prjeb14695_primary.condition.condition__ovary_mixed_sex_vs_ovary_single_sex.differential_expression",
+      "smansoni_prjeb14695_primary.condition.condition__testis_mixed_sex_vs_testis_single_sex.differential_expression",
+      "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_female_single_sex.differential_expression",
+      "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_male_mixed_sex.differential_expression",
+      "smansoni_prjeb14695_primary.condition.condition__whole_female_single_sex_vs_whole_male_single_sex.differential_expression",
+      "smansoni_prjeb14695_primary.condition.condition__whole_male_mixed_sex_vs_whole_male_single_sex.differential_expression",
+      "smansoni_prjeb14695_primary.condition.normalized_counts",
+      "smansoni_prjeb14695_primary.differential_expression_summary"
+    ],
+    "source_manifest_ids": [
+      "PRJEB14695.ovary_mixed_sex_r1.quantification",
+      "PRJEB14695.ovary_mixed_sex_r2.quantification",
+      "PRJEB14695.ovary_mixed_sex_r3.quantification",
+      "PRJEB14695.ovary_single_sex_r1.quantification",
+      "PRJEB14695.ovary_single_sex_r2.quantification",
+      "PRJEB14695.testis_mixed_sex_r1.quantification",
+      "PRJEB14695.testis_mixed_sex_r2.quantification",
+      "PRJEB14695.testis_mixed_sex_r3.quantification",
+      "PRJEB14695.testis_single_sex_r1.quantification",
+      "PRJEB14695.testis_single_sex_r2.quantification",
+      "PRJEB14695.testis_single_sex_r3.quantification",
+      "PRJEB14695.whole_female_mixed_sex_r1.quantification",
+      "PRJEB14695.whole_female_mixed_sex_r2.quantification",
+      "PRJEB14695.whole_female_mixed_sex_r3.quantification",
+      "PRJEB14695.whole_female_single_sex_r1.quantification",
+      "PRJEB14695.whole_female_single_sex_r2.quantification",
+      "PRJEB14695.whole_female_single_sex_r3.quantification",
+      "PRJEB14695.whole_male_mixed_sex_r1.quantification",
+      "PRJEB14695.whole_male_mixed_sex_r2.quantification",
+      "PRJEB14695.whole_male_mixed_sex_r3.quantification",
+      "PRJEB14695.whole_male_single_sex_r1.quantification",
+      "PRJEB14695.whole_male_single_sex_r2.quantification",
+      "PRJEB14695.whole_male_single_sex_r3.quantification",
+      "Schistosoma_mansoni_SM_V10_WBPS19",
+      "rnaseq.import",
+      "smansoni_prjeb14695_primary",
+      "smansoni_prjeb14695_primary.condition",
+      "smansoni_prjeb14695_primary.condition.condition__ovary_mixed_sex_vs_ovary_single_sex",
+      "smansoni_prjeb14695_primary.condition.condition__testis_mixed_sex_vs_testis_single_sex",
+      "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_female_single_sex",
+      "smansoni_prjeb14695_primary.condition.condition__whole_female_mixed_sex_vs_whole_male_mixed_sex",
+      "smansoni_prjeb14695_primary.condition.condition__whole_female_single_sex_vs_whole_male_single_sex",
+      "smansoni_prjeb14695_primary.condition.condition__whole_male_mixed_sex_vs_whole_male_single_sex"
+    ]
+  },
+  "quantification_method": "salmon",
+  "reference": {
+    "annotation_id": "annotation.0ba2e3ff9a63",
+    "assembly": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "display_name": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "metadata": {
+      "source_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+    },
+    "organism": "Schistosoma_mansoni",
+    "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "resources": {
+      "annotation": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      },
+      "fasta": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      },
+      "transcriptome": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "b794519faf24d6d8ae9a849467e567f0ca20c9c8c4e4585fdd060353a9a72a47"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      }
+    },
+    "source": {
+      "name": "Reference Bundle",
+      "type": "external",
+      "version": "1.0"
+    },
+    "species": "Schistosoma_mansoni"
+  },
+  "run": {
+    "created_at": null,
+    "git_commit": "unknown",
+    "helixforge_version": "1.0.1",
+    "nextflow_version": "25.10.7",
+    "profile": "slurm",
+    "run_id": "a1f5baff-fd45-4bbc-ad08-49ba0f75a625",
+    "run_name": "modest_mahavira",
+    "source": {
+      "name": "HelixForge",
+      "type": "helixforge",
+      "version": "1.0.1"
+    },
+    "workflow": "rnaseq"
+  },
+  "samples": [
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "ovary_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "ovary_mixed_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506073",
+        "ERR506097",
+        "ERR667051",
+        "ERR667075",
+        "ERR667099",
+        "ERR667123"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "ovary_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "ovary_mixed_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506074",
+        "ERR506098",
+        "ERR667052",
+        "ERR667076",
+        "ERR667100",
+        "ERR667124"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "3",
+      "condition": "ovary_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "ovary_mixed_sex_r3",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506075",
+        "ERR506099",
+        "ERR667053",
+        "ERR667077",
+        "ERR667101",
+        "ERR667125"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "ovary_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "ovary_single_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506071",
+        "ERR506095",
+        "ERR667049",
+        "ERR667073",
+        "ERR667097",
+        "ERR667121"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "ovary_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "ovary_single_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506072",
+        "ERR506096",
+        "ERR667050",
+        "ERR667074",
+        "ERR667098",
+        "ERR667122"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "testis_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "testis_mixed_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506079",
+        "ERR506103",
+        "ERR667057",
+        "ERR667081",
+        "ERR667105",
+        "ERR667129"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "testis_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "testis_mixed_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506080",
+        "ERR506104",
+        "ERR667058",
+        "ERR667082",
+        "ERR667106",
+        "ERR667130"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "3",
+      "condition": "testis_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "testis_mixed_sex_r3",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506081",
+        "ERR506105",
+        "ERR667059",
+        "ERR667083",
+        "ERR667107",
+        "ERR667131"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "testis_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "testis_single_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506077",
+        "ERR506101",
+        "ERR667055",
+        "ERR667079",
+        "ERR667103",
+        "ERR667127"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "testis_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "testis_single_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506078",
+        "ERR506102",
+        "ERR667056",
+        "ERR667080",
+        "ERR667104",
+        "ERR667128"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "3",
+      "condition": "testis_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "testis_single_sex_r3",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506085",
+        "ERR506109",
+        "ERR667063",
+        "ERR667087",
+        "ERR667111",
+        "ERR667135"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "whole_female_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_female_mixed_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506076",
+        "ERR506100",
+        "ERR667054",
+        "ERR667078",
+        "ERR667102",
+        "ERR667126"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "whole_female_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_female_mixed_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506083",
+        "ERR506107",
+        "ERR667061",
+        "ERR667085",
+        "ERR667109",
+        "ERR667133"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "3",
+      "condition": "whole_female_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_female_mixed_sex_r3",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506084",
+        "ERR506108",
+        "ERR667062",
+        "ERR667086",
+        "ERR667110",
+        "ERR667134"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "whole_female_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_female_single_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506091",
+        "ERR506115",
+        "ERR667069",
+        "ERR667093",
+        "ERR667117",
+        "ERR667141"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "whole_female_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_female_single_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506092",
+        "ERR506116",
+        "ERR667070",
+        "ERR667094",
+        "ERR667118",
+        "ERR667142"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "3",
+      "condition": "whole_female_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_female_single_sex_r3",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506093",
+        "ERR506117",
+        "ERR667071",
+        "ERR667095",
+        "ERR667119",
+        "ERR667143"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "whole_male_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_male_mixed_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506082",
+        "ERR506106",
+        "ERR667060",
+        "ERR667084",
+        "ERR667108",
+        "ERR667132"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "whole_male_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_male_mixed_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506088",
+        "ERR506112",
+        "ERR667066",
+        "ERR667090",
+        "ERR667114",
+        "ERR667138"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "3",
+      "condition": "whole_male_mixed_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_male_mixed_sex_r3",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506090",
+        "ERR506114",
+        "ERR667068",
+        "ERR667092",
+        "ERR667116",
+        "ERR667140"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "1",
+      "condition": "whole_male_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_male_single_sex_r1",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506086",
+        "ERR506110",
+        "ERR667064",
+        "ERR667088",
+        "ERR667112",
+        "ERR667136"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "2",
+      "condition": "whole_male_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_male_single_sex_r2",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506087",
+        "ERR506111",
+        "ERR667065",
+        "ERR667089",
+        "ERR667113",
+        "ERR667137"
+      ]
+    },
+    {
+      "batch": "not_declared",
+      "biological_replicate": "3",
+      "condition": "whole_male_single_sex",
+      "dataset": "PRJEB14695",
+      "sample_id": "whole_male_single_sex_r3",
+      "stage": "adult",
+      "technical_runs": [
+        "ERR506089",
+        "ERR506113",
+        "ERR667067",
+        "ERR667091",
+        "ERR667115",
+        "ERR667139"
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "stages": [
+    "adult"
+  ],
+  "status": "complete",
+  "type": "rnaseq_run_manifest"
+}

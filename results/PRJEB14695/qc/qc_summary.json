@@ -1,0 +1,14 @@
+{
+  "fastqc_html": 598,
+  "mapping_percent_max": 85.66846135536646,
+  "mapping_percent_mean": 71.06903393656481,
+  "mapping_percent_min": 39.18631012144091,
+  "multiqc": "PASS",
+  "salmon_samples": 23,
+  "salmon_targets": [
+    10913
+  ],
+  "salmon_versions": [
+    "1.10.3"
+  ]
+}

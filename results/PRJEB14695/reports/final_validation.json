@@ -1,0 +1,109 @@
+{
+  "contrasts": [
+    {
+      "analysis_id": "smansoni_prjeb14695_primary",
+      "contrast": "condition__ovary_mixed_sex_vs_ovary_single_sex",
+      "n_genes": "9517",
+      "n_samples": "23",
+      "n_significant": "2777",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb14695_primary",
+      "contrast": "condition__testis_mixed_sex_vs_testis_single_sex",
+      "n_genes": "9517",
+      "n_samples": "23",
+      "n_significant": "33",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb14695_primary",
+      "contrast": "condition__whole_female_mixed_sex_vs_whole_female_single_sex",
+      "n_genes": "9517",
+      "n_samples": "23",
+      "n_significant": "1019",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb14695_primary",
+      "contrast": "condition__whole_male_mixed_sex_vs_whole_male_single_sex",
+      "n_genes": "9517",
+      "n_samples": "23",
+      "n_significant": "214",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb14695_primary",
+      "contrast": "condition__whole_female_mixed_sex_vs_whole_male_mixed_sex",
+      "n_genes": "9517",
+      "n_samples": "23",
+      "n_significant": "3",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb14695_primary",
+      "contrast": "condition__whole_female_single_sex_vs_whole_male_single_sex",
+      "n_genes": "9517",
+      "n_samples": "23",
+      "n_significant": "587",
+      "status": "ok",
+      "variable": "condition"
+    }
+  ],
+  "errors": [],
+  "fastq_files": 276,
+  "gates": {
+    "differential_expression": "PASS",
+    "expression_import": "PASS",
+    "fastq_integrity": "PASS",
+    "html_reports": "PASS",
+    "qc": "PASS",
+    "quantification": "PASS",
+    "resume_cache_reuse": "PASS",
+    "technical_run_aggregation": "PASS",
+    "terminal_manifest": "PASS"
+  },
+  "helixforge_commit": "42864266892d1165477bb3b33c919e1fabb28ad1",
+  "limitations": [
+    "The first full execution stopped at Import sample-table validation because technical_unit was incorrectly treated as invariant.",
+    "HelixForge PR 88 corrected the run-level field contract; the controlled resume reused all 815 eligible upstream tasks.",
+    "Candidate-gene reporting was not run because no candidate list was preregistered for this study."
+  ],
+  "matrices": {
+    "counts": {
+      "genes": 9914,
+      "samples": 23
+    },
+    "length": {
+      "genes": 9914,
+      "samples": 23
+    },
+    "tpm": {
+      "genes": 9914,
+      "samples": 23
+    }
+  },
+  "ready_for_review": true,
+  "runs": 138,
+  "samples": 23,
+  "schema_version": "1.0",
+  "status": "PASS_WITH_LIMITATIONS",
+  "study": "PRJEB14695",
+  "terminal_artifact_types": {
+    "differential_expression": 6,
+    "differential_expression_summary": 1,
+    "gene_abundance": 1,
+    "gene_counts": 1,
+    "normalized_counts": 1,
+    "transcript_abundance": 23
+  },
+  "trace": {
+    "CACHED": 815,
+    "COMPLETED": 12
+  }
+}
