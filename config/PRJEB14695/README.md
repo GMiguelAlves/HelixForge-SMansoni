@@ -4,6 +4,8 @@
 - Runs técnicos: 138
 - Modo recomendado: `full` (QC → Salmon → tximport → DESeq2)
 - Consolidação: o HelixForge recebe uma linha por run e usa o mesmo `sample_id` para aparar cada run e consolidá-los antes de Salmon.
+- Concorrência: no máximo 8 jobs simultâneos no Slurm, tanto na aquisição quanto no workflow.
+- Unidade estatística: DESeq2 recebe 23 amostras biológicas; os 138 runs técnicos nunca são tratados como réplicas independentes.
 
 ## Grupos
 

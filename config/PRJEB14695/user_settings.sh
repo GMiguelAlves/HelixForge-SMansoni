@@ -26,3 +26,7 @@ export TRIM_LENGTH=20
 export RUN_BATCH_CORRECTION=0
 export RUN_GENE_REPORT=0
 export FASTQ_LAYOUT="paired"
+
+# Project-specific operational ceiling agreed for the shared Slurm cluster.
+export HF_MAX_CONCURRENT_JOBS=8
+export HF_DOWNLOAD_CONCURRENCY=8
