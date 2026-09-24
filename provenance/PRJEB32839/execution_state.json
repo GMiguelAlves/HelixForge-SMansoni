@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "study": "PRJEB32839",
-  "status": "PREFLIGHT_COMPLETE",
-  "phase": "storage_authorized",
+  "status": "DOWNLOAD_IN_PROGRESS",
+  "phase": "data_acquisition",
   "session_uuid": "98a87d95-046f-42e4-9d6c-25d8767cc07b",
   "helixforge_release": "v1.0.2",
   "helixforge_commit": "5d4b3e696319db5cd7633472504964f1dc7c0434",
@@ -13,13 +13,26 @@
   "frozen_run_inventory": "PASS",
   "expected_fastq_bytes": 258443852490,
   "storage_authorization": "GO",
-  "download_state": "NOT_STARTED",
+  "download_state": "IN_PROGRESS",
+  "download_job_id": 21888,
+  "download_array_tasks": 150,
+  "download_max_concurrency": 8,
   "workflow_state": "NOT_STARTED",
   "scratch_checkpoints": [
     {
       "phase": "pre_download",
       "available_bytes": 2269043752960,
       "project_bytes": 0
+    },
+    {
+      "phase": "acquisition_authorization_recheck",
+      "available_bytes": 2266253819904,
+      "project_bytes": 24576
+    },
+    {
+      "phase": "download_initial_snapshot",
+      "available_bytes": null,
+      "project_bytes": 261328896
     }
   ],
   "resume_events": [],
