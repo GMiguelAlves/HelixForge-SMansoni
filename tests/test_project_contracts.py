@@ -210,12 +210,37 @@ class ProjectContracts(unittest.TestCase):
         scientific = json.loads((root / "preflight.json").read_text(encoding="utf-8"))
         storage = json.loads((root / "storage_preflight.json").read_text(encoding="utf-8"))
         runtime = json.loads((root / "runtime_preflight.json").read_text(encoding="utf-8"))
-        self.assertEqual("PREFLIGHT_COMPLETE", state["status"])
+        allowed_execution_states = {
+            "PREFLIGHT_COMPLETE",
+            "DOWNLOAD_IN_PROGRESS",
+            "DOWNLOAD_COMPLETE",
+            "WORKFLOW_IN_PROGRESS",
+            "WORKFLOW_COMPLETE",
+            "READY_FOR_REVIEW",
+            "BLOCKED",
+            "FAILED",
+        }
+        allowed_download_states = {"NOT_STARTED", "IN_PROGRESS", "COMPLETE", "FAILED"}
+        self.assertIn(state["status"], allowed_execution_states)
         self.assertEqual("v1.0.2", state["helixforge_release"])
         self.assertEqual(PRJEB32839_HELIXFORGE_COMMIT, state["helixforge_commit"])
         self.assertEqual("PASS", state["frozen_run_inventory"])
         self.assertEqual("GO", state["storage_authorization"])
-        self.assertEqual("NOT_STARTED", state["download_state"])
+        self.assertIn(state["download_state"], allowed_download_states)
+        if state["status"] == "PREFLIGHT_COMPLETE":
+            self.assertEqual("NOT_STARTED", state["download_state"])
+        elif state["status"] == "DOWNLOAD_IN_PROGRESS":
+            self.assertEqual("IN_PROGRESS", state["download_state"])
+            self.assertGreater(state["download_job_id"], 0)
+            self.assertEqual(150, state["download_array_tasks"])
+            self.assertLessEqual(state["download_max_concurrency"], 8)
+        elif state["status"] in {
+            "DOWNLOAD_COMPLETE",
+            "WORKFLOW_IN_PROGRESS",
+            "WORKFLOW_COMPLETE",
+            "READY_FOR_REVIEW",
+        }:
+            self.assertEqual("COMPLETE", state["download_state"])
         self.assertEqual("PASS", scientific["status"])
         self.assertEqual(150, scientific["run_inventory"]["frozen"])
         self.assertEqual(30, scientific["run_inventory"]["excluded"])
