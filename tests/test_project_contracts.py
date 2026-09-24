@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 HELIXFORGE_V1_COMMIT = "e41d221657b8e0bf2700bccd547e15032ccac36f"
 PRJEB14695_HELIXFORGE_COMMIT = "42864266892d1165477bb3b33c919e1fabb28ad1"
+PRJEB32839_HELIXFORGE_COMMIT = "5d4b3e696319db5cd7633472504964f1dc7c0434"
 REFERENCE_SHA256 = {
     "genome": "d93a8ff7541d6108b0db088b43e9dc275de45b1d263cd42253877944cceaa1a9",
     "transcriptome": "ef6f9807ba3060d901f3bc89eca6eca2bd0598d162981c7fd3417bc26701dbb4",
@@ -203,16 +204,31 @@ class ProjectContracts(unittest.TestCase):
                 offenders.append(str(path.relative_to(ROOT)))
         self.assertEqual([], offenders)
 
-    def test_unstarted_projects_remain_frozen(self) -> None:
-        for study in set(STUDIES) - {"PRJNA602528", "PRJNA597909", "PRJEB14695"}:
-            state = json.loads(
-                (ROOT / "provenance" / study / "execution_state.json").read_text(
-                    encoding="utf-8"
-                )
-            )
-            self.assertEqual("NOT_STARTED", state["status"], study)
-            self.assertEqual("v1.0.1", state["helixforge_release"], study)
-            self.assertEqual(HELIXFORGE_V1_COMMIT, state["helixforge_commit"], study)
+    def test_prjeb32839_preflight_is_frozen(self) -> None:
+        root = ROOT / "provenance/PRJEB32839"
+        state = json.loads((root / "execution_state.json").read_text(encoding="utf-8"))
+        scientific = json.loads((root / "preflight.json").read_text(encoding="utf-8"))
+        storage = json.loads((root / "storage_preflight.json").read_text(encoding="utf-8"))
+        runtime = json.loads((root / "runtime_preflight.json").read_text(encoding="utf-8"))
+        self.assertEqual("PREFLIGHT_COMPLETE", state["status"])
+        self.assertEqual("v1.0.2", state["helixforge_release"])
+        self.assertEqual(PRJEB32839_HELIXFORGE_COMMIT, state["helixforge_commit"])
+        self.assertEqual("PASS", state["frozen_run_inventory"])
+        self.assertEqual("GO", state["storage_authorization"])
+        self.assertEqual("NOT_STARTED", state["download_state"])
+        self.assertEqual("PASS", scientific["status"])
+        self.assertEqual(150, scientific["run_inventory"]["frozen"])
+        self.assertEqual(30, scientific["run_inventory"]["excluded"])
+        self.assertTrue(scientific["design"]["full_rank"])
+        self.assertTrue(scientific["design"]["all_contrasts_estimable"])
+        self.assertEqual("PASS", storage["status"])
+        self.assertEqual("GO", storage["authorization"])
+        self.assertGreaterEqual(
+            storage["filesystem"]["usable_project_capacity_bytes"],
+            storage["projections"]["required_with_20_percent_headroom_bytes"],
+        )
+        self.assertEqual("PASS", runtime["status"])
+        self.assertEqual(300, runtime["urls"]["available"])
 
     def test_prjna597909_execution_is_complete(self) -> None:
         state = json.loads(

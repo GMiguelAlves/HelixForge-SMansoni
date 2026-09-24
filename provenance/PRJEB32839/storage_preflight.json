@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJEB32839",
+  "status": "PASS",
+  "authorization": "GO",
+  "measured_at": "2026-09-24T17:47:00-03:00",
+  "frozen_inventory": {
+    "biological_samples": 75,
+    "technical_runs": 150,
+    "excluded_runs": 30,
+    "fastq_files": 300,
+    "expected_fastq_bytes_exact": 258443852490
+  },
+  "filesystem": {
+    "total_bytes": 15145772711936,
+    "used_bytes": 12876728958976,
+    "available_bytes": 2269043752960,
+    "approved_project_limit_bytes": null,
+    "usable_project_capacity_bytes": 2269043752960,
+    "shared_capacity_is_not_reserved": true
+  },
+  "projections": {
+    "central_multiplier": 5.007,
+    "central_projected_peak_bytes": 1294028369417,
+    "conservative_multiplier": 6.0,
+    "conservative_projected_peak_bytes": 1550663114940,
+    "extreme_observed_multiplier": 6.606,
+    "extreme_observed_projection_bytes": 1707280089548,
+    "required_with_20_percent_headroom_bytes": 1860795737928,
+    "headroom_after_conservative_peak_bytes": 718380638020,
+    "headroom_beyond_required_20_percent_bytes": 408248015032
+  },
+  "thresholds": {
+    "warning_threshold_bytes": 1550663114940,
+    "stop_threshold_bytes": 2155591565312
+  },
+  "prior_calibration": {
+    "PRJNA602528_multiplier": 6.606,
+    "PRJNA597909_multiplier": 5.007,
+    "PRJEB14695_input_bytes": 89131626404,
+    "PRJEB14695_final_pre_cleanup_bytes": 417136095414,
+    "PRJEB14695_final_footprint_multiplier": 4.680001,
+    "PRJEB14695_peak_multiplier_available": false,
+    "note": "The PRJEB14695 value is a final pre-cleanup footprint, not a measured peak, and was not used as the authorization requirement."
+  },
+  "residuals": {
+    "PRJNA602528_bytes": 4096,
+    "PRJNA597909_bytes": 0,
+    "PRJEB14695_bytes": 0,
+    "PRJEB32839_bytes": 0
+  },
+  "notes": [
+    "The scratch filesystem is shared; available bytes do not represent an exclusive reservation.",
+    "No administrative project quota was provided, so the measured available capacity is the effective preflight capacity.",
+    "Capacity must be measured again immediately before acquisition and before the scientific workflow."
+  ]
+}

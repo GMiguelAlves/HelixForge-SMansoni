@@ -1,10 +1,28 @@
 {
   "schema_version": "1.0",
   "study": "PRJEB32839",
-  "status": "NOT_STARTED",
-  "helixforge_release": "v1.0.1",
-  "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
+  "status": "PREFLIGHT_COMPLETE",
+  "phase": "storage_authorized",
+  "session_uuid": "98a87d95-046f-42e4-9d6c-25d8767cc07b",
+  "helixforge_release": "v1.0.2",
+  "helixforge_commit": "5d4b3e696319db5cd7633472504964f1dc7c0434",
+  "helixforge_smansoni_base_commit": "b730e86a26babd51d8d5f99dd4afac6505a8cd2c",
   "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
   "analysis_mode": "full",
-  "benchmark": false
+  "benchmark": false,
+  "frozen_run_inventory": "PASS",
+  "expected_fastq_bytes": 258443852490,
+  "storage_authorization": "GO",
+  "download_state": "NOT_STARTED",
+  "workflow_state": "NOT_STARTED",
+  "scratch_checkpoints": [
+    {
+      "phase": "pre_download",
+      "available_bytes": 2269043752960,
+      "project_bytes": 0
+    }
+  ],
+  "resume_events": [],
+  "persistent_copy": "NOT_STARTED",
+  "cleanup": "NOT_STARTED"
 }
