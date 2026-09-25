@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "study": "PRJEB32839",
-  "status": "DOWNLOAD_COMPLETE",
-  "phase": "acquisition_validated",
+  "status": "WORKFLOW_IN_PROGRESS",
+  "phase": "rnaseq_full",
   "session_uuid": "98a87d95-046f-42e4-9d6c-25d8767cc07b",
   "helixforge_release": "v1.0.2",
   "helixforge_commit": "5d4b3e696319db5cd7633472504964f1dc7c0434",
@@ -33,7 +33,10 @@
     "fastq_integrity.tsv",
     "fastq_sha256.txt"
   ],
-  "workflow_state": "NOT_STARTED",
+  "workflow_state": "IN_PROGRESS",
+  "workflow_run_name": "prjeb32839-full-v102-20260925",
+  "workflow_submission_observed_utc": "2026-09-25T20:51:10Z",
+  "workflow_max_concurrent_jobs": 8,
   "scratch_checkpoints": [
     {
       "phase": "pre_download",
