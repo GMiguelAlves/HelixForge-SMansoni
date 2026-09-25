@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "study": "PRJEB32839",
-  "status": "DOWNLOAD_IN_PROGRESS",
-  "phase": "data_acquisition",
+  "status": "DOWNLOAD_COMPLETE",
+  "phase": "acquisition_validated",
   "session_uuid": "98a87d95-046f-42e4-9d6c-25d8767cc07b",
   "helixforge_release": "v1.0.2",
   "helixforge_commit": "5d4b3e696319db5cd7633472504964f1dc7c0434",
@@ -13,10 +13,26 @@
   "frozen_run_inventory": "PASS",
   "expected_fastq_bytes": 258443852490,
   "storage_authorization": "GO",
-  "download_state": "IN_PROGRESS",
+  "download_state": "COMPLETE",
   "download_job_id": 21888,
   "download_array_tasks": 150,
   "download_max_concurrency": 8,
+  "download_retry_job_id": 22040,
+  "download_retry_tasks": [
+    60,
+    147
+  ],
+  "download_validation_job_id": 22044,
+  "download_validation_state": "PASS",
+  "downloaded_runs": 150,
+  "downloaded_samples": 75,
+  "downloaded_fastq_files": 300,
+  "observed_fastq_bytes": 258443852490,
+  "integrity_artifacts": [
+    "fastq_integrity.json",
+    "fastq_integrity.tsv",
+    "fastq_sha256.txt"
+  ],
   "workflow_state": "NOT_STARTED",
   "scratch_checkpoints": [
     {
@@ -33,6 +49,11 @@
       "phase": "download_initial_snapshot",
       "available_bytes": null,
       "project_bytes": 261328896
+    },
+    {
+      "phase": "acquisition_validated",
+      "available_bytes": 2151485079552,
+      "project_bytes": 258464920870
     }
   ],
   "resume_events": [],
