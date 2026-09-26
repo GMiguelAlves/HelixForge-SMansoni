@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = PRJEB14695_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = PRJEB32839_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -30,8 +30,8 @@ design, metadata, and execution contracts are reviewed.
 
 | Dependency | Frozen value |
 |---|---|
-| HelixForge release | [`v1.0.1`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.0.1) |
-| HelixForge commit | `e41d221657b8e0bf2700bccd547e15032ccac36f` |
+| HelixForge release | [`v1.0.2`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.0.2) |
+| HelixForge commit | `5d4b3e696319db5cd7633472504964f1dc7c0434` |
 | Nextflow | `25.10.7` |
 | Java | `21` |
 
@@ -51,7 +51,7 @@ checksums are frozen in
 [`config/reference/reference_manifest.json`](config/reference/reference_manifest.json).
 The validation metrics and reusable-index provenance are recorded under
 [`provenance/reference/`](provenance/reference/).
-HelixForge `v1.0.1` validates and consumes that immutable index explicitly;
+HelixForge `v1.0.2` validates and consumes that immutable index explicitly;
 it does not depend on `-resume` to avoid rebuilding it.
 
 ## Initial studies
@@ -61,7 +61,7 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 1 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
 | 2 | `PRJNA597909` | 20 | 20 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; DE enabled |
 | 3 | `PRJEB14695` | 138 | 23 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; technical runs aggregated before inference |
-| 4 | `PRJEB32839` | 150 | 75 | full RNA-seq |
+| 4 | `PRJEB32839` | 150 | 75 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; stage and sex contrasts |
 
 `PRJNA602528` is the first completed real *S. mansoni* application and
 operational calibration run. It is not a new benchmark of HelixForge. Its
@@ -86,10 +86,19 @@ that reused all 815 eligible upstream tasks. The accepted matrices, six frozen
 contrasts, figures, HTML reports, terminal manifest, and validation summary are
 available under [`results/PRJEB14695/`](results/PRJEB14695/).
 
-The repository-wide baseline remains HelixForge `v1.0.1` at the commit listed
-above. `PRJEB14695` additionally pins the reviewed post-release contract fix at
-commit `42864266892d1165477bb3b33c919e1fabb28ad1`; this amendment is recorded in
-its execution state and does not rewrite the provenance of earlier studies.
+Earlier studies retain their recorded `v1.0.1` execution provenance.
+`PRJEB14695` additionally pins the reviewed post-release contract fix at commit
+`42864266892d1165477bb3b33c919e1fabb28ad1`; the current project default is
+`v1.0.2`, as listed above, without rewriting prior runs.
+
+`PRJEB32839` completed the `v1.0.2` native path for 150 technical runs and 75
+biological samples. The exact frozen inventory, 12 DESeq2 contrasts, compact
+QC/DE summaries, candidate-gene report record, terminal manifest, storage
+calibration, and reviewed execution report are available under
+[`results/PRJEB32839/`](results/PRJEB32839/). The newer pin applies to this
+study and does not rewrite earlier execution provenance. Verified persistence
+and the private audit archive preceded cleanup; 1.208 TB of study-specific
+scratch data were removed without touching shared resources or other studies.
 
 ## Execution policy
 
