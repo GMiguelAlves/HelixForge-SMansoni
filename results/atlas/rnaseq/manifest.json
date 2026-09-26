@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "atlas_id": "smansoni_rnaseq_atlas_v1",
+  "status": "PASS",
+  "scope": "descriptive_cross_study_with_per_study_differential_expression",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "studies": [
+    "PRJNA602528",
+    "PRJNA597909",
+    "PRJEB14695",
+    "PRJEB32839"
+  ],
+  "biological_samples": 128,
+  "technical_runs": 318,
+  "genes": 9914,
+  "contrasts": 22,
+  "selected_group_memberships": 65,
+  "selected_unique_genes": 61,
+  "selected_unique_genes_present": 45,
+  "batch_effect_assessment": "DEFERRED",
+  "global_pca_interpretation": "EXPLORATORY_NOT_A_BATCH_TEST",
+  "inputs": [
+    {
+      "path": "analyses/atlas/atlas_config.json",
+      "sha256": "26f4d04053eba1c4d202e4a258073031669982b81201599062abf773d8cc381e"
+    },
+    {
+      "path": "analyses/atlas/rnaseq_atlas_template.html",
+      "sha256": "0ee7f3e5dc070360f526c4f3bc778f60c0f3af68b91cbbc0409496e2024db991"
+    },
+    {
+      "path": "config/PRJEB14695/de_spec.json",
+      "sha256": "c40ece5e5de338920aeff4ed07a2796488e8825826954154f7d2df7a79b5a485"
+    },
+    {
+      "path": "config/PRJEB32839/candidate_genes.txt",
+      "sha256": "d13e2f8dfc8c208edf995a906c3be52f106e16c955a292fb070e308e3d4c4ae2"
+    },
+    {
+      "path": "config/PRJEB32839/de_spec.json",
+      "sha256": "eb474e371df29b7833d9ec22033ab11f5db2ab575f75cde5d1847440be6b60df"
+    },
+    {
+      "path": "config/PRJNA597909/de_spec.json",
+      "sha256": "e4c4f81b3ecba0582dcf492e640e22b6d991f235db478c3556c24706d4dce56a"
+    },
+    {
+      "path": "metadata/PRJEB14695/samples.tsv",
+      "sha256": "64671f94161b660b40ba9a6055b036f39531e1e8676c66543c2c3546be63790d"
+    },
+    {
+      "path": "metadata/PRJEB32839/samples.tsv",
+      "sha256": "ba8716b1be555362206f5037d91b43675b656653b07c35c7184f7c4110f1fa6a"
+    },
+    {
+      "path": "metadata/PRJNA597909/samples.tsv",
+      "sha256": "4dcf229766ecc06564f967e441c92e7776c06f0bb18b63e7e6b746dd7bc5635b"
+    },
+    {
+      "path": "metadata/PRJNA602528/samples.tsv",
+      "sha256": "5621190125406f4141c18df68ced2c271af61820b339a070237b94272ada9ddc"
+    },
+    {
+      "path": "results/PRJEB14695/differential_expression/DEGs_all_results.tsv",
+      "sha256": "61d65b2365252486cc1a818ff06a3508ba1d520ddd64cead06510c20ced86741"
+    },
+    {
+      "path": "results/PRJEB14695/expression/tpm_matrix.tsv",
+      "sha256": "a25b7ab73ee7c55a27ebccb3e02ca19f94486755ae8feacc170169c7c6465dc4"
+    },
+    {
+      "path": "results/PRJEB14695/qc/qc_summary.json",
+      "sha256": "f94a164a2d67f1c3d8847698adc6e55a64b4208e41350cf3e245b2ab07223018"
+    },
+    {
+      "path": "results/PRJEB32839/differential_expression/DEGs_all_results.tsv",
+      "sha256": "aa38009a6aa6790fdb54d28e66b0355212b2c0369620057f652d946d52daf208"
+    },
+    {
+      "path": "results/PRJEB32839/expression/tpm_matrix.tsv",
+      "sha256": "4bb89484e7814dc4c8a3b94710634263fb3cd29d9dbe98093d6e4f2e06fa286a"
+    },
+    {
+      "path": "results/PRJEB32839/qc/qc_sample_summary.tsv",
+      "sha256": "8c7e6eeebcfe9b4e57e546b6a73955bfe33e299ce93ac39f28c7eab213f8ce1a"
+    },
+    {
+      "path": "results/PRJEB32839/qc/qc_summary.json",
+      "sha256": "7af38381d7fc80808485ff3c3f36f45597b619b45d3167131714c644a29565e8"
+    },
+    {
+      "path": "results/PRJNA597909/differential_expression/DEGs_all_results.tsv",
+      "sha256": "ace17c9e9cdd9e1f19fb53f52bbb32e17646db7c08da7d4b895b4adabd7f64ed"
+    },
+    {
+      "path": "results/PRJNA597909/expression/tpm_matrix.tsv",
+      "sha256": "1cfd1bf790d1c3dc7385897a9ec04fa1af452197fe0e507ffae6d26865a504d6"
+    },
+    {
+      "path": "results/PRJNA597909/qc/PRJNA597909_qc_summary.tsv",
+      "sha256": "611853d8322ca9ac4fdabdfdb1e2bce5344e4d5790b8ba0c7320577ca566841c"
+    },
+    {
+      "path": "results/PRJNA597909/qc/qc_summary.json",
+      "sha256": "a57296d2eff816c5c1ee072b05e54a80d773972ae2d34a06cd625a8288fc9669"
+    },
+    {
+      "path": "results/PRJNA602528/expression/tpm_matrix.tsv",
+      "sha256": "e4af7babc8607aab99b649037fe643b451d86d3adab280921260f73596518cca"
+    },
+    {
+      "path": "results/PRJNA602528/qc/PRJNA602528_qc_summary.tsv",
+      "sha256": "66828a91014c044df98e012034aa7311a72c1bcfe594f71e7efeef3b02399dcf"
+    },
+    {
+      "path": "scripts/atlas/build_rnaseq_atlas.py",
+      "sha256": "044da388aad815b25f15705878ea24b9181f54bbe95bc5dc9bbf7edc92d92fc9"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "atlas.html",
+      "bytes": 24717,
+      "sha256": "627259cf7468d0f0510b57e1d8bdc9528012aa76cd1a7507266a52282bc82b43"
+    },
+    {
+      "path": "data/atlas_payload.js",
+      "bytes": 12334732,
+      "sha256": "2c07e9631f34e3bdc74ac6be16525b17d494842491cddbfd6ff9c8cf402a016b"
+    },
+    {
+      "path": "data/contrast_catalog.tsv",
+      "bytes": 5506,
+      "sha256": "c71b3fc793cf7f3a83bc97717c1b28bd046667b04168599ef04a56b6a34f2a46"
+    },
+    {
+      "path": "data/gene_contrast_log2fc.tsv",
+      "bytes": 2512258,
+      "sha256": "a3269a26611b1ee858a65de986ed830234f7397214cbdea2af3e70f5a7581c78"
+    },
+    {
+      "path": "data/gene_contrast_padj.tsv",
+      "bytes": 2464453,
+      "sha256": "887bab9db29d73de618c9ba828031ee055490469e759a3c88f54ccf2b9390b2a"
+    },
+    {
+      "path": "data/gene_expression_summary.tsv",
+      "bytes": 2292987,
+      "sha256": "8bd99e7799f5f8f6c7213c960fa5452f268a486468487b3e05fad164b16dce4f"
+    },
+    {
+      "path": "data/pca_coordinates.tsv",
+      "bytes": 45144,
+      "sha256": "2863f7d1ad0c9c6f5d7e3e463b5c5dc0545ce7b785b5de7c9ee784cf01f067c7"
+    },
+    {
+      "path": "data/sample_correlation.tsv",
+      "bytes": 155005,
+      "sha256": "9f2c178b33a8c51c7699033045e0a8824d81403727b20a546d78d4b3df1d9258"
+    },
+    {
+      "path": "data/sample_inventory.tsv",
+      "bytes": 32390,
+      "sha256": "d93e11f1e03c5d3f2d553dfa49d0d4812b15a2a9d8f496e559d939c697ea0b72"
+    },
+    {
+      "path": "data/selected_genes.tsv",
+      "bytes": 1459,
+      "sha256": "93a12ef78528f33470adf836c350d99ac97b56028419717facc37c6ff5529507"
+    },
+    {
+      "path": "data/study_summary.tsv",
+      "bytes": 569,
+      "sha256": "99a3ac636f3fdef685913c3f64c31a71a89458bbb87f75975a662d9f97c88f69"
+    },
+    {
+      "path": "figures/contrast_significance_summary.svg",
+      "bytes": 8925,
+      "sha256": "0b5e1ead599aa62ccca9df73ae4668a8379c1aee34b8caa5cc215aeea5638171"
+    },
+    {
+      "path": "figures/global_pca_by_stage.svg",
+      "bytes": 25719,
+      "sha256": "a300b1aefd5e853167113194511f4af4174a212a30db4329acd0736dffa54cbd"
+    },
+    {
+      "path": "figures/global_pca_by_study.svg",
+      "bytes": 25245,
+      "sha256": "621b82a1c7c4ff4f2eebec8798c82f9ba9ae93be990c3daf30d74ccd4420a24c"
+    },
+    {
+      "path": "figures/PRJEB14695_pca_by_condition.svg",
+      "bytes": 7788,
+      "sha256": "0cb92ddae3fa60c8af752d3d5fa0427cd8dccbb317e39782335555a2352fbb72"
+    },
+    {
+      "path": "figures/PRJEB32839_pca_by_condition.svg",
+      "bytes": 17766,
+      "sha256": "9ef8350470a309bbbc087ac3f1ad56a54da8f7f7bbafc7af8878b479ec9d3e77"
+    },
+    {
+      "path": "figures/PRJNA597909_pca_by_condition.svg",
+      "bytes": 6525,
+      "sha256": "eabe820717685f595d8051de69486a13b8c7d6c2310f56f77153cd541f90a97f"
+    },
+    {
+      "path": "figures/PRJNA602528_pca_by_condition.svg",
+      "bytes": 5202,
+      "sha256": "34e0d6bdd4b1db6566518fd2b01fb4338db726ae73e75708722def8b0fa3a7fb"
+    },
+    {
+      "path": "figures/qc_classification.svg",
+      "bytes": 3651,
+      "sha256": "752a179e75cb26c2268f950f0326af506538a23b537b8d65898bc83adc2f18fa"
+    },
+    {
+      "path": "figures/sample_correlation.svg",
+      "bytes": 3076090,
+      "sha256": "fa687440fcdd4759b94b50a33b96954f56e9d27873775939cf3711c4139307a1"
+    },
+    {
+      "path": "figures/selected_gene_contrast_matrix.svg",
+      "bytes": 169594,
+      "sha256": "018691c274a923957f70cb63e2e5174e5b728ea2661c5e2b995179dc279e7032"
+    },
+    {
+      "path": "figures/selected_gene_expression_heatmap.svg",
+      "bytes": 291594,
+      "sha256": "3de69637f267b6d147d09697f2c86842d658379c3f5bf608a29f5a0392f20440"
+    },
+    {
+      "path": "figures/study_composition.svg",
+      "bytes": 3171,
+      "sha256": "6cca5e0477bd0b9aa71ac10c358c800bfe0c96bfe8e10208cf9879f703cd022d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 534,
+      "sha256": "b374472eda4781af3ae4e48f9f321050d72404aa0a8d36276ccb8f02534a829c"
+    }
+  ]
+}
