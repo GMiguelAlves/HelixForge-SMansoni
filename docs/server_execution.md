@@ -40,8 +40,9 @@ and unpublished intermediates in scratch. The frozen operational order is:
 
 1. `PRJNA602528` — Import-only operational calibration completed and cleaned;
 2. `PRJNA597909` — Full RNA-seq completed, persisted, and cleaned;
-3. `PRJEB14695`;
-4. `PRJEB32839`.
+3. `PRJEB14695` — Full RNA-seq completed, persisted, and cleaned;
+4. `PRJEB32839` — Full RNA-seq completed; persistence and cleanup recorded in
+   its project provenance.
 
 The order may change only with a documented operational reason. `PRJNA602528`
 passed persistence and cleanup gates; starting another study still requires an

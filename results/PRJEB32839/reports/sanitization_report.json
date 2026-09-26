@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "scope": "results/PRJEB32839",
+  "files_scanned": 53,
+  "largest_file_bytes": 31929963,
+  "forbidden_path_violations": [],
+  "removed_from_public_bundle": [
+    "expression/quant_samples.tsv",
+    "gene_report/tables/expression_long.tsv"
+  ],
+  "sanitized": [
+    "expression/sessionInfo.txt"
+  ],
+  "notes": [
+    "The omitted tables contain runtime paths but remain in verified private persistent storage.",
+    "The full linked candidate-gene HTML tree and individual FastQC reports remain in private persistent storage to avoid inflating Git."
+  ]
+}

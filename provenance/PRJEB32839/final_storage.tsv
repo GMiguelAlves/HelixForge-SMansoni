@@ -1,0 +1,15 @@
+item	bytes
+raw	258443852490
+work	474603251998
+results	1188108403
+fastqc_raw	546930124
+fastqc_trimmed_runs	545803328
+fastqc_merged	272341862
+trimmed_runs	236090238900
+trimmed_merged	236089045524
+multiqc_030	136391893
+download_provenance	22340
+logs	24759073
+state	238374
+project_total	1207940984325
+scratch_available	1473138327552

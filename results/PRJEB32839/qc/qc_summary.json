@@ -1,0 +1,103 @@
+{
+  "fastqc_html": 750,
+  "mapping_percent_max": 86.95685693847359,
+  "mapping_percent_mean": 69.88643186124207,
+  "mapping_percent_median": 80.35710118780761,
+  "mapping_percent_min": 17.247308896379472,
+  "multiqc": "PASS",
+  "processed_fragments_total": 4072077864,
+  "raw_reads_total_both_mates": 8816561760,
+  "salmon_samples": 75,
+  "salmon_targets": [
+    10913
+  ],
+  "salmon_versions": [
+    "1.10.3"
+  ],
+  "sample_classification": {
+    "PASS": 54,
+    "REVIEW": 21
+  },
+  "samples_below_50_percent_mapping": [
+    {
+      "percent_mapped": 22.184774733857168,
+      "processed_fragments": 39067744,
+      "sample": "PRJEB32839.f_32d_sporocysts_r1"
+    },
+    {
+      "percent_mapped": 26.835757622414736,
+      "processed_fragments": 46502980,
+      "sample": "PRJEB32839.f_32d_sporocysts_r2"
+    },
+    {
+      "percent_mapped": 25.624120960076922,
+      "processed_fragments": 62148770,
+      "sample": "PRJEB32839.f_32d_sporocysts_r3"
+    },
+    {
+      "percent_mapped": 26.48367445300882,
+      "processed_fragments": 54758104,
+      "sample": "PRJEB32839.f_32d_sporocysts_r4"
+    },
+    {
+      "percent_mapped": 32.854049182242726,
+      "processed_fragments": 48790333,
+      "sample": "PRJEB32839.f_32d_sporocysts_r5"
+    },
+    {
+      "percent_mapped": 26.417841608265014,
+      "processed_fragments": 41144811,
+      "sample": "PRJEB32839.m_32d_sporocysts_r1"
+    },
+    {
+      "percent_mapped": 28.076035542189658,
+      "processed_fragments": 62616401,
+      "sample": "PRJEB32839.m_32d_sporocysts_r2"
+    },
+    {
+      "percent_mapped": 26.800614762027493,
+      "processed_fragments": 48431098,
+      "sample": "PRJEB32839.m_32d_sporocysts_r3"
+    },
+    {
+      "percent_mapped": 17.247308896379472,
+      "processed_fragments": 104740114,
+      "sample": "PRJEB32839.m_32d_sporocysts_r4"
+    },
+    {
+      "percent_mapped": 33.72638289928336,
+      "processed_fragments": 64531471,
+      "sample": "PRJEB32839.m_32d_sporocysts_r5"
+    },
+    {
+      "percent_mapped": 33.174952181309415,
+      "processed_fragments": 104848124,
+      "sample": "PRJEB32839.x_32d_sporocysts_r1"
+    },
+    {
+      "percent_mapped": 35.83181345313744,
+      "processed_fragments": 54010836,
+      "sample": "PRJEB32839.x_32d_sporocysts_r2"
+    },
+    {
+      "percent_mapped": 26.819012680869726,
+      "processed_fragments": 39959562,
+      "sample": "PRJEB32839.x_32d_sporocysts_r3"
+    },
+    {
+      "percent_mapped": 30.504220892714844,
+      "processed_fragments": 42252910,
+      "sample": "PRJEB32839.x_32d_sporocysts_r4"
+    },
+    {
+      "percent_mapped": 37.768354017068155,
+      "processed_fragments": 25885396,
+      "sample": "PRJEB32839.x_32d_sporocysts_r5"
+    }
+  ],
+  "trim_retention_percent_max": 98.79619062952347,
+  "trim_retention_percent_mean": 92.27546451346768,
+  "trim_retention_percent_median": 95.08154248766607,
+  "trim_retention_percent_min": 41.52060237479559,
+  "trimmed_reads_total_both_mates": 8144155728
+}

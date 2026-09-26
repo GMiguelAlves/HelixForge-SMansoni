@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJEB32839",
+  "status": "PASS",
+  "validated_at": "2026-09-24",
+  "runtime": {
+    "nextflow": "25.10.7 build 12755",
+    "java": "Temurin 21.0.12+8",
+    "python": "3.10.18",
+    "jsonschema": "4.25.1",
+    "salmon": "1.10.3"
+  },
+  "gates": {
+    "python_runtime_preflight": "PASS",
+    "certified_python_first_in_path": "PASS",
+    "jsonschema_import": "PASS",
+    "reference_integrity": "PASS",
+    "salmon_index_reuse": "PASS",
+    "url_preflight": "PASS"
+  },
+  "reference": {
+    "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "checksums_verified": 9
+  },
+  "salmon_index": {
+    "kmer_size": 31,
+    "index_version": 5,
+    "file_count": 15,
+    "size_bytes": 158307779,
+    "composite_sha256": "88cf26aec437dc27959fa47afc8106f31943818e2260174796f0a0547223087b",
+    "transcriptome_sha256": "b794519faf24d6d8ae9a849467e567f0ca20c9c8c4e4585fdd060353a9a72a47"
+  },
+  "urls": {
+    "runs": 150,
+    "files": 300,
+    "available": 300,
+    "size_matched": 300
+  },
+  "site_policy": {
+    "path_only_injection": true,
+    "export_all_forbidden": true,
+    "compute_node_git_required": false
+  }
+}
