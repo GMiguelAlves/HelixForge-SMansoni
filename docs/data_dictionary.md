@@ -58,7 +58,7 @@ tissues, sexes, or treatments are biologically interchangeable across studies.
 - `contrast_catalog.tsv`: frozen study, factor, orientation, thresholds, and
   significant-gene counts for every original contrast;
 - `gene_contrast_log2fc.tsv` and `gene_contrast_padj.tsv`: complete shared gene
-  universe by contrast, with blank values meaning not tested;
+  universe by contrast, with `NA` values meaning not tested;
 - `gene_expression_summary.tsv`: per-gene, per-study TPM summaries;
 - `selected_genes.tsv`: candidate-group membership and reference presence;
 - `atlas_payload.js`: compact local-browser payload for the gene explorer.

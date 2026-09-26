@@ -618,8 +618,10 @@ def main() -> int:
     padj_matrix = np.column_stack(padj_columns)
     contrast_fields = ["contrast_key", "display_id", "study", "factor", "numerator", "denominator", "direction", "description", "tested_genes", "significant_genes", "upregulated", "downregulated", "alpha", "absolute_log2_fold_change"]
     write_tsv(data_dir / "contrast_catalog.tsv", contrast_fields, contrast_rows)
-    lfc_rows = [{"gene_id": gene, **{key: "" if not math.isfinite(lfc_matrix[index, col]) else f"{lfc_matrix[index, col]:.8g}" for col, key in enumerate(contrast_keys)}} for index, gene in enumerate(all_genes)]
-    padj_rows = [{"gene_id": gene, **{key: "" if not math.isfinite(padj_matrix[index, col]) else f"{padj_matrix[index, col]:.8g}" for col, key in enumerate(contrast_keys)}} for index, gene in enumerate(all_genes)]
+    # Explicit NA values keep the rectangular TSV contract unambiguous while
+    # avoiding trailing empty fields that Git interprets as whitespace errors.
+    lfc_rows = [{"gene_id": gene, **{key: "NA" if not math.isfinite(lfc_matrix[index, col]) else f"{lfc_matrix[index, col]:.8g}" for col, key in enumerate(contrast_keys)}} for index, gene in enumerate(all_genes)]
+    padj_rows = [{"gene_id": gene, **{key: "NA" if not math.isfinite(padj_matrix[index, col]) else f"{padj_matrix[index, col]:.8g}" for col, key in enumerate(contrast_keys)}} for index, gene in enumerate(all_genes)]
     write_tsv(data_dir / "gene_contrast_log2fc.tsv", ["gene_id", *contrast_keys], lfc_rows)
     write_tsv(data_dir / "gene_contrast_padj.tsv", ["gene_id", *contrast_keys], padj_rows)
 
