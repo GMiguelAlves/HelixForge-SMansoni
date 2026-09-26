@@ -1,0 +1,189 @@
+{
+  "contrasts": [
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__miracidium_mixed_vs_egg_mixed",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "3394",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__sporocyst_1d_mixed_vs_miracidium_mixed",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "3585",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__sporocyst_5d_mixed_vs_sporocyst_1d_mixed",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "1681",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__sporocyst_32d_mixed_vs_sporocyst_5d_mixed",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "2942",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__cercaria_mixed_vs_sporocyst_32d_mixed",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "4423",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__schistosomulum_2d_mixed_vs_cercaria_mixed",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "3429",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__juvenile_26d_female_vs_schistosomulum_2d_female",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "2622",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__juvenile_26d_male_vs_schistosomulum_2d_male",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "2635",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__sporocyst_32d_female_vs_sporocyst_32d_male",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "10",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__cercaria_female_vs_cercaria_male",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "519",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__schistosomulum_2d_female_vs_schistosomulum_2d_male",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "680",
+      "status": "ok",
+      "variable": "condition"
+    },
+    {
+      "analysis_id": "smansoni_prjeb32839_primary",
+      "contrast": "condition__juvenile_26d_female_vs_juvenile_26d_male",
+      "n_genes": "9792",
+      "n_samples": "75",
+      "n_significant": "662",
+      "status": "ok",
+      "variable": "condition"
+    }
+  ],
+  "errors": [],
+  "fastq_files": 300,
+  "gates": {
+    "differential_expression": "PASS",
+    "expression_import": "PASS",
+    "fastq_integrity": "PASS",
+    "gene_report": "PASS",
+    "html_reports": "PASS",
+    "qc": "PASS",
+    "quantification": "PASS",
+    "resume_cache_reuse": "NOT_APPLICABLE_CLEAN_RUN",
+    "technical_run_aggregation": "PASS",
+    "terminal_manifest": "PASS"
+  },
+  "gene_report": {
+    "container": "ghcr.io/gmiguelalves/helixforge-rnaseq-report:1.0.0@sha256:ec8818c48c91e2fe501c01ffa27291e92662ddd6d8ab9eb1bc9e6afc99e6f863",
+    "figures": 348,
+    "matched": 48,
+    "provider": "candidate_genes_v1",
+    "queries": 65,
+    "unmatched": 17
+  },
+  "helixforge_commit": "5d4b3e696319db5cd7633472504964f1dc7c0434",
+  "limitations": [
+    "Fifteen 32-day sporocyst samples mapped below 50%; the stage-specific pattern is reported for biological review rather than silently excluded.",
+    "Seventeen preregistered candidate identifiers were absent from the WBPS19 expression/annotation inputs and remain explicit unmatched entries.",
+    "The candidate-gene report was produced with the official report_reentry mode after the full workflow because reporting was disabled in the original full invocation; no scientific process was recomputed.",
+    "Storage was measured at checkpoints and immediately before cleanup, not sampled continuously; the observed pre-cleanup footprint is not claimed as an exact peak."
+  ],
+  "matrices": {
+    "counts": {
+      "genes": 9914,
+      "samples": 75
+    },
+    "length": {
+      "genes": 9914,
+      "samples": 75
+    },
+    "tpm": {
+      "genes": 9914,
+      "samples": 75
+    }
+  },
+  "ready_for_review": true,
+  "runs": 150,
+  "samples": 75,
+  "schema_version": "1.0",
+  "status": "PASS_WITH_LIMITATIONS",
+  "storage": {
+    "download_provenance": 22340,
+    "fastqc_merged": 272341862,
+    "fastqc_raw": 546930124,
+    "fastqc_trimmed_runs": 545803328,
+    "logs": 24759073,
+    "multiqc_030": 136391893,
+    "observed_pre_cleanup_multiplier": 4.673901,
+    "project_total": 1207940984325,
+    "raw": 258443852490,
+    "results": 1188108403,
+    "scratch_available": 1473138327552,
+    "state": 238374,
+    "trimmed_merged": 236089045524,
+    "trimmed_runs": 236090238900,
+    "work": 474603251998
+  },
+  "study": "PRJEB32839",
+  "terminal_artifact_types": {
+    "differential_expression": 12,
+    "differential_expression_summary": 1,
+    "gene_abundance": 1,
+    "gene_counts": 1,
+    "normalized_counts": 1,
+    "transcript_abundance": 75
+  },
+  "trace": {
+    "COMPLETED": 1153
+  }
+}

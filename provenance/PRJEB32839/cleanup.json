@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJEB32839",
+  "status": "PASS",
+  "completed_on": "2026-09-26",
+  "scope": "study_scratch_root",
+  "scratch_bytes_before_cleanup": 1207941033218,
+  "scratch_bytes_after_cleanup": 0,
+  "scratch_bytes_recovered": 1207941033218,
+  "heavy_residual_bytes": 0,
+  "removed": [
+    "raw_fastq",
+    "trimmed_fastq",
+    "nextflow_workdir",
+    "temporary_outputs",
+    "study_local_runtime_state"
+  ],
+  "preserved": [
+    "verified_persistent_results",
+    "private_audit_archive",
+    "shared_reference_bundle",
+    "validated_salmon_index",
+    "shared_nextflow_runtime_and_cache"
+  ],
+  "audit_archive": "helixforge-smansoni-PRJEB32839-2026-09-26.zip",
+  "audit_archive_bytes": 672343,
+  "audit_archive_files": 57,
+  "audit_archive_sha256": "40f9b7b5e68b84738eb89e90f9bd3a89553c458f8cd2d3c0a6d052c3ed6c0f55",
+  "other_projects_touched": false,
+  "shared_resources_touched": false,
+  "next_project_authorized": false
+}

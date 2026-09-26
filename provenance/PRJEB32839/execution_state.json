@@ -1,10 +1,114 @@
 {
   "schema_version": "1.0",
   "study": "PRJEB32839",
-  "status": "NOT_STARTED",
-  "helixforge_release": "v1.0.1",
-  "helixforge_commit": "e41d221657b8e0bf2700bccd547e15032ccac36f",
+  "status": "READY_FOR_REVIEW",
+  "phase": "COMPLETE",
+  "session_uuid": "98a87d95-046f-42e4-9d6c-25d8767cc07b",
+  "helixforge_release": "v1.0.2",
+  "helixforge_commit": "5d4b3e696319db5cd7633472504964f1dc7c0434",
+  "helixforge_smansoni_full_run_commit": "017af7eaadaf3828e33b0365886333d21f3c183f",
+  "helixforge_smansoni_report_commit": "b643f4f3918221a09c812341b203d8c9366d1af7",
   "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
   "analysis_mode": "full",
-  "benchmark": false
+  "benchmark": false,
+  "frozen_run_inventory": "PASS",
+  "expected_fastq_bytes": 258443852490,
+  "storage_authorization": "GO",
+  "download_state": "COMPLETE",
+  "download_job_id": 21888,
+  "download_array_tasks": 150,
+  "download_max_concurrency": 8,
+  "download_retry_job_id": 22040,
+  "download_retry_tasks": [
+    60,
+    147
+  ],
+  "download_validation_job_id": 22044,
+  "download_validation_state": "PASS",
+  "downloaded_runs": 150,
+  "downloaded_samples": 75,
+  "downloaded_fastq_files": 300,
+  "observed_fastq_bytes": 258443852490,
+  "integrity_artifacts": [
+    "fastq_integrity.json",
+    "fastq_integrity.tsv",
+    "fastq_sha256.txt"
+  ],
+  "workflow_state": "COMPLETE",
+  "workflow_run_name": "prjeb32839-full-v102-20260925",
+  "workflow_submission_observed_utc": "2026-09-25T20:51:10Z",
+  "workflow_max_concurrent_jobs": 8,
+  "workflow_wall_time": "8h52m29s",
+  "workflow_cpu_hours": 332.1,
+  "workflow_processes_completed": 1153,
+  "workflow_processes_failed": 0,
+  "workflow_final_classification": "PASS_WITH_LIMITATIONS",
+  "report_reentry": {
+    "required": true,
+    "reason": "reporting was disabled in the original full invocation",
+    "mode": "report_reentry",
+    "scientific_processes_recomputed": 0,
+    "processes_completed": 2,
+    "wall_time": "4m49s",
+    "status": "PASS"
+  },
+  "scratch_checkpoints": [
+    {
+      "phase": "pre_download",
+      "available_bytes": 2269043752960,
+      "project_bytes": 0
+    },
+    {
+      "phase": "acquisition_authorization_recheck",
+      "available_bytes": 2266253819904,
+      "project_bytes": 24576
+    },
+    {
+      "phase": "download_initial_snapshot",
+      "available_bytes": null,
+      "project_bytes": 261328896
+    },
+    {
+      "phase": "acquisition_validated",
+      "available_bytes": 2151485079552,
+      "project_bytes": 258464920870
+    },
+    {
+      "phase": "final_pre_cleanup",
+      "available_bytes": 1473138327552,
+      "project_bytes": 1207940984325,
+      "measurement_note": "observed footprint; continuous peak was not sampled"
+    }
+  ],
+  "resume_events": [],
+  "resume_required": false,
+  "resume_behavior": "NOT_APPLICABLE",
+  "persistent_copy": {
+    "status": "PASS",
+    "destination": "${HF_RESULTS_ROOT}/PRJEB32839",
+    "source_files": 5017,
+    "source_bytes": 1188108403,
+    "verification": "SHA-256"
+  },
+  "audit_package": {
+    "status": "PASS",
+    "filename": "helixforge-smansoni-PRJEB32839-2026-09-26.zip",
+    "bytes": 672343,
+    "files": 57,
+    "sha256": "40f9b7b5e68b84738eb89e90f9bd3a89553c458f8cd2d3c0a6d052c3ed6c0f55",
+    "integrity": "SHA-256 and ZIP CRC",
+    "location": "private persistent audit storage"
+  },
+  "cleanup": {
+    "status": "PASS",
+    "scratch_bytes_before_cleanup": 1207941033218,
+    "scratch_bytes_after_cleanup": 0,
+    "scratch_bytes_recovered": 1207941033218,
+    "heavy_residual_bytes": 0,
+    "other_projects_touched": false,
+    "shared_resources_touched": false
+  },
+  "safety": {
+    "next_project_authorized": false
+  }
 }

@@ -1,0 +1,721 @@
+group	gene_id	gene_name	gene_display_label	dataset	batch	condition	stage_class	stage_day	stage	tissue	sex	n	mean_TPM	median_TPM	mean_log2TPM	fraction_expressed
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	19.8686246	21.323477	4.334603171648332	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	13.4882808	13.874871	3.8512373416289596	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	13.5769858	15.543087	3.8190819817153203	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	22.72783	23.771753	4.535441757818352	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	66.9737756	68.355534	6.085003307236043	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	50.9008162	53.333234	5.684355828035027	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	17.0678904	24.932117	3.317712801705345	0.8
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	48.687173800000004	50.698288	5.610040329428212	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	36.5032462	37.470911	5.223790654947676	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	46.5742554	42.88449	5.518775063783545	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	6.3579802	6.581834	2.8616619098575544	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	44.9764504	46.725436	5.499054812303906	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	51.4885066	54.510138	5.699647132255973	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	39.803037	37.555928	5.34059866132518	1
+Erasers	Smp_019170	Smp_019170	Smp_019170	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	17.681767	17.311736	4.209335215194466	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	30.553372	28.760483	4.930993475808551	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	20.8177228	20.658328	4.445535107007468	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	26.9573814	30.310534	4.785280443208069	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	25.953801	25.538109	4.737654109798811	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	42.9788436	43.445145	5.456437426536403	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	27.8331572	30.676828	4.834703199837918	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	16.7449842	25.420373	3.441442837553	0.8
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	42.973684	44.280622	5.445584670165916	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	26.656806200000002	26.408022	4.778303261707091	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	40.035075	39.806545	5.316966074733029	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	22.3505526	20.881464	4.476768278704038	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	26.7095722	28.785533	4.767915356672468	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	29.9289094	31.214219	4.941302097197799	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	24.2368134	22.881734	4.650603426424397	1
+Erasers	Smp_034000	Smp_034000	Smp_034000	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	19.117479	19.45661	4.327245747951341	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	29.2320298	30.624515	4.878947412166929	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	22.0303624	21.825572	4.519460190469587	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	26.7646586	25.75711	4.784405971722713	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	31.4364754	31.322048	5.004803342665404	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	28.641621	28.751599	4.889144722498843	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	24.3698292	24.978988	4.653364861270854	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	19.0653382	28.806347	3.488535367003764	0.8
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	42.765952999999996	45.120853	5.428500062991178	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	29.8718292	32.168576	4.931232864504753	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	41.0810244	44.989659	5.369711724628844	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	17.0644156	17.611364	4.156512779241617	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	23.3304404	23.321962	4.585693073216847	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	23.4449578	25.161144	4.594478444444807	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	22.9103988	23.90221	4.541100920323295	1
+Erasers	Smp_132170	Smp_132170	Smp_132170	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	22.878455	22.205568	4.575581580737882	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	6.200073	6.126871	2.806315902759934	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	3.883311	4.25849	2.280206932069692	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	3.7068735999999998	4.017361	2.215692222812395	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	16.9420768	17.665235	4.152808457930346	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	23.7089146	23.666026	4.6263393675136095	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	16.5920818	17.289608	4.131804156881433	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	12.1077436	19.40836	2.99105751628817	0.8
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	21.3517504	22.794021	4.462180053410811	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	14.545043999999999	14.695824	3.948419600367232	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	19.44917	19.833168	4.3280835524548475	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	17.57808	18.147627	4.137624847760085	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	20.100187599999998	21.268067	4.377948101219474	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	21.596912200000002	21.981534	4.487396804228539	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	21.752833	21.691362	4.501300803216163	1
+Erasers	Smp_150560	Smp_150560	Smp_150560	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	17.80306	18.541125	4.226008344907992	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	19.4156758	19.764217	4.312455286283352	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	13.1473716	13.370303	3.814798415052584	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	14.214425	14.389228	3.8989863442174637	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	18.7427676	19.6048	4.295224643532531	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	32.083917	32.193821	5.044749853092241	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	23.581130599999998	23.502048	4.607696780220659	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	11.014231	17.292851	2.8452654300548432	0.8
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	28.427138	29.668932	4.861693853098287	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	20.0462892	20.724277	4.377957170872297	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	27.6634302	27.563441	4.791162988251677	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	8.758265	9.938341	3.168598378110385	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	19.5684996	19.969828	4.346912192251223	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	20.6958798	21.776646	4.433292451682751	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	19.6353146	19.087915	4.3647648654842905	1
+Erasers	Smp_156290	Smp_156290	Smp_156290	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	15.8399676	14.097347	4.040580467979577	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	24.1999948	24.914457	4.610827912362482	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	16.9682748	17.118976	4.160415361230003	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	22.8061396	23.076819	4.5195882581828535	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	18.358208400000002	18.342065	4.22506352427071	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	23.9517414	24.233008	4.639500585278906	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	19.790615199999998	21.547673	4.362722694059507	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	8.2802088	11.028764	2.710699854757379	0.8
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	24.7954938	24.953757	4.64274186502759	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	12.844802	13.124301	3.783510541302788	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	19.798274199999998	19.219979	4.3320494463807355	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	14.015453	13.18266	3.8619875280893874	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	20.5375368	19.739315	4.3936364698178165	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	20.9784042	22.067198	4.443091554030534	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	14.6145138	15.179217	3.9489258406886885	1
+Erasers	Smp_160810	Smp_160810	Smp_160810	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	14.8836884	14.381391	3.986940813526328	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	3.4290304000000003	3.269545	2.0423299044200633	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	1.649601	1.679291	1.405356878393893	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	2.0544548	2.313145	1.573879288166679	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	12.3032716	9.926767	3.6035650619055932	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	23.3111444	23.067136	4.601423591587818	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	17.8312912	17.692835	4.227555632750782	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	9.8094964	13.589121	2.746106176584393	0.8
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	14.312509	14.933012	3.884894375436616	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	8.590090199999999	8.553548	3.248979996908801	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	11.3578802	11.664933	3.5856487687349716	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	6.9877386	6.014909	2.8578924874355733	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	10.7010252	11.115234	3.5282056504400434	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	12.5982284	12.831612	3.7549790509610728	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	11.2342518	10.807131	3.6090332522493473	1
+Erasers	Smp_161400	Smp_161400	Smp_161400	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	10.246034	10.34233	3.473340966492348	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	2.7901672	2.878276	1.8909191569381927	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	1.6379138	1.638003	1.3851217210079665	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	1.6212848	1.712426	1.3788571748252902	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	16.952122199999998	15.981703	4.126476679360862	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	16.7220816	17.153963	4.146146766498556	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	11.9337102	12.329184	3.680332924829595	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	11.2265014	16.692308	2.9759941977101274	0.8
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	10.5970876	11.145941	3.5264420268036023	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	8.4002626	8.305209	3.228633926429982	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	10.3601238	10.305528	3.4802577435541853	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	4.045665	4.428477	2.3206482072302084	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	16.260433	17.348568	4.088407307131857	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	18.580341	19.175547	4.282066967921067	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	18.924656	18.16906	4.309666450319537	1
+Erasers	Smp_162940	Smp_162940	Smp_162940	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	13.7140712	12.834349	3.8438346402396637	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	75.1665716	74.962049	6.2487710526841775	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	72.7673918	73.77229	6.203687187937597	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	74.74271900000001	74.898988	6.240320881168269	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	204.0693686	206.546516	7.672536314843192	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	227.410388	225.16865	7.834594817554039	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	198.2534384	200.381677	7.6381484545723906	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	309.0540174	309.495301	8.272421237506244	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	233.7628708	230.598438	7.869706544196016	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	279.484452	275.241698	8.129761072733261	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	258.900883	267.708085	8.015780983863724	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	254.1239946	255.437987	7.983960379438525	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	177.1908918	175.12542	7.473724639776756	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	199.6351644	198.18624	7.64703482384357	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	201.7996702	195.790584	7.661379153669803	1
+Grupo HP1	Smp_001500	Smp_001500	Smp_001500	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	316.1369208	320.525297	8.307547433217378	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	760.1410232	750.26452	9.568385060618999	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	871.460258	858.05075	9.76508921422681	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	844.1902596	802.159484	9.717067218805383	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	429.98334239999997	421.301384	8.73629025261558	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	775.3951308000001	770.071563	9.599174152288747	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	544.607254	534.548071	9.085418909374589	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	595.6820292	731.229951	8.989729122466708	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	814.0816988	858.986598	9.661078411266335	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	623.4773702	664.938328	9.28087557561983	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	755.1491642	742.157954	9.546381700075653	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	704.578426	655.969318	9.452931009795446	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	1151.8689714	1147.276312	10.158913685833312	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	1267.9890592	1273.088609	10.30673600627295	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	1306.1163362	1276.419465	10.34759367407479	1
+Grupo HP1	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	1080.6490954	1107.076371	10.073094646078259	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	23.4328386	22.215669	4.567300526180558	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	33.4088342	34.078566	5.100685091695807	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	26.9891912	28.973957	4.791603783561037	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	41.4257012	41.46906	5.40253879020211	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	41.3722536	41.339074	5.4049253167606555	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	39.6186062	41.811954	5.296191317721595	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	28.842901400000002	44.693018	4.01396291215752	0.8
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	43.0170612	45.323052	5.411207736731655	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	34.444585599999996	33.985607	5.129615257010446	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	51.9581692	48.304223	5.627374932398111	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	48.5076622	45.90116	5.542528308022273	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	55.5295062	51.101683	5.755122219661477	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	71.0719694	68.990892	6.152512196069759	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	59.625632800000005	53.103712	5.906616951501939	1
+Readers	Smp_006250	Smp_006250	Smp_006250	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	53.7326814	53.237564	5.773266999342857	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	8.6295768	8.254053	3.18465509091716	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	5.7546982	5.577887	2.7482842755140804	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	5.5211958	5.249596	2.694898243904716	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	28.7400952	29.483434	4.873407644511886	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	30.056885	30.490717	4.95406456117917	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	28.4161452	29.738197	4.869417300973459	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	24.396883	31.109094	4.122318087516587	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	29.917031	30.449784	4.940967753318866	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	27.759712	24.968218	4.829285256954823	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	38.830813	42.30696	5.299113971129255	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	29.7996902	25.214378	4.857053056958625	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	27.844981400000002	29.696271	4.831204050633094	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	28.6602456	28.904215	4.880108179286911	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	28.0474746	27.442574	4.850432611644616	1
+Readers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	17.875397200000002	18.185862	4.2322217223898555	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	23.2290992	22.322955	4.542385015696741	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	16.5345314	15.690753	4.125766590406946	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	14.87346	16.631962	3.9321270580055505	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	32.936552	34.799766	5.076818753529284	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	42.4721086	43.396431	5.440190664877359	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	28.409727800000002	29.467433	4.8497809240709895	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	21.5830474	28.062794	3.5110680945505215	0.8
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	42.9935406	48.323186	5.411622797159161	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	24.34796	26.108072	4.634411303540343	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	38.907956	39.959883	5.250823001119838	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	25.9680904	24.878532	4.5846716101332845	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	20.0116502	19.4762	4.363572345350944	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	22.2976646	22.95728	4.531680885706798	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	20.9971906	20.706646	4.45165573140842	1
+Readers	Smp_041750	Smp_041750	Smp_041750	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	25.6108136	26.289992	4.729036752923181	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	67.2660206	62.035514	6.057809489031795	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	54.3685848	54.433581	5.78737584891285	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	52.1808274	55.769681	5.68323800488369	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	96.9704616	85.512065	6.521704167224916	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	70.5026708	70.319614	6.155257457700074	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	46.7800508	46.270048	5.553528874745225	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	32.707589	49.187189	4.130536932634833	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	111.0927678	120.871067	6.745995601770086	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	39.9045004	41.242555	5.336304593101047	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	77.1361838	75.802091	6.183112665152886	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	74.2204668	66.604429	5.903332493665341	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	44.719785	44.675128	5.48240509446602	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	44.8468684	41.574747	5.512473925755102	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	43.6742998	43.441335	5.47533242058339	1
+Readers	Smp_041760	Smp_041760	Smp_041760	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	60.738910600000004	56.056029	5.936228224597365	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	14.7716244	15.316277	3.931831591246428	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	10.208307	10.71805	3.4787729386073893	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	10.5428028	11.123331	3.49944004592127	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	22.244593	20.22464	4.508759841115928	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	25.6050566	25.70229	4.732008117553608	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	19.0661512	19.994043	4.292642083816785	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	11.0972978	16.483623	2.8363351646830197	0.8
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	32.2449052	34.798643	5.023323173380409	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	18.6395098	18.925205	4.275140167170819	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	29.871570600000002	28.548143	4.886114476426039	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	17.2150444	16.167557	4.064582098158691	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	20.9726252	23.448505	4.434564286270351	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	21.621274800000002	21.706668	4.472705886968851	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	18.6874186	19.939243	4.282758141202759	1
+Readers	Smp_074050	Smp_074050	Smp_074050	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	17.345677	17.158565	4.195795935570067	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	3.2139036	3.278027	2.048653164122583	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	3.2735932	3.256091	2.0919472295637624	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	3.0821709999999998	3.344398	2.0107115978144967	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	7.7464004	8.259545	3.117485471687768	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	9.0118612	9.332625	3.321305126080201	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	12.8072606	13.319498	3.7769571935159467	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	7.1073576	9.91618	2.481503051545311	0.8
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	7.0062142	7.046213	2.9764424598435504	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	7.2766294	7.732413	3.0354147916800107	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	8.1603874	8.825268	3.1719091090539084	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	11.9922842	10.780094	3.6165386023729753	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	12.3831712	12.086861	3.6715029399302543	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	16.347681	15.258992	4.096543636956935	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	13.2530618	12.778576	3.8243432543461386	1
+Readers	Smp_078280	Smp_078280	Smp_078280	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	9.237285199999999	8.849414	3.3500063134683487	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	28.921235	27.442108	4.848137150910712	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	18.8020658	19.032076	4.299102299016451	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	22.1320646	24.141219	4.4919676020963335	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	29.2625362	28.161709	4.888780760271298	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	78.5551	78.580705	6.311442192096655	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	57.0142374	59.177187000000004	5.839492344109623	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	31.2258034	47.435123	3.970477008464765	0.8
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	64.7334204	71.806437	5.9928360803694085	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	36.762289	39.158614	5.2283954260072365	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	55.3688436	46.835243	5.728633682319101	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	24.347635	27.41964	4.584327949911033	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	62.8979838	65.836232	5.95343958380957	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	75.5147332	78.052304	6.236118537337945	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	58.4722954	56.969599	5.864298696660876	1
+Readers	Smp_079650	Smp_079650	Smp_079650	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	48.671684	49.39472	5.6202508370225095	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	10.1886436	9.933875	3.449165897771698	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	7.8508322	8.076552	3.1406756924123695	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	7.7522152	8.704305	3.104976394683735	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	20.3523526	21.147443	4.411136424866369	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	24.1106028	24.649379	4.648898764059232	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	18.5309816	19.416992	4.266565420882082	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	13.1556172	20.783579	3.0962090215680504	0.8
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	17.9384726	18.294002	4.2331757572222	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	14.5126698	14.791764	3.9450292938017113	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	20.5593534	20.842041	4.380373314380263	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	13.235038	12.438487	3.8241473453695516	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	16.9814526	16.683444	4.149185959584217	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	18.9078252	18.339118	4.310106036532278	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	14.4111206	14.703935	3.942616099156305	1
+Readers	Smp_105690	Smp_105690	Smp_105690	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	16.9807304	16.96576	4.167153819443688	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	19.2646822	17.650071	4.273129759603766	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	14.8084432	14.17457	3.9766593332239157	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	13.8939214	14.346892	3.8600672048895355	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	25.0003784	26.736919	4.692259543451243	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	32.0603832	32.698122999999995	5.044334606349805	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	20.7378222	19.412056	4.39489871911821	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	20.03166	27.598587000000002	3.394053257248878	0.8
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	30.3663634	33.082369	4.921604328263719	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	15.8036602	15.94929	4.0515685149292695	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	26.5052382	25.304938	4.6798141766458095	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	13.3832078	12.96681	3.6286978693544927	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	21.5616408	22.087932000000002	4.468036421605033	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	22.8207472	24.739335	4.5633692317535495	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	19.9896086	19.563119	4.386425055887114	1
+Readers	Smp_125340	Smp_125340	Smp_125340	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	18.7007668	19.110982	4.296412391347534	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	14.390516	14.171933	3.865658221946943	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	10.6912504	10.639143	3.5334854383402163	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	10.4987564	10.817166	3.488379267485029	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	13.128911	12.373655	3.784479262566112	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	17.1011912	17.111343	4.176515767516188	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	11.0885736	11.533570000000001	3.5529532174483984	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	7.6180424	10.064101	2.409527653861814	0.6
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	15.7125596	16.219089	4.013260252542698	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	7.5112276	7.568104	3.06801590191157	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	12.7019766	12.046794	3.691469820863528	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	12.6085992	10.902439	3.5974243805739987	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	14.189865	15.570654999999999	3.8984369731219846	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	15.7691338	16.594575	4.05994155153052	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	13.576448599999999	13.936324	3.8554698865512154	1
+Readers	Smp_130470	Smp_130470	Smp_130470	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	13.565339400000001	11.589908000000001	3.77853570815364	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	5.5172348	4.849414	2.6545892006097853	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	4.8625712	4.100181	2.4870164647598427	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	3.4183336	3.940069	2.113121847195755	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	29.661952199999998	24.607087	4.840593625518593	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	26.051948799999998	26.035638	4.757561516178591	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	21.2177676	21.421902	4.410013468125627	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	28.0163576	40.879478	3.998832635295158	0.8
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	14.9227908	15.30117	3.9872865655480947	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	13.3472094	13.469099	3.835742634571407	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	15.684091800000001	15.496774	4.041735895926319	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	9.7556234	9.229379	3.4021478241269705	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	10.4520402	10.404376	3.5036157662346357	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	13.119305	13.521781	3.8141410743108666	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	11.0482234	10.296794	3.5793435114726297	1
+Readers	Smp_144550	Smp_144550	Smp_144550	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	17.058313000000002	18.266597	4.150633650908636	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	15.9817296	12.831968	4.010703345074533	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	12.8092544	12.90118	3.779771867946976	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	12.9198884	14.813296	3.751178454629379	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	13.4234798	10.3445	3.648838002916744	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	7.6692908	7.679967	3.1111162264338916	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	7.8407586	7.967682	3.1237387355891326	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	5.1471224	7.77907	2.137475080597672	0.6
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	18.3259652	22.142154	4.1016333122525594	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	6.7257756	6.869816	2.9257965925992018	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	11.5387018	11.187924	3.5148710916778567	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	2.9432546	2.929223	1.908469025924902	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	11.7663936	11.701468	3.6645664318373736	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	13.008311800000001	12.936049	3.794644929182739	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	10.1702926	10.667773	3.4678027074772517	1
+Readers	Smp_149240	Smp_149240	Smp_149240	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	6.8849148	7.057318	2.9724723124004075	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	14.0780036	11.963156	3.8743212780745435	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	10.1966012	10.229401	3.4784488413577908	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	11.0622718	11.691078	3.5596735481168897	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	22.1461166	22.840745	4.51203488575407	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	26.670631	26.427673	4.787943948057395	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	21.6900984	21.586363	4.496412309410843	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	12.9114982	18.358654	2.9382192020057074	0.6
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	32.7396666	33.332407	5.0436587639413455	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	20.664686800000002	21.838747	4.427224611975074	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	28.6796258	31.31471	4.853870636676458	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	16.6007236	16.819768	3.9069463251623775	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	21.1340444	21.848083	4.450464847747478	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	24.137147	22.938635	4.64241385660592	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	24.7045358	24.621933	4.682714777496204	1
+Readers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	19.5683578	19.70691	4.355159303462674	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	13.5577576	12.583728	3.795782326939887	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	17.60494	17.597238	4.209790139804782	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	13.858436600000001	15.25955	3.8558937435944465	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	44.429427	49.14695	5.48415175034095	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	49.0791532	50.400495	5.642938799952543	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	62.096133800000004	63.37598	5.902696521945198	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	33.1732588	47.663856	4.246440826177036	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	33.135678	35.008144	5.055800766775288	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	35.1354228	36.767633	5.1547874010081705	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	44.4758792	47.880976	5.416111610746647	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	55.5839678	46.788471	5.7393187810986115	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	41.7617396	37.686268	5.35287813508352	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	57.2900734	62.732144	5.8415847152246085	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	46.8785498	46.113869	5.5630917080088835	1
+Readers	Smp_159100	Smp_159100	Smp_159100	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	68.11125	64.694498	6.065867423145121	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	14.3224032	12.958037	3.901782551265094	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	12.5577802	12.888859	3.752993564959778	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	11.5869766	11.605023	3.63384024292155	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	41.528037600000005	42.050808	5.379818093056479	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	20.4931146	20.652568	4.424783644427472	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	15.0769852	14.153564	3.9951853051026	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	15.2271348	20.071295	3.4253777683447457	0.8
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	22.5679652	23.216713	4.5272513015630595	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	13.645199	14.024003	3.8680353758504675	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	20.2196406	21.121892	4.362426402477211	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	13.6213208	15.130517	3.8117258459348773	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	12.6386918	12.007736	3.763747211750631	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	14.6312888	14.717286	3.9557205725513973	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	16.961681	17.272493	4.151240176869526	1
+Readers	Smp_170390	Smp_170390	Smp_170390	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	23.2738314	23.4005	4.596662501037095	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	14.046397599999999	15.09396	3.902075092415182	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	12.210324	11.783275	3.719132660810542	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	12.5939584	12.624976	3.763334768300412	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	21.4378452	22.165985000000003	4.475430956433909	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	15.3028612	15.108844000000001	4.026276694045718	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	14.625039600000001	14.724891	3.9652874277355528	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	18.8544914	21.498465000000003	4.256237425786963	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	24.7203758	25.460602	4.6801543232510445	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	20.3124106	20.237578	4.412540879758204	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	21.8597872	22.143739	4.513451994099261	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	22.3860498	22.136339	4.5412165354233744	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	15.5347408	15.291105000000002	4.0465613155414015	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	15.631521999999999	15.873681999999999	4.05412061721759	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	15.678263000000001	16.352391	4.055449296829996	1
+Readers	Smp_175680	Smp_175680	Smp_175680	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	22.9808566	22.862485	4.582823819165485	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	760.1410232	750.26452	9.568385060618999	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	871.460258	858.05075	9.76508921422681	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	844.1902596	802.159484	9.717067218805383	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	429.98334239999997	421.301384	8.73629025261558	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	775.3951308000001	770.071563	9.599174152288747	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	544.607254	534.548071	9.085418909374589	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	595.6820292	731.229951	8.989729122466708	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	814.0816988	858.986598	9.661078411266335	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	623.4773702	664.938328	9.28087557561983	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	755.1491642	742.157954	9.546381700075653	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	704.578426	655.969318	9.452931009795446	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	1151.8689714	1147.276312	10.158913685833312	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	1267.9890592	1273.088609	10.30673600627295	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	1306.1163362	1276.419465	10.34759367407479	1
+Readers	Smp_179650	Smp_179650	Smp_179650	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	1080.6490954	1107.076371	10.073094646078259	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	12.4486248	12.856817	3.7304012466995204	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	9.0684494	8.843674	3.3305234152145133	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	9.6560228	9.70279	3.402173117356903	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	27.5176796	31.82832	4.761186299819264	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	32.690205399999996	31.829207	5.072521544714153	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	31.2854256	30.536637	5.008153073329929	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	8.3117956	12.673921	2.7490693572634397	0.8
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	18.166771	18.510073	4.243541259840456	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	14.366745	14.20563	3.935611767502404	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	17.8851302	19.047995	4.230099521490137	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	9.9294506	10.246374	3.3954763479305514	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	14.145157600000001	14.882775	3.906553002674276	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	14.2376206	14.419455	3.9268450894325087	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	14.7118482	13.760871	3.9643172707550796	1
+Writers	Smp_000700	Smp_000700	Smp_000700	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	15.652136	15.976043	4.051929597906792	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	9.5395636	9.690853	3.3705853746519745	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	7.8614208	8.027822	3.1461914142512	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	7.2711422	7.4926260000000005	3.0357627306936537	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	32.587453599999996	31.664701	5.053979717082146	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	25.8771868	25.565088	4.747705211678477	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	19.6916374	20.226219999999998	4.368502409812227	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	22.7048522	33.870159	3.983631055046129	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	31.558517600000002	31.29845	5.011083971206237	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	20.6038596	22.881207	4.415974623983678	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	30.9334126	32.012615	4.97277044097473	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	21.2663296	21.624332	4.464746331950226	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	18.346907	18.972903000000002	4.2572746562232195	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	18.8751194	18.476637	4.3086066505756655	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	20.86816	22.247148	4.437480501045455	1
+Writers	Smp_025550	Smp_025550	Smp_025550	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	30.4033972	30.337959	4.970226030488741	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	8.6295768	8.254053	3.18465509091716	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	5.7546982	5.577887	2.7482842755140804	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	5.5211958	5.249596	2.694898243904716	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	28.7400952	29.483434	4.873407644511886	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	30.056885	30.490717	4.95406456117917	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	28.4161452	29.738197	4.869417300973459	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	24.396883	31.109094	4.122318087516587	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	29.917031	30.449784	4.940967753318866	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	27.759712	24.968218	4.829285256954823	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	38.830813	42.30696	5.299113971129255	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	29.7996902	25.214378	4.857053056958625	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	27.844981400000002	29.696271	4.831204050633094	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	28.6602456	28.904215	4.880108179286911	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	28.0474746	27.442574	4.850432611644616	1
+Writers	Smp_027300	Smp_027300	Smp_027300	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	17.875397200000002	18.185862	4.2322217223898555	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	97.4056288	91.153115	6.604553004690715	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	100.6232082	103.497129	6.6591843877120205	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	87.8597176	87.646183	6.461122426545722	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	277.58982660000004	269.610589	8.111466636687682	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	346.3760358	350.023795	8.439322092733041	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	246.85597380000002	262.707988	7.933255180739667	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	328.8855174	461.497777	7.585378468489255	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	283.0443106	302.01882	8.134729806418527	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	208.6517762	220.609163	7.704124037484071	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	270.135916	247.143071	8.057839740669493	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	344.4673058	340.018434	8.413545462445635	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	576.4298864	576.329132	9.15611216424796	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	653.0380638	624.735754	9.34937687324806	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	706.6442433999999	712.940356	9.454431623977868	1
+Writers	Smp_029240	PRMT1	PRMT1 | Smp_029240	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	562.0992032	566.799734	9.13677850846925	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	25.315018	27.360824	4.699929367233201	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	21.1291224	21.034718	4.4659186728119025	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	22.3434582	22.60027	4.542043491597919	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	18.9094842	20.200288	4.299436938018078	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	19.547163	19.480718	4.360697108294079	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	16.1757488	15.940922	4.092606079454347	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	15.0081118	16.830044	3.7276223779375757	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	24.6164684	26.553663	4.651120402205493	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	18.3436242	18.212419	4.264855802218747	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	23.722555	25.911669	4.61268499696314	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	12.4396786	11.849961	3.7050641882363857	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	8.8249628	8.373095	3.272559253993211	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	8.2503438	7.850351	3.1876172027580596	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	9.316297800000001	7.835447	3.295200111870762	1
+Writers	Smp_043580	Smp_043580	Smp_043580	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	9.306847999999999	9.26944	3.362164973009245	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	4.7323838	5.184895	2.50127408135933	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	2.9007456	2.956062	1.9554439642313017	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	4.0885967999999995	3.919742	2.335475042045013	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	12.7071094	11.113928	3.736962482966291	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	32.0280418	32.241061	5.041801303113397	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	26.0659394	26.057984	4.752281623807607	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	7.317729	10.111895	2.630673063132611	0.8
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	20.147582800000002	21.058727	4.389984730826616	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	15.261314	15.213549	4.022201868097932	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	17.8934402	18.289701	4.238052198380769	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	14.281788800000001	14.082793	3.867365135654515	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	61.1054858	61.450815	5.945912789149498	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	60.910475	55.971173	5.938027021275523	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	48.8119002	46.998734	5.629217640388361	1
+Writers	Smp_055310	Smp_055310	Smp_055310	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	18.639175	18.865086	4.283214551411314	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	31.2120316	29.721865	4.978758441039694	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	23.9065084	24.638579	4.633713627798994	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	23.0795406	24.27951	4.563363708718025	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	43.5484662	37.605831	5.4503161941587255	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	43.1868308	43.404238	5.465058259069467	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	31.8146334	32.372761	5.0105046915959255	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	24.6492478	35.748726	3.6805364999168964	0.8
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	66.8729388	70.351048	6.058445661014646	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	43.925576400000004	45.227487000000004	5.4803129209224775	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	64.1828536	64.725398	5.974179223799264	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	43.716766	42.056088	5.400349454212236	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	50.4444568	52.117628	5.656510885838793	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	55.2771998	60.493538	5.797406389071372	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	44.418712	42.682947	5.489367044923973	1
+Writers	Smp_062530	Smp_062530	Smp_062530	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	41.6650016	41.756936	5.414407609962084	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	13.6746356	11.936657	3.844502065026444	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	10.2727988	10.185989	3.49000314293778	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	10.0628174	10.449548	3.4464623298301325	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	19.1265718	19.534526	4.317122269768766	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	24.4672994	24.884384	4.6676656143346795	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	17.258149	18.330838	4.145046791860427	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	12.538204200000001	16.417287	2.9628195579785754	0.8
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	24.7682878	26.331526	4.657855750139817	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	15.168026600000001	15.927293	3.9873750511131787	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	24.4851878	24.603045	4.6024067192556775	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	11.661045399999999	11.58509	3.6343876591431075	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	13.2680524	13.675053	3.8057181244029454	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	16.0317708	16.614447	4.075019634443096	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	14.621725999999999	15.02169	3.9559234389593634	1
+Writers	Smp_070170	Smp_070170	Smp_070170	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	15.208358200000001	15.720401	4.0161738599904275	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	24.1755118	24.304604	4.634519525859756	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	22.3074074	21.850619	4.5358609352432815	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	18.7721498	19.39524	4.279468634660063	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	41.1855266	40.908018	5.347865597075267	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	58.02987	57.995123	5.882724698799071	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	40.5794858	40.622624	5.375190098804553	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	39.1781064	57.220923	4.434482788737192	0.8
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	86.4702198	90.317892	6.426355979378259	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	55.5224318	57.853956	5.808945895028475	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	88.5651328	87.571905	6.435701052109688	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	69.9797094	63.911487	6.121533737425592	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	77.03682380000001	84.415738	6.261721974294311	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	86.7964938	88.128062	6.441211187818999	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	83.2603236	77.776978	6.38928049623751	1
+Writers	Smp_070340	Smp_070340	Smp_070340	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	65.3680542	67.715133	6.050363489733613	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	4.9535336	5.191303	2.5325311606512946	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	4.7203652	4.381233	2.509392674331178	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	3.9763184	4.170194	2.3004934672014166	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	20.1437058	18.480747	4.367465784984648	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	17.0088194	17.178291	4.1689022946886025	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	13.098442799999999	13.613826	3.809338633988006	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	10.197888	15.189251	2.804687956442897	0.8
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	15.52557	15.598322	4.035747165489098	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	13.0340446	13.418138	3.80287098314651	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	17.271036	19.050666	4.171131608460167	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	5.4691448000000005	5.216726	2.6722665854855796	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	18.8081348	20.596143	4.285953666824608	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	20.0318428	19.449568	4.388511194028601	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	23.5906124	22.828288	4.611066692768936	1
+Writers	Smp_078900	Smp_078900	Smp_078900	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	15.6094798	16.559762	4.037939965422898	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	10.682488	11.319994	3.5350598282099486	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	9.159612000000001	9.083073	3.3437165585705664	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	8.833393599999999	8.64354	3.293275350517629	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	15.4647826	14.81955	4.032828676861595	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	22.3468776	22.495359	4.54488513109071	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	20.365152600000002	20.845642	4.416166077057549	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	11.9488998	15.975705	3.515011233301234	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	21.153764	20.751494	4.4670068286025595	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	21.7665096	22.245737	4.505255532772053	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	23.1472356	22.361469	4.590820351984591	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	12.1115224	12.105547	3.710160790512716	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	21.7402776	22.383019	4.500375776810852	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	22.2675774	22.114014	4.537520090626782	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	22.643994	23.155867	4.559486536418582	1
+Writers	Smp_121610	Smp_121610	Smp_121610	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	15.7865518	16.032052	4.067309824785736	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	28.884061799999998	29.491902	4.839261313887309	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	24.2866382	23.564365	4.655118329386649	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	20.7819766	22.629372	4.401654873856408	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	40.0032712	39.900938	5.338650502841251	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	84.7934706	88.612365	6.418444565920021	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	50.069627	53.534925	5.580445803586762	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	30.563272599999998	45.778221	3.8104089833766817	0.8
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	58.528989599999996	62.87885	5.830582221324678	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	32.7111696	33.045519	5.060857021201201	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	49.0146558	44.459322	5.540927509436546	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	26.36888	27.4903	4.64534843133651	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	37.199334	38.364988	5.218578906966813	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	43.1180872	46.246696	5.450953907487838	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	37.4315024	34.695011	5.249436173257387	1
+Writers	Smp_138030	Smp_138030	Smp_138030	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	36.0524838	34.990429	5.202597999017394	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	48.475561	49.310413	5.614831993000446	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	43.6103168	43.538842	5.478488262481391	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	39.6685568	39.59631	5.332043743449129	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	28.020362	27.238765	4.853842202549965	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	30.4159886	30.627799	4.972326099302581	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	20.97085	22.053625	4.43254677579845	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	25.8962064	31.070041	4.378661203367981	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	52.550001800000004	55.718698	5.7115228531215365	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	29.4869582	29.158865	4.923277265263192	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	44.6892534	43.65805	5.4572608393819335	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	18.964431599999998	19.580806	4.253890822778499	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	24.5225386	26.094531	4.660160682418406	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	24.8177432	25.878584	4.680747073493913	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	23.2356412	23.570722	4.589126435514331	1
+Writers	Smp_140390	Smp_140390	Smp_140390	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	21.062367	21.270107	4.461846783813467	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	11.1767202	11.650437	3.5514705986610657	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	7.6711262	7.812833	3.108023952437975	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	7.8252494	8.245181	3.1093414502109002	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	12.9437842	13.253242	3.7619376935757223	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	11.5742994	11.448299	3.648966070015116	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	8.0892058	8.461226	3.174180184137844	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	5.5959942	8.010824	2.1228408756072894	0.6
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	14.1565396	15.089264	3.895025931206995	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	8.7357048	9.260345	3.2610771552435165	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	13.374038	14.294655	3.7949003436864626	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	6.7180232	6.60838	2.8482132553013146	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	10.2866718	11.33234	3.468578618877861	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	10.9771738	11.030119	3.56825911157662	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	10.732282399999999	10.302417	3.546618627639346	1
+Writers	Smp_144180	Smp_144180	Smp_144180	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	11.1070232	9.070273	3.5277395363741477	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	8.7690252	8.708535	3.2844813838822535	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	8.3301452	7.854941	3.2173150035806555	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	6.6633312	6.4990000000000006	2.9363873777878893	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	17.7491912	17.591183	4.215316494758826	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	21.2660038	20.586802	4.473657085971768	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	20.828193600000002	21.07253	4.444930337890378	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	8.727089600000001	9.69289	3.2034507212654098	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	19.8638474	19.660819	4.379810423415439	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	20.402881999999998	19.492897999999997	4.415478124764805	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	22.569240999999998	23.867191	4.552705302824615	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	14.4172812	16.262157	3.9087137756228674	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	13.5665856	14.042926000000001	3.8593823128620075	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	12.400112199999999	12.315190999999999	3.7386260175479924	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	11.2529582	11.26643	3.6136492573476353	1
+Writers	Smp_149380	Smp_149380	Smp_149380	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	12.033728799999999	12.125604	3.7030018478837325	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	14.0780036	11.963156	3.8743212780745435	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	10.1966012	10.229401	3.4784488413577908	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	11.0622718	11.691078	3.5596735481168897	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	22.1461166	22.840745	4.51203488575407	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	26.670631	26.427673	4.787943948057395	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	21.6900984	21.586363	4.496412309410843	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	12.9114982	18.358654	2.9382192020057074	0.6
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	32.7396666	33.332407	5.0436587639413455	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	20.664686800000002	21.838747	4.427224611975074	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	28.6796258	31.31471	4.853870636676458	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	16.6007236	16.819768	3.9069463251623775	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	21.1340444	21.848083	4.450464847747478	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	24.137147	22.938635	4.64241385660592	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	24.7045358	24.621933	4.682714777496204	1
+Writers	Smp_150850	Smp_150850	Smp_150850	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	19.5683578	19.70691	4.355159303462674	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	33.6163838	30.258655	5.078672529885521	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	21.092148	21.051638	4.461891175947137	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	33.833255	32.818225	5.059997533707701	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	18.2126928	17.883606	4.2386701822262705	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	15.2471458	15.076558	4.0198083264810975	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	10.195682399999999	10.831983	3.4734625978528464	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	8.7929744	13.59523	2.6175992098878007	0.8
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	16.7827828	16.538205	4.099917239698136	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	9.9376096	10.237346	3.430682007261008	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	14.7142356	15.467768	3.9259334481035175	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	9.3629728	8.85124	3.298880623714169	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	14.733746400000001	16.40333	3.9455585984045594	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	14.3691852	13.499713	3.9193342075214583	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	14.649009999999999	14.796577	3.961637173475537	1
+Writers	Smp_160700	Smp_160700	Smp_160700	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	13.5992542	12.639428	3.862279476627698	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	18.5594224	18.370651	4.264086522626962	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	15.5092774	15.609681	4.038155471095231	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	17.388748	17.649254	4.160991305107317	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	26.7209318	28.435392	4.781903923539518	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	36.2635448	36.690086	5.218944739643097	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	33.34155	32.4603	5.0860566264062355	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	13.3781956	20.550313	3.0804536611509707	0.8
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	35.274273	36.3924	5.164503858775353	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	26.032837400000002	26.318426	4.741145841594567	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	35.060176	37.652797	5.132771388334302	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	20.0625496	21.445077	4.281560478446594	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	34.305204	34.576011	5.117279828087223	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	35.9423606	35.63578	5.1981941167332835	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	28.434244200000002	29.075736	4.871864958855948	1
+Writers	Smp_165000	Smp_165000	Smp_165000	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	28.923436	28.678815	4.888217591085632	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	27.7507586	29.056889	4.802858764224046	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	24.0558156	23.889783	4.6369782905675	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	22.246281	20.577072	4.529548310908481	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	53.122244800000004	52.557709	5.752957765016573	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	45.0259516	44.633468	5.523550565968959	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	32.6846114	33.628828	5.069145263640755	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	51.589673399999995	72.094028	5.06505953264507	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	64.19599579999999	66.822876	6.0066146878513855	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	40.4331784	42.7467	5.360652210648781	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	63.1815528	65.967059	5.977157392830936	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	72.9717564	69.275109	6.202374623038772	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	46.4368692	45.185802	5.543364511824418	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	52.7461114	50.939886	5.741044592917963	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	62.1374374	61.285512	5.967609987548214	1
+Writers	Smp_171150	Smp_171150	Smp_171150	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	87.0634062	86.332966	6.459664761182293	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	17.849372	18.904041	4.166384475599989	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	26.066083199999998	25.583229	4.755261827788983	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	21.8545774	23.341907	4.4831280917399265	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	22.1027452	20.6058	4.498864493960564	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	31.9576306	31.880621	5.03908400555726	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	43.1281058	46.153518	5.440240224512955	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	15.3261426	24.095201	3.2294524407586596	0.8
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	23.2423322	24.525419	4.564118163536214	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	28.8740018	29.383461	4.8873149293114375	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	35.6774766	34.906367	5.107488228859489	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	13.1257234	14.236536	3.7526043627501964	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	35.3723712	30.836013	5.095314285726043	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	47.354876399999995	49.440262	5.561625938718686	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	34.7105626	35.299711	5.136067909030805	1
+Writers	Smp_210650	Smp_210650	Smp_210650	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	29.6266338	27.955018	4.928797723543714	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	cercaria_female	cercaria		cercaria	whole_organism	female	5	20.6962508	19.119721	4.376940522431592	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	cercaria_male	cercaria		cercaria	whole_organism	male	5	14.7286914	14.671771	3.9741918962257246	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	cercaria_mixed	cercaria		cercaria	whole_organism	mixed	5	15.191983599999999	15.142423	4.006042849567303	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	egg_mixed	egg		egg	whole_organism	mixed	5	31.2768744	32.241395	4.957124664631894	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	juvenile_26d_female	juvenile_26d	26	juvenile_26d	whole_organism	female	5	26.5336728	26.09698	4.78271985686467	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	juvenile_26d_male	juvenile_26d	26	juvenile_26d	whole_organism	male	5	20.2538716	21.419453	4.40126881608453	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	miracidium_mixed	miracidium		miracidium	whole_organism	mixed	5	23.1038946	33.333313	3.73800446775132	0.8
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	schistosomulum_2d_female	schistosomulum_2d	2	schistosomulum_2d	whole_organism	female	5	29.2656184	31.290203	4.890170676389077	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	schistosomulum_2d_male	schistosomulum_2d	2	schistosomulum_2d	whole_organism	male	5	18.8846478	19.072493	4.287863030364413	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	schistosomulum_2d_mixed	schistosomulum_2d	2	schistosomulum_2d	whole_organism	mixed	5	29.3186486	30.817721	4.874995323106444	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	sporocyst_1d_mixed	sporocyst_1d	1	sporocyst_1d	whole_organism	mixed	5	29.059343	28.736257	4.872365461306205	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	sporocyst_32d_female	sporocyst_32d	32	sporocyst_32d	whole_organism	female	5	26.7674108	28.025388	4.767515591842536	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	sporocyst_32d_male	sporocyst_32d	32	sporocyst_32d	whole_organism	male	5	29.3627228	31.713763	4.915052159446948	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	sporocyst_32d_mixed	sporocyst_32d	32	sporocyst_32d	whole_organism	mixed	5	30.577554	31.675423	4.971443503838359	1
+Writers	Smp_210660	Smp_210660	Smp_210660	PRJEB32839	not_declared	sporocyst_5d_mixed	sporocyst_5d	5	sporocyst_5d	whole_organism	mixed	5	36.807258000000004	37.14728	5.236124733690363	1
