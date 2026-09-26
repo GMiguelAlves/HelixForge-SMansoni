@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HELIXFORGE_V1_COMMIT = "e41d221657b8e0bf2700bccd547e15032ccac36f"
+HELIXFORGE_DEFAULT_COMMIT = "5d4b3e696319db5cd7633472504964f1dc7c0434"
 PRJEB14695_HELIXFORGE_COMMIT = "42864266892d1165477bb3b33c919e1fabb28ad1"
 PRJEB32839_HELIXFORGE_COMMIT = "5d4b3e696319db5cd7633472504964f1dc7c0434"
 REFERENCE_SHA256 = {
@@ -216,6 +216,7 @@ class ProjectContracts(unittest.TestCase):
             "DOWNLOAD_COMPLETE",
             "WORKFLOW_IN_PROGRESS",
             "WORKFLOW_COMPLETE",
+            "PERSISTENCE_COMPLETE",
             "READY_FOR_REVIEW",
             "BLOCKED",
             "FAILED",
@@ -238,6 +239,7 @@ class ProjectContracts(unittest.TestCase):
             "DOWNLOAD_COMPLETE",
             "WORKFLOW_IN_PROGRESS",
             "WORKFLOW_COMPLETE",
+            "PERSISTENCE_COMPLETE",
             "READY_FOR_REVIEW",
         }:
             self.assertEqual("COMPLETE", state["download_state"])
@@ -254,6 +256,33 @@ class ProjectContracts(unittest.TestCase):
         )
         self.assertEqual("PASS", runtime["status"])
         self.assertEqual(300, runtime["urls"]["available"])
+
+    def test_prjeb32839_completed_analysis_is_consistent(self) -> None:
+        provenance = ROOT / "provenance/PRJEB32839"
+        results = ROOT / "results/PRJEB32839"
+        state = json.loads((provenance / "execution_state.json").read_text(encoding="utf-8"))
+        cleanup = json.loads((provenance / "cleanup.json").read_text(encoding="utf-8"))
+        final = json.loads((provenance / "final_validation.json").read_text(encoding="utf-8"))
+        qc = json.loads((provenance / "qc_summary.json").read_text(encoding="utf-8"))
+        manifest_validation = json.loads(
+            (results / "manifests/terminal_manifest_validation.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual("PASS_WITH_LIMITATIONS", final["status"])
+        self.assertEqual([], final["errors"])
+        self.assertEqual((150, 75), (final["runs"], final["samples"]))
+        self.assertEqual({"PASS": 54, "REVIEW": 21}, qc["sample_classification"])
+        self.assertEqual("complete", manifest_validation["status"])
+        self.assertEqual("valid", manifest_validation["schema"])
+        self.assertEqual("valid", manifest_validation["semantic"])
+        self.assertEqual("READY_FOR_REVIEW", state["status"])
+        self.assertEqual("COMPLETE", state["phase"])
+        self.assertEqual("PASS", state["audit_package"]["status"])
+        self.assertEqual("PASS", state["cleanup"]["status"])
+        self.assertEqual(1207941033218, cleanup["scratch_bytes_recovered"])
+        self.assertEqual(0, cleanup["scratch_bytes_after_cleanup"])
+        self.assertEqual(0, cleanup["heavy_residual_bytes"])
+        self.assertFalse(cleanup["other_projects_touched"])
+        self.assertFalse(cleanup["shared_resources_touched"])
 
     def test_prjna597909_execution_is_complete(self) -> None:
         state = json.loads(
@@ -349,8 +378,8 @@ class ProjectContracts(unittest.TestCase):
     def test_helixforge_release_pin_is_exact(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         server_template = (ROOT / "config/server.env.template").read_text(encoding="utf-8")
-        self.assertIn(HELIXFORGE_V1_COMMIT, readme)
-        self.assertIn(HELIXFORGE_V1_COMMIT, server_template)
+        self.assertIn(HELIXFORGE_DEFAULT_COMMIT, readme)
+        self.assertIn(HELIXFORGE_DEFAULT_COMMIT, server_template)
 
     def test_reference_validation_record_is_consistent(self) -> None:
         validation = json.loads(

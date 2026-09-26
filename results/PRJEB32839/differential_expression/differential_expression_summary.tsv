@@ -1,0 +1,13 @@
+contrast	samples	tested_genes	significant	up	down	criteria
+condition__miracidium_mixed_vs_egg_mixed	75	9792	3394	2061	1333	padj<0.05;abs(log2FoldChange)>=1
+condition__sporocyst_1d_mixed_vs_miracidium_mixed	75	9792	3585	868	2717	padj<0.05;abs(log2FoldChange)>=1
+condition__sporocyst_5d_mixed_vs_sporocyst_1d_mixed	75	9792	1681	739	942	padj<0.05;abs(log2FoldChange)>=1
+condition__sporocyst_32d_mixed_vs_sporocyst_5d_mixed	75	9792	2942	2048	894	padj<0.05;abs(log2FoldChange)>=1
+condition__cercaria_mixed_vs_sporocyst_32d_mixed	75	9792	4423	2000	2423	padj<0.05;abs(log2FoldChange)>=1
+condition__schistosomulum_2d_mixed_vs_cercaria_mixed	75	9792	3429	1726	1703	padj<0.05;abs(log2FoldChange)>=1
+condition__juvenile_26d_female_vs_schistosomulum_2d_female	75	9792	2622	1619	1003	padj<0.05;abs(log2FoldChange)>=1
+condition__juvenile_26d_male_vs_schistosomulum_2d_male	75	9792	2635	1637	998	padj<0.05;abs(log2FoldChange)>=1
+condition__sporocyst_32d_female_vs_sporocyst_32d_male	75	9792	10	6	4	padj<0.05;abs(log2FoldChange)>=1
+condition__cercaria_female_vs_cercaria_male	75	9792	519	280	239	padj<0.05;abs(log2FoldChange)>=1
+condition__schistosomulum_2d_female_vs_schistosomulum_2d_male	75	9792	680	366	314	padj<0.05;abs(log2FoldChange)>=1
+condition__juvenile_26d_female_vs_juvenile_26d_male	75	9792	662	320	342	padj<0.05;abs(log2FoldChange)>=1
