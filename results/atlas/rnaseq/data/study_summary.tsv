@@ -1,0 +1,5 @@
+study	biological_samples	technical_runs	conditions	stages	qc_pass	qc_review	qc_fail	qc_not_recorded	mapping_mean_percent	mapping_min_percent	mapping_max_percent	trim_retention_mean_percent	trim_retention_min_percent	trim_retention_max_percent	differential_expression
+PRJNA602528	10	10	10	1	9	1	0	0	82.46	68.55	89.495	99.93	99.897	99.948	NO_DESCRIPTIVE_ONLY
+PRJNA597909	20	20	4	2	20	0	0	0	87.955	85.776	89.918	100.0	100.0	100.0	YES
+PRJEB14695	23	138	8	1	0	0	0	23	71.069	39.186	85.668				YES
+PRJEB32839	75	150	15	8	54	21	0	0	69.886	17.247	86.957	92.275	41.521	98.796	YES
