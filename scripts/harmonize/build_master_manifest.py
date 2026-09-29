@@ -7,13 +7,7 @@ import csv
 from pathlib import Path
 
 
-STUDIES = (
-    "PRJNA602528",
-    "PRJNA597909",
-    "PRJEB14695",
-    "PRJEB32839",
-    "E-MTAB-451",
-)
+STUDIES = ("PRJNA602528", "PRJNA597909", "PRJEB14695", "PRJEB32839")
 MASTER_FIELDS = (
     "study", "sample", "run", "layout", "stage", "sex", "tissue",
     "condition", "treatment", "time", "replicate", "batch", "source",
@@ -47,9 +41,7 @@ def main() -> None:
                 "study": study,
                 "sample": row["sample_id"],
                 "run": row["run_accession"],
-                # Earlier registries carried this field explicitly. The newer
-                # paired-end package freezes layout at study level.
-                "layout": run.get("library_layout") or "PAIRED",
+                "layout": run["library_layout"],
                 "stage": row["stage"],
                 "sex": row["sex"],
                 "tissue": row["tissue"],
@@ -83,3 +75,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
