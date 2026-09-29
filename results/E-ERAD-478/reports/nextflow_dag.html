@@ -1,0 +1,487 @@
+<!--
+  ~ Copyright 2013-2024, Seqera Labs
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<pre class="mermaid" style="text-align: center;">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#B6ECE2',
+      'primaryTextColor': '#160F26',
+      'primaryBorderColor': '#065647',
+      'lineColor': '#545555',
+      'clusterBkg': '#BABCBD22',
+      'clusterBorder': '#DDDEDE',
+      'fontFamily': 'arial'
+    }
+  }
+}%%
+flowchart TB
+    subgraph " "
+    v4["config_file"]
+    v5["pipeline_root"]
+    v6["context_meta"]
+    v66["config_file"]
+    v67["pipeline_root"]
+    v72["config_file"]
+    v73["pipeline_root"]
+    v147["quantification_method"]
+    v151["config_file"]
+    v152["pipeline_root"]
+    v153["native_alignment_enabled"]
+    v154["native_quantification_enabled"]
+    v230["config_file"]
+    v231["pipeline_root"]
+    v232["analysis_spec_input"]
+    end
+    subgraph "RNASEQ [RNASEQ]"
+    subgraph "RNASEQ:RNASEQ_NATIVE_FOUNDATION [RNASEQ_NATIVE_FOUNDATION]"
+    v7(["RNASEQ_CONTEXT"])
+    v10(["RNASEQ_METADATA"])
+    v16(["REFERENCE_BUNDLE"])
+    v13(( ))
+    v18(( ))
+    v19(( ))
+    v20(( ))
+    v21(( ))
+    v22(( ))
+    v24(( ))
+    v26(( ))
+    end
+    subgraph "RNASEQ:RNASEQ_QC [RNASEQ_QC]"
+    v33(["FASTQC_RAW"])
+    v36(["TRIM_GALORE"])
+    v43(["FASTQC_TRIMMED"])
+    v46(["MERGE_FASTQ"])
+    v50(["FASTQC_MERGED"])
+    v58(["MULTIQC"])
+    v30(( ))
+    v39(( ))
+    v40(( ))
+    v49(( ))
+    v53(( ))
+    v61(( ))
+    end
+    subgraph "RNASEQ:RNASEQ_ALIGNMENT_QUANTIFICATION [RNASEQ_ALIGNMENT_QUANTIFICATION]"
+    v68(["RNASEQ_ALIGNMENT_PLAN"])
+    v74(["RNASEQ_QUANTIFICATION_PLAN"])
+    v104(["SALMON_INDEX_VALIDATE"])
+    subgraph "RNASEQ:RNASEQ_ALIGNMENT_QUANTIFICATION:QUANTIFICATION [QUANTIFICATION]"
+    v120(["SALMON_QUANT"])
+    v119(( ))
+    v124(( ))
+    v125(( ))
+    v127(( ))
+    v129(( ))
+    v131(( ))
+    v132(( ))
+    end
+    v155(["RNASEQ_IMPORT_CONTEXT"])
+    subgraph "RNASEQ:RNASEQ_ALIGNMENT_QUANTIFICATION:IMPORT [IMPORT]"
+    v163(["IMPORT_SOURCE"])
+    v173(["SALMON_SAMPLE_TABLE"])
+    v175(["STAR_SAMPLE_TABLE"])
+    v178(["TX2GENE_BUILD"])
+    v182(["SALMON_IMPORT"])
+    v186(["STAR_IMPORT"])
+    v165(( ))
+    v168(( ))
+    v171(( ))
+    v172(( ))
+    v177(( ))
+    v188(( ))
+    v189(( ))
+    v190(( ))
+    v191(( ))
+    v197(( ))
+    v199(( ))
+    v200(( ))
+    v201(( ))
+    end
+    v76(( ))
+    v78(( ))
+    v80(( ))
+    v134(( ))
+    v138(( ))
+    v156(( ))
+    v206(( ))
+    end
+    subgraph "RNASEQ:RNASEQ_DIFFERENTIAL_EXPRESSION [RNASEQ_DIFFERENTIAL_EXPRESSION]"
+    v233(["RNASEQ_DE_CONTEXT"])
+    subgraph "RNASEQ:RNASEQ_DIFFERENTIAL_EXPRESSION:DIFFERENTIAL_EXPRESSION [DIFFERENTIAL_EXPRESSION]"
+    v242(["DE_PREFLIGHT"])
+    v245(["DESEQ2_MODEL"])
+    v251(["DESEQ2_CONTRAST"])
+    v259(["DE_AGGREGATE"])
+    v244(( ))
+    v247(( ))
+    v254(( ))
+    v255(( ))
+    v257(( ))
+    v266(( ))
+    v267(( ))
+    v270(( ))
+    v274(( ))
+    end
+    subgraph "RNASEQ:RNASEQ_DIFFERENTIAL_EXPRESSION:RNASEQ_REPORT [RNASEQ_REPORT]"
+    v284(["RNASEQ_REPORT_CONTEXT"])
+    v286(["RNASEQ_GENE_REPORT"])
+    v291(( ))
+    v292(( ))
+    end
+    v234(( ))
+    v277(( ))
+    v278(( ))
+    end
+    v331(["RUN_MANIFEST"])
+    v295(( ))
+    v336(( ))
+    end
+    subgraph " "
+    v8[" "]
+    v9[" "]
+    v11[" "]
+    v12[" "]
+    v17[" "]
+    v25["metadata_status"]
+    v34[" "]
+    v35[" "]
+    v37[" "]
+    v38[" "]
+    v44[" "]
+    v45[" "]
+    v47[" "]
+    v48[" "]
+    v51[" "]
+    v52[" "]
+    v59[" "]
+    v60[" "]
+    v69[" "]
+    v70[" "]
+    v71[" "]
+    v75[" "]
+    v77["alignment_settings_rows"]
+    v105[" "]
+    v106[" "]
+    v107[" "]
+    v108[" "]
+    v121["execution_metadata"]
+    v122["versions"]
+    v123[" "]
+    v126["command_info"]
+    v128["library_format"]
+    v130["auxiliary"]
+    v133["statistics"]
+    v136["provider_status"]
+    v164[" "]
+    v174[" "]
+    v176[" "]
+    v179[" "]
+    v180[" "]
+    v181[" "]
+    v183[" "]
+    v184["experiment"]
+    v185["imported_lengths"]
+    v187[" "]
+    v196["versions"]
+    v198["execution_metadata"]
+    v207["_quantification_status"]
+    v243[" "]
+    v246[" "]
+    v252[" "]
+    v253[" "]
+    v260["deg_status"]
+    v261[" "]
+    v262[" "]
+    v263[" "]
+    v264["significant"]
+    v265["artifacts"]
+    v273["versions"]
+    v276["execution_metadata"]
+    v285[" "]
+    v287["completed"]
+    v288["plots"]
+    v289["tables"]
+    v290["html"]
+    v293["versions"]
+    v332[" "]
+    v333[" "]
+    v334["terminal_bundle"]
+    v335["terminal_manifest"]
+    v340["logs"]
+    end
+    v4 --> v7
+    v5 --> v7
+    v6 --> v7
+    v7 --> v10
+    v7 --> v9
+    v7 --> v8
+    v7 --> v21
+    v10 --> v12
+    v10 --> v11
+    v10 --> v13
+    v10 --> v21
+    v10 --> v22
+    v10 --> v24
+    v10 --> v26
+    v13 --> v16
+    v16 --> v17
+    v16 --> v18
+    v16 --> v19
+    v16 --> v20
+    v16 --> v21
+    v24 --> v25
+    v30 --> v33
+    v33 --> v35
+    v33 --> v34
+    v33 --> v53
+    v33 --> v61
+    v30 --> v36
+    v36 --> v38
+    v36 --> v37
+    v36 --> v39
+    v36 --> v40
+    v36 --> v61
+    v39 --> v43
+    v43 --> v45
+    v43 --> v44
+    v43 --> v53
+    v43 --> v61
+    v40 --> v46
+    v46 --> v48
+    v46 --> v47
+    v46 --> v49
+    v46 --> v61
+    v49 --> v50
+    v50 --> v52
+    v50 --> v51
+    v50 --> v53
+    v50 --> v61
+    v53 --> v58
+    v58 --> v60
+    v58 --> v59
+    v58 --> v68
+    v58 --> v74
+    v58 --> v61
+    v66 --> v68
+    v67 --> v68
+    v18 --> v68
+    v22 --> v68
+    v68 --> v71
+    v68 --> v70
+    v68 --> v69
+    v68 --> v76
+    v68 --> v80
+    v72 --> v74
+    v73 --> v74
+    v18 --> v74
+    v22 --> v74
+    v74 --> v75
+    v74 --> v78
+    v74 --> v80
+    v76 --> v77
+    v78 --> v104
+    v104 --> v108
+    v104 --> v107
+    v104 --> v106
+    v104 --> v105
+    v104 --> v78
+    v104 --> v80
+    v119 --> v120
+    v120 --> v123
+    v120 --> v122
+    v120 --> v121
+    v120 --> v124
+    v120 --> v125
+    v120 --> v127
+    v120 --> v129
+    v120 --> v131
+    v120 --> v132
+    v120 --> v134
+    v120 --> v138
+    v120 --> v295
+    v125 --> v126
+    v127 --> v128
+    v129 --> v130
+    v132 --> v133
+    v134 --> v136
+    v147 --> v155
+    v147 --> v138
+    v147 --> v295
+    v151 --> v155
+    v152 --> v155
+    v153 --> v155
+    v154 --> v155
+    v19 --> v155
+    v26 --> v155
+    v155 --> v80
+    v155 --> v156
+    v138 --> v163
+    v163 --> v164
+    v163 --> v165
+    v163 --> v168
+    v163 --> v191
+    v163 --> v201
+    v165 --> v173
+    v171 --> v173
+    v173 --> v182
+    v173 --> v174
+    v173 --> v191
+    v173 --> v201
+    v168 --> v175
+    v172 --> v175
+    v175 --> v186
+    v175 --> v176
+    v175 --> v191
+    v175 --> v201
+    v177 --> v178
+    v178 --> v182
+    v178 --> v181
+    v178 --> v180
+    v178 --> v179
+    v178 --> v191
+    v178 --> v201
+    v165 --> v182
+    v182 --> v185
+    v182 --> v184
+    v182 --> v183
+    v182 --> v188
+    v182 --> v189
+    v182 --> v190
+    v182 --> v191
+    v182 --> v197
+    v182 --> v199
+    v182 --> v200
+    v182 --> v201
+    v168 --> v186
+    v186 --> v187
+    v186 --> v188
+    v186 --> v189
+    v186 --> v190
+    v186 --> v191
+    v186 --> v197
+    v186 --> v199
+    v186 --> v200
+    v186 --> v201
+    v191 --> v196
+    v197 --> v198
+    v206 --> v207
+    v230 --> v233
+    v231 --> v233
+    v232 --> v233
+    v233 --> v234
+    v233 --> v277
+    v234 --> v242
+    v242 --> v243
+    v242 --> v244
+    v242 --> v247
+    v242 --> v254
+    v242 --> v267
+    v242 --> v270
+    v244 --> v245
+    v245 --> v246
+    v245 --> v247
+    v245 --> v255
+    v245 --> v266
+    v245 --> v267
+    v245 --> v270
+    v245 --> v274
+    v245 --> v295
+    v247 --> v251
+    v251 --> v253
+    v251 --> v252
+    v251 --> v257
+    v251 --> v267
+    v251 --> v270
+    v251 --> v274
+    v251 --> v295
+    v254 --> v259
+    v255 --> v259
+    v257 --> v259
+    v259 --> v265
+    v259 --> v264
+    v259 --> v263
+    v259 --> v262
+    v259 --> v261
+    v259 --> v260
+    v259 --> v267
+    v259 --> v270
+    v259 --> v274
+    v259 --> v278
+    v259 --> v295
+    v270 --> v273
+    v274 --> v276
+    v278 --> v284
+    v284 --> v286
+    v284 --> v285
+    v284 --> v291
+    v284 --> v292
+    v286 --> v290
+    v286 --> v289
+    v286 --> v288
+    v286 --> v287
+    v286 --> v291
+    v286 --> v292
+    v286 --> v295
+    v292 --> v293
+    v295 --> v331
+    v331 --> v335
+    v331 --> v334
+    v331 --> v333
+    v331 --> v332
+    v331 --> v336
+    v336 --> v340
+    v19 --> v278
+    v20 --> v295
+    v21 --> v336
+    v22 --> v30
+    v26 --> v295
+    v61 --> v336
+    v78 --> v119
+    v131 --> v80
+    v201 --> v80
+    v80 --> v336
+    v124 --> v138
+    v124 --> v295
+    v156 --> v171
+    v156 --> v172
+    v156 --> v177
+    v188 --> v234
+    v188 --> v295
+    v189 --> v278
+    v189 --> v295
+    v190 --> v234
+    v190 --> v278
+    v199 --> v234
+    v199 --> v278
+    v199 --> v295
+    v200 --> v206
+    v266 --> v295
+    v267 --> v277
+    v291 --> v277
+    v277 --> v336
+
+</pre>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, maxTextSize: Number.MAX_SAFE_INTEGER, maxEdges: Number.MAX_SAFE_INTEGER });
+</script>
+</body>
+</html>
