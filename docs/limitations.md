@@ -19,16 +19,21 @@
 - PRJEB32839 is frozen to the 150 runs in the author-curated metadata. Thirty
   additional runs associated with the current ENA project record remain
   explicitly excluded.
-- The HelixForge v1 `-resume` behavior was environment-dependent for complete
-  workflows on shared HPC storage. Cache reuse must be verified operationally.
+- Nextflow cache reuse requires the official launcher, a stable launch/cache
+  location, the same work directory, and preserved task outputs. Controlled
+  validation with Nextflow 25.10.7 and Java 21 recovered every eligible task
+  and confirmed selective invalidation. The earlier failures attributed to
+  shared NFS were caused by unsupported direct JAR invocation and are resolved.
 - In PRJNA597909, the scientific workflow completed, but terminal-manifest
   generation initially selected a host Python without the required
   `jsonschema` package. Runtime ordering was corrected and only the terminal
   boundary was recovered under Slurm; QC, Salmon, Import, and DESeq2 were not
   recomputed.
-- A controlled PRJNA597909 `-resume` attempt again failed to reuse eligible
-  cache entries on shared NFS and was stopped before expensive stages repeated.
-  This is an operational limitation and did not change scientific outputs.
+- A historical PRJNA597909 `-resume` attempt failed to reuse eligible entries
+  and was stopped before expensive stages repeated. Later investigation showed
+  that the run bypassed launcher-supplied JVM serialization settings by calling
+  the Nextflow JAR directly. This incident remains part of the study audit
+  trail, but it is not a current shared-NFS limitation.
 - No ChIP-seq application, cross-study meta-analysis, atlas, coexpression,
   candidate prioritization, or RNA-seq/ChIP-seq integration has been validated
   by this repository yet. This describes the current validation state, not an

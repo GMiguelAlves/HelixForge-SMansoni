@@ -3,7 +3,7 @@
 - `download/`: reference and FASTQ acquisition through compute allocations.
 - `validate/`: package, download, reference, runtime, and contract checks.
 - `harmonize/`: conservative metadata indexing and controlled vocabularies.
-- `summarize/`: accepted-run provenance collection.
+- `summarize/`: accepted-run provenance and standardized result summaries.
 - `run_study.sh`: HelixForge launcher for one registered study.
 
 These helpers orchestrate project inputs; they do not replace HelixForge
@@ -19,6 +19,12 @@ material and are deliberately not versioned here.
 PCA, sample-correlation, expression-trajectory, and QC figures published for
 PRJNA602528. These plots are descriptive products of the Import-only run and
 must not be interpreted as differential-expression inference.
+
+`summarize/build_qc_summary.py` is the only active RNA-seq QC summarizer. It
+produces the stable `qc_sample_summary.tsv` and `qc_summary.json` contract for
+any study from preserved native results, a frozen audit ZIP, or a reviewed
+historical sample table. Study-specific finalizers must not create alternative
+QC interfaces. See `docs/qc_results_contract.md`.
 
 `run_study.sh` starts a clean native execution by default. Recovery with the
 same inputs, parameters, work directory, and task cache must be requested
