@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = PRJEB3190_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = E_ERAD_478_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -64,6 +64,7 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 4 | `PRJEB32839` | 150 | 75 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; stage and sex contrasts |
 | 5 | `E-MTAB-451` | 12 | 11 | Full RNA-seq completed; `PASS`; one technical-run pair aggregated before inference |
 | 6 | `PRJEB3190` | 20 | 20 | Full RNA-seq completed; `PASS`; seven-point schistosomulum time course |
+| 7 | `E-ERAD-478` | 120 | 60 | Full RNA-seq completed; `PASS`; two technical runs aggregated per biological sample |
 
 Every study exposes the same compact QC interface at
 `results/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed
@@ -137,6 +138,19 @@ Persistence, checksums, private audit capture, and sensitive-path scanning
 passed before the study-specific workdir, FASTQs, and other reproducible
 scratch intermediates were removed.
 
+`E-ERAD-478` completed the native `v1.0.2` paired-end path for 120 runs
+representing 60 biological samples. Two technical runs were aggregated per
+sample before quantification and inference. All 950 processes completed,
+Salmon mapping rates ranged from 75.03% to 91.84% (median 85.74%), tximport
+produced matrices for 9,914 genes, and all 32 frozen contrasts were estimated
+with the inferential design `~ batch + condition`. All 60 samples passed the
+frozen QC review thresholds. The accepted matrices, differential-expression
+results, QC summaries, terminal manifests, and sanitized execution reports are
+available under [`results/E-ERAD-478/`](results/E-ERAD-478/). The complete
+candidate-gene report passed but remains outside Git. Persistence, checksums,
+private audit capture, and sensitive-path scanning passed before 621.87 GB of
+study-specific scratch data were removed.
+
 ## Execution policy
 
 Only one study may occupy heavy scratch storage at a time. Data acquisition is
@@ -171,8 +185,8 @@ execution must record the HelixForge tag and commit, reference checksums,
 commands, environment, Slurm metadata, terminal manifest, and an execution
 summary under `provenance/<study>/`.
 
-Completion of `PRJEB14695` does not authorize processing of another study,
-meta-analysis, atlas construction, coexpression, candidate prioritization, or
+Completion of an individual study does not automatically authorize a new
+cross-study synthesis, coexpression analysis, candidate-prioritization pass, or
 epigenomic integration. Each requires its own reviewed execution contract.
 
 ## Administrative validation
