@@ -26,10 +26,20 @@ the original tool reports or alter any scientific result.
 | `classification` | `PASS`, `REVIEW`, or `FAIL` |
 | `reason` | Semicolon-delimited machine-readable reasons; `none` for `PASS` |
 
-The default review thresholds preserve the rules used in the accepted project
-reports: trimming retention below 80% or Salmon mapping below 50%. A recorded
-study-specific `REVIEW` or `FAIL` flag is preserved even when these two numeric
-thresholds pass; it is never silently downgraded.
+The default operational review thresholds are trimming retention below 80% or
+Salmon mapping below 60%. These are project-level warning triggers, not
+universal biological quality standards and not automatic sample-exclusion
+rules. The 60% mapping threshold replaces an earlier ad hoc 50% rule that had
+originated in the PRJEB32839 finalizer and had not been established by Salmon,
+MultiQC, a scientific reference, or a suite-wide policy.
+
+Legacy sample tables are reclassified under the thresholds recorded in the new
+summary instead of carrying forward a historical `REVIEW` flag produced under
+a different rule. Thresholds can be overridden explicitly on the command line;
+the values actually used are always recorded in `qc_summary.json`. Missing,
+non-numeric, duplicated, or internally inconsistent metrics are validation
+errors: the generator exits non-zero rather than publishing a misleading
+sample-level `PASS` or `FAIL` row.
 
 ## Study summary
 
@@ -54,5 +64,6 @@ large studies. Parsing hundreds of FastQC reports is not a head-node task.
 
 For historical packages, `--audit-zip` reads the preserved archive directly.
 For an already reviewed legacy sample table, `--sample-table` normalizes its
-columns and preserves explicit review flags. New studies should use native
-results directly and must not add another study-specific QC finalizer.
+columns and recalculates classification under the declared current thresholds.
+New studies should use native results directly and must not add another
+study-specific QC finalizer.
