@@ -458,7 +458,7 @@ class ProjectContracts(unittest.TestCase):
 
         qc_rows = read_tsv(result_root / "qc/qc_sample_summary.tsv")
         self.assertEqual(10, len(qc_rows))
-        self.assertEqual(1, sum(row["classification"] == "REVIEW" for row in qc_rows))
+        self.assertTrue(all(row["classification"] == "PASS" for row in qc_rows))
 
         report = (result_root / "reports/PRJNA602528_execution_report.md").read_text(
             encoding="utf-8"
@@ -650,6 +650,11 @@ class ProjectContracts(unittest.TestCase):
             self.assertEqual("200", rows[0]["raw_reads_both_mates"])
             self.assertEqual("180", rows[0]["trimmed_reads_both_mates"])
             self.assertEqual("PASS", rows[0]["classification"])
+            summary = json.loads((output / "qc_summary.json").read_text(encoding="utf-8"))
+            self.assertEqual(
+                60.0,
+                summary["thresholds"]["salmon_mapping_review_below_percent"],
+            )
 
     def test_prjeb14695_full_results_are_complete(self) -> None:
         result_root = ROOT / "results/PRJEB14695"
