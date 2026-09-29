@@ -317,3 +317,15 @@ PRJEB32839	x_miracidia_r4	ERR11178268	PAIRED	miracidium	mixed	whole_organism	mir
 PRJEB32839	x_miracidia_r4	ERR11178358	PAIRED	miracidium	mixed	whole_organism	miracidium_mixed	untreated	not_applicable	4	not_declared	ENA
 PRJEB32839	x_miracidia_r5	ERR11178278	PAIRED	miracidium	mixed	whole_organism	miracidium_mixed	untreated	not_applicable	5	not_declared	ENA
 PRJEB32839	x_miracidia_r5	ERR11178368	PAIRED	miracidium	mixed	whole_organism	miracidium_mixed	untreated	not_applicable	5	not_declared	ENA
+E-MTAB-451	adult_mixed_r1	ERR022873	PAIRED	adult	mixed	whole_organism	adult_mixed	untreated	not_applicable	1	not_declared	ENA
+E-MTAB-451	cercaria_whole_r1	ERR022872	PAIRED	cercaria	mixed	whole_organism	cercaria_whole	untreated	0	1	not_declared	ENA
+E-MTAB-451	cercaria_whole_r2	ERR022877	PAIRED	cercaria	mixed	whole_organism	cercaria_whole	untreated	0	2	not_declared	ENA
+E-MTAB-451	cercaria_whole_r3	ERR022878	PAIRED	cercaria	mixed	whole_organism	cercaria_whole	untreated	0	3	not_declared	ENA
+E-MTAB-451	cercarial_tail_r1	ERR022875	PAIRED	cercaria	mixed	tail	cercarial_tail	untreated	0	1	not_declared	ENA
+E-MTAB-451	schistosomulum_24h_r1	ERR022880	PAIRED	schistosomulum_24h	mixed	whole_organism	schistosomulum_24h	untreated	24	1	not_declared	ENA
+E-MTAB-451	schistosomulum_24h_r2	ERR022881	PAIRED	schistosomulum_24h	mixed	whole_organism	schistosomulum_24h	untreated	24	2	not_declared	ENA
+E-MTAB-451	schistosomulum_24h_r3	ERR022882	PAIRED	schistosomulum_24h	mixed	whole_organism	schistosomulum_24h	untreated	24	3	not_declared	ENA
+E-MTAB-451	schistosomulum_24h_r4	ERR022883	PAIRED	schistosomulum_24h	mixed	whole_organism	schistosomulum_24h	untreated	24	4	not_declared	ENA
+E-MTAB-451	schistosomulum_3h_r1	ERR022874	PAIRED	schistosomulum_3h	mixed	whole_organism	schistosomulum_3h	untreated	3	1	not_declared	ENA
+E-MTAB-451	schistosomulum_3h_r1	ERR022876	PAIRED	schistosomulum_3h	mixed	whole_organism	schistosomulum_3h	untreated	3	1	not_declared	ENA
+E-MTAB-451	schistosomulum_3h_r2	ERR022879	PAIRED	schistosomulum_3h	mixed	whole_organism	schistosomulum_3h	untreated	3	2	not_declared	ENA

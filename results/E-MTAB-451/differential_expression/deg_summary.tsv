@@ -1,0 +1,4 @@
+analysis_id	variable	contrast	status	n_samples	n_genes	n_significant
+smansoni_e_mtab_451_primary	condition	condition__schistosomulum_3h_vs_cercaria_whole	ok	11	9495	2030
+smansoni_e_mtab_451_primary	condition	condition__schistosomulum_24h_vs_schistosomulum_3h	ok	11	9495	2295
+smansoni_e_mtab_451_primary	condition	condition__schistosomulum_24h_vs_cercaria_whole	ok	11	9495	3752

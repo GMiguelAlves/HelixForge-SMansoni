@@ -1,0 +1,43 @@
+{
+  "de_row_count": 28485,
+  "gene_count": 9914,
+  "group_count": 4,
+  "id": "rnaseq.report.candidate_genes",
+  "inputs": {
+    "abundance": {
+      "sha256": "67bd8831b8381dbd528079bd8bba3401e610f0be078768987856aa7348846c03"
+    },
+    "annotation": {
+      "sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e"
+    },
+    "de_manifest": {
+      "sha256": "cc4e5b935f07942c07d4b9107a50cf9dd359ffed8fa79711e8b6b2dc14afbbcf"
+    },
+    "de_results": {
+      "sha256": "ae6fd9849ed2a3ea864b9970e63f201a0d4f1046305ea86bfde2fb4446f0a824"
+    },
+    "genes": {
+      "sha256": "d13e2f8dfc8c208edf995a906c3be52f106e16c955a292fb070e308e3d4c4ae2"
+    },
+    "import_manifest": {
+      "sha256": "90845e16073472f5b97083fa87fccb63c99ea88e77f7be83a441f3f657615ea9"
+    },
+    "samples": {
+      "sha256": "780149ab2f84856238fcf8ee9fd4fa3ae5bae542d32d9f23b35930b8e31fd2a9"
+    }
+  },
+  "parameters": {
+    "expression_unit": "TPM",
+    "gene_id_version_policy": "preserve",
+    "life_stage_levels": "unknown",
+    "organism_specific": false,
+    "stage_synonym_map": "",
+    "title": "Candidate gene report"
+  },
+  "provider": "candidate_genes_v1",
+  "query_count": 65,
+  "sample_count": 11,
+  "schema_version": "1.0",
+  "status": "complete",
+  "type": "rnaseq_report_context"
+}
