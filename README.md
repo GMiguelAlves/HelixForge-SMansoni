@@ -65,6 +65,12 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 5 | `E-MTAB-451` | 12 | 11 | Full RNA-seq completed; `PASS`; one technical-run pair aggregated before inference |
 | 6 | `PRJEB3190` | 20 | 20 | Full RNA-seq completed; `PASS`; seven-point schistosomulum time course |
 
+Every study exposes the same compact QC interface at
+`results/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed
+MultiQC reports remain available alongside it where published. The fields,
+classification rules, and generation procedure are defined in
+[`docs/qc_results_contract.md`](docs/qc_results_contract.md).
+
 `PRJNA602528` is the first completed real *S. mansoni* application and
 operational calibration run. It is not a new benchmark of HelixForge. Its
 public design has one library per time point, so the frozen project stops after
@@ -77,7 +83,10 @@ tximport completed, and all four frozen DESeq2 contrasts were estimated. The
 accepted tables, figures, portable terminal manifest, and report are available
 under [`results/PRJNA597909/`](results/PRJNA597909/). Its
 `PASS_WITH_LIMITATIONS` classification records terminal-runtime recovery and
-the shared-NFS `-resume` limitation; the scientific stages themselves passed.
+the then-unresolved `-resume` incident; the scientific stages themselves
+passed. Later investigation traced that incident to unsupported direct JAR
+invocation rather than shared NFS, and the official launcher subsequently
+passed complete cache-reuse and selective-invalidation validation.
 
 `PRJEB14695` completed the native RNA-seq path for 138 paired-end technical
 runs representing 23 biological samples. Run-to-sample mapping and aggregation
