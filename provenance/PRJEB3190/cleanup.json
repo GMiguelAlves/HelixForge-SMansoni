@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJEB3190",
+  "completed_at": "2026-09-29",
+  "status": "PASS",
+  "preserved": [
+    "complete persistent scientific results including candidate-gene report",
+    "compact public result bundle without candidate-gene report",
+    "terminal manifests",
+    "sanitized execution reports",
+    "private work audit archive"
+  ],
+  "removed": [
+    "original FASTQs",
+    "trimmed and merged FASTQs",
+    "study-specific Nextflow work directory",
+    "temporary compatibility quantification directory",
+    "reproducible scratch intermediates"
+  ],
+  "other_projects_touched": false,
+  "shared_resources_touched": false
+}

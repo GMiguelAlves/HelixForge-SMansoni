@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJEB3190",
+  "validated_at": "2026-09-29",
+  "classification": "PASS",
+  "gates": {
+    "frozen_run_inventory": "PASS",
+    "paired_fastq_integrity": "PASS",
+    "run_to_sample_mapping": "PASS",
+    "technical_run_aggregation": "NOT_REQUIRED",
+    "quality_control": "PASS",
+    "salmon_quantification": "PASS",
+    "tximport": "PASS",
+    "deseq2": "PASS",
+    "multiqc": "PASS",
+    "candidate_gene_report": "PASS_RETAINED_OUTSIDE_GIT",
+    "terminal_manifest": "PASS",
+    "result_checksums": "PASS",
+    "audit_archive": "PASS",
+    "sensitive_path_scan": "PASS"
+  },
+  "notes": [
+    "The inferential design was frozen as ~ condition.",
+    "Twenty canonical poly(A)/mRNA libraries were retained; small-RNA and noncanonical labels remain in the exclusion inventory.",
+    "ENA alias-derived sequencing labels remain exploratory and were not used as inferential batch covariates.",
+    "All nine prespecified time-course contrasts completed successfully."
+  ]
+}
