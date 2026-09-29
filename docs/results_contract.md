@@ -67,8 +67,9 @@ substitute for that archive.
 
 ## Historical packages
 
-Older accepted studies contain transitional layouts. They remain traceable in
-Git history, but new publications must use this contract. Their compact QC
-interface has already been normalized; the remaining physical-layout migration
-should be performed as one dedicated maintenance change rather than silently in
-an unrelated scientific PR.
+Older accepted studies used transitional layouts and, in some cases, included
+complete Salmon payloads under `compatibility/quants/`. Those payloads remain
+traceable in Git history and in the private audit archives, but were removed
+from the current public tree during result-package normalization. All
+registered studies now follow the same exclusion rule: complete per-sample
+quantification payloads belong to persistent private storage, not to Git.

@@ -59,6 +59,21 @@ class PublicResultsContract(unittest.TestCase):
         ]
         self.assertEqual([], offenders)
 
+    def test_public_studies_exclude_salmon_reentry_payloads(self) -> None:
+        offenders = []
+        for study in STUDIES:
+            root = RESULTS / study
+            offenders.extend(
+                str(path.relative_to(RESULTS))
+                for path in root.rglob("*")
+                if path.is_file()
+                and (
+                    path.name == "quant.sf"
+                    or "quants" in path.relative_to(root).parts
+                )
+            )
+        self.assertEqual([], offenders)
+
 
 if __name__ == "__main__":
     unittest.main()

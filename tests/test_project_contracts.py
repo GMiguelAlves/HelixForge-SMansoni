@@ -441,7 +441,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("salmon", manifest["quantification_method"])
         self.assertEqual([], manifest["contrasts"])
         self.assertEqual(10, len(manifest["samples"]))
-        self.assertEqual(12, len(manifest["artifacts"]))
+        self.assertEqual(2, len(manifest["artifacts"]))
 
         for artifact in manifest["artifacts"]:
             self.assertEqual("manifest_relative", artifact["location"]["kind"])
