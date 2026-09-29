@@ -21,6 +21,9 @@ complete `quant.sf` collections, duplicated Integration API payloads, RDS
 objects, scheduler logs, cache, references and indexes remain in verified
 persistent storage or audit archives. They must not be copied into Git merely
 to make a public terminal manifest self-contained.
+This exclusion applies equally to every registered study; directories such as
+`compatibility/quants/` are not part of the public results contract, including
+for historical projects.
 
 The stable paths consumed by reviewers and the UI are therefore the compact
 directories above. Native Nextflow output trees may have a different internal
