@@ -18,6 +18,7 @@ EXPECTED = {
     "PRJEB32839": (150, 75),
     "E-MTAB-451": (12, 11),
     "PRJEB3190": (20, 20),
+    "E-ERAD-478": (120, 60),
 }
 MASTER_FIELDS = [
     "study", "sample", "run", "layout", "stage", "sex", "tissue",

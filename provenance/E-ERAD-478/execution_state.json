@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "study": "E-ERAD-478",
+  "status": "READY_FOR_REVIEW",
+  "phase": "COMPLETE",
+  "classification": "PASS",
+  "helixforge_release": "v1.0.2",
+  "helixforge_commit": "5d4b3e696319db5cd7633472504964f1dc7c0434",
+  "nextflow_version": "25.10.7",
+  "java_version": "21",
+  "salmon_version": "1.10.3",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "analysis_mode": "full",
+  "benchmark": false,
+  "layout": "PAIRED",
+  "runs": 120,
+  "biological_samples": 60,
+  "technical_run_aggregation": {
+    "status": "PASS",
+    "runs_per_sample": 2
+  },
+  "design": {
+    "formula": "~ batch + condition",
+    "batch_policy": "inferential_covariate",
+    "batch_note": "The frozen sequencing batch field was included as an estimable technical covariate."
+  },
+  "workflow": {
+    "state": "COMPLETE",
+    "processes_completed": 950,
+    "processes_failed": 0,
+    "max_concurrent_jobs": 8,
+    "salmon_mapping_rate_min_percent": 75.02638730328228,
+    "salmon_mapping_rate_median_percent": 85.74323599377041,
+    "salmon_mapping_rate_max_percent": 91.84146081027812,
+    "genes_imported": 9914,
+    "genes_tested": 9482,
+    "contrasts": 32
+  },
+  "quality_control": {
+    "status": "PASS",
+    "samples_pass": 60,
+    "samples_review": 0
+  },
+  "persistent_copy": {
+    "status": "PASS",
+    "files": 4173,
+    "verification": "SHA-256"
+  },
+  "public_bundle": {
+    "status": "PASS",
+    "files": 795,
+    "checksummed_files": 794,
+    "candidate_gene_report": "retained outside Git"
+  },
+  "audit_package": {
+    "status": "PASS",
+    "filename": "E-ERAD-478-work-audit.tar.gz",
+    "sha256": "ad2a634bbae05503aa73dbf6f2b1c6254a7a0a2e0128ffea05dfaee7b691d9f9",
+    "location": "private persistent audit storage"
+  }
+}

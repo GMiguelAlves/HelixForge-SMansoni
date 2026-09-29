@@ -29,6 +29,7 @@ STUDIES = {
     "PRJEB32839": (150, 75),
     "E-MTAB-451": (12, 11),
     "PRJEB3190": (20, 20),
+    "E-ERAD-478": (120, 60),
 }
 
 
@@ -592,6 +593,61 @@ class ProjectContracts(unittest.TestCase):
                     sum(summary["sample_classification"].values()),
                 )
                 self.assertTrue(all(row["classification"] in {"PASS", "REVIEW", "FAIL"} for row in rows))
+
+    def test_e_erad_478_completed_analysis_is_consistent(self) -> None:
+        provenance = ROOT / "provenance/E-ERAD-478"
+        results = ROOT / "results/E-ERAD-478"
+        state = json.loads((provenance / "execution_state.json").read_text(encoding="utf-8"))
+        cleanup = json.loads((provenance / "cleanup.json").read_text(encoding="utf-8"))
+        final = json.loads((provenance / "final_validation.json").read_text(encoding="utf-8"))
+        manifest = json.loads((results / "manifests/rnaseq_run_manifest.json").read_text(encoding="utf-8"))
+        validation = json.loads(
+            (results / "manifests/terminal_manifest_validation.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual("PASS", final["classification"])
+        self.assertEqual("READY_FOR_REVIEW", state["status"])
+        self.assertEqual("COMPLETE", state["phase"])
+        self.assertEqual((120, 60), (state["runs"], state["biological_samples"]))
+        self.assertEqual("PASS", state["technical_run_aggregation"]["status"])
+        self.assertEqual(2, state["technical_run_aggregation"]["runs_per_sample"])
+        self.assertEqual("~ batch + condition", state["design"]["formula"])
+        self.assertEqual((950, 0), (state["workflow"]["processes_completed"], state["workflow"]["processes_failed"]))
+        self.assertEqual((60, 0), (state["quality_control"]["samples_pass"], state["quality_control"]["samples_review"]))
+        self.assertEqual("PASS", state["audit_package"]["status"])
+
+        self.assertEqual("rnaseq_run_manifest", manifest["type"])
+        self.assertEqual("complete", manifest["status"])
+        self.assertEqual("salmon", manifest["quantification_method"])
+        self.assertEqual(60, len(manifest["samples"]))
+        self.assertEqual(32, len(manifest["contrasts"]))
+        self.assertEqual("complete", validation["status"])
+        self.assertEqual("valid", validation["schema"])
+        self.assertEqual("valid", validation["semantic"])
+
+        qc_rows = read_tsv(results / "qc/qc_sample_summary.tsv")
+        self.assertEqual(60, len(qc_rows))
+        self.assertTrue(all(row["classification"] == "PASS" for row in qc_rows))
+
+        for matrix in ("counts_matrix.tsv", "tpm_matrix.tsv", "length_matrix.tsv"):
+            with (results / "expression" / matrix).open(encoding="utf-8", newline="") as handle:
+                rows = list(csv.reader(handle, delimiter="\t"))
+            self.assertEqual(60, len(rows[0]) - 1, matrix)
+            self.assertEqual(9914, len(rows) - 1, matrix)
+
+        contrasts = read_tsv(results / "differential_expression/deg_summary.tsv")
+        self.assertEqual(32, len(contrasts))
+        self.assertTrue(all(row["status"] == "ok" for row in contrasts))
+        self.assertTrue(all(int(row["n_samples"]) == 60 for row in contrasts))
+        self.assertTrue(all(int(row["n_genes"]) == 9482 for row in contrasts))
+        self.assertEqual([], list(results.rglob("*gene_set_report*")))
+
+        self.assertEqual("PASS", cleanup["status"])
+        self.assertEqual(621867225616, cleanup["scratch_bytes_recovered"])
+        self.assertEqual(0, cleanup["scratch_bytes_after_cleanup"])
+        self.assertEqual(0, cleanup["heavy_residual_bytes"])
+        self.assertFalse(cleanup["other_projects_touched"])
+        self.assertFalse(cleanup["shared_resources_touched"])
 
     def test_generic_qc_summarizer_uses_native_outputs(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

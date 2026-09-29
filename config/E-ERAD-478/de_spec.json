@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "scope": "E-ERAD-478",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [
+      "batch"
+    ],
+    "formula": "~ batch + condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_e_erad_478_primary",
+  "target_dir": "results/rnaseq/differential_expression/E-ERAD-478",
+  "contrasts": [
+    {
+      "id": "condition__d21_female_paired_vs_d21_male_paired",
+      "factor": "condition",
+      "numerator": "d21_female_paired",
+      "denominator": "d21_male_paired",
+      "description": "d21_female_paired versus d21_male_paired",
+      "direction": "d21_female_paired/d21_male_paired"
+    },
+    {
+      "id": "condition__d21_female_unpaired_vs_d21_male_unpaired",
+      "factor": "condition",
+      "numerator": "d21_female_unpaired",
+      "denominator": "d21_male_unpaired",
+      "description": "d21_female_unpaired versus d21_male_unpaired",
+      "direction": "d21_female_unpaired/d21_male_unpaired"
+    },
+    {
+      "id": "condition__d21_female_paired_vs_d21_female_unpaired",
+      "factor": "condition",
+      "numerator": "d21_female_paired",
+      "denominator": "d21_female_unpaired",
+      "description": "d21_female_paired versus d21_female_unpaired",
+      "direction": "d21_female_paired/d21_female_unpaired"
+    },
+    {
+      "id": "condition__d21_male_paired_vs_d21_male_unpaired",
+      "factor": "condition",
+      "numerator": "d21_male_paired",
+      "denominator": "d21_male_unpaired",
+      "description": "d21_male_paired versus d21_male_unpaired",
+      "direction": "d21_male_paired/d21_male_unpaired"
+    },
+    {
+      "id": "condition__d28_female_paired_vs_d28_male_paired",
+      "factor": "condition",
+      "numerator": "d28_female_paired",
+      "denominator": "d28_male_paired",
+      "description": "d28_female_paired versus d28_male_paired",
+      "direction": "d28_female_paired/d28_male_paired"
+    },
+    {
+      "id": "condition__d28_female_unpaired_vs_d28_male_unpaired",
+      "factor": "condition",
+      "numerator": "d28_female_unpaired",
+      "denominator": "d28_male_unpaired",
+      "description": "d28_female_unpaired versus d28_male_unpaired",
+      "direction": "d28_female_unpaired/d28_male_unpaired"
+    },
+    {
+      "id": "condition__d28_female_paired_vs_d28_female_unpaired",
+      "factor": "condition",
+      "numerator": "d28_female_paired",
+      "denominator": "d28_female_unpaired",
+      "description": "d28_female_paired versus d28_female_unpaired",
+      "direction": "d28_female_paired/d28_female_unpaired"
+    },
+    {
+      "id": "condition__d28_male_paired_vs_d28_male_unpaired",
+      "factor": "condition",
+      "numerator": "d28_male_paired",
+      "denominator": "d28_male_unpaired",
+      "description": "d28_male_paired versus d28_male_unpaired",
+      "direction": "d28_male_paired/d28_male_unpaired"
+    },
+    {
+      "id": "condition__d35_female_paired_vs_d35_male_paired",
+      "factor": "condition",
+      "numerator": "d35_female_paired",
+      "denominator": "d35_male_paired",
+      "description": "d35_female_paired versus d35_male_paired",
+      "direction": "d35_female_paired/d35_male_paired"
+    },
+    {
+      "id": "condition__d35_female_unpaired_vs_d35_male_unpaired",
+      "factor": "condition",
+      "numerator": "d35_female_unpaired",
+      "denominator": "d35_male_unpaired",
+      "description": "d35_female_unpaired versus d35_male_unpaired",
+      "direction": "d35_female_unpaired/d35_male_unpaired"
+    },
+    {
+      "id": "condition__d35_female_paired_vs_d35_female_unpaired",
+      "factor": "condition",
+      "numerator": "d35_female_paired",
+      "denominator": "d35_female_unpaired",
+      "description": "d35_female_paired versus d35_female_unpaired",
+      "direction": "d35_female_paired/d35_female_unpaired"
+    },
+    {
+      "id": "condition__d35_male_paired_vs_d35_male_unpaired",
+      "factor": "condition",
+      "numerator": "d35_male_paired",
+      "denominator": "d35_male_unpaired",
+      "description": "d35_male_paired versus d35_male_unpaired",
+      "direction": "d35_male_paired/d35_male_unpaired"
+    },
+    {
+      "id": "condition__d38_female_paired_vs_d38_male_paired",
+      "factor": "condition",
+      "numerator": "d38_female_paired",
+      "denominator": "d38_male_paired",
+      "description": "d38_female_paired versus d38_male_paired",
+      "direction": "d38_female_paired/d38_male_paired"
+    },
+    {
+      "id": "condition__d38_female_unpaired_vs_d38_male_unpaired",
+      "factor": "condition",
+      "numerator": "d38_female_unpaired",
+      "denominator": "d38_male_unpaired",
+      "description": "d38_female_unpaired versus d38_male_unpaired",
+      "direction": "d38_female_unpaired/d38_male_unpaired"
+    },
+    {
+      "id": "condition__d38_female_paired_vs_d38_female_unpaired",
+      "factor": "condition",
+      "numerator": "d38_female_paired",
+      "denominator": "d38_female_unpaired",
+      "description": "d38_female_paired versus d38_female_unpaired",
+      "direction": "d38_female_paired/d38_female_unpaired"
+    },
+    {
+      "id": "condition__d38_male_paired_vs_d38_male_unpaired",
+      "factor": "condition",
+      "numerator": "d38_male_paired",
+      "denominator": "d38_male_unpaired",
+      "description": "d38_male_paired versus d38_male_unpaired",
+      "direction": "d38_male_paired/d38_male_unpaired"
+    },
+    {
+      "id": "condition__d28_female_paired_vs_d21_female_paired",
+      "factor": "condition",
+      "numerator": "d28_female_paired",
+      "denominator": "d21_female_paired",
+      "description": "d28_female_paired versus d21_female_paired",
+      "direction": "d28_female_paired/d21_female_paired"
+    },
+    {
+      "id": "condition__d35_female_paired_vs_d28_female_paired",
+      "factor": "condition",
+      "numerator": "d35_female_paired",
+      "denominator": "d28_female_paired",
+      "description": "d35_female_paired versus d28_female_paired",
+      "direction": "d35_female_paired/d28_female_paired"
+    },
+    {
+      "id": "condition__d38_female_paired_vs_d35_female_paired",
+      "factor": "condition",
+      "numerator": "d38_female_paired",
+      "denominator": "d35_female_paired",
+      "description": "d38_female_paired versus d35_female_paired",
+      "direction": "d38_female_paired/d35_female_paired"
+    },
+    {
+      "id": "condition__d38_female_paired_vs_d21_female_paired",
+      "factor": "condition",
+      "numerator": "d38_female_paired",
+      "denominator": "d21_female_paired",
+      "description": "d38_female_paired versus d21_female_paired",
+      "direction": "d38_female_paired/d21_female_paired"
+    },
+    {
+      "id": "condition__d28_female_unpaired_vs_d21_female_unpaired",
+      "factor": "condition",
+      "numerator": "d28_female_unpaired",
+      "denominator": "d21_female_unpaired",
+      "description": "d28_female_unpaired versus d21_female_unpaired",
+      "direction": "d28_female_unpaired/d21_female_unpaired"
+    },
+    {
+      "id": "condition__d35_female_unpaired_vs_d28_female_unpaired",
+      "factor": "condition",
+      "numerator": "d35_female_unpaired",
+      "denominator": "d28_female_unpaired",
+      "description": "d35_female_unpaired versus d28_female_unpaired",
+      "direction": "d35_female_unpaired/d28_female_unpaired"
+    },
+    {
+      "id": "condition__d38_female_unpaired_vs_d35_female_unpaired",
+      "factor": "condition",
+      "numerator": "d38_female_unpaired",
+      "denominator": "d35_female_unpaired",
+      "description": "d38_female_unpaired versus d35_female_unpaired",
+      "direction": "d38_female_unpaired/d35_female_unpaired"
+    },
+    {
+      "id": "condition__d38_female_unpaired_vs_d21_female_unpaired",
+      "factor": "condition",
+      "numerator": "d38_female_unpaired",
+      "denominator": "d21_female_unpaired",
+      "description": "d38_female_unpaired versus d21_female_unpaired",
+      "direction": "d38_female_unpaired/d21_female_unpaired"
+    },
+    {
+      "id": "condition__d28_male_paired_vs_d21_male_paired",
+      "factor": "condition",
+      "numerator": "d28_male_paired",
+      "denominator": "d21_male_paired",
+      "description": "d28_male_paired versus d21_male_paired",
+      "direction": "d28_male_paired/d21_male_paired"
+    },
+    {
+      "id": "condition__d35_male_paired_vs_d28_male_paired",
+      "factor": "condition",
+      "numerator": "d35_male_paired",
+      "denominator": "d28_male_paired",
+      "description": "d35_male_paired versus d28_male_paired",
+      "direction": "d35_male_paired/d28_male_paired"
+    },
+    {
+      "id": "condition__d38_male_paired_vs_d35_male_paired",
+      "factor": "condition",
+      "numerator": "d38_male_paired",
+      "denominator": "d35_male_paired",
+      "description": "d38_male_paired versus d35_male_paired",
+      "direction": "d38_male_paired/d35_male_paired"
+    },
+    {
+      "id": "condition__d38_male_paired_vs_d21_male_paired",
+      "factor": "condition",
+      "numerator": "d38_male_paired",
+      "denominator": "d21_male_paired",
+      "description": "d38_male_paired versus d21_male_paired",
+      "direction": "d38_male_paired/d21_male_paired"
+    },
+    {
+      "id": "condition__d28_male_unpaired_vs_d21_male_unpaired",
+      "factor": "condition",
+      "numerator": "d28_male_unpaired",
+      "denominator": "d21_male_unpaired",
+      "description": "d28_male_unpaired versus d21_male_unpaired",
+      "direction": "d28_male_unpaired/d21_male_unpaired"
+    },
+    {
+      "id": "condition__d35_male_unpaired_vs_d28_male_unpaired",
+      "factor": "condition",
+      "numerator": "d35_male_unpaired",
+      "denominator": "d28_male_unpaired",
+      "description": "d35_male_unpaired versus d28_male_unpaired",
+      "direction": "d35_male_unpaired/d28_male_unpaired"
+    },
+    {
+      "id": "condition__d38_male_unpaired_vs_d35_male_unpaired",
+      "factor": "condition",
+      "numerator": "d38_male_unpaired",
+      "denominator": "d35_male_unpaired",
+      "description": "d38_male_unpaired versus d35_male_unpaired",
+      "direction": "d38_male_unpaired/d35_male_unpaired"
+    },
+    {
+      "id": "condition__d38_male_unpaired_vs_d21_male_unpaired",
+      "factor": "condition",
+      "numerator": "d38_male_unpaired",
+      "denominator": "d21_male_unpaired",
+      "description": "d38_male_unpaired versus d21_male_unpaired",
+      "direction": "d38_male_unpaired/d21_male_unpaired"
+    }
+  ]
+}
