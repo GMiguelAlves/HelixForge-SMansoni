@@ -13,6 +13,7 @@ STUDIES = (
     "PRJEB14695",
     "PRJEB32839",
     "E-MTAB-451",
+    "PRJEB3190",
 )
 MASTER_FIELDS = (
     "study", "sample", "run", "layout", "stage", "sex", "tissue",

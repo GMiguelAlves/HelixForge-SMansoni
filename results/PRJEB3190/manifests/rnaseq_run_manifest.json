@@ -1,0 +1,2093 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_0h_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f6bec4ab2c25db9d3b771c09032c66da0935bd9102d5a10bd1a2d1e5c95c7aff"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_0h_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_0h_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_0h_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_0h_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "07cd77e1cd903a9c94459dc942224d628673aea4e6130ebc90887313cd39c17c"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_0h_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_0h_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_0h_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_12h_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "075ae872d34cbb8b190a2d7e9746fdc2674c43916286246681d9308c19cf1467"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_12h_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_12h_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_12h_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_12h_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "823082c867a5fbf09666893bb57c9137e1a2a0f98850dc3d1fff6622336a9705"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_12h_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_12h_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_12h_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_12h_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "5d546f34d1729a7f13081a0e7cac8b19cbe57bb2e605c221557f7116d57f7e99"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_12h_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_12h_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_12h_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_24h_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2c2829a5fe7598eeef9ab98d242d8220093082db76b8d2628343a2d0109ea27f"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_24h_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_24h_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_24h_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_24h_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2c8c39b46154068a5d2178439e7a5f6193b46b64da8f51693d2284613ca93b25"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_24h_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_24h_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_24h_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_24h_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b8af92799d352b4e9e9d7d1edc5f13a099d8a10af0c20cf3a56d7e1771f69c29"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_24h_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_24h_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_24h_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_3h_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "34b740ce4a1b3c3fb99d1f1397a4cf9402cf5c262ed1319a702ca011b2ee49b5"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_3h_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_3h_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_3h_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_3h_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d6c7c95b99cf6f745af85f3275524e1cba029dde94c1ad1384c34d1ddd8d24d1"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_3h_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_3h_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_3h_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_3h_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "6d045b6653bf283cf96627b6343097e58994f38bef714fef69b8ef1a021acb00"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_3h_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_3h_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_3h_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_48h_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3219bdb81add1dc5f56a93105f63b32b9886745c1289ad3aa1d1498af440e0da"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_48h_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_48h_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_48h_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_48h_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c0378bd482e56790b6185a054123b50d0afefa50be522b489d6398511193b426"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_48h_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_48h_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_48h_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_48h_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "42099962cd62156f4d1e278a4b69be1d10df6ffdfcd284b5780e38aed9edc224"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_48h_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_48h_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_48h_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_6h_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "91dda28caa6f9fd8e75f4325a1305bc87efc7f946d5617d703c05a0117bfe90b"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_6h_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_6h_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_6h_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_6h_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b7eafcc91c2635bc1fb2743d8fae63f2d3630abcac366163f21737fa343621d7"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_6h_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_6h_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_6h_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_6h_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "4ed89e2f9b9b97d80258984f2d740f7fac470f78c5a9b4dea83becd3cea8924e"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_6h_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_6h_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_6h_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_72h_r1.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "183a33598d510506a0656cee7869c3ee6425a3737e4bd6a591703199b8eca480"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_72h_r1.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_72h_r1.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_72h_r1"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_72h_r2.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "077b5fa16ec5d32226857377cf27787fe366092eb664752e3de71cee96face34"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_72h_r2.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_72h_r2.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_72h_r2"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJEB3190.schistosomulum_72h_r3.quantification.transcript_abundance",
+      "artifact_type": "transcript_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "01eb0e0fafdaac1e380809537f276686434fd7efeb0f3ecc597b744c4efc2de5"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "transcript",
+      "format": "salmon_quant_sf",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "quant.sf",
+        "producer_manifest_id": "PRJEB3190.schistosomulum_72h_r3.quantification"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "dataset": "PRJEB3190"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "SALMON_QUANT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJEB3190.schistosomulum_72h_r3.quantification"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quantification",
+      "sample_ids": [
+        "schistosomulum_72h_r3"
+      ],
+      "source": {
+        "name": "Salmon",
+        "type": "helixforge",
+        "version": "1.10.3"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "rnaseq.import.gene_abundance",
+      "artifact_type": "gene_abundance",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f2d2adabd78a50857df067b96e97060f48ef30eb42c7728e8fb0e6dfdcbcc611"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/rnaseq.import.gene_abundance/tpm_matrix.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "TXIMPORT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "rnaseq.import"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "abundance",
+      "sample_ids": [],
+      "source": {
+        "name": "salmon",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "rnaseq.import.gene_counts",
+      "artifact_type": "gene_counts",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1937fa2abcd823b49e386910e476b574783880334221ab17ad1ae65bbedf0007"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/rnaseq.import.gene_counts/counts_matrix.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "TXIMPORT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "rnaseq.import"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "counts",
+      "sample_ids": [],
+      "source": {
+        "name": "salmon",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "rnaseq.report.candidate_genes.report",
+      "artifact_type": "rnaseq_report",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "81902dcfcaaf80b0101f39966cac163e62ba64bfa02f7df2d060a819417beea9"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "report",
+      "format": "directory",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": ".",
+        "producer_manifest_id": "rnaseq.report.candidate_genes"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "RNASEQ_GENE_REPORT",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "rnaseq.report.candidate_genes"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "report",
+      "sample_ids": [],
+      "source": {
+        "name": "candidate_genes_v1",
+        "type": "helixforge",
+        "version": "1.0"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_12h_vs_schistosomulum_6h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0d0c2c0b928fcbf0ee8a1af2650561f3ee879c2e539afc1c17831753614d0cd3"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_12h_vs_schistosomulum_6h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_12h_vs_schistosomulum_6h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_12h_vs_schistosomulum_6h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_0h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "81bb8d88044376c48fa9575db478e55b3528cd21c8070ce8914f0e4dc3b8a888"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_24h_vs_schistosomulum_0h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_0h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_0h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_12h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0e9a309d7472d8fecc0814b864026d88112bba403f8d1322911ff0e348830d51"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_24h_vs_schistosomulum_12h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_12h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_12h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_3h_vs_schistosomulum_0h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "afe3e0d5ed8efdd58b28c8ccb6776aac6e45245f81d79ca9bac94a0851b48f80"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_3h_vs_schistosomulum_0h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_3h_vs_schistosomulum_0h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_3h_vs_schistosomulum_0h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_0h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "bd54a086a97d934629b48f5652de7b8808982816be3c89c4701bbc7ad937c2fc"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_48h_vs_schistosomulum_0h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_0h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_0h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_24h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "4391f6103e760e6b6b4c74a627f51c5892163cfd1808135179d74c8ef46579a2"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_48h_vs_schistosomulum_24h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_24h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_24h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_6h_vs_schistosomulum_3h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2c02f486dce0c3f4cf392963b46f703176a2a2a07c1dca80167d210c7d7184c2"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_6h_vs_schistosomulum_3h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_6h_vs_schistosomulum_3h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_6h_vs_schistosomulum_3h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_0h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "cd5fb01cc21fd4fde1cad52ab2f131b9b30b78c9a969bc50fe56f02d67b8d41d"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_72h_vs_schistosomulum_0h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_0h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_0h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_48h.differential_expression",
+      "artifact_type": "differential_expression",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a23c449c0a6af4a2eb24598453179a5a4bbe1a63e2736d627ae66da61ded2fb2"
+      },
+      "condition": null,
+      "contrast_id": "condition__schistosomulum_72h_vs_schistosomulum_48h",
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_48h.differential_expression/common_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_CONTRAST",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_48h"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "contrast_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.condition.normalized_counts",
+      "artifact_type": "normalized_counts",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b6b1ced76814135fc2b3a69017445193d4b73e7ce6043fd01369a50ac14cdd12"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.condition.normalized_counts/normalized_counts_condition.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {
+        "model_id": "smansoni_prjeb3190_primary.condition"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DESEQ2_MODEL",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary.condition"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "exploratory_expression",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "smansoni_prjeb3190_primary.differential_expression_summary",
+      "artifact_type": "differential_expression_summary",
+      "assay": "rnaseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "675b63c08b5027f541674758eb417d9a9d610e101f446b24f77ceb4a4baeb82f"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "gene",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/smansoni_prjeb3190_primary.differential_expression_summary/differential_expression_results.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "DE_AGGREGATE",
+        "producer_workflow": "rnaseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "smansoni_prjeb3190_primary"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "combined_results",
+      "sample_ids": [],
+      "source": {
+        "name": "DESeq2",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    }
+  ],
+  "batches": [
+    "sequencing_batch_10363",
+    "sequencing_batch_10376"
+  ],
+  "conditions": [
+    "schistosomulum_0h",
+    "schistosomulum_12h",
+    "schistosomulum_24h",
+    "schistosomulum_3h",
+    "schistosomulum_48h",
+    "schistosomulum_6h",
+    "schistosomulum_72h"
+  ],
+  "contrasts": [
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_3h_vs_schistosomulum_0h",
+      "covariates": [],
+      "denominator": "schistosomulum_0h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_3h versus schistosomulum_0h",
+      "metadata": {},
+      "numerator": "schistosomulum_3h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_6h_vs_schistosomulum_3h",
+      "covariates": [],
+      "denominator": "schistosomulum_3h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_6h versus schistosomulum_3h",
+      "metadata": {},
+      "numerator": "schistosomulum_6h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_12h_vs_schistosomulum_6h",
+      "covariates": [],
+      "denominator": "schistosomulum_6h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_12h versus schistosomulum_6h",
+      "metadata": {},
+      "numerator": "schistosomulum_12h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_24h_vs_schistosomulum_12h",
+      "covariates": [],
+      "denominator": "schistosomulum_12h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_24h versus schistosomulum_12h",
+      "metadata": {},
+      "numerator": "schistosomulum_24h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_48h_vs_schistosomulum_24h",
+      "covariates": [],
+      "denominator": "schistosomulum_24h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_48h versus schistosomulum_24h",
+      "metadata": {},
+      "numerator": "schistosomulum_48h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_72h_vs_schistosomulum_48h",
+      "covariates": [],
+      "denominator": "schistosomulum_48h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_72h versus schistosomulum_48h",
+      "metadata": {},
+      "numerator": "schistosomulum_72h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_24h_vs_schistosomulum_0h",
+      "covariates": [],
+      "denominator": "schistosomulum_0h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_24h versus schistosomulum_0h",
+      "metadata": {},
+      "numerator": "schistosomulum_24h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_48h_vs_schistosomulum_0h",
+      "covariates": [],
+      "denominator": "schistosomulum_0h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_48h versus schistosomulum_0h",
+      "metadata": {},
+      "numerator": "schistosomulum_48h"
+    },
+    {
+      "assay": [
+        "rnaseq"
+      ],
+      "contrast_id": "condition__schistosomulum_72h_vs_schistosomulum_0h",
+      "covariates": [],
+      "denominator": "schistosomulum_0h",
+      "factor": "condition",
+      "formula": "~ condition",
+      "label": "schistosomulum_72h versus schistosomulum_0h",
+      "metadata": {},
+      "numerator": "schistosomulum_72h"
+    }
+  ],
+  "id": "berserk_woese.rnaseq",
+  "integration_api_version": "1.0",
+  "provenance": {
+    "execution_metadata": null,
+    "parameters": {},
+    "producer_process": "RUN_MANIFEST",
+    "producer_workflow": "rnaseq",
+    "software": [
+      {
+        "container": null,
+        "name": "HelixForge",
+        "version": "1.0.2"
+      }
+    ],
+    "source_artifact_ids": [
+      "PRJEB3190.schistosomulum_0h_r1.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_0h_r2.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_12h_r1.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_12h_r2.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_12h_r3.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_24h_r1.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_24h_r2.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_24h_r3.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_3h_r1.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_3h_r2.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_3h_r3.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_48h_r1.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_48h_r2.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_48h_r3.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_6h_r1.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_6h_r2.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_6h_r3.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_72h_r1.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_72h_r2.quantification.transcript_abundance",
+      "PRJEB3190.schistosomulum_72h_r3.quantification.transcript_abundance",
+      "rnaseq.import.gene_abundance",
+      "rnaseq.import.gene_counts",
+      "rnaseq.report.candidate_genes.report",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_12h_vs_schistosomulum_6h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_0h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_12h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_3h_vs_schistosomulum_0h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_0h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_24h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_6h_vs_schistosomulum_3h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_0h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_48h.differential_expression",
+      "smansoni_prjeb3190_primary.condition.normalized_counts",
+      "smansoni_prjeb3190_primary.differential_expression_summary"
+    ],
+    "source_manifest_ids": [
+      "PRJEB3190.schistosomulum_0h_r1.quantification",
+      "PRJEB3190.schistosomulum_0h_r2.quantification",
+      "PRJEB3190.schistosomulum_12h_r1.quantification",
+      "PRJEB3190.schistosomulum_12h_r2.quantification",
+      "PRJEB3190.schistosomulum_12h_r3.quantification",
+      "PRJEB3190.schistosomulum_24h_r1.quantification",
+      "PRJEB3190.schistosomulum_24h_r2.quantification",
+      "PRJEB3190.schistosomulum_24h_r3.quantification",
+      "PRJEB3190.schistosomulum_3h_r1.quantification",
+      "PRJEB3190.schistosomulum_3h_r2.quantification",
+      "PRJEB3190.schistosomulum_3h_r3.quantification",
+      "PRJEB3190.schistosomulum_48h_r1.quantification",
+      "PRJEB3190.schistosomulum_48h_r2.quantification",
+      "PRJEB3190.schistosomulum_48h_r3.quantification",
+      "PRJEB3190.schistosomulum_6h_r1.quantification",
+      "PRJEB3190.schistosomulum_6h_r2.quantification",
+      "PRJEB3190.schistosomulum_6h_r3.quantification",
+      "PRJEB3190.schistosomulum_72h_r1.quantification",
+      "PRJEB3190.schistosomulum_72h_r2.quantification",
+      "PRJEB3190.schistosomulum_72h_r3.quantification",
+      "Schistosoma_mansoni_SM_V10_WBPS19",
+      "rnaseq.import",
+      "rnaseq.report.candidate_genes",
+      "smansoni_prjeb3190_primary",
+      "smansoni_prjeb3190_primary.condition",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_12h_vs_schistosomulum_6h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_0h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_24h_vs_schistosomulum_12h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_3h_vs_schistosomulum_0h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_0h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_48h_vs_schistosomulum_24h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_6h_vs_schistosomulum_3h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_0h",
+      "smansoni_prjeb3190_primary.condition.condition__schistosomulum_72h_vs_schistosomulum_48h"
+    ]
+  },
+  "quantification_method": "salmon",
+  "reference": {
+    "annotation_id": "annotation.0ba2e3ff9a63",
+    "assembly": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "display_name": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "metadata": {
+      "source_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+    },
+    "organism": "Schistosoma mansoni",
+    "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "resources": {
+      "annotation": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      },
+      "fasta": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      },
+      "transcriptome": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "b794519faf24d6d8ae9a849467e567f0ca20c9c8c4e4585fdd060353a9a72a47"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19"
+        },
+        "version": null
+      }
+    },
+    "source": {
+      "name": "Reference Bundle",
+      "type": "external",
+      "version": "1.0"
+    },
+    "species": "Schistosoma mansoni"
+  },
+  "run": {
+    "created_at": null,
+    "git_commit": "unknown",
+    "helixforge_version": "1.0.2",
+    "nextflow_version": "25.10.7",
+    "profile": "slurm",
+    "run_id": "4f0a427a-53cc-4d35-a645-3e351eacaf82",
+    "run_name": "berserk_woese",
+    "source": {
+      "name": "HelixForge",
+      "type": "helixforge",
+      "version": "1.0.2"
+    },
+    "workflow": "rnaseq"
+  },
+  "samples": [
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "1",
+      "condition": "schistosomulum_0h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_0h_r1",
+      "stage": "schistosomulum_0h",
+      "technical_runs": [
+        "ERR411530"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "2",
+      "condition": "schistosomulum_0h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_0h_r2",
+      "stage": "schistosomulum_0h",
+      "technical_runs": [
+        "ERR411539"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "1",
+      "condition": "schistosomulum_12h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_12h_r1",
+      "stage": "schistosomulum_12h",
+      "technical_runs": [
+        "ERR411537"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "2",
+      "condition": "schistosomulum_12h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_12h_r2",
+      "stage": "schistosomulum_12h",
+      "technical_runs": [
+        "ERR411529"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "3",
+      "condition": "schistosomulum_12h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_12h_r3",
+      "stage": "schistosomulum_12h",
+      "technical_runs": [
+        "ERR411524"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "1",
+      "condition": "schistosomulum_24h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_24h_r1",
+      "stage": "schistosomulum_24h",
+      "technical_runs": [
+        "ERR411532"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "2",
+      "condition": "schistosomulum_24h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_24h_r2",
+      "stage": "schistosomulum_24h",
+      "technical_runs": [
+        "ERR411540"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "3",
+      "condition": "schistosomulum_24h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_24h_r3",
+      "stage": "schistosomulum_24h",
+      "technical_runs": [
+        "ERR411523"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "1",
+      "condition": "schistosomulum_3h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_3h_r1",
+      "stage": "schistosomulum_3h",
+      "technical_runs": [
+        "ERR411535"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "2",
+      "condition": "schistosomulum_3h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_3h_r2",
+      "stage": "schistosomulum_3h",
+      "technical_runs": [
+        "ERR411541"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "3",
+      "condition": "schistosomulum_3h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_3h_r3",
+      "stage": "schistosomulum_3h",
+      "technical_runs": [
+        "ERR411525"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "1",
+      "condition": "schistosomulum_48h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_48h_r1",
+      "stage": "schistosomulum_48h",
+      "technical_runs": [
+        "ERR411538"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "2",
+      "condition": "schistosomulum_48h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_48h_r2",
+      "stage": "schistosomulum_48h",
+      "technical_runs": [
+        "ERR411527"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "3",
+      "condition": "schistosomulum_48h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_48h_r3",
+      "stage": "schistosomulum_48h",
+      "technical_runs": [
+        "ERR411522"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "1",
+      "condition": "schistosomulum_6h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_6h_r1",
+      "stage": "schistosomulum_6h",
+      "technical_runs": [
+        "ERR411531"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "2",
+      "condition": "schistosomulum_6h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_6h_r2",
+      "stage": "schistosomulum_6h",
+      "technical_runs": [
+        "ERR411543"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "3",
+      "condition": "schistosomulum_6h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_6h_r3",
+      "stage": "schistosomulum_6h",
+      "technical_runs": [
+        "ERR411528"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "1",
+      "condition": "schistosomulum_72h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_72h_r1",
+      "stage": "schistosomulum_72h",
+      "technical_runs": [
+        "ERR411534"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10376",
+      "biological_replicate": "2",
+      "condition": "schistosomulum_72h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_72h_r2",
+      "stage": "schistosomulum_72h",
+      "technical_runs": [
+        "ERR411542"
+      ]
+    },
+    {
+      "batch": "sequencing_batch_10363",
+      "biological_replicate": "3",
+      "condition": "schistosomulum_72h",
+      "dataset": "PRJEB3190",
+      "sample_id": "schistosomulum_72h_r3",
+      "stage": "schistosomulum_72h",
+      "technical_runs": [
+        "ERR411521"
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "stages": [
+    "schistosomulum_0h",
+    "schistosomulum_12h",
+    "schistosomulum_24h",
+    "schistosomulum_3h",
+    "schistosomulum_48h",
+    "schistosomulum_6h",
+    "schistosomulum_72h"
+  ],
+  "status": "complete",
+  "type": "rnaseq_run_manifest"
+}
