@@ -22,7 +22,7 @@
   "schema_version": "1.0",
   "study_id": "PRJNA597909",
   "thresholds": {
-    "salmon_mapping_review_below_percent": 50.0,
+    "salmon_mapping_review_below_percent": 60.0,
     "trim_retention_review_below_percent": 80.0
   },
   "trim_retention_percent_max": 100.0,
