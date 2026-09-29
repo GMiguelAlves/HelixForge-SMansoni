@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "study": "E-MTAB-451",
+  "validated_at": "2026-09-29",
+  "classification": "PASS",
+  "gates": {
+    "frozen_run_inventory": "PASS",
+    "paired_fastq_integrity": "PASS",
+    "run_to_sample_mapping": "PASS",
+    "technical_run_aggregation": "PASS",
+    "quality_control": "PASS",
+    "salmon_quantification": "PASS",
+    "tximport": "PASS",
+    "deseq2": "PASS",
+    "multiqc": "PASS",
+    "candidate_gene_report": "PASS_RETAINED_OUTSIDE_GIT",
+    "terminal_manifest": "PASS",
+    "result_checksums": "PASS",
+    "sensitive_path_scan": "PASS"
+  },
+  "notes": [
+    "The inferential design was frozen as ~ condition.",
+    "adult_mixed and cercarial_tail have one sample each and remain descriptive.",
+    "The three prespecified contrasts use replicated conditions only."
+  ]
+}

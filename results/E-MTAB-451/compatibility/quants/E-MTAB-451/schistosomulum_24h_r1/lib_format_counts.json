@@ -1,0 +1,22 @@
+{
+    "read_files": "[ schistosomulum_24h_r1_R1_trimmed.fastq.gz, schistosomulum_24h_r1_R2_trimmed.fastq.gz]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 18842227,
+    "num_assigned_fragments": 18842227,
+    "num_frags_with_concordant_consistent_mappings": 14460333,
+    "num_frags_with_inconsistent_or_orphan_mappings": 4772208,
+    "strand_mapping_bias": 0.4857795460173704,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 7024534,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 7435799,
+    "SF": 1323563,
+    "SR": 3448645,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
