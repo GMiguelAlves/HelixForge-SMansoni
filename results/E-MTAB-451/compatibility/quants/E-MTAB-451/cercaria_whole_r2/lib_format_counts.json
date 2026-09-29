@@ -1,0 +1,22 @@
+{
+    "read_files": "[ cercaria_whole_r2_R1_trimmed.fastq.gz, cercaria_whole_r2_R2_trimmed.fastq.gz]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 21878094,
+    "num_assigned_fragments": 21878094,
+    "num_frags_with_concordant_consistent_mappings": 20516630,
+    "num_frags_with_inconsistent_or_orphan_mappings": 2254773,
+    "strand_mapping_bias": 0.5148692548435099,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 10563382,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 9953248,
+    "SF": 1142775,
+    "SR": 1111998,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
