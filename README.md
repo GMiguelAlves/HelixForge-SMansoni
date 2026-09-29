@@ -65,6 +65,12 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 5 | `E-MTAB-451` | 12 | 11 | Full RNA-seq completed; `PASS`; one technical-run pair aggregated before inference |
 | 6 | `PRJEB3190` | 20 | 20 | Full RNA-seq completed; `PASS`; seven-point schistosomulum time course |
 
+Every study exposes the same compact QC interface at
+`results/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed
+MultiQC reports remain available alongside it where published. The fields,
+classification rules, and generation procedure are defined in
+[`docs/qc_results_contract.md`](docs/qc_results_contract.md).
+
 `PRJNA602528` is the first completed real *S. mansoni* application and
 operational calibration run. It is not a new benchmark of HelixForge. Its
 public design has one library per time point, so the frozen project stops after

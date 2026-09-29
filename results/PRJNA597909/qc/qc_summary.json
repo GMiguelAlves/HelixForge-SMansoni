@@ -1,13 +1,33 @@
 {
-  "fail": 0,
-  "fastqc_records": 120,
-  "outliers": "none_obvious_in_frozen_PCA_and_heatmap",
-  "pass": 20,
-  "review": 0,
-  "salmon_mapping_max_percent": 89.9184,
-  "salmon_mapping_mean_percent": 87.955385,
-  "salmon_mapping_min_percent": 85.7756,
+  "fastqc_html": 120,
+  "mapped_fragments_total": 382735864,
+  "multiqc": "PASS",
+  "processed_fragments_total": 435074016,
+  "raw_reads_total_both_mates": 871755752,
+  "salmon_mapping_percent_max": 89.9184,
+  "salmon_mapping_percent_mean": 87.955385,
+  "salmon_mapping_percent_median": 87.79294999999999,
+  "salmon_mapping_percent_min": 85.7756,
+  "salmon_samples": 20,
+  "salmon_targets": [
+    10913
+  ],
+  "salmon_versions": [
+    "1.10.3"
+  ],
+  "sample_classification": {
+    "PASS": 20
+  },
   "samples": 20,
-  "trim_retention_max_percent": 100.0,
-  "trim_retention_min_percent": 100.0
+  "schema_version": "1.0",
+  "study_id": "PRJNA597909",
+  "thresholds": {
+    "salmon_mapping_review_below_percent": 50.0,
+    "trim_retention_review_below_percent": 80.0
+  },
+  "trim_retention_percent_max": 100.0,
+  "trim_retention_percent_mean": 100.0,
+  "trim_retention_percent_median": 100.0,
+  "trim_retention_percent_min": 100.0,
+  "trimmed_reads_total_both_mates": 871755752
 }

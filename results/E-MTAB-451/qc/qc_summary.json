@@ -1,0 +1,33 @@
+{
+  "fastqc_html": 70,
+  "mapped_fragments_total": 177379452,
+  "multiqc": "PASS",
+  "processed_fragments_total": 243666002,
+  "raw_reads_total_both_mates": 500738156,
+  "salmon_mapping_percent_max": 78.87255548139763,
+  "salmon_mapping_percent_mean": 73.33356633050408,
+  "salmon_mapping_percent_median": 75.17647623115008,
+  "salmon_mapping_percent_min": 62.261147221803036,
+  "salmon_samples": 11,
+  "salmon_targets": [
+    10913
+  ],
+  "salmon_versions": [
+    "1.10.3"
+  ],
+  "sample_classification": {
+    "PASS": 11
+  },
+  "samples": 11,
+  "schema_version": "1.0",
+  "study_id": "E-MTAB-451",
+  "thresholds": {
+    "salmon_mapping_review_below_percent": 50.0,
+    "trim_retention_review_below_percent": 80.0
+  },
+  "trim_retention_percent_max": 99.08998118941228,
+  "trim_retention_percent_mean": 97.11432324745014,
+  "trim_retention_percent_median": 96.98189178736835,
+  "trim_retention_percent_min": 95.55515002725436,
+  "trimmed_reads_total_both_mates": 487332004
+}
