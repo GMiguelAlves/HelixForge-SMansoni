@@ -16,7 +16,6 @@ EXPECTED = {
     "PRJNA597909": (20, 20),
     "PRJEB14695": (138, 23),
     "PRJEB32839": (150, 75),
-    "E-MTAB-451": (12, 11),
 }
 MASTER_FIELDS = [
     "study", "sample", "run", "layout", "stage", "sex", "tissue",
@@ -62,13 +61,12 @@ def validate(root: Path) -> list[str]:
         counts = Counter(row["sample_id"] for row in runs)
         for sample in samples:
             sample_id = sample["sample_id"]
-            declared_runs = sample.get("technical_runs") or sample.get("run_count")
-            if counts[sample_id] != int(declared_runs):
+            if counts[sample_id] != int(sample["technical_runs"]):
                 errors.append(f"{project}: technical run count for {sample_id}")
             if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", sample_id):
                 errors.append(f"{project}: unsafe sample identifier {sample_id}")
 
-        if any((row.get("library_layout") or "PAIRED") != "PAIRED" for row in runs):
+        if any(row["library_layout"] != "PAIRED" for row in runs):
             errors.append(f"{project}: non-paired run in the frozen input set")
 
         if project == "PRJNA602528":
