@@ -1,0 +1,11 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "salmon_index_k31",
+    "libType": "A",
+    "mates1": "schistosomulum_12h_r2_R1_trimmed.fastq.gz",
+    "mates2": "schistosomulum_12h_r2_R2_trimmed.fastq.gz",
+    "threads": "8",
+    "validateMappings": [],
+    "output": "salmon_quant",
+    "auxDir": "aux_info"
+}

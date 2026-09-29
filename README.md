@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = E_MTAB_451_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = PRJEB3190_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -63,6 +63,7 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 3 | `PRJEB14695` | 138 | 23 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; technical runs aggregated before inference |
 | 4 | `PRJEB32839` | 150 | 75 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; stage and sex contrasts |
 | 5 | `E-MTAB-451` | 12 | 11 | Full RNA-seq completed; `PASS`; one technical-run pair aggregated before inference |
+| 6 | `PRJEB3190` | 20 | 20 | Full RNA-seq completed; `PASS`; seven-point schistosomulum time course |
 
 `PRJNA602528` is the first completed real *S. mansoni* application and
 operational calibration run. It is not a new benchmark of HelixForge. Its
@@ -112,6 +113,20 @@ terminal manifests, and sanitized execution reports are available under
 report passed but is retained outside Git under the current repository-size
 policy. Persistence, checksums, private audit capture, and sensitive-path
 scanning passed before the study-specific scratch data and FASTQs were removed.
+
+`PRJEB3190` completed the native `v1.0.2` paired-end path for 20 biological
+samples spanning seven schistosomulum time points. All 227 processes completed,
+Salmon mapping rates ranged from 63.14% to 88.95% (median 82.95%), tximport
+produced matrices for 9,914 genes, and all nine frozen `~ condition` contrasts
+were estimated. ENA alias-derived sequencing labels remain exploratory because
+they are not documented as technical batches and were not included in the
+inferential model. The accepted matrices, differential-expression results, QC
+summary, terminal manifests, and sanitized execution reports are available
+under [`results/PRJEB3190/`](results/PRJEB3190/). The complete candidate-gene
+report passed but remains outside Git under the repository-size policy.
+Persistence, checksums, private audit capture, and sensitive-path scanning
+passed before the study-specific workdir, FASTQs, and other reproducible
+scratch intermediates were removed.
 
 ## Execution policy
 
