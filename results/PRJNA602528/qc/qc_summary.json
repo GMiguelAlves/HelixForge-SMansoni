@@ -1,0 +1,34 @@
+{
+  "fastqc_html": 60,
+  "mapped_fragments_total": 189570289,
+  "multiqc": "PASS",
+  "processed_fragments_total": 230236799,
+  "raw_reads_total_both_mates": 460795664,
+  "salmon_mapping_percent_max": 89.4950117187503,
+  "salmon_mapping_percent_mean": 82.45965020518908,
+  "salmon_mapping_percent_median": 83.78068751108007,
+  "salmon_mapping_percent_min": 68.55030094459555,
+  "salmon_samples": 10,
+  "salmon_targets": [
+    10913
+  ],
+  "salmon_versions": [
+    "1.10.3"
+  ],
+  "sample_classification": {
+    "PASS": 9,
+    "REVIEW": 1
+  },
+  "samples": 10,
+  "schema_version": "1.0",
+  "study_id": "PRJNA602528",
+  "thresholds": {
+    "salmon_mapping_review_below_percent": 50.0,
+    "trim_retention_review_below_percent": 80.0
+  },
+  "trim_retention_percent_max": 99.94818292592093,
+  "trim_retention_percent_mean": 99.92960498264931,
+  "trim_retention_percent_median": 99.93456955134417,
+  "trim_retention_percent_min": 99.89656416417246,
+  "trimmed_reads_total_both_mates": 460473598
+}

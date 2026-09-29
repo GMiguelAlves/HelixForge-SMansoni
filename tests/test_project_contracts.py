@@ -6,6 +6,7 @@ import importlib.util
 import json
 import shutil
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -455,9 +456,9 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual(10, len(rows[0]) - 1)
         self.assertEqual(9914, len(rows) - 1)
 
-        qc_rows = read_tsv(result_root / "qc/PRJNA602528_qc_summary.tsv")
+        qc_rows = read_tsv(result_root / "qc/qc_sample_summary.tsv")
         self.assertEqual(10, len(qc_rows))
-        self.assertEqual(1, sum(row["qc_flag"] == "REVIEW" for row in qc_rows))
+        self.assertEqual(1, sum(row["classification"] == "REVIEW" for row in qc_rows))
 
         report = (result_root / "reports/PRJNA602528_execution_report.md").read_text(
             encoding="utf-8"
@@ -505,7 +506,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("valid", validation["schema"])
         self.assertEqual("valid", validation["semantic"])
 
-        qc_rows = read_tsv(result_root / "qc/PRJNA597909_qc_summary.tsv")
+        qc_rows = read_tsv(result_root / "qc/qc_sample_summary.tsv")
         self.assertEqual(20, len(qc_rows))
         self.assertTrue(all(row["classification"] == "PASS" for row in qc_rows))
 
@@ -558,6 +559,97 @@ class ProjectContracts(unittest.TestCase):
         }
         self.assertEqual(expected_html, observed_html)
         self.assertEqual([], list(result_root.rglob("*_fastqc.html")))
+
+    def test_all_studies_publish_the_same_qc_contract(self) -> None:
+        expected_columns = [
+            "sample_id",
+            "raw_reads_both_mates",
+            "trimmed_reads_both_mates",
+            "trim_retention_percent",
+            "salmon_mapping_percent",
+            "classification",
+            "reason",
+        ]
+        for study, (_, expected_samples) in STUDIES.items():
+            with self.subTest(study=study):
+                qc_root = ROOT / "results" / study / "qc"
+                rows = read_tsv(qc_root / "qc_sample_summary.tsv")
+                with (qc_root / "qc_sample_summary.tsv").open(
+                    encoding="utf-8", newline=""
+                ) as handle:
+                    columns = list(csv.DictReader(handle, delimiter="\t").fieldnames or [])
+                summary = json.loads(
+                    (qc_root / "qc_summary.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(expected_columns, columns)
+                self.assertEqual(expected_samples, len(rows))
+                self.assertEqual("1.0", summary["schema_version"])
+                self.assertEqual(study, summary["study_id"])
+                self.assertEqual(expected_samples, summary["samples"])
+                self.assertEqual(expected_samples, summary["salmon_samples"])
+                self.assertEqual(
+                    expected_samples,
+                    sum(summary["sample_classification"].values()),
+                )
+                self.assertTrue(all(row["classification"] in {"PASS", "REVIEW", "FAIL"} for row in rows))
+
+    def test_generic_qc_summarizer_uses_native_outputs(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            fastqc = root / "pipeline_info/native_qc/fastqc"
+            salmon = root / (
+                "pipeline_info/native_quantification/salmon_quant/"
+                "TEST.sample_a.quantification.quantification_statistics"
+            )
+            multiqc = root / "pipeline_info/native_qc/multiqc"
+            fastqc.mkdir(parents=True)
+            salmon.mkdir(parents=True)
+            multiqc.mkdir(parents=True)
+            template = "<td>Total Sequences</td><td>{}</td>"
+            reports = {
+                "ERR1_1_fastqc.html": 100,
+                "ERR1_2_fastqc.html": 100,
+                "sample_a_ERR1_R1_trimmed_fastqc.html": 90,
+                "sample_a_ERR1_R2_trimmed_fastqc.html": 90,
+            }
+            for name, count in reports.items():
+                (fastqc / name).write_text(template.format(count), encoding="utf-8")
+            (multiqc / "TEST_multiqc.html").write_text("report", encoding="utf-8")
+            (salmon / "meta_info.json").write_text(
+                json.dumps(
+                    {
+                        "num_processed": 90,
+                        "num_mapped": 72,
+                        "percent_mapped": 80.0,
+                        "salmon_version": "1.10.3",
+                        "num_valid_targets": 10913,
+                    }
+                ),
+                encoding="utf-8",
+            )
+            output = root / "qc"
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(ROOT / "scripts/summarize/build_qc_summary.py"),
+                    "--study-id",
+                    "TEST",
+                    "--results-root",
+                    str(root),
+                    "--output-dir",
+                    str(output),
+                ],
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(0, completed.returncode, completed.stderr)
+            rows = read_tsv(output / "qc_sample_summary.tsv")
+            self.assertEqual(1, len(rows))
+            self.assertEqual("sample_a", rows[0]["sample_id"])
+            self.assertEqual("200", rows[0]["raw_reads_both_mates"])
+            self.assertEqual("180", rows[0]["trimmed_reads_both_mates"])
+            self.assertEqual("PASS", rows[0]["classification"])
 
     def test_prjeb14695_full_results_are_complete(self) -> None:
         result_root = ROOT / "results/PRJEB14695"
