@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = E_MTAB_451_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = PRJEB32839_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -62,7 +62,6 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 2 | `PRJNA597909` | 20 | 20 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; DE enabled |
 | 3 | `PRJEB14695` | 138 | 23 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; technical runs aggregated before inference |
 | 4 | `PRJEB32839` | 150 | 75 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; stage and sex contrasts |
-| 5 | `E-MTAB-451` | 12 | 11 | Full RNA-seq completed; `PASS`; one technical-run pair aggregated before inference |
 
 `PRJNA602528` is the first completed real *S. mansoni* application and
 operational calibration run. It is not a new benchmark of HelixForge. Its
@@ -100,17 +99,6 @@ calibration, and reviewed execution report are available under
 study and does not rewrite earlier execution provenance. Verified persistence
 and the private audit archive preceded cleanup; 1.208 TB of study-specific
 scratch data were removed without touching shared resources or other studies.
-
-`E-MTAB-451` completed the native `v1.0.2` paired-end path for 12 runs
-representing 11 biological samples. The two technical runs assigned to
-`schistosomulum_3h_r1` were consolidated before quantification and inference.
-All 136 processes completed, the three frozen `~ condition` contrasts were
-estimated, and Salmon mapping rates ranged from 62.26% to 78.87% (median
-75.18%). The accepted matrices, differential-expression results, QC summary,
-candidate-gene report, terminal manifests, and sanitized execution reports are
-available under [`results/E-MTAB-451/`](results/E-MTAB-451/). Persistence,
-checksums, private audit capture, and sensitive-path scanning passed before
-the study-specific scratch data and FASTQs were removed.
 
 ## Execution policy
 
