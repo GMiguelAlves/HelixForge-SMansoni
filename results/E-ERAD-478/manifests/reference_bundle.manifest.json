@@ -1,0 +1,29 @@
+{
+  "artifacts": [
+    {
+      "name": "schistosoma_mansoni.PRJEA36577.WBPS19.mRNA_transcripts.fa",
+      "role": "transcriptome",
+      "sha256": "b794519faf24d6d8ae9a849467e567f0ca20c9c8c4e4585fdd060353a9a72a47",
+      "size": 40453125
+    },
+    {
+      "name": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+      "role": "annotation",
+      "sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+      "size": 70237023
+    },
+    {
+      "name": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+      "role": "genome",
+      "sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+      "size": 397946270
+    }
+  ],
+  "build": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "organism": "Schistosoma mansoni",
+  "schema_version": "1.0",
+  "status": "complete",
+  "type": "reference_bundle"
+}
