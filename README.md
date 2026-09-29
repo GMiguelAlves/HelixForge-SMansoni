@@ -77,7 +77,10 @@ tximport completed, and all four frozen DESeq2 contrasts were estimated. The
 accepted tables, figures, portable terminal manifest, and report are available
 under [`results/PRJNA597909/`](results/PRJNA597909/). Its
 `PASS_WITH_LIMITATIONS` classification records terminal-runtime recovery and
-the shared-NFS `-resume` limitation; the scientific stages themselves passed.
+the then-unresolved `-resume` incident; the scientific stages themselves
+passed. Later investigation traced that incident to unsupported direct JAR
+invocation rather than shared NFS, and the official launcher subsequently
+passed complete cache-reuse and selective-invalidation validation.
 
 `PRJEB14695` completed the native RNA-seq path for 138 paired-end technical
 runs representing 23 biological samples. Run-to-sample mapping and aggregation

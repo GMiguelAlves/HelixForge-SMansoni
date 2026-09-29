@@ -163,8 +163,12 @@ Actions `contracts` job passed for the preparation pull request.
   checksums without adding a dedicated Git environment.
 - Available filesystem figures are shared NFS values, not a private allocation.
 - This is an operational preparation record, not a performance benchmark.
-- Nextflow `-resume` will be evaluated during a later controlled execution; no
-  cache-reuse claim is made here.
+- At the time of this preparation record, Nextflow `-resume` had not yet been
+  evaluated in a controlled complete workflow. Subsequent validation traced
+  the apparent cache-persistence failure to unsupported direct JAR invocation,
+  not to shared NFS. The official Nextflow launcher was then validated for
+  complete cache reuse and selective invalidation; current operational
+  requirements are documented in `docs/server_execution.md`.
 
 ## Readiness decision
 
