@@ -1,0 +1,11 @@
+Analise DEG - smansoni_e_mtab_451_primary
+==============================
+
+Data: 2026-09-28 21:05:15
+Genes antes do filtro: see model_statistics.json
+Variaveis testadas: condition
+Covariaveis de design: 
+
+smansoni_e_mtab_451_primary	condition	condition__schistosomulum_3h_vs_cercaria_whole	ok	11	9495	2030
+smansoni_e_mtab_451_primary	condition	condition__schistosomulum_24h_vs_schistosomulum_3h	ok	11	9495	2295
+smansoni_e_mtab_451_primary	condition	condition__schistosomulum_24h_vs_cercaria_whole	ok	11	9495	3752
