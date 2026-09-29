@@ -16,14 +16,14 @@
     "1.10.3"
   ],
   "sample_classification": {
-    "PASS": 21,
-    "REVIEW": 2
+    "PASS": 20,
+    "REVIEW": 3
   },
   "samples": 23,
   "schema_version": "1.0",
   "study_id": "PRJEB14695",
   "thresholds": {
-    "salmon_mapping_review_below_percent": 50.0,
+    "salmon_mapping_review_below_percent": 60.0,
     "trim_retention_review_below_percent": 80.0
   },
   "trim_retention_percent_max": 98.88855417737301,

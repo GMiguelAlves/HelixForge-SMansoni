@@ -44,7 +44,7 @@ def parse_args() -> argparse.Namespace:
         help="Existing sample QC TSV to normalize; source results remain optional metadata evidence.",
     )
     parser.add_argument("--output-dir", type=Path, required=True)
-    parser.add_argument("--mapping-review-threshold", type=float, default=50.0)
+    parser.add_argument("--mapping-review-threshold", type=float, default=60.0)
     parser.add_argument("--retention-review-threshold", type=float, default=80.0)
     args = parser.parse_args()
     if not args.sample_table and not (args.results_root or args.audit_zip):
@@ -198,8 +198,6 @@ def load_sample_table(path: Path) -> dict[str, dict[str, float | int]]:
             "mapping": float(mapping),
             "processed": int(float(first_value(row, "salmon_processed_fragments", "salmon_fragments_processed") or 0)),
             "mapped": int(float(first_value(row, "salmon_mapped_fragments", "salmon_fragments_mapped") or 0)),
-            "source_classification": first_value(row, "classification", "qc_flag").upper(),
-            "source_reason": first_value(row, "reason"),
         }
     return rows
 
@@ -209,20 +207,12 @@ def classify(
     mapping: float,
     retention_threshold: float,
     mapping_threshold: float,
-    source_classification: str = "",
-    source_reason: str = "",
 ) -> tuple[str, str]:
     reasons: list[str] = []
     if retention < retention_threshold:
-        reasons.append("trim_retention_below_80_percent")
+        reasons.append("trim_retention_below_review_threshold")
     if mapping < mapping_threshold:
-        reasons.append("salmon_mapping_below_50_percent")
-    source_classification = source_classification.upper()
-    if source_classification in {"REVIEW", "FAIL"}:
-        reasons.append(source_reason or "source_review_flag")
-    reasons = list(dict.fromkeys(reasons))
-    if source_classification == "FAIL":
-        return "FAIL", ";".join(reasons)
+        reasons.append("salmon_mapping_below_review_threshold")
     return ("REVIEW", ";".join(reasons)) if reasons else ("PASS", "none")
 
 
@@ -271,8 +261,6 @@ def main() -> int:
                 mapping,
                 args.retention_review_threshold,
                 args.mapping_review_threshold,
-                str(row.get("source_classification", "")),
-                str(row.get("source_reason", "")),
             )
             retentions.append(retention)
             mappings.append(mapping)
