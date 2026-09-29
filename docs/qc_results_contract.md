@@ -49,6 +49,9 @@ python3 scripts/summarize/build_qc_summary.py \
   --output-dir results/STUDY/qc
 ```
 
+On a shared HPC system, run this command inside a Slurm compute allocation for
+large studies. Parsing hundreds of FastQC reports is not a head-node task.
+
 For historical packages, `--audit-zip` reads the preserved archive directly.
 For an already reviewed legacy sample table, `--sample-table` normalizes its
 columns and preserves explicit review flags. New studies should use native
