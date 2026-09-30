@@ -29,3 +29,8 @@ The stable paths consumed by reviewers and the UI are therefore the compact
 directories above. Native Nextflow output trees may have a different internal
 layout, but publication must map their accepted products onto this interface.
 Study-specific finalizers must not introduce a new public directory layout.
+
+The integrated descriptive RNA-seq atlas is available under `atlas/rnaseq/`.
+It contains a navigable HTML report, SVG figures, machine-readable tables,
+browser data, and a checksum manifest. It does not include raw reads, private
+runtime paths, or a pooled cross-study inferential model.
