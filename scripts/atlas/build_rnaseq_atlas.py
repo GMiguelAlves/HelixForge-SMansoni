@@ -27,6 +27,9 @@ STUDY_COLORS = {
     "PRJNA597909": "#2563eb",
     "PRJEB14695": "#7c3aed",
     "PRJEB32839": "#db2777",
+    "E-MTAB-451": "#ea580c",
+    "PRJEB3190": "#65a30d",
+    "E-ERAD-478": "#0891b2",
 }
 QC_COLORS = {"PASS": "#16a34a", "REVIEW": "#d97706", "FAIL": "#dc2626", "NOT_RECORDED": "#64748b"}
 
@@ -98,6 +101,13 @@ def parse_candidate_genes(path: Path) -> tuple[list[str], dict[str, list[str]]]:
             if gene not in ordered:
                 ordered.append(gene)
     return ordered, groups
+
+
+def load_gene_annotations(path: Path) -> dict[str, dict[str, str]]:
+    annotations = {row["gene_id"]: row for row in read_tsv(path)}
+    if not annotations:
+        raise ValueError(f"gene annotation table is empty: {path}")
+    return annotations
 
 
 def qc_records(path: Path | None, study: str) -> dict[str, dict[str, object]]:
@@ -284,7 +294,8 @@ def heatmap_svg(
 ) -> str:
     cell_w = max(14, min(34, 850 // max(1, len(column_labels))))
     cell_h = max(11, min(24, 950 // max(1, len(row_labels))))
-    left, top, right, bottom = 220, 125, 80, 250
+    label_width = max((len(label) for label in row_labels), default=20) * 6 + 18
+    left, top, right, bottom = max(220, min(430, label_width)), 125, 80, 250
     width = left + len(column_labels) * cell_w + right
     height = top + len(row_labels) * cell_h + bottom
     elements = [
@@ -355,7 +366,13 @@ def main() -> int:
     figure_dir.mkdir(parents=True)
 
     studies = [entry["id"] for entry in config["studies"]]
-    input_files = [config_path, root / config["selected_genes"], Path(__file__).resolve()]
+    annotation_path = root / config["gene_annotations"]
+    input_files = [
+        config_path,
+        root / config["selected_genes"],
+        annotation_path,
+        Path(__file__).resolve(),
+    ]
     all_genes: list[str] | None = None
     sample_keys: list[str] = []
     expression_blocks: list[np.ndarray] = []
@@ -392,7 +409,7 @@ def main() -> int:
                 "study": study,
                 "sample_id": sample_id,
                 "sample_key": column,
-                "source_sample_name": meta.get("source_sample_name", ""),
+                "source_sample_name": meta.get("source_sample_name", "") or meta.get("library_name", "") or meta.get("file_prefix", ""),
                 "biosample": meta.get("biosample", ""),
                 "condition": meta.get("condition", ""),
                 "stage": meta.get("stage", ""),
@@ -403,7 +420,7 @@ def main() -> int:
                 "time_hours": meta.get("time_hours", ""),
                 "batch": meta.get("batch", "not_declared"),
                 "replicate": meta.get("replicate", ""),
-                "technical_runs": int(meta.get("technical_runs", "1")),
+                "technical_runs": int(meta.get("technical_runs", "") or meta.get("run_count", "1")),
                 "qc_classification": sample_qc.get("qc_classification", "NOT_RECORDED"),
                 "trim_retention_percent": compact_number(float(sample_qc.get("trim_retention_percent", math.nan))),
                 "salmon_mapping_percent": compact_number(float(sample_qc.get("salmon_mapping_percent", math.nan))),
@@ -417,14 +434,36 @@ def main() -> int:
         column_start += len(columns)
 
     assert all_genes is not None
+    annotations = load_gene_annotations(annotation_path)
+    missing_annotations = [gene for gene in all_genes if gene not in annotations]
+    if missing_annotations:
+        raise ValueError(
+            f"WBPS19 annotation is missing {len(missing_annotations)} atlas genes; "
+            f"first={missing_annotations[:5]}"
+        )
     expression = np.concatenate(expression_blocks, axis=1)
     gene_index = {gene: index for index, gene in enumerate(all_genes)}
+    previous_id_index: dict[str, list[str]] = defaultdict(list)
+    for current_gene, annotation in annotations.items():
+        raw_previous = annotation.get("previous_stable_id", "")
+        for previous_gene in raw_previous.replace(",", ";").split(";"):
+            previous_gene = previous_gene.strip()
+            if previous_gene and current_gene in gene_index:
+                previous_id_index[previous_gene].append(current_gene)
     sample_fields = [
         "study", "sample_id", "sample_key", "source_sample_name", "biosample", "condition", "stage", "tissue",
         "sex", "infection_mode", "treatment", "time_hours", "batch", "replicate", "technical_runs",
         "qc_classification", "trim_retention_percent", "salmon_mapping_percent", "reference_id",
     ]
     write_tsv(data_dir / "sample_inventory.tsv", sample_fields, sample_rows)
+
+    annotation_fields = [
+        "gene_id", "display_label", "functional_name", "annotation_name",
+        "description", "biotype", "description_source", "source_accession",
+        "previous_stable_id", "chromosome", "start", "end", "strand",
+    ]
+    annotation_rows = [annotations[gene] for gene in all_genes]
+    write_tsv(data_dir / "gene_annotations.tsv", annotation_fields, annotation_rows)
 
     study_rows: list[dict[str, object]] = []
     for study_entry in config["studies"]:
@@ -552,10 +591,43 @@ def main() -> int:
 
     candidate_genes, candidate_groups = parse_candidate_genes(root / config["selected_genes"])
     selected_rows = []
+    candidate_resolution: dict[str, str | None] = {}
+    candidate_resolution_status: Counter[str] = Counter()
     for gene in candidate_genes:
         memberships = [group for group, genes in candidate_groups.items() if gene in genes]
-        selected_rows.append({"gene_id": gene, "groups": ";".join(memberships), "present_in_reference": "YES" if gene in gene_index else "NO"})
-    write_tsv(data_dir / "selected_genes.tsv", ["gene_id", "groups", "present_in_reference"], selected_rows)
+        alternatives = sorted(set(previous_id_index.get(gene, [])))
+        if gene in gene_index:
+            resolved_gene = gene
+            resolution_status = "CURRENT_ID"
+        elif len(alternatives) == 1:
+            resolved_gene = alternatives[0]
+            resolution_status = "RESOLVED_PREVIOUS_STABLE_ID"
+        elif alternatives:
+            resolved_gene = None
+            resolution_status = "AMBIGUOUS_PREVIOUS_STABLE_ID"
+        else:
+            resolved_gene = None
+            resolution_status = "NOT_FOUND_WBPS19"
+        candidate_resolution[gene] = resolved_gene
+        candidate_resolution_status[resolution_status] += 1
+        annotation = annotations.get(resolved_gene or gene, {})
+        selected_rows.append({
+            "gene_id": gene,
+            "resolved_gene_id": resolved_gene or "",
+            "resolution_status": resolution_status,
+            "alternative_gene_ids": ";".join(alternatives),
+            "display_label": annotation.get("display_label", gene),
+            "functional_name": annotation.get("functional_name", ""),
+            "biotype": annotation.get("biotype", ""),
+            "source_accession": annotation.get("source_accession", ""),
+            "groups": ";".join(memberships),
+            "present_in_reference": "YES" if resolved_gene else "NO",
+        })
+    write_tsv(
+        data_dir / "selected_genes.tsv",
+        ["gene_id", "resolved_gene_id", "resolution_status", "alternative_gene_ids", "display_label", "functional_name", "biotype", "source_accession", "groups", "present_in_reference"],
+        selected_rows,
+    )
 
     # Differential-expression values remain exactly those emitted by each study.
     contrast_rows: list[dict[str, object]] = []
@@ -572,19 +644,36 @@ def main() -> int:
         study = study_entry["id"]
         spec_path = root / "config" / study / "de_spec.json"
         results_path = root / "results" / study / "differential_expression/DEGs_all_results.tsv"
-        input_files.extend([spec_path, results_path])
+        input_files.append(spec_path)
         spec = json.loads(spec_path.read_text(encoding="utf-8"))
         specs = {item["id"]: item for item in spec["contrasts"]}
         lfc_for_study = {key: np.full(len(all_genes), np.nan) for key in specs}
         padj_for_study = {key: np.full(len(all_genes), np.nan) for key in specs}
-        for row in read_tsv(results_path):
-            contrast = row["contrast"]
-            gene = row["gene_id"]
-            if contrast not in specs or gene not in gene_index:
-                continue
-            index = gene_index[gene]
-            lfc_for_study[contrast][index] = safe_float(row.get("log2FoldChange"))
-            padj_for_study[contrast][index] = safe_float(row.get("padj"))
+        if results_path.is_file():
+            input_files.append(results_path)
+            result_sources = [(None, results_path)]
+        else:
+            contrast_dir = root / "results" / study / "differential_expression/contrasts"
+            result_sources = [
+                (contrast_id, contrast_dir / f"DEG_{contrast_id}.tsv")
+                for contrast_id in specs
+            ]
+            missing_sources = [path for _, path in result_sources if not path.is_file()]
+            if missing_sources:
+                raise ValueError(
+                    f"missing differential-expression source for {study}: "
+                    f"{missing_sources[:3]}"
+                )
+            input_files.extend(path for _, path in result_sources)
+        for frozen_contrast, source_path in result_sources:
+            for row in read_tsv(source_path):
+                contrast = frozen_contrast or row["contrast"]
+                gene = row["gene_id"]
+                if contrast not in specs or gene not in gene_index:
+                    continue
+                index = gene_index[gene]
+                lfc_for_study[contrast][index] = safe_float(row.get("log2FoldChange"))
+                padj_for_study[contrast][index] = safe_float(row.get("padj"))
         for contrast in spec["contrasts"]:
             contrast_id = contrast["id"]
             key = f"{study}:{contrast_id}"
@@ -633,6 +722,7 @@ def main() -> int:
             values = block[index, :]
             expression_summary_rows.append({
                 "gene_id": gene,
+                "functional_name": annotations[gene]["functional_name"],
                 "study": study,
                 "n_samples": block.shape[1],
                 "mean_tpm": f"{float(np.mean(values)):.8g}",
@@ -640,16 +730,40 @@ def main() -> int:
                 "max_tpm": f"{float(np.max(values)):.8g}",
                 "fraction_samples_tpm_gt_1": f"{float(np.mean(values > 1)):.8g}",
             })
-    write_tsv(data_dir / "gene_expression_summary.tsv", ["gene_id", "study", "n_samples", "mean_tpm", "median_tpm", "max_tpm", "fraction_samples_tpm_gt_1"], expression_summary_rows)
+    write_tsv(data_dir / "gene_expression_summary.tsv", ["gene_id", "functional_name", "study", "n_samples", "mean_tpm", "median_tpm", "max_tpm", "fraction_samples_tpm_gt_1"], expression_summary_rows)
 
-    present_candidates = [gene for gene in candidate_genes if gene in gene_index]
+    present_candidates = list(dict.fromkeys(
+        resolved
+        for gene in candidate_genes
+        if (resolved := candidate_resolution[gene]) is not None
+    ))
     candidate_indices = [gene_index[gene] for gene in present_candidates]
+    requested_by_resolved: dict[str, list[str]] = defaultdict(list)
+    for requested_gene, resolved_gene in candidate_resolution.items():
+        if resolved_gene:
+            requested_by_resolved[resolved_gene].append(requested_gene)
+    candidate_labels = []
+    for gene in present_candidates:
+        functional_name = annotations[gene]["functional_name"]
+        if len(functional_name) > 58:
+            functional_name = functional_name[:55].rstrip() + "…"
+        legacy_ids = [item for item in requested_by_resolved[gene] if item != gene]
+        legacy_label = f" (legacy: {', '.join(legacy_ids)})" if legacy_ids else ""
+        candidate_labels.append(f"{gene}{legacy_label} — {functional_name}")
+    resolved_candidate_groups = {
+        group: list(dict.fromkeys(
+            resolved
+            for requested in genes
+            if (resolved := candidate_resolution.get(requested)) is not None
+        ))
+        for group, genes in candidate_groups.items()
+    }
     selected_lfc = lfc_matrix[candidate_indices, :]
     selected_padj = padj_matrix[candidate_indices, :]
     significant = np.isfinite(selected_padj) & (selected_padj < alpha) & (np.abs(selected_lfc) >= lfc_threshold)
     contrast_display_ids = [str(row["display_id"]) for row in contrast_rows]
     (figure_dir / "selected_gene_contrast_matrix.svg").write_text(
-        heatmap_svg(selected_lfc, present_candidates, contrast_display_ids, "Selected-gene effect matrix", "Color is original per-study DESeq2 log2 fold change; dot marks the frozen significance rule. Full orientations are in the contrast catalog.", -5.0, 5.0, significant),
+        heatmap_svg(selected_lfc, candidate_labels, contrast_display_ids, "Selected-gene effect matrix", "Color is original per-study DESeq2 log2 fold change; dot marks the frozen significance rule. Full orientations are in the contrast catalog.", -5.0, 5.0, significant),
         encoding="utf-8",
     )
 
@@ -667,7 +781,7 @@ def main() -> int:
     row_sd[row_sd == 0] = 1.0
     context_z = (context_matrix - row_mean) / row_sd
     (figure_dir / "selected_gene_expression_heatmap.svg").write_text(
-        heatmap_svg(context_z, present_candidates, contexts, "Selected-gene expression landscape", "Gene-wise z-score of mean log2(TPM + 1) in each study-condition context.", -2.5, 2.5),
+        heatmap_svg(context_z, candidate_labels, contexts, "Selected-gene expression landscape", "Gene-wise z-score of mean log2(TPM + 1) in each study-condition context.", -2.5, 2.5),
         encoding="utf-8",
     )
 
@@ -707,10 +821,12 @@ def main() -> int:
         "contrasts": [[row[field] for field in ("contrast_key", "study", "numerator", "denominator")] for row in contrast_rows],
         "contrast_fields": ["contrast_key", "study", "numerator", "denominator"],
         "genes": all_genes,
+        "gene_annotation_fields": ["display_label", "functional_name", "biotype", "description_source", "source_accession", "previous_stable_id"],
+        "gene_annotations": [[annotations[gene][field] for field in ("display_label", "functional_name", "biotype", "description_source", "source_accession", "previous_stable_id")] for gene in all_genes],
         "tpm": [[compact_number(float(value), 5) for value in expression[index, :]] for index in range(len(all_genes))],
         "lfc": [[compact_number(float(value), 5) for value in lfc_matrix[index, :]] for index in range(len(all_genes))],
         "padj": [[compact_number(float(value), 4) for value in padj_matrix[index, :]] for index in range(len(all_genes))],
-        "selected_groups": candidate_groups,
+        "selected_groups": resolved_candidate_groups,
         "significance": {"alpha": alpha, "absolute_log2_fold_change": lfc_threshold},
     }
     (data_dir / "atlas_payload.js").write_text("window.HF_ATLAS=" + json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
@@ -735,9 +851,9 @@ def main() -> int:
     (output / "atlas.html").write_text(report, encoding="utf-8")
     (output / "README.md").write_text(
         "# HelixForge-SMansoni RNA-seq Atlas\n\n"
-        "Open `atlas.html` in a modern browser. The report integrates four accepted studies, "
-        "128 biological samples, 318 technical runs, 9,914 shared genes, and 22 original "
-        "per-study DESeq2 contrasts.\n\n"
+        f"Open `atlas.html` in a modern browser. The report integrates {len(studies)} accepted studies, "
+        f"{len(sample_rows)} biological samples, {sum(int(row['technical_runs']) for row in sample_rows)} technical runs, "
+        f"{len(all_genes):,} shared genes, and {len(contrast_rows)} original per-study DESeq2 contrasts.\n\n"
         "The atlas is descriptive. It does not fit a joint differential-expression model, "
         "perform batch correction, or reinterpret the original contrast orientations. "
         "Machine-readable tables are under `data/`, exportable figures under `figures/`, "
@@ -756,10 +872,14 @@ def main() -> int:
         "biological_samples": len(sample_rows),
         "technical_runs": sum(int(row["technical_runs"]) for row in sample_rows),
         "genes": len(all_genes),
+        "annotated_genes": len(annotation_rows),
         "contrasts": len(contrast_rows),
         "selected_group_memberships": sum(len(genes) for genes in candidate_groups.values()),
         "selected_unique_genes": len(candidate_genes),
         "selected_unique_genes_present": len(present_candidates),
+        "selected_previous_ids_resolved": candidate_resolution_status["RESOLVED_PREVIOUS_STABLE_ID"],
+        "selected_ambiguous_previous_ids": candidate_resolution_status["AMBIGUOUS_PREVIOUS_STABLE_ID"],
+        "selected_unresolved_ids": candidate_resolution_status["NOT_FOUND_WBPS19"],
         "batch_effect_assessment": config["batch_effect_assessment"],
         "global_pca_interpretation": "EXPLORATORY_NOT_A_BATCH_TEST",
         "inputs": [{"path": path.relative_to(root).as_posix(), "sha256": sha256(path)} for path in sorted(set(input_files))],

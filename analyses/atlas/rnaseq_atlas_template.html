@@ -61,6 +61,9 @@
         <figure class="figure"><img src="figures/PRJNA597909_pca_by_condition.svg" alt="PRJNA597909 PCA"><figcaption><span>PRJNA597909</span><a href="figures/PRJNA597909_pca_by_condition.svg" download>SVG</a></figcaption></figure>
         <figure class="figure"><img src="figures/PRJEB14695_pca_by_condition.svg" alt="PRJEB14695 PCA"><figcaption><span>PRJEB14695</span><a href="figures/PRJEB14695_pca_by_condition.svg" download>SVG</a></figcaption></figure>
         <figure class="figure"><img src="figures/PRJEB32839_pca_by_condition.svg" alt="PRJEB32839 PCA"><figcaption><span>PRJEB32839</span><a href="figures/PRJEB32839_pca_by_condition.svg" download>SVG</a></figcaption></figure>
+        <figure class="figure"><img src="figures/E-MTAB-451_pca_by_condition.svg" alt="E-MTAB-451 PCA"><figcaption><span>E-MTAB-451</span><a href="figures/E-MTAB-451_pca_by_condition.svg" download>SVG</a></figcaption></figure>
+        <figure class="figure"><img src="figures/PRJEB3190_pca_by_condition.svg" alt="PRJEB3190 PCA"><figcaption><span>PRJEB3190</span><a href="figures/PRJEB3190_pca_by_condition.svg" download>SVG</a></figcaption></figure>
+        <figure class="figure"><img src="figures/E-ERAD-478_pca_by_condition.svg" alt="E-ERAD-478 PCA"><figcaption><span>E-ERAD-478</span><a href="figures/E-ERAD-478_pca_by_condition.svg" download>SVG</a></figcaption></figure>
       </div>
       <figure class="figure"><img src="figures/sample_correlation.svg" alt="Sample correlation heatmap"><figcaption><span>All-sample Pearson correlation of log2(TPM + 1)</span><a href="figures/sample_correlation.svg" download>Download SVG</a></figcaption></figure>
       <div class="panel">
@@ -72,16 +75,16 @@
 
     <section id="biology">
       <div class="section-title"><h2>Biological panorama</h2><p>Effects retain the original per-study contrast orientation; color is log2 fold change and the dot marks the frozen significance rule.</p></div>
-      <figure class="figure"><img src="figures/selected_gene_contrast_matrix.svg" alt="Selected-gene contrast matrix"><figcaption><span>Selected genes × 22 contrasts</span><a href="figures/selected_gene_contrast_matrix.svg" download>Download SVG</a></figcaption></figure>
+      <figure class="figure"><img src="figures/selected_gene_contrast_matrix.svg" alt="Selected-gene contrast matrix"><figcaption><span>Selected genes × {{CONTRAST_COUNT}} contrasts</span><a href="figures/selected_gene_contrast_matrix.svg" download>Download SVG</a></figcaption></figure>
       <figure class="figure"><img src="figures/selected_gene_expression_heatmap.svg" alt="Selected-gene expression heatmap"><figcaption><span>Gene-wise standardized expression by study-condition context</span><a href="figures/selected_gene_expression_heatmap.svg" download>Download SVG</a></figcaption></figure>
       <figure class="figure"><img src="figures/contrast_significance_summary.svg" alt="Significant genes by contrast"><figcaption><span>Differential-expression overview</span><a href="figures/contrast_significance_summary.svg" download>Download SVG</a></figcaption></figure>
       <div class="panel"><h3>Contrast catalog</h3><div class="table-scroll">{{CONTRAST_TABLE}}</div></div>
     </section>
 
     <section id="genes">
-      <div class="section-title"><h2>Gene explorer</h2><p>Search any canonical gene ID to inspect expression across 128 samples and its original results in all available contrasts.</p></div>
+      <div class="section-title"><h2>Gene explorer</h2><p>Search a canonical gene ID or WBPS19 functional description to inspect expression across {{SAMPLE_COUNT}} samples and its original results in all available contrasts.</p></div>
       <div class="panel">
-        <div class="toolbar"><input id="gene-search" autocomplete="off" placeholder="Example: Smp_179650"><button id="gene-open" type="button">Open gene</button></div>
+        <div class="toolbar"><input id="gene-search" autocomplete="off" placeholder="Example: Smp_179650 or chromobox"><button id="gene-open" type="button">Open gene</button></div>
         <div id="gene-suggestions" class="suggestions"></div>
         <div id="gene-result" class="empty">Enter a canonical gene ID. Suggested candidate genes appear while typing.</div>
       </div>
@@ -91,7 +94,7 @@
       <div class="section-title"><h2>Data and methods</h2><p>Every panel is backed by versionable tables and a checksum manifest.</p></div>
       <div class="grid2">
         <div class="panel"><h3>Interpretation boundaries</h3><ul><li>TPM supports descriptive cross-study displays, not count-based inference.</li><li>DESeq2 effects are never recomputed or pooled across studies.</li><li><code>not tested</code>, <code>not significant</code>, and <code>gene absent</code> remain distinct.</li><li>PRJNA602528 has one sample per time point and remains descriptive.</li><li>Batch metadata are retained, but formal assessment is deferred.</li></ul></div>
-        <div class="panel"><h3>Machine-readable exports</h3><div class="downloads"><a href="data/sample_inventory.tsv" download>Sample inventory</a><a href="data/study_summary.tsv" download>Study summary</a><a href="data/pca_coordinates.tsv" download>PCA coordinates</a><a href="data/sample_correlation.tsv" download>Sample correlation</a><a href="data/contrast_catalog.tsv" download>Contrast catalog</a><a href="data/gene_contrast_log2fc.tsv" download>Gene × contrast log2FC</a><a href="data/gene_contrast_padj.tsv" download>Gene × contrast padj</a><a href="data/gene_expression_summary.tsv" download>Expression summaries</a><a href="data/selected_genes.tsv" download>Selected genes</a><a href="manifest.json" download>Atlas manifest</a></div></div>
+        <div class="panel"><h3>Machine-readable exports</h3><div class="downloads"><a href="data/sample_inventory.tsv" download>Sample inventory</a><a href="data/study_summary.tsv" download>Study summary</a><a href="data/pca_coordinates.tsv" download>PCA coordinates</a><a href="data/sample_correlation.tsv" download>Sample correlation</a><a href="data/contrast_catalog.tsv" download>Contrast catalog</a><a href="data/gene_annotations.tsv" download>WBPS19 gene annotations</a><a href="data/gene_contrast_log2fc.tsv" download>Gene × contrast log2FC</a><a href="data/gene_contrast_padj.tsv" download>Gene × contrast padj</a><a href="data/gene_expression_summary.tsv" download>Expression summaries</a><a href="data/selected_genes.tsv" download>Selected genes</a><a href="manifest.json" download>Atlas manifest</a></div></div>
       </div>
     </section>
   </main>
@@ -102,6 +105,7 @@
       const A=window.HF_ATLAS;
       const sampleObjects=A.samples.map(row=>Object.fromEntries(A.sample_fields.map((field,index)=>[field,row[index]])));
       const contrastObjects=A.contrasts.map(row=>Object.fromEntries(A.contrast_fields.map((field,index)=>[field,row[index]])));
+      const annotationObjects=A.gene_annotations.map(row=>Object.fromEntries(A.gene_annotation_fields.map((field,index)=>[field,row[index]])));
       const geneIndex=new Map(A.genes.map((gene,index)=>[gene.toLowerCase(),index]));
       const sampleFilter=document.getElementById('sample-filter'), sampleStudy=document.getElementById('sample-study');
       [...new Set(sampleObjects.map(row=>row.study))].forEach(study=>sampleStudy.insertAdjacentHTML('beforeend',`<option>${study}</option>`));
@@ -118,8 +122,8 @@
       const search=document.getElementById('gene-search'), suggestions=document.getElementById('gene-suggestions'), result=document.getElementById('gene-result');
       function showSuggestions(){
         const query=search.value.trim().toLowerCase(); if(!query){suggestions.innerHTML='';return;}
-        const hits=A.genes.filter(gene=>gene.toLowerCase().includes(query)).slice(0,12);
-        suggestions.innerHTML=hits.map(gene=>`<button type="button" data-gene="${esc(gene)}">${esc(gene)}</button>`).join('');
+        const hits=A.genes.map((gene,index)=>({gene,index,annotation:annotationObjects[index]})).filter(item=>(item.gene+' '+item.annotation.functional_name+' '+item.annotation.previous_stable_id).toLowerCase().includes(query)).slice(0,12);
+        suggestions.innerHTML=hits.map(item=>`<button type="button" data-gene="${esc(item.gene)}">${esc(item.gene)} — ${esc(item.annotation.functional_name)}</button>`).join('');
         suggestions.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{search.value=button.dataset.gene;openGene();}));
       }
       function expressionSvg(values){
@@ -127,18 +131,22 @@
         const transformed=values.map(value=>Math.log2((value||0)+1)), max=Math.max(...transformed,1);
         const points=transformed.map((value,index)=>{const x=left+index/(transformed.length-1)*plotW,y=top+plotH-value/max*plotH;return`${x.toFixed(1)},${y.toFixed(1)}`}).join(' ');
         const boundaries=[];let last=A.samples[0][0];for(let i=1;i<A.samples.length;i++){if(A.samples[i][0]!==last){boundaries.push(i);last=A.samples[i][0];}}
-        return `<svg viewBox="0 0 ${width} ${height}" role="img"><rect width="100%" height="100%" fill="#fff"/><line x1="${left}" y1="${top+plotH}" x2="${left+plotW}" y2="${top+plotH}" stroke="#94a3b8"/><line x1="${left}" y1="${top}" x2="${left}" y2="${top+plotH}" stroke="#94a3b8"/>${boundaries.map(i=>{const x=left+i/(transformed.length-1)*plotW;return`<line x1="${x}" y1="${top}" x2="${x}" y2="${top+plotH}" stroke="#cbd5e1" stroke-dasharray="4 4"/>`}).join('')}<polyline points="${points}" fill="none" stroke="#2563eb" stroke-width="2"/>${transformed.map((value,index)=>{const x=left+index/(transformed.length-1)*plotW,y=top+plotH-value/max*plotH,color={'PRJNA602528':'#0f766e','PRJNA597909':'#2563eb','PRJEB14695':'#7c3aed','PRJEB32839':'#db2777'}[A.samples[index][0]];return`<circle cx="${x}" cy="${y}" r="3" fill="${color}"><title>${esc(A.samples[index][0]+' | '+A.samples[index][1]+': '+values[index]+' TPM')}</title></circle>`}).join('')}<text x="20" y="${top+plotH/2}" transform="rotate(-90 20 ${top+plotH/2})" text-anchor="middle" font-size="12">log2(TPM + 1)</text><text x="${left+plotW/2}" y="${height-12}" text-anchor="middle" font-size="12">Biological samples ordered by study</text></svg>`;
+        return `<svg viewBox="0 0 ${width} ${height}" role="img"><rect width="100%" height="100%" fill="#fff"/><line x1="${left}" y1="${top+plotH}" x2="${left+plotW}" y2="${top+plotH}" stroke="#94a3b8"/><line x1="${left}" y1="${top}" x2="${left}" y2="${top+plotH}" stroke="#94a3b8"/>${boundaries.map(i=>{const x=left+i/(transformed.length-1)*plotW;return`<line x1="${x}" y1="${top}" x2="${x}" y2="${top+plotH}" stroke="#cbd5e1" stroke-dasharray="4 4"/>`}).join('')}<polyline points="${points}" fill="none" stroke="#2563eb" stroke-width="2"/>${transformed.map((value,index)=>{const x=left+index/(transformed.length-1)*plotW,y=top+plotH-value/max*plotH,color={'PRJNA602528':'#0f766e','PRJNA597909':'#2563eb','PRJEB14695':'#7c3aed','PRJEB32839':'#db2777','E-MTAB-451':'#ea580c','PRJEB3190':'#65a30d','E-ERAD-478':'#0891b2'}[A.samples[index][0]];return`<circle cx="${x}" cy="${y}" r="3" fill="${color}"><title>${esc(A.samples[index][0]+' | '+A.samples[index][1]+': '+values[index]+' TPM')}</title></circle>`}).join('')}<text x="20" y="${top+plotH/2}" transform="rotate(-90 20 ${top+plotH/2})" text-anchor="middle" font-size="12">log2(TPM + 1)</text><text x="${left+plotW/2}" y="${height-12}" text-anchor="middle" font-size="12">Biological samples ordered by study</text></svg>`;
       }
       function openGene(){
-        const index=geneIndex.get(search.value.trim().toLowerCase());
+        const query=search.value.trim().toLowerCase();
+        let index=geneIndex.get(query);
+        if(index===undefined){index=A.genes.findIndex((gene,i)=>(gene+' '+annotationObjects[i].functional_name+' '+annotationObjects[i].previous_stable_id).toLowerCase().includes(query));}
         if(index===undefined){result.className='empty';result.textContent='Gene not found in the frozen 9,914-gene universe.';return;}
-        const gene=A.genes[index], tpm=A.tpm[index], lfc=A.lfc[index], padj=A.padj[index];
+        if(index<0){result.className='empty';result.textContent='Gene not found in the frozen 9,914-gene universe.';return;}
+        const gene=A.genes[index], annotation=annotationObjects[index], tpm=A.tpm[index], lfc=A.lfc[index], padj=A.padj[index];
         const threshold=A.significance;
         const sampleRows=sampleObjects.map((sample,i)=>({...sample,tpm:tpm[i]})).sort((a,b)=>b.tpm-a.tpm);
         const contrastRows=contrastObjects.map((contrast,i)=>({...contrast,log2FC:lfc[i],padj:padj[i],state:lfc[i]===null?'NOT_TESTED':(padj[i]!==null&&padj[i]<threshold.alpha&&Math.abs(lfc[i])>=threshold.absolute_log2_fold_change?'SIGNIFICANT':'NOT_SIGNIFICANT')}));
         const groups=Object.entries(A.selected_groups).filter(([,genes])=>genes.includes(gene)).map(([group])=>group);
         const mean=tpm.reduce((sum,value)=>sum+(value||0),0)/tpm.length, detected=tpm.filter(value=>value>1).length;
-        result.className='';result.innerHTML=`<div class="gene-head"><div><h3>${esc(gene)}</h3><div class="legend">${groups.length?'Candidate groups: '+groups.map(esc).join(', '):'Not in the preregistered candidate groups'}</div></div><div><span class="pill">Mean TPM ${mean.toFixed(2)}</span> <span class="pill">TPM &gt; 1 in ${detected}/${tpm.length}</span></div></div><div class="gene-chart">${expressionSvg(tpm)}</div><div class="grid2"><div><h4>Highest-expression samples</h4><div class="table-scroll"><table><thead><tr><th>Study</th><th>Sample</th><th>Condition</th><th>TPM</th></tr></thead><tbody>${sampleRows.slice(0,30).map(row=>`<tr><td>${esc(row.study)}</td><td>${esc(row.sample_id)}</td><td>${esc(row.condition)}</td><td>${Number(row.tpm).toFixed(3)}</td></tr>`).join('')}</tbody></table></div></div><div><h4>Differential-expression evidence</h4><div class="table-scroll"><table><thead><tr><th>Study</th><th>Numerator / denominator</th><th>log2FC</th><th>padj</th><th>State</th></tr></thead><tbody>${contrastRows.map(row=>`<tr><td>${esc(row.study)}</td><td>${esc(row.numerator)} / ${esc(row.denominator)}</td><td>${row.log2FC===null?'—':Number(row.log2FC).toFixed(3)}</td><td>${row.padj===null?'—':Number(row.padj).toExponential(2)}</td><td>${esc(row.state)}</td></tr>`).join('')}</tbody></table></div></div></div>`;
+        const provenance=[annotation.biotype,annotation.description_source,annotation.source_accession].filter(Boolean).join(' · ');
+        result.className='';result.innerHTML=`<div class="gene-head"><div><h3>${esc(gene)}</h3><div><strong>${esc(annotation.functional_name)}</strong></div><div class="legend">${esc(provenance||'No additional WBPS19 annotation')} ${annotation.previous_stable_id?' · previous ID '+esc(annotation.previous_stable_id):''}</div><div class="legend">${groups.length?'Candidate groups: '+groups.map(esc).join(', '):'Not in the preregistered candidate groups'}</div></div><div><span class="pill">Mean TPM ${mean.toFixed(2)}</span> <span class="pill">TPM &gt; 1 in ${detected}/${tpm.length}</span></div></div><div class="gene-chart">${expressionSvg(tpm)}</div><div class="grid2"><div><h4>Highest-expression samples</h4><div class="table-scroll"><table><thead><tr><th>Study</th><th>Sample</th><th>Condition</th><th>TPM</th></tr></thead><tbody>${sampleRows.slice(0,30).map(row=>`<tr><td>${esc(row.study)}</td><td>${esc(row.sample_id)}</td><td>${esc(row.condition)}</td><td>${Number(row.tpm).toFixed(3)}</td></tr>`).join('')}</tbody></table></div></div><div><h4>Differential-expression evidence</h4><div class="table-scroll"><table><thead><tr><th>Study</th><th>Numerator / denominator</th><th>log2FC</th><th>padj</th><th>State</th></tr></thead><tbody>${contrastRows.map(row=>`<tr><td>${esc(row.study)}</td><td>${esc(row.numerator)} / ${esc(row.denominator)}</td><td>${row.log2FC===null?'—':Number(row.log2FC).toFixed(3)}</td><td>${row.padj===null?'—':Number(row.padj).toExponential(2)}</td><td>${esc(row.state)}</td></tr>`).join('')}</tbody></table></div></div></div>`;
       }
       search.addEventListener('input',showSuggestions);search.addEventListener('keydown',event=>{if(event.key==='Enter')openGene();});document.getElementById('gene-open').addEventListener('click',openGene);
     })();

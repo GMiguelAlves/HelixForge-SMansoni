@@ -165,12 +165,14 @@ any data.
 
 ## RNA-seq atlas
 
-The first integrated RNA-seq atlas combines the accepted studies as a
-descriptive, navigable report covering their biological samples, technical
-runs, 9,914 shared genes, and original per-study DESeq2 contrasts. It
+The first integrated RNA-seq atlas combines seven accepted studies as a
+descriptive, navigable report covering 219 biological samples, 470 technical
+runs, 9,914 shared genes, and 66 original per-study DESeq2 contrasts. It
 provides sample/QC inventory, global and within-study PCA, sample correlation,
 selected-gene expression and effect maps, a searchable gene explorer, SVG
-figures, machine-readable tables, and checksummed provenance.
+figures, machine-readable tables, and checksummed provenance. Canonical
+`Smp_*` identifiers are accompanied by WBPS19 functional descriptions and
+annotation provenance when available.
 
 Open [`results/atlas/rnaseq/atlas.html`](results/atlas/rnaseq/atlas.html) or see
 the [atlas contract and build instructions](analyses/atlas/README.md). The

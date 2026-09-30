@@ -10,26 +10,42 @@
     "absolute_log2_fold_change": 1.0
   },
   "selected_genes": "config/PRJEB32839/candidate_genes.txt",
+  "gene_annotations": "config/reference/gene_annotations_wbps19.tsv",
   "studies": [
     {
       "id": "PRJNA602528",
       "differential_expression": false,
-      "qc_table": "results/PRJNA602528/qc/PRJNA602528_qc_summary.tsv"
+      "qc_table": "results/PRJNA602528/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJNA597909",
       "differential_expression": true,
-      "qc_table": "results/PRJNA597909/qc/PRJNA597909_qc_summary.tsv"
+      "qc_table": "results/PRJNA597909/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJEB14695",
       "differential_expression": true,
-      "qc_table": null
+      "qc_table": "results/PRJEB14695/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJEB32839",
       "differential_expression": true,
       "qc_table": "results/PRJEB32839/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "E-MTAB-451",
+      "differential_expression": true,
+      "qc_table": "results/E-MTAB-451/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJEB3190",
+      "differential_expression": true,
+      "qc_table": "results/PRJEB3190/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "E-ERAD-478",
+      "differential_expression": true,
+      "qc_table": "results/E-ERAD-478/qc/qc_sample_summary.tsv"
     }
   ],
   "statistical_scope": "descriptive_cross_study_with_per_study_differential_expression",

@@ -1,6 +1,6 @@
 # RNA-seq atlas
 
-The RNA-seq atlas is a descriptive, navigable integration of the four accepted
+The RNA-seq atlas is a descriptive, navigable integration of the seven accepted
 project studies. It does not pool studies for differential-expression
 inference and does not perform batch correction.
 
@@ -13,6 +13,12 @@ inference and does not perform batch correction.
   models and contrast orientation;
 - `not tested`, `not significant`, and `gene absent` are distinct states;
 - global PCA is descriptive and must not be interpreted as a batch test;
+- canonical `Smp_*` identifiers are accompanied by WBPS19 functional
+  descriptions, biotypes, source accessions and previous stable IDs when
+  available; descriptions are not presented as official gene symbols;
+- candidate IDs that are absent from the current matrix are resolved only when
+  WBPS19 provides exactly one previous-stable-ID mapping; ambiguous mappings
+  remain explicit and are never selected automatically;
 - server paths, user identifiers, and private operational logs are forbidden
   from the public bundle.
 

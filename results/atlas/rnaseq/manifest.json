@@ -8,29 +8,48 @@
     "PRJNA602528",
     "PRJNA597909",
     "PRJEB14695",
-    "PRJEB32839"
+    "PRJEB32839",
+    "E-MTAB-451",
+    "PRJEB3190",
+    "E-ERAD-478"
   ],
-  "biological_samples": 128,
-  "technical_runs": 318,
+  "biological_samples": 219,
+  "technical_runs": 470,
   "genes": 9914,
-  "contrasts": 22,
+  "annotated_genes": 9914,
+  "contrasts": 66,
   "selected_group_memberships": 65,
   "selected_unique_genes": 61,
-  "selected_unique_genes_present": 45,
+  "selected_unique_genes_present": 56,
+  "selected_previous_ids_resolved": 11,
+  "selected_ambiguous_previous_ids": 3,
+  "selected_unresolved_ids": 2,
   "batch_effect_assessment": "DEFERRED",
   "global_pca_interpretation": "EXPLORATORY_NOT_A_BATCH_TEST",
   "inputs": [
     {
       "path": "analyses/atlas/atlas_config.json",
-      "sha256": "26f4d04053eba1c4d202e4a258073031669982b81201599062abf773d8cc381e"
+      "sha256": "fb123636c846c905790d94fe270e4cea01989b5bd014d7d612f509325964064c"
     },
     {
       "path": "analyses/atlas/rnaseq_atlas_template.html",
-      "sha256": "0ee7f3e5dc070360f526c4f3bc778f60c0f3af68b91cbbc0409496e2024db991"
+      "sha256": "33c11fea661195e45ef85999e9df3de6a8683e70886714d01246a7c42a7aa3e1"
+    },
+    {
+      "path": "config/E-ERAD-478/de_spec.json",
+      "sha256": "fc1b3093841c6e7cb24a6fbd08cf6fe3474acde140f48c6c440e163650e16978"
+    },
+    {
+      "path": "config/E-MTAB-451/de_spec.json",
+      "sha256": "b40758a2e1d5f221c54cc0e4a62ebad0a290bb3110efacd1c9cf0da237aeace4"
     },
     {
       "path": "config/PRJEB14695/de_spec.json",
       "sha256": "c40ece5e5de338920aeff4ed07a2796488e8825826954154f7d2df7a79b5a485"
+    },
+    {
+      "path": "config/PRJEB3190/de_spec.json",
+      "sha256": "2001683b1e4ba30173ed2a544d9dd7ae0ccd6c3fe18e3df7e1d58a6204d3abfe"
     },
     {
       "path": "config/PRJEB32839/candidate_genes.txt",
@@ -45,8 +64,24 @@
       "sha256": "e4c4f81b3ecba0582dcf492e640e22b6d991f235db478c3556c24706d4dce56a"
     },
     {
+      "path": "config/reference/gene_annotations_wbps19.tsv",
+      "sha256": "c4c307af4526fa7071f1cdcaa59718ce930a386ea68daad88254bd4407ecf810"
+    },
+    {
+      "path": "metadata/E-ERAD-478/samples.tsv",
+      "sha256": "67a11d03f7d4364c1bc20e32c49c94d246a80968d36fd1cd5e5ac6487a1602ce"
+    },
+    {
+      "path": "metadata/E-MTAB-451/samples.tsv",
+      "sha256": "033a4d3dcdf0d573a47c9d2f1df31309ede762082e5324e2ee6babbc5ff85845"
+    },
+    {
       "path": "metadata/PRJEB14695/samples.tsv",
       "sha256": "64671f94161b660b40ba9a6055b036f39531e1e8676c66543c2c3546be63790d"
+    },
+    {
+      "path": "metadata/PRJEB3190/samples.tsv",
+      "sha256": "adb3736c15c42d593d5d51fb97150186c502655882d9c75ac30830de6df91be9"
     },
     {
       "path": "metadata/PRJEB32839/samples.tsv",
@@ -61,6 +96,162 @@
       "sha256": "5621190125406f4141c18df68ced2c271af61820b339a070237b94272ada9ddc"
     },
     {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_female_unpaired.tsv",
+      "sha256": "a78025b47590a81d0a1d981776319e36dfb475d5dadca5117b982621489b1a20"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_male_paired.tsv",
+      "sha256": "7bbfde91002008255311a3052686d00cb1660eadb6b8cf70a599fbe585990406"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_unpaired_vs_d21_male_unpaired.tsv",
+      "sha256": "1c0192000499dfdc9c421b34e0ea33c7f111356712c09ac316c594693b03e49c"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_male_paired_vs_d21_male_unpaired.tsv",
+      "sha256": "57e3d33709a70e2b9271227d3c13a0d8fabf9d512dbd0c4cdac10d77df3cb151"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d21_female_paired.tsv",
+      "sha256": "210a6684e21df53fa688b24c302513af38980ff09185a64c4499f3f6d6ea0f88"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_female_unpaired.tsv",
+      "sha256": "76b96cc826ce4056b4ae2be5e335dc0d5fc13ed34ca82d066064ab88fff8be86"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_male_paired.tsv",
+      "sha256": "467f4443d352b6d5d586e1fc36a92fc00007c1cf6185389f1a0638734ea94884"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d21_female_unpaired.tsv",
+      "sha256": "123eed296052559c41ff5a92e98be096004425abce57df4f71b5705ccaba34e8"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d28_male_unpaired.tsv",
+      "sha256": "3db7b7bbf3e673d9103165430e03093a8bc7377a4041e97a0c0a473107052d3c"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d21_male_paired.tsv",
+      "sha256": "7618af843884c58b58045eb8ec25fcaa9bb67fa444a09aa6ecede15c8b25e47d"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d28_male_unpaired.tsv",
+      "sha256": "e8be56f880c0195584478380897aefd3bd650b6d1d4a209b96f9e4f1c6b45487"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_unpaired_vs_d21_male_unpaired.tsv",
+      "sha256": "5369b3233ee6ef9544da1c280832c97af2217cb99d67d268f6a84173f05a48e4"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d28_female_paired.tsv",
+      "sha256": "cd31276b811c61170bdd9e8903f1cb7c160534eb5349ccd861a533ba1df386b0"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_female_unpaired.tsv",
+      "sha256": "1d48e771e3beece6cdcc332c1752b0281ab0abbde44054c95789af3ad753dfae"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_male_paired.tsv",
+      "sha256": "7087bbd15847b5364e6416c872da0c50233478c6c0adeea474375ae545f4bf75"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d28_female_unpaired.tsv",
+      "sha256": "8a76799d5d5aabb78752a56e1d71fad24b86f962b27b014a89c864ed47025952"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d35_male_unpaired.tsv",
+      "sha256": "80a695cdb037979a26785eab6e1c4e704aa77c2a118b9751158c7ff01abbf50d"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d28_male_paired.tsv",
+      "sha256": "4264ff5902d7d426e5305a1364756a274f63c27ee92ba9254e169a3afe27a9ad"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d35_male_unpaired.tsv",
+      "sha256": "94fbb0f9971f264f8b54c5988b6f43ee2a3372fc29fc8da166bd95bc78394329"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_unpaired_vs_d28_male_unpaired.tsv",
+      "sha256": "6ab63076b7d7f059fbc09d4bb0028da252911c4aaaab016b1e975e0eb348e27c"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d21_female_paired.tsv",
+      "sha256": "43353896de1a647d37b2ad0d418b0a176d3988db5bd9fbaca4e39df3e6e82847"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d35_female_paired.tsv",
+      "sha256": "3fbc7e97d77d3652c59e67892992d25f0fe283c06c6c5519897146a070a61cbc"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_female_unpaired.tsv",
+      "sha256": "deaed1393c34140465ab75099114b3c4d4b3f1d8f99adb7f11085f19eb83da85"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_male_paired.tsv",
+      "sha256": "b11fd139670eb8f7a79b6ed52db99af3add7e43bc0fa05d764c901c694efd542"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d21_female_unpaired.tsv",
+      "sha256": "3f5019adf393cbf3400f3ed41093beb06df3378afef4c727c94cf3c2c993407a"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d35_female_unpaired.tsv",
+      "sha256": "ec06c7c52e48132fca209c609fc131af4e758f3f2cb991429de63fb43851e06e"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d38_male_unpaired.tsv",
+      "sha256": "3e6b4036535895b0faebe8edca8a6b0145a53eb555ed41a7389214854caf18a2"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d21_male_paired.tsv",
+      "sha256": "7d508432446a707f373c5dd68994a462e0d2872fa48ba09e6ea6b0d3121f866e"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d35_male_paired.tsv",
+      "sha256": "28a70008b9a04b248ecae9a45837261fc64870d7f2d01a3d7eea9f3d68f31edd"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d38_male_unpaired.tsv",
+      "sha256": "2fd7e1fe872e9d364c7b455620075919596c344575d3d58915a191f21e395527"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d21_male_unpaired.tsv",
+      "sha256": "30178accd157e12fb522dbdc5ddd7e468f9ca53e7291d36336df1f4f04decfcf"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d35_male_unpaired.tsv",
+      "sha256": "67ce9fe3c87f1cafd461cf6b76347dcfb728cb9022b7d2b8a6c8bcf833b9410e"
+    },
+    {
+      "path": "results/E-ERAD-478/expression/tpm_matrix.tsv",
+      "sha256": "c9d78f5192ca03af1850fea5883b8b48bffd0b20eab528b66f6d1b7db389fbb9"
+    },
+    {
+      "path": "results/E-ERAD-478/qc/qc_sample_summary.tsv",
+      "sha256": "8e3b887cfb2fb6995f1915a47df78566bebcb5770392412f029906f668786f7d"
+    },
+    {
+      "path": "results/E-ERAD-478/qc/qc_summary.json",
+      "sha256": "60d66b2eecc435c3d30cd1239052ddeb6b0269d01ab978fb136777e458774863"
+    },
+    {
+      "path": "results/E-MTAB-451/differential_expression/DEGs_all_results.tsv",
+      "sha256": "ae6fd9849ed2a3ea864b9970e63f201a0d4f1046305ea86bfde2fb4446f0a824"
+    },
+    {
+      "path": "results/E-MTAB-451/expression/tpm_matrix.tsv",
+      "sha256": "67bd8831b8381dbd528079bd8bba3401e610f0be078768987856aa7348846c03"
+    },
+    {
+      "path": "results/E-MTAB-451/qc/qc_sample_summary.tsv",
+      "sha256": "a5261248ecf4ae46f24b4420b53af425e16bfae73c35a563b69591cb117b5d48"
+    },
+    {
+      "path": "results/E-MTAB-451/qc/qc_summary.json",
+      "sha256": "114491f346babec1e5526444c107f559c7022c0fe06784de3654071cc6e5ac6a"
+    },
+    {
       "path": "results/PRJEB14695/differential_expression/DEGs_all_results.tsv",
       "sha256": "61d65b2365252486cc1a818ff06a3508ba1d520ddd64cead06510c20ced86741"
     },
@@ -69,8 +260,28 @@
       "sha256": "a25b7ab73ee7c55a27ebccb3e02ca19f94486755ae8feacc170169c7c6465dc4"
     },
     {
+      "path": "results/PRJEB14695/qc/qc_sample_summary.tsv",
+      "sha256": "7ec69e933165e0baa53e912d09f9d7fc1d4fbe1ef3bdf4d97818f90c25b7e68e"
+    },
+    {
       "path": "results/PRJEB14695/qc/qc_summary.json",
-      "sha256": "f94a164a2d67f1c3d8847698adc6e55a64b4208e41350cf3e245b2ab07223018"
+      "sha256": "c2e4b8fc49fb2e4589219f029b9b9f53221f580278ecc15583176e91ac63aa0c"
+    },
+    {
+      "path": "results/PRJEB3190/differential_expression/DEGs_all_results.tsv",
+      "sha256": "ca69251c629b4f82670c8221456060aefdfe87f7491c82b7cade5517a23d189e"
+    },
+    {
+      "path": "results/PRJEB3190/expression/tpm_matrix.tsv",
+      "sha256": "f2d2adabd78a50857df067b96e97060f48ef30eb42c7728e8fb0e6dfdcbcc611"
+    },
+    {
+      "path": "results/PRJEB3190/qc/qc_sample_summary.tsv",
+      "sha256": "6a30b8ae7aca46fce954af8e9e873501f7c43772aa1a84662437f0b64027078b"
+    },
+    {
+      "path": "results/PRJEB3190/qc/qc_summary.json",
+      "sha256": "3b693a26dae0dbe01396bdecffcd08766c56d1269c45caeec685da66b9e9b83b"
     },
     {
       "path": "results/PRJEB32839/differential_expression/DEGs_all_results.tsv",
@@ -82,11 +293,11 @@
     },
     {
       "path": "results/PRJEB32839/qc/qc_sample_summary.tsv",
-      "sha256": "8c7e6eeebcfe9b4e57e546b6a73955bfe33e299ce93ac39f28c7eab213f8ce1a"
+      "sha256": "808f28789bd9a9ab1fe25b4f39f03df5da233b53ec1ddd52b92ec6ca30fad056"
     },
     {
       "path": "results/PRJEB32839/qc/qc_summary.json",
-      "sha256": "7af38381d7fc80808485ff3c3f36f45597b619b45d3167131714c644a29565e8"
+      "sha256": "1c73f5d5ab1c0db0ee116daa2a4c62ed94103ef917a3404d5be96106ad0c219a"
     },
     {
       "path": "results/PRJNA597909/differential_expression/DEGs_all_results.tsv",
@@ -97,101 +308,115 @@
       "sha256": "1cfd1bf790d1c3dc7385897a9ec04fa1af452197fe0e507ffae6d26865a504d6"
     },
     {
-      "path": "results/PRJNA597909/qc/PRJNA597909_qc_summary.tsv",
-      "sha256": "611853d8322ca9ac4fdabdfdb1e2bce5344e4d5790b8ba0c7320577ca566841c"
+      "path": "results/PRJNA597909/qc/qc_sample_summary.tsv",
+      "sha256": "1d7ab86b70679d452ce287e182df47198f04bf14dfcb2506edc4cf5edd52f465"
     },
     {
       "path": "results/PRJNA597909/qc/qc_summary.json",
-      "sha256": "a57296d2eff816c5c1ee072b05e54a80d773972ae2d34a06cd625a8288fc9669"
+      "sha256": "735a160918f2b71d92ab54826c21417866ab79b6fe122cc41f241713b0d21b3e"
     },
     {
       "path": "results/PRJNA602528/expression/tpm_matrix.tsv",
       "sha256": "e4af7babc8607aab99b649037fe643b451d86d3adab280921260f73596518cca"
     },
     {
-      "path": "results/PRJNA602528/qc/PRJNA602528_qc_summary.tsv",
-      "sha256": "66828a91014c044df98e012034aa7311a72c1bcfe594f71e7efeef3b02399dcf"
+      "path": "results/PRJNA602528/qc/qc_sample_summary.tsv",
+      "sha256": "922c48bdd935095eb4eba9e7fe4d18dc72024d6db4bf1468284ec3e7c3de5427"
+    },
+    {
+      "path": "results/PRJNA602528/qc/qc_summary.json",
+      "sha256": "b64da8f9ea81e20ab1f677ea62c6eafe9ed68f4684dccbee059cac97087e8ed5"
     },
     {
       "path": "scripts/atlas/build_rnaseq_atlas.py",
-      "sha256": "51d2fb7f709e23aef265b29a675c467e0cd63fc95dcfa1c4cacbc9bb45f87ef4"
+      "sha256": "9b4c5c93aad536460196cede431e3a0f6b2104cd87f57353f848a82a004470e6"
     }
   ],
   "outputs": [
     {
+      "path": "README.md",
+      "bytes": 526,
+      "sha256": "e4b6b0bfb0b7099958e4bf394e0e55ac99ca0248b5a516ee4f8efe3286d862c8"
+    },
+    {
       "path": "atlas.html",
-      "bytes": 24717,
-      "sha256": "627259cf7468d0f0510b57e1d8bdc9528012aa76cd1a7507266a52282bc82b43"
+      "bytes": 33815,
+      "sha256": "faf217fbd051f97006f3ff27de79983e9e2ff6e4fc19b9af434b4ac0cc8a8e97"
     },
     {
       "path": "data/atlas_payload.js",
-      "bytes": 12334732,
-      "sha256": "2c07e9631f34e3bdc74ac6be16525b17d494842491cddbfd6ff9c8cf402a016b"
+      "bytes": 26551635,
+      "sha256": "9e62aeebe1323288d6d0cc2507c8ee04538ed6570451c92ac40152b50b0d73ba"
     },
     {
       "path": "data/contrast_catalog.tsv",
-      "bytes": 5506,
-      "sha256": "c71b3fc793cf7f3a83bc97717c1b28bd046667b04168599ef04a56b6a34f2a46"
+      "bytes": 15948,
+      "sha256": "e6742593656567cec20fb135a9123e566e3e8a7b655481bb2364edaed2e66850"
+    },
+    {
+      "path": "data/gene_annotations.tsv",
+      "bytes": 2073952,
+      "sha256": "50b5cd4a13fb0a459e9d3133b677d28fe859f523dacd7c044fb7dbc815b5a0d2"
     },
     {
       "path": "data/gene_contrast_log2fc.tsv",
-      "bytes": 2523606,
-      "sha256": "20737491e66de4659fbf86a30b8a9fefcefeb5a3b1130a9ade0248f9c3e50647"
+      "bytes": 7348487,
+      "sha256": "70df97165991aead3f088df05120fa561dfb74b1139e5830b93932f8f7c4dfc8"
     },
     {
       "path": "data/gene_contrast_padj.tsv",
-      "bytes": 2481091,
-      "sha256": "7173daa68744d59f51e1a842f5613fd977f3823553609756b6437e6f19d75593"
+      "bytes": 6826371,
+      "sha256": "32a678c3b01759fe327ab2d89fb3b7e2d59eceb90e89c3ed4880d01c7a58e644"
     },
     {
       "path": "data/gene_expression_summary.tsv",
-      "bytes": 2292987,
-      "sha256": "8bd99e7799f5f8f6c7213c960fa5452f268a486468487b3e05fad164b16dce4f"
+      "bytes": 6324959,
+      "sha256": "77a0869953d58f4405f066820e03862287f7ecb968039e7d38770bc1b0086570"
     },
     {
       "path": "data/pca_coordinates.tsv",
-      "bytes": 45144,
-      "sha256": "2863f7d1ad0c9c6f5d7e3e463b5c5dc0545ce7b785b5de7c9ee784cf01f067c7"
+      "bytes": 78621,
+      "sha256": "81204433cd5bd6c3ee9127a4903bcf773d5b7b559fac1bf0a6508a9cd9aaa2db"
     },
     {
       "path": "data/sample_correlation.tsv",
-      "bytes": 155005,
-      "sha256": "9f2c178b33a8c51c7699033045e0a8824d81403727b20a546d78d4b3df1d9258"
+      "bytes": 445164,
+      "sha256": "33d9e7ab79cbda85e1377762aebc537f6e76e36da071dd58d62e24e8a54148ee"
     },
     {
       "path": "data/sample_inventory.tsv",
-      "bytes": 32390,
-      "sha256": "d93e11f1e03c5d3f2d553dfa49d0d4812b15a2a9d8f496e559d939c697ea0b72"
+      "bytes": 55392,
+      "sha256": "a72896bcb95fc6a268a9da85aee97082e46fdf2afcbde2a7275cc145188d91a3"
     },
     {
       "path": "data/selected_genes.tsv",
-      "bytes": 1459,
-      "sha256": "93a12ef78528f33470adf836c350d99ac97b56028419717facc37c6ff5529507"
+      "bytes": 10132,
+      "sha256": "6164f7275b32350ab9dccf97c2dc6acb6370046befc021757adbc93521803f54"
     },
     {
       "path": "data/study_summary.tsv",
-      "bytes": 569,
-      "sha256": "99a3ac636f3fdef685913c3f64c31a71a89458bbb87f75975a662d9f97c88f69"
+      "bytes": 814,
+      "sha256": "1d8cd5731fa1f3c0a01bdde92b9c26b3dd8c0d1f0a4e8c0915e05a9c1edb1402"
     },
     {
-      "path": "figures/contrast_significance_summary.svg",
-      "bytes": 8925,
-      "sha256": "0b5e1ead599aa62ccca9df73ae4668a8379c1aee34b8caa5cc215aeea5638171"
+      "path": "figures/E-ERAD-478_pca_by_condition.svg",
+      "bytes": 15362,
+      "sha256": "2fab3511bef2067a3d7c68f724f3b3501a94e3a49ccf5e7688661bd42db376e5"
     },
     {
-      "path": "figures/global_pca_by_stage.svg",
-      "bytes": 25719,
-      "sha256": "a300b1aefd5e853167113194511f4af4174a212a30db4329acd0736dffa54cbd"
-    },
-    {
-      "path": "figures/global_pca_by_study.svg",
-      "bytes": 25245,
-      "sha256": "621b82a1c7c4ff4f2eebec8798c82f9ba9ae93be990c3daf30d74ccd4420a24c"
+      "path": "figures/E-MTAB-451_pca_by_condition.svg",
+      "bytes": 5115,
+      "sha256": "e99ff57cce249062c9f956661f8240eb86a7aef389d6bc1e09b52dc8e43dc6f9"
     },
     {
       "path": "figures/PRJEB14695_pca_by_condition.svg",
       "bytes": 7788,
       "sha256": "0cb92ddae3fa60c8af752d3d5fa0427cd8dccbb317e39782335555a2352fbb72"
+    },
+    {
+      "path": "figures/PRJEB3190_pca_by_condition.svg",
+      "bytes": 7033,
+      "sha256": "218ce05718035a2f0d2275a848bd5e54d731422bae6e95ec5f4f105c51d7bee1"
     },
     {
       "path": "figures/PRJEB32839_pca_by_condition.svg",
@@ -209,34 +434,44 @@
       "sha256": "34e0d6bdd4b1db6566518fd2b01fb4338db726ae73e75708722def8b0fa3a7fb"
     },
     {
+      "path": "figures/contrast_significance_summary.svg",
+      "bytes": 23009,
+      "sha256": "642420f72bcd24c5230b01c185af25bad6fa5d5e635d0366b1468ba0d89f3796"
+    },
+    {
+      "path": "figures/global_pca_by_stage.svg",
+      "bytes": 43088,
+      "sha256": "e5ace993a52f19bb58a088b4c149f3d52b72c2c7749eaa27fa420370dc8b2466"
+    },
+    {
+      "path": "figures/global_pca_by_study.svg",
+      "bytes": 41611,
+      "sha256": "67debe92e65bc53a0d05f89de4e7b15fbab3865314ff5b19cb25b87d5dc71326"
+    },
+    {
       "path": "figures/qc_classification.svg",
-      "bytes": 3651,
-      "sha256": "752a179e75cb26c2268f950f0326af506538a23b537b8d65898bc83adc2f18fa"
+      "bytes": 4887,
+      "sha256": "8338fd0d89e00ac11293e1fe710a8cab1b48238125b95b430a76d4fed55b3f7d"
     },
     {
       "path": "figures/sample_correlation.svg",
-      "bytes": 3076090,
-      "sha256": "fa687440fcdd4759b94b50a33b96954f56e9d27873775939cf3711c4139307a1"
+      "bytes": 9114160,
+      "sha256": "a67a1381a82883f8136a7888a831f915f058890a7aa728fe7c8f9b467bbc772f"
     },
     {
       "path": "figures/selected_gene_contrast_matrix.svg",
-      "bytes": 169594,
-      "sha256": "018691c274a923957f70cb63e2e5174e5b728ea2661c5e2b995179dc279e7032"
+      "bytes": 780085,
+      "sha256": "cfe675cdd35d1b11b674def3a7351924d7b903d44c8c9b241fbfc646f0a9ecae"
     },
     {
       "path": "figures/selected_gene_expression_heatmap.svg",
-      "bytes": 291594,
-      "sha256": "3de69637f267b6d147d09697f2c86842d658379c3f5bf608a29f5a0392f20440"
+      "bytes": 802846,
+      "sha256": "0f36489016a0896517f78a8caf0cfe77b192943437995cfc1aca5ec9d10b5f15"
     },
     {
       "path": "figures/study_composition.svg",
-      "bytes": 3171,
-      "sha256": "6cca5e0477bd0b9aa71ac10c358c800bfe0c96bfe8e10208cf9879f703cd022d"
-    },
-    {
-      "path": "README.md",
-      "bytes": 534,
-      "sha256": "b374472eda4781af3ae4e48f9f321050d72404aa0a8d36276ccb8f02534a829c"
+      "bytes": 4133,
+      "sha256": "d20b4db93a43b329078eea0d9aeaa65a1288bf216b624a7b9acbd16eb194fc5f"
     }
   ]
 }

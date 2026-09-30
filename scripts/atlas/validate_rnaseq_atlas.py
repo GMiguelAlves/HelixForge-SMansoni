@@ -13,11 +13,11 @@ from pathlib import Path
 
 
 EXPECTED = {
-    "studies": ["PRJNA602528", "PRJNA597909", "PRJEB14695", "PRJEB32839"],
-    "biological_samples": 128,
-    "technical_runs": 318,
+    "studies": ["PRJNA602528", "PRJNA597909", "PRJEB14695", "PRJEB32839", "E-MTAB-451", "PRJEB3190", "E-ERAD-478"],
+    "biological_samples": 219,
+    "technical_runs": 470,
     "genes": 9914,
-    "contrasts": 22,
+    "contrasts": 66,
 }
 FORBIDDEN = (
     "/ho" + "me/",
@@ -82,14 +82,34 @@ def validate(root: Path) -> list[str]:
         errors.append("technical-run total mismatch")
     if {row["reference_id"] for row in samples} != {"Schistosoma_mansoni_SM_V10_WBPS19"}:
         errors.append("sample inventory mixes reference identities")
-    if {row["batch"] for row in samples} != {"not_declared"}:
-        errors.append("atlas v1 batch inventory no longer matches frozen metadata")
+    if any(not row["batch"] for row in samples):
+        errors.append("atlas contains empty batch metadata")
 
     contrasts = read_tsv(atlas / "data/contrast_catalog.tsv")
     if len(contrasts) != EXPECTED["contrasts"]:
         errors.append("contrast catalog cardinality mismatch")
-    if {row["study"] for row in contrasts} != {"PRJNA597909", "PRJEB14695", "PRJEB32839"}:
+    if {row["study"] for row in contrasts} != {"PRJNA597909", "PRJEB14695", "PRJEB32839", "E-MTAB-451", "PRJEB3190", "E-ERAD-478"}:
         errors.append("unexpected studies in differential-expression catalog")
+
+    annotations = read_tsv(atlas / "data/gene_annotations.tsv")
+    if len(annotations) != EXPECTED["genes"]:
+        errors.append("gene annotation cardinality mismatch")
+    if any(not row["functional_name"] for row in annotations):
+        errors.append("gene annotations contain empty functional names")
+    selected = read_tsv(atlas / "data/selected_genes.tsv")
+    resolution_counts: dict[str, int] = {}
+    for row in selected:
+        resolution_counts[row["resolution_status"]] = resolution_counts.get(row["resolution_status"], 0) + 1
+    expected_resolution = {
+        "CURRENT_ID": 45,
+        "RESOLVED_PREVIOUS_STABLE_ID": 11,
+        "AMBIGUOUS_PREVIOUS_STABLE_ID": 3,
+        "NOT_FOUND_WBPS19": 2,
+    }
+    if resolution_counts != expected_resolution:
+        errors.append(
+            f"candidate ID resolution differs: expected {expected_resolution}, observed {resolution_counts}"
+        )
 
     for filename in ("gene_contrast_log2fc.tsv", "gene_contrast_padj.tsv"):
         path = atlas / "data" / filename
@@ -112,6 +132,8 @@ def validate(root: Path) -> list[str]:
             errors.append("browser payload sample count mismatch")
         if len(payload.get("contrasts", [])) != EXPECTED["contrasts"]:
             errors.append("browser payload contrast count mismatch")
+        if len(payload.get("gene_annotations", [])) != EXPECTED["genes"]:
+            errors.append("browser payload annotation count mismatch")
 
     for svg in sorted((atlas / "figures").glob("*.svg")):
         try:
