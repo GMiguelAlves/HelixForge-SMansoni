@@ -45,3 +45,36 @@ Controlled-vocabulary tables enumerate the exact source-preserving values used
 at initialization. They are registries, not claims that similarly named stages,
 tissues, sexes, or treatments are biologically interchangeable across studies.
 
+## RNA-seq atlas outputs
+
+`results/atlas/rnaseq/data/` contains:
+
+- `sample_inventory.tsv`: one row per biological sample with harmonized
+  metadata, technical-run count, QC state, and reference identity;
+- `study_summary.tsv`: study cardinality, QC counts, mapping/retention ranges,
+  and inferential availability;
+- `pca_coordinates.tsv`: global exploratory and within-study PC1/PC2 values;
+- `sample_correlation.tsv`: Pearson correlation of `log2(TPM + 1)`;
+- `contrast_catalog.tsv`: frozen study, factor, orientation, thresholds, and
+  significant-gene counts for every original contrast;
+- `gene_contrast_log2fc.tsv` and `gene_contrast_padj.tsv`: complete shared gene
+  universe by contrast, with `NA` values meaning not tested;
+- `gene_expression_summary.tsv`: per-gene, per-study TPM summaries;
+- `gene_annotations.tsv`: canonical WBPS19 gene identity, functional
+  description, biotype, source accession, previous stable ID, and genomic
+  coordinates;
+- `selected_genes.tsv`: candidate-group membership, current-ID resolution,
+  ambiguous alternatives, functional annotation, and reference presence;
+- `atlas_payload.js`: compact local-browser payload for the gene explorer.
+
+`manifest.json` records input/output checksums and the explicit descriptive
+scope. The atlas distinguishes absent genes, untested results, and tested but
+non-significant results.
+
+`config/reference/gene_annotations_wbps19.tsv` is the versioned annotation
+source used by the atlas. It is derived deterministically from the frozen
+WBPS19 GFF3 by `scripts/reference/extract_gene_annotations.py`. Functional
+descriptions are reference annotations, not manually assigned official gene
+symbols. A historical `Smp_*` identifier is promoted to a current identifier
+only when `previous_stable_id` maps it to exactly one WBPS19 gene; ambiguous
+and absent identifiers remain explicit.

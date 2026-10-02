@@ -1,0 +1,62 @@
+gene_id	resolved_gene_id	resolution_status	alternative_gene_ids	display_label	functional_name	biotype	source_accession	groups	present_in_reference
+Smp_179650	Smp_179650	CURRENT_ID		Smp_179650 — Putative chromobox protein	Putative chromobox protein	protein_coding	G4VDS7	Grupo HP1;Readers	YES
+Smp_001500	Smp_001500	CURRENT_ID		Smp_001500 — Putative eukaryotic translation initiation factor 4e	Putative eukaryotic translation initiation factor 4e	protein_coding	G4VCF5	Grupo HP1	YES
+Smp_210650	Smp_210650	CURRENT_ID		Smp_210650 — Histone-lysine N-methyltransferase	Histone-lysine N-methyltransferase	protein_coding	A0A3Q0KVE8	Writers	YES
+Smp_078900	Smp_078900	CURRENT_ID		Smp_078900 — [histone H3]-lysine(27) N-trimethyltransferase	[histone H3]-lysine(27) N-trimethyltransferase	protein_coding	A0A3Q0KI74	Writers	YES
+Smp_070170	Smp_070170	CURRENT_ID		Smp_070170 — Histone-lysine N-methyltransferase	Histone-lysine N-methyltransferase	protein_coding	G4VJB5	Writers	YES
+Smp_138030	Smp_138030	CURRENT_ID		Smp_138030 — Histone-lysine N-methyltransferase	Histone-lysine N-methyltransferase	protein_coding	A0A3Q0KMX8	Writers	YES
+Smp_144180	Smp_144180	CURRENT_ID		Smp_144180 — Putative mixed-lineage leukemia protein, mll	Putative mixed-lineage leukemia protein, mll	protein_coding	A0A5K4EPP6	Writers	YES
+Smp_161010		NOT_FOUND_WBPS19		Smp_161010				Writers	NO
+Smp_210660	Smp_210660	CURRENT_ID		Smp_210660 — Ran binding protein 9-related	Ran binding protein 9-related	protein_coding	G4VEU6	Writers	YES
+Smp_160700	Smp_160700	CURRENT_ID		Smp_160700 — Histone-lysine N-methyltransferase	Histone-lysine N-methyltransferase	protein_coding	A0A5K4EUF0	Writers	YES
+Smp_137060	Smp_307060	RESOLVED_PREVIOUS_STABLE_ID	Smp_307060	Smp_307060 — Histone-lysine N-methyltransferase NSD3	Histone-lysine N-methyltransferase NSD3	protein_coding	A0A5K4F612	Writers;Readers	YES
+Smp_055310	Smp_055310	CURRENT_ID		Smp_055310 — [histone H4]-lysine(20) N-methyltransferase	[histone H4]-lysine(20) N-methyltransferase	protein_coding	G4V5N4	Writers	YES
+Smp_027300	Smp_027300	CURRENT_ID		Smp_027300 — Histone-lysine N-methyltransferase	Histone-lysine N-methyltransferase	protein_coding	G4VHB6	Writers;Readers	YES
+Smp_062530	Smp_062530	CURRENT_ID		Smp_062530 — [histone H4]-N-methyl-L-lysine(20) N-methyltransferase	[histone H4]-N-methyl-L-lysine(20) N-methyltransferase	protein_coding	A0A5K4EEZ7	Writers	YES
+Smp_140390	Smp_140390	CURRENT_ID		Smp_140390 — Histone-lysine N-methyltransferase	Histone-lysine N-methyltransferase	protein_coding	A0A3Q0KNC6	Writers	YES
+Smp_150850	Smp_150850	CURRENT_ID		Smp_150850 — Putative histone-lysine n-methyltransferase, setb1	Putative histone-lysine n-methyltransferase, setb1	protein_coding	A0A3Q0KPQ6	Writers;Readers	YES
+Smp_043580	Smp_043580	CURRENT_ID		Smp_043580 — Putative histone-lysine n-methyltransferase, setb1	Putative histone-lysine n-methyltransferase, setb1	protein_coding	G4VK98	Writers	YES
+Smp_000700	Smp_000700	CURRENT_ID		Smp_000700 — SET and MYND domain-containing protein 4	SET and MYND domain-containing protein 4	protein_coding	A0A3Q0KBD6	Writers	YES
+Smp_124950	Smp_342100	RESOLVED_PREVIOUS_STABLE_ID	Smp_342100	Smp_342100 — SET domain-containing protein	SET domain-containing protein	protein_coding	A0A5K4FAU9	Writers	YES
+Smp_121610	Smp_121610	CURRENT_ID		Smp_121610 — Histone-lysine N-trimethyltransferase SMYD5	Histone-lysine N-trimethyltransferase SMYD5	protein_coding	G4VEC8	Writers	YES
+Smp_149380	Smp_149380	CURRENT_ID		Smp_149380 — SET domain-containing protein	SET domain-containing protein	protein_coding	A0A3Q0KPL9	Writers	YES
+Smp_131300	Smp_016750	RESOLVED_PREVIOUS_STABLE_ID	Smp_016750	Smp_016750 — C2H2-type domain-containing protein	C2H2-type domain-containing protein	protein_coding	A0A3Q0KCR5	Writers	YES
+Smp_165000	Smp_165000	CURRENT_ID		Smp_165000 — Histone-lysine N-methyltransferase, H3 lysine-79 specific	Histone-lysine N-methyltransferase, H3 lysine-79 specific	protein_coding	A0A3Q0KRT2	Writers	YES
+Smp_029240	Smp_029240	CURRENT_ID		Smp_029240 — Protein arginine N-methyltransferase 1	Protein arginine N-methyltransferase 1	protein_coding	Q4PLC2	Writers	YES
+Smp_211290	Smp_337860	RESOLVED_PREVIOUS_STABLE_ID	Smp_337860	Smp_337860 — Putative mitochondrial ribosomal protein L53	Putative mitochondrial ribosomal protein L53	protein_coding	A0A5K4FBJ5	Writers	YES
+Smp_070340	Smp_070340	CURRENT_ID		Smp_070340 — Histone-arginine methyltransferase CARM1	Histone-arginine methyltransferase CARM1	protein_coding	A0A3Q0KHE7	Writers	YES
+Smp_171150	Smp_171150	CURRENT_ID		Smp_171150 — Protein arginine N-methyltransferase	Protein arginine N-methyltransferase	protein_coding	A0A3Q0KT70	Writers	YES
+Smp_025550	Smp_025550	CURRENT_ID		Smp_025550 — Protein arginine N-methyltransferase	Protein arginine N-methyltransferase	protein_coding	A0A5K4EBL2	Writers	YES
+Smp_064830	Smp_341020	RESOLVED_PREVIOUS_STABLE_ID	Smp_341020	Smp_341020 — Tudor domain-containing protein	Tudor domain-containing protein	protein_coding	A0A5K4FCY4	Readers	YES
+Smp_081570	Smp_246840	RESOLVED_PREVIOUS_STABLE_ID	Smp_246840	Smp_246840 — Staphylococcal nuclease domain-containing protein	Staphylococcal nuclease domain-containing protein	protein_coding	A0A5K4F452	Readers	YES
+Smp_097090	Smp_341630	RESOLVED_PREVIOUS_STABLE_ID	Smp_341630	Smp_341630 — Tudor domain-containing protein	Tudor domain-containing protein	protein_coding	G4VGR5	Readers	YES
+Smp_175680	Smp_175680	CURRENT_ID		Smp_175680 — Tudor domain-containing protein	Tudor domain-containing protein	protein_coding	A0A5K4EWL0	Readers	YES
+Smp_041760	Smp_041760	CURRENT_ID		Smp_041760 — DNA helicase	DNA helicase	protein_coding	G4VJQ0	Readers	YES
+Smp_079650	Smp_079650	CURRENT_ID		Smp_079650 — Putative chromodomain helicase DNA binding protein	Putative chromodomain helicase DNA binding protein	protein_coding	A0A3Q0KIA2	Readers	YES
+Smp_078280	Smp_078280	CURRENT_ID		Smp_078280 — Enoyl-CoA hydratase-related	Enoyl-CoA hydratase-related	protein_coding	G4VTG8	Readers	YES
+Smp_130470	Smp_130470	CURRENT_ID		Smp_130470 — PHD-type domain-containing protein	PHD-type domain-containing protein	protein_coding	A0A3Q0KLR0	Readers	YES
+Smp_144550	Smp_144550	CURRENT_ID		Smp_144550 — Chromobox protein-related (Chromobox 1) (Heterochromatin 1)	Chromobox protein-related (Chromobox 1) (Heterochromatin 1)	protein_coding	G4V7S3	Readers	YES
+Smp_149240	Smp_149240	CURRENT_ID		Smp_149240 — Putative chromobox protein	Putative chromobox protein	protein_coding	A0A3Q0KPL5	Readers	YES
+Smp_174840	Smp_346320	RESOLVED_PREVIOUS_STABLE_ID	Smp_346320	Smp_346320 — Chromo domain-containing protein	Chromo domain-containing protein	protein_coding	A0A5K4FF55	Readers	YES
+Smp_006250	Smp_006250	CURRENT_ID		Smp_006250 — Putative sex comb on midleg homolog	Putative sex comb on midleg homolog	protein_coding	A0A3Q0KBW6	Readers	YES
+Smp_074050	Smp_074050	CURRENT_ID		Smp_074050 — Scm-relatedprotein containing 4 mbt domains (Sfmbt)	Scm-relatedprotein containing 4 mbt domains (Sfmbt)	protein_coding	A0A3Q0KHR7	Readers	YES
+Smp_159100	Smp_159100	CURRENT_ID		Smp_159100 — SAM domain-containing protein	SAM domain-containing protein	protein_coding	A0A3Q0KQZ0	Readers	YES
+Smp_041750	Smp_041750	CURRENT_ID		Smp_041750 — PWWP domain-containing protein	PWWP domain-containing protein	protein_coding	A0A3Q0KEW9	Readers	YES
+Smp_105690	Smp_105690	CURRENT_ID		Smp_105690 — PWWP domain-containing protein	PWWP domain-containing protein	protein_coding	A0A3Q0KK50	Readers	YES
+Smp_125340	Smp_125340	CURRENT_ID		Smp_125340 — Putative hepatoma derived growth factor	Putative hepatoma derived growth factor	protein_coding	A0A3Q0KKW8	Readers	YES
+Smp_154860	Smp_344680	RESOLVED_PREVIOUS_STABLE_ID	Smp_344680	Smp_344680 — Zinc finger CW-type PWWP domain protein 1-like	Zinc finger CW-type PWWP domain protein 1-like	protein_coding	A0A5K4FDB4	Readers	YES
+Smp_163470		NOT_FOUND_WBPS19		Smp_163470				Readers	NO
+Smp_170390	Smp_170390	CURRENT_ID		Smp_170390 — Putative bromodomain containing protein	Putative bromodomain containing protein	protein_coding	A0A5K4EWD9	Readers	YES
+Smp_150560	Smp_150560	CURRENT_ID		Smp_150560 — Putative lysine-specific histone demethylase 1	Putative lysine-specific histone demethylase 1	protein_coding	A0A3Q0KQ06	Erasers	YES
+Smp_160810	Smp_160810	CURRENT_ID		Smp_160810 — Putative amine oxidase	Putative amine oxidase	protein_coding	A0A3Q0KRC2	Erasers	YES
+Smp_162940	Smp_162940	CURRENT_ID		Smp_162940 — Putative amine oxidase	Putative amine oxidase	protein_coding	A0A5K4EU70	Erasers	YES
+Smp_161400	Smp_161400	CURRENT_ID		Smp_161400 — Jumonji domain containing protein-related including hairless	Jumonji domain containing protein-related including hairless	protein_coding	A0A3Q0KRF0	Erasers	YES
+Smp_132170	Smp_132170	CURRENT_ID		Smp_132170 — Putative jumonji domain containing protein	Putative jumonji domain containing protein	protein_coding	A0A5K4EME7	Erasers	YES
+Smp_147870		AMBIGUOUS_PREVIOUS_STABLE_ID	Smp_213920;Smp_213930	Smp_147870				Erasers	NO
+Smp_137240		AMBIGUOUS_PREVIOUS_STABLE_ID	Smp_316180;Smp_337070	Smp_137240				Erasers	NO
+Smp_196270	Smp_315890	RESOLVED_PREVIOUS_STABLE_ID	Smp_315890	Smp_315890 — JmjC domain-containing protein	JmjC domain-containing protein	protein_coding	A0A5K4F7L6	Erasers	YES
+Smp_156290	Smp_156290	CURRENT_ID		Smp_156290 — [histone H3]-trimethyl-L-lysine(4) demethylase	[histone H3]-trimethyl-L-lysine(4) demethylase	protein_coding	A0A3Q0KQW7	Erasers	YES
+Smp_019170	Smp_019170	CURRENT_ID		Smp_019170 — [histone H3]-trimethyl-L-lysine(4) demethylase	[histone H3]-trimethyl-L-lysine(4) demethylase	protein_coding	G4LUD8	Erasers	YES
+Smp_034000	Smp_034000	CURRENT_ID		Smp_034000 — Ubiquitously transcribed sex (X/Y) chromosome tetratricopeptide repeat protein-related	Ubiquitously transcribed sex (X/Y) chromosome tetratricopeptide repeat protein-related	protein_coding	A0A3Q0KEA7	Erasers	YES
+Smp_128500	Smp_342360	RESOLVED_PREVIOUS_STABLE_ID	Smp_342360	Smp_342360 — JmjC domain-containing protein	JmjC domain-containing protein	protein_coding	A0A5K4FDE5	Erasers	YES
+Smp_180990		AMBIGUOUS_PREVIOUS_STABLE_ID	Smp_196410;Smp_241580	Smp_180990				Erasers	NO

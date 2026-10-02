@@ -2,7 +2,7 @@
 
 ## Current RNA-seq methodology
 
-This project executes the released HelixForge v1.0.1 RNA-seq workflow. The
+This project executes the released HelixForge v1.0.2 RNA-seq workflow. The
 supported production route is run-level metadata validation, reference-bundle
 validation, FastQC, Trim Galore, post-trim QC, technical-run consolidation,
 validation and reuse of a prebuilt Salmon index, Salmon quantification,
@@ -65,16 +65,43 @@ Integration will consume accepted terminal manifests rather than untracked
 paths into upstream work directories. No ChIP-seq or integrative result is
 implied by completion of an RNA-seq study.
 
+## RNA-seq atlas methodology
+
+The atlas consumes the accepted sample metadata, TPM matrices, QC summaries,
+and original DESeq2 results of all seven completed RNA-seq studies. Compatibility
+is gated on the common `Schistosoma_mansoni_SM_V10_WBPS19` identity, identical
+gene order, canonical gene identifiers, and biological-sample columns.
+
+Cross-study expression displays use `log2(TPM + 1)`. PCA uses up to the 2,000
+most variable genes followed by gene-wise standardization and singular-value
+decomposition. Pearson sample correlation uses the complete transformed shared
+gene universe. These are descriptive views; no pooled differential-expression
+model is fitted. Within-study DESeq2 log2 fold changes and adjusted p-values are
+copied without re-estimation and retain numerator/denominator orientation.
+Significance markers use each frozen study rule: adjusted p-value below 0.05
+and absolute log2 fold change of at least 1.
+
+Gene labels are derived from the frozen WBPS19 GFF3 and retain the canonical
+`Smp_*` identifier as the primary key. Functional descriptions, biotype,
+source accession, previous stable ID, and coordinates are carried as
+annotation metadata. Historical candidate IDs are resolved only when WBPS19
+provides one unambiguous current-gene mapping; ambiguous mappings are reported
+without selecting an alternative.
+
+The report includes an inventory, QC overview, global and within-study PCA,
+sample correlation, selected-gene expression and effect heatmaps, a searchable
+gene explorer, exportable SVGs, tables, and checksum provenance. Batch metadata
+are retained, but formal batch-effect assessment and corrected visualization
+matrices are deferred.
+
 ## Current boundary
 
 Repository initialization and metadata/reference curation are complete.
 `PRJNA602528` completed QC, Salmon quantification, tximport, terminal-manifest
 validation, persistence, and cleanup under its `IMPORT_ONLY` contract. Its
 temporal figures are descriptive and no DESeq2 inference was performed.
-`PRJNA597909` then completed the full native route for 20 paired-end samples,
-including four preregistered Wald contrasts under `~ condition`. Its public
-products include gene-level matrices, DE tables, PCA, heatmap, volcano plots,
-performance summaries, and a portable terminal bundle for later integration.
-ChIP-seq, RNA-seq/ChIP-seq integration, cross-study meta-analysis, atlas
-construction, coexpression, and candidate prioritization remain planned parts
-of the repository, but require separate preregistration before execution.
+The seven registered RNA-seq studies have completed their accepted project
+contracts. The descriptive RNA-seq atlas is now implemented from their
+versioned outputs. ChIP-seq, RNA-seq/ChIP-seq integration, cross-study
+inferential meta-analysis, coexpression, and candidate prioritization remain
+separate reviewed analyses.

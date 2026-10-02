@@ -288,6 +288,14 @@ class ProjectContracts(unittest.TestCase):
         self.assertFalse(cleanup["other_projects_touched"])
         self.assertFalse(cleanup["shared_resources_touched"])
 
+    def test_rnaseq_atlas_bundle_is_consistent(self) -> None:
+        validator_path = ROOT / "scripts/atlas/validate_rnaseq_atlas.py"
+        spec = importlib.util.spec_from_file_location("validate_rnaseq_atlas", validator_path)
+        module = importlib.util.module_from_spec(spec)
+        assert spec and spec.loader
+        spec.loader.exec_module(module)
+        self.assertEqual([], module.validate(ROOT))
+
     def test_prjna597909_execution_is_complete(self) -> None:
         state = json.loads(
             (ROOT / "provenance/PRJNA597909/execution_state.json").read_text(

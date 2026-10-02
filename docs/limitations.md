@@ -38,7 +38,12 @@
   that the run bypassed launcher-supplied JVM serialization settings by calling
   the Nextflow JAR directly. This incident remains part of the study audit
   trail, but it is not a current shared-NFS limitation.
-- No ChIP-seq application, cross-study meta-analysis, atlas, coexpression,
+- The RNA-seq atlas is descriptive. Its global PCA and correlation can reflect
+  both biology and study/protocol effects and must not be interpreted as formal
+  batch-effect estimates.
+- Batch metadata availability and interpretation are study-specific. Formal
+  cross-study batch assessment is deferred and no corrected matrix is
+  presented.
+- No ChIP-seq application, cross-study inferential meta-analysis, coexpression,
   candidate prioritization, or RNA-seq/ChIP-seq integration has been validated
-  by this repository yet. This describes the current validation state, not an
-  exclusion from the scientific scope.
+  by this repository yet.

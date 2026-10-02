@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "atlas_id": "smansoni_rnaseq_atlas_v1",
+  "title": "HelixForge-SMansoni RNA-seq Atlas",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "expression_display": "log2(TPM + 1)",
+  "pca_top_variable_genes": 2000,
+  "significance": {
+    "alpha": 0.05,
+    "absolute_log2_fold_change": 1.0
+  },
+  "selected_genes": "config/PRJEB32839/candidate_genes.txt",
+  "gene_annotations": "config/reference/gene_annotations_wbps19.tsv",
+  "studies": [
+    {
+      "id": "PRJNA602528",
+      "differential_expression": false,
+      "qc_table": "results/PRJNA602528/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJNA597909",
+      "differential_expression": true,
+      "qc_table": "results/PRJNA597909/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJEB14695",
+      "differential_expression": true,
+      "qc_table": "results/PRJEB14695/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJEB32839",
+      "differential_expression": true,
+      "qc_table": "results/PRJEB32839/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "E-MTAB-451",
+      "differential_expression": true,
+      "qc_table": "results/E-MTAB-451/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJEB3190",
+      "differential_expression": true,
+      "qc_table": "results/PRJEB3190/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "E-ERAD-478",
+      "differential_expression": true,
+      "qc_table": "results/E-ERAD-478/qc/qc_sample_summary.tsv"
+    }
+  ],
+  "statistical_scope": "descriptive_cross_study_with_per_study_differential_expression",
+  "batch_effect_assessment": "DEFERRED"
+}

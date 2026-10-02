@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = E_ERAD_478_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = RNASEQ_ATLAS_READY_FOR_REVIEW
 ```
 
 ## Relationship to HelixForge
@@ -162,6 +162,22 @@ indexes, and other reproducible intermediates are removed after acceptance.
 See [server execution](docs/server_execution.md) and the
 [server preparation report](docs/server_preparation_report.md) before staging
 any data.
+
+## RNA-seq atlas
+
+The first integrated RNA-seq atlas combines seven accepted studies as a
+descriptive, navigable report covering 219 biological samples, 470 technical
+runs, 9,914 shared genes, and 66 original per-study DESeq2 contrasts. It
+provides sample/QC inventory, global and within-study PCA, sample correlation,
+selected-gene expression and effect maps, a searchable gene explorer, SVG
+figures, machine-readable tables, and checksummed provenance. Canonical
+`Smp_*` identifiers are accompanied by WBPS19 functional descriptions and
+annotation provenance when available.
+
+Open [`results/atlas/rnaseq/atlas.html`](results/atlas/rnaseq/atlas.html) or see
+the [atlas contract and build instructions](analyses/atlas/README.md). The
+global views are exploratory: the atlas does not pool studies for inference or
+perform batch correction. Formal batch-effect assessment remains deferred.
 
 ## Repository structure
 
