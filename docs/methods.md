@@ -49,10 +49,9 @@ processing.
 
 `PRJNA294789` (Anderson et al.) will not be reprocessed quantitatively because
 its Roche 454, non-replicated design is not compatible with the replicated
-Illumina bulk atlas. `PRJNA395457` (Wang et al.) is single-cell evidence and
-will not be coerced into the bulk workflow. Their permissible annotation and
-marker roles are defined in
-[External RNA evidence and single-end study policy](external_rna_evidence_layers.md).
+Illumina bulk atlas. `PRJNA395457` (Wang et al.) is cellular evidence and
+will not be coerced into the bulk workflow. Neither study contributes bulk
+samples or differential-expression contrasts.
 
 ## ChIP-seq and integration methodology
 
