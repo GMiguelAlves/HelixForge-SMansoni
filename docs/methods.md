@@ -38,6 +38,21 @@ Study-specific conditions, contrasts, exclusions, and design limitations are
 kept under `config/<study>/` and `metadata/<study>/`. They are not promoted to
 generic HelixForge defaults.
 
+## Planned single-end and external RNA evidence
+
+`PRJNA312093` (Picard et al.) is the only currently selected single-end study
+for the primary bulk atlas. It will be processed against SM_V10/WBPS19 after
+the native HelixForge single-end path receives a released project pin and its
+isolated Slurm certification. Its stage/sex design, replicate mapping,
+fragment-length prior and within-stage contrasts must be frozen before data
+processing.
+
+`PRJNA294789` (Anderson et al.) will not be reprocessed quantitatively because
+its Roche 454, non-replicated design is not compatible with the replicated
+Illumina bulk atlas. `PRJNA395457` (Wang et al.) is cellular evidence and
+will not be coerced into the bulk workflow. Neither study contributes bulk
+samples or differential-expression contrasts.
+
 ## ChIP-seq and integration methodology
 
 This repository also owns the future *S. mansoni* ChIP-seq applications and
