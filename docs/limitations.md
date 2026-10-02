@@ -5,9 +5,13 @@
   heterogeneity must be modeled explicitly before any combined inference.
 - Historical protocol differences may be inseparable from biological study
   effects.
-- The native HelixForge v1 RNA-seq production path is certified for paired-end
-  libraries. Single-end support is a separate HelixForge feature and is not
-  assumed here.
+- The current accepted studies use the paired-end HelixForge path. Native
+  single-end Salmon support is implemented upstream but awaits isolated Slurm
+  certification and a released project pin before `PRJNA312093` is executed.
+  No existing paired-end study is reclassified or mixed with that dataset.
+- `PRJNA294789` is reserved for historical annotation evidence and
+  `PRJNA395457` for published cell-type markers. Neither is eligible for the
+  bulk Salmon/tximport/DESeq2 route under the current atlas design.
 - Statistical designs are study-specific. A contrast valid in one project is
   not automatically portable to another.
 - PRJNA602528 has one public library per time point. Its frozen execution stops
