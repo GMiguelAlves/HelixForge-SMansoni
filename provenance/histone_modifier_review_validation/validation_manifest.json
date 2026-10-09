@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "validation_date": "2026-10-09",
+  "reference": "Schistosoma mansoni SM_V10 / WormBase ParaSite WBPS19",
+  "candidate_count": 11,
+  "outcomes": {
+    "promote_core": 2,
+    "retain_review": 2,
+    "exclude_direct_panel": 7
+  },
+  "tools": {
+    "blastp": "2.12.0+ (local WSL installation extracted without system changes)",
+    "hmmscan": "HMMER 3.4",
+    "python": "3.12.3"
+  },
+  "parameters": {
+    "blast_database": "UniProtKB reviewed Homo sapiens proteins",
+    "blast_evalue": "1e-5",
+    "blast_max_target_seqs": 10,
+    "pfam_profiles": [
+      "PF00567",
+      "PF00628",
+      "PF00856",
+      "PF02146",
+      "PF02373",
+      "PF12796",
+      "PF13771",
+      "PF27704"
+    ]
+  },
+  "source_files": [
+    {
+      "name": "schistosoma_mansoni.PRJEA36577.WBPS19.protein.fa.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.protein.fa.gz",
+      "bytes": 3718349,
+      "sha256": "ed1a24822b058b5bfc73afcc03e6cc4b3ae25529c60db26ac49313ba94cfe1d2"
+    },
+    {
+      "name": "schistosoma_mansoni.PRJEA36577.WBPS19.orthologs.tsv.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/schistosoma_mansoni/PRJEA36577/schistosoma_mansoni.PRJEA36577.WBPS19.orthologs.tsv.gz",
+      "bytes": 37529366,
+      "sha256": "31f37b24e8a24bef46830a883cffe4dd88c28489f19eee83d8d9077ffad43e61"
+    },
+    {
+      "name": "UniProtKB reviewed Homo sapiens FASTA",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?compressed=true&format=fasta&query=(reviewed:true)%20AND%20(organism_id:9606)",
+      "bytes": 7508673,
+      "sha256": "dc8ef8cbf0fc1b857b3be9a559613533ec49824079fb057e31fdfcf578cb229a"
+    }
+  ],
+  "derived_evidence": [
+    {
+      "name": "review_add_wbps19.faa",
+      "bytes": 5922,
+      "sha256": "a25eb210b9889335c04334e81bb2f62c8e2a838e451254904a00a82a4f468f1e"
+    },
+    {
+      "name": "review_add_uniprot.tsv",
+      "bytes": 2158,
+      "sha256": "275bcdc6496c1a3402df3da29b8247ae1c4f75b1b3add19e0f6d7f361cbb6b88"
+    },
+    {
+      "name": "review_domains.domtblout",
+      "bytes": 3866,
+      "sha256": "d01fb393bae06aea6b76fe9f8a27c33ea9c5379449617358609bad148f1b3942"
+    },
+    {
+      "name": "review_add_human_swissprot_blastp.tsv",
+      "bytes": 3878,
+      "sha256": "da80ec367cd6a7bb97884364c8d341fb546825c0d5b3bd652ca968c7629fdaae"
+    }
+  ],
+  "result_table": "provenance/histone_modifier_review_validation/review_add_validation.tsv",
+  "interpretation_document": "docs/validacao_review_add_modificadores_histonas.md"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "gene_set_version": "2.0.0-frozen-p1",
+  "status": "FROZEN",
+  "frozen_on": "2026-10-09",
+  "reference": "Schistosoma mansoni SM_V10 / WormBase ParaSite WBPS19",
+  "principle": "Biological curation and identifier mapping status are independent fields.",
+  "inputs": {
+    "config/PRJEB32839/candidate_genes.txt": "d13e2f8dfc8c208edf995a906c3be52f106e16c955a292fb070e308e3d4c4ae2",
+    "config/reference/gene_annotations_wbps19.tsv": "c4c307af4526fa7071f1cdcaa59718ce930a386ea68daad88254bd4407ecf810",
+    "provenance/histone_modifier_review_validation/review_add_validation.tsv": "d94452e31c088ef0a194d79fda354c6bfca1c56148b42dbad2b6432e333fc43c",
+    "provenance/histone_modifier_review_validation/validation_manifest.json": "4c6e84daddf53050eccbeec6546ec27921363293305112012f78b9224a2d0201",
+    "provenance/histone_modifier_id_resolution/historical_id_resolution.tsv": "dc365e0ac64452d3de38f19084f06e36aa536d87441139338eb78d69c253b9e0",
+    "provenance/histone_modifier_id_resolution/validation_manifest.json": "dcb429fe7ee8b19dd3c8de19eaf030eac514a051ffe8b284eeb383900cf77fac"
+  },
+  "outputs": {
+    "config/candidates/histone_modifier_gene_set_v2.tsv": "db840956ffd2251cfe03f7ac9a264c49da753ff264598f16ec61a9d630b841bd",
+    "docs/conjunto_modificadores_histonas_v2.md": "024082a4510bd1f7fe098fe85241f84fc8000d0a513056347ce2416dfca33e9f"
+  },
+  "counts": {
+    "rows": 138,
+    "unique_input_genes": 126,
+    "unique_genes_by_scope_tier": {
+      "CORE_CURATED": 60,
+      "CORE_ADD": 38,
+      "REVIEW_ADD": 2,
+      "CONTEXT": 24,
+      "EXCLUDED_REVIEW": 7
+    },
+    "historical_mapping_associations": {
+      "EXACT_SM_V10": 48,
+      "UNIQUE_PREVIOUS_STABLE_ID": 12,
+      "RESOLVED_SPLIT_FUNCTIONAL_SUCCESSOR": 2,
+      "RESOLVED_BY_SEQUENCE_EXACT": 2,
+      "RESOLVED_BY_SEQUENCE_HIGH_CONFIDENCE": 1
+    }
+  },
+  "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6125318/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10726355/"
+  ]
+}

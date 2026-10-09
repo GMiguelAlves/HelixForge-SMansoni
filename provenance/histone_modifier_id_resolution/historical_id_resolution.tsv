@@ -1,0 +1,6 @@
+historical_id	sm_v10_gene_id	resolution_status	percent_identity	query_coverage_percent	evidence	notes
+Smp_161010	Smp_246410	RESOLVED_BY_SEQUENCE_HIGH_CONFIDENCE	98.637	99	BLASTP historical protein against WBPS19/SM_V10 proteins	Current SET-domain protein; best full-length successor.
+Smp_163470	Smp_246920	RESOLVED_BY_SEQUENCE_EXACT	100.000	100	BLASTP historical protein against WBPS19/SM_V10 proteins	Current bromodomain/PHD protein; exact sequence successor.
+Smp_180990	Smp_241580	RESOLVED_BY_SEQUENCE_EXACT	100.000	100	BLASTP historical protein against WBPS19/SM_V10 proteins	Exact sequence successor; the user-curated eraser class is preserved independently of the current name.
+Smp_147870	Smp_213920	RESOLVED_SPLIT_FUNCTIONAL_SUCCESSOR	99.725	99	Segmented BLASTP of historical protein against WBPS19/SM_V10 proteins	Residues 393-755 map to the JmjC successor Smp_213920; residues 1-389 map exactly to the PPM phosphatase Smp_213930 and are not used for the histone-eraser identity.
+Smp_137240	Smp_316180	RESOLVED_SPLIT_FUNCTIONAL_SUCCESSOR	92.105	100	Segmented BLASTP of historical protein against WBPS19/SM_V10 proteins	Residues 1-350 map to the JmjC successor Smp_316180; remaining fragments map to EGF-like models and are not used for the histone-eraser identity.

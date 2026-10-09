@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJNA551487",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjna551487_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJNA551487",
+  "contrasts": [
+    {
+      "id": "condition__adult_fpl64176_vs_adult_dmso",
+      "factor": "condition",
+      "numerator": "adult_fpl64176",
+      "denominator": "adult_dmso",
+      "description": "adult_fpl64176 versus adult_dmso",
+      "direction": "adult_fpl64176/adult_dmso"
+    }
+  ]
+}

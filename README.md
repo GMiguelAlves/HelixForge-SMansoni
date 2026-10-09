@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = E_ERAD_478_READY_FOR_REVIEW
+DATA_ANALYSIS_STATUS = P1_INPUTS_PREPARED_NOT_IN_ATLAS
 ```
 
 ## Relationship to HelixForge
@@ -34,6 +34,11 @@ design, metadata, and execution contracts are reviewed.
 | HelixForge commit | `5d4b3e696319db5cd7633472504964f1dc7c0434` |
 | Nextflow | `25.10.7` |
 | Java | `21` |
+
+For the pending P1 execution, the server template pins HelixForge commit
+`c5b96f4eebed86866f9ec91683d93219a81da12e` (merged PR #94), which contains
+the native single-end path and its reduced real-tool Slurm validation. The
+table above remains the historical pin for already accepted results.
 
 ## Reference
 
@@ -65,6 +70,20 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 5 | `E-MTAB-451` | 12 | 11 | Full RNA-seq completed; `PASS`; one technical-run pair aggregated before inference |
 | 6 | `PRJEB3190` | 20 | 20 | Full RNA-seq completed; `PASS`; seven-point schistosomulum time course |
 | 7 | `E-ERAD-478` | 120 | 60 | Full RNA-seq completed; `PASS`; two technical runs aggregated per biological sample |
+
+## Pending P1 input preparation
+
+Seven additional accessions are prepared on a separate contract and have not
+been incorporated into the atlas: `PRJNA312093`, `PRJNA494090`, `PRJNA704646`,
+`PRJNA1150591`, `PRJNA1177852`, `PRJNA551487` and `PRJNA428470`. Their run,
+sample, configuration, DE decision and frozen ENA source are indexed in
+[`metadata/p1_pending_manifest.tsv`](metadata/p1_pending_manifest.tsv).
+
+This branch prepares inputs only. It does not add atlas pages or biological
+results. `PRJNA704646` and `PRJNA1177852` are quantification-only because their
+public designs do not provide independent biological replication for DE.
+`PRJNA312093` is the first biological single-end gate and retains a provisional,
+explicit fragment prior for sensitivity review before atlas acceptance.
 
 Every study exposes the same compact QC interface at
 `results/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed

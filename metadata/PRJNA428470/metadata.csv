@@ -1,0 +1,7 @@
+dataset,sample_id,file_prefix,run_accession,condition,stage,tissue,sex,infection_mode,treatment,time_hours,batch,replicate,biosample,library_name,technical_unit,library_layout,fragment_length_mean,fragment_length_sd
+PRJNA428470,female_adult_5azac_r1,female_adult_5azac_r1,SRR6490480,female_adult_5azac,adult,whole_organism,female,not_declared,5_azacitidine,not_applicable,not_declared,1,SAMN08291406,5-AzaC1,run_1,paired,,
+PRJNA428470,female_adult_5azac_r2,female_adult_5azac_r2,SRR6490485,female_adult_5azac,adult,whole_organism,female,not_declared,5_azacitidine,not_applicable,not_declared,2,SAMN08291485,5-AzaC2,run_1,paired,,
+PRJNA428470,female_adult_5azac_r3,female_adult_5azac_r3,SRR6490484,female_adult_5azac,adult,whole_organism,female,not_declared,5_azacitidine,not_applicable,not_declared,3,SAMN08291486,5-AzaC3,run_1,paired,,
+PRJNA428470,female_adult_control_r1,female_adult_control_r1,SRR6490483,female_adult_control,adult,whole_organism,female,not_declared,control,not_applicable,not_declared,1,SAMN08291589,Control1,run_1,paired,,
+PRJNA428470,female_adult_control_r2,female_adult_control_r2,SRR6490482,female_adult_control,adult,whole_organism,female,not_declared,control,not_applicable,not_declared,2,SAMN08291559,Control2,run_1,paired,,
+PRJNA428470,female_adult_control_r3,female_adult_control_r3,SRR6490481,female_adult_control,adult,whole_organism,female,not_declared,control,not_applicable,not_declared,3,SAMN08291590,Control3,run_1,paired,,

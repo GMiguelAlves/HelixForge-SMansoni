@@ -1,0 +1,9 @@
+dataset	sample_id	source_sample_name	biosample	condition	stage	tissue	sex	infection_mode	treatment	time_hours	batch	replicate	technical_runs
+PRJNA1177852	mclz_time_0h	MCLZ_0hr	SAMN44455714	mclz_time_0h	adult	whole_organism	mixed	not_declared	meclonazepam	0	not_declared	1	1
+PRJNA1177852	mclz_time_0p25h	MCLZ_15min	SAMN44455715	mclz_time_0p25h	adult	whole_organism	mixed	not_declared	meclonazepam	0.25	not_declared	1	1
+PRJNA1177852	mclz_time_12h	MCLZ_12hr	SAMN44455719	mclz_time_12h	adult	whole_organism	mixed	not_declared	meclonazepam	12	not_declared	1	1
+PRJNA1177852	mclz_time_1h	MCLZ_1hr	SAMN44455716	mclz_time_1h	adult	whole_organism	mixed	not_declared	meclonazepam	1	not_declared	1	1
+PRJNA1177852	mclz_time_24h	MCLZ_24hr	SAMN44455720	mclz_time_24h	adult	whole_organism	mixed	not_declared	meclonazepam	24	not_declared	1	1
+PRJNA1177852	mclz_time_3h	MCLZ_3hr	SAMN44455717	mclz_time_3h	adult	whole_organism	mixed	not_declared	meclonazepam	3	not_declared	1	1
+PRJNA1177852	mclz_time_48h	MCLZ_48hr	SAMN44455721	mclz_time_48h	adult	whole_organism	mixed	not_declared	meclonazepam	48	not_declared	1	1
+PRJNA1177852	mclz_time_6h	MCLZ_6hr	SAMN44455718	mclz_time_6h	adult	whole_organism	mixed	not_declared	meclonazepam	6	not_declared	1	1

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA551487",
+  "prepared_on": "2026-10-09",
+  "reference": "Schistosoma mansoni SM_V10 / WormBase ParaSite WBPS19",
+  "ena_query_url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA551487&result=read_run&fields=study_accession,secondary_study_accession,run_accession,experiment_accession,sample_accession,secondary_sample_accession,sample_alias,sample_title,sample_description,experiment_title,library_name,library_layout,library_strategy,library_source,library_selection,instrument_platform,instrument_model,fastq_ftp,fastq_md5,fastq_bytes,read_count,base_count,first_public,tax_id,scientific_name&format=tsv&download=false",
+  "source_snapshot": {
+    "path": "provenance/PRJNA551487/source_snapshots/ena_read_run.tsv",
+    "sha256": "9117a41160827eb7acc260b6eb16948fb6bcf1ec16bf6a4529969abfa6ceb919",
+    "bytes": 6818
+  },
+  "selection": {
+    "library_strategy": "RNA-Seq",
+    "organism_prefix": "Schistosoma mansoni",
+    "fastq_required": true,
+    "selected_runs": 10,
+    "excluded_rows": 0
+  },
+  "logical_samples": 10,
+  "library_layout": "PAIRED",
+  "raw_fastq_bytes": 11048557236,
+  "raw_fastq_decimal_gb": 11.049,
+  "run_mode": "full",
+  "differential_expression": "ENABLED"
+}
