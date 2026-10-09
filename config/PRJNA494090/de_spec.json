@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJNA494090",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjna494090_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJNA494090",
+  "contrasts": [
+    {
+      "id": "condition__p6_pzq_selected_vs_p6_control",
+      "factor": "condition",
+      "numerator": "p6_pzq_selected",
+      "denominator": "p6_control",
+      "description": "p6_pzq_selected versus p6_control",
+      "direction": "p6_pzq_selected/p6_control"
+    },
+    {
+      "id": "condition__p7_pzq_selected_vs_p7_control",
+      "factor": "condition",
+      "numerator": "p7_pzq_selected",
+      "denominator": "p7_control",
+      "description": "p7_pzq_selected versus p7_control",
+      "direction": "p7_pzq_selected/p7_control"
+    },
+    {
+      "id": "condition__p8_pzq_selected_vs_p8_control",
+      "factor": "condition",
+      "numerator": "p8_pzq_selected",
+      "denominator": "p8_control",
+      "description": "p8_pzq_selected versus p8_control",
+      "direction": "p8_pzq_selected/p8_control"
+    }
+  ]
+}

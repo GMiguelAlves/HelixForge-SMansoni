@@ -10,21 +10,27 @@ certified_python=$(command -v python3)
 [[ -x "$certified_python" ]] || { echo "Certified python3 not found" >&2; exit 2; }
 python3 -c 'import jsonschema, sys; import importlib.metadata as metadata; print("[OK] python=%s jsonschema=%s" % (sys.executable, metadata.version("jsonschema")))'
 project=${1:?usage: run_study.sh PROJECT}
-case "$project" in
-  PRJEB32839|PRJEB14695|PRJNA597909) mode=full ;;
-  PRJNA602528) mode=import ;;
-  *) echo "Unsupported project: $project" >&2; exit 2 ;;
-esac
+config="$HF_PACKAGE_ROOT/config/$project/pipeline_config.sh"
+[[ -s "$config" ]] || { echo "Study config not found: $config" >&2; exit 2; }
 current=$(git -c safe.directory="$HF_HELIXFORGE_ROOT" -C "$HF_HELIXFORGE_ROOT" rev-parse HEAD)
 [[ "$current" == "$HF_HELIXFORGE_COMMIT" ]] || { echo "HelixForge commit mismatch: $current" >&2; exit 2; }
-nextflow_bin=${HF_NEXTFLOW_BIN:-$HF_HELIXFORGE_ROOT/nextflow}
-command -v "$nextflow_bin" >/dev/null 2>&1 || [[ -x "$nextflow_bin" ]]
-config="$HF_PACKAGE_ROOT/config/$project/pipeline_config.sh"
-outdir="${HF_PROJECT_RESULTS_ROOT:-$HF_RESULTS_ROOT/$project}"
-# Load only the tracked study settings needed to bind the immutable external
-# index. Nextflow remains responsible for all scientific execution.
+# Pending P1 studies freeze their execution mode in the tracked settings.
+# Historical studies retain the established fallback for compatibility.
 # shellcheck disable=SC1090
 source "$config"
+if [[ -n "${HF_RNASEQ_RUN_MODE:-}" ]]; then
+  mode=${HF_RNASEQ_RUN_MODE,,}
+else
+  case "$project" in
+    PRJEB32839|PRJEB14695|PRJNA597909) mode=full ;;
+    PRJNA602528) mode=import ;;
+    *) echo "Study does not declare HF_RNASEQ_RUN_MODE: $project" >&2; exit 2 ;;
+  esac
+fi
+[[ "$mode" == "full" || "$mode" == "import" ]] || { echo "Unsupported RNA-seq run mode for $project: $mode" >&2; exit 2; }
+nextflow_bin=${HF_NEXTFLOW_BIN:-$HF_HELIXFORGE_ROOT/nextflow}
+command -v "$nextflow_bin" >/dev/null 2>&1 || [[ -x "$nextflow_bin" ]]
+outdir="${HF_PROJECT_RESULTS_ROOT:-$HF_RESULTS_ROOT/$project}"
 : "${SALMON_INDEX_DIR:?study config must define SALMON_INDEX_DIR}"
 index_manifest="$HF_PACKAGE_ROOT/provenance/reference/salmon_index_manifest.json"
 [[ -d "$SALMON_INDEX_DIR" ]] || { echo "Salmon index not found: $SALMON_INDEX_DIR" >&2; exit 2; }

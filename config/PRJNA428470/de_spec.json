@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJNA428470",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjna428470_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJNA428470",
+  "contrasts": [
+    {
+      "id": "condition__female_adult_5azac_vs_female_adult_control",
+      "factor": "condition",
+      "numerator": "female_adult_5azac",
+      "denominator": "female_adult_control",
+      "description": "female_adult_5azac versus female_adult_control",
+      "direction": "female_adult_5azac/female_adult_control"
+    }
+  ]
+}

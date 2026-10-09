@@ -1,0 +1,8 @@
+study	priority	preparation_status	run_mode	library_layout	runs	biological_samples	raw_fastq_bytes	differential_expression	metadata_path	provenance_path
+PRJNA312093	P1	READY_FOR_SERVER_PREFLIGHT	full	SINGLE	20	20	45198516186	ENABLED	metadata/PRJNA312093/metadata.csv	provenance/PRJNA312093/input_manifest.json
+PRJNA494090	P1	READY_FOR_SERVER_PREFLIGHT	full	PAIRED	24	24	117169899587	ENABLED	metadata/PRJNA494090/metadata.csv	provenance/PRJNA494090/input_manifest.json
+PRJNA704646	P1	READY_FOR_SERVER_PREFLIGHT	import	PAIRED	24	8	101148605301	BLOCKED	metadata/PRJNA704646/metadata.csv	provenance/PRJNA704646/input_manifest.json
+PRJNA1150591	P1	READY_FOR_SERVER_PREFLIGHT	full	PAIRED	15	15	24042760058	ENABLED	metadata/PRJNA1150591/metadata.csv	provenance/PRJNA1150591/input_manifest.json
+PRJNA1177852	P1	READY_FOR_SERVER_PREFLIGHT	import	PAIRED	8	8	12957610715	BLOCKED	metadata/PRJNA1177852/metadata.csv	provenance/PRJNA1177852/input_manifest.json
+PRJNA551487	P1	READY_FOR_SERVER_PREFLIGHT	full	PAIRED	10	10	11048557236	ENABLED	metadata/PRJNA551487/metadata.csv	provenance/PRJNA551487/input_manifest.json
+PRJNA428470	P1	READY_FOR_SERVER_PREFLIGHT	full	PAIRED	6	6	40974173468	ENABLED	metadata/PRJNA428470/metadata.csv	provenance/PRJNA428470/input_manifest.json
