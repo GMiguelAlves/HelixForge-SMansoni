@@ -35,10 +35,12 @@ design, metadata, and execution contracts are reviewed.
 | Nextflow | `25.10.7` |
 | Java | `21` |
 
-For the pending P1 execution, the server template pins HelixForge commit
-`c5b96f4eebed86866f9ec91683d93219a81da12e` (merged PR #94), which contains
-the native single-end path and its reduced real-tool Slurm validation. The
-table above remains the historical pin for already accepted results.
+For the pending P1 execution, the server template pins HelixForge
+[`v1.1.0`](https://github.com/GMiguelAlves/HelixForge/tree/v1.1.0),
+commit `062001ceb46d8a25c2415823b97d0e310658f8c0`. This release contains
+the native single-end path and its reduced real-tool synthetic Slurm
+validation; each biological single-end study still needs review. The table
+above remains the historical pin for already accepted results.
 
 ## Reference
 
