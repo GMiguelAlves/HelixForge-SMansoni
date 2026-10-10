@@ -35,10 +35,10 @@ proveniência de cada estudo.
 - `provenance/<ACESSO>/source_snapshots/ena_read_run.tsv`: resposta ENA bruta.
 - `provenance/<ACESSO>/input_manifest.json`: hash, seleção e volume bruto.
 
-O script `scripts/prepare_p1_studies.py` regenera os artefatos derivados a
-partir dos snapshots. `scripts/validate/validate_p1_preparation.py` verifica
-contagens, layouts, integridade do contrato de download, replicação dos
-contrastes e hashes de origem.
+Os artefatos derivados e snapshots estão congelados. Não há gerador P1 ativo
+no repositório; qualquer regeneração requer nova curadoria explícita. Os testes
+em `tests/test_p1_preparation.py` verificam contagens, layouts, contrato de
+download, replicação dos contrastes e hashes de origem.
 
 ## Single-end
 
