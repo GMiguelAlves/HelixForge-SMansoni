@@ -8,6 +8,7 @@ download_parse_manifest_row() {
   mapfile -d '' -t fields < <(
     awk -F '\t' -v row="$((task + 1))" '
       NR == 1 {
+        sub(/\r$/, "", $NF)
         if ($1 != "dataset" || $2 != "sample_id" || $3 != "run_accession" ||
             $9 != "library_layout" || $10 != "fastq_1_url" ||
             $11 != "fastq_2_url" || $12 != "fastq_1_md5" ||
@@ -15,6 +16,7 @@ download_parse_manifest_row() {
             $15 != "fastq_2_bytes") exit 2
       }
       NR == row {
+        sub(/\r$/, "", $NF)
         if (NF < 15) exit 3
         for (i = 1; i <= 15; i++) printf "%s%c", $i, 0
         exit

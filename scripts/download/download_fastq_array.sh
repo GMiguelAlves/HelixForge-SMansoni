@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 : "${HF_DATA_ROOT:?source config/server.env}"
+: "${HF_PACKAGE_ROOT:?source config/server.env}"
 manifest=${1:?usage: download_fastq_array.sh metadata/PROJECT/runs.tsv}
 task=${SLURM_ARRAY_TASK_ID:?submit as a Slurm array}
 # shellcheck source=parse_manifest_row.sh
-source "$(dirname "${BASH_SOURCE[0]}")/parse_manifest_row.sh"
+source "$HF_PACKAGE_ROOT/scripts/download/parse_manifest_row.sh"
 download_parse_manifest_row "$manifest" "$task"
 [[ "$layout" == "PAIRED" || "$layout" == "SINGLE" ]] || { echo "$run has unsupported layout: $layout" >&2; exit 2; }
 [[ -n "$url1" && -n "$md51" && -n "$bytes1" ]] || { echo "$run has incomplete R1 metadata" >&2; exit 2; }
