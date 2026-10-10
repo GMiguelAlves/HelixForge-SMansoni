@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a registered study's downloaded paired-end FASTQs."""
+"""Validate a registered study's downloaded single- or paired-end FASTQs."""
 
 from __future__ import annotations
 
@@ -45,15 +45,24 @@ def main() -> int:
     errors: list[str] = []
     results: list[dict[str, object]] = []
     expected_names: set[str] = set()
+    layouts = {row["library_layout"] for row in rows}
+    layout = next(iter(layouts)) if len(layouts) == 1 else "MIXED"
+    if layout not in {"SINGLE", "PAIRED"}:
+        errors.append(f"expected one supported library layout, found: {sorted(layouts)}")
     accessions = [row["run_accession"] for row in rows]
     if len(accessions) != len(set(accessions)):
         errors.append("duplicate run accessions in manifest")
 
     for row in rows:
         run = row["run_accession"]
-        if row["library_layout"] != "PAIRED":
-            errors.append(f"{run}: expected PAIRED layout")
-        for mate in ("1", "2"):
+        row_layout = row["library_layout"]
+        if row_layout not in {"SINGLE", "PAIRED"}:
+            errors.append(f"{run}: unsupported layout {row_layout}")
+            continue
+        if row_layout == "SINGLE" and any(row[f"fastq_2_{field}"] for field in ("url", "md5", "bytes")):
+            errors.append(f"{run}: single-end run declares R2 metadata")
+        mates = ("1",) if row_layout == "SINGLE" else ("1", "2")
+        for mate in mates:
             filename = f"{run}_{mate}.fastq.gz"
             expected_names.add(filename)
             path = raw_dir / filename
@@ -117,10 +126,14 @@ def main() -> int:
         "status": "PASS" if not errors else "FAIL",
         "runs": len(rows),
         "samples": len({row["sample_id"] for row in rows}),
-        "layout": "PAIRED",
+        "layout": layout,
         "fastq_files_expected": len(expected_names),
         "fastq_files_observed": len(observed_names),
-        "pairing": "PASS" if not missing and len(expected_names) == 2 * len(rows) else "FAIL",
+        "pairing": (
+            "NOT_APPLICABLE" if layout == "SINGLE"
+            else "PASS" if not missing and len(expected_names) == 2 * len(rows)
+            else "FAIL"
+        ),
         "r1_total_bytes": r1_bytes,
         "r2_total_bytes": r2_bytes,
         "compressed_total_bytes": r1_bytes + r2_bytes,
