@@ -13,6 +13,9 @@ and carry `de_spec.blocked.json`. P1 copies its dedicated template into the
 private, ignored `server.env` and verifies the HelixForge `v1.1.0` tag and
 commit against the local execution plan. The release includes the native
 single-end path and its reduced real-tool Slurm validation.
+At the validated site, P1 uses existing Conda environments through
+`HF_CERTIFIED_RUNTIME_PATH` with the `slurm` profile; it does not ask Nextflow
+to solve new Conda environments or use Apptainer.
 The historical `server.env.template` remains pinned to v1.0.2 for
 reproducibility. This evidence does not replace the biological single-end gate
 for `PRJNA312093`.
