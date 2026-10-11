@@ -15,8 +15,13 @@
   "differential_expression_execution": "PASS",
   "terminal_manifest": "PASS",
   "fragment_prior_sensitivity": "PASS",
-  "biological_replicate_concordance": "REVIEW",
-  "study_promotion": "HOLD",
-  "atlas_inclusion": "HOLD",
-  "status": "REVIEW"
+  "biological_replicate_concordance": "REVIEW_ADULT_PAIR",
+  "original_20_sample_fit": "AUDIT_ONLY",
+  "nonadult_16_sample_refit": "PASS_WITH_LIMITATIONS",
+  "nonadult_replicate_concordance": "PASS",
+  "nonadult_gene_set_stability": "LIMITATION",
+  "adult_female_vs_male": "NOT_EVALUABLE",
+  "study_promotion": "PASS_WITH_LIMITATIONS_NONADULT_ONLY",
+  "atlas_inclusion": "PENDING_NONADULT_WIRING",
+  "status": "PASS_WITH_LIMITATIONS"
 }

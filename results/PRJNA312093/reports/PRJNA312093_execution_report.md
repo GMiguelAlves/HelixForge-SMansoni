@@ -12,8 +12,9 @@ with the SM_V10/WBPS19 reference and a validated prebuilt Salmon index.
 
 The run completed 161/161 scientific tasks. All 20 input FASTQs passed MD5
 and gzip checks. The terminal manifest passed schema, semantic and original
-filesystem validation. The result is technically complete, but **biological
-promotion remains on hold**.
+filesystem validation. This original 20-sample result is technically complete,
+but its contrast tables are retained **for audit only** following the separate
+non-adult refit described below.
 
 ## Prespecified technical QC
 
@@ -51,19 +52,45 @@ The published run accessions, frozen mapping, downloaded file checksums and
 Salmon input commands were checked; they do not show an internal file swap.
 They cannot establish the original biological identity of the libraries.
 
-No automatic relabelling or sample exclusion was performed. The adult
-female-versus-male contrast is especially sensitive to this unresolved
-discordance. Other contrast tables are provided for audit, not promoted as
-accepted atlas evidence. The next review should examine independent
+No automatic relabelling or sample exclusion was performed in the original
+workflow. The adult female-versus-male contrast is `NOT_EVALUABLE`. Original
+20-sample contrast tables are provided for audit, not promoted as accepted
+atlas evidence. The next adult-specific review should examine independent
 sex/stage markers and original sample provenance without redefining labels
 from the PCA alone.
+
+## Non-adult refit and scientific decision
+
+A separate Slurm DESeq2 1.42.1 refit used the validated import counts and
+sample table, retaining 16 non-adult samples. All four adult libraries were
+omitted from this refit only; original scientific settings and outputs were
+preserved. Four female-versus-male stage contrasts were computed over 9,501
+filtered genes. The eight non-adult replicate pairs had VST correlations
+0.945–0.994. No genes significant in both fits reversed effect direction.
+
+| Stage | Original significant | Refit significant | Retained original | Set Jaccard |
+| --- | ---: | ---: | ---: | ---: |
+| Cercaria | 3,692 | 3,878 | 99.57% | 0.944 |
+| Schistosomulum 1 | 147 | 342 | 91.84% | 0.381 |
+| Schistosomulum 2 | 795 | 1,115 | 97.74% | 0.686 |
+| Schistosomulum 3 | 207 | 454 | 94.69% | 0.422 |
+
+The significant-gene sets, particularly stages 1 and 3, are sensitive to the
+model scope. Therefore the four new non-adult contrasts are
+`PASS_WITH_LIMITATIONS`, not interchangeable with the original 20-sample
+tables. See [the refit contract](../reanalysis/nonadult_16/README.md) and
+[comparison metrics](../reanalysis/nonadult_16/comparison_to_original.tsv).
+The atlas has not yet been rewired to this supplement and must not ingest the
+original tables as accepted inferential evidence.
 
 ```ini
 WORKFLOW_EXECUTION = PASS
 FASTQ_INTEGRITY = PASS
 TECHNICAL_QC = PASS
 FRAGMENT_PRIOR_SENSITIVITY = PASS
-BIOLOGICAL_REPLICATE_CONCORDANCE = REVIEW
-STUDY_PROMOTION = HOLD
-ATLAS_INCLUSION = HOLD
+ADULT_REPLICATE_CONCORDANCE = REVIEW
+ORIGINAL_20_SAMPLE_FIT = AUDIT_ONLY
+NONADULT_16_SAMPLE_REFIT = PASS_WITH_LIMITATIONS
+ADULT_FEMALE_VS_MALE = NOT_EVALUABLE
+ATLAS_INCLUSION = PENDING_NONADULT_WIRING
 ```
