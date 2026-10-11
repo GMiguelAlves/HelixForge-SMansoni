@@ -3,6 +3,7 @@ from __future__ import annotations
 import unittest
 import json
 import hashlib
+import csv
 from pathlib import Path
 
 
@@ -77,13 +78,37 @@ class PublicResultsContract(unittest.TestCase):
             )
         self.assertEqual([], offenders)
 
-    def test_prjna312093_remains_on_biological_hold(self) -> None:
+    def test_prjna312093_nonadult_refit_is_the_only_promoted_de(self) -> None:
         root = RESULTS / "PRJNA312093"
         gate = json.loads((root / "reports/final_validation.json").read_text(encoding="utf-8"))
         self.assertEqual("PASS", gate["technical_qc"])
-        self.assertEqual("REVIEW", gate["biological_replicate_concordance"])
-        self.assertEqual("HOLD", gate["study_promotion"])
-        self.assertEqual("HOLD", gate["atlas_inclusion"])
+        self.assertEqual("REVIEW_ADULT_PAIR", gate["biological_replicate_concordance"])
+        self.assertEqual("AUDIT_ONLY", gate["original_20_sample_fit"])
+        self.assertEqual("PASS_WITH_LIMITATIONS", gate["nonadult_16_sample_refit"])
+        self.assertEqual("NOT_EVALUABLE", gate["adult_female_vs_male"])
+        self.assertEqual("PENDING_NONADULT_WIRING", gate["atlas_inclusion"])
+        refit = root / "reanalysis/nonadult_16"
+        decision = json.loads((refit / "decision.json").read_text(encoding="utf-8"))
+        self.assertEqual("PASS_WITH_LIMITATIONS", decision["status"])
+        self.assertEqual(16, decision["included_samples"])
+        self.assertEqual(4, decision["excluded_adult_samples"])
+        self.assertEqual("AUDIT_ONLY", decision["original_20_sample_contrasts"])
+        self.assertEqual("NOT_EVALUABLE", decision["adult_female_vs_male"])
+        self.assertEqual(4, len(decision["accepted_contrasts"]))
+        for relative in decision["accepted_contrasts"]:
+            self.assertNotIn("condition__adult_", relative)
+            with (refit / relative).open(encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle, delimiter="\t"))
+            self.assertEqual(9501, len(rows), relative)
+            self.assertTrue({"gene_id", "log2FoldChange", "padj"}.issubset(rows[0]), relative)
+        with (refit / "included_samples.tsv").open(encoding="utf-8", newline="") as handle:
+            included = list(csv.DictReader(handle, delimiter="\t"))
+        with (refit / "excluded_adults.tsv").open(encoding="utf-8", newline="") as handle:
+            excluded = list(csv.DictReader(handle, delimiter="\t"))
+        self.assertEqual(16, len(included))
+        self.assertEqual(4, len(excluded))
+        self.assertTrue(all(row["stage"] != "adult" for row in included))
+        self.assertTrue(all(row["stage"] == "adult" for row in excluded))
         self.assertTrue((root / "reports/PRJNA312093_multiqc.html").is_file())
         self.assertFalse((root / "differential_expression/dds_condition.rds").exists())
 

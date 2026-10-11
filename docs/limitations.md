@@ -8,11 +8,14 @@
 - The previously accepted studies use the paired-end HelixForge path.
   `PRJNA312093` completed the released `v1.1.0` single-end path on Slurm,
   including a fragment-prior sensitivity check. Technical execution passed,
-  but biological promotion and atlas inclusion remain `HOLD`: the two
-  adult-male-labelled replicates are discordant despite passing file integrity
-  and technical QC. Their identity must be reviewed before interpreting the
-  adult sex contrast or combining this study with accepted evidence. No
-  existing paired-end study is reclassified or mixed with this dataset.
+  but the two adult-male-labelled replicates are discordant despite passing
+  file integrity and technical QC. The adult sex contrast is `NOT_EVALUABLE`.
+  A separate 16-sample non-adult refit supports four sex contrasts with
+  `PASS_WITH_LIMITATIONS`: effect directions are stable, while significant-
+  gene sets change, particularly in schistosomulum stages 1 and 3. The atlas
+  must consume those refit tables explicitly before using Picard evidence;
+  the original 20-sample contrasts are audit-only. No existing paired-end
+  study is reclassified or mixed with this dataset.
 - `PRJNA294789` is reserved for historical annotation evidence and
   `PRJNA395457` for published cell-type markers. Neither is eligible for the
   bulk Salmon/tximport/DESeq2 route under the current atlas design.

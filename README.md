@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = P1_PRJNA312093_TECHNICAL_PASS_BIOLOGICAL_HOLD
+DATA_ANALYSIS_STATUS = P1_PRJNA312093_NONADULT_PASS_WITH_LIMITATIONS
 ```
 
 ## Relationship to HelixForge
@@ -84,10 +84,13 @@ configuration, DE decision and frozen ENA source are indexed in
 `PRJNA312093` completed the native single-end path under HelixForge `v1.1.0`:
 161/161 tasks and 20/20 technical QC checks passed, and the prespecified
 fragment-prior sensitivity check passed. Its biological promotion remains
-`HOLD` because the two adult-male replicates are discordant. The compact
-outputs and review are published under
-[`results/PRJNA312093/`](results/PRJNA312093/), explicitly **not** as
-accepted atlas evidence. The other P1 accessions retain their frozen input
+`NOT_EVALUABLE` for the adult contrast because the two adult-male replicates
+are discordant. A separate 16-sample DESeq2 refit passed replicate and effect-
+direction checks for four non-adult sex contrasts, with gene-set stability
+limitations. The compact outputs and decision are published under
+[`results/PRJNA312093/`](results/PRJNA312093/). The original 20-sample
+contrast tables remain audit-only; atlas wiring to the four refit tables is
+pending. The other P1 accessions retain their frozen input
 preparation and require independent execution/review. `PRJNA704646` and
 `PRJNA1177852` are quantification-only because their public designs do not
 provide independent biological replication for DE.
