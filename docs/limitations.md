@@ -5,10 +5,14 @@
   heterogeneity must be modeled explicitly before any combined inference.
 - Historical protocol differences may be inseparable from biological study
   effects.
-- The current accepted studies use the paired-end HelixForge path. Native
-  single-end Salmon support is implemented upstream but awaits isolated Slurm
-  certification and a released project pin before `PRJNA312093` is executed.
-  No existing paired-end study is reclassified or mixed with that dataset.
+- The previously accepted studies use the paired-end HelixForge path.
+  `PRJNA312093` completed the released `v1.1.0` single-end path on Slurm,
+  including a fragment-prior sensitivity check. Technical execution passed,
+  but biological promotion and atlas inclusion remain `HOLD`: the two
+  adult-male-labelled replicates are discordant despite passing file integrity
+  and technical QC. Their identity must be reviewed before interpreting the
+  adult sex contrast or combining this study with accepted evidence. No
+  existing paired-end study is reclassified or mixed with this dataset.
 - `PRJNA294789` is reserved for historical annotation evidence and
   `PRJNA395457` for published cell-type markers. Neither is eligible for the
   bulk Salmon/tximport/DESeq2 route under the current atlas design.

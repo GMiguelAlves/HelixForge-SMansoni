@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA312093",
+  "phase": "COMPLETE_WITH_BIOLOGICAL_REVIEW",
+  "classification": "REVIEW",
+  "helixforge_release": "v1.1.0",
+  "helixforge_commit": "062001ceb46d8a25c2415823b97d0e310658f8c0",
+  "project_commit": "5f87581ad0653a9f94689bbbb6525bb2f20e28c6",
+  "nextflow_version": "25.10.7",
+  "java_version": "21",
+  "salmon_version": "1.10.3",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "analysis_mode": "full",
+  "benchmark": false,
+  "layout": "SINGLE",
+  "runs": 20,
+  "biological_samples": 20,
+  "design": {
+    "formula": "~ condition",
+    "frozen_fragment_prior_mean": 200,
+    "frozen_fragment_prior_sd": 80,
+    "sensitivity_fragment_prior_mean": 250,
+    "sensitivity_fragment_prior_sd": 80
+  },
+  "workflow": {
+    "state": "COMPLETE",
+    "processes_completed": 161,
+    "processes_failed": 0,
+    "max_concurrent_jobs": 10,
+    "genes_imported": 9914,
+    "contrasts": 5
+  },
+  "quality_control": {
+    "technical_status": "PASS",
+    "samples_pass": 20,
+    "samples_review": 0,
+    "biological_replicate_concordance": "REVIEW"
+  },
+  "study_promotion": "HOLD",
+  "atlas_inclusion": "HOLD",
+  "private_audit": "preserved outside Git"
+}

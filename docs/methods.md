@@ -38,14 +38,15 @@ Study-specific conditions, contrasts, exclusions, and design limitations are
 kept under `config/<study>/` and `metadata/<study>/`. They are not promoted to
 generic HelixForge defaults.
 
-## Planned single-end and external RNA evidence
+## Single-end application and external RNA evidence
 
 `PRJNA312093` (Picard et al.) is the only currently selected single-end study
-for the primary bulk atlas. It will be processed against SM_V10/WBPS19 after
-the native HelixForge single-end path receives a released project pin and its
-isolated Slurm certification. Its stage/sex design, replicate mapping,
-fragment-length prior and within-stage contrasts must be frozen before data
-processing.
+for the primary bulk atlas. Its stage/sex design, replicate mapping, primary
+200/80 fragment-length prior and five within-stage contrasts were frozen
+before the HelixForge `v1.1.0` Slurm execution. The native route and the
+prespecified 250/80 sensitivity comparison completed. Technical QC passed,
+but the adult-male replicate discordance leaves study promotion and atlas
+inclusion on hold; the public tables are provisional until biological review.
 
 `PRJNA294789` (Anderson et al.) will not be reprocessed quantitatively because
 its Roche 454, non-replicated design is not compatible with the replicated

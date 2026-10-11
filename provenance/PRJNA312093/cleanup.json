@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA312093",
+  "status": "PASS",
+  "preserved": [
+    "complete primary results in private persistent storage",
+    "separate fragment-prior sensitivity archive",
+    "compact public results and biological review",
+    "terminal manifest and audit checksums"
+  ],
+  "removed": [
+    "study-specific raw FASTQs",
+    "study-specific trimmed FASTQs and Nextflow workdir",
+    "reproducible scratch intermediates"
+  ],
+  "scratch_bytes_recovered": 220545067156,
+  "other_projects_touched": false,
+  "shared_resources_touched": false
+}

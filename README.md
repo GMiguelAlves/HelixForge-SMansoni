@@ -6,7 +6,7 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = P1_INPUTS_PREPARED_NOT_IN_ATLAS
+DATA_ANALYSIS_STATUS = P1_PRJNA312093_TECHNICAL_PASS_BIOLOGICAL_HOLD
 ```
 
 ## Relationship to HelixForge
@@ -35,7 +35,7 @@ design, metadata, and execution contracts are reviewed.
 | Nextflow | `25.10.7` |
 | Java | `21` |
 
-For the pending P1 execution, the server template pins HelixForge
+For the P1 execution, the server template pins HelixForge
 [`v1.1.0`](https://github.com/GMiguelAlves/HelixForge/tree/v1.1.0),
 commit `062001ceb46d8a25c2415823b97d0e310658f8c0`. This release contains
 the native single-end path and its reduced real-tool synthetic Slurm
@@ -73,19 +73,24 @@ it does not depend on `-resume` to avoid rebuilding it.
 | 6 | `PRJEB3190` | 20 | 20 | Full RNA-seq completed; `PASS`; seven-point schistosomulum time course |
 | 7 | `E-ERAD-478` | 120 | 60 | Full RNA-seq completed; `PASS`; two technical runs aggregated per biological sample |
 
-## Pending P1 input preparation
+## P1 input preparation and first execution
 
-Seven additional accessions are prepared on a separate contract and have not
-been incorporated into the atlas: `PRJNA312093`, `PRJNA494090`, `PRJNA704646`,
-`PRJNA1150591`, `PRJNA1177852`, `PRJNA551487` and `PRJNA428470`. Their run,
-sample, configuration, DE decision and frozen ENA source are indexed in
+Seven additional accessions were prepared under the P1 contract:
+`PRJNA312093`, `PRJNA494090`, `PRJNA704646`, `PRJNA1150591`,
+`PRJNA1177852`, `PRJNA551487` and `PRJNA428470`. Their run, sample,
+configuration, DE decision and frozen ENA source are indexed in
 [`metadata/p1_pending_manifest.tsv`](metadata/p1_pending_manifest.tsv).
 
-This branch prepares inputs only. It does not add atlas pages or biological
-results. `PRJNA704646` and `PRJNA1177852` are quantification-only because their
-public designs do not provide independent biological replication for DE.
-`PRJNA312093` is the first biological single-end gate and retains a provisional,
-explicit fragment prior for sensitivity review before atlas acceptance.
+`PRJNA312093` completed the native single-end path under HelixForge `v1.1.0`:
+161/161 tasks and 20/20 technical QC checks passed, and the prespecified
+fragment-prior sensitivity check passed. Its biological promotion remains
+`HOLD` because the two adult-male replicates are discordant. The compact
+outputs and review are published under
+[`results/PRJNA312093/`](results/PRJNA312093/), explicitly **not** as
+accepted atlas evidence. The other P1 accessions retain their frozen input
+preparation and require independent execution/review. `PRJNA704646` and
+`PRJNA1177852` are quantification-only because their public designs do not
+provide independent biological replication for DE.
 
 Every study exposes the same compact QC interface at
 `results/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed
