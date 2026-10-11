@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import unittest
+import json
+import hashlib
 from pathlib import Path
 
 
@@ -14,6 +16,7 @@ STUDIES = (
     "E-MTAB-451",
     "PRJEB3190",
     "E-ERAD-478",
+    "PRJNA312093",
 )
 
 
@@ -73,6 +76,49 @@ class PublicResultsContract(unittest.TestCase):
                 )
             )
         self.assertEqual([], offenders)
+
+    def test_prjna312093_remains_on_biological_hold(self) -> None:
+        root = RESULTS / "PRJNA312093"
+        gate = json.loads((root / "reports/final_validation.json").read_text(encoding="utf-8"))
+        self.assertEqual("PASS", gate["technical_qc"])
+        self.assertEqual("REVIEW", gate["biological_replicate_concordance"])
+        self.assertEqual("HOLD", gate["study_promotion"])
+        self.assertEqual("HOLD", gate["atlas_inclusion"])
+        self.assertTrue((root / "reports/PRJNA312093_multiqc.html").is_file())
+        self.assertFalse((root / "differential_expression/dds_condition.rds").exists())
+
+    def test_prjna312093_public_files_are_sanitized_and_hashed(self) -> None:
+        root = RESULTS / "PRJNA312093"
+        entries = (root / "SHA256SUMS").read_text(encoding="utf-8").splitlines()
+        listed = set()
+        for line in entries:
+            digest, relative = line.split("  ", 1)
+            path = root / relative
+            self.assertTrue(path.is_file(), relative)
+            self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest())
+            listed.add(relative)
+        actual = {str(path.relative_to(root)).replace("\\", "/") for path in root.rglob("*") if path.is_file() and path.name != "SHA256SUMS"}
+        self.assertEqual(actual, listed)
+        forbidden = ("/scratch/", "/home/", "ra236875", "srv-slurm", "C:\\Users\\")
+        for relative in sorted(actual):
+            path = root / relative
+            if path.suffix.lower() in {".md", ".json", ".html", ".tsv", ".txt", ".yml"}:
+                text = path.read_text(encoding="utf-8")
+                for token in forbidden:
+                    self.assertNotIn(token, text, relative)
+
+    def test_prjna312093_matrices_match_native_import_manifest(self) -> None:
+        root = RESULTS / "PRJNA312093"
+        manifest = json.loads((root / "expression/import_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(20, manifest["sample_count"])
+        for role in ("counts", "abundance", "lengths"):
+            artifact = manifest["artifacts"][role]
+            path = root / "expression" / artifact["path"]
+            self.assertEqual(artifact["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+        de = json.loads((root / "differential_expression/de_manifest.json").read_text(encoding="utf-8"))
+        significant = de["artifacts"]["significant"]
+        path = root / "differential_expression" / significant["path"]
+        self.assertEqual(significant["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
 
 
 if __name__ == "__main__":
