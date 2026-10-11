@@ -1,0 +1,2 @@
+analysis_id	variable	contrast	status	n_samples	n_genes	n_significant
+smansoni_prjna1150591_primary	condition	condition__adult_7wk_mclz_vs_adult_7wk_control	ok	15	9458	936
