@@ -24,8 +24,9 @@ results/<study>/
 │   └── length_matrix.tsv
 ├── differential_expression/        # optional by scientific design
 ├── manifests/
-│   ├── rnaseq_run_manifest.json
-│   └── terminal_manifest_validation.json
+│   ├── rnaseq_run_manifest.json             # full mode
+│   ├── terminal_manifest_validation.json    # full mode
+│   └── publication_validation.json          # import-only mode
 ├── reports/
 └── gene_report/                    # optional presentation product
 ```
@@ -42,7 +43,9 @@ Every registered study must publish:
 - the study README;
 - both compact QC files;
 - the three gene-level expression matrices;
-- the terminal RNA-seq manifest and validation record;
+- for a `full` RNA-seq run, the terminal RNA-seq manifest and validation
+  record; for an `import`-only run, the native Import API manifest in
+  `expression/` and a `manifests/publication_validation.json` record;
 - a results classification and any limitations in the README.
 
 Differential-expression outputs are required only when the frozen design
@@ -64,6 +67,11 @@ The following are preserved outside the public package:
 A terminal manifest in the compact public package is provenance. Re-entry is
 certified against the separately preserved audit package; Git is not used as a
 substitute for that archive.
+
+An `import`-only workflow currently stops before the terminal Integration API
+manifest. Its publication validation must say so explicitly. The publication
+record checks the compact QC and expression package; it must never be labelled
+as a native terminal manifest or imply that differential expression ran.
 
 ## Historical packages
 
