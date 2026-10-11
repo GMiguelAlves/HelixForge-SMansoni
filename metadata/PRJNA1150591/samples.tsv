@@ -1,0 +1,16 @@
+dataset	sample_id	source_sample_name	biosample	condition	stage	tissue	sex	infection_mode	treatment	time_hours	batch	replicate	technical_runs
+PRJNA1150591	adult_7wk_control_r1	7wk_CTRL_A	SAMN43291312	adult_7wk_control	adult_7wk	whole_organism	mixed	not_declared	control	not_applicable	7wk	1	1
+PRJNA1150591	adult_7wk_control_r2	7wk_CTRL_B	SAMN43291313	adult_7wk_control	adult_7wk	whole_organism	mixed	not_declared	control	not_applicable	7wk	2	1
+PRJNA1150591	adult_7wk_control_r3	7wk_CTRL_C	SAMN43291314	adult_7wk_control	adult_7wk	whole_organism	mixed	not_declared	control	not_applicable	7wk	3	1
+PRJNA1150591	adult_7wk_control_r4	7wk_CTRL_D	SAMN43291315	adult_7wk_control	adult_7wk	whole_organism	mixed	not_declared	control	not_applicable	7wk	4	1
+PRJNA1150591	adult_7wk_control_r5	7wk_CTRL_E	SAMN43291316	adult_7wk_control	adult_7wk	whole_organism	mixed	not_declared	control	not_applicable	7wk	5	1
+PRJNA1150591	adult_7wk_mclz_r1	7wk_MCLZ_A	SAMN43291317	adult_7wk_mclz	adult_7wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	7wk	1	1
+PRJNA1150591	adult_7wk_mclz_r2	7wk_MCLZ_B	SAMN43291318	adult_7wk_mclz	adult_7wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	7wk	2	1
+PRJNA1150591	adult_7wk_mclz_r3	7wk_MCLZ_C	SAMN43291319	adult_7wk_mclz	adult_7wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	7wk	3	1
+PRJNA1150591	adult_7wk_mclz_r4	7wk_MCLZ_D	SAMN43291320	adult_7wk_mclz	adult_7wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	7wk	4	1
+PRJNA1150591	adult_7wk_mclz_r5	7wk_MCLZ_E	SAMN43291321	adult_7wk_mclz	adult_7wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	7wk	5	1
+PRJNA1150591	juvenile_4wk_mclz_r1	4wk_MCLZ_A	SAMN43291307	juvenile_4wk_mclz	juvenile_4wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	4wk	1	1
+PRJNA1150591	juvenile_4wk_mclz_r2	4wk_MCLZ_B	SAMN43291308	juvenile_4wk_mclz	juvenile_4wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	4wk	2	1
+PRJNA1150591	juvenile_4wk_mclz_r3	4wk_MCLZ_C	SAMN43291309	juvenile_4wk_mclz	juvenile_4wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	4wk	3	1
+PRJNA1150591	juvenile_4wk_mclz_r4	4wk_MCLZ_D	SAMN43291310	juvenile_4wk_mclz	juvenile_4wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	4wk	4	1
+PRJNA1150591	juvenile_4wk_mclz_r5	4wk_MCLZ_E	SAMN43291311	juvenile_4wk_mclz	juvenile_4wk	whole_organism	mixed	not_declared	meclonazepam	not_applicable	4wk	5	1

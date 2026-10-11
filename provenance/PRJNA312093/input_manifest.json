@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA312093",
+  "prepared_on": "2026-10-09",
+  "reference": "Schistosoma mansoni SM_V10 / WormBase ParaSite WBPS19",
+  "ena_query_url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA312093&result=read_run&fields=study_accession,secondary_study_accession,run_accession,experiment_accession,sample_accession,secondary_sample_accession,sample_alias,sample_title,sample_description,experiment_title,library_name,library_layout,library_strategy,library_source,library_selection,instrument_platform,instrument_model,fastq_ftp,fastq_md5,fastq_bytes,read_count,base_count,first_public,tax_id,scientific_name&format=tsv&download=false",
+  "source_snapshot": {
+    "path": "provenance/PRJNA312093/source_snapshots/ena_read_run.tsv",
+    "sha256": "d5e3efec832d5ca39b3882ce21c11b292dfd76c93664b54814e8fd940f10f58e",
+    "bytes": 27151
+  },
+  "selection": {
+    "library_strategy": "RNA-Seq",
+    "organism_prefix": "Schistosoma mansoni",
+    "fastq_required": true,
+    "selected_runs": 20,
+    "excluded_rows": 24
+  },
+  "logical_samples": 20,
+  "library_layout": "SINGLE",
+  "raw_fastq_bytes": 45198516186,
+  "raw_fastq_decimal_gb": 45.199,
+  "run_mode": "full",
+  "differential_expression": "ENABLED",
+  "single_end_fragment_prior": {
+    "mean": 200,
+    "sd": 80,
+    "source": "prior provisório baseado no protocolo; validar por sensibilidade no piloto biológico",
+    "status": "PROVISIONAL_BIOLOGICAL_GATE"
+  }
+}
