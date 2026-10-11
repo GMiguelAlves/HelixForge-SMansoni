@@ -1,0 +1,9 @@
+dataset,sample_id,file_prefix,run_accession,condition,stage,tissue,sex,infection_mode,treatment,time_hours,batch,replicate,biosample,library_name,technical_unit,library_layout,fragment_length_mean,fragment_length_sd
+PRJNA1177852,mclz_time_0h,mclz_time_0h,SRR31118874,mclz_time_0h,adult,whole_organism,mixed,not_declared,meclonazepam,0,not_declared,1,SAMN44455714,MCLZ_0hr,run_1,paired,,
+PRJNA1177852,mclz_time_0p25h,mclz_time_0p25h,SRR31118873,mclz_time_0p25h,adult,whole_organism,mixed,not_declared,meclonazepam,0.25,not_declared,1,SAMN44455715,MCLZ_15min,run_1,paired,,
+PRJNA1177852,mclz_time_12h,mclz_time_12h,SRR31118869,mclz_time_12h,adult,whole_organism,mixed,not_declared,meclonazepam,12,not_declared,1,SAMN44455719,MCLZ_12hr,run_1,paired,,
+PRJNA1177852,mclz_time_1h,mclz_time_1h,SRR31118872,mclz_time_1h,adult,whole_organism,mixed,not_declared,meclonazepam,1,not_declared,1,SAMN44455716,MCLZ_1hr,run_1,paired,,
+PRJNA1177852,mclz_time_24h,mclz_time_24h,SRR31118868,mclz_time_24h,adult,whole_organism,mixed,not_declared,meclonazepam,24,not_declared,1,SAMN44455720,MCLZ_24hr,run_1,paired,,
+PRJNA1177852,mclz_time_3h,mclz_time_3h,SRR31118871,mclz_time_3h,adult,whole_organism,mixed,not_declared,meclonazepam,3,not_declared,1,SAMN44455717,MCLZ_3hr,run_1,paired,,
+PRJNA1177852,mclz_time_48h,mclz_time_48h,SRR31118867,mclz_time_48h,adult,whole_organism,mixed,not_declared,meclonazepam,48,not_declared,1,SAMN44455721,MCLZ_48hr,run_1,paired,,
+PRJNA1177852,mclz_time_6h,mclz_time_6h,SRR31118870,mclz_time_6h,adult,whole_organism,mixed,not_declared,meclonazepam,6,not_declared,1,SAMN44455718,MCLZ_6hr,run_1,paired,,

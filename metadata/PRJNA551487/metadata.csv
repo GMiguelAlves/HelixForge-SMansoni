@@ -1,0 +1,11 @@
+dataset,sample_id,file_prefix,run_accession,condition,stage,tissue,sex,infection_mode,treatment,time_hours,batch,replicate,biosample,library_name,technical_unit,library_layout,fragment_length_mean,fragment_length_sd
+PRJNA551487,adult_dmso_r1,adult_dmso_r1,SRR9603275,adult_dmso,adult,whole_organism,mixed,not_declared,dmso,not_applicable,not_declared,1,SAMN12151599,DMSO_1,run_1,paired,,
+PRJNA551487,adult_dmso_r2,adult_dmso_r2,SRR9603276,adult_dmso,adult,whole_organism,mixed,not_declared,dmso,not_applicable,not_declared,2,SAMN12151600,DMSO_2,run_1,paired,,
+PRJNA551487,adult_dmso_r3,adult_dmso_r3,SRR9603273,adult_dmso,adult,whole_organism,mixed,not_declared,dmso,not_applicable,not_declared,3,SAMN12151601,DMSO_3,run_1,paired,,
+PRJNA551487,adult_dmso_r4,adult_dmso_r4,SRR9603274,adult_dmso,adult,whole_organism,mixed,not_declared,dmso,not_applicable,not_declared,4,SAMN12151602,DMSO_4,run_1,paired,,
+PRJNA551487,adult_dmso_r5,adult_dmso_r5,SRR9603279,adult_dmso,adult,whole_organism,mixed,not_declared,dmso,not_applicable,not_declared,5,SAMN12151603,DMSO_5,run_1,paired,,
+PRJNA551487,adult_fpl64176_r1,adult_fpl64176_r1,SRR9603280,adult_fpl64176,adult,whole_organism,mixed,not_declared,fpl_64176,not_applicable,not_declared,1,SAMN12151604,FPL_1,run_1,paired,,
+PRJNA551487,adult_fpl64176_r2,adult_fpl64176_r2,SRR9603277,adult_fpl64176,adult,whole_organism,mixed,not_declared,fpl_64176,not_applicable,not_declared,2,SAMN12151605,FPL_2,run_1,paired,,
+PRJNA551487,adult_fpl64176_r3,adult_fpl64176_r3,SRR9603278,adult_fpl64176,adult,whole_organism,mixed,not_declared,fpl_64176,not_applicable,not_declared,3,SAMN12151606,FPL_3,run_1,paired,,
+PRJNA551487,adult_fpl64176_r4,adult_fpl64176_r4,SRR9603281,adult_fpl64176,adult,whole_organism,mixed,not_declared,fpl_64176,not_applicable,not_declared,4,SAMN12151607,FPL_4,run_1,paired,,
+PRJNA551487,adult_fpl64176_r5,adult_fpl64176_r5,SRR9603282,adult_fpl64176,adult,whole_organism,mixed,not_declared,fpl_64176,not_applicable,not_declared,5,SAMN12151608,FPL_5,run_1,paired,,

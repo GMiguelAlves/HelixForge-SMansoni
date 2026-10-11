@@ -13,7 +13,13 @@ manifest=a.package_root/'metadata'/a.project/'runs.tsv'
 rows=list(csv.DictReader(manifest.open(encoding='utf-8'),delimiter='	'))
 errors=[]
 for row in rows:
-    for mate in ('1','2'):
+    layout=row['library_layout']
+    if layout not in ('SINGLE','PAIRED'):
+        errors.append(f"unsupported layout: {row['run_accession']}: {layout}")
+        continue
+    if layout == 'SINGLE' and any(row[f'fastq_2_{field}'] for field in ('url','md5','bytes')):
+        errors.append(f"single-end R2 metadata: {row['run_accession']}")
+    for mate in (('1',) if layout == 'SINGLE' else ('1','2')):
         path=a.data_root/a.project/'fastq_ftp'/f"{row['run_accession']}_{mate}.fastq.gz"
         if not path.is_file(): errors.append(f'missing: {path}'); continue
         expected_bytes=int(row[f'fastq_{mate}_bytes'])

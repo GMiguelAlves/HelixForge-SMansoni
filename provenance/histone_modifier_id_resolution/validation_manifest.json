@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "validated_on": "2026-10-09",
+  "reference": "Schistosoma mansoni SM_V10 / WormBase ParaSite WBPS19",
+  "method": "BLASTP of historical proteins and, for split loci, functional-segment BLASTP against the local WBPS19 protein set",
+  "blast_parameters": {
+    "program": "blastp",
+    "output_fields": "qseqid sseqid pident length qlen qstart qend evalue bitscore",
+    "selection_rule": "best full-length successor, or the current locus retaining the functional domain for a split historical model"
+  },
+  "resolved_ids": 5,
+  "ambiguous_ids_remaining": 0,
+  "unresolved_ids_remaining": 0,
+  "table": "provenance/histone_modifier_id_resolution/historical_id_resolution.tsv"
+}

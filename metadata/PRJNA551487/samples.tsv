@@ -1,0 +1,11 @@
+dataset	sample_id	source_sample_name	biosample	condition	stage	tissue	sex	infection_mode	treatment	time_hours	batch	replicate	technical_runs
+PRJNA551487	adult_dmso_r1	DMSO_1	SAMN12151599	adult_dmso	adult	whole_organism	mixed	not_declared	dmso	not_applicable	not_declared	1	1
+PRJNA551487	adult_dmso_r2	DMSO_2	SAMN12151600	adult_dmso	adult	whole_organism	mixed	not_declared	dmso	not_applicable	not_declared	2	1
+PRJNA551487	adult_dmso_r3	DMSO_3	SAMN12151601	adult_dmso	adult	whole_organism	mixed	not_declared	dmso	not_applicable	not_declared	3	1
+PRJNA551487	adult_dmso_r4	DMSO_4	SAMN12151602	adult_dmso	adult	whole_organism	mixed	not_declared	dmso	not_applicable	not_declared	4	1
+PRJNA551487	adult_dmso_r5	DMSO_5	SAMN12151603	adult_dmso	adult	whole_organism	mixed	not_declared	dmso	not_applicable	not_declared	5	1
+PRJNA551487	adult_fpl64176_r1	FPL_1	SAMN12151604	adult_fpl64176	adult	whole_organism	mixed	not_declared	fpl_64176	not_applicable	not_declared	1	1
+PRJNA551487	adult_fpl64176_r2	FPL_2	SAMN12151605	adult_fpl64176	adult	whole_organism	mixed	not_declared	fpl_64176	not_applicable	not_declared	2	1
+PRJNA551487	adult_fpl64176_r3	FPL_3	SAMN12151606	adult_fpl64176	adult	whole_organism	mixed	not_declared	fpl_64176	not_applicable	not_declared	3	1
+PRJNA551487	adult_fpl64176_r4	FPL_4	SAMN12151607	adult_fpl64176	adult	whole_organism	mixed	not_declared	fpl_64176	not_applicable	not_declared	4	1
+PRJNA551487	adult_fpl64176_r5	FPL_5	SAMN12151608	adult_fpl64176	adult	whole_organism	mixed	not_declared	fpl_64176	not_applicable	not_declared	5	1
