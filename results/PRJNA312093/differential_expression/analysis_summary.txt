@@ -1,0 +1,13 @@
+Analise DEG - smansoni_prjna312093_primary
+==============================
+
+Data: 2026-10-10 19:39:31
+Genes antes do filtro: see model_statistics.json
+Variaveis testadas: condition
+Covariaveis de design:
+
+smansoni_prjna312093_primary	condition	condition__cercaria_female_vs_cercaria_male	ok	20	9535	3692
+smansoni_prjna312093_primary	condition	condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male	ok	20	9535	147
+smansoni_prjna312093_primary	condition	condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male	ok	20	9535	795
+smansoni_prjna312093_primary	condition	condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male	ok	20	9535	207
+smansoni_prjna312093_primary	condition	condition__adult_female_vs_adult_male	ok	20	9535	1177
