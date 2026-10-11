@@ -418,19 +418,25 @@ class ProjectContracts(unittest.TestCase):
             capture_output=True,
             text=True,
         ).stdout.split("\0")
-        tracked_text = "\n".join(
-            (ROOT / relative).read_text(encoding="utf-8", errors="ignore")
-            for relative in tracked
-            if relative and (ROOT / relative).is_file()
-        )
         forbidden = (
             "/home/" + "ra" + "236875",
             "/scratch/" + "Schisto-epigenetics",
             "C:\\Users\\" + "dilci",
             "BEGIN OPENSSH " + "PRIVATE KEY",
         )
-        for token in forbidden:
-            self.assertNotIn(token, tracked_text)
+        patterns = tuple(token.encode("utf-8") for token in forbidden)
+        overlap = max(map(len, patterns)) - 1
+        for relative in tracked:
+            path = ROOT / relative
+            if not relative or not path.is_file():
+                continue
+            with path.open("rb") as handle:
+                tail = b""
+                while chunk := handle.read(1024 * 1024):
+                    window = tail + chunk
+                    for pattern in patterns:
+                        self.assertNotIn(pattern, window, relative)
+                    tail = window[-overlap:]
 
     def test_prjna602528_import_only_results_are_complete(self) -> None:
         result_root = ROOT / "results/PRJNA602528"
