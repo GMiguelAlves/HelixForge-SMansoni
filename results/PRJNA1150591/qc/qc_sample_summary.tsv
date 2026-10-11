@@ -1,0 +1,16 @@
+sample_id	raw_reads_both_mates	trimmed_reads_both_mates	trim_retention_percent	salmon_mapping_percent	classification	reason
+adult_7wk_control_r1	65420706	65325726	99.854817	76.652524	PASS	none
+adult_7wk_control_r2	33012210	32946374	99.800571	73.685566	PASS	none
+adult_7wk_control_r3	32487304	32429730	99.822780	73.196570	PASS	none
+adult_7wk_control_r4	40698394	40632788	99.838800	72.712662	PASS	none
+adult_7wk_control_r5	41361448	41305690	99.865193	79.341689	PASS	none
+adult_7wk_mclz_r1	52510814	52440748	99.866568	71.631568	PASS	none
+adult_7wk_mclz_r2	37151452	37078682	99.804126	67.992298	PASS	none
+adult_7wk_mclz_r3	36535604	36458618	99.789285	71.431413	PASS	none
+adult_7wk_mclz_r4	36644834	36559952	99.768366	70.266088	PASS	none
+adult_7wk_mclz_r5	44861300	44770706	99.798058	67.794772	PASS	none
+juvenile_4wk_mclz_r1	37454810	37330618	99.668422	87.992912	PASS	none
+juvenile_4wk_mclz_r2	42153206	42037362	99.725183	88.286701	PASS	none
+juvenile_4wk_mclz_r3	44219008	44099746	99.730292	88.353615	PASS	none
+juvenile_4wk_mclz_r4	46585018	46462932	99.737929	87.072762	PASS	none
+juvenile_4wk_mclz_r5	43405002	43263138	99.673162	86.530293	PASS	none

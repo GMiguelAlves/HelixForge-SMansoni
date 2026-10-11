@@ -17,6 +17,7 @@ STUDIES = (
     "PRJEB3190",
     "E-ERAD-478",
     "PRJNA312093",
+    "PRJNA1150591",
 )
 
 
@@ -119,6 +120,33 @@ class PublicResultsContract(unittest.TestCase):
         significant = de["artifacts"]["significant"]
         path = root / "differential_expression" / significant["path"]
         self.assertEqual(significant["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+
+    def test_prjna1150591_public_package(self) -> None:
+        root = RESULTS / "PRJNA1150591"
+        hashes = dict(line.split("  ", 1) for line in (root / "SHA256SUMS").read_text(encoding="utf-8").splitlines())
+        actual = {
+            str(path.relative_to(root)).replace("\\", "/")
+            for path in root.rglob("*")
+            if path.is_file() and path.name != "SHA256SUMS"
+        }
+        self.assertEqual(actual, set(hashes.values()))
+        for digest, relative in hashes.items():
+            path = root / relative
+            self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest(), relative)
+            if path.suffix.lower() in {".md", ".json", ".html", ".tsv", ".txt", ".yml"}:
+                content = path.read_text(encoding="utf-8")
+                for forbidden in ("/scratch/", "/home/", "ra236875", "srv-slurm", "C:\\Users\\"):
+                    self.assertNotIn(forbidden, content, relative)
+        import_manifest = json.loads((root / "expression/import_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(15, import_manifest["sample_count"])
+        for role in ("counts", "abundance", "lengths"):
+            artifact = import_manifest["artifacts"][role]
+            path = root / "expression" / artifact["path"]
+            self.assertEqual(artifact["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+        de = json.loads((root / "differential_expression/de_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual("~ condition", de["design"]["formula"])
+        self.assertEqual(1, de["contrasts"])
+        self.assertEqual("complete", de["status"])
 
 
 if __name__ == "__main__":
