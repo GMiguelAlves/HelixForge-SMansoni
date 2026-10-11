@@ -18,6 +18,7 @@ STUDIES = (
     "E-ERAD-478",
     "PRJNA312093",
     "PRJNA1150591",
+    "PRJNA1177852",
 )
 
 
@@ -30,8 +31,6 @@ class PublicResultsContract(unittest.TestCase):
             "expression/counts_matrix.tsv",
             "expression/tpm_matrix.tsv",
             "expression/length_matrix.tsv",
-            "manifests/rnaseq_run_manifest.json",
-            "manifests/terminal_manifest_validation.json",
         )
         for study in STUDIES:
             with self.subTest(study=study):
@@ -40,6 +39,13 @@ class PublicResultsContract(unittest.TestCase):
                         (RESULTS / study / relative).is_file(),
                         f"{study}: missing stable result {relative}",
                     )
+                if study == "PRJNA1177852":
+                    self.assertTrue((RESULTS / study / "expression/import_manifest.json").is_file())
+                    self.assertTrue((RESULTS / study / "manifests/publication_validation.json").is_file())
+                    self.assertFalse((RESULTS / study / "manifests/rnaseq_run_manifest.json").exists())
+                else:
+                    self.assertTrue((RESULTS / study / "manifests/rnaseq_run_manifest.json").is_file())
+                    self.assertTrue((RESULTS / study / "manifests/terminal_manifest_validation.json").is_file())
 
     def test_e_erad_478_uses_the_compact_public_layout(self) -> None:
         root = RESULTS / "E-ERAD-478"
@@ -147,6 +153,36 @@ class PublicResultsContract(unittest.TestCase):
         self.assertEqual("~ condition", de["design"]["formula"])
         self.assertEqual(1, de["contrasts"])
         self.assertEqual("complete", de["status"])
+
+    def test_prjna1177852_import_only_package(self) -> None:
+        root = RESULTS / "PRJNA1177852"
+        hashes = dict(line.split("  ", 1) for line in (root / "SHA256SUMS").read_text(encoding="utf-8").splitlines())
+        actual = {
+            str(path.relative_to(root)).replace("\\", "/")
+            for path in root.rglob("*")
+            if path.is_file() and path.name != "SHA256SUMS"
+        }
+        self.assertEqual(actual, set(hashes.values()))
+        for digest, relative in hashes.items():
+            path = root / relative
+            self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest(), relative)
+            if path.suffix.lower() in {".md", ".json", ".html", ".tsv", ".txt", ".yml"}:
+                content = path.read_text(encoding="utf-8")
+                for forbidden in ("/scratch/", "/home/", "ra236875", "srv-slurm", "C:\\Users\\"):
+                    self.assertNotIn(forbidden, content, relative)
+        manifest = json.loads((root / "expression/import_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(8, manifest["sample_count"])
+        for role in ("counts", "abundance", "lengths"):
+            artifact = manifest["artifacts"][role]
+            self.assertEqual(
+                artifact["sha256"],
+                hashlib.sha256((root / "expression" / artifact["path"]).read_bytes()).hexdigest(),
+            )
+        publication = json.loads((root / "manifests/publication_validation.json").read_text(encoding="utf-8"))
+        self.assertEqual("import", publication["run_mode"])
+        self.assertEqual("DESCRIPTIVE_ONLY", publication["scientific_classification"])
+        self.assertEqual("not_run_by_design", publication["differential_expression"])
+        self.assertFalse((root / "differential_expression").exists())
 
 
 if __name__ == "__main__":
