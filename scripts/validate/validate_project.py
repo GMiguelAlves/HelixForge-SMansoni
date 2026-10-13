@@ -37,7 +37,7 @@ def validate(root: Path) -> list[str]:
 
     for project, (expected_runs, expected_samples) in EXPECTED.items():
         metadata_dir = root / "metadata" / "rnaseq" / project
-        config_dir = root / "config" / project
+        config_dir = root / "config" / "rnaseq" / project
         runs = read_rows(metadata_dir / "runs.tsv", "\t")
         samples = read_rows(metadata_dir / "samples.tsv", "\t")
         metadata = read_rows(metadata_dir / "metadata.csv", ",")

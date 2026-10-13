@@ -55,7 +55,7 @@ explicitly; it does not depend on `-resume` to avoid rebuilding it.
 ## Studies and preparation
 
 Study status, execution reviews and ChIP-seq preparation are documented in the
-[study registry](docs/studies_and_preparation.md).
+[study registry](docs/project/studies_and_preparation.md).
 
 ## Execution policy
 
@@ -65,24 +65,28 @@ run inside Slurm allocations. Persistent results, terminal manifests,
 provenance, and compact audit packages are retained; FASTQs, work directories,
 indexes, and other reproducible intermediates are removed after acceptance.
 
-See [server execution](docs/server_execution.md) and the
-[server preparation report](docs/server_preparation_report.md) before staging
+See [server execution](docs/operations/server_execution.md) and the
+[server preparation report](docs/operations/server_preparation_report.md) before staging
 any data.
 
 ## Repository structure
 
-- `config/`: reference lock, site template, and study-specific analysis files.
+- `config/rnaseq/` and `config/chipseq/`: assay-specific study settings;
+  shared reference and site configuration stay at `config/`.
 - `metadata/rnaseq/` and `metadata/chipseq/`: assay-specific curated metadata,
   study inventories and input contracts.
 - `scripts/`: download, validation, conservative harmonization, provenance,
   and study launch helpers.
-- `results/`: versionable summaries, tables, figures, reports, and terminal
-  manifests; no raw or heavy intermediate data.
-- `provenance/`: frozen input-package evidence and per-study execution records.
+- `results/rnaseq/`: compact, versionable RNA-seq results; ChIP-seq results
+  will use `results/chipseq/` when published. No raw or heavy intermediates.
+- `provenance/rnaseq/`: per-study RNA-seq records; shared reference and frozen
+  source-package evidence stay at `provenance/`.
 - `analyses/`: cross-study, RNA-seq/ChIP-seq integration, atlas, and candidate
   analyses introduced under separately reviewed contracts.
-- [`docs/`](docs/README.md): methods, operational policy, dictionary,
-  preparation records, and limitations.
+- `docs/`: assay-specific, candidate, operational, and project documentation
+  organized under [`rnaseq/`](docs/rnaseq/), [`chipseq/`](docs/chipseq/),
+  [`candidates/`](docs/candidates/), [`operations/`](docs/operations/) and
+  [`project/`](docs/project/).
 
 ## Reproducibility
 
@@ -90,7 +94,7 @@ The curated inputs were validated against the HelixForge contracts and retain
 their original source checksums under `provenance/source_package/frozen/`. Each real
 execution must record the HelixForge tag and commit, reference checksums,
 commands, environment, Slurm metadata, terminal manifest, and an execution
-summary under `provenance/<study>/`.
+summary under `provenance/rnaseq/<study>/` (or the corresponding assay folder).
 
 Completion of an individual study does not automatically authorize a new
 cross-study synthesis, coexpression analysis, candidate-prioritization pass, or

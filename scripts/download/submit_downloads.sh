@@ -2,7 +2,7 @@
 set -euo pipefail
 : "${HF_PACKAGE_ROOT:?source config/server.env}"
 project=${1:?usage: submit_downloads.sh PROJECT}
-settings="${HF_PACKAGE_ROOT}/config/${project}/user_settings.sh"
+settings="${HF_PACKAGE_ROOT}/config/rnaseq/${project}/user_settings.sh"
 if [[ -s "$settings" ]]; then
   # shellcheck disable=SC1090
   source "$settings"
