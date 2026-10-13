@@ -1,11 +1,11 @@
-# Metadados
+# Metadata
 
-Os metadados são organizados por modalidade:
+Metadata is organized by assay:
 
-- [`rnaseq/`](rnaseq/README.md): estudos RNA-seq, runs, amostras, manifestos e
-  vocabulários controlados.
-- [`chipseq/`](chipseq/README.md): estudos ChIP-seq, inventário de runs, desenhos
-  experimentais e entradas para o HelixForge.
+- [`rnaseq/`](rnaseq/README.md): RNA-seq studies, runs, biological samples,
+  manifests, and controlled vocabularies.
+- [`chipseq/`](chipseq/README.md): ChIP-seq studies, run inventory,
+  experimental designs, and HelixForge input tables.
 
-Cada modalidade mantém seus próprios contratos; a presença de um estudo aqui
-não implica sua inclusão automática em análises conjuntas ou no atlas.
+Each assay has its own input contract. Registering a study here does not
+automatically include it in cross-study analyses or the atlas.

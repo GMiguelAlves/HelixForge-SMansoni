@@ -1,10 +1,16 @@
 # E-MTAB-451
 
-- Runs paired-end incluídos: **12**
-- Amostras biológicas: **11**
-- Amostras com consolidação de runs/lanes: **1**
-- Runs ENA excluídos: **0**
+- Included paired-end runs: **12**.
+- Biological samples: **11**.
+- Samples requiring run/lane consolidation: **1**.
+- Excluded ENA runs: **0**.
 
-DE restrita aos três grupos replicados. `adult_mixed` e `cercarial_tail` (n=1) permanecem para quantificação/exploração, mas não aparecem em contrastes inferenciais. `somule1` possui dois runs técnicos e será consolidada.
+Inferential differential expression is restricted to the three replicated
+groups. `adult_mixed` and `cercarial_tail` (n=1) remain available for
+quantification and exploration but are absent from inferential contrasts.
+`somule1` has two technical runs that must be consolidated.
 
-O `sample_id` repetido em `metadata.csv` é intencional: o HelixForge processa cada run e consolida os FASTQs no nível da amostra antes da quantificação. Os contrastes estão congelados em `de_spec.json`; não são inferidos dos nomes.
+Repeated `sample_id` values in `metadata.csv` are intentional. HelixForge
+processes each run, consolidates FASTQs at sample level before quantification,
+and uses the frozen contrasts in `de_spec.json` rather than inferring them
+from names.

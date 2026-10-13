@@ -1,13 +1,22 @@
 # PRJNA1150591
 
-## Decisão científica
+## Scientific decision
 
-meclonazepam em juvenis e adultos. Fonte primária: https://doi.org/10.1371/journal.pntd.0012969.
+Meclonazepam in juveniles and adults. Primary source:
+https://doi.org/10.1371/journal.pntd.0012969.
 
-Foram selecionados **15 runs RNA-seq** de *Schistosoma mansoni*, organizados em **15 amostras biológicas**. Layout: `PAIRED`. Modo HelixForge: `full`.
+The input package selected **15 RNA-seq runs** from *Schistosoma mansoni*,
+representing **15 biological samples**. Layout: `PAIRED`. HelixForge mode:
+`full`.
 
-## Limitação congelada
+## Frozen limitation
 
-O depósito não contém controle de 4 semanas; o artigo informa que esse grupo deve ser pareado à coorte de 4 semanas já processada em PRJNA597909. Nesta execução isolada, o único contraste inferencial pré-registrado é MCLZ versus controle em adultos de 7 semanas; a comparação de 4 semanas fica para a integração posterior entre depósitos.
+This deposit lacks a four-week control. The paper states that the group should
+be paired with the four-week cohort already processed in `PRJNA597909`. The
+only preregistered inferential contrast for the isolated study is MCLZ versus
+control in seven-week adults. The four-week comparison requires later
+cross-deposit integration.
 
-Os FASTQs brutos não são versionados. `runs.tsv` fixa URLs, MD5, tamanhos e a relação run → amostra; o snapshot ENA imutável está em `provenance/PRJNA1150591/source_snapshots/ena_read_run.tsv`.
+Raw FASTQs are not versioned. `runs.tsv` freezes URLs, MD5 checksums, sizes,
+and run-to-sample relationships. The immutable ENA snapshot is
+`provenance/PRJNA1150591/source_snapshots/ena_read_run.tsv`.

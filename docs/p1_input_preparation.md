@@ -1,61 +1,68 @@
-# Preparação das entradas RNA-seq P1
+# RNA-seq input preparation: historical P1 batch
 
-## Escopo desta entrega
+## Scope of this preparation record
 
-Esta entrega organiza os sete acessos P1 ainda não processados. Ela congela
-metadados, configurações, decisões de contraste e proveniência, mas **não**
-executa os estudos e **não** altera o atlas.
+This record describes preparation of seven accessions that had not yet been
+processed when the input package was frozen. It freezes metadata,
+configurations, contrast decisions, and provenance; it did **not** execute
+these studies or modify the atlas. P1 denotes a preparation batch, not a
+separate scientific project. Current per-study status is maintained in the
+[study registry](studies_and_preparation.md).
 
-| Acesso | Runs | Amostras biológicas | Layout | Modo | Decisão de DE |
+| Accession | Runs | Biological samples | Layout | Mode | Prespecified DE decision |
 |---|---:|---:|---|---|---|
-| `PRJNA312093` | 20 | 20 | single | `full` | cinco contrastes fêmea × macho, dentro de estágio |
-| `PRJNA494090` | 24 | 24 | paired | `full` | selecionada × controle em P6, P7 e P8 |
-| `PRJNA704646` | 24 | 8 | paired | `import` | bloqueado: três bibliotecas técnicas do mesmo pool de RNA |
-| `PRJNA1150591` | 15 | 15 | paired | `full` | MCLZ × controle em adultos de 7 semanas; coorte de 4 semanas será ligada a `PRJNA597909` depois |
-| `PRJNA1177852` | 8 | 8 | paired | `import` | bloqueado: uma biblioteca por tempo e sem controles paralelos |
-| `PRJNA551487` | 10 | 10 | paired | `full` | FPL-64176 × DMSO, condicionado ao gate de QC |
-| `PRJNA428470` | 6 | 6 | paired | `full` | 5-azacitidina × controle em fêmeas adultas |
+| `PRJNA312093` | 20 | 20 | single | `full` | Five female-versus-male contrasts within stage |
+| `PRJNA494090` | 24 | 24 | paired | `full` | Selected versus control at P6, P7, and P8 |
+| `PRJNA704646` | 24 | 8 | paired | `import` | Blocked: three technical libraries from each RNA pool |
+| `PRJNA1150591` | 15 | 15 | paired | `full` | MCLZ versus control in seven-week adults; the four-week cohort was reserved for later linkage with `PRJNA597909` |
+| `PRJNA1177852` | 8 | 8 | paired | `import` | Blocked: one library per time point, without parallel controls |
+| `PRJNA551487` | 10 | 10 | paired | `full` | FPL-64176 versus DMSO, conditional on the QC gate |
+| `PRJNA428470` | 6 | 6 | paired | `full` | 5-azacitidine versus control in adult females |
 
-O inventário soma 107 runs, 91 unidades biológicas e 352.540.122.551 bytes de
-FASTQ bruto segundo os snapshots ENA congelados em 9 de outubro de 2026.
+The inventory totaled 107 runs, 91 biological units, and 352,540,122,551
+bytes of raw FASTQ according to ENA snapshots frozen on October 9, 2026.
 
-O artigo de meclonazepam declara que as cinco amostras MCLZ de quatro semanas
-devem ser pareadas à coorte de quatro semanas depositada em `PRJNA597909`, já
-processada. Esse contraste entre depósitos não é executado nesta preparação:
-ele será reconstruído apenas na etapa posterior de integração, preservando a
-proveniência de cada estudo.
+The meclonazepam paper states that its five four-week MCLZ samples should be
+paired with the already processed four-week cohort deposited under
+`PRJNA597909`. That cross-deposit contrast was not executed during input
+preparation; it requires a later integration analysis that preserves both
+studies' provenance.
 
-## Contratos
+## Input contracts
 
-- `metadata/rnaseq/<ACESSO>/runs.tsv`: URL, MD5, tamanho e associação run → amostra.
-- `metadata/rnaseq/<ACESSO>/samples.tsv`: unidade biológica usada na inferência.
-- `metadata/rnaseq/<ACESSO>/metadata.csv`: entrada nativa do HelixForge.
-- `config/<ACESSO>/de_spec.json`: contrastes permitidos.
-- `config/<ACESSO>/de_spec.blocked.json`: bloqueio explícito de inferência.
-- `provenance/<ACESSO>/source_snapshots/ena_read_run.tsv`: resposta ENA bruta.
-- `provenance/<ACESSO>/input_manifest.json`: hash, seleção e volume bruto.
+- `metadata/rnaseq/<ACCESSION>/runs.tsv`: URL, MD5, size, and run-to-sample
+  relationship.
+- `metadata/rnaseq/<ACCESSION>/samples.tsv`: biological unit for inference.
+- `metadata/rnaseq/<ACCESSION>/metadata.csv`: native HelixForge input.
+- `config/<ACCESSION>/de_spec.json`: permitted contrasts.
+- `config/<ACCESSION>/de_spec.blocked.json`: explicit inference block.
+- `provenance/<ACCESSION>/source_snapshots/ena_read_run.tsv`: raw ENA response.
+- `provenance/<ACCESSION>/input_manifest.json`: hashes, selection, and raw-data
+  volume.
 
-Os artefatos derivados e snapshots estão congelados. Não há gerador P1 ativo
-no repositório; qualquer regeneração requer nova curadoria explícita. Os testes
-em `tests/test_p1_preparation.py` verificam contagens, layouts, contrato de
-download, replicação dos contrastes e hashes de origem.
+Derived artifacts and source snapshots are frozen. There is no active P1
+generator in this repository; regeneration requires explicit new curation.
+`tests/test_p1_preparation.py` checks counts, layouts, download contracts,
+contrast replication, and source hashes.
 
-## Single-end
+## Single-end input
 
-`PRJNA312093` declara `library_layout=single`, `fragment_length_mean=200` e
-`fragment_length_sd=80`, conforme exige o contrato atual do HelixForge. Esses
-valores são um prior provisório de protocolo, não uma medida relatada pelo
-artigo. A execução biológica deve revisar a sensibilidade do resultado a esse
-prior antes de aceitar o estudo no atlas. O caminho STAR não deve ser usado;
-o caminho suportado é FastQC → Trim Galore → merge → Salmon → tximport →
-DESeq2.
+`PRJNA312093` declares `library_layout=single`,
+`fragment_length_mean=200`, and `fragment_length_sd=80` as required by the
+then-current HelixForge contract. These values are a provisional protocol
+prior, not a measurement reported by the paper. Biological execution must
+assess sensitivity to this prior before accepting the study into the atlas.
+The STAR path was not selected; the supported path was FastQC → Trim Galore →
+merge → Salmon → tximport → DESeq2.
 
-## Lista de genes congelada
+## Frozen gene list
 
-`config/candidates/histone_modifier_gene_set_v2.tsv` preserva a curadoria
-histórica e acrescenta as classes importantes ausentes, separadas em writers,
-erasers, readers e grupos de contexto. Os cinco IDs históricos antes pendentes
-foram resolvidos e auditados em
+`config/candidates/histone_modifier_gene_set_v2.tsv` preserves historical
+curation and adds previously missing classes, separating writers, erasers,
+readers, and contextual groups. Five previously unresolved historical IDs
+were resolved and audited in
 `provenance/histone_modifier_id_resolution/historical_id_resolution.tsv`.
-Os dois PHDs em `REVIEW_ADD` permanecem exploratórios, e os registros em
-`EXCLUDED_REVIEW` não entram no núcleo de candidatos.
+The two PHD proteins in `REVIEW_ADD` remain exploratory, while
+`EXCLUDED_REVIEW` records are outside the candidate core.
+The [English curation record](histone_modifier_gene_set_v2.md) describes the
+gene-set tiers and links to the unchanged frozen evidence.

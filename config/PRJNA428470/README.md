@@ -1,13 +1,19 @@
 # PRJNA428470
 
-## Decisão científica
+## Scientific decision
 
-perturbação por 5-azacitidina em fêmeas adultas. Fonte primária: https://doi.org/10.1038/s41598-020-78669-5.
+This study tests 5-azacitidine perturbation in adult females. Primary source:
+https://doi.org/10.1038/s41598-020-78669-5.
 
-Foram selecionados **6 runs RNA-seq** de *Schistosoma mansoni*, organizados em **6 amostras biológicas**. Layout: `PAIRED`. Modo HelixForge: `full`.
+The input package selected **6 RNA-seq runs** from *Schistosoma mansoni*,
+representing **6 biological samples**. Layout: `PAIRED`. HelixForge mode:
+`full`.
 
-## Limitação congelada
+## Frozen limitation
 
-O contraste 3 × 3 testa uma perturbação epigenética; não deve ser interpretado como prova direta de mecanismo de modificação de histonas.
+The 3 × 3 contrast tests an epigenetic perturbation; it must not be interpreted
+as direct evidence for a histone-modification mechanism.
 
-Os FASTQs brutos não são versionados. `runs.tsv` fixa URLs, MD5, tamanhos e a relação run → amostra; o snapshot ENA imutável está em `provenance/PRJNA428470/source_snapshots/ena_read_run.tsv`.
+Raw FASTQs are not versioned. `runs.tsv` freezes URLs, MD5 checksums, sizes,
+and run-to-sample relationships. The immutable ENA snapshot is
+`provenance/PRJNA428470/source_snapshots/ena_read_run.tsv`.
