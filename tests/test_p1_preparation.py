@@ -60,19 +60,19 @@ class P1Preparation(unittest.TestCase):
                     else:
                         self.assertTrue(all(r2))
                         self.assertRegex(row["fastq_2_md5"], r"^[0-9a-f]{32}$")
-                provenance = json.loads((ROOT / "provenance" / study / "input_manifest.json").read_text(encoding="utf-8"))
-                snapshot = ROOT / "provenance" / study / "source_snapshots/ena_read_run.tsv"
+                provenance = json.loads((ROOT / "provenance" / "rnaseq" / study / "input_manifest.json").read_text(encoding="utf-8"))
+                snapshot = ROOT / "provenance" / "rnaseq" / study / "source_snapshots/ena_read_run.tsv"
                 self.assertEqual(provenance["source_snapshot"]["sha256"],
                                  hashlib.sha256(snapshot.read_bytes()).hexdigest())
                 self.assertEqual((provenance["run_mode"], provenance["differential_expression"]),
                                  (mode, de_status))
-                settings = (ROOT / "config" / study / "user_settings.sh").read_text(encoding="utf-8")
+                settings = (ROOT / "config" / "rnaseq" / study / "user_settings.sh").read_text(encoding="utf-8")
                 self.assertIn(f'export HF_RNASEQ_RUN_MODE="{mode}"', settings)
                 if de_status == "BLOCKED":
-                    blocked = json.loads((ROOT / "config" / study / "de_spec.blocked.json").read_text(encoding="utf-8"))
+                    blocked = json.loads((ROOT / "config" / "rnaseq" / study / "de_spec.blocked.json").read_text(encoding="utf-8"))
                     self.assertEqual(blocked["status"], "BLOCKED")
                 else:
-                    spec = json.loads((ROOT / "config" / study / "de_spec.json").read_text(encoding="utf-8"))
+                    spec = json.loads((ROOT / "config" / "rnaseq" / study / "de_spec.json").read_text(encoding="utf-8"))
                     levels = Counter(sample["condition"] for sample in samples)
                     for contrast in spec["contrasts"]:
                         for level in (contrast["numerator"], contrast["denominator"]):

@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RESULTS = ROOT / "results"
+RESULTS = ROOT / "results" / "rnaseq"
 STUDIES = (
     "PRJNA602528",
     "PRJNA597909",

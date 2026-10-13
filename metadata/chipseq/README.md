@@ -3,7 +3,7 @@
 This directory contains the public *Schistosoma mansoni* ChIP-seq input
 contracts. It describes the files; the reviewed study-selection, control,
 peak-type, execution, and atlas-admission decisions are maintained in the
-[ChIP-seq core preparation record](../../docs/chipseq_core_preparation.md).
+[ChIP-seq core preparation record](../../docs/chipseq/chipseq_core_preparation.md).
 Presence in this directory does not by itself authorize analysis or atlas
 inclusion.
 

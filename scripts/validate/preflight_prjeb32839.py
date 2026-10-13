@@ -88,7 +88,7 @@ def validate(root: Path, ena_path: Path, output: Path) -> dict[str, object]:
     _, metadata = read_table(metadata_dir / "metadata.csv", ",")
     _, excluded = read_table(metadata_dir / "excluded_ena_runs.tsv")
     _, ena = read_table(ena_path)
-    spec = json.loads((root / "config" / EXPECTED_STUDY / "de_spec.json").read_text(encoding="utf-8"))
+    spec = json.loads((root / "config" / "rnaseq" / EXPECTED_STUDY / "de_spec.json").read_text(encoding="utf-8"))
 
     add_error(errors, len(runs) != EXPECTED_RUNS, f"frozen run count is {len(runs)}, expected {EXPECTED_RUNS}")
     add_error(errors, len(metadata) != EXPECTED_RUNS, f"metadata row count is {len(metadata)}, expected {EXPECTED_RUNS}")
@@ -349,7 +349,7 @@ def main() -> int:
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args()
     root = args.root.resolve()
-    output = args.output_dir or root / "provenance" / EXPECTED_STUDY
+    output = args.output_dir or root / "provenance" / "rnaseq" / EXPECTED_STUDY
     report = validate(root, args.ena_tsv, output)
     print(json.dumps(report, indent=2, sort_keys=True))
     return 0 if report["status"] == "PASS" else 1

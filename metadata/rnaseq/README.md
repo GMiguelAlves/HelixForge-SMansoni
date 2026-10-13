@@ -12,4 +12,4 @@ replace the individual study records. Files in `vocabularies/` preserve
 curated values without assuming biological equivalence across studies.
 
 Study contracts and current status are described in the
-[study registry](../../docs/studies_and_preparation.md).
+[study registry](../../docs/project/studies_and_preparation.md).

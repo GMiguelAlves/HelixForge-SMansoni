@@ -110,7 +110,7 @@ class ProjectContracts(unittest.TestCase):
             temporary_root = Path(temporary)
             project_root = temporary_root / "project"
             shutil.copytree(ROOT / "metadata/rnaseq/PRJEB14695", project_root / "metadata/rnaseq/PRJEB14695")
-            shutil.copytree(ROOT / "config/PRJEB14695", project_root / "config/PRJEB14695")
+            shutil.copytree(ROOT / "config/rnaseq/PRJEB14695", project_root / "config/rnaseq/PRJEB14695")
             ena = temporary_root / "ena.tsv"
             output = temporary_root / "output"
             write_ena_fixture(ROOT, ena)
@@ -161,7 +161,7 @@ class ProjectContracts(unittest.TestCase):
 
     def test_first_project_is_calibration_not_benchmark(self) -> None:
         state = json.loads(
-            (ROOT / "provenance/PRJNA602528/execution_state.json").read_text(
+            (ROOT / "provenance/rnaseq/PRJNA602528/execution_state.json").read_text(
                 encoding="utf-8"
             )
         )
@@ -209,7 +209,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual([], offenders)
 
     def test_prjeb32839_preflight_is_frozen(self) -> None:
-        root = ROOT / "provenance/PRJEB32839"
+        root = ROOT / "provenance/rnaseq/PRJEB32839"
         state = json.loads((root / "execution_state.json").read_text(encoding="utf-8"))
         scientific = json.loads((root / "preflight.json").read_text(encoding="utf-8"))
         storage = json.loads((root / "storage_preflight.json").read_text(encoding="utf-8"))
@@ -262,8 +262,8 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual(300, runtime["urls"]["available"])
 
     def test_prjeb32839_completed_analysis_is_consistent(self) -> None:
-        provenance = ROOT / "provenance/PRJEB32839"
-        results = ROOT / "results/PRJEB32839"
+        provenance = ROOT / "provenance/rnaseq/PRJEB32839"
+        results = ROOT / "results/rnaseq/PRJEB32839"
         state = json.loads((provenance / "execution_state.json").read_text(encoding="utf-8"))
         cleanup = json.loads((provenance / "cleanup.json").read_text(encoding="utf-8"))
         final = json.loads((provenance / "final_validation.json").read_text(encoding="utf-8"))
@@ -290,12 +290,12 @@ class ProjectContracts(unittest.TestCase):
 
     def test_prjna597909_execution_is_complete(self) -> None:
         state = json.loads(
-            (ROOT / "provenance/PRJNA597909/execution_state.json").read_text(
+            (ROOT / "provenance/rnaseq/PRJNA597909/execution_state.json").read_text(
                 encoding="utf-8"
             )
         )
         preflight = json.loads(
-            (ROOT / "provenance/PRJNA597909/preflight.json").read_text(
+            (ROOT / "provenance/rnaseq/PRJNA597909/preflight.json").read_text(
                 encoding="utf-8"
             )
         )
@@ -319,7 +319,7 @@ class ProjectContracts(unittest.TestCase):
 
     def test_prjeb14695_execution_is_complete(self) -> None:
         state = json.loads(
-            (ROOT / "provenance/PRJEB14695/execution_state.json").read_text(
+            (ROOT / "provenance/rnaseq/PRJEB14695/execution_state.json").read_text(
                 encoding="utf-8"
             )
         )
@@ -353,7 +353,7 @@ class ProjectContracts(unittest.TestCase):
 
     def test_launcher_allows_isolated_project_results(self) -> None:
         launcher = (ROOT / "scripts/run_study.sh").read_text(encoding="utf-8")
-        settings = (ROOT / "config/PRJEB14695/user_settings.sh").read_text(encoding="utf-8")
+        settings = (ROOT / "config/rnaseq/PRJEB14695/user_settings.sh").read_text(encoding="utf-8")
         self.assertIn("HF_PROJECT_RESULTS_ROOT", launcher)
         self.assertIn("HF_PROJECT_RESULTS_ROOT", settings)
 
@@ -380,7 +380,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertNotIn("--export=ALL", slurm)
 
     def test_helixforge_release_pin_is_exact(self) -> None:
-        study_registry = (ROOT / "docs/studies_and_preparation.md").read_text(
+        study_registry = (ROOT / "docs/project/studies_and_preparation.md").read_text(
             encoding="utf-8"
         )
         server_template = (ROOT / "config/server.env.template").read_text(encoding="utf-8")
@@ -441,7 +441,7 @@ class ProjectContracts(unittest.TestCase):
                     tail = window[-overlap:]
 
     def test_prjna602528_import_only_results_are_complete(self) -> None:
-        result_root = ROOT / "results/PRJNA602528"
+        result_root = ROOT / "results/rnaseq/PRJNA602528"
         manifest_path = result_root / "manifests/rnaseq_run_manifest.json"
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         self.assertEqual("rnaseq_run_manifest", manifest["type"])
@@ -476,7 +476,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertTrue(report.rstrip().endswith("READY_FOR_PRJNA602528_REVIEW"))
 
         state = json.loads(
-            (ROOT / "provenance/PRJNA602528/execution_state.json").read_text(
+            (ROOT / "provenance/rnaseq/PRJNA602528/execution_state.json").read_text(
                 encoding="utf-8"
             )
         )
@@ -485,7 +485,7 @@ class ProjectContracts(unittest.TestCase):
         self.assertEqual("PASS_WITH_LIMITATIONS", state["validation"]["analysis"])
 
     def test_prjna597909_full_results_are_complete(self) -> None:
-        result_root = ROOT / "results/PRJNA597909"
+        result_root = ROOT / "results/rnaseq/PRJNA597909"
         manifest_path = result_root / "rnaseq/rnaseq_run_manifest.json"
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         self.assertEqual("rnaseq_run_manifest", manifest["type"])
@@ -581,7 +581,7 @@ class ProjectContracts(unittest.TestCase):
         ]
         for study, (_, expected_samples) in STUDIES.items():
             with self.subTest(study=study):
-                qc_root = ROOT / "results" / study / "qc"
+                qc_root = ROOT / "results" / "rnaseq" / study / "qc"
                 rows = read_tsv(qc_root / "qc_sample_summary.tsv")
                 with (qc_root / "qc_sample_summary.tsv").open(
                     encoding="utf-8", newline=""
@@ -603,8 +603,8 @@ class ProjectContracts(unittest.TestCase):
                 self.assertTrue(all(row["classification"] in {"PASS", "REVIEW", "FAIL"} for row in rows))
 
     def test_e_erad_478_completed_analysis_is_consistent(self) -> None:
-        provenance = ROOT / "provenance/E-ERAD-478"
-        results = ROOT / "results/E-ERAD-478"
+        provenance = ROOT / "provenance/rnaseq/E-ERAD-478"
+        results = ROOT / "results/rnaseq/E-ERAD-478"
         state = json.loads((provenance / "execution_state.json").read_text(encoding="utf-8"))
         cleanup = json.loads((provenance / "cleanup.json").read_text(encoding="utf-8"))
         final = json.loads((provenance / "final_validation.json").read_text(encoding="utf-8"))
@@ -721,7 +721,7 @@ class ProjectContracts(unittest.TestCase):
             )
 
     def test_prjeb14695_full_results_are_complete(self) -> None:
-        result_root = ROOT / "results/PRJEB14695"
+        result_root = ROOT / "results/rnaseq/PRJEB14695"
         manifest = json.loads(
             (result_root / "manifests/rnaseq_run_manifest.json").read_text(
                 encoding="utf-8"
