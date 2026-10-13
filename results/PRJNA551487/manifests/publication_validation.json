@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "type": "public_result_package_validation",
+  "study_id": "PRJNA551487",
+  "run_mode": "full",
+  "status": "review_package",
+  "terminal_rnaseq_manifest": "rnaseq_run_manifest.json",
+  "terminal_manifest_validation": "terminal_manifest_validation.json",
+  "native_import_manifest": "../expression/import_manifest.json",
+  "checks": {
+    "workflow_tasks_complete": "117/117",
+    "input_fastq_integrity": "20/20",
+    "qc_samples_pass": "0/10",
+    "qc_samples_review": "10/10",
+    "import_samples": 10,
+    "import_genes": 9914,
+    "import_matrix_checksums": "verified_against_native_import_manifest",
+    "multiqc_private_paths": "60 execution paths removed from public copy"
+  },
+  "technical_execution": "PASS",
+  "sample_qc": "REVIEW",
+  "differential_expression": "executed_but_withheld_pending_scientific_review",
+  "de_promotion": "HOLD",
+  "atlas_inclusion": "HOLD"
+}
