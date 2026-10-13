@@ -2,7 +2,7 @@
 
 ## Master manifest
 
-`metadata/master_sample_manifest.tsv` contains one row per public sequencing
+`metadata/rnaseq/master_sample_manifest.tsv` contains one row per public sequencing
 run. Values are copied conservatively from the curated study metadata; this
 initialization does not collapse biological categories across studies.
 

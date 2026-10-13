@@ -2,7 +2,7 @@
 set -euo pipefail
 : "${HF_DATA_ROOT:?source config/server.env}"
 : "${HF_PACKAGE_ROOT:?source config/server.env}"
-manifest=${1:?usage: download_fastq_array.sh metadata/PROJECT/runs.tsv}
+manifest=${1:?usage: download_fastq_array.sh metadata/rnaseq/PROJECT/runs.tsv}
 task=${SLURM_ARRAY_TASK_ID:?submit as a Slurm array}
 # shellcheck source=parse_manifest_row.sh
 source "$HF_PACKAGE_ROOT/scripts/download/parse_manifest_row.sh"

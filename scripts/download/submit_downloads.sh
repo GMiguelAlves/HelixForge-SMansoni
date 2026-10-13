@@ -7,7 +7,7 @@ if [[ -s "$settings" ]]; then
   # shellcheck disable=SC1090
   source "$settings"
 fi
-manifest="${HF_PACKAGE_ROOT}/metadata/${project}/runs.tsv"
+manifest="${HF_PACKAGE_ROOT}/metadata/rnaseq/${project}/runs.tsv"
 [[ -s "$manifest" ]]
 count=$(($(wc -l < "$manifest") - 1))
 mkdir -p "${HF_DATA_ROOT}/${project}/logs"

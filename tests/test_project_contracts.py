@@ -43,8 +43,8 @@ def load_prjeb14695_preflight():
 
 
 def write_ena_fixture(root: Path, destination: Path) -> None:
-    runs = read_tsv(root / "metadata/PRJEB14695/runs.tsv")
-    samples = {row["sample_id"]: row for row in read_tsv(root / "metadata/PRJEB14695/samples.tsv")}
+    runs = read_tsv(root / "metadata/rnaseq/PRJEB14695/runs.tsv")
+    samples = {row["sample_id"]: row for row in read_tsv(root / "metadata/rnaseq/PRJEB14695/samples.tsv")}
     fields = [
         "run_accession", "study_accession", "secondary_study_accession",
         "experiment_accession", "sample_accession", "secondary_sample_accession",
@@ -109,12 +109,12 @@ class ProjectContracts(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             temporary_root = Path(temporary)
             project_root = temporary_root / "project"
-            shutil.copytree(ROOT / "metadata/PRJEB14695", project_root / "metadata/PRJEB14695")
+            shutil.copytree(ROOT / "metadata/rnaseq/PRJEB14695", project_root / "metadata/rnaseq/PRJEB14695")
             shutil.copytree(ROOT / "config/PRJEB14695", project_root / "config/PRJEB14695")
             ena = temporary_root / "ena.tsv"
             output = temporary_root / "output"
             write_ena_fixture(ROOT, ena)
-            metadata_path = project_root / "metadata/PRJEB14695/metadata.csv"
+            metadata_path = project_root / "metadata/rnaseq/PRJEB14695/metadata.csv"
             with metadata_path.open(encoding="utf-8", newline="") as handle:
                 rows = list(csv.DictReader(handle))
                 fields = list(rows[0])
@@ -131,11 +131,11 @@ class ProjectContracts(unittest.TestCase):
 
     def test_registered_study_counts(self) -> None:
         for study, (runs_expected, samples_expected) in STUDIES.items():
-            with (ROOT / "metadata" / study / "runs.tsv").open(
+            with (ROOT / "metadata" / "rnaseq" / study / "runs.tsv").open(
                 encoding="utf-8", newline=""
             ) as handle:
                 runs = list(csv.DictReader(handle, delimiter="\t"))
-            with (ROOT / "metadata" / study / "samples.tsv").open(
+            with (ROOT / "metadata" / "rnaseq" / study / "samples.tsv").open(
                 encoding="utf-8", newline=""
             ) as handle:
                 samples = list(csv.DictReader(handle, delimiter="\t"))

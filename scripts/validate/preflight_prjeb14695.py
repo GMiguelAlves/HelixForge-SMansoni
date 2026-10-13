@@ -80,7 +80,7 @@ def add_error(errors: list[str], condition: bool, message: str) -> None:
 
 def validate(root: Path, ena_path: Path, output: Path) -> dict[str, object]:
     errors: list[str] = []
-    metadata_dir = root / "metadata" / EXPECTED_STUDY
+    metadata_dir = root / "metadata" / "rnaseq" / EXPECTED_STUDY
     _, runs = read_table(metadata_dir / "runs.tsv")
     _, samples = read_table(metadata_dir / "samples.tsv")
     _, metadata = read_table(metadata_dir / "metadata.csv", ",")

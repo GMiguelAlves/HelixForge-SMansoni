@@ -20,9 +20,9 @@
 
 ## Arquivos
 
-- `metadata/PRJEB14695/runs.tsv`: URLs, MD5, bytes e acesso ENA por run.
-- `metadata/PRJEB14695/samples.tsv`: uma linha por amostra biológica.
-- `metadata/PRJEB14695/metadata.csv`: contrato run-level consumido pelo HelixForge.
+- `metadata/rnaseq/PRJEB14695/runs.tsv`: URLs, MD5, bytes e acesso ENA por run.
+- `metadata/rnaseq/PRJEB14695/samples.tsv`: uma linha por amostra biológica.
+- `metadata/rnaseq/PRJEB14695/metadata.csv`: contrato run-level consumido pelo HelixForge.
 - `pipeline_config.sh` e `user_settings.sh`: adaptadores portáteis para o contrato atual.
 - `de_spec.json`: desenho/contrastes versionados, quando estimáveis.
 

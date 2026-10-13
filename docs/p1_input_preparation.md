@@ -27,9 +27,9 @@ proveniência de cada estudo.
 
 ## Contratos
 
-- `metadata/<ACESSO>/runs.tsv`: URL, MD5, tamanho e associação run → amostra.
-- `metadata/<ACESSO>/samples.tsv`: unidade biológica usada na inferência.
-- `metadata/<ACESSO>/metadata.csv`: entrada nativa do HelixForge.
+- `metadata/rnaseq/<ACESSO>/runs.tsv`: URL, MD5, tamanho e associação run → amostra.
+- `metadata/rnaseq/<ACESSO>/samples.tsv`: unidade biológica usada na inferência.
+- `metadata/rnaseq/<ACESSO>/metadata.csv`: entrada nativa do HelixForge.
 - `config/<ACESSO>/de_spec.json`: contrastes permitidos.
 - `config/<ACESSO>/de_spec.blocked.json`: bloqueio explícito de inferência.
 - `provenance/<ACESSO>/source_snapshots/ena_read_run.tsv`: resposta ENA bruta.
