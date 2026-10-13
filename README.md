@@ -6,7 +6,6 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ```text
 PROJECT_STATUS = ACTIVE
-DATA_ANALYSIS_STATUS = P1_PRJNA312093_TECHNICAL_PASS_BIOLOGICAL_HOLD
 ```
 
 ## Relationship to HelixForge
@@ -23,24 +22,16 @@ of evidence across both modalities. Each dataset remains independently
 configured and auditable, while accepted terminal manifests provide the
 boundary for later integration.
 
-The studies currently registered below are the first RNA-seq execution series.
-Their presence does not restrict the repository to transcriptomics. ChIP-seq
-datasets and integrative analyses are added only after their own scientific
-design, metadata, and execution contracts are reviewed.
+Study- and assay-specific evidence enters shared analyses only after its
+scientific design, metadata and execution contracts are reviewed.
 
-| Dependency | Frozen value |
+| Runtime baseline | Version |
 |---|---|
-| HelixForge release | [`v1.0.2`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.0.2) |
-| HelixForge commit | `5d4b3e696319db5cd7633472504964f1dc7c0434` |
 | Nextflow | `25.10.7` |
 | Java | `21` |
 
-For the P1 execution, the server template pins HelixForge
-[`v1.1.0`](https://github.com/GMiguelAlves/HelixForge/tree/v1.1.0),
-commit `062001ceb46d8a25c2415823b97d0e310658f8c0`. This release contains
-the native single-end path and its reduced real-tool synthetic Slurm
-validation; each biological single-end study still needs review. The table
-above remains the historical pin for already accepted results.
+Exact HelixForge releases and commits are recorded per study, not imposed as
+one project-wide pin; see the study registry and execution provenance.
 
 ## Reference
 
@@ -58,142 +49,13 @@ checksums are frozen in
 [`config/reference/reference_manifest.json`](config/reference/reference_manifest.json).
 The validation metrics and reusable-index provenance are recorded under
 [`provenance/reference/`](provenance/reference/).
-HelixForge `v1.0.2` validates and consumes that immutable index explicitly;
-it does not depend on `-resume` to avoid rebuilding it.
+The pinned HelixForge runtime validates and consumes that immutable index
+explicitly; it does not depend on `-resume` to avoid rebuilding it.
 
-## Initial studies
+## Studies and preparation
 
-| Order | Study | Runs | Biological samples | Initial execution |
-|---:|---|---:|---:|---|
-| 1 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
-| 2 | `PRJNA597909` | 20 | 20 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; DE enabled |
-| 3 | `PRJEB14695` | 138 | 23 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; technical runs aggregated before inference |
-| 4 | `PRJEB32839` | 150 | 75 | Full RNA-seq completed; `PASS_WITH_LIMITATIONS`; stage and sex contrasts |
-| 5 | `E-MTAB-451` | 12 | 11 | Full RNA-seq completed; `PASS`; one technical-run pair aggregated before inference |
-| 6 | `PRJEB3190` | 20 | 20 | Full RNA-seq completed; `PASS`; seven-point schistosomulum time course |
-| 7 | `E-ERAD-478` | 120 | 60 | Full RNA-seq completed; `PASS`; two technical runs aggregated per biological sample |
-
-## P1 input preparation and first execution
-
-Seven additional accessions were prepared under the P1 contract:
-`PRJNA312093`, `PRJNA494090`, `PRJNA704646`, `PRJNA1150591`,
-`PRJNA1177852`, `PRJNA551487` and `PRJNA428470`. Their run, sample,
-configuration, DE decision and frozen ENA source are indexed in
-[`metadata/p1_pending_manifest.tsv`](metadata/p1_pending_manifest.tsv).
-
-`PRJNA312093` completed the native single-end path under HelixForge `v1.1.0`:
-161/161 tasks and 20/20 technical QC checks passed, and the prespecified
-fragment-prior sensitivity check passed. Its biological promotion remains
-`HOLD` because the two adult-male replicates are discordant. The compact
-outputs and review are published under
-[`results/PRJNA312093/`](results/PRJNA312093/), explicitly **not** as
-accepted atlas evidence. The other P1 accessions retain their frozen input
-preparation and require independent execution/review. `PRJNA704646` and
-`PRJNA1177852` are quantification-only because their public designs do not
-provide independent biological replication for DE.
-
-Every study exposes the same compact QC interface at
-`results/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed
-MultiQC reports remain available alongside it where published. The fields,
-classification rules, and generation procedure are defined in
-[`docs/qc_results_contract.md`](docs/qc_results_contract.md).
-
-`PRJNA602528` is the first completed real *S. mansoni* application and
-operational calibration run. It is not a new benchmark of HelixForge. Its
-public design has one library per time point, so the frozen project stops after
-tximport and does not perform DESeq2 inference. The compact accepted products
-and execution report are available under [`results/PRJNA602528/`](results/PRJNA602528/).
-
-`PRJNA597909` is the first complete native RNA-seq application in this
-project. All 20 paired-end samples passed QC, Salmon quantification and
-tximport completed, and all four frozen DESeq2 contrasts were estimated. The
-accepted tables, figures, portable terminal manifest, and report are available
-under [`results/PRJNA597909/`](results/PRJNA597909/). Its
-`PASS_WITH_LIMITATIONS` classification records terminal-runtime recovery and
-the then-unresolved `-resume` incident; the scientific stages themselves
-passed. Later investigation traced that incident to unsupported direct JAR
-invocation rather than shared NFS, and the official launcher subsequently
-passed complete cache-reuse and selective-invalidation validation.
-
-`PRJEB14695` completed the native RNA-seq path for 138 paired-end technical
-runs representing 23 biological samples. Run-to-sample mapping and aggregation
-were enforced as scientific gates before tximport and DESeq2. The first attempt
-exposed an overly strict validation of the run-level `technical_unit` field;
-the reviewed HelixForge correction was then validated by a controlled resume
-that reused all 815 eligible upstream tasks. The accepted matrices, six frozen
-contrasts, figures, HTML reports, terminal manifest, and validation summary are
-available under [`results/PRJEB14695/`](results/PRJEB14695/).
-
-Earlier studies retain their recorded `v1.0.1` execution provenance.
-`PRJEB14695` additionally pins the reviewed post-release contract fix at commit
-`42864266892d1165477bb3b33c919e1fabb28ad1`; the current project default is
-`v1.0.2`, as listed above, without rewriting prior runs.
-
-`PRJEB32839` completed the `v1.0.2` native path for 150 technical runs and 75
-biological samples. The exact frozen inventory, 12 DESeq2 contrasts, compact
-QC/DE summaries, candidate-gene report record, terminal manifest, storage
-calibration, and reviewed execution report are available under
-[`results/PRJEB32839/`](results/PRJEB32839/). The newer pin applies to this
-study and does not rewrite earlier execution provenance. Verified persistence
-and the private audit archive preceded cleanup; 1.208 TB of study-specific
-scratch data were removed without touching shared resources or other studies.
-
-`E-MTAB-451` completed the native `v1.0.2` paired-end path for 12 runs
-representing 11 biological samples. The two technical runs assigned to
-`schistosomulum_3h_r1` were consolidated before quantification and inference.
-All 136 processes completed, the three frozen `~ condition` contrasts were
-estimated, and Salmon mapping rates ranged from 62.26% to 78.87% (median
-75.18%). The accepted matrices, differential-expression results, QC summary,
-terminal manifests, and sanitized execution reports are available under
-[`results/E-MTAB-451/`](results/E-MTAB-451/). The complete candidate-gene
-report passed but is retained outside Git under the current repository-size
-policy. Persistence, checksums, private audit capture, and sensitive-path
-scanning passed before the study-specific scratch data and FASTQs were removed.
-
-`PRJEB3190` completed the native `v1.0.2` paired-end path for 20 biological
-samples spanning seven schistosomulum time points. All 227 processes completed,
-Salmon mapping rates ranged from 63.14% to 88.95% (median 82.95%), tximport
-produced matrices for 9,914 genes, and all nine frozen `~ condition` contrasts
-were estimated. ENA alias-derived sequencing labels remain exploratory because
-they are not documented as technical batches and were not included in the
-inferential model. The accepted matrices, differential-expression results, QC
-summary, terminal manifests, and sanitized execution reports are available
-under [`results/PRJEB3190/`](results/PRJEB3190/). The complete candidate-gene
-report passed but remains outside Git under the repository-size policy.
-Persistence, checksums, private audit capture, and sensitive-path scanning
-passed before the study-specific workdir, FASTQs, and other reproducible
-scratch intermediates were removed.
-
-`E-ERAD-478` completed the native `v1.0.2` paired-end path for 120 runs
-representing 60 biological samples. Two technical runs were aggregated per
-sample before quantification and inference. All 950 processes completed,
-Salmon mapping rates ranged from 75.03% to 91.84% (median 85.74%), tximport
-produced matrices for 9,914 genes, and all 32 frozen contrasts were estimated
-with the inferential design `~ batch + condition`. All 60 samples passed the
-frozen QC review thresholds. The accepted matrices, differential-expression
-results, QC summaries, terminal manifests, and sanitized execution reports are
-available under [`results/E-ERAD-478/`](results/E-ERAD-478/). The complete
-candidate-gene report passed but remains outside Git. Persistence, checksums,
-private audit capture, and sensitive-path scanning passed before 621.87 GB of
-study-specific scratch data were removed.
-
-## ChIP-seq core preparation
-
-The public ChIP-seq core is now registered independently from the RNA-seq
-series. Five Q1 studies have controls suitable for peak calling
-(`PRJNA1173904`, `PRJNA236156`, `PRJNA312093`, `PRJNA602708`, and
-`PRJNA1090249`). `PRJNA219440` is retained in P1 for QC/alignment only because
-its public historical subexperiments do not provide a uniform matched-control
-design. `PRJNA384372` is P2/Q2, and `PRJNA816041` is a technical benchmark
-rather than atlas evidence.
-
-The metadata, download checksums, explicit IP/control mapping, narrow/broad
-run sets, duplicate-deposit exclusions, and publication links are indexed in
-[`metadata/chipseq/`](metadata/chipseq/). The frozen execution and reference
-decisions are under [`config/chipseq/`](config/chipseq/), with the scientific
-preparation record in
-[`docs/chipseq_core_preparation_ptbr.md`](docs/chipseq_core_preparation_ptbr.md).
-No ChIP-seq result has yet been promoted to the atlas.
+Study status, execution reviews and ChIP-seq preparation are documented in the
+[study registry](docs/studies_and_preparation.md).
 
 ## Execution policy
 
