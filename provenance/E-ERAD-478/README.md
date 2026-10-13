@@ -11,7 +11,7 @@ repository-size policy.
 - `cleanup.json`: post-acceptance retention and cleanup record.
 - `performance.tsv`: sanitized Nextflow trace preserved with the result bundle.
 - `qc_sample_summary.tsv` and `qc_summary.json`: standardized QC contract.
-- `metadata/E-ERAD-478/runs.tsv` and `samples.tsv`: frozen mapping of 120 runs
+- `metadata/rnaseq/E-ERAD-478/runs.tsv` and `samples.tsv`: frozen mapping of 120 runs
   to 60 biological samples.
 - `source_snapshots/`: frozen public metadata used to curate the study.
 

@@ -27,14 +27,14 @@ def read_rows(path: Path, delimiter: str) -> list[dict[str, str]]:
 
 class P1Preparation(unittest.TestCase):
     def test_static_preparation_contract(self) -> None:
-        pending = read_rows(ROOT / "metadata/p1_pending_manifest.tsv", "\t")
+        pending = read_rows(ROOT / "metadata/rnaseq/p1_pending_manifest.tsv", "\t")
         self.assertEqual({row["study"] for row in pending}, set(EXPECTED))
         global_runs: set[str] = set()
         for study, (run_count, sample_count, layout, mode, de_status) in EXPECTED.items():
             with self.subTest(study=study):
-                runs = read_rows(ROOT / "metadata" / study / "runs.tsv", "\t")
-                samples = read_rows(ROOT / "metadata" / study / "samples.tsv", "\t")
-                metadata = read_rows(ROOT / "metadata" / study / "metadata.csv", ",")
+                runs = read_rows(ROOT / "metadata" / "rnaseq" / study / "runs.tsv", "\t")
+                samples = read_rows(ROOT / "metadata" / "rnaseq" / study / "samples.tsv", "\t")
+                metadata = read_rows(ROOT / "metadata" / "rnaseq" / study / "metadata.csv", ",")
                 self.assertEqual((len(runs), len(samples), len(metadata)),
                                  (run_count, sample_count, run_count))
                 run_ids = {row["run_accession"] for row in runs}
@@ -79,7 +79,7 @@ class P1Preparation(unittest.TestCase):
                             self.assertGreaterEqual(levels[level], spec["parameters"]["min_replicates"])
 
     def test_single_end_prior_is_explicit(self) -> None:
-        with (ROOT / "metadata/PRJNA312093/metadata.csv").open(encoding="utf-8", newline="") as handle:
+        with (ROOT / "metadata/rnaseq/PRJNA312093/metadata.csv").open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
         self.assertEqual(len(rows), 20)
         self.assertEqual({row["library_layout"] for row in rows}, {"single"})

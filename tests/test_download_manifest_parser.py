@@ -31,7 +31,7 @@ FIELDS = (
 class DownloadManifestParser(unittest.TestCase):
     def test_first_and_last_run_of_each_p1_study(self) -> None:
         for project in PROJECTS:
-            manifest = ROOT / "metadata" / project / "runs.tsv"
+            manifest = ROOT / "metadata" / "rnaseq" / project / "runs.tsv"
             with manifest.open(encoding="utf-8", newline="") as handle:
                 rows = list(csv.DictReader(handle, delimiter="\t"))
             self.assertTrue(rows, project)

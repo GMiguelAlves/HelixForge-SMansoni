@@ -45,7 +45,7 @@ remain in each published study package.
 | `PRJNA704646` | 24 | 8 | Import completed; descriptive only; QC review for three pools |
 
 The frozen input package for seven of these accessions retains its historical
-batch label in [`metadata/p1_pending_manifest.tsv`](../metadata/p1_pending_manifest.tsv)
+batch label in [`metadata/rnaseq/p1_pending_manifest.tsv`](../metadata/rnaseq/p1_pending_manifest.tsv)
 and [the input-preparation record](p1_input_preparation.md). It records runs,
 biological units, configurations, DE decisions and ENA source snapshots;
 preparation alone does not determine analysis or atlas inclusion.

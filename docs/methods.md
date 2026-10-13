@@ -35,7 +35,7 @@ changed.
   batch variable must enter an estimable DESeq2 model formula.
 
 Study-specific conditions, contrasts, exclusions, and design limitations are
-kept under `config/<study>/` and `metadata/<study>/`. They are not promoted to
+kept under `config/<study>/` and `metadata/rnaseq/<study>/`. They are not promoted to
 generic HelixForge defaults.
 
 ## Single-end application and external RNA evidence

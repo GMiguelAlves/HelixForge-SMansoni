@@ -72,8 +72,8 @@ any data.
 ## Repository structure
 
 - `config/`: reference lock, site template, and study-specific analysis files.
-- `metadata/`: run-level and sample-level curated metadata plus controlled
-  vocabularies.
+- `metadata/rnaseq/` and `metadata/chipseq/`: assay-specific curated metadata,
+  study inventories and input contracts.
 - `scripts/`: download, validation, conservative harmonization, provenance,
   and study launch helpers.
 - `results/`: versionable summaries, tables, figures, reports, and terminal

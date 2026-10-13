@@ -28,9 +28,9 @@ O ENA lista hoje 180 runs. Este pacote congela os 150 runs presentes no metadata
 
 ## Arquivos
 
-- `metadata/PRJEB32839/runs.tsv`: URLs, MD5, bytes e acesso ENA por run.
-- `metadata/PRJEB32839/samples.tsv`: uma linha por amostra biológica.
-- `metadata/PRJEB32839/metadata.csv`: contrato run-level consumido pelo HelixForge.
+- `metadata/rnaseq/PRJEB32839/runs.tsv`: URLs, MD5, bytes e acesso ENA por run.
+- `metadata/rnaseq/PRJEB32839/samples.tsv`: uma linha por amostra biológica.
+- `metadata/rnaseq/PRJEB32839/metadata.csv`: contrato run-level consumido pelo HelixForge.
 - `pipeline_config.sh` e `user_settings.sh`: adaptadores portáteis para o contrato atual.
 - `de_spec.json`: desenho/contrastes versionados, quando estimáveis.
 

@@ -10,7 +10,7 @@ repository-size policy.
 - `final_validation.json`: scientific and operational acceptance gates.
 - `cleanup.json`: post-acceptance retention and cleanup record.
 - `performance.tsv`: sanitized Nextflow trace preserved with the result bundle.
-- `metadata/PRJEB3190/runs.tsv` and `samples.tsv`: the frozen 20-run to
+- `metadata/rnaseq/PRJEB3190/runs.tsv` and `samples.tsv`: the frozen 20-run to
   20-sample mapping.
 - `source_snapshots/`: frozen public metadata used to curate the study.
 

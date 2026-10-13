@@ -1,14 +1,11 @@
-# Metadata
+# Metadados
 
-Curated run- and sample-level records are versioned per study. The master
-manifest is a conservative row-level index across the seven studies; controlled
-vocabularies enumerate current values without performing biological
-cross-study harmonization.
+Os metadados são organizados por modalidade:
 
-`p1_pending_manifest.tsv` is a separate preparation index for the seven P1
-accessions not yet incorporated into the atlas. It does not modify the frozen
-master manifest of completed studies. Each pending study contains `runs.tsv`
-(download contract), `samples.tsv` (biological units) and `metadata.csv`
-(HelixForge input). In particular, `PRJNA704646` consolidates three technical
-libraries per biological RNA pool and `PRJNA312093` declares the native
-single-end fragment prior required by HelixForge.
+- [`rnaseq/`](rnaseq/README.md): estudos RNA-seq, runs, amostras, manifestos e
+  vocabulários controlados.
+- [`chipseq/`](chipseq/README.md): estudos ChIP-seq, inventário de runs, desenhos
+  experimentais e entradas para o HelixForge.
+
+Cada modalidade mantém seus próprios contratos; a presença de um estudo aqui
+não implica sua inclusão automática em análises conjuntas ou no atlas.

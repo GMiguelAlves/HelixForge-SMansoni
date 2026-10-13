@@ -22,8 +22,8 @@ O arquivo público tem uma biblioteca por tempo. Um modelo com dez níveis seria
 
 ## Arquivos
 
-- `metadata/PRJNA602528/runs.tsv`: URLs, MD5, bytes e acesso ENA por run.
-- `metadata/PRJNA602528/samples.tsv`: uma linha por amostra biológica.
-- `metadata/PRJNA602528/metadata.csv`: contrato run-level consumido pelo HelixForge.
+- `metadata/rnaseq/PRJNA602528/runs.tsv`: URLs, MD5, bytes e acesso ENA por run.
+- `metadata/rnaseq/PRJNA602528/samples.tsv`: uma linha por amostra biológica.
+- `metadata/rnaseq/PRJNA602528/metadata.csv`: contrato run-level consumido pelo HelixForge.
 - `pipeline_config.sh` e `user_settings.sh`: adaptadores portáteis para o contrato atual.
 - `de_spec.blocked.json`: bloqueio explícito da inferência não estimável.

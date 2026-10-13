@@ -36,7 +36,7 @@ def validate(root: Path) -> list[str]:
     all_run_ids: set[str] = set()
 
     for project, (expected_runs, expected_samples) in EXPECTED.items():
-        metadata_dir = root / "metadata" / project
+        metadata_dir = root / "metadata" / "rnaseq" / project
         config_dir = root / "config" / project
         runs = read_rows(metadata_dir / "runs.tsv", "\t")
         samples = read_rows(metadata_dir / "samples.tsv", "\t")
@@ -85,7 +85,7 @@ def validate(root: Path) -> list[str]:
                     if levels[level] < spec["parameters"]["min_replicates"]:
                         errors.append(f"{project}: under-replicated level {level}")
 
-    master = read_rows(root / "metadata" / "master_sample_manifest.tsv", "\t")
+    master = read_rows(root / "metadata" / "rnaseq" / "master_sample_manifest.tsv", "\t")
     if not master or list(master[0]) != MASTER_FIELDS:
         errors.append("master manifest: unexpected columns")
     if len(master) != sum(value[0] for value in EXPECTED.values()):
