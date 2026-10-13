@@ -1,0 +1,3 @@
+duplicate_study	canonical_study	relationship	action
+PRJEB23991	PRJNA219440	8 paired lifecycle runs; biological/base-count duplicates	do_not_download
+SRP007636	PRJNA384372/PRJNA219440	historical H3K9ac redeposition; same reads/base counts	do_not_download
