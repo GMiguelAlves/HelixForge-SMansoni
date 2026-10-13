@@ -380,9 +380,11 @@ class ProjectContracts(unittest.TestCase):
         self.assertNotIn("--export=ALL", slurm)
 
     def test_helixforge_release_pin_is_exact(self) -> None:
-        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        study_registry = (ROOT / "docs/studies_and_preparation.md").read_text(
+            encoding="utf-8"
+        )
         server_template = (ROOT / "config/server.env.template").read_text(encoding="utf-8")
-        self.assertIn(HELIXFORGE_DEFAULT_COMMIT, readme)
+        self.assertIn(HELIXFORGE_DEFAULT_COMMIT, study_registry)
         self.assertIn(HELIXFORGE_DEFAULT_COMMIT, server_template)
 
     def test_reference_validation_record_is_consistent(self) -> None:
