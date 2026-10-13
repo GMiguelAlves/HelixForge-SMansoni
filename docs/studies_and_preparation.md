@@ -173,5 +173,5 @@ run sets, duplicate-deposit exclusions, and publication links are indexed in
 [`metadata/chipseq/`](../metadata/chipseq/). The frozen execution and reference
 decisions are under [`config/chipseq/`](../config/chipseq/), with the scientific
 preparation record in
-[ChIP-seq core preparation record](chipseq_core_preparation_ptbr.md).
+[ChIP-seq core preparation record](chipseq_core_preparation.md).
 No ChIP-seq result has yet been promoted to the atlas.

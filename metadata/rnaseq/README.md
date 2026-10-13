@@ -1,15 +1,15 @@
-# Metadados RNA-seq
+# RNA-seq metadata
 
-Cada diretório de estudo contém `runs.tsv` (aquisição e integridade dos FASTQs),
-`samples.tsv` (unidades biológicas) e `metadata.csv` (entrada do HelixForge).
-Exclusões explícitas do depósito público, quando necessárias, ficam em
-`excluded_ena_runs.tsv`.
+Each study directory contains `runs.tsv` (FASTQ acquisition and integrity),
+`samples.tsv` (biological units), and `metadata.csv` (HelixForge input).
+Where needed, `excluded_ena_runs.tsv` explicitly records public-deposit
+exclusions.
 
-`master_sample_manifest.tsv` é o índice conservador dos estudos inicialmente
-consolidados. `p1_pending_manifest.tsv` registra um lote histórico de preparação;
-não define um projeto científico separado nem substitui os registros individuais
-dos estudos. Os arquivos em `vocabularies/` preservam os valores curados sem
-presumir equivalência biológica entre estudos.
+`master_sample_manifest.tsv` is a conservative index of the initially
+consolidated studies. `p1_pending_manifest.tsv` records a historical
+preparation batch; it does not define a separate scientific project or
+replace the individual study records. Files in `vocabularies/` preserve
+curated values without assuming biological equivalence across studies.
 
-Os contratos científicos e o estado de cada estudo estão descritos no
-[registro de estudos](../../docs/studies_and_preparation.md).
+Study contracts and current status are described in the
+[study registry](../../docs/studies_and_preparation.md).

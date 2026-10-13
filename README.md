@@ -81,7 +81,8 @@ any data.
 - `provenance/`: frozen input-package evidence and per-study execution records.
 - `analyses/`: cross-study, RNA-seq/ChIP-seq integration, atlas, and candidate
   analyses introduced under separately reviewed contracts.
-- `docs/`: methods, operational policy, dictionary, and limitations.
+- [`docs/`](docs/README.md): methods, operational policy, dictionary,
+  preparation records, and limitations.
 
 ## Reproducibility
 

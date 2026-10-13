@@ -1,13 +1,19 @@
 # PRJNA494090
 
-## Decisão científica
+## Scientific decision
 
-sensibilidade reduzida ao praziquantel por seleção laboratorial. Fonte primária: https://doi.org/10.1016/j.molbiopara.2018.12.005.
+Reduced praziquantel sensitivity after laboratory selection. Primary source:
+https://doi.org/10.1016/j.molbiopara.2018.12.005.
 
-Foram selecionados **24 runs RNA-seq** de *Schistosoma mansoni*, organizados em **24 amostras biológicas**. Layout: `PAIRED`. Modo HelixForge: `full`.
+The input package selected **24 RNA-seq runs** from *Schistosoma mansoni*,
+representing **24 biological samples**. Layout: `PAIRED`. HelixForge mode:
+`full`.
 
-## Limitação congelada
+## Frozen limitation
 
-Os contrastes comparam a população selecionada e o controle dentro de cada passagem; não representam exposição aguda ao PZQ.
+Contrasts compare selected and control populations within each passage; they
+do not represent acute PZQ exposure.
 
-Os FASTQs brutos não são versionados. `runs.tsv` fixa URLs, MD5, tamanhos e a relação run → amostra; o snapshot ENA imutável está em `provenance/PRJNA494090/source_snapshots/ena_read_run.tsv`.
+Raw FASTQs are not versioned. `runs.tsv` freezes URLs, MD5 checksums, sizes,
+and run-to-sample relationships. The immutable ENA snapshot is
+`provenance/PRJNA494090/source_snapshots/ena_read_run.tsv`.
