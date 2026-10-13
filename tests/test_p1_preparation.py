@@ -27,14 +27,14 @@ def read_rows(path: Path, delimiter: str) -> list[dict[str, str]]:
 
 class P1Preparation(unittest.TestCase):
     def test_static_preparation_contract(self) -> None:
-        pending = read_rows(ROOT / "metadata/p1_pending_manifest.tsv", "\t")
+        pending = read_rows(ROOT / "metadata/rnaseq/p1_pending_manifest.tsv", "\t")
         self.assertEqual({row["study"] for row in pending}, set(EXPECTED))
         global_runs: set[str] = set()
         for study, (run_count, sample_count, layout, mode, de_status) in EXPECTED.items():
             with self.subTest(study=study):
-                runs = read_rows(ROOT / "metadata" / study / "runs.tsv", "\t")
-                samples = read_rows(ROOT / "metadata" / study / "samples.tsv", "\t")
-                metadata = read_rows(ROOT / "metadata" / study / "metadata.csv", ",")
+                runs = read_rows(ROOT / "metadata" / "rnaseq" / study / "runs.tsv", "\t")
+                samples = read_rows(ROOT / "metadata" / "rnaseq" / study / "samples.tsv", "\t")
+                metadata = read_rows(ROOT / "metadata" / "rnaseq" / study / "metadata.csv", ",")
                 self.assertEqual((len(runs), len(samples), len(metadata)),
                                  (run_count, sample_count, run_count))
                 run_ids = {row["run_accession"] for row in runs}
@@ -60,26 +60,26 @@ class P1Preparation(unittest.TestCase):
                     else:
                         self.assertTrue(all(r2))
                         self.assertRegex(row["fastq_2_md5"], r"^[0-9a-f]{32}$")
-                provenance = json.loads((ROOT / "provenance" / study / "input_manifest.json").read_text(encoding="utf-8"))
-                snapshot = ROOT / "provenance" / study / "source_snapshots/ena_read_run.tsv"
+                provenance = json.loads((ROOT / "provenance" / "rnaseq" / study / "input_manifest.json").read_text(encoding="utf-8"))
+                snapshot = ROOT / "provenance" / "rnaseq" / study / "source_snapshots/ena_read_run.tsv"
                 self.assertEqual(provenance["source_snapshot"]["sha256"],
                                  hashlib.sha256(snapshot.read_bytes()).hexdigest())
                 self.assertEqual((provenance["run_mode"], provenance["differential_expression"]),
                                  (mode, de_status))
-                settings = (ROOT / "config" / study / "user_settings.sh").read_text(encoding="utf-8")
+                settings = (ROOT / "config" / "rnaseq" / study / "user_settings.sh").read_text(encoding="utf-8")
                 self.assertIn(f'export HF_RNASEQ_RUN_MODE="{mode}"', settings)
                 if de_status == "BLOCKED":
-                    blocked = json.loads((ROOT / "config" / study / "de_spec.blocked.json").read_text(encoding="utf-8"))
+                    blocked = json.loads((ROOT / "config" / "rnaseq" / study / "de_spec.blocked.json").read_text(encoding="utf-8"))
                     self.assertEqual(blocked["status"], "BLOCKED")
                 else:
-                    spec = json.loads((ROOT / "config" / study / "de_spec.json").read_text(encoding="utf-8"))
+                    spec = json.loads((ROOT / "config" / "rnaseq" / study / "de_spec.json").read_text(encoding="utf-8"))
                     levels = Counter(sample["condition"] for sample in samples)
                     for contrast in spec["contrasts"]:
                         for level in (contrast["numerator"], contrast["denominator"]):
                             self.assertGreaterEqual(levels[level], spec["parameters"]["min_replicates"])
 
     def test_single_end_prior_is_explicit(self) -> None:
-        with (ROOT / "metadata/PRJNA312093/metadata.csv").open(encoding="utf-8", newline="") as handle:
+        with (ROOT / "metadata/rnaseq/PRJNA312093/metadata.csv").open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
         self.assertEqual(len(rows), 20)
         self.assertEqual({row["library_layout"] for row in rows}, {"single"})
