@@ -1,0 +1,13 @@
+study_accession	run_set	metadata_file	terminal_mode	idr_threshold	idr_rank	consensus_policy	priority
+PRJNA1173904	narrow	helixforge.narrow.tsv	idr	0.05	signal_value		P1
+PRJNA1173904	broad	helixforge.broad.tsv	consensus			replicate_support:2	P1
+PRJNA236156	narrow	helixforge.narrow.tsv	consensus			replicate_support:2	P1
+PRJNA236156	broad	helixforge.broad.tsv	consensus			replicate_support:2	P1
+PRJNA312093	narrow	helixforge.narrow.tsv	idr	0.05	signal_value		P1
+PRJNA312093	broad	helixforge.broad.tsv	consensus			replicate_support:2	P1
+PRJNA602708	narrow	helixforge.narrow.tsv	idr	0.05	signal_value		P1
+PRJNA602708	broad	helixforge.broad.tsv	consensus			replicate_support:2	P1
+PRJNA1090249	broad	helixforge.broad.tsv	consensus			replicate_support:2	P1
+PRJNA219440	alignment	helixforge.alignment.tsv	post_alignment			missing_controls_allowed	P1_Q2
+PRJNA384372	alignment	helixforge.alignment.tsv	post_alignment			missing_controls_allowed	P2_Q2
+PRJNA816041	alignment	helixforge.alignment.tsv	post_alignment			missing_controls_allowed	BENCHMARK

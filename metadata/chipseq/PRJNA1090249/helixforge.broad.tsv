@@ -1,0 +1,9 @@
+sample_id	run_accession	fastq_1	fastq_2	layout	assay	condition	biological_replicate	technical_replicate	antibody	target	control_id	is_control	batch	lane	dataset	organism	genome_id
+cercaria_input	SRR28402821	SRR28402821.fastq.gz		single	input	cercaria	shared	1		input		true	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_input	SRR28402817	SRR28402817.fastq.gz		single	input	sporocyst	shared	1		input		true	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_hp1_r3	SRR28402822	SRR28402822.fastq.gz		single	ChIP-seq	cercaria	3	1	anti-SmHP1	HP1	SRR28402821	false	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_hp1_r2	SRR28402825	SRR28402825.fastq.gz		single	ChIP-seq	cercaria	2	1	anti-SmHP1	HP1	SRR28402821	false	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_hp1_r1	SRR28402826	SRR28402826.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-SmHP1	HP1	SRR28402821	false	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_hp1_r3	SRR28402818	SRR28402818.fastq.gz		single	ChIP-seq	sporocyst	3	1	anti-SmHP1	HP1	SRR28402817	false	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_hp1_r2	SRR28402819	SRR28402819.fastq.gz		single	ChIP-seq	sporocyst	2	1	anti-SmHP1	HP1	SRR28402817	false	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_hp1_r1	SRR28402820	SRR28402820.fastq.gz		single	ChIP-seq	sporocyst	1	1	anti-SmHP1	HP1	SRR28402817	false	PRJNA1090249		PRJNA1090249	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19

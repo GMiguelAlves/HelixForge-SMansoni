@@ -177,6 +177,24 @@ candidate-gene report passed but remains outside Git. Persistence, checksums,
 private audit capture, and sensitive-path scanning passed before 621.87 GB of
 study-specific scratch data were removed.
 
+## ChIP-seq core preparation
+
+The public ChIP-seq core is now registered independently from the RNA-seq
+series. Five Q1 studies have controls suitable for peak calling
+(`PRJNA1173904`, `PRJNA236156`, `PRJNA312093`, `PRJNA602708`, and
+`PRJNA1090249`). `PRJNA219440` is retained in P1 for QC/alignment only because
+its public historical subexperiments do not provide a uniform matched-control
+design. `PRJNA384372` is P2/Q2, and `PRJNA816041` is a technical benchmark
+rather than atlas evidence.
+
+The metadata, download checksums, explicit IP/control mapping, narrow/broad
+run sets, duplicate-deposit exclusions, and publication links are indexed in
+[`metadata/chipseq/`](metadata/chipseq/). The frozen execution and reference
+decisions are under [`config/chipseq/`](config/chipseq/), with the scientific
+preparation record in
+[`docs/chipseq_core_preparation_ptbr.md`](docs/chipseq_core_preparation_ptbr.md).
+No ChIP-seq result has yet been promoted to the atlas.
+
 ## Execution policy
 
 Only one study may occupy heavy scratch storage at a time. Data acquisition is
