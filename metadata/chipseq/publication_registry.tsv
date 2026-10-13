@@ -1,0 +1,15 @@
+study_accession	publication_status	pmid	doi	title	evidence_note
+PRJNA1173904	primary_preprint_confirmed		10.64898/2026.01.23.701327	The histone code of love: epigenetics of maturation of gonads in the human blood fluke Schistosoma mansoni	Relato primario confirmado como preprint; o status deve permanecer explicito na interpretacao
+PRJNA1173904	reuse_peer_reviewed_confirmed	40126349	10.3390/ncrna11020025	Chromatin Structure Around Long Non-Coding RNA (lncRNA) Genes in Schistosoma mansoni Gonads	Publicacao revisada por pares que reutiliza o recurso de gonadas
+PRJNA236156	primary_confirmed	26305466	10.1371/journal.pntd.0003853	The Epigenome of Schistosoma mansoni Provides Insight about How Cercariae Poise Transcription until Infection	O texto integral cita SRP035609; o mesmo BioProject tambem sustenta trabalhos posteriores de epimutacao
+PRJNA236156	reuse_confirmed	29782530	10.1371/journal.ppat.1007066	Histone methylation changes are required for life cycle progression in the human parasite Schistosoma mansoni	O texto integral cita PRJNA236156 em reanalise/conjunto combinado
+PRJNA312093	primary_confirmed	27677173	10.1371/journal.pntd.0004930	Sex-Biased Transcriptome of Schistosoma mansoni: Host-Parasite Interaction, Genetic Determinants and Epigenetic Regulators Are Associated with Sexual Differentiation	Artigo primario confirmado por busca bibliografica do accession
+PRJNA602708	primary_confirmed	34702841	10.1038/s41467-021-26497-0	Rhesus macaques self-curing from a schistosome infection can display complete immunity to challenge	Artigo primario confirmado por busca bibliografica do accession
+PRJNA1090249	primary_confirmed	40172426	10.1590/0074-02760240075	Heterochromatin protein 1 (HP1) of Schistosoma mansoni: non-canonical chromatin landscape and oviposition effects	Artigo primario confirmado por busca bibliografica do accession
+PRJNA219440	primary_confirmed	26305466	10.1371/journal.pntd.0003853	The Epigenome of Schistosoma mansoni Provides Insight about How Cercariae Poise Transcription until Infection	O texto integral cita SRP034587, alias SRA do BioProject
+PRJNA219440	reuse_confirmed	29782530	10.1371/journal.ppat.1007066	Histone methylation changes are required for life cycle progression in the human parasite Schistosoma mansoni	O artigo cita explicitamente o BioProject; o deposito agrega subexperimentos historicos
+PRJNA384372	link_ambiguous			Schistosoma mansoni Epigenomics SmGH2	Nao foi localizado vinculo accession-artigo inequivoco; permanece P2/Q2 e nao entra como evidencia biologica aceita
+PRJNA816041	primary_confirmed	37521535	10.12688/wellcomeopenres.17779.2	Automated ChIPmentation procedure on limited biological material of the human blood fluke Schistosoma mansoni	Recurso metodologico; nao e evidencia biologica do atlas
+PRJEB23991	duplicate_deposit			Duplicata do subconjunto paired-end de PRJNA219440	Nao constitui novo estudo
+SRP007636	duplicate_deposit			Redeposito historico H3K9ac	Nao constitui novo estudo
+PRJEB3199	insufficient_metadata			Illumina MiSeq paired end sequencing	Sem desenho biologico ou publicacao resolvidos; excluido
