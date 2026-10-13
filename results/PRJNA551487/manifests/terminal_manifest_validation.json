@@ -1,0 +1,9 @@
+{
+  "filesystem": "tracked_inputs_verified",
+  "manifest_id": "p1_PRJNA551487_20261011T192428Z.rnaseq",
+  "schema": "valid",
+  "schema_version": "1.0",
+  "semantic": "valid",
+  "status": "complete",
+  "type": "integration_manifest_validation"
+}
