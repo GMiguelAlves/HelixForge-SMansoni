@@ -1,0 +1,12 @@
+{
+  "study_id": "PRJNA551487",
+  "technical_execution": "PASS",
+  "input_integrity": "PASS",
+  "sample_qc": "REVIEW",
+  "sample_review_count": 10,
+  "sample_count": 10,
+  "differential_expression_execution": "COMPLETE",
+  "differential_expression_promotion": "HOLD",
+  "atlas_inclusion": "HOLD",
+  "reason": "All ten libraries have Salmon mapping below the predefined 60% review threshold; the cause and impact on differential expression remain unresolved."
+}
