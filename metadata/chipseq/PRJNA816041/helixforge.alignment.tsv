@@ -1,0 +1,9 @@
+sample_id	run_accession	fastq_1	fastq_2	layout	assay	condition	biological_replicate	technical_replicate	antibody	target	control_id	is_control	batch	lane	dataset	organism	genome_id
+miracidium_100_r1	SRR18323821	SRR18323821_1.fastq.gz	SRR18323821_2.fastq.gz	paired	ChIP-seq	input_cells_100	1	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_100_r2	SRR18323822	SRR18323822_1.fastq.gz	SRR18323822_2.fastq.gz	paired	ChIP-seq	input_cells_100	2	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_10e3_r1	SRR18323819	SRR18323819_1.fastq.gz	SRR18323819_2.fastq.gz	paired	ChIP-seq	input_cells_10e3	1	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_10e3_r2	SRR18323820	SRR18323820_1.fastq.gz	SRR18323820_2.fastq.gz	paired	ChIP-seq	input_cells_10e3	2	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_10e4_r1	SRR18323817	SRR18323817_1.fastq.gz	SRR18323817_2.fastq.gz	paired	ChIP-seq	input_cells_10e4	1	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_10e4_r2	SRR18323818	SRR18323818_1.fastq.gz	SRR18323818_2.fastq.gz	paired	ChIP-seq	input_cells_10e4	2	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_10e6_r2	SRR18323816	SRR18323816_1.fastq.gz	SRR18323816_2.fastq.gz	paired	ChIP-seq	input_cells_10e6	2	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_10e6_r1	SRR18323823	SRR18323823_1.fastq.gz	SRR18323823_2.fastq.gz	paired	ChIP-seq	input_cells_10e6	1	1	anti-H3K4me3	H3K4me3		false	PRJNA816041		PRJNA816041	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19

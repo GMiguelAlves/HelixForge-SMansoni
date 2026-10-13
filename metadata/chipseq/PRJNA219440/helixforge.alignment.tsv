@@ -1,0 +1,30 @@
+sample_id	run_accession	fastq_1	fastq_2	layout	assay	condition	biological_replicate	technical_replicate	antibody	target	control_id	is_control	batch	lane	dataset	organism	genome_id
+adult_srr1107779	SRR1107779	SRR1107779.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+adult_srr1131932	SRR1131932	SRR1131932.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+adult_srr1107840	SRR1107840	SRR1107840.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+adult_srr1136063	SRR1136063	SRR1136063.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+adult_srr1118159	SRR1118159	SRR1118159.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K9ac	H3K9ac		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+adult_srr1138588	SRR1138588	SRR1138588.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K9ac	H3K9ac		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+adult_srr1125037	SRR1125037	SRR1125037.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K9me3	H3K9me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+adult_srr1138589	SRR1138589	SRR1138589.fastq.gz		single	ChIP-seq	adult	1	1	anti-H3K9me3	H3K9me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1055214	SRR1055214	SRR1055214.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1104925	SRR1104925	SRR1104925.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1087939	SRR1087939	SRR1087939.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1104934	SRR1104934	SRR1104934.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1087940	SRR1087940	SRR1087940.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K9ac	H3K9ac		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1105794	SRR1105794	SRR1105794.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K9ac	H3K9ac		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1103704	SRR1103704	SRR1103704.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K9me3	H3K9me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_srr1106708	SRR1106708	SRR1106708.fastq.gz		single	ChIP-seq	cercaria	1	1	anti-H3K9me3	H3K9me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_srr6307190	SRR6307190	SRR6307190_1.fastq.gz	SRR6307190_2.fastq.gz	paired	ChIP-seq	miracidium	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_srr6307191	SRR6307191	SRR6307191_1.fastq.gz	SRR6307191_2.fastq.gz	paired	ChIP-seq	miracidium	2	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_srr6307186	SRR6307186	SRR6307186_1.fastq.gz	SRR6307186_2.fastq.gz	paired	ChIP-seq	miracidium	1	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_srr6307187	SRR6307187	SRR6307187_1.fastq.gz	SRR6307187_2.fastq.gz	paired	ChIP-seq	miracidium	2	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_srr5482574	SRR5482574	SRR5482574.fastq.gz		single	ChIP-seq	miracidium	1	1	anti-H3K9ac	H3K9ac		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+schistosomulum_srr2120361	SRR2120361	SRR2120361.fastq.gz		single	ChIP-seq	schistosomulum	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+schistosomulum_srr2120744	SRR2120744	SRR2120744.fastq.gz		single	ChIP-seq	schistosomulum	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+schistosomulum_srr2120359	SRR2120359	SRR2120359.fastq.gz		single	ChIP-seq	schistosomulum	1	1	not_reported	UNRESOLVED_CHIP_TARGET		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+schistosomulum_srr2120360	SRR2120360	SRR2120360.fastq.gz		single	ChIP-seq	schistosomulum	1	1	not_reported	UNRESOLVED_CHIP_TARGET		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_srr6307192	SRR6307192	SRR6307192_1.fastq.gz	SRR6307192_2.fastq.gz	paired	ChIP-seq	sporocyst	1	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_srr6307193	SRR6307193	SRR6307193_1.fastq.gz	SRR6307193_2.fastq.gz	paired	ChIP-seq	sporocyst	2	1	anti-H3K27me3	H3K27me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_srr6307188	SRR6307188	SRR6307188_1.fastq.gz	SRR6307188_2.fastq.gz	paired	ChIP-seq	sporocyst	1	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+sporocyst_srr6307189	SRR6307189	SRR6307189_1.fastq.gz	SRR6307189_2.fastq.gz	paired	ChIP-seq	sporocyst	2	1	anti-H3K4me3	H3K4me3		false	PRJNA219440		PRJNA219440	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19

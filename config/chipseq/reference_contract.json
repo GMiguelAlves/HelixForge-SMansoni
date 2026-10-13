@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "assembly": "SM_V10",
+  "source": "WormBase ParaSite",
+  "release": "WBPS19",
+  "frozen_manifest": "../reference/reference_manifest.json",
+  "fasta": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+  "annotation_gtf": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+  "fasta_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "gtf_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+  "sequence_count": 10,
+  "assembly_span_bp": 391422299,
+  "macs3_effective_genome_size": 391422299,
+  "effective_genome_size_policy": "assembly_span_proxy_pending_mappability_estimate",
+  "blacklist_bed": null,
+  "blacklist_policy": "not_applied_no_validated_smansoni_blacklist",
+  "bowtie2_index_policy": "build_per_independent_run_set_from_frozen_fasta; v1.1.0 has no external-prebuilt-index input for ChIP-seq"
+}
