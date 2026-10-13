@@ -1,0 +1,7 @@
+condition	within_group_median_correlation.min	within_group_median_correlation.median	within_group_median_correlation.max
+p6_control	0.9814223	0.9879761	0.9889328
+p6_pzq_selected	0.9760187	0.9840810	0.9881071
+p7_control	0.9870379	0.9897502	0.9907027
+p7_pzq_selected	0.9717712	0.9740473	0.9772076
+p8_control	0.9860087	0.9869201	0.9880007
+p8_pzq_selected	0.9842868	0.9865018	0.9891259
