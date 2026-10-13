@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1] / "results" / "PRJNA494090"
+ROOT = Path(__file__).resolve().parents[1] / "results" / "rnaseq" / "PRJNA494090"
 
 
 class PRJNA494090PublicationTest(unittest.TestCase):

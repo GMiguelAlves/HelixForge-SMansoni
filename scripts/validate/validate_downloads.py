@@ -9,7 +9,7 @@ def md5(path):
     return h.hexdigest()
 
 p=argparse.ArgumentParser(); p.add_argument('project'); p.add_argument('--package-root',type=Path,required=True); p.add_argument('--data-root',type=Path,required=True); a=p.parse_args()
-manifest=a.package_root/'metadata'/a.project/'runs.tsv'
+manifest=a.package_root/'metadata'/'rnaseq'/a.project/'runs.tsv'
 rows=list(csv.DictReader(manifest.open(encoding='utf-8'),delimiter='	'))
 errors=[]
 for row in rows:
