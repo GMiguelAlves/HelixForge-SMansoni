@@ -58,7 +58,9 @@ schistosomulum-stage sex contrasts from a 12-sample restricted refit are
 approved for atlas inclusion, with explicit warnings; its original 20-sample
 DE tables are **not** that evidence. Adult and cercaria contrasts remain not
 evaluable. See the [study admission decision](../rnaseq/atlas_study_decisions.md)
-for the investigation, limits and artifact requirement. The original compact
+for the investigation and limits. The verified
+[restricted-refit tables](../../results/rnaseq/PRJNA312093/restricted_refit/)
+are the only approved DE source; the original 20-sample compact
 [result package](../../results/rnaseq/PRJNA312093/) remains an execution and
 audit record. Other accessions retain their own review gates.
 

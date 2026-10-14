@@ -32,7 +32,7 @@ Under the sex-neutral stage check, `male_adult_r1` scored −3.853 versus +1.205
 
 A sensitivity analysis then fitted DESeq2 using only 12 libraries from schistosomulum stages 1–3 (female and male, two biological replicates per group). It retained the original `~ condition` design, count filter and reporting thresholds (`padj < 0.05`, `|log2FC| >= 1`). The lowest within-group VST replicate correlation was 0.9415. Compared with the earlier 16-library refit without adults, the three stage contrasts retained 78.7%, 90.4%, and 84.8% of significant genes; shared effects had Spearman log2FC correlation at least 0.99997, with no sign reversals among shared genes. Significant-gene totals changed to 290, 1,045, and 437, so the original 20-sample tables cannot stand in for this refit.
 
-**Admission rule:** exactly those three stage-1/2/3 contrast tables from the reviewed 12-sample refit may enter, each labelled `RESTRICTED_REFIT; TWO_REPLICATES_PER_GROUP; SOURCE_IDENTITY_LIMITATION`. The adult and cercaria contrasts remain `NOT_EVALUABLE`. The refit outputs are currently retained as private audit evidence; before materialising this decision in a published atlas, the approved tables must be packaged and checked against that audit. This is an implementation prerequisite, **not** an undecided admission vote. The public 20-sample result package remains an execution/audit record, not the approved differential-expression source.
+**Admission rule:** exactly those three stage-1/2/3 contrast tables from the reviewed 12-sample refit may enter, each labelled `RESTRICTED_REFIT; TWO_REPLICATES_PER_GROUP; SOURCE_IDENTITY_LIMITATION`. If displaying TPM, use only the 12 sample columns named in `included_samples.tsv`; do not mix in the eight adult/cercaria libraries. Their sex contrasts remain `NOT_EVALUABLE`. The [approved tables](../../results/rnaseq/PRJNA312093/restricted_refit/README.md) have now been copied byte-for-byte from the private audit and checked against its SHA-256 values. The public 20-sample DE tables remain execution/audit records, not the approved differential-expression source. The atlas itself has not been rebuilt by this admission record.
 
 ## PRJNA494090: reason for exclusion
 
@@ -53,6 +53,6 @@ Admission is therefore `PASS_WITH_LIMITATIONS` for **coding genes quantified by 
 ## Implementation and provenance boundary
 
 - Show each warning adjacent to its study and contrast, including in exports; do not convert a warning into an invisible filter.
-- PRJNA704646 and PRJNA1177852 contribute zero DE contrasts; PRJNA1150591 and PRJNA428470 contribute one each; PRJNA312093 contributes three **refit** contrasts only when their approved tables are materialised. PRJNA494090 and PRJNA551487 contribute none.
+- PRJNA704646 and PRJNA1177852 contribute zero DE contrasts; PRJNA1150591 and PRJNA428470 contribute one each; PRJNA312093 contributes three verified **restricted-refit** contrasts. PRJNA494090 and PRJNA551487 contribute none.
 - Keep the original study result packages and their provenance unchanged. The private diagnostic records contain the marker definitions, per-sample scores, refit summaries and execution logs; no private server path or raw read is published here.
 - Do not infer shared batch correction, causal RNA–ChIP coupling, or a pooled cross-study DE model from atlas admission.
