@@ -3,8 +3,8 @@ message: "If you use this project, cite HelixForge-SMansoni, HelixForge v1.0.0, 
 title: "HelixForge-SMansoni"
 type: software
 authors:
-  - family-names: "Alves"
-    given-names: "Gustavo Miguel Caxias"
+  - family-names: "Caxias Alves"
+    given-names: "Gustavo Miguel"
 repository-code: "https://github.com/GMiguelAlves/HelixForge-SMansoni"
 url: "https://github.com/GMiguelAlves/HelixForge-SMansoni"
 license: "Apache-2.0"
@@ -25,5 +25,5 @@ references:
     version: "1.0.0"
     repository-code: "https://github.com/GMiguelAlves/HelixForge"
     authors:
-      - family-names: "Alves"
-        given-names: "Gustavo Miguel Caxias"
+      - family-names: "Caxias Alves"
+        given-names: "Gustavo Miguel"
