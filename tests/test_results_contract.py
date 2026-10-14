@@ -20,6 +20,7 @@ STUDIES = (
     "PRJNA1150591",
     "PRJNA1177852",
     "PRJNA704646",
+    "PRJNA428470",
 )
 
 
