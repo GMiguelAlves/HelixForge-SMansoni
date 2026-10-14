@@ -29,23 +29,43 @@ mapping below 60%. Only the mapping trigger fired. The mapped fraction was
 [replicate correlations](replicate_correlations.tsv) describe the mapped
 counts, but cannot rule out bias in the much larger unmapped fraction.
 
-A small independent BLAST-based diagnostic found frequent strong hits to a
-repetitive rDNA locus in reads sampled from the beginning of the FASTQs.
-The sampling did **not** cover each complete library, so those hit fractions
-must not be presented as whole-library rDNA prevalence. The specific
-library-preparation cause remains unproven. A whole-file, pre-specified
-sampling design would be needed before making a quantitative attribution.
+A preliminary BLAST-based diagnostic sampled reads only from the beginnings
+of the FASTQs, so its hit fractions were **not** treated as whole-library
+estimates. Before inspecting the subsequent results, a private protocol
+froze a deterministic, uniform reservoir of 3,000 paired reads from each of
+the ten complete FASTQ pairs. Each original source passed its frozen ENA size and
+MD5 checks, mates remained paired, and every positional decile contributed
+to each sample (at least 264 and at most 337 of the 3,000 pairs per decile).
+Two initial transfers failed MD5 despite reaching the expected byte size;
+only those transfers were repeated from byte zero and accepted after the
+checksum matched. The other eight samples were not repeated.
+
+In this 30,000-pair diagnostic, 86.60–92.87% of pairs had at least one mate
+locally aligned by Bowtie2 (`--very-sensitive-local`, without a mapping-quality
+filter) to the predeclared 50-kb repetitive locus
+`SM_V10_2:38300000-38350000`. The mean was 91.91% in controls and 88.27% in treated
+libraries; these are **screening fractions, not an inferential contrast**.
+The public [per-library summary](fullfile_locus_qc_summary.tsv) reports the
+denominators and hits. This target was selected after the preliminary
+diagnostic, and permissive local alignment to one repetitive locus does not
+establish unique origin, rRNA identity, or a specific laboratory cause.
+The complete sampled-read, alignment, checksum, tool-version, and execution
+audit is preserved privately, not distributed with the compact result package.
 
 ## Scientific decision
 
-The QC decision was recorded independently of differential-expression
-results. The DESeq2 outputs are **not promoted as biological results** and
+The atlas decision was recorded without inspecting or selecting favorable
+DESeq2 hits. The DESeq2 outputs are **not promoted as biological results** and
 remain in private audit storage. No contrast table is included here, no
-sample has been excluded, and no threshold was changed. The original study
-also collected DMSO controls and FPL-treated worms from different anatomical
-sites, so treatment and collection site cannot be separated in this design.
+sample has been excluded, and no threshold was changed. In the
+[primary study](https://pmc.ncbi.nlm.nih.gov/articles/PMC6796685/), DMSO
+controls came from mesenteries and FPL-treated worms from livers. Treatment
+and collection site therefore cannot be separated by this design. The
+study is `EXCLUDE_FROM_ATLAS` for both expression and differential-effect
+displays. This is a limitation of comparability and interpretation, **not**
+a failure of the workflow or proof that the original publication is wrong.
 
 The [terminal manifest](../manifests/rnaseq_run_manifest.json) and its
 [validation](../manifests/terminal_manifest_validation.json) refer to the
 complete private execution; the compact public package intentionally omits
-DE artifacts while promotion is on `HOLD`.
+DE artifacts after the scientific review withheld their promotion.

@@ -39,7 +39,7 @@ remain in each published study package.
 | `PRJNA312093` | 20 | 20 | Technical execution passed; three restricted-refit contrasts admitted with warning, adult/cercaria not evaluable |
 | `PRJNA428470` | 6 | 6 | Full RNA-seq completed; coding-gene contrast admitted with mapping warning |
 | `PRJNA494090` | 24 | 24 | Technical execution passed; excluded from atlas-level DE interpretation |
-| `PRJNA551487` | 10 | 10 | Technical execution passed; mapping investigation and atlas inclusion `HOLD` |
+| `PRJNA551487` | 10 | 10 | Technical execution passed; excluded from atlas after whole-file mapping investigation and design review |
 | `PRJNA597909` | 20 | 20 | Full RNA-seq; `PASS_WITH_LIMITATIONS` |
 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
 | `PRJNA704646` | 24 | 8 | Import completed; descriptive atlas inclusion with QC warning for three pools |
@@ -94,10 +94,13 @@ claim. See the [result package](../../results/rnaseq/PRJNA1177852/README.md)
 and [admission policy](../rnaseq/atlas_study_decisions.md).
 
 `PRJNA551487` completed technically, but all ten libraries have Salmon mapping
-below the predefined review threshold (12.41%–15.02%). Its DE outputs remain
-private and on scientific `HOLD`; no atlas admission has been decided. A
-broader library-composition investigation is deferred. See the
-[published QC review](../../results/rnaseq/PRJNA551487/README.md).
+below the predefined review threshold (12.41%–15.02%). A frozen whole-file
+random-pair screen and the published treatment/collection-site design were
+reviewed. Its DE outputs remain private and unpromoted, and neither its
+expression nor its DE effects enter the atlas. The screen does not establish
+rRNA identity or a library-preparation cause. See the
+[published QC review](../../results/rnaseq/PRJNA551487/README.md) and
+[study decision](../rnaseq/atlas_study_decisions.md).
 
 `PRJNA428470` completed the full paired-end workflow for three adult-female
 5-azacitidine libraries and three controls. Four of six libraries remain QC

@@ -19,7 +19,14 @@
   },
   "technical_execution": "PASS",
   "sample_qc": "REVIEW",
-  "differential_expression": "executed_but_withheld_pending_scientific_review",
-  "de_promotion": "HOLD",
-  "atlas_inclusion": "HOLD"
+  "differential_expression": "executed_but_withheld_after_scientific_review",
+  "de_promotion": "WITHHELD_AFTER_REVIEW",
+  "atlas_inclusion": "EXCLUDE_FROM_ATLAS",
+  "fullfile_diagnostic": {
+    "public_summary": "../reports/fullfile_locus_qc_summary.tsv",
+    "libraries": 10,
+    "random_pairs_per_library": 3000,
+    "all_ten_positional_deciles_covered_per_library": true,
+    "interpretation": "repetitive-locus-compatible local alignments; rRNA identity and library mechanism not established"
+  }
 }

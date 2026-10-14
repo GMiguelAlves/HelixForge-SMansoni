@@ -19,8 +19,9 @@ Decision record: 14 October 2026. This document records which study-level eviden
 | [`PRJNA428470`](../../results/rnaseq/PRJNA428470/README.md) | `INCLUDE_MRNA_CONTRAST_WITH_MAPPING_WARNING` | The frozen adult-female 5-azacitidine-versus-control contrast and coding-gene expression | Workflow and input integrity passed. Four of six libraries remain QC `REVIEW` for Salmon mapping below 60%; a targeted mapping investigation and leave-one-out check support the restricted mRNA interpretation, not claims about the unquantified reads. |
 | [`PRJNA312093`](../../results/rnaseq/PRJNA312093/README.md) | `INCLUDE_THREE_REFIT_CONTRASTS_WITH_WARNING` | Only the sex contrasts at schistosomulum stages 1, 2, and 3 from the **12-sample restricted refit** | Independent marker and sensitivity investigations support a restricted analysis. The original 20-sample DE tables are **not** the approved atlas source. Adult and cercaria contrasts are `NOT_EVALUABLE`; see investigation below. |
 | [`PRJNA494090`](../../results/rnaseq/PRJNA494090/README.md) | `EXCLUDE_FROM_ATLAS` | None of its DE contrasts | Systematic arm-dependent quantifiable-read differences and a variable external sex-expression signature prevent a confident interpretation as an isolated PZQ-selection effect. Preserve the original study result and audit evidence; exclusion is not a claim that the software failed. |
+| [`PRJNA551487`](../../results/rnaseq/PRJNA551487/README.md) | `EXCLUDE_FROM_ATLAS` | Neither expression nor DE effects | All ten libraries remain QC `REVIEW` for 12.41–15.02% Salmon mapping to the declared mRNA index. A whole-file random-pair screen found frequent alignment to a repetitive genomic locus but does not establish rRNA identity. Treatment is confounded with collection site in the original study; see investigation below. |
 
-The atlas decision for `PRJNA551487` remains deferred pending a broader investigation of its very low mapping. Prepared inputs or a successful run do not automatically confer atlas eligibility.
+Prepared inputs or a successful workflow run do not automatically confer atlas eligibility.
 
 ## PRJNA312093: biological-identity investigation and restricted refit
 
@@ -40,6 +41,14 @@ Read integrity and pipeline execution passed, but 10/24 libraries had Salmon map
 
 This combination creates a credible confounding risk for interpreting DE as an isolated response to PZQ sensitivity selection. No automatic sample exclusion, post-hoc relabelling, or pipeline parameter change was made to force a favourable result. The conservative decision is to omit this study from atlas-level gene-effect comparisons while retaining its original outputs for audit or a separately designed methods investigation.
 
+## PRJNA551487: whole-file QC investigation and exclusion
+
+The paired-end workflow completed 117/117 tasks and all 20 input FASTQs passed integrity validation. Nevertheless, Salmon mapped only 12.41–15.02% of reads to the declared SM_V10/WBPS19 **mRNA** index; all ten biological libraries triggered the prespecified 60% mapping review gate. A first diagnostic based on the beginning of each FASTQ could not estimate whole-library composition. A protocol frozen before the new results specified uniform reservoir sampling of 3,000 paired reads from the **entire** verified FASTQ for each library. All ten samples covered all ten positional deciles. Two independent fresh transfers were needed after MD5 failures; their replacement files passed the frozen ENA checks before sampling.
+
+Under the predeclared Bowtie2 local-alignment screen, 86.60–92.87% of random pairs had at least one mate compatible with a 50-kb repetitive locus of SM_V10. This is a strong **screening signal**, not a claim that 86.60–92.87% of molecules are rRNA: local alignment is permissive, the target was selected after an earlier diagnostic, and no genome-wide origin or library-preparation mechanism was proven. The [per-library public summary](../../results/rnaseq/PRJNA551487/reports/fullfile_locus_qc_summary.tsv) permits review; detailed read-level audit remains private. The original authors aligned to a different, genome-based reference, so this mRNA-only mapping percentage should not be equated with their reported genomic alignment rate.
+
+Independently of mapping, the [primary study](https://pmc.ncbi.nlm.nih.gov/articles/PMC6796685/) harvested DMSO controls from mesenteries and FPL-treated worms from livers. Thus drug and anatomical collection site are inseparable in its treatment contrast. We cannot promote that contrast as an isolated drug-response effect, and the low fraction quantified by our mRNA index also limits descriptive comparability with the atlas. The conservative decision is `EXCLUDE_FROM_ATLAS` for expression and DE while preserving technical QC, import matrices, provenance, and the original private DE output for audit. No sample was relabelled, no threshold was relaxed, and the workflow's technical `PASS` remains intact.
+
 ## PRJNA428470: coding-gene interpretation with a mapping warning
 
 The six paired-end libraries (three adult females treated with 5-azacitidine, three controls) passed FASTQ integrity and the HelixForge workflow completed 77/77 tasks. Salmon mapping to the SM_V10/WBPS19 **mRNA** index ranged from 34.61% to 60.83%, leaving four libraries below the frozen 60% review threshold. The mean was 47.08% for treated libraries and 50.11% for controls; the low-mapping fraction was not confined to one arm. Same-group log2-CPM correlations were at least 0.9888, but good agreement among mapped genes does not identify unmapped reads.
@@ -53,6 +62,6 @@ Admission is therefore `PASS_WITH_LIMITATIONS` for **coding genes quantified by 
 ## Implementation and provenance boundary
 
 - Show each warning adjacent to its study and contrast, including in exports; do not convert a warning into an invisible filter.
-- PRJNA704646 and PRJNA1177852 contribute zero DE contrasts; PRJNA1150591 and PRJNA428470 contribute one each; PRJNA312093 contributes three verified **restricted-refit** contrasts. PRJNA494090 and PRJNA551487 contribute none.
+- PRJNA704646 and PRJNA1177852 contribute zero DE contrasts; PRJNA1150591 and PRJNA428470 contribute one each; PRJNA312093 contributes three verified **restricted-refit** contrasts. PRJNA494090 and PRJNA551487 contribute neither expression nor DE effects to the atlas.
 - Keep the original study result packages and their provenance unchanged. The private diagnostic records contain the marker definitions, per-sample scores, refit summaries and execution logs; no private server path or raw read is published here.
 - Do not infer shared batch correction, causal RNA–ChIP coupling, or a pooled cross-study DE model from atlas admission.

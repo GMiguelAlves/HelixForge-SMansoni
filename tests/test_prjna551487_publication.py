@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import csv
 import json
 import unittest
 from pathlib import Path
@@ -10,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1] / "results" / "rnaseq" / "PRJNA551487
 
 
 class PRJNA551487PublicationTest(unittest.TestCase):
-    def test_public_core_and_scientific_hold(self) -> None:
+    def test_public_core_and_scientific_exclusion(self) -> None:
         for relative in (
             "README.md",
             "qc/qc_sample_summary.tsv",
@@ -26,10 +27,34 @@ class PRJNA551487PublicationTest(unittest.TestCase):
             self.assertTrue((ROOT / relative).is_file(), relative)
         publication = json.loads((ROOT / "manifests/publication_validation.json").read_text(encoding="utf-8"))
         self.assertEqual("review_package", publication["status"])
-        self.assertEqual("HOLD", publication["de_promotion"])
-        self.assertEqual("HOLD", publication["atlas_inclusion"])
+        self.assertEqual("WITHHELD_AFTER_REVIEW", publication["de_promotion"])
+        self.assertEqual("EXCLUDE_FROM_ATLAS", publication["atlas_inclusion"])
         self.assertEqual("10/10", publication["checks"]["qc_samples_review"])
         self.assertFalse((ROOT / "differential_expression").exists())
+
+    def test_fullfile_diagnostic_denominators_and_warning(self) -> None:
+        path = ROOT / "reports/fullfile_locus_qc_summary.tsv"
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle, delimiter="\t"))
+        self.assertEqual(10, len(rows))
+        self.assertEqual(10, len({row["sample_id"] for row in rows}))
+        self.assertEqual(10, len({row["run_accession"] for row in rows}))
+        self.assertEqual({"DMSO", "FPL"}, {row["arm"] for row in rows})
+        self.assertEqual([5, 5], [sum(row["arm"] == arm for row in rows) for arm in ("DMSO", "FPL")])
+        for row in rows:
+            self.assertEqual(3000, int(row["random_pairs"]))
+            self.assertGreater(int(row["full_fastq_pairs"]), 3000)
+            self.assertGreater(int(row["sample_decile_min"]), 0)
+            self.assertLessEqual(int(row["sample_decile_max"]), 3000)
+            self.assertLess(float(row["salmon_mapping_percent_full_run"]), 60)
+            self.assertLessEqual(int(row["locus_either_mate_hit"]), 3000)
+            self.assertAlmostEqual(
+                int(row["locus_either_mate_hit"]) / 3000,
+                float(row["locus_either_mate_fraction"]),
+            )
+        report = (ROOT / "reports/PRJNA551487_execution_report.md").read_text(encoding="utf-8")
+        self.assertIn("proof of a library-preparation mechanism", (ROOT / "README.md").read_text(encoding="utf-8"))
+        self.assertIn("cannot be separated by this design", report)
 
     def test_import_matrices_match_native_manifest(self) -> None:
         manifest = json.loads((ROOT / "expression/import_manifest.json").read_text(encoding="utf-8"))
