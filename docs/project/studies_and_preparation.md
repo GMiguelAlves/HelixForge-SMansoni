@@ -102,9 +102,9 @@ broader library-composition investigation is deferred. See the
 `REVIEW` for mapping below 60%. A two-library mapping diagnostic and six
 leave-one-out sensitivity fits support admitting the frozen contrast within
 the **coding-gene mRNA-index scope**, with a visible mapping warning and no
-claims about unquantified reads or lncRNAs. See the
-[admission policy](../rnaseq/atlas_study_decisions.md); the compact result
-package is being prepared separately from this decision record.
+claims about unquantified reads or lncRNAs. See the compact
+[result package](../../results/rnaseq/PRJNA428470/README.md) and
+[admission policy](../rnaseq/atlas_study_decisions.md).
 
 Every published study result uses the same compact QC interface at
 `results/rnaseq/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed

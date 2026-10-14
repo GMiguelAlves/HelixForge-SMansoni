@@ -1,0 +1,9 @@
+Analise DEG - smansoni_prjna428470_primary
+==============================
+
+Data: 2026-10-13 13:16:16
+Genes antes do filtro: see model_statistics.json
+Variaveis testadas: condition
+Covariaveis de design: 
+
+smansoni_prjna428470_primary	condition	condition__female_adult_5azac_vs_female_adult_control	ok	6	9307	1454
