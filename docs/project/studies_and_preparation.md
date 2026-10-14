@@ -35,11 +35,11 @@ remain in each published study package.
 | `PRJEB3190` | 20 | 20 | Full RNA-seq; `PASS` |
 | `PRJEB32839` | 150 | 75 | Full RNA-seq; `PASS_WITH_LIMITATIONS` |
 | `PRJNA1150591` | 15 | 15 | Full RNA-seq; adult contrast admitted to atlas with a design warning |
-| `PRJNA1177852` | 8 | 8 | Inputs prepared; descriptive/import-only design |
+| `PRJNA1177852` | 8 | 8 | Import completed; admitted as a descriptive time series with warning; no DE |
 | `PRJNA312093` | 20 | 20 | Technical execution passed; three restricted-refit contrasts admitted with warning, adult/cercaria not evaluable |
-| `PRJNA428470` | 6 | 6 | Inputs prepared; no published execution yet |
+| `PRJNA428470` | 6 | 6 | Full RNA-seq completed; coding-gene contrast admitted with mapping warning |
 | `PRJNA494090` | 24 | 24 | Technical execution passed; excluded from atlas-level DE interpretation |
-| `PRJNA551487` | 10 | 10 | Inputs prepared; execution conditional on QC |
+| `PRJNA551487` | 10 | 10 | Technical execution passed; mapping investigation and atlas inclusion `HOLD` |
 | `PRJNA597909` | 20 | 20 | Full RNA-seq; `PASS_WITH_LIMITATIONS` |
 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
 | `PRJNA704646` | 24 | 8 | Import completed; descriptive atlas inclusion with QC warning for three pools |
@@ -60,9 +60,7 @@ DE tables are **not** that evidence. Adult and cercaria contrasts remain not
 evaluable. See the [study admission decision](../rnaseq/atlas_study_decisions.md)
 for the investigation, limits and artifact requirement. The original compact
 [result package](../../results/rnaseq/PRJNA312093/) remains an execution and
-audit record. Other prepared accessions retain their own execution and review
-gates. `PRJNA1177852` is descriptive/import-only because its
-public design does not provide independent biological replication for DE.
+audit record. Other accessions retain their own review gates.
 
 `PRJNA494090` completed the paired-end workflow, but 10 of 24 libraries fell
 below the prespecified 60% Salmon mapping review threshold. Systematic
@@ -85,6 +83,28 @@ with a warning that the five four-week treated juveniles remained in the
 original `~ condition` fit. This is not an age contrast. See the
 [result package](../../results/rnaseq/PRJNA1150591/README.md) and the
 [study admission decision](../rnaseq/atlas_study_decisions.md).
+
+`PRJNA1177852` completed the native Import path for eight post-meclonazepam
+time points. All eight libraries passed technical QC, but each time point has
+one biological library and no parallel control. It is admitted to the atlas
+only as a labelled descriptive trajectory, with no DE or treatment-effect
+claim. See the [result package](../../results/rnaseq/PRJNA1177852/README.md)
+and [admission policy](../rnaseq/atlas_study_decisions.md).
+
+`PRJNA551487` completed technically, but all ten libraries have Salmon mapping
+below the predefined review threshold (12.41%–15.02%). Its DE outputs remain
+private and on scientific `HOLD`; no atlas admission has been decided. A
+broader library-composition investigation is deferred. See the
+[published QC review](../../results/rnaseq/PRJNA551487/README.md).
+
+`PRJNA428470` completed the full paired-end workflow for three adult-female
+5-azacitidine libraries and three controls. Four of six libraries remain QC
+`REVIEW` for mapping below 60%. A two-library mapping diagnostic and six
+leave-one-out sensitivity fits support admitting the frozen contrast within
+the **coding-gene mRNA-index scope**, with a visible mapping warning and no
+claims about unquantified reads or lncRNAs. See the
+[admission policy](../rnaseq/atlas_study_decisions.md); the compact result
+package is being prepared separately from this decision record.
 
 Every published study result uses the same compact QC interface at
 `results/rnaseq/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed
