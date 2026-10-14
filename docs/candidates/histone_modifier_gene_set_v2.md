@@ -109,7 +109,6 @@ summarizes HMMER, BLASTP, and orthology evidence. Its frozen evidence table is
 
 ## Sources
 
-- Historical curation: list supplied and confirmed by the project author.
 - Published context for methylation machinery:
   https://pmc.ncbi.nlm.nih.gov/articles/PMC6125318/
 - Published bromodomain-protein catalog:
