@@ -34,15 +34,15 @@ remain in each published study package.
 | `PRJEB14695` | 138 | 23 | Full RNA-seq; `PASS_WITH_LIMITATIONS` |
 | `PRJEB3190` | 20 | 20 | Full RNA-seq; `PASS` |
 | `PRJEB32839` | 150 | 75 | Full RNA-seq; `PASS_WITH_LIMITATIONS` |
-| `PRJNA1150591` | 15 | 15 | Inputs prepared; no published execution yet |
+| `PRJNA1150591` | 15 | 15 | Full RNA-seq; adult contrast admitted to atlas with a design warning |
 | `PRJNA1177852` | 8 | 8 | Inputs prepared; descriptive/import-only design |
-| `PRJNA312093` | 20 | 20 | Technical execution passed; biological review and atlas inclusion `HOLD` |
+| `PRJNA312093` | 20 | 20 | Technical execution passed; three restricted-refit contrasts admitted with warning, adult/cercaria not evaluable |
 | `PRJNA428470` | 6 | 6 | Inputs prepared; no published execution yet |
-| `PRJNA494090` | 24 | 24 | Technical execution passed; QC review, DE and atlas inclusion `HOLD` |
+| `PRJNA494090` | 24 | 24 | Technical execution passed; excluded from atlas-level DE interpretation |
 | `PRJNA551487` | 10 | 10 | Inputs prepared; execution conditional on QC |
 | `PRJNA597909` | 20 | 20 | Full RNA-seq; `PASS_WITH_LIMITATIONS` |
 | `PRJNA602528` | 10 | 10 | Import completed; `PASS_WITH_LIMITATIONS`; DE not applicable by design |
-| `PRJNA704646` | 24 | 8 | Import completed; descriptive only; QC review for three pools |
+| `PRJNA704646` | 24 | 8 | Import completed; descriptive atlas inclusion with QC warning for three pools |
 
 The frozen input package for seven of these accessions retains its historical
 batch label in [`metadata/rnaseq/p1_pending_manifest.tsv`](../../metadata/rnaseq/p1_pending_manifest.tsv)
@@ -52,25 +52,39 @@ preparation alone does not determine analysis or atlas inclusion.
 
 `PRJNA312093` completed the native single-end path under HelixForge `v1.1.0`:
 161/161 tasks and 20/20 technical QC checks passed, and the prespecified
-fragment-prior sensitivity check passed. Its biological promotion remains
-`HOLD` because the two adult-male replicates are discordant. The compact
-outputs and review are published under
-[`results/rnaseq/PRJNA312093/`](../../results/rnaseq/PRJNA312093/), explicitly **not** as
-accepted atlas evidence. The remaining prepared accessions require independent
-execution/review. `PRJNA1177852` is descriptive/import-only because its
+fragment-prior sensitivity check passed. Later independent-marker checks found
+adult- and cercaria-labelled profile inconsistencies. Only three
+schistosomulum-stage sex contrasts from a 12-sample restricted refit are
+approved for atlas inclusion, with explicit warnings; its original 20-sample
+DE tables are **not** that evidence. Adult and cercaria contrasts remain not
+evaluable. See the [study admission decision](../rnaseq/atlas_study_decisions.md)
+for the investigation, limits and artifact requirement. The original compact
+[result package](../../results/rnaseq/PRJNA312093/) remains an execution and
+audit record. Other prepared accessions retain their own execution and review
+gates. `PRJNA1177852` is descriptive/import-only because its
 public design does not provide independent biological replication for DE.
 
 `PRJNA494090` completed the paired-end workflow, but 10 of 24 libraries fell
-below the prespecified 60% Salmon mapping review threshold. Its DE tables are
-withheld from public promotion while sample QC and group differences are
-reviewed; no sample was automatically excluded. See the
-[published QC review](../../results/rnaseq/PRJNA494090/README.md).
+below the prespecified 60% Salmon mapping review threshold. Systematic
+selected-versus-control differences in quantifiable reads and a variable
+external sex-expression signature make atlas-level PZQ-effect interpretation
+unsafe. It is excluded from the atlas, not erased from the project; no sample
+was automatically excluded. See the [published QC review](../../results/rnaseq/PRJNA494090/README.md)
+and [admission decision](../rnaseq/atlas_study_decisions.md).
 
 `PRJNA704646` completed the paired-end Import path for 24 technical runs
 assigned to eight biological pools. It produced count, TPM and effective-length
 matrices for 9,914 genes. Three pools require QC review; there is one
 biological unit per resistance × stage × sex group, so no DESeq2 inference is
-claimed. See the [published descriptive result](../../results/rnaseq/PRJNA704646/README.md).
+claimed. It is admitted to the atlas for descriptive expression only, with a
+visible QC warning. See the [published descriptive result](../../results/rnaseq/PRJNA704646/README.md).
+
+`PRJNA1150591` completed the full RNA-seq workflow. Only its prespecified
+seven-week adult meclonazepam-versus-control contrast is admitted to the atlas,
+with a warning that the five four-week treated juveniles remained in the
+original `~ condition` fit. This is not an age contrast. See the
+[result package](../../results/rnaseq/PRJNA1150591/README.md) and the
+[study admission decision](../rnaseq/atlas_study_decisions.md).
 
 Every published study result uses the same compact QC interface at
 `results/rnaseq/<study>/qc/qc_sample_summary.tsv` and `qc_summary.json`; detailed
