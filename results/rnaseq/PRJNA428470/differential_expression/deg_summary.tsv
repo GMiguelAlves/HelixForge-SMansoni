@@ -1,0 +1,2 @@
+analysis_id	variable	contrast	status	n_samples	n_genes	n_significant
+smansoni_prjna428470_primary	condition	condition__female_adult_5azac_vs_female_adult_control	ok	6	9307	1454
