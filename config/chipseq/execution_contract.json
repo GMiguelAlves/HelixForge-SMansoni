@@ -1,8 +1,16 @@
 {
   "schema_version": "1.0",
   "helixforge": {
-    "release": "v1.1.0",
-    "commit": "062001ceb46d8a25c2415823b97d0e310658f8c0"
+    "release": "v1.2.0",
+    "commit": "bd50fe094bc352f698feabe0ae0b8f0e777f5e97"
+  },
+  "composition": {
+    "peak_run_modes": ["consensus", "idr"],
+    "postprocess_peak_runs": true,
+    "differential_binding": false,
+    "alignment_only_mode": "post_alignment",
+    "alignment_only_postprocess": false,
+    "peak_run_outputs": ["annotation", "tracks", "report", "terminal_manifest"]
   },
   "reference": {
     "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
@@ -31,6 +39,6 @@
     "No validated S. mansoni blacklist is frozen; no blacklist filtering is applied.",
     "PRJNA219440 and PRJNA384372 are alignment-only because public matched controls are absent.",
     "The current HelixForge ChIP API applies one peak_type per run, so mixed-mark studies are split into narrow and broad invocations.",
-    "The pipeline performs raw FastQC but no native ChIP trimming in v1.1.0."
+    "Native ChIP trimming is available but remains disabled until a study-specific policy is specified."
   ]
 }
