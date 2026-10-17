@@ -80,6 +80,34 @@ class ChipseqExecutionContractTests(unittest.TestCase):
         })
         self.assertEqual(self.contract["reference"]["genome_size_bp"], 391422299)
 
+    def test_trimming_is_explicit_and_separate_from_rnaseq(self):
+        path = ROOT / "config/chipseq" / self.contract["trimming_policy"]
+        policy = json.loads(path.read_text())
+        self.assertEqual(policy["status"], "REGISTERED_BEFORE_PRODUCTION")
+        self.assertIs(policy["enabled"], True)
+        self.assertEqual(policy["tool_version"], "0.6.10")
+        self.assertEqual(policy["cutadapt_version"], "5.1")
+        self.assertEqual(policy["quality_phred"], 20)
+        self.assertEqual(policy["minimum_length_bp"], 25)
+        self.assertEqual(policy["adapter_mode"], "auto_detect_per_library")
+        self.assertIsNone(policy["adapter1"])
+        self.assertIsNone(policy["adapter2"])
+        self.assertIs(policy["orphan_rescue"], False)
+        self.assertIn("not_exposed", policy["nextseq_poly_g_trimming"])
+
+    def test_bowtie2_reuse_needs_its_own_exact_provenance(self):
+        reference = json.loads((ROOT / "config/chipseq/reference_contract.json").read_text())
+        self.assertEqual(reference["bowtie2_index_policy"], "require_explicit_manifest_validated_prebuilt_index_no_automatic_rebuild")
+        index = reference["bowtie2_index"]
+        self.assertEqual(index["aligner"], "bowtie2")
+        self.assertEqual(index["bowtie2_version"], "2.5.5")
+        self.assertEqual(index["manifest_schema_version"], "1.2")
+        self.assertEqual(index["basename"], "genome")
+        self.assertEqual(index["extra_args"], [])
+        self.assertEqual(index["location_policy"], "private_site_configuration_only")
+        self.assertEqual(reference["fasta_sha256"], "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3")
+        self.assertEqual(reference["gtf_sha256"], "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "smansoni_chipseq_trim_v1",
+  "status": "REGISTERED_BEFORE_PRODUCTION",
+  "tool": "Trim Galore",
+  "tool_version": "0.6.10",
+  "cutadapt_version": "5.1",
+  "enabled": true,
+  "quality_phred": 20,
+  "minimum_length_bp": 25,
+  "expected_quality_encoding": "phred33",
+  "adapter_mode": "auto_detect_per_library",
+  "adapter1": null,
+  "adapter2": null,
+  "paired_end_policy": "retain_complete_pairs_only_both_mates_at_least_minimum_length",
+  "orphan_rescue": false,
+  "fixed_5prime_clipping": false,
+  "fixed_3prime_clipping": false,
+  "poly_a_trimming": false,
+  "nextseq_poly_g_trimming": "not_exposed_by_current_native_contract_review_raw_and_posttrim_qc",
+  "apply_to": "all_registered_chipseq_run_sets_including_inputs_and_negative_controls",
+  "acceptance_review": [
+    "raw_and_posttrim_fastqc_and_multiqc",
+    "adapter_detection_choice_and_inconclusive_detection_or_fallback",
+    "read_and_base_retention_and_length_distributions",
+    "input_and_ip_treated_consistently_without_changing_biological_units",
+    "two_colour_platform_poly_g_tails_are_not_assumed_removed_by_quality_trimming"
+  ],
+  "rationale": {
+    "quality": "Q20 is the documented Trim Galore quality cutoff, explicitly selected for this ChIP analysis rather than inherited from RNA-seq.",
+    "length": "25 bp is a project preprocessing floor to limit very short retained genomic reads without imposing a fixed crop; it is not a claim of unique mappability.",
+    "adapters": "Select a supported adapter per library and preserve the tool report; do not infer a universal adapter from instrument model. PRJNA1090249 ChIPmentation motivates checking Nextera/tagmentation sequence, not forcing it onto every input.",
+    "review": "These are prospective analysis choices, not a reconstruction of every publication's preprocessing. Persistent artifacts require review before accepting peaks; do not tune against peak counts or FRiP."
+  },
+  "sources": [
+    "https://github.com/FelixKrueger/TrimGalore/blob/0.6.10/trim_galore",
+    "https://pubmed.ncbi.nlm.nih.gov/40172426/"
+  ]
+}

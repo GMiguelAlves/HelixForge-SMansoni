@@ -15,5 +15,14 @@
   "effective_genome_size_policy": "assembly_span_proxy_pending_mappability_estimate",
   "blacklist_bed": null,
   "blacklist_policy": "not_applied_no_validated_smansoni_blacklist",
-  "bowtie2_index_policy": "v1.2.0 supports manifest-validated prebuilt indexes; prepare and validate a reusable index before production; index reuse is independent of task-cache reuse"
+  "bowtie2_index_policy": "require_explicit_manifest_validated_prebuilt_index_no_automatic_rebuild",
+  "bowtie2_index": {
+    "aligner": "bowtie2",
+    "bowtie2_version": "2.5.5",
+    "manifest_schema_version": "1.2",
+    "basename": "genome",
+    "extra_args": [],
+    "validation_state": "PENDING_SLURM_BUILD_AND_FRESH_REUSE",
+    "location_policy": "private_site_configuration_only"
+  }
 }
