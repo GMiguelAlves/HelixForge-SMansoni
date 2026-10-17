@@ -82,8 +82,9 @@ H3K4me3, H3K27ac, H3K9ac, H3K23ac, and H4K12ac follow the `narrow` path.
 H3K27me3, H3K9me3, H3K36me3, H4K20me1, and HP1 follow the `broad` path.
 
 Version 1.2.0 accepts a prebuilt Bowtie2 index together with its validated
-manifest. Preparing that reusable index remains a prerequisite for production;
-changing the release pin does not itself make an index reusable. Narrow and
+manifest. Production requires that explicit bundle, using the version and
+validation state recorded in the reference contract; missing inputs must not
+silently trigger construction. Narrow and
 broad invocations retain separate result directories, and index reuse must not
 be confused with reuse of alignment tasks through Nextflow's cache.
 
@@ -129,9 +130,10 @@ Frozen parameters and policies:
 
 ## Limits on automatic inference
 
-- Native ChIP-seq trimming is available in v1.2.0 but remains disabled until
-  study-specific trimming parameters are defined. No RNA-seq trimming policy
-  is implicitly inherited.
+- Native trimming follows the registered [ChIP-seq reference and trimming
+  policy](reference_and_trimming.md): Q20, minimum 25 bp, per-library adapter
+  auto-detection and mandatory raw/post-trim QC review. No RNA-seq policy is
+  implicitly inherited; two-colour poly-G artifacts require separate review.
 - IDR applies only to exactly two biological narrowPeak replicates.
 - Broad marks and three-replicate sets use consensus supported by at least
   two replicates.
