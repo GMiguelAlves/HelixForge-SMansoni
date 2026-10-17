@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "type": "reference_index_validation",
+  "status": "PASS",
+  "validation_date": "2026-10-17",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "aligner": "bowtie2",
+  "bowtie2_version": "2.5.5",
+  "index_manifest_schema_version": "1.2",
+  "basename": "genome",
+  "build_extra_args": [],
+  "helixforge_release": "v1.2.0",
+  "helixforge_commit": "bd50fe094bc352f698feabe0ae0b8f0e777f5e97",
+  "reference_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "annotation_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+  "bundle_sha256": "c30fb5841949420ffa50261b570437072458ce81c9bd19355d6c0cce14b8601c",
+  "files": {
+    "genome.1.bt2": "86c094763d08ee17cf8e218749fdc8d2331c9485629cf01ad2d1b86bf7eeddb6",
+    "genome.2.bt2": "9000f0001ccf3f8433d01e231ff3e78039d6f8c274d6e341bf4f65f7c36e6b99",
+    "genome.3.bt2": "ae165eb172a00239a73b4428f030f26c1f8e9f742d3bc150a4a6f4509a14d490",
+    "genome.4.bt2": "71ad8655468c4ae2422fa0d64a4e534e9357c43a06bab9dbb857722bda9913fe",
+    "genome.rev.1.bt2": "793bc6255f56f5d7294f1a9f5e53230c6b360731cd191f1f0bb1f09a4b46b9dd",
+    "genome.rev.2.bt2": "e90051b57a79025dda85a3b0e05ff28103c7ec983ca5bfece64ae1b8f8ba187d"
+  },
+  "execution_environment": "Slurm allocation with existing Conda runtime",
+  "construction": {"status": "PASS", "build_tasks": 1, "validation_tasks": 0},
+  "fresh_reuse": {"status": "PASS", "resume_used": false, "build_tasks": 0, "validation_tasks": 1},
+  "persistent_copy_validation": "PASS",
+  "scope": "Reference/index resource validation only; not a biological ChIP-seq execution or OCI runtime certification."
+}
