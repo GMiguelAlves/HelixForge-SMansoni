@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import unittest
 from collections import defaultdict
@@ -105,8 +106,25 @@ class ChipseqExecutionContractTests(unittest.TestCase):
         self.assertEqual(index["basename"], "genome")
         self.assertEqual(index["extra_args"], [])
         self.assertEqual(index["location_policy"], "private_site_configuration_only")
+        self.assertEqual(index["validation_state"], "PASS_SLURM_BUILD_AND_FRESH_REUSE")
         self.assertEqual(reference["fasta_sha256"], "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3")
         self.assertEqual(reference["gtf_sha256"], "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e")
+
+    def test_index_validation_record_matches_the_frozen_bundle(self):
+        reference = json.loads((ROOT / "config/chipseq/reference_contract.json").read_text())
+        index = reference["bowtie2_index"]
+        record = json.loads((ROOT / "config/chipseq" / index["validation_record"]).read_text())
+        self.assertEqual(record["status"], "PASS")
+        self.assertEqual(record["helixforge_commit"], self.contract["helixforge"]["commit"])
+        self.assertEqual(record["reference_sha256"], reference["fasta_sha256"])
+        self.assertEqual(record["annotation_sha256"], reference["gtf_sha256"])
+        self.assertEqual(record["bowtie2_version"], index["bowtie2_version"])
+        self.assertEqual(record["fresh_reuse"], {"status": "PASS", "resume_used": False, "build_tasks": 0, "validation_tasks": 1})
+        self.assertEqual(record["construction"], {"status": "PASS", "build_tasks": 1, "validation_tasks": 0})
+        self.assertEqual(len(record["files"]), 6)
+        digest = hashlib.sha256(json.dumps(record["files"], sort_keys=True).encode()).hexdigest()
+        self.assertEqual(digest, index["bundle_sha256"])
+        self.assertEqual(digest, record["bundle_sha256"])
 
 
 if __name__ == "__main__":
