@@ -15,5 +15,5 @@
   "effective_genome_size_policy": "assembly_span_proxy_pending_mappability_estimate",
   "blacklist_bed": null,
   "blacklist_policy": "not_applied_no_validated_smansoni_blacklist",
-  "bowtie2_index_policy": "build_per_independent_run_set_from_frozen_fasta; v1.1.0 has no external-prebuilt-index input for ChIP-seq"
+  "bowtie2_index_policy": "v1.2.0 supports manifest-validated prebuilt indexes; prepare and validate a reusable index before production; index reuse is independent of task-cache reuse"
 }

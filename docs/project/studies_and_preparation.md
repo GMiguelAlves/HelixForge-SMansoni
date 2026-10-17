@@ -213,4 +213,8 @@ run sets, duplicate-deposit exclusions, and publication links are indexed in
 decisions are under [`config/chipseq/`](../../config/chipseq/), with the scientific
 preparation record in
 [ChIP-seq core preparation record](../chipseq/chipseq_core_preparation.md).
+The upcoming ChIP-seq runs pin HelixForge `v1.2.0` and complete eligible
+consensus/IDR paths through annotation, tracks, reporting, and a terminal
+manifest without Differential Binding. Alignment-only studies retain their
+restricted scope; previous RNA-seq execution pins are unchanged.
 No ChIP-seq result has yet been promoted to the atlas.
