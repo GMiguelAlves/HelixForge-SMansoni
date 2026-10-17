@@ -3,10 +3,13 @@
 ## Scope of the preparation record
 
 This record documents public-data preparation before scientific execution. It
-did not change HelixForge, run analyses on the server, or promote results to
+does not change HelixForge, run analyses on the server, or promote results to
 the atlas. The core uses the frozen `SM_V10/WBPS19` reference and the native
-ChIP-seq contract of HelixForge `v1.1.0`
-(`062001ceb46d8a25c2415823b97d0e310658f8c0`).
+ChIP-seq contract of HelixForge [`v1.2.0`](https://github.com/GMiguelAlves/HelixForge/releases/tag/v1.2.0)
+(`bd50fe094bc352f698feabe0ae0b8f0e777f5e97`), pinned specifically for this
+ChIP-seq preparation in
+[`execution_contract.json`](../../config/chipseq/execution_contract.json).
+Historical RNA-seq release pins are unchanged.
 
 The ENA inventory was rechecked. On October 12, 2026, WBPS19 remained the
 latest version exposed by the official WormBase ParaSite directory. The
@@ -67,7 +70,7 @@ The highest-impact decisions were:
 
 ## HelixForge compatibility and frozen execution decisions
 
-No structural pipeline change was required. Version 1.1.0 supports single-
+No structural pipeline change is required. Version 1.2.0 supports single-
 and paired-end reads, Bowtie2, BAM processing, MACS3, FRiP, consensus/IDR,
 annotation, and tracks. Because the API accepts one `peak_type` per invocation,
 mixed-mark studies were split into `narrow` and `broad` run sets. This is an
@@ -78,11 +81,40 @@ Every IP is linked to its input/unbound control explicitly through
 H3K4me3, H3K27ac, H3K9ac, H3K23ac, and H4K12ac follow the `narrow` path.
 H3K27me3, H3K9me3, H3K36me3, H4K20me1, and HP1 follow the `broad` path.
 
-In `v1.1.0`, independent invocations rebuild the Bowtie2 index and repeat
-alignment; the ChIP-seq API cannot yet accept a prebuilt index or external BAMs
-for the peak-calling path. Each run set therefore uses its own result directory
-and is executed in series to prevent races and overwrites. This computational
-duplication was recorded as an operational limitation, not changed here.
+Version 1.2.0 accepts a prebuilt Bowtie2 index together with its validated
+manifest. Preparing that reusable index remains a prerequisite for production;
+changing the release pin does not itself make an index reusable. Narrow and
+broad invocations retain separate result directories, and index reuse must not
+be confused with reuse of alignment tasks through Nextflow's cache.
+
+### Composition without Differential Binding
+
+The run modes in [`run_sets.tsv`](../../config/chipseq/run_sets.tsv) preserve
+the biological design. Peak-producing runs use `consensus` or `idr` with
+`--chipseq_postprocess true --chipseq_db_enabled false`. This completes peak
+annotation, coverage tracks, the report, and the terminal manifest without
+requiring a differential-binding contrast. Coverage uses final BAMs; annotation
+uses the consolidated peaks.
+
+Run sets registered as `post_alignment` remain QC/alignment-only. They do not
+request peak calling, consensus/IDR, or the post-consensus outputs. In
+particular, absence of public controls is not bypassed to obtain a report.
+
+```mermaid
+flowchart LR
+    F[FASTQs] --> Q[QC and alignment]
+    Q --> B[Final BAMs]
+    B --> P[MACS3 and peak QC]
+    P --> C[Consensus or eligible IDR]
+    C --> A[Peak annotation]
+    B --> T[Coverage tracks for peak run sets]
+    A --> R[Report and terminal manifest]
+    T --> R
+    B --> E[Alignment-only endpoint for studies without suitable controls]
+```
+
+See the HelixForge [stage-composition guide](https://github.com/GMiguelAlves/HelixForge/blob/v1.2.0/docs/guides/chipseq-stage-composition.md)
+for the runtime contracts. Atlas incorporation remains a separate review.
 
 Frozen parameters and policies:
 
@@ -97,11 +129,13 @@ Frozen parameters and policies:
 
 ## Limits on automatic inference
 
-- Version 1.1.0 performs raw FastQC but has no native ChIP-seq trimming.
+- Native ChIP-seq trimming is available in v1.2.0 but remains disabled until
+  study-specific trimming parameters are defined. No RNA-seq trimming policy
+  is implicitly inherited.
 - IDR applies only to exactly two biological narrowPeak replicates.
 - Broad marks and three-replicate sets use consensus supported by at least
   two replicates.
-- `PRJNA219440` and `PRJNA384372` produce descriptive QC/BAM/tracks only;
+- `PRJNA219440` and `PRJNA384372` produce descriptive QC/BAM outputs only;
   calling peaks without public inputs would be methodologically weak.
 - Differential binding was not enabled for the first execution. Contrasts
   require prespecification after initial QC/peak review, without retrospective
@@ -109,12 +143,12 @@ Frozen parameters and policies:
 
 ## Preparation batch policy
 
-The preparation batch limit was 150 GB of raw FASTQ. `PRJNA1173904` and
-`PRJNA236156` therefore formed dedicated batches, while `PRJNA312093`,
-`PRJNA602708`, `PRJNA1090249`, and `PRJNA219440` could be staged together
-(104.06 GB). This did not authorize adding workdirs without checking space:
-BAMs, indexes, and tracks must be counted separately, and each run set keeps
-an independent directory. `PRJNA384372` remains an optional P2 batch.
+The acquisition batches describe up to 150 GB of raw FASTQ; they do not
+authorize staging multiple studies concurrently. Heavy storage is occupied by
+one study at a time. BAMs, indexes, tracks, and work directories count toward
+the complete storage budget, and available capacity must be checked before
+staging each study. Each run set keeps an independent result directory.
+`PRJNA384372` remains an optional P2 batch.
 
 ## Project–atlas boundary
 
