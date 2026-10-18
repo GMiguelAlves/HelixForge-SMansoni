@@ -218,3 +218,8 @@ consensus/IDR paths through annotation, tracks, reporting, and a terminal
 manifest without Differential Binding. Alignment-only studies retain their
 restricted scope; previous RNA-seq execution pins are unchanged.
 No ChIP-seq result has yet been promoted to the atlas.
+
+Differential Binding remains a planned follow-up for eligible comparisons;
+see the [per-study DB review and artifact-retention policy](../chipseq/differential_binding_review.md).
+Preserve biological-replicate BAMs/BAIs and their metadata until QC and model
+review and any approved DB analysis are resolved.

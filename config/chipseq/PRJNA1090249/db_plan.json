@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "type": "planned_differential_binding_review",
+  "study_accession": "PRJNA1090249",
+  "target": "HP1",
+  "peak_type": "broad",
+  "status": "HOLD_PENDING_BIOLOGICAL_UNIT_CONFIRMATION",
+  "execute_if_eligible": true,
+  "wait_for_other_studies": false,
+  "contrast": {
+    "id": "cercaria_vs_sporocyst",
+    "display_label": "cercariae SmVEN versus sporocysts SmDFO",
+    "factor": "condition",
+    "numerator": "cercaria",
+    "denominator": "sporocyst",
+    "positive_log2fc": "higher relative HP1 enrichment in cercariae SmVEN than sporocysts SmDFO; not an isolated developmental-stage effect"
+  },
+  "proposed_design": "~ condition",
+  "paired_design": false,
+  "pairing_rationale": "The methods describe separate strain-specific sources and do not establish matched biological units across stages. No paired analysis is justified by the published design.",
+  "publication_evidence": {
+    "doi": "10.1590/0074-02760240075",
+    "url": "https://pdfs.semanticscholar.org/91d7/7351164c927b29796157e2408e27c8bffa9e.pdf",
+    "page": 2,
+    "section": "Materials and Methods: Extraction of sporocysts and cercariae",
+    "sporocyst_source": "Dissection of infected Biomphalaria glabrata BgGUA carrying S. mansoni SmDFO; two samples obtained per snail.",
+    "cercaria_source": "Light-induced shedding of S. mansoni SmVEN from snails, followed by aliquoting."
+  },
+  "group_annotations": {
+    "cercaria": {"stage": "cercaria", "strain": "SmVEN"},
+    "sporocyst": {"stage": "sporocyst", "strain": "SmDFO"}
+  },
+  "confounding": {
+    "stage_and_strain": "COMPLETE",
+    "scope_of_inference": "Differences between the combined stage-strain groups only; separate developmental and strain contributions cannot be estimated.",
+    "cannot_be_resolved_by_adding_both_factors_or_batch_correction": true
+  },
+  "biological_independence": {
+    "status": "NOT_CONFIRMED",
+    "deposited_ip_libraries_per_group": {"cercaria": 3, "sporocyst": 3},
+    "library_to_biological_source_mapping": "UNRESOLVED",
+    "required_evidence": "Map each deposited library to its source snail, independently collected biological pool, and any sample/aliquot splits, including relationships within each group.",
+    "pseudoreplication_risk": "Two sporocyst samples per snail are described, but their correspondence to sequenced libraries is not specified; separate aliquots do not establish independent biological replication.",
+    "blocks_inferential_db_until_resolved": true
+  },
+  "pairing_must_not_be_inferred_from_replicate_numbers": true,
+  "required_biological_replicates_per_condition": 3,
+  "expected_ip_samples": {
+    "cercaria": ["cercaria_hp1_r1", "cercaria_hp1_r2", "cercaria_hp1_r3"],
+    "sporocyst": ["sporocyst_hp1_r1", "sporocyst_hp1_r2", "sporocyst_hp1_r3"]
+  },
+  "control_samples": ["cercaria_input", "sporocyst_input"],
+  "controls_are_model_columns": false,
+  "shared_control_limitation": "one Input library per stage; sharing it does not create independent Input replicates",
+  "proposed_counting_unit": "reads",
+  "proposed_peak_universe": "union_of_accepted_condition_consensus_peak_sets",
+  "statistical_specification": "PENDING_BIOLOGICAL_INDEPENDENCE_QC_MODEL_AND_NORMALIZATION_REVIEW",
+  "loss_of_a_planned_replicate_requires_review_not_silent_reduction": true,
+  "retention_policy": "../differential_binding_review.json",
+  "executable_db_spec": false
+}
