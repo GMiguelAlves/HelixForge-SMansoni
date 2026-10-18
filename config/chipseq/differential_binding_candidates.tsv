@@ -1,5 +1,5 @@
 study_accession	initial_review_status	comparison_candidate	scope_constraint
-PRJNA1090249	PENDING_QC	HP1: cercaria versus sporocyst	three biological IP replicates per stage; shared Inputs are controls, not model replicates
+PRJNA1090249	PENDING_QC_AND_BIOLOGICAL_UNIT_CONFIRMATION	HP1: cercaria SmVEN versus sporocyst SmDFO	unpaired combined-group comparison; stage and strain confounded; three deposited IP libraries per group with biological independence unconfirmed; shared Inputs are controls
 PRJNA312093	PENDING_QC_AND_DESIGN	male versus female within each stage	separate models or analyses per stage and mark; confirm biological units and covariates
 PRJNA1173904	PENDING_QC_AND_DESIGN	mating experience within each gonad and mark	do not pool gonads or marks; review pairing only when supported by source metadata
 PRJNA236156	PENDING_QC_AND_DESIGN	stage and host context within each mark	confirm estimable comparisons and avoid confounded stage/host effects
