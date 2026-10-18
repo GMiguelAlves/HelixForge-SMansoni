@@ -154,6 +154,12 @@ count, capped at 4.7 million. Never duplicate reads to fill a library. A lower
 common depth is an explicit deviation from the publication, not a successful
 reproduction of its reported depth.
 
+The preparation found **3,819,229 reads** after uniqueness filtering and
+deduplication in the limiting library, `SRR28402818`. The prespecified rule
+therefore sets the common target to **3,819,229**, rather than claiming the
+published 4.7 million are available in every library. Picard's realized
+counts are approximate and will be reported explicitly.
+
 All three deposited IP libraries per condition are included, with the shared
 Input for that condition used once. The exact subset used for the historical
 pooled analysis has not been confirmed from the accessible supplementary
@@ -166,6 +172,13 @@ modeling will be attempted and its diagnostics retained. If modeling is not
 usable, a separately labeled `--nomodel --extsize 200 --shift 0` arm may be
 evaluated; it must not be reported as successful reproduction of the article's
 default model.
+
+The follow-up also retains MACS2's default duplicate handling (`--keep-dup 1`),
+including after pooling, and its default callpeak q-value (0.05). The latter
+does not define the downstream broad score thresholds, which come from the
+separate p-value score track. These are additional differences from the
+primary all-tag, q-value-0.01 broad call and must not be attributed solely to
+pooling or to a newer reference.
 
 For broad calling, `bdgcmp -m ppois` will produce a **negative-log10 Poisson
 p-value** track from the MACS treatment pileup and control lambda, without
