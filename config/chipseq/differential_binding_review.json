@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "chipseq_db_review_and_retention_v1",
+  "review_scope": "each_registered_study_before_intermediate_cleanup",
+  "initial_peak_workflow_db_enabled": false,
+  "follow_up": "perform_db_for_eligible_prespecified_comparisons_after_qc_and_model_review_without_waiting_for_other_studies",
+  "review_requirements": [
+    "raw_and_posttrim_qc_and_adapter_review",
+    "mapping_library_complexity_duplicate_and_input_qc",
+    "replicate_concordance_and_reproducible_enrichment",
+    "biological_sample_identity_and_technical_run_aggregation",
+    "compatible_target_reference_peak_universe_and_counting_units",
+    "estimable_design_and_contrast_with_no_unresolved_confounding",
+    "count_filter_and_normalization_assumptions_review",
+    "db_runtime_and_artifact_preflight"
+  ],
+  "review_outcomes": ["ELIGIBLE", "HOLD", "NOT_ELIGIBLE"],
+  "inputs_are_independent_model_replicates": false,
+  "unresolved_status_blocks_bam_cleanup": true,
+  "retain_until_review_and_db_resolved": [
+    "final_bam_and_bai_per_biological_replicate",
+    "input_control_bam_and_bai",
+    "bam_producer_manifests_and_checksums",
+    "validated_metadata_and_control_mapping",
+    "peak_plan_and_reference_bundle_manifests",
+    "individual_and_consolidated_peaks_and_provider_manifests",
+    "qc_statistics_reports_versions_and_execution_provenance"
+  ],
+  "cleanup_release_requires": [
+    "documented_eligibility_decision_with_evidence_and_rationale",
+    "db_completed_and_results_preserved_or_explicit_documented_decision_not_to_run",
+    "verified_persistent_artifacts_and_private_audit",
+    "retained_consumers_no_longer_depend_on_workdir_locations"
+  ],
+  "no_automatic_db_studies": ["PRJNA219440", "PRJNA384372", "PRJNA816041"],
+  "candidate_registry": "differential_binding_candidates.tsv"
+}
