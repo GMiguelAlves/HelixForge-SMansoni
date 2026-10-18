@@ -63,7 +63,7 @@ all six IP libraries with otherwise identical settings. Report peak counts,
 covered bases and base/interval concordance with the 200 bp primary results.
 These are sensitivity descriptions, not a competition to select the setting
 producing more peaks, more significance or a preferred biological conclusion.
-No robustness claim is made until this review is completed.
+The completed review below does **not** establish extension-invariant peaks.
 
 Exact boundaries and marginal loci remain sensitive to the unmeasured
 fragment distribution. Findings must be labeled exploratory, particularly
@@ -71,6 +71,47 @@ where extension sensitivity or duplicate-rich enrichment affects interpretation.
 Preserve the automatic-model diagnostics, commands and versions alongside the
 model-free results. Do not replace the original failed-run evidence with a
 successful-exit claim.
+
+## Completed descriptive processing and sensitivity results
+
+All six primary model-free calls completed, followed by replicate-support
+consensus, annotation, tracks, an HTML report and a validated terminal manifest.
+All twelve alternative calls and their comparison also completed using the
+same native MACS3 provider. Treatment and matched Input BAM checksums were
+verified against the primary execution. The primary setting remains 200 bp;
+no setting was selected from the resulting peak counts or significance.
+
+| Library | Peaks, 150 bp | Peaks, 200 bp | Peaks, 250 bp | FRiP, 200 bp | Base Jaccard, 150 vs 200 | Base Jaccard, 250 vs 200 |
+|---|---:|---:|---:|---:|---:|---:|
+| Cercaria r1 (`SRR28402826`) | 659 | 618 | 741 | 0.393% | 0.393 | 0.442 |
+| Cercaria r2 (`SRR28402825`) | 255 | 267 | 262 | 0.224% | 0.389 | 0.442 |
+| Cercaria r3 (`SRR28402822`) | 1521 | 1240 | 967 | 0.536% | 0.392 | 0.468 |
+| Sporocyst r1 (`SRR28402820`) | 738 | 500 | 379 | 0.242% | 0.363 | 0.461 |
+| Sporocyst r2 (`SRR28402819`) | 629 | 407 | 362 | 0.201% | 0.336 | 0.390 |
+| Sporocyst r3 (`SRR28402818`) | 40 | 48 | 26 | 3.161% | 0.682 | 0.694 |
+
+Base Jaccard is the intersection divided by the union of covered bases on
+matching chromosomes, using zero-based, half-open coordinates. Overlapping
+intervals within each set are merged before counting bases. It is not the
+fraction of identical peak records. Across these twelve comparisons, the
+alternatives retain **49.3–74.8%** of the bases called at 200 bp. Thus the
+extension assumption materially affects the called sets, not only their
+counts. No retrospective numerical PASS threshold is imposed on these metrics.
+
+At 200 bp, the support-at-least-two consensus retains **367 intervals for
+cercariae and 98 for sporocysts**. These are the consensus interval outputs,
+not a count of independently established biological domains. Support is
+between deposited libraries; their biological independence remains unresolved.
+
+**Disposition: preserve as descriptive/exploratory results with explicit
+warnings; do not certify robust HP1 domain boundaries or approve DB.**
+FRiP ranges from 0.201% to 3.161%, with five libraries below 0.54%, alongside
+substantial differences in peak counts and the observed extension sensitivity.
+FRiP alone is not used as a universal rejection cutoff, and these findings do
+not establish a specific laboratory failure. They do require caution about
+enrichment quality, replicate concordance and any locus-level interpretation.
+The fixed extension is not retrospectively validated as a physical fragment
+length by a successful run or by a nonzero consensus.
 
 ## Historical analysis and inferential limits
 

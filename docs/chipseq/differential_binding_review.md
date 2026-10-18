@@ -48,6 +48,9 @@ Every final study review must document:
 The [HP1 peak-calling policy](prjna1090249_peak_policy.md) documents the
 model-free fragment-extension assumption and its planned sensitivity review.
 This descriptive processing does not lift the inferential DB hold below.
+The primary and alternative extension runs completed, but their measured
+sensitivity and enrichment metrics require explicit quality warnings; they
+are not evidence that the six libraries are certified for inferential DB.
 
 The [prospective plan](../../config/chipseq/PRJNA1090249/db_plan.json) registers
 **cercariae SmVEN versus sporocysts SmDFO**, with three deposited HP1 IP
