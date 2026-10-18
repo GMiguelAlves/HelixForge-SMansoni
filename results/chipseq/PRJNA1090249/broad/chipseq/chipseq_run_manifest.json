@@ -1,0 +1,1188 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.consensus_peaks",
+      "artifact_type": "consensus_peaks",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "622d2f89cb115a596ea07c758e493e7bd8a2a91af7e948dcbed41d84c0c69020"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "bed",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.consensus_peaks/consolidated_peaks.bed",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "strategy": "replicate_support"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "CONSENSUS_INTERVALS",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "consolidated_peaks",
+      "sample_ids": [],
+      "source": {
+        "name": "replicate_support",
+        "type": "helixforge",
+        "version": "1.0"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.consensus_peaks",
+      "artifact_type": "consensus_peaks",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f6a6786caf28a0af7166ae26010268c66ef83aa0e4996374fe2e9c4b952584f4"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "bed",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.consensus_peaks/consolidated_peaks.bed",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "strategy": "replicate_support"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "CONSENSUS_INTERVALS",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "consolidated_peaks",
+      "sample_ids": [],
+      "source": {
+        "name": "replicate_support",
+        "type": "helixforge",
+        "version": "1.0"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "PRJNA1090249.chipseq_report.report",
+      "artifact_type": "chipseq_report",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "48a0488761ec941706e1f2814f66495911a27c359af7ee73c0d9847712a3eb30"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "report",
+      "format": "directory",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": ".",
+        "producer_manifest_id": "PRJNA1090249.chipseq_report"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "REPORT_GENERATOR",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "PRJNA1090249.chipseq_report"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "report",
+      "sample_ids": [],
+      "source": {
+        "name": "html_v1",
+        "type": "helixforge",
+        "version": "1.0"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402817.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7f2e1e9d2e10d2bf0528ecb6dc894583aafbda85ddf6bbbdf9fd37eb52b7db89"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402817.filtered.bam",
+        "producer_manifest_id": "SRR28402817"
+      },
+      "mark_or_factor": "input",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": true,
+        "record_id": "SRR28402817"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402817"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "sporocyst_input"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402818.HP1.broad.macs3.peak_set",
+      "artifact_type": "peak_set",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "4911abf5b301298733123046256676dd46c6268d672510995c2ffdbb85ae9a06"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "broadPeak",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/SRR28402818.HP1.broad.macs3.peak_set/peaks.broadPeak",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "record_id": "SRR28402818"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_CALLING_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402818.HP1.broad.macs3"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "replicate_peaks",
+      "sample_ids": [
+        "sporocyst_hp1_r3"
+      ],
+      "source": {
+        "name": "macs3",
+        "type": "helixforge",
+        "version": "3.0.4"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402818.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "112993461a8a64ae91fa3a4eef573b74ac216fae138d30b5a8a5de10afb18bd4"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402818.filtered.bam",
+        "producer_manifest_id": "SRR28402818"
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": false,
+        "record_id": "SRR28402818"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402818"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "sporocyst_hp1_r3"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402819.HP1.broad.macs3.peak_set",
+      "artifact_type": "peak_set",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "27b107f8fd442b4872521343ee83a73056b8c10390d3a0cb99ab12eb3339778d"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "broadPeak",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/SRR28402819.HP1.broad.macs3.peak_set/peaks.broadPeak",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "record_id": "SRR28402819"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_CALLING_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402819.HP1.broad.macs3"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "replicate_peaks",
+      "sample_ids": [
+        "sporocyst_hp1_r2"
+      ],
+      "source": {
+        "name": "macs3",
+        "type": "helixforge",
+        "version": "3.0.4"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402819.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f40f3b93bb6015bb044dc6da143fa6b07120702e94f5bc326647aeab7f94f595"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402819.filtered.bam",
+        "producer_manifest_id": "SRR28402819"
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": false,
+        "record_id": "SRR28402819"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402819"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "sporocyst_hp1_r2"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402820.HP1.broad.macs3.peak_set",
+      "artifact_type": "peak_set",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3d0ed5df16a19857396996cdc37cb6db328d3c38ab2fc46af81fe997eef74494"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "broadPeak",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/SRR28402820.HP1.broad.macs3.peak_set/peaks.broadPeak",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "record_id": "SRR28402820"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_CALLING_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402820.HP1.broad.macs3"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "replicate_peaks",
+      "sample_ids": [
+        "sporocyst_hp1_r1"
+      ],
+      "source": {
+        "name": "macs3",
+        "type": "helixforge",
+        "version": "3.0.4"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402820.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9d8e772f025f382da994526cc9c748b96b49754650a71dcbca27a40e8f67204b"
+      },
+      "condition": "sporocyst",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402820.filtered.bam",
+        "producer_manifest_id": "SRR28402820"
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": false,
+        "record_id": "SRR28402820"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402820"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "sporocyst_hp1_r1"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402821.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "4dc1a8a31d44c808f3b053db7fa99e6d015dfdeeec79998cd03753c101166ce3"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402821.filtered.bam",
+        "producer_manifest_id": "SRR28402821"
+      },
+      "mark_or_factor": "input",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": true,
+        "record_id": "SRR28402821"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402821"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "cercaria_input"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402822.HP1.broad.macs3.peak_set",
+      "artifact_type": "peak_set",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d84cae23272fabc2ec1127222e4b290914790d4e37d98b03ddb0db538998388c"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "broadPeak",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/SRR28402822.HP1.broad.macs3.peak_set/peaks.broadPeak",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "record_id": "SRR28402822"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_CALLING_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402822.HP1.broad.macs3"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "replicate_peaks",
+      "sample_ids": [
+        "cercaria_hp1_r3"
+      ],
+      "source": {
+        "name": "macs3",
+        "type": "helixforge",
+        "version": "3.0.4"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402822.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "69b48538887db1592ec0c977dd811bd8c3e6d334a9cbff98afa273033a020a78"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402822.filtered.bam",
+        "producer_manifest_id": "SRR28402822"
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": false,
+        "record_id": "SRR28402822"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402822"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "cercaria_hp1_r3"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402825.HP1.broad.macs3.peak_set",
+      "artifact_type": "peak_set",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "40b7e928f9f8ee941a454da5a162f361bc4b95e9aa6c47632407e7b4ed880ff6"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "broadPeak",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/SRR28402825.HP1.broad.macs3.peak_set/peaks.broadPeak",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "record_id": "SRR28402825"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_CALLING_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402825.HP1.broad.macs3"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "replicate_peaks",
+      "sample_ids": [
+        "cercaria_hp1_r2"
+      ],
+      "source": {
+        "name": "macs3",
+        "type": "helixforge",
+        "version": "3.0.4"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402825.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "8c3d6444780eb550f52f5198392eb01620885d84bb70932795554c821fbad250"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402825.filtered.bam",
+        "producer_manifest_id": "SRR28402825"
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": false,
+        "record_id": "SRR28402825"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402825"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "cercaria_hp1_r2"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402826.HP1.broad.macs3.peak_set",
+      "artifact_type": "peak_set",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a6f18e2c3445dbf5cf27cef138702d27005d866da8f2cbd26799f5123dd30654"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "broadPeak",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/SRR28402826.HP1.broad.macs3.peak_set/peaks.broadPeak",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "record_id": "SRR28402826"
+      },
+      "peak_type": "broad",
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_CALLING_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402826.HP1.broad.macs3"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "replicate_peaks",
+      "sample_ids": [
+        "cercaria_hp1_r1"
+      ],
+      "source": {
+        "name": "macs3",
+        "type": "helixforge",
+        "version": "3.0.4"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "SRR28402826.final_bam",
+      "artifact_type": "aligned_bam",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "93a400a1cf3c6a3a4575bb6a3b9ee62fecc279ef16028fc0cbac3c3c1c9301a8"
+      },
+      "condition": "cercaria",
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "bam",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "SRR28402826.filtered.bam",
+        "producer_manifest_id": "SRR28402826"
+      },
+      "mark_or_factor": "HP1",
+      "marks_or_factors": [],
+      "metadata": {
+        "is_control": false,
+        "record_id": "SRR28402826"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "BAM_INDEX_QC",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "SRR28402826"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "final_bam",
+      "sample_ids": [
+        "cercaria_hp1_r1"
+      ],
+      "source": {
+        "name": "samtools",
+        "type": "helixforge",
+        "version": null
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "chipseq.peak_annotation.aggregate.peak_gene_associations",
+      "artifact_type": "peak_gene_annotation",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b77ffb6470cbcf00478f804fa684d9a8b30ab4f722238bff74b54ca8d5ee93ae"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "manifest_relative",
+        "path": "integration_artifacts/chipseq.peak_annotation.aggregate.peak_gene_associations/peak_gene_associations.tsv",
+        "producer_manifest_id": null
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [
+        "HP1"
+      ],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_ANNOTATION_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "chipseq.peak_annotation.aggregate"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "peak_gene_associations",
+      "sample_ids": [],
+      "source": {
+        "name": "python_interval_v1",
+        "type": "helixforge",
+        "version": "1.0"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "chipseq.peak_qc.aggregate.summary",
+      "artifact_type": "peak_qc",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0a1ee16cda5d2ba37ec6e721b3127c4896f6d0249d0afa53487d5a9bf6b5a286"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "peak",
+      "format": "tsv",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "peak_qc_summary.tsv",
+        "producer_manifest_id": "chipseq.peak_qc.aggregate"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [
+        "HP1"
+      ],
+      "metadata": {},
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "PEAK_QC_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "chipseq.peak_qc.aggregate"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "quality_control",
+      "sample_ids": [],
+      "source": {
+        "name": "Peak QC API",
+        "type": "helixforge",
+        "version": "1.0"
+      },
+      "stage": null
+    },
+    {
+      "artifact_id": "chipseq.tracks.aggregate.signal_tracks",
+      "artifact_type": "signal_track",
+      "assay": "chipseq",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "93f857f352c4d25d66275b1cd69cc3b5ba6f357491782aae325ff249f0ec43cd"
+      },
+      "condition": null,
+      "contrast_id": null,
+      "entity_level": "sample",
+      "format": "directory",
+      "location": {
+        "base_path": null,
+        "kind": "producer_relative",
+        "path": "tracks",
+        "producer_manifest_id": "chipseq.tracks.aggregate"
+      },
+      "mark_or_factor": null,
+      "marks_or_factors": [
+        "HP1"
+      ],
+      "metadata": {
+        "integration_role": "visualization"
+      },
+      "peak_type": null,
+      "provenance": {
+        "execution_metadata": null,
+        "parameters": {},
+        "producer_process": "TRACK_AGGREGATE",
+        "producer_workflow": "chipseq",
+        "software": [],
+        "source_artifact_ids": [],
+        "source_manifest_ids": [
+          "chipseq.tracks.aggregate"
+        ]
+      },
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "role": "visualization",
+      "sample_ids": [],
+      "source": {
+        "name": "deeptools_bamcoverage_v1",
+        "type": "helixforge",
+        "version": "1.0"
+      },
+      "stage": null
+    }
+  ],
+  "conditions": [
+    "cercaria",
+    "sporocyst"
+  ],
+  "contrasts": [],
+  "id": "romantic_pike.chipseq",
+  "integration_api_version": "1.0",
+  "marks_or_factors": [
+    "HP1"
+  ],
+  "provenance": {
+    "execution_metadata": null,
+    "parameters": {
+      "chipseq_run_mode": "consensus",
+      "differential_binding": "not_requested",
+      "postprocess": true
+    },
+    "producer_process": "RUN_MANIFEST",
+    "producer_workflow": "chipseq",
+    "software": [
+      {
+        "container": null,
+        "name": "HelixForge",
+        "version": "1.2.0"
+      }
+    ],
+    "source_artifact_ids": [
+      "PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.consensus_peaks",
+      "PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.consensus_peaks",
+      "PRJNA1090249.chipseq_report.report",
+      "SRR28402817.final_bam",
+      "SRR28402818.HP1.broad.macs3.peak_set",
+      "SRR28402818.final_bam",
+      "SRR28402819.HP1.broad.macs3.peak_set",
+      "SRR28402819.final_bam",
+      "SRR28402820.HP1.broad.macs3.peak_set",
+      "SRR28402820.final_bam",
+      "SRR28402821.final_bam",
+      "SRR28402822.HP1.broad.macs3.peak_set",
+      "SRR28402822.final_bam",
+      "SRR28402825.HP1.broad.macs3.peak_set",
+      "SRR28402825.final_bam",
+      "SRR28402826.HP1.broad.macs3.peak_set",
+      "SRR28402826.final_bam",
+      "chipseq.peak_annotation.aggregate.peak_gene_associations",
+      "chipseq.peak_qc.aggregate.summary",
+      "chipseq.tracks.aggregate.signal_tracks"
+    ],
+    "source_manifest_ids": [
+      "SRR28402817",
+      "SRR28402817.trimming",
+      "SRR28402818",
+      "SRR28402818.HP1.broad.macs3",
+      "SRR28402818.trimming",
+      "SRR28402819",
+      "SRR28402819.HP1.broad.macs3",
+      "SRR28402819.trimming",
+      "SRR28402820",
+      "SRR28402820.HP1.broad.macs3",
+      "SRR28402820.trimming",
+      "SRR28402821",
+      "SRR28402821.trimming",
+      "SRR28402822",
+      "SRR28402822.HP1.broad.macs3",
+      "SRR28402822.trimming",
+      "SRR28402825",
+      "SRR28402825.HP1.broad.macs3",
+      "SRR28402825.trimming",
+      "SRR28402826",
+      "SRR28402826.HP1.broad.macs3",
+      "SRR28402826.trimming",
+      "Schistosoma_mansoni_SM_V10_WBPS19.reference",
+      "chipseq.consensus.aggregate",
+      "chipseq.metadata",
+      "chipseq.peak_annotation.aggregate",
+      "chipseq.peak_qc.aggregate",
+      "chipseq.tracks.aggregate"
+    ]
+  },
+  "reference": {
+    "annotation_id": "annotation.0ba2e3ff9a63",
+    "assembly": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "display_name": "Schistosoma_mansoni_SM_V10_WBPS19.reference",
+    "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "metadata": {
+      "source_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19.reference"
+    },
+    "organism": "Schistosoma mansoni",
+    "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "resources": {
+      "annotation": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19.reference"
+        },
+        "version": null
+      },
+      "fasta": {
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3"
+        },
+        "location": {
+          "base_path": null,
+          "kind": "producer_relative",
+          "path": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+          "producer_manifest_id": "Schistosoma_mansoni_SM_V10_WBPS19.reference"
+        },
+        "version": null
+      }
+    },
+    "source": {
+      "name": "Reference Bundle",
+      "type": "external",
+      "version": "1.0"
+    },
+    "species": "Schistosoma mansoni"
+  },
+  "run": {
+    "created_at": null,
+    "git_commit": "unknown",
+    "helixforge_version": "1.2.0",
+    "nextflow_version": "25.10.7",
+    "profile": "slurm",
+    "run_id": "3835bb8f-6ea5-42cf-ae09-bf5887b523d7",
+    "run_name": "romantic_pike",
+    "source": {
+      "name": "HelixForge",
+      "type": "helixforge",
+      "version": "1.2.0"
+    },
+    "workflow": "chipseq"
+  },
+  "samples": [
+    {
+      "antibody": null,
+      "biological_replicate": "shared",
+      "condition": "sporocyst",
+      "control_record_id": null,
+      "dataset": "PRJNA1090249",
+      "is_control": true,
+      "mark_or_factor": "input",
+      "record_id": "SRR28402817",
+      "sample_id": "sporocyst_input",
+      "stage": null,
+      "technical_replicate": "1"
+    },
+    {
+      "antibody": "anti-SmHP1",
+      "biological_replicate": "3",
+      "condition": "sporocyst",
+      "control_record_id": "SRR28402817",
+      "dataset": "PRJNA1090249",
+      "is_control": false,
+      "mark_or_factor": "HP1",
+      "record_id": "SRR28402818",
+      "sample_id": "sporocyst_hp1_r3",
+      "stage": null,
+      "technical_replicate": "1"
+    },
+    {
+      "antibody": "anti-SmHP1",
+      "biological_replicate": "2",
+      "condition": "sporocyst",
+      "control_record_id": "SRR28402817",
+      "dataset": "PRJNA1090249",
+      "is_control": false,
+      "mark_or_factor": "HP1",
+      "record_id": "SRR28402819",
+      "sample_id": "sporocyst_hp1_r2",
+      "stage": null,
+      "technical_replicate": "1"
+    },
+    {
+      "antibody": "anti-SmHP1",
+      "biological_replicate": "1",
+      "condition": "sporocyst",
+      "control_record_id": "SRR28402817",
+      "dataset": "PRJNA1090249",
+      "is_control": false,
+      "mark_or_factor": "HP1",
+      "record_id": "SRR28402820",
+      "sample_id": "sporocyst_hp1_r1",
+      "stage": null,
+      "technical_replicate": "1"
+    },
+    {
+      "antibody": null,
+      "biological_replicate": "shared",
+      "condition": "cercaria",
+      "control_record_id": null,
+      "dataset": "PRJNA1090249",
+      "is_control": true,
+      "mark_or_factor": "input",
+      "record_id": "SRR28402821",
+      "sample_id": "cercaria_input",
+      "stage": null,
+      "technical_replicate": "1"
+    },
+    {
+      "antibody": "anti-SmHP1",
+      "biological_replicate": "3",
+      "condition": "cercaria",
+      "control_record_id": "SRR28402821",
+      "dataset": "PRJNA1090249",
+      "is_control": false,
+      "mark_or_factor": "HP1",
+      "record_id": "SRR28402822",
+      "sample_id": "cercaria_hp1_r3",
+      "stage": null,
+      "technical_replicate": "1"
+    },
+    {
+      "antibody": "anti-SmHP1",
+      "biological_replicate": "2",
+      "condition": "cercaria",
+      "control_record_id": "SRR28402821",
+      "dataset": "PRJNA1090249",
+      "is_control": false,
+      "mark_or_factor": "HP1",
+      "record_id": "SRR28402825",
+      "sample_id": "cercaria_hp1_r2",
+      "stage": null,
+      "technical_replicate": "1"
+    },
+    {
+      "antibody": "anti-SmHP1",
+      "biological_replicate": "1",
+      "condition": "cercaria",
+      "control_record_id": "SRR28402821",
+      "dataset": "PRJNA1090249",
+      "is_control": false,
+      "mark_or_factor": "HP1",
+      "record_id": "SRR28402826",
+      "sample_id": "cercaria_hp1_r1",
+      "stage": null,
+      "technical_replicate": "1"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "complete",
+  "type": "chipseq_run_manifest"
+}
