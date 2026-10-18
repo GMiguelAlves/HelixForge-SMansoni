@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "type": "planned_differential_binding_review",
+  "study_accession": "PRJNA1090249",
+  "target": "HP1",
+  "peak_type": "broad",
+  "status": "PENDING_QC_AND_MODEL_REVIEW",
+  "execute_if_eligible": true,
+  "wait_for_other_studies": false,
+  "contrast": {
+    "id": "cercaria_vs_sporocyst",
+    "factor": "condition",
+    "numerator": "cercaria",
+    "denominator": "sporocyst",
+    "positive_log2fc": "higher relative HP1 enrichment in cercaria"
+  },
+  "proposed_design": "~ condition",
+  "paired_design": false,
+  "pairing_must_not_be_inferred_from_replicate_numbers": true,
+  "required_biological_replicates_per_condition": 3,
+  "expected_ip_samples": {
+    "cercaria": ["cercaria_hp1_r1", "cercaria_hp1_r2", "cercaria_hp1_r3"],
+    "sporocyst": ["sporocyst_hp1_r1", "sporocyst_hp1_r2", "sporocyst_hp1_r3"]
+  },
+  "control_samples": ["cercaria_input", "sporocyst_input"],
+  "controls_are_model_columns": false,
+  "shared_control_limitation": "one Input library per stage; sharing it does not create independent Input replicates",
+  "proposed_counting_unit": "reads",
+  "proposed_peak_universe": "union_of_accepted_condition_consensus_peak_sets",
+  "statistical_specification": "PENDING_QC_MODEL_AND_NORMALIZATION_REVIEW",
+  "loss_of_a_planned_replicate_requires_review_not_silent_reduction": true,
+  "retention_policy": "../differential_binding_review.json",
+  "executable_db_spec": false
+}

@@ -139,9 +139,12 @@ Frozen parameters and policies:
   two replicates.
 - `PRJNA219440` and `PRJNA384372` produce descriptive QC/BAM outputs only;
   calling peaks without public inputs would be methodologically weak.
-- Differential binding was not enabled for the first execution. Contrasts
-  require prespecification after initial QC/peak review, without retrospective
-  reclassification of P1.
+- Differential Binding is disabled in the initial peak-processing execution,
+  not excluded from the study. Follow the [DB review and retention policy](differential_binding_review.md):
+  review QC and model eligibility per study, preserve replicate BAMs/BAIs and
+  metadata until the decision is resolved, and run eligible planned comparisons
+  without waiting for the other studies. The HP1 cercaria/sporocyst candidate
+  is registered before QC interpretation.
 
 ## Preparation batch policy
 
