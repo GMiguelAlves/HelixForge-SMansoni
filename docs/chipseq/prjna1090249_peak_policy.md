@@ -113,22 +113,6 @@ enrichment quality, replicate concordance and any locus-level interpretation.
 The fixed extension is not retrospectively validated as a physical fragment
 length by a successful run or by a nonzero consensus.
 
-## Historical analysis and inferential limits
-
-The [legacy repository](https://github.com/GMiguelAlves/chipseq_pipeline),
-examined at commit `7eac25b1294335d4c63d94cd4c497076890ed515`, supports
-duplicate removal and extra MACS options. Its defaults do not establish the
-actual settings of a previous user execution. This analysis does not claim
-numerical equivalence to that execution or to the publication's earlier
-reference and processing strategy.
-
-DB remains on hold pending confirmation of library-to-biological-source
-mapping. Cercariae SmVEN versus sporocysts SmDFO is an **unpaired combined-group
-comparison**: stage and strain are completely confounded. Model-free peak
-calling neither resolves that confounding nor proves three independent
-biological replicates per group. Replicate-support consensus is descriptive
-library support until independence is established.
-
 ## Article-inspired follow-up comparison
 
 A separate comparison was completed to assess the strategy used in the
@@ -237,8 +221,11 @@ confidence intervals were inferred from pools. An increase near TES is
 visible in both IP and Input: the aggregate shape alone does **not** establish
 HP1-specific TES enrichment or reproduce the publication's conclusion.
 
-**Disposition remains descriptive/exploratory with warnings; DB remains on
-hold.** Pooling removed the computational obstacle to automatic model fitting,
+**Processing is complete, inclusion in the atlas is accepted, and DB is not
+eligible in the current analysis.** The study is not assigned an overall
+exploratory-only label. Its quantitative QC and design limitations remain
+attached to the results and must not be interpreted as certified enrichment
+or independent biological replication. Pooling removed the computational obstacle to automatic model fitting,
 but this adaptation did not establish a stable, strongly supported broad-domain
 set or faithful reproduction of the published result. This does not prove
 absence of biological HP1 signal, a particular laboratory failure, or a

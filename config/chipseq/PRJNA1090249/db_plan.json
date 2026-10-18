@@ -4,8 +4,16 @@
   "study_accession": "PRJNA1090249",
   "target": "HP1",
   "peak_type": "broad",
-  "status": "HOLD_PENDING_BIOLOGICAL_UNIT_CONFIRMATION",
-  "execute_if_eligible": true,
+  "status": "NOT_ELIGIBLE_IN_CURRENT_ANALYSIS",
+  "execute_if_eligible": false,
+  "final_review": {
+    "processing_status": "COMPLETE",
+    "atlas_inclusion": "ACCEPTED",
+    "qc_status": "REVIEW_WITH_DOCUMENTED_LIMITATIONS",
+    "decision": "Do not execute differential binding in the current analysis; retain peak, annotation and track outputs with their documented QC and design limitations.",
+    "evidence": ["prjna1090249_peak_policy.md", "extension sensitivity at 150/200/250 bp", "completed article-inspired pooled comparison", "unresolved library-to-biological-source mapping"],
+    "reopen_only_with_new_evidence": true
+  },
   "wait_for_other_studies": false,
   "contrast": {
     "id": "cercaria_vs_sporocyst",

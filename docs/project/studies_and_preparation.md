@@ -217,7 +217,13 @@ The upcoming ChIP-seq runs pin HelixForge `v1.2.0` and complete eligible
 consensus/IDR paths through annotation, tracks, reporting, and a terminal
 manifest without Differential Binding. Alignment-only studies retain their
 restricted scope; previous RNA-seq execution pins are unchanged.
-No ChIP-seq result has yet been promoted to the atlas.
+`PRJNA1090249` has completed native processing and is accepted for atlas
+inclusion. Its [public results](../../results/chipseq/PRJNA1090249/README.md)
+include per-library peaks, consensus support segments, annotations, QC,
+figures and reports. DB is not eligible in the current analysis; measured
+enrichment/model sensitivity and source-independence limitations remain
+documented. Updating the atlas presentation is separate from publication of
+these accepted results.
 
 Differential Binding remains a planned follow-up for eligible comparisons;
 see the [per-study DB review and artifact-retention policy](../chipseq/differential_binding_review.md).
