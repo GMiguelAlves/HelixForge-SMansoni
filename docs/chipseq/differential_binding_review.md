@@ -23,18 +23,58 @@ metadata and an estimable model; do not infer pairs from matching replicate
 numbers. PRJNA219440 and PRJNA384372 remain QC/alignment-only without a separate
 design review. The PRJNA816041 technical benchmark is not an automatic DB study.
 
+### Required final design review for every study
+
+Every final study review must document:
+
+- **Pairing decision and rationale:** paired or unpaired, with the publication
+  URL/DOI, methods section and supporting design evidence. Pairing requires a
+  documented matched biological unit or blocking relationship; replicate
+  numbers alone do not establish one.
+- **Experimental unit and independence:** map each sequenced library to its
+  source individual, independently collected pool or preparation. Identify
+  aliquots, repeated sampling and technical libraries explicitly. Distinct
+  sample IDs or concordant profiles do not prove biological independence.
+- **Confounding and interpretation:** identify factors that cannot be separated
+  and label the contrast accordingly. A full-rank group-only model does not
+  make a confounded biological effect identifiable.
+- **Eligibility:** record QC evidence, the proposed model and the decision.
+  Unresolved biological independence means `HOLD` for inferential DB, even
+  when technical QC passes. Descriptive peak processing can remain available
+  with its limitations; it is not certification of biological replication.
+
 ## HP1: PRJNA1090249
 
 The [prospective plan](../../config/chipseq/PRJNA1090249/db_plan.json) registers
-**cercaria versus sporocyst**, three biological HP1 IP replicates per stage,
-with the initial unpaired model `~ condition`. Positive log2 fold change means
-higher relative HP1 enrichment in cercaria. The two shared Inputs remain
+**cercariae SmVEN versus sporocysts SmDFO**, with three deposited HP1 IP
+libraries per group. The [publication's methods, page 2](https://pdfs.semanticscholar.org/91d7/7351164c927b29796157e2408e27c8bffa9e.pdf)
+describe sporocyst dissection from snails carrying SmDFO and light-induced
+cercarial shedding using SmVEN. They do not establish matched biological units
+across stages. The proposed comparison is therefore **unpaired**, using
+`~ condition` only if biological independence and the remaining gates are
+confirmed. Existing technical condition IDs remain unchanged.
+
+**Stage and parasite strain are completely confounded.** Any DB result would
+describe differences between these combined groups, not an isolated
+developmental effect. Adding strain and stage to the design or applying batch
+correction cannot separate their contributions. Positive log2 fold change
+would mean higher relative HP1 enrichment in cercariae SmVEN than sporocysts
+SmDFO. The two shared Inputs remain
 controls, not columns in the inferential model. Their lack of independent
 within-stage replication is a limitation to record, not a reason to duplicate
 them computationally.
 
+**Biological independence is not yet confirmed.** The methods describe two
+sporocyst samples per snail without linking these preparations to the deposited
+libraries. Cercarial aliquots likewise require source tracing. The three
+replicate labels in each group must not be presented as three established
+independent biological observations. DB is on `HOLD` until library-to-source
+mapping resolves this uncertainty. If libraries share a biological source,
+review aggregation and the resulting number of independent units before any
+inference; do not silently retain a nominal three-versus-three model.
+
 The candidate peak universe is the union of accepted condition-specific
-consensus sets. Count the same universe in all six IP BAMs using single-end
+consensus sets. If approved, count the same universe in the retained IP BAMs using single-end
 read units; do not infer DB simply from presence/absence in called peak sets.
 QC failure or loss of a planned replicate places the decision on hold rather
 than silently reducing the design. A compatible executable statistical
@@ -49,7 +89,7 @@ and [non-estimable designs](https://bioconductor.org/packages/release/bioc/vigne
 
 ## Retention before cleanup
 
-Preserve final **BAM/BAI per biological replicate**, control BAM/BAI, producer
+Preserve final **BAM/BAI per library and confirmed biological unit**, control BAM/BAI, producer
 manifests/checksums, normalized metadata, control maps, the peak plan, reference
 identity, peaks/consensus manifests, QC, parameters and versions until DB is
 resolved. Do not replace replicate BAMs with pooled BAMs. Preserve existing
