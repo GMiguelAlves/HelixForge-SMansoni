@@ -1,0 +1,122 @@
+{
+  "artifacts": {
+    "broadPeak": {
+      "available": true,
+      "path": "peaks.broadPeak"
+    },
+    "caller_outputs": {
+      "available": true,
+      "path": "caller_outputs"
+    },
+    "control_signal": {
+      "available": true,
+      "path": "control_signal.bdg",
+      "sha256": "b198b484ea1dcc6ca5615d39dfffa63d1a5e064f54cfbc4f275afec7c48fd98a"
+    },
+    "narrowPeak": {
+      "available": false,
+      "path": null
+    },
+    "peak_statistics": {
+      "available": true,
+      "path": "SRR28402826.HP1.broad.macs3.peak_metrics.json",
+      "sha256": "7b074d27883aa91346facc4aca2a08d3a0a36bc8cbcb051f20a9c378f8f9689d"
+    },
+    "peaks": {
+      "available": true,
+      "path": "peaks.broadPeak",
+      "sha256": "a6f18e2c3445dbf5cf27cef138702d27005d866da8f2cbd26799f5123dd30654"
+    },
+    "summit": {
+      "available": false
+    },
+    "treatment_signal": {
+      "available": true,
+      "path": "treatment_signal.bdg",
+      "sha256": "1b4ceb74e617f949127892c4f7789e1a2fee078174e1347ba86f9bfdd0cd3bed"
+    }
+  },
+  "biological_replicate": "1",
+  "caller": "macs3",
+  "caller_version": "3.0.4",
+  "control_id": "SRR28402821",
+  "control_record_id": "SRR28402821",
+  "execution": {
+    "elapsed_seconds": 233,
+    "ended_epoch": 1792309925,
+    "started_epoch": 1792309692
+  },
+  "experiment_id": "PRJNA1090249.HP1",
+  "id": "SRR28402826.HP1.broad.macs3",
+  "metrics": {
+    "caller": "macs3",
+    "caller_version": "3.0.4",
+    "contigs_with_peaks": 9,
+    "id": "SRR28402826.HP1.broad.macs3",
+    "peak_score": {
+      "max": 545.0,
+      "mean": 27.991909385113267,
+      "median": 17.0,
+      "min": 10.0
+    },
+    "peak_type": "broad",
+    "peak_width": {
+      "max": 1333,
+      "mean": 303.1116504854369,
+      "median": 287.0,
+      "min": 200
+    },
+    "schema_version": "1.0",
+    "signal_value": {
+      "max": 11.5369,
+      "mean": 2.946761812297735,
+      "median": 2.87347,
+      "min": 1.42476
+    },
+    "total_peaks": 618
+  },
+  "parameters": {
+    "additional_args": "--nomodel --extsize 200 --shift 0",
+    "biological_replicate": "1",
+    "blacklist": null,
+    "caller": "macs3",
+    "caller_version": "3.0.4",
+    "condition": "cercaria",
+    "control_bam": "SRR28402821",
+    "control_id": "SRR28402821",
+    "control_record_id": "SRR28402821",
+    "cutoff": 0.01,
+    "cutoff_type": "q_value",
+    "dataset": "PRJNA1090249",
+    "duplicate_policy": "all",
+    "effective_genome_size": "391422299",
+    "experiment_id": "PRJNA1090249.HP1",
+    "format": "BAM",
+    "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "layout": "single",
+    "organism": "Schistosoma mansoni",
+    "p_value": null,
+    "paired_end": false,
+    "paired_end_handling": "tags",
+    "peak_id": "SRR28402826.HP1.broad.macs3",
+    "peak_type": "broad",
+    "q_value": 0.01,
+    "record_id": "SRR28402826",
+    "reference": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "reference_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+    "sample_id": "cercaria_hp1_r1",
+    "schema_version": "1.0",
+    "target": "HP1",
+    "technical_replicate": "1",
+    "treatment_bam": "SRR28402826"
+  },
+  "peak_type": "broad",
+  "provider_manifest_sha256": "fcab967c6f1494524a223ab77d92e64b5611a4c17c5fdbc3d9cff53adef0f55d",
+  "record_id": "SRR28402826",
+  "sample_id": "cercaria_hp1_r1",
+  "schema_version": "1.0",
+  "status": "complete",
+  "target": "HP1",
+  "technical_replicate": "1",
+  "type": "peak_calling"
+}
