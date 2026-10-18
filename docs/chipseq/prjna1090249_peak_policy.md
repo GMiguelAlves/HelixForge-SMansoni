@@ -131,34 +131,34 @@ library support until independence is established.
 
 ## Article-inspired follow-up comparison
 
-A separate comparison is being prepared to assess the strategy used in the
+A separate comparison was completed to assess the strategy used in the
 publication. It does not replace the primary analysis or certify its peaks.
 The comparison is motivated by the observed sensitivity above and is not a
 new blinded benchmark.
 
 The documented approach combines reads by stage for MACS2 broad calling,
 whereas the primary result calls each library and then consolidates support.
-The follow-up therefore starts from the preserved alignments **before the
-primary MAPQ filter**, excludes alignments carrying the Bowtie2 `XS` tag,
-excludes unmapped/secondary/QC-failed/supplementary records, and removes
+The follow-up started from the preserved alignments **before the
+primary MAPQ filter**, excluded alignments carrying the Bowtie2 `XS` tag,
+excluded unmapped/secondary/QC-failed/supplementary records, and removed
 duplicates separately within each library with `samtools rmdup -s`. There is
 no extra MAPQ cutoff in this branch. An absent XS tag implements the paper's
 reported uniqueness criterion; it is not an independent proof of genomic
 uniqueness.
 
-The target is the paper's **4.7 million reads per library**, using Picard
-DownsampleSam with seed `20261018` and the `HighAccuracy` strategy. Realized
-counts must be recorded. If any of the eight libraries has insufficient
-post-deduplication reads, the common target becomes the minimum available
-count, capped at 4.7 million. Never duplicate reads to fill a library. A lower
-common depth is an explicit deviation from the publication, not a successful
-reproduction of its reported depth.
+The planned target was the paper's **4.7 million reads per library**, using
+Picard DownsampleSam with seed `20261018` and the `HighAccuracy` strategy.
+The prespecified rule capped the common target at the minimum available count
+across all eight libraries, without upsampling. A lower common depth is an
+explicit deviation from the publication, not a successful reproduction of
+its reported depth.
 
 The preparation found **3,819,229 reads** after uniqueness filtering and
 deduplication in the limiting library, `SRR28402818`. The prespecified rule
-therefore sets the common target to **3,819,229**, rather than claiming the
-published 4.7 million are available in every library. Picard's realized
-counts are approximate and will be reported explicitly.
+therefore set the common target to **3,819,229**, rather than claiming the
+published 4.7 million were available in every library. Although downsampling
+is probabilistic, the realized counts in this execution were exactly
+**3,819,229 for each of the eight libraries**.
 
 All three deposited IP libraries per condition are included, with the shared
 Input for that condition used once. The exact subset used for the historical
@@ -166,12 +166,13 @@ pooled analysis has not been confirmed from the accessible supplementary
 material. Pooling is for domain detection only; it does not create additional
 biological observations or authorize differential inference.
 
-The intended pinned tools are MACS2 `2.2.9.1` and Picard `3.4.0`; the paper
-does not establish these as its original versions. MACS2 default fragment
-modeling will be attempted and its diagnostics retained. If modeling is not
-usable, a separately labeled `--nomodel --extsize 200 --shift 0` arm may be
-evaluated; it must not be reported as successful reproduction of the article's
-default model.
+The tools used were MACS2 `2.2.9.1` and Picard `3.4.0`; the paper does not
+establish these as its original versions. Both automatic-model and separately
+labeled `--nomodel --extsize 200 --shift 0` arms completed. The automatic
+estimates were 72 bp for cercariae and 70 bp for sporocysts. These remain
+read-length-adjacent estimates, not independently validated physical fragment
+sizes. The fixed-extension arm is not a reproduction of the article's default
+fragment model.
 
 The follow-up also retains MACS2's default duplicate handling (`--keep-dup 1`),
 including after pooling, and its default callpeak q-value (0.05). The latter
@@ -180,9 +181,9 @@ separate p-value score track. These are additional differences from the
 primary all-tag, q-value-0.01 broad call and must not be attributed solely to
 pooling or to a newer reference.
 
-For broad calling, `bdgcmp -m ppois` will produce a **negative-log10 Poisson
+For broad calling, `bdgcmp -m ppois` produced a **negative-log10 Poisson
 p-value** track from the MACS treatment pileup and control lambda, without
-SPMR normalization. `bdgbroadcall` will use peak-score cutoffs **2 and 5**.
+SPMR normalization. `bdgbroadcall` used peak-score cutoffs **2 and 5**.
 These are not the primary analysis's q-value thresholds. Unreported geometry
 and linking settings are explicit assumptions: link cutoff 1, minimum length
 200 bp, strong-peak maximum gap 30 bp and broad linking gap 800 bp. Do not tune
@@ -190,12 +191,59 @@ these values to recover the paper's peak totals.
 
 This is an **adaptation to SM_V10/WBPS19**, not an exact SMv9 reproduction:
 reference, annotation, alignment settings, software versions and potentially
-library selection/depth differ. Compare interval coverage, concordance and
-descriptive TSS/TES patterns on the current annotation. Do not compare old and
+library selection/depth differ. Interval coverage, concordance and
+descriptive TSS/TES patterns were examined on the current annotation. Do not compare old and
 new assembly coordinates directly or claim reproduction of the original
 4,898-gene metagene set. ChromstaR differential modeling and DiffBind remain
 outside this follow-up's inferential scope while biological independence is
-unresolved. Results of this follow-up are not yet available.
+unresolved.
+
+### Completed follow-up: results and disposition
+
+| Condition | MACS2 model | Regions, score 2 | Regions, score 5 | Covered outer-envelope bases, score 2 |
+|---|---|---:|---:|---:|
+| Cercaria | automatic, d=72 | 5,080 | 0 | 6,289,399 |
+| Sporocyst | automatic, d=70 | 0 | 0 | 0 |
+| Cercaria | fixed 200 bp | 32,278 | 0 | 24,161,508 |
+| Sporocyst | fixed 200 bp | 26,461 | 3 | 18,943,672 |
+
+The three fixed-extension sporocyst score-5 regions cover 882 bp. **Zero called
+regions is not zero local signal:** bases above score 5 were present in all
+four score tracks, but most did not form intervals satisfying the declared
+strong-peak length/gap requirements. This result depends on those assumptions;
+the unreported original geometry was not tuned to recover the paper's totals.
+
+For fixed-200 score-2 outer envelopes, the fraction of pooled IP reads
+overlapping regions was **13.22% versus 6.91% in Input for cercariae**, and
+**11.32% versus 6.19% for sporocysts**: descriptive read-fraction ratios of
+**1.92 and 1.83**. These fractions use the per-library-deduplicated,
+downsampled BAMs before MACS2's additional duplicate restriction after pooling.
+They are not formal enrichment tests or estimates of biological uncertainty.
+
+The fixed-200 score-2 sets overlap **33.31% of primary cercarial consensus
+bases and 44.24% of primary sporocyst consensus bases**. Base Jaccard values
+are only 0.000835 and 0.000505, respectively, partly reflecting the very
+different sizes and granularity of the pooled outer envelopes and the small
+primary support segments. Neither region counts nor Jaccard alone establish
+which method is biologically correct.
+
+Descriptive metagene profiles used RPKM coverage without fragment extension,
+50 bp coverage bins, 100 bp profile bins and 5 kb flanks. The displayed
+transformation is `log2(mean RPKM + 1)`, using **4,945 forward-strand
+protein-coding genes** and a supplementary group of **all 9,896 protein-coding
+genes** in the current annotation. The groups overlap and are not independent
+samples. No zero-signal genes were removed and no biological-replicate
+confidence intervals were inferred from pools. An increase near TES is
+visible in both IP and Input: the aggregate shape alone does **not** establish
+HP1-specific TES enrichment or reproduce the publication's conclusion.
+
+**Disposition remains descriptive/exploratory with warnings; DB remains on
+hold.** Pooling removed the computational obstacle to automatic model fitting,
+but this adaptation did not establish a stable, strongly supported broad-domain
+set or faithful reproduction of the published result. This does not prove
+absence of biological HP1 signal, a particular laboratory failure, or a
+HelixForge software defect. Primary results and this follow-up remain separate;
+no parameter was selected to improve agreement with published peak counts.
 
 ## References
 

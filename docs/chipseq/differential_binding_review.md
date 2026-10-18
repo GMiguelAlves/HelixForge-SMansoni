@@ -51,6 +51,10 @@ This descriptive processing does not lift the inferential DB hold below.
 The primary and alternative extension runs completed, but their measured
 sensitivity and enrichment metrics require explicit quality warnings; they
 are not evidence that the six libraries are certified for inferential DB.
+The article-inspired pooled MACS2 follow-up also completed without approving
+DB: permissive broad calls, very few stringent domains and a TES-associated
+coverage feature shared with Input do not resolve enrichment quality or
+biological independence. The linked policy records its completed evaluation.
 
 The [prospective plan](../../config/chipseq/PRJNA1090249/db_plan.json) registers
 **cercariae SmVEN versus sporocysts SmDFO**, with three deposited HP1 IP
