@@ -1,0 +1,55 @@
+{
+  "scope": "Sanitized supplementary comparison, separate from the native terminal manifest",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1562,
+      "sha256": "828d8086a9536e0ac3ff69233f493ad34719c5bf794469620ffb91e84afeea63"
+    },
+    {
+      "path": "figures/metagene_tes.pdf",
+      "bytes": 56042,
+      "sha256": "b11c569d19bb3bd783e83ac1d96268a12cbec9093ca4548d1d2b232775b2c2b6"
+    },
+    {
+      "path": "figures/metagene_tes.png",
+      "bytes": 291621,
+      "sha256": "33994057558d303d6dda4b25869d02106f5f263a1f43575b886ea1b5c36f9c96"
+    },
+    {
+      "path": "figures/metagene_tss.pdf",
+      "bytes": 56147,
+      "sha256": "c2cd968d274fa49507f2236d669f4394e1ce8d30c682524d1d4a314c3b7a294c"
+    },
+    {
+      "path": "figures/metagene_tss.png",
+      "bytes": 287586,
+      "sha256": "89052bfeccfb07a1c68b55515747f8c7f6ad1e3a0dc87eb1769f64773ab75e92"
+    },
+    {
+      "path": "figures/pooled_domains.pdf",
+      "bytes": 37996,
+      "sha256": "1b7e78d2c1f34d0727590c96e870b34868daded81cd1ab2acc8ef74452b92879"
+    },
+    {
+      "path": "figures/pooled_domains.png",
+      "bytes": 114060,
+      "sha256": "af0105ea93df077d217b98795fb17ab250ab572f49635f0f16cbaf76f310cc34"
+    },
+    {
+      "path": "metagene_profiles.tsv",
+      "bytes": 152505,
+      "sha256": "4f4ae90a0e35eaca25ce7da56fb3de45446a83a0a30ddac024eff5c9cb9e0129"
+    },
+    {
+      "path": "pooled_comparison.tsv",
+      "bytes": 1331,
+      "sha256": "fda5bff5bf8703942dfd4623c32bc53c7e57d83cc9d0452ff735b25b4cf6441e"
+    },
+    {
+      "path": "relatorio.html",
+      "bytes": 8356,
+      "sha256": "304dc2a6ed75ae83ceb2a7024c7bbbb2753453da4f8406c89ee0b56b702f24f2"
+    }
+  ]
+}

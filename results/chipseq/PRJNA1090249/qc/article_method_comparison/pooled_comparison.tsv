@@ -1,0 +1,9 @@
+condition	model	estimated_d_bp	peak_score_cutoff	link_score_cutoff	peak_count	covered_bp	median_outer_width_bp	primary_consensus_interval_count	primary_consensus_covered_bp	primary_intersection_bp	base_jaccard_to_primary_consensus	primary_consensus_base_retention	pooled_ip_read_fraction	matched_input_read_fraction	read_fraction_enrichment	maximum_ppois_score	bases_above_peak_score_before_geometry
+cercaria	automatic_model	72	2	1	5080	6289399	927.5	367	60657	3393	0.0005346116533995897	0.055937484544240565	0.028509593602967162	0.01983253688113491	1.4375162276937972	10.80144	268326
+cercaria	automatic_model	72	5	1	0	0		367	60657	0	0.0	0.0	0.0	0.0		10.80144	180
+cercaria	fixed200		2	1	32278	24161508	606.0	367	60657	20207	0.0008349324463747933	0.3331354996125756	0.13224492866666718	0.06905477519153735	1.915072901184012	6.6833	350404
+cercaria	fixed200		5	1	0	0		367	60657	0	0.0	0.0	0.0	0.0		6.6833	532
+sporocyst	automatic_model	70	2	1	0	0		98	21643	0	0.0	0.0	0.0	0.0		29.61505	231291
+sporocyst	automatic_model	70	5	1	0	0		98	21643	0	0.0	0.0	0.0	0.0		29.61505	746
+sporocyst	fixed200		2	1	26461	18943672	589	98	21643	9574	0.0005050712604693216	0.442360116434875	0.113193875866918	0.06192689676371854	1.8278628799826366	23.34447	283149
+sporocyst	fixed200		5	1	3	882	287	98	21643	0	0.0	0.0	1.3877146408345768e-05	0.0		23.34447	1167

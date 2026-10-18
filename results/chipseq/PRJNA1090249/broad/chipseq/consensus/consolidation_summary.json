@@ -1,0 +1,49 @@
+{
+  "groups": 2,
+  "rows": [
+    {
+      "caller": "macs3",
+      "caller_version": "3.0.4",
+      "condition": "cercaria",
+      "consolidated_peaks_available": true,
+      "consolidated_peaks_path": "consolidated_peaks.tsv",
+      "dataset": "PRJNA1090249",
+      "experiment_id": "PRJNA1090249.HP1",
+      "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "group_id": "PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad",
+      "peak_type": "broad",
+      "replicate_count": 3,
+      "replicate_mode": "biological",
+      "replicate_policy": "require_premerged",
+      "status": "complete",
+      "strategy": "replicate_support",
+      "target": "HP1",
+      "treatment": null
+    },
+    {
+      "caller": "macs3",
+      "caller_version": "3.0.4",
+      "condition": "sporocyst",
+      "consolidated_peaks_available": true,
+      "consolidated_peaks_path": "consolidated_peaks.tsv",
+      "dataset": "PRJNA1090249",
+      "experiment_id": "PRJNA1090249.HP1",
+      "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "group_id": "PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad",
+      "peak_type": "broad",
+      "replicate_count": 3,
+      "replicate_mode": "biological",
+      "replicate_policy": "require_premerged",
+      "status": "complete",
+      "strategy": "replicate_support",
+      "target": "HP1",
+      "treatment": null
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "complete",
+  "strategies": [
+    "replicate_support"
+  ],
+  "type": "consensus_idr_summary"
+}

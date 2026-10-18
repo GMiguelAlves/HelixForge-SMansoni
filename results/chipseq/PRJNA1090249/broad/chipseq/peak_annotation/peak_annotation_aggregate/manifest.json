@@ -1,0 +1,44 @@
+{
+  "annotation_manifests": [
+    {
+      "id": "PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation",
+      "sha256": "a0b0f2693f3ea4bd6151f1a3058f57ffe88c8445f6cf8e946f21c59443e3b5b0",
+      "status": "complete"
+    },
+    {
+      "id": "PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation",
+      "sha256": "e4d98dcb538b757a2c45d7787fddacc657a3e199eed72a3bf478b7e34ee142ef",
+      "status": "complete"
+    }
+  ],
+  "artifacts": {
+    "annotated_peaks": {
+      "path": "annotated_peaks.tsv",
+      "sha256": "e6bb687b85990bda1cfecae1fc485c9c649decff9b8dde043d9c49ffc160a49e"
+    },
+    "peak_gene_associations": {
+      "path": "peak_gene_associations.tsv",
+      "sha256": "b77ffb6470cbcf00478f804fa684d9a8b30ab4f722238bff74b54ca8d5ee93ae"
+    },
+    "statistics": {
+      "path": "statistics.tsv",
+      "sha256": "1d48524cbe7ed61a5dfe348ed90c871231ea72f365e860c6822c128b24ced61f"
+    }
+  },
+  "execution": {
+    "cpus": 1,
+    "elapsed_seconds": 0,
+    "ended_epoch": 1792310265,
+    "id": "chipseq.peak_annotation.aggregate",
+    "memory_bytes": 2147483648,
+    "process": "PEAK_ANNOTATION_AGGREGATE",
+    "schema_version": "1.0",
+    "started_epoch": 1792310265,
+    "time": "30m"
+  },
+  "id": "chipseq.peak_annotation.aggregate",
+  "records": 2,
+  "schema_version": "1.0",
+  "status": "complete",
+  "type": "peak_annotation_aggregate"
+}

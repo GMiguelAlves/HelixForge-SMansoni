@@ -80,11 +80,17 @@ class ChipseqDbPlanningTests(unittest.TestCase):
         self.assertTrue({r['control_id'] for r in ips} <= {r['run_accession'] for r in controls})
         self.assertTrue({r['sample_id'] for r in ips}.isdisjoint(plan['control_samples']))
 
-    def test_hp1_plan_is_conditional_and_does_not_change_the_initial_run(self):
+    def test_hp1_final_decision_does_not_enable_db_or_change_the_initial_run(self):
         plan = json.loads((CONFIG / 'PRJNA1090249/db_plan.json').read_text())
         initial = json.loads((CONFIG / 'execution_contract.json').read_text())
-        self.assertEqual(plan['status'], 'HOLD_PENDING_BIOLOGICAL_UNIT_CONFIRMATION')
-        self.assertIs(plan['execute_if_eligible'], True)
+        self.assertEqual(plan['status'], 'NOT_ELIGIBLE_IN_CURRENT_ANALYSIS')
+        self.assertIs(plan['execute_if_eligible'], False)
+        review = plan['final_review']
+        self.assertEqual(review['processing_status'], 'COMPLETE')
+        self.assertEqual(review['atlas_inclusion'], 'ACCEPTED')
+        self.assertEqual(review['qc_status'], 'REVIEW_WITH_DOCUMENTED_LIMITATIONS')
+        self.assertTrue(review['reopen_only_with_new_evidence'])
+        self.assertGreaterEqual(len(review['evidence']), 4)
         self.assertIs(plan['wait_for_other_studies'], False)
         self.assertIs(plan['executable_db_spec'], False)
         self.assertIs(plan['paired_design'], False)

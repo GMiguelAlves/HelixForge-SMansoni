@@ -45,6 +45,20 @@ Every final study review must document:
 
 ## HP1: PRJNA1090249
 
+The [HP1 peak-calling policy](prjna1090249_peak_policy.md) documents the
+model-free fragment-extension assumption and its planned sensitivity review.
+Processing is complete and atlas inclusion is accepted. The final review
+classifies DB as `NOT_ELIGIBLE_IN_CURRENT_ANALYSIS`, rather than leaving an
+open-ended operational hold. This decision does not remove the measured QC
+limitations or certify the deposited libraries as independent biological units.
+The primary and alternative extension runs completed, but their measured
+sensitivity and enrichment metrics require explicit quality warnings; they
+are not evidence that the six libraries are certified for inferential DB.
+The article-inspired pooled MACS2 follow-up also completed without approving
+DB: permissive broad calls, very few stringent domains and a TES-associated
+coverage feature shared with Input do not resolve enrichment quality or
+biological independence. The linked policy records its completed evaluation.
+
 The [prospective plan](../../config/chipseq/PRJNA1090249/db_plan.json) registers
 **cercariae SmVEN versus sporocysts SmDFO**, with three deposited HP1 IP
 libraries per group. The [publication's methods, page 2](https://pdfs.semanticscholar.org/91d7/7351164c927b29796157e2408e27c8bffa9e.pdf)
@@ -68,8 +82,9 @@ them computationally.
 sporocyst samples per snail without linking these preparations to the deposited
 libraries. Cercarial aliquots likewise require source tracing. The three
 replicate labels in each group must not be presented as three established
-independent biological observations. DB is on `HOLD` until library-to-source
-mapping resolves this uncertainty. If libraries share a biological source,
+independent biological observations. DB will not run in this analysis. A future
+reassessment requires new library-to-source evidence and satisfactory QC,
+not further parameter tuning to match the publication. If libraries share a biological source,
 review aggregation and the resulting number of independent units before any
 inference; do not silently retain a nominal three-versus-three model.
 
