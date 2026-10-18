@@ -1,0 +1,20 @@
+{
+  "study_id": "PRJNA1090249",
+  "technical_execution": "PASS",
+  "processing_status": "COMPLETE",
+  "atlas_inclusion": "ACCEPTED",
+  "qc_classification": "REVIEW_WITH_DOCUMENTED_LIMITATIONS",
+  "samples": 8,
+  "ip_libraries": 6,
+  "input_libraries": 2,
+  "differential_binding": "NOT_ELIGIBLE_IN_CURRENT_ANALYSIS",
+  "db_reasons": [
+    "biological_independence_not_established",
+    "enrichment_and_extension_sensitivity"
+  ],
+  "stage_strain_confounding": "COMPLETE",
+  "primary_extsize_bp": 200,
+  "fragment_length_experimentally_certified": false,
+  "article_exact_reproduction": false,
+  "scientific_limitations_preserved": true
+}

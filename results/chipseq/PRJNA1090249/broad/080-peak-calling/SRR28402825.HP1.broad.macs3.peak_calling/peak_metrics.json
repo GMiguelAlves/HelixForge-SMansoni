@@ -1,0 +1,27 @@
+{
+  "caller": "macs3",
+  "caller_version": "3.0.4",
+  "contigs_with_peaks": 9,
+  "id": "SRR28402825.HP1.broad.macs3",
+  "peak_score": {
+    "max": 556.0,
+    "mean": 37.62172284644195,
+    "median": 20.0,
+    "min": 10.0
+  },
+  "peak_type": "broad",
+  "peak_width": {
+    "max": 853,
+    "mean": 297.187265917603,
+    "median": 292,
+    "min": 200
+  },
+  "schema_version": "1.0",
+  "signal_value": {
+    "max": 8.20622,
+    "mean": 2.9502281647940074,
+    "median": 2.91702,
+    "min": 1.31359
+  },
+  "total_peaks": 267
+}

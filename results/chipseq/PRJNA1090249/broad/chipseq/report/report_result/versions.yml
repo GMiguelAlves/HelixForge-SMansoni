@@ -1,0 +1,6 @@
+"REPORT_AGGREGATE":
+    python: "3.13.14"
+    cutadapt: "5.1"
+    macs3: "3.0.4"
+    python: "3.13.14"
+    trim_galore: "0.6.10"

@@ -1,0 +1,15 @@
+metric	value
+total_peaks	407
+contigs_with_peaks	7
+peak_width_min	200
+peak_width_max	1042
+peak_width_mean	293.2948402948403
+peak_width_median	267
+peak_score_min	10.0
+peak_score_max	522.0
+peak_score_mean	21.798525798525798
+peak_score_median	17.0
+signal_value_min	1.30128
+signal_value_max	11.854
+signal_value_mean	2.8838497297297296
+signal_value_median	2.83292
