@@ -129,6 +129,61 @@ calling neither resolves that confounding nor proves three independent
 biological replicates per group. Replicate-support consensus is descriptive
 library support until independence is established.
 
+## Article-inspired follow-up comparison
+
+A separate comparison is being prepared to assess the strategy used in the
+publication. It does not replace the primary analysis or certify its peaks.
+The comparison is motivated by the observed sensitivity above and is not a
+new blinded benchmark.
+
+The documented approach combines reads by stage for MACS2 broad calling,
+whereas the primary result calls each library and then consolidates support.
+The follow-up therefore starts from the preserved alignments **before the
+primary MAPQ filter**, excludes alignments carrying the Bowtie2 `XS` tag,
+excludes unmapped/secondary/QC-failed/supplementary records, and removes
+duplicates separately within each library with `samtools rmdup -s`. There is
+no extra MAPQ cutoff in this branch. An absent XS tag implements the paper's
+reported uniqueness criterion; it is not an independent proof of genomic
+uniqueness.
+
+The target is the paper's **4.7 million reads per library**, using Picard
+DownsampleSam with seed `20261018` and the `HighAccuracy` strategy. Realized
+counts must be recorded. If any of the eight libraries has insufficient
+post-deduplication reads, the common target becomes the minimum available
+count, capped at 4.7 million. Never duplicate reads to fill a library. A lower
+common depth is an explicit deviation from the publication, not a successful
+reproduction of its reported depth.
+
+All three deposited IP libraries per condition are included, with the shared
+Input for that condition used once. The exact subset used for the historical
+pooled analysis has not been confirmed from the accessible supplementary
+material. Pooling is for domain detection only; it does not create additional
+biological observations or authorize differential inference.
+
+The intended pinned tools are MACS2 `2.2.9.1` and Picard `3.4.0`; the paper
+does not establish these as its original versions. MACS2 default fragment
+modeling will be attempted and its diagnostics retained. If modeling is not
+usable, a separately labeled `--nomodel --extsize 200 --shift 0` arm may be
+evaluated; it must not be reported as successful reproduction of the article's
+default model.
+
+For broad calling, `bdgcmp -m ppois` will produce a **negative-log10 Poisson
+p-value** track from the MACS treatment pileup and control lambda, without
+SPMR normalization. `bdgbroadcall` will use peak-score cutoffs **2 and 5**.
+These are not the primary analysis's q-value thresholds. Unreported geometry
+and linking settings are explicit assumptions: link cutoff 1, minimum length
+200 bp, strong-peak maximum gap 30 bp and broad linking gap 800 bp. Do not tune
+these values to recover the paper's peak totals.
+
+This is an **adaptation to SM_V10/WBPS19**, not an exact SMv9 reproduction:
+reference, annotation, alignment settings, software versions and potentially
+library selection/depth differ. Compare interval coverage, concordance and
+descriptive TSS/TES patterns on the current annotation. Do not compare old and
+new assembly coordinates directly or claim reproduction of the original
+4,898-gene metagene set. ChromstaR differential modeling and DiffBind remain
+outside this follow-up's inferential scope while biological independence is
+unresolved. Results of this follow-up are not yet available.
+
 ## References
 
 - [Study publication](https://doi.org/10.1590/0074-02760240075).
