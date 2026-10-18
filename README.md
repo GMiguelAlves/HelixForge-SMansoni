@@ -77,8 +77,8 @@ any data.
   study inventories and input contracts.
 - `scripts/`: download, validation, conservative harmonization, provenance,
   and study launch helpers.
-- `results/rnaseq/`: compact, versionable RNA-seq results; ChIP-seq results
-  will use `results/chipseq/` when published. No raw or heavy intermediates.
+- `results/rnaseq/` and `results/chipseq/`: compact, versionable assay-specific
+  results, QC, reports and sanitized provenance. No raw or heavy intermediates.
 - `provenance/rnaseq/`: per-study RNA-seq records; shared reference and frozen
   source-package evidence stay at `provenance/`.
 - `analyses/`: cross-study, RNA-seq/ChIP-seq integration, atlas, and candidate

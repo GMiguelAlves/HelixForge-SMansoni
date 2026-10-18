@@ -47,7 +47,10 @@ Every final study review must document:
 
 The [HP1 peak-calling policy](prjna1090249_peak_policy.md) documents the
 model-free fragment-extension assumption and its planned sensitivity review.
-This descriptive processing does not lift the inferential DB hold below.
+Processing is complete and atlas inclusion is accepted. The final review
+classifies DB as `NOT_ELIGIBLE_IN_CURRENT_ANALYSIS`, rather than leaving an
+open-ended operational hold. This decision does not remove the measured QC
+limitations or certify the deposited libraries as independent biological units.
 The primary and alternative extension runs completed, but their measured
 sensitivity and enrichment metrics require explicit quality warnings; they
 are not evidence that the six libraries are certified for inferential DB.
@@ -79,8 +82,9 @@ them computationally.
 sporocyst samples per snail without linking these preparations to the deposited
 libraries. Cercarial aliquots likewise require source tracing. The three
 replicate labels in each group must not be presented as three established
-independent biological observations. DB is on `HOLD` until library-to-source
-mapping resolves this uncertainty. If libraries share a biological source,
+independent biological observations. DB will not run in this analysis. A future
+reassessment requires new library-to-source evidence and satisfactory QC,
+not further parameter tuning to match the publication. If libraries share a biological source,
 review aggregation and the resulting number of independent units before any
 inference; do not silently retain a nominal three-versus-three model.
 
