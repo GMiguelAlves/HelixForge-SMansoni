@@ -98,10 +98,15 @@ alternatives retain **49.3–74.8%** of the bases called at 200 bp. Thus the
 extension assumption materially affects the called sets, not only their
 counts. No retrospective numerical PASS threshold is imposed on these metrics.
 
-At 200 bp, the support-at-least-two consensus retains **367 intervals for
-cercariae and 98 for sporocysts**. These are the consensus interval outputs,
-not a count of independently established biological domains. Support is
-between deposited libraries; their biological independence remains unresolved.
+The former atomic support-at-least-two representation retained 367 cercarial
+and 98 sporocyst segments. It has been replaced in the active results by the
+nf-core/chipseq `2.1.0` merged regional catalog, minimum one calling library,
+and HOMER `4.11` annotation: **1,816 cercarial and 867 sporocyst candidates**.
+The ≥2-library core remains separate evidence and no longer crops the intervals
+used for gene association. These are candidate regions, not independently
+established biological domains. Support is between deposited libraries; their
+biological independence remains unresolved. See the
+[current result index](../../results/chipseq/PRJNA1090249/README.md).
 
 **Disposition: preserve as descriptive/exploratory results with explicit
 warnings; do not certify robust HP1 domain boundaries or approve DB.**
