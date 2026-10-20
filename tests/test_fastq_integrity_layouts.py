@@ -25,7 +25,7 @@ class FastqIntegrityLayouts(unittest.TestCase):
             root = Path(temporary)
             package = root / "package"
             data = root / "data"
-            manifest_dir = package / "metadata" / "TEST"
+            manifest_dir = package / "metadata" / "rnaseq" / "TEST"
             fastq_dir = data / "TEST" / "fastq_ftp"
             manifest_dir.mkdir(parents=True)
             fastq_dir.mkdir(parents=True)

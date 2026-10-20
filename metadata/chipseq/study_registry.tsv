@@ -1,0 +1,12 @@
+study_accession	tier	priority	execution_scope	public_runs	raw_bytes	raw_gb_decimal	reference_id	rationale_ptbr
+PRJNA1173904	Q1	P1	peaks	68	130765458628	130.77	Schistosoma_mansoni_SM_V10_WBPS19	gonadas; sexo; maturacao reprodutiva
+PRJNA236156	Q1	P1	peaks	60	119014284303	119.01	Schistosoma_mansoni_SM_V10_WBPS19	ciclo de vida; ambiente do hospedeiro; epimutacoes
+PRJNA312093	Q1	P1	peaks	24	34698593927	34.70	Schistosoma_mansoni_SM_V10_WBPS19	ciclo de vida; diferenca sexual
+PRJNA602708	Q1	P1	peaks	24	13732094912	13.73	Schistosoma_mansoni_SM_V10_WBPS19	tratamento com plasma; resposta epigenetica
+PRJNA1090249	Q1	P1	peaks	8	6191753345	6.19	Schistosoma_mansoni_SM_V10_WBPS19	HP1; transicao cercaria-esporocisto
+PRJNA219440	Q2	P1	alignment_only	29	49434469889	49.43	Schistosoma_mansoni_SM_V10_WBPS19	ciclo de vida; controles publicos ausentes ou desenho heterogeneo
+PRJNA384372	Q2	P2	alignment_only	3	474040331	0.47	Schistosoma_mansoni_SM_V10_WBPS19	H3K9ac historico; sem controles e sem replicacao
+PRJNA816041	TECHNICAL	BENCHMARK	alignment_only	8	7242100204	7.24	Schistosoma_mansoni_SM_V10_WBPS19	titulacao ChIPmentation; recurso metodologico
+PRJEB23991	DUPLICATE	EXCLUDE	exclude	8	4833643133	4.83	Schistosoma_mansoni_SM_V10_WBPS19	duplicata biologica de oito runs de PRJNA219440
+SRP007636	DUPLICATE	EXCLUDE	exclude	4	642465705	0.64	Schistosoma_mansoni_SM_V10_WBPS19	redeposito dos runs historicos H3K9ac
+PRJEB3199	INSUFFICIENT	EXCLUDE	exclude	2	928622138	0.93	Schistosoma_mansoni_SM_V10_WBPS19	marca, estadio, controle e publicacao nao resolvidos

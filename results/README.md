@@ -1,7 +1,7 @@
 # Results policy
 
 Every study exposes the same compact public interface under
-`results/<study>/`:
+`results/rnaseq/<study>/`:
 
 - `qc/`: `qc_sample_summary.tsv`, `qc_summary.json`, and optionally MultiQC;
 - `expression/`: gene-level count, abundance and effective-length matrices;
@@ -29,3 +29,7 @@ The stable paths consumed by reviewers and the UI are therefore the compact
 directories above. Native Nextflow output trees may have a different internal
 layout, but publication must map their accepted products onto this interface.
 Study-specific finalizers must not introduce a new public directory layout.
+
+ChIP-seq public results will use `results/chipseq/<study>/` under a separately
+reviewed contract. The assay folder is a repository publication boundary; it
+does not change existing results paths on the Slurm server.

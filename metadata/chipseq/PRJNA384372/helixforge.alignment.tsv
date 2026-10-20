@@ -1,0 +1,4 @@
+sample_id	run_accession	fastq_1	fastq_2	layout	assay	condition	biological_replicate	technical_replicate	antibody	target	control_id	is_control	batch	lane	dataset	organism	genome_id
+adult_gh2_h3k9ac	SRR5482571	SRR5482571.fastq.gz		single	ChIP-seq	adult_gh2	1	1	anti-H3K9ac	H3K9ac		false	PRJNA384372		PRJNA384372	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+cercaria_gh2_h3k9ac	SRR5482572	SRR5482572.fastq.gz		single	ChIP-seq	cercaria_gh2	1	1	anti-H3K9ac	H3K9ac		false	PRJNA384372		PRJNA384372	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+miracidium_gh2_h3k9ac	SRR5482573	SRR5482573.fastq.gz		single	ChIP-seq	miracidium_gh2	1	1	anti-H3K9ac	H3K9ac		false	PRJNA384372		PRJNA384372	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19

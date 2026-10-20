@@ -1,0 +1,7 @@
+omitted_sample	omitted_condition	retained_samples	tested_genes	original_significant	refit_significant	original_significant_present	original_significant_retained	original_significant_sign_agreement	all_gene_lfc_spearman
+female_adult_5azac_r1	female_adult_5azac	5	9247	1454	1344	1451	1286	1	0.986496979775777
+female_adult_5azac_r2	female_adult_5azac	5	9255	1454	1514	1454	1353	1	0.976992100856454
+female_adult_5azac_r3	female_adult_5azac	5	9283	1454	1472	1454	1351	1	0.984910798586937
+female_adult_control_r1	female_adult_control	5	9257	1454	1347	1452	1301	1	0.991240740413258
+female_adult_control_r2	female_adult_control	5	9272	1454	1409	1453	1330	1	0.985525354316219
+female_adult_control_r3	female_adult_control	5	9238	1454	1518	1451	1363	1	0.986120832140393

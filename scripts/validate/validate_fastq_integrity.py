@@ -37,7 +37,7 @@ def main() -> int:
     parser.add_argument("--output-sha256", required=True, type=Path)
     args = parser.parse_args()
 
-    manifest = args.package_root / "metadata" / args.project / "runs.tsv"
+    manifest = args.package_root / "metadata" / "rnaseq" / args.project / "runs.tsv"
     raw_dir = args.data_root / args.project / "fastq_ftp"
     with manifest.open(encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))

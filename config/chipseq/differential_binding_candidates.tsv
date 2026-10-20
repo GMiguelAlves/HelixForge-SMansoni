@@ -1,0 +1,9 @@
+study_accession	initial_review_status	comparison_candidate	scope_constraint
+PRJNA1090249	PENDING_QC_AND_BIOLOGICAL_UNIT_CONFIRMATION	HP1: cercaria SmVEN versus sporocyst SmDFO	unpaired combined-group comparison; stage and strain confounded; three deposited IP libraries per group with biological independence unconfirmed; shared Inputs are controls
+PRJNA312093	PENDING_QC_AND_DESIGN	male versus female within each stage	separate models or analyses per stage and mark; confirm biological units and covariates
+PRJNA1173904	PENDING_QC_AND_DESIGN	mating experience within each gonad and mark	do not pool gonads or marks; review pairing only when supported by source metadata
+PRJNA236156	PENDING_QC_AND_DESIGN	stage and host context within each mark	confirm estimable comparisons and avoid confounded stage/host effects
+PRJNA602708	PENDING_QC_AND_DESIGN	treatment or exposure-time comparisons	confirm biologically appropriate levels and replicate structure before specifying contrasts
+PRJNA219440	NOT_AUTOMATICALLY_PLANNED	QC and alignment only	no automatic DB without a separately resolved design and control review
+PRJNA384372	NOT_AUTOMATICALLY_PLANNED	QC and alignment only	no automatic DB; unresolved controls, replication and publication linkage
+PRJNA816041	NOT_AUTOMATICALLY_PLANNED	technical benchmark	technical library titration is not a biological DB experiment

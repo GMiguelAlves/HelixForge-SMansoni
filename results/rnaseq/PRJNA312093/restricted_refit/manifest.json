@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA312093",
+  "type": "atlas_approved_restricted_refit",
+  "source": "private_2026-10-13_12-sample_schistosomula_refit",
+  "source_run_unchanged": true,
+  "design": "~ condition",
+  "test": "wald",
+  "count_filter": "total_count >= 10",
+  "significance": "padj < 0.05 and abs(log2FoldChange) >= 1",
+  "sample_count": 12,
+  "approved_expression_samples": "included_samples.tsv",
+  "expression_source": "../expression/tpm_matrix.tsv",
+  "expression_rule": "select_only_the_12_included_samples",
+  "genes_tested_per_contrast": 9342,
+  "warnings": [
+    "RESTRICTED_REFIT",
+    "TWO_REPLICATES_PER_GROUP",
+    "SOURCE_IDENTITY_LIMITATION"
+  ],
+  "excluded_contrasts": ["adult_female_vs_adult_male", "cercaria_female_vs_cercaria_male"],
+  "contrasts": [
+    {
+      "stage": 1,
+      "path": "contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+      "sha256": "18e9492378c3c79a8903a32c1b7b52d860976ce2dd9914c55916254b7d118adb",
+      "significant_genes": 290
+    },
+    {
+      "stage": 2,
+      "path": "contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+      "sha256": "c91c36c0f33944429651436d76f6eef8fc2f594c496cceb9b018b82b41fd7f62",
+      "significant_genes": 1045
+    },
+    {
+      "stage": 3,
+      "path": "contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
+      "sha256": "4b07126453f7b2c5c6d0ff71faa2b558b61e010fd1fbdae03f09764209dc4ea7",
+      "significant_genes": 437
+    }
+  ]
+}

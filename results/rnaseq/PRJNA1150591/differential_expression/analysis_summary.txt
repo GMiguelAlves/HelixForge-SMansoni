@@ -1,0 +1,9 @@
+Analise DEG - smansoni_prjna1150591_primary
+==============================
+
+Data: 2026-10-11 05:04:20
+Genes antes do filtro: see model_statistics.json
+Variaveis testadas: condition
+Covariaveis de design:
+
+smansoni_prjna1150591_primary	condition	condition__adult_7wk_mclz_vs_adult_7wk_control	ok	15	9458	936

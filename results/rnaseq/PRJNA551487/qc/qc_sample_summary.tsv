@@ -1,0 +1,11 @@
+sample_id	raw_reads_both_mates	trimmed_reads_both_mates	trim_retention_percent	salmon_mapping_percent	classification	reason
+adult_dmso_r1	31057774	30989152	99.779050	12.823462	REVIEW	salmon_mapping_below_review_threshold
+adult_dmso_r2	32962924	32890292	99.779655	13.809303	REVIEW	salmon_mapping_below_review_threshold
+adult_dmso_r3	32431504	32354496	99.762552	13.699771	REVIEW	salmon_mapping_below_review_threshold
+adult_dmso_r4	35013164	34945352	99.806324	12.693757	REVIEW	salmon_mapping_below_review_threshold
+adult_dmso_r5	39274060	39199142	99.809243	12.405465	REVIEW	salmon_mapping_below_review_threshold
+adult_fpl64176_r1	33047386	32970398	99.767038	14.702473	REVIEW	salmon_mapping_below_review_threshold
+adult_fpl64176_r2	29235774	29175350	99.793322	14.887102	REVIEW	salmon_mapping_below_review_threshold
+adult_fpl64176_r3	34546232	34461394	99.754422	15.022254	REVIEW	salmon_mapping_below_review_threshold
+adult_fpl64176_r4	32322680	32254434	99.788860	14.771972	REVIEW	salmon_mapping_below_review_threshold
+adult_fpl64176_r5	38328606	38240996	99.771424	14.774500	REVIEW	salmon_mapping_below_review_threshold

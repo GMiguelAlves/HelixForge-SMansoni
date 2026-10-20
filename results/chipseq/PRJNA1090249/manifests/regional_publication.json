@@ -1,0 +1,99 @@
+{
+  "core_min_libraries": 2,
+  "gene_assignment_ambiguity": "not_assessed",
+  "gene_assignment_ambiguity_reason": "source_execution_predates_tss_snapshot",
+  "groups": [
+    {
+      "all_library_regions": 80,
+      "associated_gene_ids": 1480,
+      "condition": "cercaria",
+      "core_bp": 60657,
+      "multiple_library_regions": 227,
+      "region_bp": 549790,
+      "regions": 1816,
+      "single_library_regions": 1589,
+      "study": "PRJNA1090249",
+      "target": "HP1",
+      "total_library_count": 3
+    },
+    {
+      "all_library_regions": 14,
+      "associated_gene_ids": 771,
+      "condition": "sporocyst",
+      "core_bp": 21643,
+      "multiple_library_regions": 74,
+      "region_bp": 268249,
+      "regions": 867,
+      "single_library_regions": 793,
+      "study": "PRJNA1090249",
+      "target": "HP1",
+      "total_library_count": 3
+    }
+  ],
+  "pending_arms": [],
+  "public_copy_is_self_contained_reentry_package": false,
+  "publication_checks": "PASS",
+  "published_representation": "nfcore_2_1_min1_homer_4_11",
+  "regional_min_libraries": 1,
+  "replaces": "atomic_support_segments_and_python_interval_annotation",
+  "schema_version": "1.0",
+  "source_comparison": [
+    {
+      "added_genes": 1294,
+      "common_annotation_changes": 0,
+      "condition": "cercaria",
+      "direct_changed_peaks": 0,
+      "genes_linked_only_to_single_library_regions": 1294,
+      "group": "hp1_cercaria",
+      "median_added_region_abs_distance_to_tss": 12500.0,
+      "median_added_region_width_bp": 263,
+      "min1_bp": 549790,
+      "min1_genes": 1480,
+      "min1_regions": 1816,
+      "min2_bp": 87664,
+      "min2_genes": 186,
+      "min2_regions": 227,
+      "occupancy_status": "not_assessed",
+      "single_library_regions": 1589,
+      "study": "PRJNA1090249",
+      "support_distribution": {
+        "1": 1589,
+        "2": 147,
+        "3": 80
+      },
+      "target": "HP1",
+      "technical_validation": "PASS"
+    },
+    {
+      "added_genes": 706,
+      "common_annotation_changes": 0,
+      "condition": "sporocyst",
+      "direct_changed_peaks": 0,
+      "genes_linked_only_to_single_library_regions": 706,
+      "group": "hp1_sporocyst",
+      "median_added_region_abs_distance_to_tss": 12025.0,
+      "median_added_region_width_bp": 257,
+      "min1_bp": 268249,
+      "min1_genes": 771,
+      "min1_regions": 867,
+      "min2_bp": 32168,
+      "min2_genes": 65,
+      "min2_regions": 74,
+      "occupancy_status": "not_assessed",
+      "single_library_regions": 793,
+      "study": "PRJNA1090249",
+      "support_distribution": {
+        "1": 793,
+        "2": 60,
+        "3": 14
+      },
+      "target": "HP1",
+      "technical_validation": "PASS"
+    }
+  ],
+  "source_direct_equivalence": "PASS",
+  "source_workflow_validation": "PASS",
+  "status": "PUBLISHED",
+  "strict_gate_redefined": false,
+  "study": "PRJNA1090249"
+}

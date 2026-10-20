@@ -1,0 +1,17 @@
+sample_id	run_accession	fastq_1	fastq_2	layout	assay	condition	biological_replicate	technical_replicate	antibody	target	control_id	is_control	batch	lane	dataset	organism	genome_id
+female_adult_r1_input	SRR3225253	SRR3225253.fastq.gz		single	input	female_adult	1	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+female_adult_r2_input	SRR3225254	SRR3225254.fastq.gz		single	input	female_adult	2	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+female_cercaria_r1_input	SRR3225015	SRR3225015.fastq.gz		single	input	female_cercaria	1	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+female_cercaria_r2_input	SRR3225228	SRR3225228.fastq.gz		single	input	female_cercaria	2	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_adult_r1_input	SRR3225005	SRR3225005.fastq.gz		single	input	male_adult	1	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_adult_r2_input	SRR3225006	SRR3225006.fastq.gz		single	input	male_adult	2	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_cercaria_r1_input	SRR3224865	SRR3224865.fastq.gz		single	input	male_cercaria	1	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_cercaria_r2_input	SRR3224905	SRR3224905.fastq.gz		single	input	male_cercaria	2	1		input		true	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+female_adult_r1_h3k27me3	SRR3225229	SRR3225229.fastq.gz		single	ChIP-seq	female_adult	1	1	anti-H3K27me3	H3K27me3	SRR3225253	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+female_adult_r2_h3k27me3	SRR3225239	SRR3225239.fastq.gz		single	ChIP-seq	female_adult	2	1	anti-H3K27me3	H3K27me3	SRR3225254	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+female_cercaria_r1_h3k27me3	SRR3225007	SRR3225007.fastq.gz		single	ChIP-seq	female_cercaria	1	1	anti-H3K27me3	H3K27me3	SRR3225015	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+female_cercaria_r2_h3k27me3	SRR3225009	SRR3225009.fastq.gz		single	ChIP-seq	female_cercaria	2	1	anti-H3K27me3	H3K27me3	SRR3225228	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_adult_r1_h3k27me3	SRR3224929	SRR3224929.fastq.gz		single	ChIP-seq	male_adult	1	1	anti-H3K27me3	H3K27me3	SRR3225005	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_adult_r2_h3k27me3	SRR3224952	SRR3224952.fastq.gz		single	ChIP-seq	male_adult	2	1	anti-H3K27me3	H3K27me3	SRR3225006	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_cercaria_r1_h3k27me3	SRR3224319	SRR3224319.fastq.gz		single	ChIP-seq	male_cercaria	1	1	anti-H3K27me3	H3K27me3	SRR3224865	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+male_cercaria_r2_h3k27me3	SRR3224788	SRR3224788.fastq.gz		single	ChIP-seq	male_cercaria	2	1	anti-H3K27me3	H3K27me3	SRR3224905	false	PRJNA312093		PRJNA312093	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
