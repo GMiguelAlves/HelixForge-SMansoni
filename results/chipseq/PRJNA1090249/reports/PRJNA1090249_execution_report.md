@@ -1,79 +1,34 @@
-# PRJNA1090249 — final execution review
+# PRJNA1090249 — current regional results
 
-## Scope and completed processing
+The six original per-library MACS3 calls and matched Inputs are unchanged.
+The active publication replaces atomic support-segment annotation with merged
+regional candidates following nf-core/chipseq `2.1.0`, minimum one calling
+library, followed by HOMER `4.11` annotation using SM_V10/WBPS19.
 
-Eight single-end libraries passed the download integrity gate: six HP1 IPs
-and two stage-specific Inputs. The native workflow completed QC, trimming,
-Bowtie2 alignment, BAM processing, MACS3 broad calls, FRiP, consensus,
-annotation, coverage tracks, reporting and terminal-manifest validation.
-The terminal validation passed both schema and semantic checks. The final
-model-free continuation reused 97 upstream tasks rather than realigning.
+| Group | Regions | One-library regions | Regions called by ≥2 libraries | Associated gene IDs |
+|---|---:|---:|---:|---:|
+| Cercariae | 1,816 | 1,589 | 227 | 1,480 |
+| Sporocysts | 867 | 793 | 74 | 771 |
 
-HelixForge `v1.2.0`, Nextflow `25.10.7`, Java `21` and the certified Conda
-runtimes were used. SM_V10/WBPS19 reference identity and exact provenance are
-available in the public reference and execution manifests.
+The 60,657 bp cercarial and 21,643 bp sporocyst shared cores remain separate
+evidence products, not the boundaries used for nearest-gene association.
+Retention of the complete input union follows the minimum-one policy; it is
+not a measurement of biological recall. More associated genes do not establish
+greater biological accuracy or reproduction of the published study.
 
-## Primary peak calling
+The source native workflow completed all 38 tasks across six groups. Direct
+HOMER comparison passed for both HP1 groups; the independent H3K27me3 groups
+are reported separately. Source executions predate automatic TSS ambiguity
+assessment, and their explicit `not_assessed` flags preserve that limitation.
+Publication only adds flattened library membership and compression; native
+intervals, HOMER categories, distances and gene assignments are unchanged.
 
-MACS3 `3.0.4`, broad mode, q-value `0.01`, broad cutoff `0.1`,
-`--nomodel --extsize 200 --shift 0`, `--keep-dup all`; MAPQ >= 30,
-excluded SAM flags 2308. The effective-size value 391,422,299 is an assembly
-span proxy, not a measured mappable-genome size. No validated blacklist was
-available. The fixed extension is not an experimentally measured fragment size.
+Raw-read QC, alignment, MACS3 parameters, FRiP, extension sensitivity and
+article-inspired diagnostics remain available through the [result index](../README.md).
+Differential Binding was not run. The reduced public package is not a new
+validated native terminal run or a self-contained re-entry bundle.
 
-| IP library | Peaks | FRiP (%) |
-|---|---:|---:|
-| cercaria_hp1_r1 | 618 | 0.3926 |
-| cercaria_hp1_r2 | 267 | 0.2236 |
-| cercaria_hp1_r3 | 1,240 | 0.5364 |
-| sporocyst_hp1_r1 | 500 | 0.2422 |
-| sporocyst_hp1_r2 | 407 | 0.2010 |
-| sporocyst_hp1_r3 | 48 | 3.1607 |
-
-Consensus with support >= 2 retained 367 cercarial and 98 sporocyst atomic
-support segments. Their covered lengths are 60,657 and 21,643 bp,
-respectively. Segment counts must not be interpreted as counts of complete
-biological broad domains.
-
-## Follow-up and interpretation
-
-Extension sensitivity at 150 and 250 bp produced base Jaccard values
-0.33558–0.69351 relative to 200 bp. No setting was chosen to improve agreement
-with published counts. The article-inspired pooled MACS2 comparison used a
-common realized depth of 3,819,229 reads per library, not the publication's
-4.7 million. The fixed-200 arm produced 32,278 and 26,461 score-2 regions for
-cercariae and sporocysts, but zero and three score-5 regions. Unreported
-original interval geometry, reference and software differences prevent a
-claim of exact reproduction. Neither divergence nor zero qualifying domains
-proves absence of local HP1 signal or a particular laboratory failure.
-
-IP/Input read-fraction ratios in fixed-200 score-2 outer envelopes were 1.92
-and 1.83. The TSS/TES profiles show TES-associated coverage in Input as well
-as IP. These are descriptive measurements, not formal enrichment tests or
-biological-replicate confidence estimates. The complete methods, figures
-and tables are linked from the [result index](../README.md).
-
-## Final design and use decision
-
-Processing is closed and atlas inclusion is accepted. No global
-exploratory-only classification is assigned to the study. The quantitative
-QC findings remain available and must accompany interpretation.
-
-The potential group comparison would be **unpaired cercariae SmVEN versus
-sporocysts SmDFO**, not an isolated developmental-stage effect. The source
-methods do not establish matched units across stages; stage and strain are
-fully confounded. Within-group biological independence is unresolved. Inputs
-are controls, not additional biological replicates. Therefore DB is
-`NOT_ELIGIBLE_IN_CURRENT_ANALYSIS`, and no inferential DB results are claimed.
-Reassessment requires new source or experimental evidence rather than more
-parameter tuning.
-
-## Retention
-
-Scientific results, figures, reports, annotation, terminal provenance and
-coverage tracks are retained. Final BAM/BAI files for all eight libraries
-are preserved privately with verified checksums. Private audit is archived
-separately; reproducible intermediates are removed only after preservation
-is verified. No private filesystem paths are part of this public review.
-
-[Study publication and source methods](https://doi.org/10.1590/0074-02760240075).
+Exact execution source commit, reference hashes, public/source artifact hashes,
+policy and scope are recorded in each regional group manifest. The previous
+atomic-consensus report and terminal validation do not certify this replacement
+and have therefore been removed from the active result tree.

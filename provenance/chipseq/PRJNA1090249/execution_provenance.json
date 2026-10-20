@@ -1,5 +1,7 @@
 {
   "study_id": "PRJNA1090249",
+  "scope": "original_read_processing_and_per_library_peak_calls",
+  "active_regional_provenance": "results/chipseq/PRJNA1090249/manifests/regional_publication.json",
   "helixforge_release": "v1.2.0",
   "helixforge_commit": "bd50fe094bc352f698feabe0ae0b8f0e777f5e97",
   "species_project_execution_commit": "edaef5b0804a8736b2ad922a944e469e75b6c9f1",

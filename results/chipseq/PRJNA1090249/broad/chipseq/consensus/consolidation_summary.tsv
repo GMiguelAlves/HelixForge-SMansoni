@@ -1,3 +1,0 @@
-group_id	dataset	experiment_id	condition	treatment	target	genome_id	peak_type	caller	caller_version	strategy	status	replicate_mode	replicate_policy	replicate_count	consolidated_peaks_available	consolidated_peaks_path
-PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad	PRJNA1090249	PRJNA1090249.HP1	cercaria		HP1	Schistosoma_mansoni_SM_V10_WBPS19	broad	macs3	3.0.4	replicate_support	complete	biological	require_premerged	3	true	consolidated_peaks.tsv
-PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad	PRJNA1090249	PRJNA1090249.HP1	sporocyst		HP1	Schistosoma_mansoni_SM_V10_WBPS19	broad	macs3	3.0.4	replicate_support	complete	biological	require_premerged	3	true	consolidated_peaks.tsv
