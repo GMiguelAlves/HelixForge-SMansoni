@@ -1,68 +1,66 @@
 # PRJNA1090249 — HP1 ChIP-seq results
 
-Native ChIP-seq processing is complete for six HP1 IP libraries and two Inputs
-from cercariae and sporocysts of *Schistosoma mansoni*. The analysis uses
-HelixForge `v1.2.0`, SM_V10/WBPS19 and MACS3 `3.0.4` broad peak calling.
-The study is accepted for inclusion in the atlas. Differential Binding is
-not performed in the current analysis.
+Six HP1 IP libraries and two Inputs from cercariae and sporocysts of
+*Schistosoma mansoni* were processed against SM_V10/WBPS19. Read processing
+and per-library MACS3 `3.0.4` calls used HelixForge `v1.2.0`. The active
+regional catalog uses the nf-core/chipseq `2.1.0` consolidation policy,
+BEDTools `2.30.0`, support from **at least one library**, and HOMER `4.11`.
 
-## Results
+## Current results
 
-- [Standardized per-library QC](qc/qc_sample_summary.tsv) and
-  [QC summary](qc/qc_summary.json).
-- [Native ChIP-seq HTML report](broad/chipseq/report/report_result/chipseq_report.html)
-  and [MultiQC report](reports/PRJNA1090249_multiqc.html).
-- [Per-library peak QC](broad/chipseq/peak_qc/peak_qc_summary.tsv),
-  [consensus summary](broad/chipseq/consensus/consolidation_summary.tsv),
-  [annotated peaks](broad/chipseq/peak_annotation/peak_annotation_aggregate/annotated_peaks.tsv)
-  and [peak–gene associations](broad/chipseq/peak_annotation/peak_annotation_aggregate/peak_gene_associations.tsv).
-- [Fragment-length diagnostics and figures](qc/fragment_length_diagnostic/index.html)
-  and [article-inspired comparison](qc/article_method_comparison/relatorio.html).
-- [Final execution review](reports/PRJNA1090249_execution_report.md),
-  [publication validation](manifests/publication_validation.json),
-  [reference manifest](manifests/reference_bundle.manifest.json) and
-  [execution provenance](../../../provenance/chipseq/PRJNA1090249/execution_provenance.json).
+- [Regional and gene-association summary](broad/regional_summary.tsv).
+- [Cercarial catalog and evidence](broad/chipseq/consensus/cercaria/manifest.json)
+  and [sporocyst catalog and evidence](broad/chipseq/consensus/sporocyst/manifest.json).
+- [Cercarial peak–gene associations](broad/chipseq/peak_annotation/cercaria/peak_gene_associations.tsv.gz)
+  and [sporocyst peak–gene associations](broad/chipseq/peak_annotation/sporocyst/peak_gene_associations.tsv.gz).
+- [Per-library QC](qc/qc_sample_summary.tsv), [QC summary](qc/qc_summary.json),
+  [MultiQC](reports/PRJNA1090249_multiqc.html), and unchanged per-library
+  MACS3 calls under `broad/080-peak-calling/`.
+- [Publication and comparison record](manifests/regional_publication.json),
+  [execution review](reports/PRJNA1090249_execution_report.md), and
+  [reference manifest](manifests/reference_bundle.manifest.json).
 
-Consensus retained **367 cercarial and 98 sporocyst support segments** with
-support from at least two deposited IP libraries. These are support segments,
-not independently verified broad biological domains. Per-library peak counts
-range from 48 to 1,240 and FRiP from 0.201% to 3.161%.
+| Group | Regional candidates | Covered bases | Associated gene IDs |
+|---|---:|---:|---:|
+| Cercariae | 1,816 | 549,790 | 1,480 |
+| Sporocysts | 867 | 268,249 | 771 |
 
-## Interpretation
+These catalogs replace the former 367/98 atomic support segments as the
+active input to gene association. Full merged regional intervals are retained;
+the core with support from at least two libraries remains a separate spatial
+product and does not crop the catalog. BED coordinates are zero-based and
+half-open. Gene counts describe nearest-gene associations, not proven targets.
 
-The 200 bp model-free extension is an explicit operational assumption, not a
-measured fragment length. The 150/200/250 bp sensitivity analysis and pooled
-article-inspired follow-up are recorded in the
-[peak-calling policy](../../../docs/chipseq/prjna1090249_peak_policy.md).
-The follow-up did not establish exact reproduction of the publication.
-TES-associated coverage was also present in Input; profile shape alone must
-not be interpreted as HP1-specific enrichment.
+## Evidence and interpretation
 
-Cercariae SmVEN and sporocysts SmDFO differ in both stage and strain. Source
-independence of the three deposited libraries per group is not established.
-These limitations remain attached to the atlas evidence; atlas inclusion is
-not evidence of differential occupancy or causality. The
-[final DB review](../../../docs/chipseq/differential_binding_review.md)
-records why no inferential comparison was run.
+The TSVs identify calling libraries and samples, their counts, support class,
+per-library covered bases/fractions, and shared core. `single_library`,
+`multiple_libraries`, and `all_libraries` describe library membership, not
+biological reproducibility or statistical significance. All regions retain
+`occupancy_status=not_assessed`.
 
-## Public and retained artifacts
+These completed source executions predate the native HOMER TSS snapshot.
+Their ambiguity fields explicitly say `not_assessed`; they must not be
+interpreted as unambiguous. Gene assignments are unchanged. The independent
+direct-tool comparison passed for both HP1 groups.
 
-This reduced public package contains peaks, annotations, QC, figures, reports
-and sanitized manifests. FASTQs, BAM/BAI, bigWigs, workdirs and private audit
-logs are excluded from Git. Full persistent results and private audit are
-retained separately. The native terminal manifest is retained as a provenance
-record, but this reduced public copy is **not a self-contained re-entry
-package**, because large referenced artifacts are omitted.
+The 200 bp model-free extension remains an operational assumption, not a
+measured fragment length. [Fragment diagnostics](qc/fragment_length_diagnostic/index.html)
+and [article-inspired comparisons](qc/article_method_comparison/relatorio.html)
+remain available. Stage/strain confounding and library-source independence
+still limit inference; no Differential Binding was performed. The study
+remains accepted for atlas inclusion, with evidence strength attached to each
+association. See the [peak policy](../../../docs/chipseq/prjna1090249_peak_policy.md)
+and [DB review](../../../docs/chipseq/differential_binding_review.md).
 
-`TECHNICAL_EXECUTION = PASS`
+Large TSV/BED files are gzip-compressed. Original source hashes and public-file
+hashes are recorded in the group manifests and `SHA256SUMS`. FASTQs, BAMs,
+bigWigs, caches and private logs are excluded; this is not a self-contained
+re-entry bundle. The superseded consensus, annotation and report were removed
+from the active tree and remain recoverable through Git history.
 
-`PROCESSING_STATUS = COMPLETE`
+## Sources
 
-`ATLAS_INCLUSION = ACCEPTED`
-
-`DIFFERENTIAL_BINDING = NOT_ELIGIBLE_IN_CURRENT_ANALYSIS`
-
-## Source
-
-[BioProject PRJNA1090249](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1090249)
-and [study publication](https://doi.org/10.1590/0074-02760240075).
+[BioProject PRJNA1090249](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1090249),
+[study publication](https://doi.org/10.1590/0074-02760240075), and
+[nf-core/chipseq 2.1.0](https://github.com/nf-core/chipseq/tree/2.1.0).

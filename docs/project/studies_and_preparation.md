@@ -219,7 +219,8 @@ manifest without Differential Binding. Alignment-only studies retain their
 restricted scope; previous RNA-seq execution pins are unchanged.
 `PRJNA1090249` has completed native processing and is accepted for atlas
 inclusion. Its [public results](../../results/chipseq/PRJNA1090249/README.md)
-include per-library peaks, consensus support segments, annotations, QC,
+include per-library peaks, minimum-one-library regional catalogs with HOMER
+annotations and explicit library evidence, QC,
 figures and reports. DB is not eligible in the current analysis; measured
 enrichment/model sensitivity and source-independence limitations remain
 documented. Updating the atlas presentation is separate from publication of
