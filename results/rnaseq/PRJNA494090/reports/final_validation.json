@@ -1,0 +1,12 @@
+{
+  "study_id": "PRJNA494090",
+  "technical_execution": "PASS",
+  "input_integrity": "PASS",
+  "sample_qc": "REVIEW",
+  "sample_review_count": 10,
+  "sample_count": 24,
+  "differential_expression_execution": "COMPLETE",
+  "differential_expression_promotion": "HOLD",
+  "atlas_inclusion": "HOLD",
+  "reason": "Mapping below the operational review threshold in 10 libraries, with selected-control asymmetry and unresolved mixed-sex composition."
+}

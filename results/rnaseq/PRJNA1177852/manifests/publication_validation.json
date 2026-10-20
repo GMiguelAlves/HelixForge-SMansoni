@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "type": "public_result_package_validation",
+  "study_id": "PRJNA1177852",
+  "run_mode": "import",
+  "status": "complete",
+  "terminal_rnaseq_manifest": "not_emitted_by_import_mode",
+  "native_import_manifest": "../expression/import_manifest.json",
+  "checks": {
+    "workflow_tasks_complete": "91/91",
+    "input_fastq_integrity": "16/16",
+    "qc_samples_pass": "8/8",
+    "import_samples": 8,
+    "import_genes": 9914,
+    "import_matrix_checksums": "verified_against_native_import_manifest"
+  },
+  "scientific_classification": "DESCRIPTIVE_ONLY",
+  "differential_expression": "not_run_by_design"
+}

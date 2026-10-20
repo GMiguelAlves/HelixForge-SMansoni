@@ -40,7 +40,7 @@ def main() -> None:
     root = Path(__file__).resolve().parents[2]
     master: list[dict[str, str]] = []
     for study in STUDIES:
-        metadata_dir = root / "metadata" / study
+        metadata_dir = root / "metadata" / "rnaseq" / study
         metadata = read(metadata_dir / "metadata.csv", ",")
         runs = {row["run_accession"]: row for row in read(metadata_dir / "runs.tsv", "\t")}
         for row in metadata:
@@ -64,9 +64,9 @@ def main() -> None:
             })
 
     master.sort(key=lambda row: (STUDIES.index(row["study"]), row["sample"], row["run"]))
-    write_tsv(root / "metadata" / "master_sample_manifest.tsv", MASTER_FIELDS, master)
+    write_tsv(root / "metadata" / "rnaseq" / "master_sample_manifest.tsv", MASTER_FIELDS, master)
 
-    vocab_dir = root / "metadata" / "vocabularies"
+    vocab_dir = root / "metadata" / "rnaseq" / "vocabularies"
     for field in VOCABULARIES:
         values = sorted({row[field] for row in master})
         write_tsv(

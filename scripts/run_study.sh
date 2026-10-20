@@ -10,7 +10,7 @@ certified_python=$(command -v python3)
 [[ -x "$certified_python" ]] || { echo "Certified python3 not found" >&2; exit 2; }
 python3 -c 'import jsonschema, sys; import importlib.metadata as metadata; print("[OK] python=%s jsonschema=%s" % (sys.executable, metadata.version("jsonschema")))'
 project=${1:?usage: run_study.sh PROJECT}
-config="$HF_PACKAGE_ROOT/config/$project/pipeline_config.sh"
+config="$HF_PACKAGE_ROOT/config/rnaseq/$project/pipeline_config.sh"
 [[ -s "$config" ]] || { echo "Study config not found: $config" >&2; exit 2; }
 current=$(git -c safe.directory="$HF_HELIXFORGE_ROOT" -C "$HF_HELIXFORGE_ROOT" rev-parse HEAD)
 [[ "$current" == "$HF_HELIXFORGE_COMMIT" ]] || { echo "HelixForge commit mismatch: $current" >&2; exit 2; }
@@ -39,7 +39,7 @@ args=(run "$HF_HELIXFORGE_ROOT" -profile "${HF_PROFILES:-apptainer,slurm}" -c "$
 if [[ -n "${HF_RUN_NAME:-}" ]]; then args+=(-name "$HF_RUN_NAME"); fi
 if [[ "${HF_RESUME:-0}" == 1 ]]; then args+=(-resume); fi
 if [[ "$mode" == full ]]; then
-    source_de_spec="$HF_PACKAGE_ROOT/config/$project/de_spec.json"
+    source_de_spec="$HF_PACKAGE_ROOT/config/rnaseq/$project/de_spec.json"
     runtime_spec_dir="$outdir/pipeline_info/runtime_specs"
     runtime_de_spec="$runtime_spec_dir/de_spec.json"
     runtime_de_provenance="$runtime_spec_dir/de_spec.provenance.json"

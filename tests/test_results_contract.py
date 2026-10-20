@@ -3,12 +3,11 @@ from __future__ import annotations
 import unittest
 import json
 import hashlib
-import csv
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RESULTS = ROOT / "results"
+RESULTS = ROOT / "results" / "rnaseq"
 STUDIES = (
     "PRJNA602528",
     "PRJNA597909",
@@ -18,6 +17,10 @@ STUDIES = (
     "PRJEB3190",
     "E-ERAD-478",
     "PRJNA312093",
+    "PRJNA1150591",
+    "PRJNA1177852",
+    "PRJNA704646",
+    "PRJNA428470",
 )
 
 
@@ -30,8 +33,6 @@ class PublicResultsContract(unittest.TestCase):
             "expression/counts_matrix.tsv",
             "expression/tpm_matrix.tsv",
             "expression/length_matrix.tsv",
-            "manifests/rnaseq_run_manifest.json",
-            "manifests/terminal_manifest_validation.json",
         )
         for study in STUDIES:
             with self.subTest(study=study):
@@ -40,6 +41,13 @@ class PublicResultsContract(unittest.TestCase):
                         (RESULTS / study / relative).is_file(),
                         f"{study}: missing stable result {relative}",
                     )
+                if study in {"PRJNA1177852", "PRJNA704646"}:
+                    self.assertTrue((RESULTS / study / "expression/import_manifest.json").is_file())
+                    self.assertTrue((RESULTS / study / "manifests/publication_validation.json").is_file())
+                    self.assertFalse((RESULTS / study / "manifests/rnaseq_run_manifest.json").exists())
+                else:
+                    self.assertTrue((RESULTS / study / "manifests/rnaseq_run_manifest.json").is_file())
+                    self.assertTrue((RESULTS / study / "manifests/terminal_manifest_validation.json").is_file())
 
     def test_e_erad_478_uses_the_compact_public_layout(self) -> None:
         root = RESULTS / "E-ERAD-478"
@@ -78,37 +86,13 @@ class PublicResultsContract(unittest.TestCase):
             )
         self.assertEqual([], offenders)
 
-    def test_prjna312093_nonadult_refit_is_the_only_promoted_de(self) -> None:
+    def test_prjna312093_remains_on_biological_hold(self) -> None:
         root = RESULTS / "PRJNA312093"
         gate = json.loads((root / "reports/final_validation.json").read_text(encoding="utf-8"))
         self.assertEqual("PASS", gate["technical_qc"])
-        self.assertEqual("REVIEW_ADULT_PAIR", gate["biological_replicate_concordance"])
-        self.assertEqual("AUDIT_ONLY", gate["original_20_sample_fit"])
-        self.assertEqual("PASS_WITH_LIMITATIONS", gate["nonadult_16_sample_refit"])
-        self.assertEqual("NOT_EVALUABLE", gate["adult_female_vs_male"])
-        self.assertEqual("PENDING_NONADULT_WIRING", gate["atlas_inclusion"])
-        refit = root / "reanalysis/nonadult_16"
-        decision = json.loads((refit / "decision.json").read_text(encoding="utf-8"))
-        self.assertEqual("PASS_WITH_LIMITATIONS", decision["status"])
-        self.assertEqual(16, decision["included_samples"])
-        self.assertEqual(4, decision["excluded_adult_samples"])
-        self.assertEqual("AUDIT_ONLY", decision["original_20_sample_contrasts"])
-        self.assertEqual("NOT_EVALUABLE", decision["adult_female_vs_male"])
-        self.assertEqual(4, len(decision["accepted_contrasts"]))
-        for relative in decision["accepted_contrasts"]:
-            self.assertNotIn("condition__adult_", relative)
-            with (refit / relative).open(encoding="utf-8", newline="") as handle:
-                rows = list(csv.DictReader(handle, delimiter="\t"))
-            self.assertEqual(9501, len(rows), relative)
-            self.assertTrue({"gene_id", "log2FoldChange", "padj"}.issubset(rows[0]), relative)
-        with (refit / "included_samples.tsv").open(encoding="utf-8", newline="") as handle:
-            included = list(csv.DictReader(handle, delimiter="\t"))
-        with (refit / "excluded_adults.tsv").open(encoding="utf-8", newline="") as handle:
-            excluded = list(csv.DictReader(handle, delimiter="\t"))
-        self.assertEqual(16, len(included))
-        self.assertEqual(4, len(excluded))
-        self.assertTrue(all(row["stage"] != "adult" for row in included))
-        self.assertTrue(all(row["stage"] == "adult" for row in excluded))
+        self.assertEqual("REVIEW", gate["biological_replicate_concordance"])
+        self.assertEqual("HOLD", gate["study_promotion"])
+        self.assertEqual("HOLD", gate["atlas_inclusion"])
         self.assertTrue((root / "reports/PRJNA312093_multiqc.html").is_file())
         self.assertFalse((root / "differential_expression/dds_condition.rds").exists())
 
@@ -144,6 +128,94 @@ class PublicResultsContract(unittest.TestCase):
         significant = de["artifacts"]["significant"]
         path = root / "differential_expression" / significant["path"]
         self.assertEqual(significant["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+
+    def test_prjna1150591_public_package(self) -> None:
+        root = RESULTS / "PRJNA1150591"
+        hashes = dict(line.split("  ", 1) for line in (root / "SHA256SUMS").read_text(encoding="utf-8").splitlines())
+        actual = {
+            str(path.relative_to(root)).replace("\\", "/")
+            for path in root.rglob("*")
+            if path.is_file() and path.name != "SHA256SUMS"
+        }
+        self.assertEqual(actual, set(hashes.values()))
+        for digest, relative in hashes.items():
+            path = root / relative
+            self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest(), relative)
+            if path.suffix.lower() in {".md", ".json", ".html", ".tsv", ".txt", ".yml"}:
+                content = path.read_text(encoding="utf-8")
+                for forbidden in ("/scratch/", "/home/", "ra236875", "srv-slurm", "C:\\Users\\"):
+                    self.assertNotIn(forbidden, content, relative)
+        import_manifest = json.loads((root / "expression/import_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(15, import_manifest["sample_count"])
+        for role in ("counts", "abundance", "lengths"):
+            artifact = import_manifest["artifacts"][role]
+            path = root / "expression" / artifact["path"]
+            self.assertEqual(artifact["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
+        de = json.loads((root / "differential_expression/de_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual("~ condition", de["design"]["formula"])
+        self.assertEqual(1, de["contrasts"])
+        self.assertEqual("complete", de["status"])
+
+    def test_prjna1177852_import_only_package(self) -> None:
+        root = RESULTS / "PRJNA1177852"
+        hashes = dict(line.split("  ", 1) for line in (root / "SHA256SUMS").read_text(encoding="utf-8").splitlines())
+        actual = {
+            str(path.relative_to(root)).replace("\\", "/")
+            for path in root.rglob("*")
+            if path.is_file() and path.name != "SHA256SUMS"
+        }
+        self.assertEqual(actual, set(hashes.values()))
+        for digest, relative in hashes.items():
+            path = root / relative
+            self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest(), relative)
+            if path.suffix.lower() in {".md", ".json", ".html", ".tsv", ".txt", ".yml"}:
+                content = path.read_text(encoding="utf-8")
+                for forbidden in ("/scratch/", "/home/", "ra236875", "srv-slurm", "C:\\Users\\"):
+                    self.assertNotIn(forbidden, content, relative)
+        manifest = json.loads((root / "expression/import_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(8, manifest["sample_count"])
+        for role in ("counts", "abundance", "lengths"):
+            artifact = manifest["artifacts"][role]
+            self.assertEqual(
+                artifact["sha256"],
+                hashlib.sha256((root / "expression" / artifact["path"]).read_bytes()).hexdigest(),
+            )
+        publication = json.loads((root / "manifests/publication_validation.json").read_text(encoding="utf-8"))
+        self.assertEqual("import", publication["run_mode"])
+        self.assertEqual("DESCRIPTIVE_ONLY", publication["scientific_classification"])
+        self.assertEqual("not_run_by_design", publication["differential_expression"])
+        self.assertFalse((root / "differential_expression").exists())
+
+    def test_prjna704646_descriptive_package_keeps_qc_review(self) -> None:
+        root = RESULTS / "PRJNA704646"
+        hashes = dict(line.split("  ", 1) for line in (root / "SHA256SUMS").read_text(encoding="utf-8").splitlines())
+        actual = {
+            str(path.relative_to(root)).replace("\\", "/")
+            for path in root.rglob("*")
+            if path.is_file() and path.name != "SHA256SUMS"
+        }
+        self.assertEqual(actual, set(hashes.values()))
+        for digest, relative in hashes.items():
+            path = root / relative
+            self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest(), relative)
+            if path.suffix.lower() in {".md", ".json", ".html", ".tsv", ".txt", ".yml"}:
+                content = path.read_text(encoding="utf-8")
+                for forbidden in ("/scratch/", "/home/", "ra236875", "srv-slurm", "C:\\Users\\"):
+                    self.assertNotIn(forbidden, content, relative)
+        manifest = json.loads((root / "expression/import_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(8, manifest["sample_count"])
+        for role in ("counts", "abundance", "lengths"):
+            artifact = manifest["artifacts"][role]
+            self.assertEqual(
+                artifact["sha256"],
+                hashlib.sha256((root / "expression" / artifact["path"]).read_bytes()).hexdigest(),
+            )
+        qc = json.loads((root / "qc/qc_summary.json").read_text(encoding="utf-8"))
+        self.assertEqual({"PASS": 5, "REVIEW": 3}, qc["sample_classification"])
+        publication = json.loads((root / "manifests/publication_validation.json").read_text(encoding="utf-8"))
+        self.assertEqual("DESCRIPTIVE_ONLY", publication["scientific_classification"])
+        self.assertEqual("not_run_by_design", publication["differential_expression"])
+        self.assertFalse((root / "differential_expression").exists())
 
 
 if __name__ == "__main__":

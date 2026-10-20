@@ -1,0 +1,7 @@
+"RNASEQ:RNASEQ_ALIGNMENT_QUANTIFICATION:IMPORT:SALMON_IMPORT":
+    r: "4.3.3"
+    bioconductor: "3.18"
+    tximport: "1.30.0"
+    SummarizedExperiment: "1.32.0"
+    readr: "2.2.0"
+    data.table: "1.17.8"

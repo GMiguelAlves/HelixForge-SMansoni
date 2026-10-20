@@ -1,11 +1,14 @@
 # Configuration
 
 `reference/reference_manifest.json` freezes reference identity and download
-sources. Each study directory contains its HelixForge compatibility adapter,
+sources. Each RNA-seq study directory under `rnaseq/` contains its HelixForge compatibility adapter,
 user settings, reviewed DE specification (or explicit block), and the original
 curation README. `server.env.template`, `server.p1.env.template` and
 `slurm.config` are site templates; the populated environment file is ignored
 by Git.
+
+ChIP-seq-specific configuration remains under `chipseq/`. The external
+`HF_RESULTS_ROOT` used by Slurm is independent of this repository layout.
 
 Pending P1 studies freeze `HF_RNASEQ_RUN_MODE` in their tracked settings.
 Inferential studies use `full`; unreplicated/descriptive studies use `import`

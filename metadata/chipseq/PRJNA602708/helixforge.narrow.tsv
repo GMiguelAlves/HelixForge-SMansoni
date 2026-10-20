@@ -1,0 +1,13 @@
+sample_id	run_accession	fastq_1	fastq_2	layout	assay	condition	biological_replicate	technical_replicate	antibody	target	control_id	is_control	batch	lane	dataset	organism	genome_id
+shared_input_r2	SRR10961877	SRR10961877_1.fastq.gz	SRR10961877_2.fastq.gz	paired	input	shared_input	2	1		input		true	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+shared_input_r1	SRR10961878	SRR10961878_1.fastq.gz	SRR10961878_2.fastq.gz	paired	input	shared_input	1	1		input		true	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+hm7w_r2_h3k4me3	SRR10961883	SRR10961883_1.fastq.gz	SRR10961883_2.fastq.gz	paired	ChIP-seq	hm7w	2	1	anti-H3K4me3	H3K4me3	SRR10961877	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+hm7w_r1_h3k4me3	SRR10961887	SRR10961887_1.fastq.gz	SRR10961887_2.fastq.gz	paired	ChIP-seq	hm7w	1	1	anti-H3K4me3	H3K4me3	SRR10961878	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh0w_r1_h3k4me3	SRR10961876	SRR10961876_1.fastq.gz	SRR10961876_2.fastq.gz	paired	ChIP-seq	rh0w	1	1	anti-H3K4me3	H3K4me3	SRR10961878	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh0w_r2_h3k4me3	SRR10961898	SRR10961898_1.fastq.gz	SRR10961898_2.fastq.gz	paired	ChIP-seq	rh0w	2	1	anti-H3K4me3	H3K4me3	SRR10961877	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh10w_r2_h3k4me3	SRR10961894	SRR10961894_1.fastq.gz	SRR10961894_2.fastq.gz	paired	ChIP-seq	rh10w	2	1	anti-H3K4me3	H3K4me3	SRR10961877	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh10w_r1_h3k4me3	SRR10961896	SRR10961896_1.fastq.gz	SRR10961896_2.fastq.gz	paired	ChIP-seq	rh10w	1	1	anti-H3K4me3	H3K4me3	SRR10961878	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh12w_r2_h3k4me3	SRR10961890	SRR10961890_1.fastq.gz	SRR10961890_2.fastq.gz	paired	ChIP-seq	rh12w	2	1	anti-H3K4me3	H3K4me3	SRR10961877	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh12w_r1_h3k4me3	SRR10961892	SRR10961892_1.fastq.gz	SRR10961892_2.fastq.gz	paired	ChIP-seq	rh12w	1	1	anti-H3K4me3	H3K4me3	SRR10961878	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh8w_r2_h3k4me3	SRR10961880	SRR10961880_1.fastq.gz	SRR10961880_2.fastq.gz	paired	ChIP-seq	rh8w	2	1	anti-H3K4me3	H3K4me3	SRR10961877	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19
+rh8w_r1_h3k4me3	SRR10961888	SRR10961888_1.fastq.gz	SRR10961888_2.fastq.gz	paired	ChIP-seq	rh8w	1	1	anti-H3K4me3	H3K4me3	SRR10961878	false	PRJNA602708		PRJNA602708	Schistosoma mansoni	Schistosoma_mansoni_SM_V10_WBPS19

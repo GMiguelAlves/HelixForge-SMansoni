@@ -24,7 +24,7 @@ must not be interpreted as differential-expression inference.
 produces the stable `qc_sample_summary.tsv` and `qc_summary.json` contract for
 any study from preserved native results, a frozen audit ZIP, or a reviewed
 historical sample table. Study-specific finalizers must not create alternative
-QC interfaces. See `docs/qc_results_contract.md`.
+QC interfaces. See `docs/rnaseq/qc_results_contract.md`.
 
 `run_study.sh` starts a clean native execution by default. Recovery with the
 same inputs, parameters, work directory, and task cache must be requested

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "helixforge": {
+    "release": "v1.2.0",
+    "commit": "bd50fe094bc352f698feabe0ae0b8f0e777f5e97"
+  },
+  "composition": {
+    "peak_run_modes": ["consensus", "idr"],
+    "postprocess_peak_runs": true,
+    "differential_binding": false,
+    "alignment_only_mode": "post_alignment",
+    "alignment_only_postprocess": false,
+    "peak_run_outputs": ["annotation", "tracks", "report", "terminal_manifest"]
+  },
+  "trimming_policy": "trimming_policy.json",
+  "differential_binding_review_policy": "differential_binding_review.json",
+  "reference": {
+    "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+    "genome_size_bp": 391422299,
+    "effective_genome_size_policy": "assembly_span_proxy"
+  },
+  "bam": {
+    "min_mapq": 30,
+    "include_flags": 0,
+    "exclude_flags": 2308,
+    "duplicate_mode": "none",
+    "blacklist": null
+  },
+  "peaks": {
+    "caller": "macs3",
+    "q_value": 0.01,
+    "duplicate_policy": "all",
+    "mixed_peak_types_split": true
+  },
+  "consensus": {
+    "narrow": "idr_if_exactly_two_premerged_biological_replicates_else_replicate_support",
+    "broad": "replicate_support",
+    "minimum_support": 2
+  },
+  "limitations": [
+    "No validated S. mansoni blacklist is frozen; no blacklist filtering is applied.",
+    "PRJNA219440 and PRJNA384372 are alignment-only because public matched controls are absent.",
+    "The current HelixForge ChIP API applies one peak_type per run, so mixed-mark studies are split into narrow and broad invocations.",
+    "Native trimming follows the registered ChIP policy; raw/post-trim QC and adapter-detection reports require review, including possible poly-G artifacts on two-colour instruments."
+  ]
+}
