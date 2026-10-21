@@ -4,6 +4,12 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 *Schistosoma mansoni* using
 [HelixForge](https://github.com/GMiguelAlves/HelixForge).
 
+## Explore the atlas
+
+The [atlas release](https://github.com/GMiguelAlves/HelixForge-SMansoni/releases/tag/atlas-v2026.10.21) provides a ready-to-open RNA/ChIP atlas. Extract `atlas-init.zip` and run `python atlas.py init` for Docker, or extract `atlas-local.zip` and run `python atlas.py init --local` without Docker. Both open **http://127.0.0.1:8765/**. Python 3.10+ is required; no analysis dependencies are needed.
+
+From a clone, the same commands work directly; `docker compose up --build -d` also builds and starts the atlas. See [installation, scientific scope and size notes](ATLAS.md). The frozen atlas is a consultation layer over the accepted results below; it does not rerun or broaden their scientific analyses.
+
 ```text
 PROJECT_STATUS = ACTIVE
 ```
