@@ -1,0 +1,512 @@
+{
+  "study_id": "PRJNA1090249",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "target": "HP1",
+  "repository": "https://github.com/GMiguelAlves/HelixForge-SMansoni",
+  "commit": "c9e77fee805d73e0527a02f83217c7a2763d270c",
+  "qc": {
+    "study_id": "PRJNA1090249",
+    "technical_execution": "PASS",
+    "processing_status": "COMPLETE",
+    "atlas_inclusion": "ACCEPTED",
+    "qc_classification": "REVIEW_WITH_DOCUMENTED_LIMITATIONS",
+    "samples": 8,
+    "ip_libraries": 6,
+    "input_libraries": 2,
+    "differential_binding": "NOT_ELIGIBLE_IN_CURRENT_ANALYSIS",
+    "db_reasons": [
+      "biological_independence_not_established",
+      "enrichment_and_extension_sensitivity"
+    ],
+    "stage_strain_confounding": "COMPLETE",
+    "primary_extsize_bp": 200,
+    "fragment_length_experimentally_certified": false,
+    "article_exact_reproduction": false,
+    "scientific_limitations_preserved": true
+  },
+  "helixforge_release": "v1.2.0",
+  "helixforge_commit": "bd50fe094bc352f698feabe0ae0b8f0e777f5e97",
+  "regional_execution_commit": "cd390a0650cfb4b6555f0635a76f7ce158359b78",
+  "caller": "macs3",
+  "caller_version": "3.0.4",
+  "consensus_method": "nfcore_2_1",
+  "annotation_provider": "homer_4_11",
+  "regional_min_libraries": 1,
+  "core_min_libraries": 2,
+  "contexts": [
+    {
+      "study": "PRJNA1090249",
+      "stage": "cercaria",
+      "factor": "HP1",
+      "method": "nfcore_2_1",
+      "min_libraries": 1,
+      "libraries": [
+        {
+          "id": "SRR28402822",
+          "sample": "cercaria_hp1_r3",
+          "label": "Library 1"
+        },
+        {
+          "id": "SRR28402825",
+          "sample": "cercaria_hp1_r2",
+          "label": "Library 2"
+        },
+        {
+          "id": "SRR28402826",
+          "sample": "cercaria_hp1_r1",
+          "label": "Library 3"
+        }
+      ]
+    },
+    {
+      "study": "PRJNA1090249",
+      "stage": "sporocyst",
+      "factor": "HP1",
+      "method": "nfcore_2_1",
+      "min_libraries": 1,
+      "libraries": [
+        {
+          "id": "SRR28402818",
+          "sample": "sporocyst_hp1_r3",
+          "label": "Library 1"
+        },
+        {
+          "id": "SRR28402819",
+          "sample": "sporocyst_hp1_r2",
+          "label": "Library 2"
+        },
+        {
+          "id": "SRR28402820",
+          "sample": "sporocyst_hp1_r1",
+          "label": "Library 3"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "cercaria_input",
+      "run_accession": "SRR28402821",
+      "condition": "cercaria",
+      "target": "input",
+      "is_control": "true",
+      "final_bam_reads": "9891828",
+      "peak_count": "NA",
+      "frip": "NA",
+      "qc_status": "CONTROL",
+      "review_reason": "matched_input_control"
+    },
+    {
+      "sample_id": "sporocyst_input",
+      "run_accession": "SRR28402817",
+      "condition": "sporocyst",
+      "target": "input",
+      "is_control": "true",
+      "final_bam_reads": "21522014",
+      "peak_count": "NA",
+      "frip": "NA",
+      "qc_status": "CONTROL",
+      "review_reason": "matched_input_control"
+    },
+    {
+      "sample_id": "cercaria_hp1_r3",
+      "run_accession": "SRR28402822",
+      "condition": "cercaria",
+      "target": "HP1",
+      "is_control": "false",
+      "final_bam_reads": "9046740",
+      "peak_count": "1240",
+      "frip": "0.005364031684341542",
+      "qc_status": "REVIEW",
+      "review_reason": "extension_sensitivity_and_enrichment_review"
+    },
+    {
+      "sample_id": "cercaria_hp1_r2",
+      "run_accession": "SRR28402825",
+      "condition": "cercaria",
+      "target": "HP1",
+      "is_control": "false",
+      "final_bam_reads": "10208147",
+      "peak_count": "267",
+      "frip": "0.0022358612194749937",
+      "qc_status": "REVIEW",
+      "review_reason": "extension_sensitivity_and_enrichment_review"
+    },
+    {
+      "sample_id": "cercaria_hp1_r1",
+      "run_accession": "SRR28402826",
+      "condition": "cercaria",
+      "target": "HP1",
+      "is_control": "false",
+      "final_bam_reads": "8354288",
+      "peak_count": "618",
+      "frip": "0.003926247215801035",
+      "qc_status": "REVIEW",
+      "review_reason": "extension_sensitivity_and_enrichment_review"
+    },
+    {
+      "sample_id": "sporocyst_hp1_r3",
+      "run_accession": "SRR28402818",
+      "condition": "sporocyst",
+      "target": "HP1",
+      "is_control": "false",
+      "final_bam_reads": "4972807",
+      "peak_count": "48",
+      "frip": "0.03160669617783276",
+      "qc_status": "REVIEW",
+      "review_reason": "extension_sensitivity_and_enrichment_review"
+    },
+    {
+      "sample_id": "sporocyst_hp1_r2",
+      "run_accession": "SRR28402819",
+      "condition": "sporocyst",
+      "target": "HP1",
+      "is_control": "false",
+      "final_bam_reads": "8616693",
+      "peak_count": "407",
+      "frip": "0.0020099358303701897",
+      "qc_status": "REVIEW",
+      "review_reason": "extension_sensitivity_and_enrichment_review"
+    },
+    {
+      "sample_id": "sporocyst_hp1_r1",
+      "run_accession": "SRR28402820",
+      "condition": "sporocyst",
+      "target": "HP1",
+      "is_control": "false",
+      "final_bam_reads": "8015541",
+      "peak_count": "500",
+      "frip": "0.002422169632717243",
+      "qc_status": "REVIEW",
+      "review_reason": "extension_sensitivity_and_enrichment_review"
+    }
+  ],
+  "annotation_policies": [
+    {
+      "condition": "cercaria",
+      "provider": "homer_4_11",
+      "mode": "homer_native",
+      "gene_assignment": "homer_nearest_promoter",
+      "strand_aware": "provider_native",
+      "promoter_upstream": "provider_native",
+      "promoter_downstream": "provider_native"
+    },
+    {
+      "condition": "sporocyst",
+      "provider": "homer_4_11",
+      "mode": "homer_native",
+      "gene_assignment": "homer_nearest_promoter",
+      "strand_aware": "provider_native",
+      "promoter_upstream": "provider_native",
+      "promoter_downstream": "provider_native"
+    }
+  ],
+  "limitations": "Descriptive HP1 regional candidates. MACS3 calls are unchanged; nf-core/chipseq 2.1.0 merges overlapping or bookended intervals, retaining candidates with at least one calling library. Single-library and multiple-library evidence remain distinct; shared core requires at least two libraries and does not crop candidate regions. HOMER 4.11 assigns the nearest promoter, including for intergenic regions; this is not proof of regulation. Gene-assignment ambiguity is not assessed because these source executions predate the TSS snapshot. Stage and strain are confounded (cercaria SmVEN; sporocyst SmDFO); biological independence of deposited libraries is not established. FRiP is 0.201–3.161%; the 200 bp extension is operational. Occupancy significance and differential binding were not assessed.",
+  "consensus_segments": 2683,
+  "intergenic_segments": 1458,
+  "gene_associations": 2683,
+  "genes_with_associations": 2014,
+  "stage_segments": {
+    "sporocyst": 867,
+    "cercaria": 1816
+  },
+  "coordinate_convention": "0-based_half-open",
+  "scope": "all_atlas_genes",
+  "publication": {
+    "core_min_libraries": 2,
+    "gene_assignment_ambiguity": "not_assessed",
+    "gene_assignment_ambiguity_reason": "source_execution_predates_tss_snapshot",
+    "groups": [
+      {
+        "all_library_regions": 80,
+        "associated_gene_ids": 1480,
+        "condition": "cercaria",
+        "core_bp": 60657,
+        "multiple_library_regions": 227,
+        "region_bp": 549790,
+        "regions": 1816,
+        "single_library_regions": 1589,
+        "study": "PRJNA1090249",
+        "target": "HP1",
+        "total_library_count": 3
+      },
+      {
+        "all_library_regions": 14,
+        "associated_gene_ids": 771,
+        "condition": "sporocyst",
+        "core_bp": 21643,
+        "multiple_library_regions": 74,
+        "region_bp": 268249,
+        "regions": 867,
+        "single_library_regions": 793,
+        "study": "PRJNA1090249",
+        "target": "HP1",
+        "total_library_count": 3
+      }
+    ],
+    "pending_arms": [],
+    "public_copy_is_self_contained_reentry_package": false,
+    "publication_checks": "PASS",
+    "published_representation": "nfcore_2_1_min1_homer_4_11",
+    "regional_min_libraries": 1,
+    "replaces": "atomic_support_segments_and_python_interval_annotation",
+    "schema_version": "1.0",
+    "source_comparison": [
+      {
+        "added_genes": 1294,
+        "common_annotation_changes": 0,
+        "condition": "cercaria",
+        "direct_changed_peaks": 0,
+        "genes_linked_only_to_single_library_regions": 1294,
+        "group": "hp1_cercaria",
+        "median_added_region_abs_distance_to_tss": 12500.0,
+        "median_added_region_width_bp": 263,
+        "min1_bp": 549790,
+        "min1_genes": 1480,
+        "min1_regions": 1816,
+        "min2_bp": 87664,
+        "min2_genes": 186,
+        "min2_regions": 227,
+        "occupancy_status": "not_assessed",
+        "single_library_regions": 1589,
+        "study": "PRJNA1090249",
+        "support_distribution": {
+          "1": 1589,
+          "2": 147,
+          "3": 80
+        },
+        "target": "HP1",
+        "technical_validation": "PASS"
+      },
+      {
+        "added_genes": 706,
+        "common_annotation_changes": 0,
+        "condition": "sporocyst",
+        "direct_changed_peaks": 0,
+        "genes_linked_only_to_single_library_regions": 706,
+        "group": "hp1_sporocyst",
+        "median_added_region_abs_distance_to_tss": 12025.0,
+        "median_added_region_width_bp": 257,
+        "min1_bp": 268249,
+        "min1_genes": 771,
+        "min1_regions": 867,
+        "min2_bp": 32168,
+        "min2_genes": 65,
+        "min2_regions": 74,
+        "occupancy_status": "not_assessed",
+        "single_library_regions": 793,
+        "study": "PRJNA1090249",
+        "support_distribution": {
+          "1": 793,
+          "2": 60,
+          "3": 14
+        },
+        "target": "HP1",
+        "technical_validation": "PASS"
+      }
+    ],
+    "source_direct_equivalence": "PASS",
+    "source_workflow_validation": "PASS",
+    "status": "PUBLISHED",
+    "strict_gate_redefined": false,
+    "study": "PRJNA1090249"
+  },
+  "source_files": [
+    {
+      "path": "docs/chipseq/differential_binding_review.md",
+      "sha256": "d33d1060b20a0c041785c0a62b056b3347443dca869941f039da947a931def3a"
+    },
+    {
+      "path": "docs/chipseq/prjna1090249_peak_policy.md",
+      "sha256": "fcf9bf2593e8a05564d43cbd72b023f4880a5c7e5c4824c443ec4adebd9df9c0"
+    },
+    {
+      "path": "provenance/chipseq/PRJNA1090249/execution_provenance.json",
+      "sha256": "12f13764a1716d16575dcdfdec6f8d719007ab976ee36e20dc1ad7dfff842c9c"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/README.md",
+      "sha256": "0573841e4a90ca3e3f1199e3282064e9e129068828914f2403f2ed4ea2b047a4"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402818.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "8a587a94e7724f619ceb4c9945288940488316d6a2b68eca95049b79d7865f72"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402818.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "4911abf5b301298733123046256676dd46c6268d672510995c2ffdbb85ae9a06"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402819.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "1cbfcf8ae824c81de60281db7472fb7b6a9468e9c217b0a895dc768276ffa0cd"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402819.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "27b107f8fd442b4872521343ee83a73056b8c10390d3a0cb99ab12eb3339778d"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402820.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "5fa4daf419b9a7464ef2360251fb3bb073e6946a8492b9c0426b08d3470a8bca"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402820.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "3d0ed5df16a19857396996cdc37cb6db328d3c38ab2fc46af81fe997eef74494"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402822.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "ea42363580c49b3229d5ca2a041416eb123b66c460d9637237c1c812e76e2b31"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402822.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "d84cae23272fabc2ec1127222e4b290914790d4e37d98b03ddb0db538998388c"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402825.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "f6c3605bab5599b7c13c4ce58d8eded644795f5074945c59424f013975a1f28b"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402825.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "40b7e928f9f8ee941a454da5a162f361bc4b95e9aa6c47632407e7b4ed880ff6"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402826.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "bfaed98850a7db4b24e1e3ae131712ea811b7f1355161c0c9c3849bd05fd251a"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402826.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "a6f18e2c3445dbf5cf27cef138702d27005d866da8f2cbd26799f5123dd30654"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/consolidated_peaks.bed.gz",
+      "sha256": "038b227a6c433d6f3d6721041e445fa0df10cccc4c5c0b0fefd88aedc57b9382"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "d529273713db6942f0e6f2434975b4dcfb6128049ddb58bcbc451bc431d145a6"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/manifest.json",
+      "sha256": "bb786c3052e40ef35fcee407ccd9ac44dd29234c5a5087634881c00c197156b5"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "ba02422b9f8b5c05c77fe5a66997e9ed1c114b6b045e1c2504d11d4f8cb74d15"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/statistics.json",
+      "sha256": "13525035519e04aebc260425b98451344424ed263f09a80a7086bbbee01f60c2"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/support_by_library.tsv.gz",
+      "sha256": "cc7a5a45392f2c1fec696048225a736060aa0753f71a95e0842f00133532e0d6"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/support_core.bed.gz",
+      "sha256": "72224061cf21a9dc505b17fdec5cc91d60a2a082f67b69616aaab04d95d07f76"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "038b227a6c433d6f3d6721041e445fa0df10cccc4c5c0b0fefd88aedc57b9382"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/upstream.boolean.txt.gz",
+      "sha256": "405ac1db5d710b354a579036f2e68e815cb27d144312e77474dfeba23596d497"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/consolidated_peaks.bed.gz",
+      "sha256": "eda2e26848882996a539ec018a84e4dc9e866a0226d1d61ef73872f874b4f7d3"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/consolidated_peaks.tsv.gz",
+      "sha256": "9c1caf94990ebaf08ca25bbbbb3befaed25b4a41fbdcba1768a47fdf19af43c2"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/manifest.json",
+      "sha256": "d49108da36a2f2514f650cb8af4d73f50244477e47a4be82597f2378f03f385d"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/source_peak_mapping.tsv.gz",
+      "sha256": "e71e7393e1c26d07bcae69b0f5b5640e20964e67c1325c9b54ac29c19b90f6f0"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/statistics.json",
+      "sha256": "7c1bd02167ba6b5020f714fe016bd1dff57a7048512e37ef5a784df50d566cd9"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/support_by_library.tsv.gz",
+      "sha256": "a1a6ef2ee2f42bd12dea877cbd328db6497da24f0e66ecd363da2f5adb5e4eaa"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/support_core.bed.gz",
+      "sha256": "d41944c6449b605fcefd88f4aee3b8b66a3bbb85079e98da0316dfbd2cee6e59"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/unfiltered_peaks.bed.gz",
+      "sha256": "eda2e26848882996a539ec018a84e4dc9e866a0226d1d61ef73872f874b4f7d3"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/upstream.boolean.txt.gz",
+      "sha256": "82b40fff0bf6fa9588abdba8c8f641e1a11ec173e483c51909addecff403d318"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/cercaria/annotated_peaks.tsv.gz",
+      "sha256": "b2e8e8619dea60152f6597e12fe5d0bdda5903dc170115d3b9e7d36de49e6f0c"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/cercaria/homer_native.tsv.gz",
+      "sha256": "9652841c568e90a14695781d9efef25f3cd1c74d11b653a28c67535492a06f09"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "38dac5810f5d6f38d73676ab8559aebdafb05e28e5eb7df9ac98320e8b05fcfa"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/sporocyst/annotated_peaks.tsv.gz",
+      "sha256": "95fe90ae1cb6c362294b3129b1d8174037ddd61804b24d562c2dcc00d2410392"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/sporocyst/homer_native.tsv.gz",
+      "sha256": "0096a2d638b7c64e8b05e1ce050a2b1c7246706a211f6dee45038f6870fa9df3"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/sporocyst/peak_gene_associations.tsv.gz",
+      "sha256": "2d688930bdac62435b416f43ee71495dd5463dfc1fe233bba1718f65499fc5e2"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/regional_summary.tsv",
+      "sha256": "ce2e0e9bc1423ca206925ebe7603e33bbea8bdaeac69d777a94a1229da59aa17"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/manifests/publication_validation.json",
+      "sha256": "0e026505a9312048a20db53b8c59eb70640d8866cb28704d7bb194d2d7b05c33"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/manifests/reference_bundle.manifest.json",
+      "sha256": "2b037061e52bf9a253d63805727a56227de074335d215987e30ecb285783ce36"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/manifests/regional_publication.json",
+      "sha256": "1e01454cb303d579f6249678d5b1d88d7c1e672ee6f2e1224541326a09e90b77"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/qc/qc_sample_summary.tsv",
+      "sha256": "09371e2606f9fcce23f9069650cb6daaff637426eee8f9c86738166583a98f12"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/qc/qc_summary.json",
+      "sha256": "808464d7c004e6e9235033237853dbf27e225e193d3cd502827b2c11a4a35f8c"
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/reports/PRJNA1090249_execution_report.md",
+      "sha256": "5753456624d5c0db2c2220c4b27b4879eabf606c0d600bf85dff5020cc67fdba"
+    }
+  ]
+}
