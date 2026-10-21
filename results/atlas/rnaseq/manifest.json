@@ -1,0 +1,3759 @@
+{
+  "schema_version": "1.0",
+  "atlas_id": "smansoni_rnaseq_atlas_v1",
+  "status": "PASS",
+  "scope": "descriptive_cross_study_with_per_study_differential_expression",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "studies": [
+    "PRJNA602528",
+    "PRJNA597909",
+    "PRJEB14695",
+    "PRJEB32839",
+    "E-MTAB-451",
+    "PRJEB3190",
+    "E-ERAD-478",
+    "PRJNA704646",
+    "PRJNA1150591",
+    "PRJNA312093",
+    "PRJNA1177852",
+    "PRJNA428470"
+  ],
+  "biological_samples": 268,
+  "technical_runs": 535,
+  "genes": 9914,
+  "annotated_genes": 9914,
+  "genes_with_transcript_models": 9890,
+  "genes_without_transcript_models": 24,
+  "transcript_models": 10929,
+  "transcript_model_source_sha256": "746fef90d8eb3525d9f2ac0c44f7fd4a8193ac109afe1398deb987a06e6685dd",
+  "locus_display": {
+    "outside_flank_bp": 2000,
+    "inside_gene_bp": 500,
+    "basis": "STRAND_AWARE_DISPLAY_WINDOWS_NATIVE_SOURCE_CLASS_PRESERVED",
+    "reclassify_source_peaks": false
+  },
+  "contrasts": 71,
+  "selected_group_memberships": 129,
+  "selected_unique_genes": 119,
+  "selected_unique_genes_present": 118,
+  "selected_source_records": 138,
+  "selected_excluded_review_records": 7,
+  "selected_mapping_statuses": {
+    "EXACT_SM_V10": 103,
+    "UNIQUE_PREVIOUS_STABLE_ID": 11,
+    "RESOLVED_SPLIT_FUNCTIONAL_SUCCESSOR": 2,
+    "RESOLVED_BY_SEQUENCE_EXACT": 2,
+    "RESOLVED_BY_SEQUENCE_HIGH_CONFIDENCE": 1
+  },
+  "external_annotation_records": 9516,
+  "external_annotation_mapped": 8636,
+  "cell_marker_records": 154,
+  "cell_marker_mapped": 142,
+  "vasconcelos_lncrna_records": 7431,
+  "vasconcelos_linc_records": 7029,
+  "vasconcelos_antisense_records": 402,
+  "vasconcelos_robust_candidates": 181,
+  "vasconcelos_stage_de_records": 916,
+  "vasconcelos_current_gene_links": 182,
+  "vasconcelos_current_genes_linked": 178,
+  "almeida_evidence_records": 11907,
+  "almeida_mapped_records": 8831,
+  "almeida_current_genes_mapped": 6531,
+  "almeida_confirmed_prediction_records": 9928,
+  "almeida_first_support_records": 990,
+  "almeida_novel_contig_records": 989,
+  "selected_previous_ids_resolved": 11,
+  "selected_ambiguous_previous_ids": 0,
+  "selected_unresolved_ids": 0,
+  "batch_effect_assessment": "DEFERRED",
+  "chipseq_integration_status": "HF_PROCESSED_REVIEWED",
+  "chipseq_studies": [
+    "PRJNA1090249",
+    "PRJNA312093"
+  ],
+  "chipseq_scope": "all_atlas_genes",
+  "chipseq_controls": 18,
+  "chipseq_consensus_segments": 244788,
+  "chipseq_shared_core_segments": 90950,
+  "chipseq_single_library_regions": 174326,
+  "chipseq_intergenic_segments": 97643,
+  "chipseq_gene_peak_loci": 244788,
+  "chipseq_samples": 22,
+  "chipseq_stages": 6,
+  "chipseq_marks_or_factors": 3,
+  "chipseq_genes_with_evidence": 9523,
+  "chipseq_gene_mark_stage_associations": 51378,
+  "chipseq_gene_position_records": 68213,
+  "rna_studies_with_stage_context": 10,
+  "global_pca_interpretation": "EXPLORATORY_NOT_A_BATCH_TEST",
+  "inputs": [
+    {
+      "path": "analyses/atlas/atlas_config.json",
+      "sha256": "29a092b0e23bea6d35ab6e73934fb85f795243017b8550557fa06968ec7d7d82"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/chipseq.css",
+      "sha256": "7d423b93631aafbf9f654bcaaa04f93144da639f6f6e761fcb4a4e843b9871e9"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/chipseq.html",
+      "sha256": "993f6c0d3c3c8c74dfbcba7c55b6aed1e9f70b727d4f08b643e1a689098b15ce"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/chipseq.js",
+      "sha256": "348ff57e686274e436a8c6e198a3e3b688481afeebc1aa70a87b0ca27504453b"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/chipseq_logic.js",
+      "sha256": "a9a677aa29138c10c3a03a040cc12ba7684652bb518330ec27d1863c54c8b4cf"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/chipseq_signal_source.js",
+      "sha256": "b5d85f9957e5cc1ebb2bc8e91d05b7565a9aa2fcc3fbe6f3d46eab797ed24d56"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/chipseq_tracks.js",
+      "sha256": "52c41b6c843fb12eabb59ab6d1cd4ae58b5755de9d0e8a26a2d4d1ef6c0f909b"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/vendor/bbi_reader.js",
+      "sha256": "4d9b2b5e8a0e40e06ac37c5193979b0996224714858978539a600a4e7610606b"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/vendor/gmod_bbi_LICENSE",
+      "sha256": "39184c73ba247598eb44725216007bb74c6e8fde788b4737a2b3cec65f1b1aa3"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/vendor/gmod_shared-read-cache_LICENSE",
+      "sha256": "87f4ab5e72012ee4f455001c56fba264fc7f12a5f09be13b56cd2e8d87ceb150"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/vendor/package.json",
+      "sha256": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035"
+    },
+    {
+      "path": "analyses/atlas/chipseq_portal/vendor/provenance.json",
+      "sha256": "a034c6d2e7af51062000033a2635fc31298cca603d7090df21d53f57b7d2e882"
+    },
+    {
+      "path": "analyses/atlas/collections/chip_data.js",
+      "sha256": "de7552218dae4025722c7f2de72abde8fb5c18446af9f9b80966871cf71810d6"
+    },
+    {
+      "path": "analyses/atlas/collections/expression_chromatin.js",
+      "sha256": "8df4862d27b1afea0722be6dfac290a17f5a06557059debc996caa8edba65ebc"
+    },
+    {
+      "path": "analyses/atlas/collections/gene_collections.css",
+      "sha256": "3c2911f57e685b223a8ac7fe002db20af90d41d3abe445c5318faf8bf10d0790"
+    },
+    {
+      "path": "analyses/atlas/collections/gene_collections.js",
+      "sha256": "99da68d2c1b3b58c3a561672d28c38e89901f81db705019cbc0589fb95193044"
+    },
+    {
+      "path": "analyses/atlas/collections/rna_collections.js",
+      "sha256": "09e473bfd678a4309d88663d94943eeeb0ae4ac55f04af57e403743fcaeb4b1c"
+    },
+    {
+      "path": "analyses/atlas/design/atlas_design.css",
+      "sha256": "0415ef639ee86be2d73bd2de6fa7da0295b9524c0aba3a57e62e9aca86d76e94"
+    },
+    {
+      "path": "analyses/atlas/design/atlas_theme.js",
+      "sha256": "5445ec40336044540494142c88d727faf65e5eada5ed5bef0817f9e06302bb3a"
+    },
+    {
+      "path": "analyses/atlas/design/fonts/IBMPlexSans-Medium.woff2",
+      "sha256": "5660f8a658f8bb50dbc005232f885eadffd2bc1c235c4f6fbb63469d1f9cde6d"
+    },
+    {
+      "path": "analyses/atlas/design/fonts/IBMPlexSans-Regular.woff2",
+      "sha256": "ba711a3085ff9f27440b6b9c4550cfc47c97bf36591d5da958b975bb3add8c1a"
+    },
+    {
+      "path": "analyses/atlas/design/fonts/IBMPlexSans-SemiBold.woff2",
+      "sha256": "f78048030eab62e860efa39a0df79e2e5581bf122eb95b9bc42c0b8a4988d205"
+    },
+    {
+      "path": "analyses/atlas/design/fonts/LICENSE.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "analyses/atlas/design/fonts/provenance.json",
+      "sha256": "7c617b02520348b7ca34511f89d3573249f8d1a19bbbe85cf03135de894e797c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/external_rna/anderson_s2.xlsx",
+      "sha256": "5a21428ab58bf65356131c05483bcc4f69e0d06e8977502acd34bacfbe41c400"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/external_rna/anderson_s4.xlsx",
+      "sha256": "748870f31a79a7bb3fb5bdb2d07c26b1b24eed662a4b0eb8ad8fad4763a5ed01"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/external_rna/anderson_s5.xlsx",
+      "sha256": "b2e3815bff758d3d9458b2156140d2e2d40ad500eea6f7a6fe5f207ca174b9b6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/external_rna/anderson_s6.xlsx",
+      "sha256": "59e8504e0705fc6f4fb6e382a59070cb55e9fac27d699260dccb78025a6ba796"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/external_rna/wang_s1.xlsx",
+      "sha256": "2fdf3bc9a8bee15f35887e3674640b234c236d28fb429b385703e94edcb4eff2"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/external_rna/wang_s3.xlsx",
+      "sha256": "89c36a9014a2a8b8719f57711a402d8e05d4aa9fc1a471550c9312057a63c361"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/docs/chipseq/differential_binding_review.md",
+      "sha256": "d33d1060b20a0c041785c0a62b056b3347443dca869941f039da947a931def3a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/docs/chipseq/prjna1090249_peak_policy.md",
+      "sha256": "fcf9bf2593e8a05564d43cbd72b023f4880a5c7e5c4824c443ec4adebd9df9c0"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/provenance/chipseq/PRJNA1090249/execution_provenance.json",
+      "sha256": "12f13764a1716d16575dcdfdec6f8d719007ab976ee36e20dc1ad7dfff842c9c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/README.md",
+      "sha256": "0573841e4a90ca3e3f1199e3282064e9e129068828914f2403f2ed4ea2b047a4"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402818.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "8a587a94e7724f619ceb4c9945288940488316d6a2b68eca95049b79d7865f72"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402818.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "4911abf5b301298733123046256676dd46c6268d672510995c2ffdbb85ae9a06"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402819.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "1cbfcf8ae824c81de60281db7472fb7b6a9468e9c217b0a895dc768276ffa0cd"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402819.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "27b107f8fd442b4872521343ee83a73056b8c10390d3a0cb99ab12eb3339778d"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402820.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "5fa4daf419b9a7464ef2360251fb3bb073e6946a8492b9c0426b08d3470a8bca"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402820.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "3d0ed5df16a19857396996cdc37cb6db328d3c38ab2fc46af81fe997eef74494"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402822.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "ea42363580c49b3229d5ca2a041416eb123b66c460d9637237c1c812e76e2b31"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402822.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "d84cae23272fabc2ec1127222e4b290914790d4e37d98b03ddb0db538998388c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402825.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "f6c3605bab5599b7c13c4ce58d8eded644795f5074945c59424f013975a1f28b"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402825.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "40b7e928f9f8ee941a454da5a162f361bc4b95e9aa6c47632407e7b4ed880ff6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402826.HP1.broad.macs3.peak_calling/manifest.json",
+      "sha256": "bfaed98850a7db4b24e1e3ae131712ea811b7f1355161c0c9c3849bd05fd251a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/080-peak-calling/SRR28402826.HP1.broad.macs3.peak_calling/peaks.broadPeak",
+      "sha256": "a6f18e2c3445dbf5cf27cef138702d27005d866da8f2cbd26799f5123dd30654"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/consolidated_peaks.bed.gz",
+      "sha256": "038b227a6c433d6f3d6721041e445fa0df10cccc4c5c0b0fefd88aedc57b9382"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "d529273713db6942f0e6f2434975b4dcfb6128049ddb58bcbc451bc431d145a6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/manifest.json",
+      "sha256": "bb786c3052e40ef35fcee407ccd9ac44dd29234c5a5087634881c00c197156b5"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "ba02422b9f8b5c05c77fe5a66997e9ed1c114b6b045e1c2504d11d4f8cb74d15"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/statistics.json",
+      "sha256": "13525035519e04aebc260425b98451344424ed263f09a80a7086bbbee01f60c2"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/support_by_library.tsv.gz",
+      "sha256": "cc7a5a45392f2c1fec696048225a736060aa0753f71a95e0842f00133532e0d6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/support_core.bed.gz",
+      "sha256": "72224061cf21a9dc505b17fdec5cc91d60a2a082f67b69616aaab04d95d07f76"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "038b227a6c433d6f3d6721041e445fa0df10cccc4c5c0b0fefd88aedc57b9382"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/cercaria/upstream.boolean.txt.gz",
+      "sha256": "405ac1db5d710b354a579036f2e68e815cb27d144312e77474dfeba23596d497"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/consolidated_peaks.bed.gz",
+      "sha256": "eda2e26848882996a539ec018a84e4dc9e866a0226d1d61ef73872f874b4f7d3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/consolidated_peaks.tsv.gz",
+      "sha256": "9c1caf94990ebaf08ca25bbbbb3befaed25b4a41fbdcba1768a47fdf19af43c2"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/manifest.json",
+      "sha256": "d49108da36a2f2514f650cb8af4d73f50244477e47a4be82597f2378f03f385d"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/source_peak_mapping.tsv.gz",
+      "sha256": "e71e7393e1c26d07bcae69b0f5b5640e20964e67c1325c9b54ac29c19b90f6f0"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/statistics.json",
+      "sha256": "7c1bd02167ba6b5020f714fe016bd1dff57a7048512e37ef5a784df50d566cd9"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/support_by_library.tsv.gz",
+      "sha256": "a1a6ef2ee2f42bd12dea877cbd328db6497da24f0e66ecd363da2f5adb5e4eaa"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/support_core.bed.gz",
+      "sha256": "d41944c6449b605fcefd88f4aee3b8b66a3bbb85079e98da0316dfbd2cee6e59"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/unfiltered_peaks.bed.gz",
+      "sha256": "eda2e26848882996a539ec018a84e4dc9e866a0226d1d61ef73872f874b4f7d3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/consensus/sporocyst/upstream.boolean.txt.gz",
+      "sha256": "82b40fff0bf6fa9588abdba8c8f641e1a11ec173e483c51909addecff403d318"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/cercaria/annotated_peaks.tsv.gz",
+      "sha256": "b2e8e8619dea60152f6597e12fe5d0bdda5903dc170115d3b9e7d36de49e6f0c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/cercaria/homer_native.tsv.gz",
+      "sha256": "9652841c568e90a14695781d9efef25f3cd1c74d11b653a28c67535492a06f09"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "38dac5810f5d6f38d73676ab8559aebdafb05e28e5eb7df9ac98320e8b05fcfa"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/sporocyst/annotated_peaks.tsv.gz",
+      "sha256": "95fe90ae1cb6c362294b3129b1d8174037ddd61804b24d562c2dcc00d2410392"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/sporocyst/homer_native.tsv.gz",
+      "sha256": "0096a2d638b7c64e8b05e1ce050a2b1c7246706a211f6dee45038f6870fa9df3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/sporocyst/peak_gene_associations.tsv.gz",
+      "sha256": "2d688930bdac62435b416f43ee71495dd5463dfc1fe233bba1718f65499fc5e2"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/broad/regional_summary.tsv",
+      "sha256": "ce2e0e9bc1423ca206925ebe7603e33bbea8bdaeac69d777a94a1229da59aa17"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/manifests/publication_validation.json",
+      "sha256": "0e026505a9312048a20db53b8c59eb70640d8866cb28704d7bb194d2d7b05c33"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/manifests/reference_bundle.manifest.json",
+      "sha256": "2b037061e52bf9a253d63805727a56227de074335d215987e30ecb285783ce36"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/manifests/regional_publication.json",
+      "sha256": "1e01454cb303d579f6249678d5b1d88d7c1e672ee6f2e1224541326a09e90b77"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/qc/qc_sample_summary.tsv",
+      "sha256": "09371e2606f9fcce23f9069650cb6daaff637426eee8f9c86738166583a98f12"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/qc/qc_summary.json",
+      "sha256": "808464d7c004e6e9235033237853dbf27e225e193d3cd502827b2c11a4a35f8c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/results/chipseq/PRJNA1090249/reports/PRJNA1090249_execution_report.md",
+      "sha256": "5753456624d5c0db2c2220c4b27b4879eabf606c0d600bf85dff5020cc67fdba"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/source_manifest.json",
+      "sha256": "79825e089855d1cd4ebd6754e92b686c245d5860379d7417e68a27ca33f96c5c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/config/chipseq/PRJNA312093/db_review.json",
+      "sha256": "088054c59cd93c6eb838ac57633e2b3372911ac47d37850214b233b1e7d7ab44"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/docs/chipseq/prjna312093_differential_binding.md",
+      "sha256": "ca748a5db6884a5d0fbde233056dab2aed993d273d4c9071463972e035743843"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/metadata/chipseq/PRJNA312093/design.tsv",
+      "sha256": "a0b7ae7d9595d7618946eef7988d7c3f3d17b628bcce89053aeae7f9efd98478"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/README.md",
+      "sha256": "419deb092070cce10f8cc7f4fa27305f15cd3ae489ba584463a6e1008031b2b9"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/SHA256SUMS",
+      "sha256": "3398d77a2450edb3d8e61f1e94d045dcd0a5ab20661df85eac33f2ee5b40db8f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/consolidated_peaks.bed.gz",
+      "sha256": "7b557182cda48f5bd4eae42e792ca631023ad7792855e1913ef52f53f57fce71"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/consolidated_peaks.tsv.gz",
+      "sha256": "0f32f50faaef1136f5c743befbc28b37e72b0bb0020524d7740fc0f21cbc31a3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/manifest.json",
+      "sha256": "97b1300d40c7e1e7a1075587ba1472cd72d40fde94976979abc29c6b4769db56"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/source_peak_mapping.tsv.gz",
+      "sha256": "b58f6b716bcf72aa27dfe09b5976d1e481ab4a309afb3854542092b6e8adf02b"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/statistics.json",
+      "sha256": "aa76b7da3e53edf9628b7463de0cbb51dcf084ac8e86ddfa0b75fd95b29cf99f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/support_by_library.tsv.gz",
+      "sha256": "347768b6c162a74016772f0cd16b0916e2ee5937b9e853681a05251e1bb8504c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/support_core.bed.gz",
+      "sha256": "1298f786fa3448ddf98a47a1a766d1796cacc4198db9525a13864a264ab6d8a0"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/unfiltered_peaks.bed.gz",
+      "sha256": "7b557182cda48f5bd4eae42e792ca631023ad7792855e1913ef52f53f57fce71"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_adult/upstream.boolean.txt.gz",
+      "sha256": "bf2d9bcb5fb434270048dc094c1ca06d42e1552922ab1f206534acd436ca0de2"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "ea7ea0e9fd4d7d738d2d4477f4710e416b51f0fdb1fd9043ef73d12de2255329"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "0768b82db20a79e3009fbdb2475b366c75e51819ff208d4dba994840dd3b20cd"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/manifest.json",
+      "sha256": "c1584434066c81d772320ffe9fbcb39330a1221eb35d7374f593186b7d6b8adf"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "18ed36e4f6fc1524b7fd4250c3244f0fdc447bc6ea3f98b65760a2be56de5505"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/statistics.json",
+      "sha256": "4c28f096dd093b571d2014805615dcec2d698d2a85c9d6057e104489310f4e63"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/support_by_library.tsv.gz",
+      "sha256": "e6f19931a919997f56dcf8f41c21da694c10e3cd655c8e7ea8b7c322d70df617"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/support_core.bed.gz",
+      "sha256": "067ee497b8717866d16591c822aa82181da1bfd2716f330bfc37415290c778ee"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "ea7ea0e9fd4d7d738d2d4477f4710e416b51f0fdb1fd9043ef73d12de2255329"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/female_cercaria/upstream.boolean.txt.gz",
+      "sha256": "96b0b6845489d00e75bfea93f089dfbbff5ec4693828cadb38abeb068a66ecfd"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/consolidated_peaks.bed.gz",
+      "sha256": "190195ee19efd8a2b30e549f5c5702414b3d4d5bb5b1a82e6e34535a1472782e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/consolidated_peaks.tsv.gz",
+      "sha256": "76db941d1644cf7c4f816649c44a1fb0bd098b332a12cf7560fbabe4ec2b34e3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/manifest.json",
+      "sha256": "5a0d8e7fb15c80d0cbe372e04635ede50a0a7dcd572a9f7a1eb3554c98014231"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/source_peak_mapping.tsv.gz",
+      "sha256": "73058762799ae840557d33548236ad6ff482382bef4d5f74b0d0e82f85a5f8ed"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/statistics.json",
+      "sha256": "d618ad5f2482a4f48124b30ff26ec2798bde855bb199409e4a24cdbd73252c8c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/support_by_library.tsv.gz",
+      "sha256": "9e4bbc53fee9bfbec74d5935310e8068d6b13f32442f5251c5f6142e64b0562d"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/support_core.bed.gz",
+      "sha256": "9c33bf8537f82dc891dcce31d9c47951184a0fa1fd6a161e9a7961d960a8f869"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/unfiltered_peaks.bed.gz",
+      "sha256": "190195ee19efd8a2b30e549f5c5702414b3d4d5bb5b1a82e6e34535a1472782e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_adult/upstream.boolean.txt.gz",
+      "sha256": "a7476ed2b7cf9dd99d91f982e4f287f8f911c256bfd0972521aa516d2f594904"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "1a3cbafc6edda9f6d318c4b961e2b4009ff92c9d8679b2a226182590135ed6ac"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "feee25ecbe5fa00bdfc5cf92ab21971b1f3568fecc0706557561084a244fc747"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/manifest.json",
+      "sha256": "e57145bb2ea349081d8306aa0610445b1e91b28dddd9f75784c2340e0a0f17e3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "c2310cedba2a31dcc8cdafa5214731702015323cabe5d96320d786929f664d95"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/statistics.json",
+      "sha256": "de0938d1df239e59c0b8512843a514ac4ed193807fbf5bd12cca19bbe0cb2837"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/support_by_library.tsv.gz",
+      "sha256": "3d698ce532f60c1397370bb40a16aace0739d62a1e30a090452dca74633a9f32"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/support_core.bed.gz",
+      "sha256": "64afd3f564ba3f472057b088ab46d5235d7bd5d86e63cca86caf604fe0fe482c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "1a3cbafc6edda9f6d318c4b961e2b4009ff92c9d8679b2a226182590135ed6ac"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/consensus/male_cercaria/upstream.boolean.txt.gz",
+      "sha256": "31f86139f5170673b22cf76e87b36ddc2eaf59b90e6c4825cbf00417c1f312f6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/female_adult/annotated_peaks.tsv.gz",
+      "sha256": "284622dcec2f0b24d31f5041200661d9216c43f28bcd40376bf9ed5df7badc45"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/female_adult/homer_native.tsv.gz",
+      "sha256": "a9986ae591b94924533efcafc8a415977bc8935c1844337777a00e66b686dfeb"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/female_adult/peak_gene_associations.tsv.gz",
+      "sha256": "0cbe9cb6422a09f84aea9a19f4430786d7f6d98e541e74a4751da00b3422392f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/female_cercaria/annotated_peaks.tsv.gz",
+      "sha256": "d8604b49b613ae3e29bee30785196fd553e34b1631488a81cb453bfded475370"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/female_cercaria/homer_native.tsv.gz",
+      "sha256": "956623c0a3bb8d1bd5d7ddd2a4e986bc102bbee3d8624eeebf98f6a263facae4"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/female_cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "8ded1d069f32d101e49196821ce5041389ca27a097b22aec8a356e19f6272aff"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/male_adult/annotated_peaks.tsv.gz",
+      "sha256": "ca05ce64feef355a8cc042ca940be9893be25c3de341256c1790fa638348f6f8"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/male_adult/homer_native.tsv.gz",
+      "sha256": "9c4671da639962d9533241532012ca9a93dce0950f7b2f2c352a30b44f2e157e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/male_adult/peak_gene_associations.tsv.gz",
+      "sha256": "7c6e9f88d840e48203bc3466fddd5a85fd5a97533482dace4f3ecfeceb0aa01b"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/male_cercaria/annotated_peaks.tsv.gz",
+      "sha256": "d69ce23c7827e1b14b32b34320be33410ab5dd2bdf63e4d928aec74ca3df1ae5"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/male_cercaria/homer_native.tsv.gz",
+      "sha256": "c55caff47f62cec9f710f4a550745c185f935a6824de3377edc96fb637a90caf"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/chipseq/peak_annotation/male_cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "4db6f64741367174ec5923aa37de34444bdb38070c0f9167c29070c30fa93eb6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/broad/regional_summary.tsv",
+      "sha256": "fc61a61e2ba75b9d70b56c087e3a280ff136670cb79e64d3e15418228472074c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/manifests/publication_validation.json",
+      "sha256": "7c09995f7edf47a465ae7ecd8106bafe100f35a7f1874c5a3f7ed87495d09a1d"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/manifests/regional_publication.json",
+      "sha256": "f269f638b35ab10cb5c31242043aa0e180c223592a03afe2dbdba7bc9dbc37af"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/consolidated_peaks.bed.gz",
+      "sha256": "04d00fb0e88a618f0b711ff39e9d91aae378552a5e5833a377b253d56545e22e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/consolidated_peaks.tsv.gz",
+      "sha256": "b5c06938882805543464889b9f412a78611267a30625103c8292bb0bc11bc2e7"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/excluded_regions.tsv.gz",
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/manifest.json",
+      "sha256": "86c977be03d4f39030f1be237304d797ff2569719ebab2935fe50884979442f6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/source_peak_mapping.tsv.gz",
+      "sha256": "59ba7a1085b8b53a69804396bcf1c06e9cf5b5ce9b850763193965ae0833991e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/statistics.json",
+      "sha256": "77ccbbfdb0a92f0bbff91612dba8de816646062eead2dc34f7c72e29ac6cfe81"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/support_by_library.tsv.gz",
+      "sha256": "dfee00bb5bf0e03f2f2108e5a9012cce8b254c6680f16eb39ef2f2aef6d58670"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/support_core.bed.gz",
+      "sha256": "aa0fff826fb8153f0dee21aa8a523004629218a8b9fa35e3493fe7a08443a979"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/unfiltered_peaks.bed.gz",
+      "sha256": "04d00fb0e88a618f0b711ff39e9d91aae378552a5e5833a377b253d56545e22e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/upstream.boolean.txt.gz",
+      "sha256": "689168b45dea4f654a1e6a601784f895ae777aa3602d68370c30cf87c21c1da3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_adult/upstream.unfiltered.boolean.txt.gz",
+      "sha256": "689168b45dea4f654a1e6a601784f895ae777aa3602d68370c30cf87c21c1da3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "62b87e402df974224681037ce9b9b863adfff129021ae6c32c012d6972563987"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "039a5752ba3f625fffba2a9da6df817299bd46f3e131e9324c289ca2c31e1dbc"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/excluded_regions.tsv.gz",
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/manifest.json",
+      "sha256": "b7a638102f42468984060806bc9086df08920eba52f13b92f649c03b20d9f144"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "a60ce3198a1f69f4524f4b54423a02bb98d68bec921ed7a6bfc873d2b3fdb036"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/statistics.json",
+      "sha256": "7ffc8827b3700280a1ba011f51af5fe8e54d87db5f9cf929263351fd9a160f5a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/support_by_library.tsv.gz",
+      "sha256": "d1fd611cc93a8f61e705edfc7f22422347fffb9ce1efe570489a0625398a1c1e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/support_core.bed.gz",
+      "sha256": "13e0bddc1560dca30a064da74502c98cbc0395c1e20c28124f625dd996c746f1"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "62b87e402df974224681037ce9b9b863adfff129021ae6c32c012d6972563987"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/upstream.boolean.txt.gz",
+      "sha256": "ad2139fb09c9ffdfae045e462c92a1ba5c7ea38bab1183eff1cd76ec2104965c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/female_cercaria/upstream.unfiltered.boolean.txt.gz",
+      "sha256": "ad2139fb09c9ffdfae045e462c92a1ba5c7ea38bab1183eff1cd76ec2104965c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/consolidated_peaks.bed.gz",
+      "sha256": "6b85ef977fc3f63ad70094d6ecfefe3b93198dd93a2c692886c597d89e50c713"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/consolidated_peaks.tsv.gz",
+      "sha256": "7e6adf43965c5a0e8a56284c0fd75956e4fb91f4c649e5454de7c6f6b3ae0696"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/excluded_regions.tsv.gz",
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/manifest.json",
+      "sha256": "98af814e615d413694e9c8f59e40b5e5621767bb8971ecf16066eb595d3cfcc6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/source_peak_mapping.tsv.gz",
+      "sha256": "12f2b9dd98a2078e7dba3d7e5f47b7b534beb0247e53c14bc15343a69f957cfe"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/statistics.json",
+      "sha256": "94bcbbc3742314d119f3bf355b5559fcacc091625d0e6ce2b868a57af17ba02d"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/support_by_library.tsv.gz",
+      "sha256": "c8f3999cc5fb8fbdc32addff76a934e3f794e4f0e0f5cf5769f0608490de5791"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/support_core.bed.gz",
+      "sha256": "0e8458d22399785efcd08ffedcdb37eb4bd8fea5333bdd4ba91532e85b5ed57f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/unfiltered_peaks.bed.gz",
+      "sha256": "6b85ef977fc3f63ad70094d6ecfefe3b93198dd93a2c692886c597d89e50c713"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/upstream.boolean.txt.gz",
+      "sha256": "fbab3499c29bf7192e4e0c545cd98210b71f92f40271570e47e7cd9a5263831f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_adult/upstream.unfiltered.boolean.txt.gz",
+      "sha256": "fbab3499c29bf7192e4e0c545cd98210b71f92f40271570e47e7cd9a5263831f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "c0eb0b7d6d12148f01bffd167fbc2d2633a7fdbefab7b1cb944ca9622103f8a8"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "6e88e692abd80b3b463ed1ae48616daf2011c60d49cf32b80d98f808df404566"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/excluded_regions.tsv.gz",
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/manifest.json",
+      "sha256": "f8bf58819b6c49260e1a7d6ac318ef14055b1fa6ad1faecfd636d421ce9426c0"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "353fb5acbf9cd0272d365bc4cbaf0c6fd1ab09360aec44d74b151bc7bea8aa05"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/statistics.json",
+      "sha256": "bf38eb95a43c88d7a5072710cbe8fa95b1586fa430ab78c010f7c7710ad1adb6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/support_by_library.tsv.gz",
+      "sha256": "5f6bebe474641e02e7596f127ea73c082e89a49f2674e00722b35fa0f35e0b02"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/support_core.bed.gz",
+      "sha256": "087756a6148ca4ff3eb99d9bc2b5affbdc5cb2d5d7cff63a14267ca665767fe1"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "c0eb0b7d6d12148f01bffd167fbc2d2633a7fdbefab7b1cb944ca9622103f8a8"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/upstream.boolean.txt.gz",
+      "sha256": "d34fc5cc9470f36f7140d629caa5c113e6d1cc6505e798c4f56bb38859adbd1e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/consensus/male_cercaria/upstream.unfiltered.boolean.txt.gz",
+      "sha256": "d34fc5cc9470f36f7140d629caa5c113e6d1cc6505e798c4f56bb38859adbd1e"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_adult/consolidated_peaks.bed.gz",
+      "sha256": "f6cea798941ce6556e78a3022e03ce14c5cf43ddb509f35076d092531894ac85"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_adult/consolidated_peaks.tsv.gz",
+      "sha256": "9d190935effa718c4c06184b8b126553b1fedbaed70a0596fbf49d7fd17243c8"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_adult/idr_output.narrowPeak.gz",
+      "sha256": "ae252094b9b4250d310928f42ef209070aad96795a7dae6f47967d236545134a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_adult/replicate_evidence.tsv.gz",
+      "sha256": "df759403b2ad00814493911a63af3eb09d65a98ea1f6f0282c0892e22258a5b3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_adult/statistics.json",
+      "sha256": "afacb954237b5963834faaad90e7459935c92f60b61588aeb04a3ffca6851e7f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "560fe6fb0f734647fe03a805a8150de7153d4cb53acf9d6c3c0b235d7b49f9d2"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "0b282acfa3dd2035273eb6f09fccff4a5866f285c872b38c7a8f523f88a7f449"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_cercaria/idr_output.narrowPeak.gz",
+      "sha256": "9799d9a69e13afdc74926d2c2290a68b70ed197b52d93ba0d08a0d80652e4e76"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_cercaria/replicate_evidence.tsv.gz",
+      "sha256": "f5e1a9a08930bae803057ee695b71129c22bed8350d23d072660d4647ddfeb5a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/female_cercaria/statistics.json",
+      "sha256": "e6819e83d7d0fffa94644264cd471da7e6071412c7b29a14c3aae1707fc542d6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_adult/consolidated_peaks.bed.gz",
+      "sha256": "c7ad4d92c0daee5f1c33c92cbbfc2dd64bbe9ce6eb72bd445c5b63861e594c84"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_adult/consolidated_peaks.tsv.gz",
+      "sha256": "b3aac2ed0e7805868ee718075c64561a6db22f8ea56bdc32f7482c37d10743c6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_adult/idr_output.narrowPeak.gz",
+      "sha256": "33f2873663bdf8e2e55089eee7c92b277e1ce0190fe95d2c643e920c71753a06"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_adult/replicate_evidence.tsv.gz",
+      "sha256": "a2dfc86b9f9f175dbe79d829c380f789b2400d775a741e783d419d27cca61912"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_adult/statistics.json",
+      "sha256": "3fa631417945a3dc9fdc7d941817bc0827770c196f4f3587d4d21562f3862895"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "23bf6bea1becd046ea0edfabfb4884be378dd66626aa451cc0d94a777e4b68ab"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "2530cc2f93e4df5b70465cbd28261dcfcd0d0c6cbad5ce3030553433c35de2e6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_cercaria/idr_output.narrowPeak.gz",
+      "sha256": "ad0a1d6b0e0bb5dfabf0156567aec8465f31dbfbddd1ea05940e1b9e08eb0963"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_cercaria/replicate_evidence.tsv.gz",
+      "sha256": "dce3f62cce36a3099a6335fb6607e598c33aee23154d7907d1f8916bb6c67d62"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/idr/male_cercaria/statistics.json",
+      "sha256": "bb618228f9b9cce50c36498fc11fd05c7b5c10088ac03fde6ea77abab8184dbe"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_adult/annotated_peaks.tsv.gz",
+      "sha256": "8bd7f2183fedcf5a39626024d662a40e29eafff006365dbc1171b76819d083a9"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_adult/homer_native.tsv.gz",
+      "sha256": "f48353630f92d66877129450b04b873b9e2f39490cb03faf8393770c075302e6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_adult/homer_tss.tsv.gz",
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_adult/peak_gene_associations.tsv.gz",
+      "sha256": "6990c4716831786ff8ef00e2d1dc6f4ef2148659880a2a2af978aeb97d011536"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_cercaria/annotated_peaks.tsv.gz",
+      "sha256": "f62489794cd4b289b4a33acad8994a1e2ffd7f037107b2d0b2c65d06ed35f77c"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_cercaria/homer_native.tsv.gz",
+      "sha256": "58d485c452bdf21863af1ab3fceb7eea1d4f0875e4d801cc989b4389aec84bb3"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_cercaria/homer_tss.tsv.gz",
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/female_cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "1bcb1a483375def752723bd4c98875dc3f59213ed8960a03c60fdd057388453a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_adult/annotated_peaks.tsv.gz",
+      "sha256": "ab314d1678b989583079f735ba242797a0757bae5066e398796a867188fe7d6f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_adult/homer_native.tsv.gz",
+      "sha256": "e6148281e41477ffa61af5849cd09a2868624db6c54bf97a73c860397ed396a9"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_adult/homer_tss.tsv.gz",
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_adult/peak_gene_associations.tsv.gz",
+      "sha256": "4dc45a87c0bda4f3d4c2f196d55f365b7598bb23f174d891d1af7722865c3ece"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_cercaria/annotated_peaks.tsv.gz",
+      "sha256": "1aab33b77d5062e29de907eeef45186d82f914e6ceae2d35577e3fe1b5d5593d"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_cercaria/homer_native.tsv.gz",
+      "sha256": "6302ecd121a3fac3ecb32bf6e3ea4957df8666ce74ceb27fb52b7d792103a462"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_cercaria/homer_tss.tsv.gz",
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/chipseq/peak_annotation/male_cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "25f028eb202e5d1587fc93a0d88af102be441ab8089d441d7b02fb808545a1a1"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/manifests/native_execution_summary.json",
+      "sha256": "28be85f29351afe7e29f38bbf391f5959e72d700c92a081e5a7e940ebe4ad4c8"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/qc/peak_qc_summary.json",
+      "sha256": "eb1475014218d46331289c801e810f5e6d64fd45be022cf7866751f1e5dc114a"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/qc/peak_qc_summary.tsv.gz",
+      "sha256": "134061fe8649a7c3ecdcb8ff0095be660ef1a373497339a16e7617ba130736a5"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/regional_summary.tsv",
+      "sha256": "e34134223d21ca909bdd5e75075559ef547903d32b445b1d84d8c56b86424da6"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/narrow/tracks/tracks.tsv.gz",
+      "sha256": "3ee4c1dfd48591f91a1f57c501af1f9c54c7ca1429b4ddb6f62e1e5898a3b714"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/results/chipseq/PRJNA312093/reports/PRJNA312093_execution_report.md",
+      "sha256": "01458ba44a074742fc840d6b3eec451b455b82db535a1cac180b97e6c0fc9bcd"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/source_manifest.json",
+      "sha256": "8739ecfafc4e773c9f114ae7242044d4c0deac5ee3aa7b2dac8833f3c15d1006"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/literature_rna/almeida_supplementary_table_2.xls",
+      "sha256": "ecadd0d0067a59b437c06e8610480466290ca01a61710e0c9c1cdbc190f443e7"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/literature_rna/almeida_supplementary_table_3.xls",
+      "sha256": "b0ed64c420b8c67e34c3ba0b21b24778a7793184c7351045db8fb9b6554680b1"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/literature_rna/almeida_supplementary_table_4.xls",
+      "sha256": "81648ed644fb41eb8acc5b59e0fe2256b2f1cbf105bcd38f81661fabd88c815f"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/literature_rna/vasconcelos_file_s2.xlsx",
+      "sha256": "36cd59913d0179d21b65770758879f65d477b0673c8e67466fa21e6b80871be0"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/literature_rna/vasconcelos_table_s1.xlsx",
+      "sha256": "3a2077ab55b7501e457dc4ae178603de10099ad681f6090bfd689f9ccbae32f5"
+    },
+    {
+      "path": "analyses/atlas/local_inputs/literature_rna/vasconcelos_table_s4.xlsx",
+      "sha256": "3bf6a8f8b599ba0308422f786fb9494f6f9d06af232744ac083c3eee48e542df"
+    },
+    {
+      "path": "analyses/atlas/rnaseq_atlas_template.html",
+      "sha256": "a7042798984664d50ae978bd11be0ce7652fb83fda67a19252279cd518c5d965"
+    },
+    {
+      "path": "config/E-ERAD-478/de_spec.json",
+      "sha256": "fc1b3093841c6e7cb24a6fbd08cf6fe3474acde140f48c6c440e163650e16978"
+    },
+    {
+      "path": "config/E-MTAB-451/de_spec.json",
+      "sha256": "b40758a2e1d5f221c54cc0e4a62ebad0a290bb3110efacd1c9cf0da237aeace4"
+    },
+    {
+      "path": "config/PRJEB14695/de_spec.json",
+      "sha256": "c40ece5e5de338920aeff4ed07a2796488e8825826954154f7d2df7a79b5a485"
+    },
+    {
+      "path": "config/PRJEB3190/de_spec.json",
+      "sha256": "2001683b1e4ba30173ed2a544d9dd7ae0ccd6c3fe18e3df7e1d58a6204d3abfe"
+    },
+    {
+      "path": "config/PRJEB32839/de_spec.json",
+      "sha256": "eb474e371df29b7833d9ec22033ab11f5db2ab575f75cde5d1847440be6b60df"
+    },
+    {
+      "path": "config/PRJNA1150591/de_spec.json",
+      "sha256": "c020c8974a4395edd49de167e736d674a8a7648e380d4de7996f0946d8d06fb7"
+    },
+    {
+      "path": "config/PRJNA1177852/de_spec.blocked.json",
+      "sha256": "1889f1a7c0ca18653aa6bdfbd90ff613ef2d0776ca56659a6645d6511f2e56cc"
+    },
+    {
+      "path": "config/PRJNA312093/de_spec.json",
+      "sha256": "a1b82f93ae105d31fe52e0a5a727b5718545428f528a539e5f4416ae78d8b9f3"
+    },
+    {
+      "path": "config/PRJNA428470/de_spec.json",
+      "sha256": "190bae5a419636ab11a96482b071d1d9422f1c409f4615f25490bbb8671a0d19"
+    },
+    {
+      "path": "config/PRJNA597909/de_spec.json",
+      "sha256": "e4c4f81b3ecba0582dcf492e640e22b6d991f235db478c3556c24706d4dce56a"
+    },
+    {
+      "path": "config/PRJNA602528/de_spec.blocked.json",
+      "sha256": "b7ccf14233f8867693ee51f7640925a7aee3c79384ffbdbc844b2071c2f6d3c2"
+    },
+    {
+      "path": "config/PRJNA704646/de_spec.blocked.json",
+      "sha256": "f3c5408006032c6b0e9a07408b106811644427d32fc621c76898e87c6003ff32"
+    },
+    {
+      "path": "config/candidates/histone_modifier_gene_set_v2.tsv",
+      "sha256": "db840956ffd2251cfe03f7ac9a264c49da753ff264598f16ec61a9d630b841bd"
+    },
+    {
+      "path": "config/reference/chipseq_chromosomes_wbps19.json",
+      "sha256": "95017e4ae8b7db917004694ec205d73ce467a8a722f5767410a35e93b0294e05"
+    },
+    {
+      "path": "config/reference/gene_annotations_wbps19.tsv",
+      "sha256": "c4c307af4526fa7071f1cdcaa59718ce930a386ea68daad88254bd4407ecf810"
+    },
+    {
+      "path": "config/reference/reference_manifest.json",
+      "sha256": "085f3aa19683e600f8e101c5582086ec36a80f584ade248e3128f554b35b8195"
+    },
+    {
+      "path": "config/reference/transcript_models_wbps19.json",
+      "sha256": "c58b1215eb67846052396c41ed1d3cad78cb5778a8a8532b08c3159c9e69f2f0"
+    },
+    {
+      "path": "metadata/E-ERAD-478/samples.tsv",
+      "sha256": "67a11d03f7d4364c1bc20e32c49c94d246a80968d36fd1cd5e5ac6487a1602ce"
+    },
+    {
+      "path": "metadata/E-MTAB-451/samples.tsv",
+      "sha256": "033a4d3dcdf0d573a47c9d2f1df31309ede762082e5324e2ee6babbc5ff85845"
+    },
+    {
+      "path": "metadata/PRJEB14695/samples.tsv",
+      "sha256": "64671f94161b660b40ba9a6055b036f39531e1e8676c66543c2c3546be63790d"
+    },
+    {
+      "path": "metadata/PRJEB3190/samples.tsv",
+      "sha256": "adb3736c15c42d593d5d51fb97150186c502655882d9c75ac30830de6df91be9"
+    },
+    {
+      "path": "metadata/PRJEB32839/samples.tsv",
+      "sha256": "ba8716b1be555362206f5037d91b43675b656653b07c35c7184f7c4110f1fa6a"
+    },
+    {
+      "path": "metadata/PRJNA1150591/samples.tsv",
+      "sha256": "36f1028af020e1743aa961dfa8a438d83dd9d37b673f2a382260a012bb99a002"
+    },
+    {
+      "path": "metadata/PRJNA1177852/samples.tsv",
+      "sha256": "cbd62fe64b8178a3d4273074c345146bf895956b3dae1f28bf041ad57812ca2c"
+    },
+    {
+      "path": "metadata/PRJNA312093/samples.tsv",
+      "sha256": "655fe1e9cc761c385c4538fb56c3f7a872e52c9af0f59faf39cb429ffb216ba2"
+    },
+    {
+      "path": "metadata/PRJNA428470/samples.tsv",
+      "sha256": "1059cc5c8b6a6866b841b0c705108fbe94925f578693cc32c2b1b0f9ec306418"
+    },
+    {
+      "path": "metadata/PRJNA597909/samples.tsv",
+      "sha256": "4dcf229766ecc06564f967e441c92e7776c06f0bb18b63e7e6b746dd7bc5635b"
+    },
+    {
+      "path": "metadata/PRJNA602528/samples.tsv",
+      "sha256": "5621190125406f4141c18df68ced2c271af61820b339a070237b94272ada9ddc"
+    },
+    {
+      "path": "metadata/PRJNA704646/samples.tsv",
+      "sha256": "4aa760b81b38e685a1c5ff1d8859021011743d6f309958d37a91de6e2571b5d1"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_female_unpaired.tsv",
+      "sha256": "a78025b47590a81d0a1d981776319e36dfb475d5dadca5117b982621489b1a20"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_male_paired.tsv",
+      "sha256": "7bbfde91002008255311a3052686d00cb1660eadb6b8cf70a599fbe585990406"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_unpaired_vs_d21_male_unpaired.tsv",
+      "sha256": "1c0192000499dfdc9c421b34e0ea33c7f111356712c09ac316c594693b03e49c"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_male_paired_vs_d21_male_unpaired.tsv",
+      "sha256": "57e3d33709a70e2b9271227d3c13a0d8fabf9d512dbd0c4cdac10d77df3cb151"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d21_female_paired.tsv",
+      "sha256": "210a6684e21df53fa688b24c302513af38980ff09185a64c4499f3f6d6ea0f88"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_female_unpaired.tsv",
+      "sha256": "76b96cc826ce4056b4ae2be5e335dc0d5fc13ed34ca82d066064ab88fff8be86"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_male_paired.tsv",
+      "sha256": "467f4443d352b6d5d586e1fc36a92fc00007c1cf6185389f1a0638734ea94884"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d21_female_unpaired.tsv",
+      "sha256": "123eed296052559c41ff5a92e98be096004425abce57df4f71b5705ccaba34e8"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d28_male_unpaired.tsv",
+      "sha256": "3db7b7bbf3e673d9103165430e03093a8bc7377a4041e97a0c0a473107052d3c"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d21_male_paired.tsv",
+      "sha256": "7618af843884c58b58045eb8ec25fcaa9bb67fa444a09aa6ecede15c8b25e47d"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d28_male_unpaired.tsv",
+      "sha256": "e8be56f880c0195584478380897aefd3bd650b6d1d4a209b96f9e4f1c6b45487"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_unpaired_vs_d21_male_unpaired.tsv",
+      "sha256": "5369b3233ee6ef9544da1c280832c97af2217cb99d67d268f6a84173f05a48e4"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d28_female_paired.tsv",
+      "sha256": "cd31276b811c61170bdd9e8903f1cb7c160534eb5349ccd861a533ba1df386b0"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_female_unpaired.tsv",
+      "sha256": "1d48e771e3beece6cdcc332c1752b0281ab0abbde44054c95789af3ad753dfae"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_male_paired.tsv",
+      "sha256": "7087bbd15847b5364e6416c872da0c50233478c6c0adeea474375ae545f4bf75"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d28_female_unpaired.tsv",
+      "sha256": "8a76799d5d5aabb78752a56e1d71fad24b86f962b27b014a89c864ed47025952"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d35_male_unpaired.tsv",
+      "sha256": "80a695cdb037979a26785eab6e1c4e704aa77c2a118b9751158c7ff01abbf50d"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d28_male_paired.tsv",
+      "sha256": "4264ff5902d7d426e5305a1364756a274f63c27ee92ba9254e169a3afe27a9ad"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d35_male_unpaired.tsv",
+      "sha256": "94fbb0f9971f264f8b54c5988b6f43ee2a3372fc29fc8da166bd95bc78394329"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_unpaired_vs_d28_male_unpaired.tsv",
+      "sha256": "6ab63076b7d7f059fbc09d4bb0028da252911c4aaaab016b1e975e0eb348e27c"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d21_female_paired.tsv",
+      "sha256": "43353896de1a647d37b2ad0d418b0a176d3988db5bd9fbaca4e39df3e6e82847"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d35_female_paired.tsv",
+      "sha256": "3fbc7e97d77d3652c59e67892992d25f0fe283c06c6c5519897146a070a61cbc"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_female_unpaired.tsv",
+      "sha256": "deaed1393c34140465ab75099114b3c4d4b3f1d8f99adb7f11085f19eb83da85"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_male_paired.tsv",
+      "sha256": "b11fd139670eb8f7a79b6ed52db99af3add7e43bc0fa05d764c901c694efd542"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d21_female_unpaired.tsv",
+      "sha256": "3f5019adf393cbf3400f3ed41093beb06df3378afef4c727c94cf3c2c993407a"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d35_female_unpaired.tsv",
+      "sha256": "ec06c7c52e48132fca209c609fc131af4e758f3f2cb991429de63fb43851e06e"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d38_male_unpaired.tsv",
+      "sha256": "3e6b4036535895b0faebe8edca8a6b0145a53eb555ed41a7389214854caf18a2"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d21_male_paired.tsv",
+      "sha256": "7d508432446a707f373c5dd68994a462e0d2872fa48ba09e6ea6b0d3121f866e"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d35_male_paired.tsv",
+      "sha256": "28a70008b9a04b248ecae9a45837261fc64870d7f2d01a3d7eea9f3d68f31edd"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d38_male_unpaired.tsv",
+      "sha256": "2fd7e1fe872e9d364c7b455620075919596c344575d3d58915a191f21e395527"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d21_male_unpaired.tsv",
+      "sha256": "30178accd157e12fb522dbdc5ddd7e468f9ca53e7291d36336df1f4f04decfcf"
+    },
+    {
+      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d35_male_unpaired.tsv",
+      "sha256": "67ce9fe3c87f1cafd461cf6b76347dcfb728cb9022b7d2b8a6c8bcf833b9410e"
+    },
+    {
+      "path": "results/E-ERAD-478/expression/tpm_matrix.tsv",
+      "sha256": "c9d78f5192ca03af1850fea5883b8b48bffd0b20eab528b66f6d1b7db389fbb9"
+    },
+    {
+      "path": "results/E-ERAD-478/qc/qc_sample_summary.tsv",
+      "sha256": "8e3b887cfb2fb6995f1915a47df78566bebcb5770392412f029906f668786f7d"
+    },
+    {
+      "path": "results/E-ERAD-478/qc/qc_summary.json",
+      "sha256": "60d66b2eecc435c3d30cd1239052ddeb6b0269d01ab978fb136777e458774863"
+    },
+    {
+      "path": "results/E-MTAB-451/differential_expression/DEGs_all_results.tsv",
+      "sha256": "ae6fd9849ed2a3ea864b9970e63f201a0d4f1046305ea86bfde2fb4446f0a824"
+    },
+    {
+      "path": "results/E-MTAB-451/expression/tpm_matrix.tsv",
+      "sha256": "67bd8831b8381dbd528079bd8bba3401e610f0be078768987856aa7348846c03"
+    },
+    {
+      "path": "results/E-MTAB-451/qc/qc_sample_summary.tsv",
+      "sha256": "a5261248ecf4ae46f24b4420b53af425e16bfae73c35a563b69591cb117b5d48"
+    },
+    {
+      "path": "results/E-MTAB-451/qc/qc_summary.json",
+      "sha256": "114491f346babec1e5526444c107f559c7022c0fe06784de3654071cc6e5ac6a"
+    },
+    {
+      "path": "results/PRJEB14695/differential_expression/DEGs_all_results.tsv",
+      "sha256": "61d65b2365252486cc1a818ff06a3508ba1d520ddd64cead06510c20ced86741"
+    },
+    {
+      "path": "results/PRJEB14695/expression/tpm_matrix.tsv",
+      "sha256": "a25b7ab73ee7c55a27ebccb3e02ca19f94486755ae8feacc170169c7c6465dc4"
+    },
+    {
+      "path": "results/PRJEB14695/qc/qc_sample_summary.tsv",
+      "sha256": "7ec69e933165e0baa53e912d09f9d7fc1d4fbe1ef3bdf4d97818f90c25b7e68e"
+    },
+    {
+      "path": "results/PRJEB14695/qc/qc_summary.json",
+      "sha256": "c2e4b8fc49fb2e4589219f029b9b9f53221f580278ecc15583176e91ac63aa0c"
+    },
+    {
+      "path": "results/PRJEB3190/differential_expression/DEGs_all_results.tsv",
+      "sha256": "ca69251c629b4f82670c8221456060aefdfe87f7491c82b7cade5517a23d189e"
+    },
+    {
+      "path": "results/PRJEB3190/expression/tpm_matrix.tsv",
+      "sha256": "f2d2adabd78a50857df067b96e97060f48ef30eb42c7728e8fb0e6dfdcbcc611"
+    },
+    {
+      "path": "results/PRJEB3190/qc/qc_sample_summary.tsv",
+      "sha256": "6a30b8ae7aca46fce954af8e9e873501f7c43772aa1a84662437f0b64027078b"
+    },
+    {
+      "path": "results/PRJEB3190/qc/qc_summary.json",
+      "sha256": "3b693a26dae0dbe01396bdecffcd08766c56d1269c45caeec685da66b9e9b83b"
+    },
+    {
+      "path": "results/PRJEB32839/differential_expression/DEGs_all_results.tsv",
+      "sha256": "aa38009a6aa6790fdb54d28e66b0355212b2c0369620057f652d946d52daf208"
+    },
+    {
+      "path": "results/PRJEB32839/expression/tpm_matrix.tsv",
+      "sha256": "4bb89484e7814dc4c8a3b94710634263fb3cd29d9dbe98093d6e4f2e06fa286a"
+    },
+    {
+      "path": "results/PRJEB32839/qc/qc_sample_summary.tsv",
+      "sha256": "808f28789bd9a9ab1fe25b4f39f03df5da233b53ec1ddd52b92ec6ca30fad056"
+    },
+    {
+      "path": "results/PRJEB32839/qc/qc_summary.json",
+      "sha256": "1c73f5d5ab1c0db0ee116daa2a4c62ed94103ef917a3404d5be96106ad0c219a"
+    },
+    {
+      "path": "results/PRJNA1150591/differential_expression/contrasts/DEG_condition__adult_7wk_mclz_vs_adult_7wk_control.tsv",
+      "sha256": "3ea4ef6a39b2b32bae19de8a0c9dbc0c4db6126cf0f928938e4ed801aa607f53"
+    },
+    {
+      "path": "results/PRJNA1150591/expression/tpm_matrix.tsv",
+      "sha256": "3c0522765d3db761f94feef173b2a2405016eb361d36593c670fcc02ba7d97ff"
+    },
+    {
+      "path": "results/PRJNA1150591/qc/qc_sample_summary.tsv",
+      "sha256": "7e48505483742fb3561149e6de96a16879f99c63a283c327a4e55afa716cf0e4"
+    },
+    {
+      "path": "results/PRJNA1150591/qc/qc_summary.json",
+      "sha256": "1a50bdeb1e666a637c1fc3476e4652aa19c2f3916b01c59b95fbf21d1b37eb3e"
+    },
+    {
+      "path": "results/PRJNA1177852/expression/tpm_matrix.tsv",
+      "sha256": "4aff7a26d8bdd77120d12e0be8e77d5aaca66ab1d5bc684ababf036aa1d2ad17"
+    },
+    {
+      "path": "results/PRJNA1177852/qc/qc_sample_summary.tsv",
+      "sha256": "38c77a22c40d6c1a394a1c29e39c782be18005a1bfbcd34f154c297b3419d545"
+    },
+    {
+      "path": "results/PRJNA1177852/qc/qc_summary.json",
+      "sha256": "3fa0f638697d660c3e45af690d7209e072f78d19d2db47f0edf4fb4814563f11"
+    },
+    {
+      "path": "results/PRJNA312093/expression/tpm_matrix.tsv",
+      "sha256": "7d62b795ba6525d1f96bfc5f36aedee1375dbdda1c2b2ddb2a0701a6d8a1272c"
+    },
+    {
+      "path": "results/PRJNA312093/qc/qc_sample_summary.tsv",
+      "sha256": "4818663f23d816a9de5f47a23a00dc51dfddbf7ffd13ca89cb978aae6f8ebdee"
+    },
+    {
+      "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+      "sha256": "18e9492378c3c79a8903a32c1b7b52d860976ce2dd9914c55916254b7d118adb"
+    },
+    {
+      "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+      "sha256": "c91c36c0f33944429651436d76f6eef8fc2f594c496cceb9b018b82b41fd7f62"
+    },
+    {
+      "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
+      "sha256": "4b07126453f7b2c5c6d0ff71faa2b558b61e010fd1fbdae03f09764209dc4ea7"
+    },
+    {
+      "path": "results/PRJNA312093/restricted_refit/included_samples.tsv",
+      "sha256": "7ba10bc3bf07d7165fd27b06b4e3a57c5377fa2678225022b610cf56653993f2"
+    },
+    {
+      "path": "results/PRJNA312093/restricted_refit/manifest.json",
+      "sha256": "02239b6fa0581146c9ffe85cd9693a8e2ab1f5c1743368eed509c0828414a3c8"
+    },
+    {
+      "path": "results/PRJNA428470/differential_expression/contrasts/DEG_condition__female_adult_5azac_vs_female_adult_control.tsv",
+      "sha256": "13ce0ecd3faf8256e961f0eaceb2503f33d725afb981074e12748b4f19a6f4bd"
+    },
+    {
+      "path": "results/PRJNA428470/expression/tpm_matrix.tsv",
+      "sha256": "21cb9af8c886b5b54569db37af8a13e401ae97323cdfd0a09cf9860740d683b3"
+    },
+    {
+      "path": "results/PRJNA428470/qc/qc_sample_summary.tsv",
+      "sha256": "9029a62608437ec145453bff986dc3933efb321f3d0398c8d78fe3d05dfc53a7"
+    },
+    {
+      "path": "results/PRJNA428470/qc/qc_summary.json",
+      "sha256": "bff57984a731e98d54e6a485c5a54beac5557f422265915894ade1a2f2f25927"
+    },
+    {
+      "path": "results/PRJNA597909/differential_expression/DEGs_all_results.tsv",
+      "sha256": "ace17c9e9cdd9e1f19fb53f52bbb32e17646db7c08da7d4b895b4adabd7f64ed"
+    },
+    {
+      "path": "results/PRJNA597909/expression/tpm_matrix.tsv",
+      "sha256": "1cfd1bf790d1c3dc7385897a9ec04fa1af452197fe0e507ffae6d26865a504d6"
+    },
+    {
+      "path": "results/PRJNA597909/qc/qc_sample_summary.tsv",
+      "sha256": "1d7ab86b70679d452ce287e182df47198f04bf14dfcb2506edc4cf5edd52f465"
+    },
+    {
+      "path": "results/PRJNA597909/qc/qc_summary.json",
+      "sha256": "735a160918f2b71d92ab54826c21417866ab79b6fe122cc41f241713b0d21b3e"
+    },
+    {
+      "path": "results/PRJNA602528/expression/tpm_matrix.tsv",
+      "sha256": "e4af7babc8607aab99b649037fe643b451d86d3adab280921260f73596518cca"
+    },
+    {
+      "path": "results/PRJNA602528/qc/qc_sample_summary.tsv",
+      "sha256": "922c48bdd935095eb4eba9e7fe4d18dc72024d6db4bf1468284ec3e7c3de5427"
+    },
+    {
+      "path": "results/PRJNA602528/qc/qc_summary.json",
+      "sha256": "b64da8f9ea81e20ab1f677ea62c6eafe9ed68f4684dccbee059cac97087e8ed5"
+    },
+    {
+      "path": "results/PRJNA704646/expression/tpm_matrix.tsv",
+      "sha256": "cdcd36e36a062aa4a2255e6408b118adbc1c93de9823ff2971ae79df285ae0eb"
+    },
+    {
+      "path": "results/PRJNA704646/qc/qc_sample_summary.tsv",
+      "sha256": "359c356e60c35be92481c055950bf094639c5e008a32ec5151a229aa6a3711ad"
+    },
+    {
+      "path": "results/PRJNA704646/qc/qc_summary.json",
+      "sha256": "c8259f5df59b95bf482a11c1902705be9a9934db72c1b41835d0e61bb0913808"
+    },
+    {
+      "path": "scripts/atlas/atlas_design.py",
+      "sha256": "e2eb47536bd78dfedf7ece32cf080bd0b199e896dae8503c0316689b4871a056"
+    },
+    {
+      "path": "scripts/atlas/build_rnaseq_atlas.py",
+      "sha256": "2d58864389b81d57a9517c982cfee97c68b4551febd759fe967da3d9d9b84c78"
+    },
+    {
+      "path": "scripts/atlas/chipseq_lazy.py",
+      "sha256": "36d3a67007e7310dc333ca2deb5cab3216e059813e6832ad3f8e3d9ebc3adb11"
+    },
+    {
+      "path": "scripts/atlas/chipseq_portal.py",
+      "sha256": "dd5b5ed047b45df0a83ae9bcad71bced485d22782f756af24a86f0a189446508"
+    },
+    {
+      "path": "scripts/atlas/external_rna_evidence.py",
+      "sha256": "97ff39dd65d6e4a5a1a82722b3839ef1a6216b8d16593e5ffca4355465790180"
+    },
+    {
+      "path": "scripts/atlas/gene_collections.py",
+      "sha256": "0b6c1d2c54ac27a6540b281e2fb15871e6e0f71d54de0ca4b415c81a250b0f0a"
+    },
+    {
+      "path": "scripts/atlas/hf_chipseq_catalog.py",
+      "sha256": "99f21bd0b52f11b7cd959318d914427793d0e46c7c1678b245b0b8fea078b403"
+    },
+    {
+      "path": "scripts/atlas/hf_chipseq_evidence.py",
+      "sha256": "b905cb989cac18365aa4cbd71adb8424d0ec2dc4d621e15ca1f9ea80d39fe7d1"
+    },
+    {
+      "path": "scripts/atlas/hf_chipseq_regional.py",
+      "sha256": "f3888d367502b55312ba09f598ece2e07f7ad76bbced60e481ef31e104bdce03"
+    },
+    {
+      "path": "scripts/atlas/literature_rna_evidence.py",
+      "sha256": "3588460ea620af02c9a014683608ac62597202e30262e72d2120ed04d13880e9"
+    },
+    {
+      "path": "scripts/atlas/refresh_atlas_design.py",
+      "sha256": "36f3000e8245b9c933350e95a70c71665500d83157053a197664fb1d8c310b54"
+    },
+    {
+      "path": "scripts/reference/extract_transcript_models.py",
+      "sha256": "ef6bcc0ded6cdd4abdca295ab2ceeffaf06bab296e6b09ebbc95a878aa534bec"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "atlas.html",
+      "bytes": 157465,
+      "sha256": "108ae64302bf3e03a0ad2d54e13f648794ab160800030915ddb88b3d0736c6f6"
+    },
+    {
+      "path": "atlas_design.css",
+      "bytes": 26740,
+      "sha256": "0415ef639ee86be2d73bd2de6fa7da0295b9524c0aba3a57e62e9aca86d76e94"
+    },
+    {
+      "path": "atlas_theme.js",
+      "bytes": 1461,
+      "sha256": "5445ec40336044540494142c88d727faf65e5eada5ed5bef0817f9e06302bb3a"
+    },
+    {
+      "path": "chip_data.js",
+      "bytes": 2353,
+      "sha256": "de7552218dae4025722c7f2de72abde8fb5c18446af9f9b80966871cf71810d6"
+    },
+    {
+      "path": "chipseq.css",
+      "bytes": 10915,
+      "sha256": "7d423b93631aafbf9f654bcaaa04f93144da639f6f6e761fcb4a4e843b9871e9"
+    },
+    {
+      "path": "chipseq.html",
+      "bytes": 9976,
+      "sha256": "255877bd18efed448ce93873275c9d34a77c2f4257dcb83b1abd2069eef006fc"
+    },
+    {
+      "path": "chipseq.js",
+      "bytes": 33918,
+      "sha256": "348ff57e686274e436a8c6e198a3e3b688481afeebc1aa70a87b0ca27504453b"
+    },
+    {
+      "path": "chipseq_logic.js",
+      "bytes": 3599,
+      "sha256": "a9a677aa29138c10c3a03a040cc12ba7684652bb518330ec27d1863c54c8b4cf"
+    },
+    {
+      "path": "chipseq_PRJNA1090249.html",
+      "bytes": 29791,
+      "sha256": "b3c8b314944ffbe69503ddfd5a0f97209249aa8bb8b12a636b1b2fd4a2a95479"
+    },
+    {
+      "path": "chipseq_PRJNA312093.html",
+      "bytes": 63796,
+      "sha256": "f25bce90b9d5f4f5f43364d94be728e29804c6617f59107017316c7acadf5c38"
+    },
+    {
+      "path": "chipseq_tracks.js",
+      "bytes": 8075,
+      "sha256": "52c41b6c843fb12eabb59ab6d1cd4ae58b5755de9d0e8a26a2d4d1ef6c0f909b"
+    },
+    {
+      "path": "data/atlas_payload.js",
+      "bytes": 56788826,
+      "sha256": "bdd9acecac1f61afa1f86c828ad386a7542893fda20a73976240fb0493f100c3"
+    },
+    {
+      "path": "data/cell_type_marker_evidence.tsv",
+      "bytes": 121415,
+      "sha256": "3daeae6fad49a80c1129416e01573779fd0ecb9365649e48fb0b5a46ea502223"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K27me3_female_adult.json",
+      "bytes": 8189133,
+      "sha256": "8f26713aa33b8080490384cd8878918794f877368bba70210ddc0ebeb8a5c69a"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K27me3_female_cercaria.json",
+      "bytes": 3582388,
+      "sha256": "cd2f3df1981a57813d5fcc5d83938903987b736dee92f38cbdc611ebccfbeec5"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K27me3_male_adult.json",
+      "bytes": 4502978,
+      "sha256": "b528cd5b2e7a35ca6937202cb9bc6a7f39eaec4623399990aba66679b7aa395f"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K27me3_male_cercaria.json",
+      "bytes": 5445784,
+      "sha256": "b79577ae2bde92c9ff5a815a5a215f1aab9c7cd230958257d25aa1a4b5fac145"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K4me3_female_adult.json",
+      "bytes": 2930860,
+      "sha256": "2b89b2f735321dd594a827d14aa04da1019884a2ad2de25bd196f9eafdf34f81"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K4me3_female_cercaria.json",
+      "bytes": 3010886,
+      "sha256": "5e20b92b13f1a83ac7f35de075e3b66770bf7f3a7094354b0ed13ae1f92e5477"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K4me3_male_adult.json",
+      "bytes": 3229659,
+      "sha256": "d6a206cecc760095f625d9a15f828ded44a1a8fae24578b9abfd32e1190c96e3"
+    },
+    {
+      "path": "data/chipseq/catalogs/PRJNA312093_H3K4me3_male_cercaria.json",
+      "bytes": 3253461,
+      "sha256": "ecf81832dc65b3d29a0e688f975d1e5c2acb1cf40bf98256b48a1be9c5850e21"
+    },
+    {
+      "path": "data/chipseq/explorer.json",
+      "bytes": 4753479,
+      "sha256": "1f0f58613d93ef7e1e3e7a32e9f578d7524877204cf8aa9e457f43e3b82d2129"
+    },
+    {
+      "path": "data/chipseq/genes/0.json",
+      "bytes": 1894141,
+      "sha256": "e53e71a8d296d218a117b675e83b5218d874319c96262620ea5c38d626fd11b4"
+    },
+    {
+      "path": "data/chipseq/genes/1.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/genes/10.json",
+      "bytes": 1879255,
+      "sha256": "6a247419288d08d42606cb0d54ea0304e87ea4ec6362767a5610a942898c0f71"
+    },
+    {
+      "path": "data/chipseq/genes/11.json",
+      "bytes": 9059,
+      "sha256": "20ba4e875942dc36d76d3d0f1c170f2a0fcb5768155536707e985843580d6cfc"
+    },
+    {
+      "path": "data/chipseq/genes/12.json",
+      "bytes": 1957709,
+      "sha256": "bca1e640a9a453618071effbdc3a678c81519d18f53216c530b7d3e26b6fe41e"
+    },
+    {
+      "path": "data/chipseq/genes/13.json",
+      "bytes": 3111,
+      "sha256": "03b1453345da7ba7b20527c185ef1e6e5ef342bfb799fe880dfc39376cfa09d2"
+    },
+    {
+      "path": "data/chipseq/genes/14.json",
+      "bytes": 2366017,
+      "sha256": "bc6b6b3fb3ae6b9b355153466bb9c428e9a100335852ab2cabede744f06849e1"
+    },
+    {
+      "path": "data/chipseq/genes/15.json",
+      "bytes": 7032,
+      "sha256": "a904ceab9b06d62e47f4f4042cd255e3a2dd25767cf50a68dd6377935b677691"
+    },
+    {
+      "path": "data/chipseq/genes/16.json",
+      "bytes": 1911033,
+      "sha256": "c723392e29bfefede1a73e7d74d31838ca1b9e2944371b46901d63d3d242ef06"
+    },
+    {
+      "path": "data/chipseq/genes/17.json",
+      "bytes": 11288,
+      "sha256": "8db8977380ebe1b8610d381dfcde8494949c1b7b064f11d38d06fd5afb67e995"
+    },
+    {
+      "path": "data/chipseq/genes/18.json",
+      "bytes": 1978271,
+      "sha256": "fcac4a2c47596b1084a1f4d1388caed80ad09fbe44a8b760fc246466c3b8798f"
+    },
+    {
+      "path": "data/chipseq/genes/19.json",
+      "bytes": 28913,
+      "sha256": "24d8bbfff6f8834acdc664e5067871d36c7c276cb21437c22c9312a14b6032cc"
+    },
+    {
+      "path": "data/chipseq/genes/2.json",
+      "bytes": 1849886,
+      "sha256": "03f67e518b936eb3cbfef6161a6699b76214437bb0f6c5da716f795bdb9f64f2"
+    },
+    {
+      "path": "data/chipseq/genes/20.json",
+      "bytes": 1987344,
+      "sha256": "52dfc8533ff4e951506e1756063039ff99d634af23c3042d42d1125ffe429d44"
+    },
+    {
+      "path": "data/chipseq/genes/21.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/genes/22.json",
+      "bytes": 1943252,
+      "sha256": "70d0e668a1171ba992852c603161e52be4b0fb8891174c460cc2a55e398a76f9"
+    },
+    {
+      "path": "data/chipseq/genes/23.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/genes/24.json",
+      "bytes": 1909447,
+      "sha256": "1c16cb3874a3625cd3f46cdc447be01ec7a74dd63a77b85731646f9a1f3ac069"
+    },
+    {
+      "path": "data/chipseq/genes/25.json",
+      "bytes": 6000,
+      "sha256": "6fe126901da483c8e7fe68a8a7a41a80658b372c7215d4999cf9453cc789350e"
+    },
+    {
+      "path": "data/chipseq/genes/26.json",
+      "bytes": 2075955,
+      "sha256": "ec6c4179fd843e98cd3c755be3b385604b56ce10e3544b5f018c501cb587f99d"
+    },
+    {
+      "path": "data/chipseq/genes/27.json",
+      "bytes": 2816,
+      "sha256": "30562500adea3ce572706a8f4c55d91b6d7fd1d2a51c411c293a4d60b7f64064"
+    },
+    {
+      "path": "data/chipseq/genes/28.json",
+      "bytes": 1820845,
+      "sha256": "972ebc13c0db5ce294ad6b5e5a9db7b5a3fe406baf97a424e835d8509e910e9d"
+    },
+    {
+      "path": "data/chipseq/genes/29.json",
+      "bytes": 10518,
+      "sha256": "3281dc300e77c1346a1c1e000342c8c394dfabd70338cf599a616898513e9624"
+    },
+    {
+      "path": "data/chipseq/genes/3.json",
+      "bytes": 5407,
+      "sha256": "bdb1f06aaea2b9eb6c69914712a531e99654a6cd9f217b23a0156a79b2e3a725"
+    },
+    {
+      "path": "data/chipseq/genes/30.json",
+      "bytes": 2030164,
+      "sha256": "8ae67c0899ff94ac7c6ef2987ce824540deac739d942357443b85607bc389c9a"
+    },
+    {
+      "path": "data/chipseq/genes/31.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/genes/32.json",
+      "bytes": 2241749,
+      "sha256": "7297773e24a7cffa30a27e637e3aa47af20211b4ead9c9aecb958992402b2fd0"
+    },
+    {
+      "path": "data/chipseq/genes/33.json",
+      "bytes": 3246,
+      "sha256": "e0040a96d2711d718937bd2c697ee67026c9b2c2bbe00c5dc87518f18c32020b"
+    },
+    {
+      "path": "data/chipseq/genes/34.json",
+      "bytes": 1964462,
+      "sha256": "a39943dd5ba63c2b4e48b022f3f6476c9fb71b12516f72d852557e2e2fd96ecb"
+    },
+    {
+      "path": "data/chipseq/genes/35.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/genes/36.json",
+      "bytes": 2041029,
+      "sha256": "0759be72cdf38253ed4576fb0244da4974d7da20232b852d5904302b2d21625c"
+    },
+    {
+      "path": "data/chipseq/genes/37.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/genes/38.json",
+      "bytes": 2137653,
+      "sha256": "51052954a1fe1bc953b8d8ff4bd637595f7af689a8d37342b5ccd51de2b94b31"
+    },
+    {
+      "path": "data/chipseq/genes/39.json",
+      "bytes": 13095,
+      "sha256": "49033e63be63f0991398c804ede2de586ab75551106ae30ba9a17c742655a811"
+    },
+    {
+      "path": "data/chipseq/genes/4.json",
+      "bytes": 1951437,
+      "sha256": "cb902b0971d5a16d9c87eca0b1e0799a068f6546a499849506123e82317af6e3"
+    },
+    {
+      "path": "data/chipseq/genes/40.json",
+      "bytes": 1991829,
+      "sha256": "0893662a82593b8d2331d14af47238ba192b95ecdadce6701997324bc7bf3d6a"
+    },
+    {
+      "path": "data/chipseq/genes/41.json",
+      "bytes": 12969,
+      "sha256": "8fc056bd6c5df6ec62d1543e1d9450ebb39c07d64c7b046b62dab98d3ef1db93"
+    },
+    {
+      "path": "data/chipseq/genes/42.json",
+      "bytes": 1618241,
+      "sha256": "355d355f19c34b9f4af6ade0df26d3779c77b43fd89bdc0b38e387aa0045fbf6"
+    },
+    {
+      "path": "data/chipseq/genes/43.json",
+      "bytes": 2282,
+      "sha256": "f1484003d6c0eb411660a5ef772d238fd4734d1ae3e32322a5d1ba0e068592fa"
+    },
+    {
+      "path": "data/chipseq/genes/44.json",
+      "bytes": 1870652,
+      "sha256": "2320815d2de58ca61eb55c731a138c1391a72d6b7536dac15537cb8d73f3394d"
+    },
+    {
+      "path": "data/chipseq/genes/45.json",
+      "bytes": 1437,
+      "sha256": "dccaa25b4022d35c812129b3330d7b4541f8c012705071b14bd825b29d6657d9"
+    },
+    {
+      "path": "data/chipseq/genes/46.json",
+      "bytes": 1707266,
+      "sha256": "f368680e45381664a7b8c11672f18b57d615c2d9d66b5792b6c8028ba2a7bba0"
+    },
+    {
+      "path": "data/chipseq/genes/47.json",
+      "bytes": 2820,
+      "sha256": "05b6fa9cb4d40d3cea148ab75abc982b3d2424f5fbea1994f6ec911df8ac9b58"
+    },
+    {
+      "path": "data/chipseq/genes/48.json",
+      "bytes": 1860540,
+      "sha256": "6958c8fd5b4668094372479d83f8951ea6b9959c064fb98aaf1e448c184bf11e"
+    },
+    {
+      "path": "data/chipseq/genes/49.json",
+      "bytes": 3249,
+      "sha256": "ce716c68229e512f3cbe1049dc8abea91d3b7281a742ce6162a6c30c8a771393"
+    },
+    {
+      "path": "data/chipseq/genes/5.json",
+      "bytes": 68858,
+      "sha256": "f73c66111da24a973d214c9bb1780fd0bdee29a04fd34762524d2f7004400d6c"
+    },
+    {
+      "path": "data/chipseq/genes/50.json",
+      "bytes": 2029902,
+      "sha256": "9f6acce15eb975b196fc6d500665eb867ccccbd5ff8e09f93d9afc7f4d911cf8"
+    },
+    {
+      "path": "data/chipseq/genes/51.json",
+      "bytes": 14983,
+      "sha256": "5692987c3580ea43943665c8678b2b8284814511f8529eb0435dc21724286071"
+    },
+    {
+      "path": "data/chipseq/genes/52.json",
+      "bytes": 2229713,
+      "sha256": "927c7ca15330c2873495aa935cd9d17a021ff3405a45281c13824ac822461407"
+    },
+    {
+      "path": "data/chipseq/genes/53.json",
+      "bytes": 5582,
+      "sha256": "f09f7d6dd0bf6f0711ce9f228ae75800fc71012ace58a3ceac5d17ebfd0b958b"
+    },
+    {
+      "path": "data/chipseq/genes/54.json",
+      "bytes": 1542058,
+      "sha256": "f14eeeea90683f4dbb767d7942ff5261094b47f189bbeeceb8a89a3f1bb3c792"
+    },
+    {
+      "path": "data/chipseq/genes/55.json",
+      "bytes": 17303,
+      "sha256": "3ed7980f58ce81f8ab93a20e02e18d0c1908f68f6f27a3d1364e6e80a2a064cf"
+    },
+    {
+      "path": "data/chipseq/genes/56.json",
+      "bytes": 1845698,
+      "sha256": "6f78caf2c0c108ea9224eec71f5c9f63a8eff1bcc60fae542e69f7f0ca7a8163"
+    },
+    {
+      "path": "data/chipseq/genes/57.json",
+      "bytes": 1731,
+      "sha256": "76b7316734f6f4093944adc8586a539e3c306da97d453b7c0702e968e83e8e30"
+    },
+    {
+      "path": "data/chipseq/genes/58.json",
+      "bytes": 2248883,
+      "sha256": "464e57904eaca8fc715a2f65a24d6e5f92614900532bb1da0c7d34f8a81d55a8"
+    },
+    {
+      "path": "data/chipseq/genes/59.json",
+      "bytes": 3336,
+      "sha256": "d5783e8a86d361cb52d906d97d91ee9ca2c44f85990021eda56560da45444a9e"
+    },
+    {
+      "path": "data/chipseq/genes/6.json",
+      "bytes": 1948203,
+      "sha256": "75b5bace1de7b3f5dfcf1c8ab2e3d0f86794faeecb7e2ffecc7c039a71bfd6b5"
+    },
+    {
+      "path": "data/chipseq/genes/60.json",
+      "bytes": 2431596,
+      "sha256": "ee6bf907acab5ef7237245f91b71f11d026ebf2cc17d61edeb2b91752b267a82"
+    },
+    {
+      "path": "data/chipseq/genes/61.json",
+      "bytes": 2801,
+      "sha256": "1b77f8973a1569f91e2572b376f80a41688e0fd48cbcc4367d43c3450cca4710"
+    },
+    {
+      "path": "data/chipseq/genes/62.json",
+      "bytes": 1745628,
+      "sha256": "b2021b4096cce65c5a7388969d3a881e323f39b91d016d7a661e2fba1172212d"
+    },
+    {
+      "path": "data/chipseq/genes/63.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/genes/7.json",
+      "bytes": 1798,
+      "sha256": "7bb2b9355d3908a91d0c1f03c7d64bfbcc0483da4c59b4662b82ae9e3c4745c2"
+    },
+    {
+      "path": "data/chipseq/genes/8.json",
+      "bytes": 1746258,
+      "sha256": "de313959fd442332387bc7e10596ed7910146944ac7e3902189d3657df1c8942"
+    },
+    {
+      "path": "data/chipseq/genes/9.json",
+      "bytes": 61,
+      "sha256": "61ebebbee731d8b85560ae60e111d383662ff3498367984e60c52018485ac7b3"
+    },
+    {
+      "path": "data/chipseq/library_peaks.tsv",
+      "bytes": 475679,
+      "sha256": "a29dd451f0c9c649bb6afad25dc23cd9606c0da43897b08aab284d2d6e3abe57"
+    },
+    {
+      "path": "data/chipseq/library_support.json",
+      "bytes": 750587,
+      "sha256": "c49f189c958647e0cec2f2a32861c2ee61b6af2f43a39b2d34e36d957083c92d"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_1.json",
+      "bytes": 491051,
+      "sha256": "f098ac4ecb38823df91dc0e5d55a5e79fdfdce8d698467f68a9cd3d785940564"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_2.json",
+      "bytes": 251479,
+      "sha256": "7c883213e802279302d232f4ea21201af4d8c1af12aac082d52b08ac77b03d88"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_3.json",
+      "bytes": 261134,
+      "sha256": "729e0c3161365cb2eb3f2caf8acd1b6def95dd7b738c7601e193f071b068fc4d"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_4.json",
+      "bytes": 244714,
+      "sha256": "db1ed4201970f7c0511705b4762b9bb43851dfa7e4fc8af4245007e0501934fb"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_5.json",
+      "bytes": 121350,
+      "sha256": "68788db8fbbf68417cb5168e11d64d56190cfff72ea59664db0d487aa05efff3"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_6.json",
+      "bytes": 128462,
+      "sha256": "aaa3c03aace7174bac49adae16222b990ad9ed7c9d0c6d2a97330ae2b2c3b75c"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_7.json",
+      "bytes": 98166,
+      "sha256": "d40510a6e379a01c03312151b767130f36d427b3d62c105ec9926a2d13cd9436"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_MITO.json",
+      "bytes": 677,
+      "sha256": "73324dfb3c7bebd008d942778b809e36273d5fba2437e15a257e3f2a87f0aa04"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_WSR.json",
+      "bytes": 5335,
+      "sha256": "8002114aa99d03322fb6fedc247b545e5073de8f4ce1ace874f39726e3ea4002"
+    },
+    {
+      "path": "data/chipseq/models_SM_V10_Z.json",
+      "bytes": 490160,
+      "sha256": "c9f8873d5bf95271aa7f9216949d813712637e47eb97b8ac08ea83318d57cbb0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_0.json",
+      "bytes": 141940,
+      "sha256": "bc4786ae0a2e36ddc221e57d74b97b2aef290e047901f9d15e6368232a81bab5"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_1.json",
+      "bytes": 143879,
+      "sha256": "c25ce5d9c95237f06822e9c4dd6c13c83c877fdc1508a25927de1be9f653bd18"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_10.json",
+      "bytes": 145006,
+      "sha256": "7d94c6d5fdd4c5d0554e8c8f874307e860a4ac2ca17ce820778de263e9d8057e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_11.json",
+      "bytes": 145534,
+      "sha256": "bb7b6d7cca90b4b4a2a6b2cd5ca1c5578934f702b5c6e53981f291b907ee474e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_12.json",
+      "bytes": 144439,
+      "sha256": "18c277e8aa9556fe8767bebc4454cac2164014cb309374b6d64d17953d5f43ec"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_13.json",
+      "bytes": 144217,
+      "sha256": "8fa854547aa1612034765aea0c6bf28c6d92fac256225fd7b75600cf4a97c9e7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_14.json",
+      "bytes": 144018,
+      "sha256": "fd6b5549222f095c0cc102011dcb1e1ecd5aea84bdd5d8e91e1079d610463961"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_15.json",
+      "bytes": 144324,
+      "sha256": "2401cfd7b9ff4ae698b729265130dd7ea912ac80261ffd748e0895f5c16b654d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_16.json",
+      "bytes": 143900,
+      "sha256": "431ae9050e45a4ce2864d12848187841bddf01134bbbff69802f76b250eeca1c"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_17.json",
+      "bytes": 143866,
+      "sha256": "4f7623d5bdfab7003fba042a4ed26d043205ed3d21d250728288de804f5987f3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_18.json",
+      "bytes": 143844,
+      "sha256": "296b1861e2a756c4f1ce613dafbbed384b9ac827d7fdc36289c0f31a39de3a98"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_19.json",
+      "bytes": 144011,
+      "sha256": "f8917dfb57961bf6318ca393251de4ed341acdc88f2ad9446b26082605fb7be6"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_2.json",
+      "bytes": 144295,
+      "sha256": "defd78fa006e814aeb8e52a84fc52d4315c850355db8a648e07e1684dffdda67"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_20.json",
+      "bytes": 143933,
+      "sha256": "5aec836efa98a6dd05dfdf767970dbfd15122b0b13632df8c35beb9cb3ba26a2"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_21.json",
+      "bytes": 144181,
+      "sha256": "fadffd4ad8b7788ec075698c0ab91dfa2229d147672640b4c184b7080df4e38b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_22.json",
+      "bytes": 144171,
+      "sha256": "cf66c178bd7a2cb444d2f8ae121edf403a1fc27e24d5d42df9ca7db7768a3c5d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_23.json",
+      "bytes": 144159,
+      "sha256": "8476d52aae83427affe2e9ba015ca868df0c268265f16e87ebb15be6cbc84872"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_24.json",
+      "bytes": 144757,
+      "sha256": "1300c3acf1fd75d51b0396d87008efe49fc4c09e75afe7fc1433b4bf58f0f23a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_25.json",
+      "bytes": 144750,
+      "sha256": "e829cebeb4fe7059b189306df3965db2d55751a16848af6812de5c34801ae58d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_26.json",
+      "bytes": 145085,
+      "sha256": "95064164179ea20ab3aed8edd51eebc39d6bc5c7ad020c810301c10ad6492785"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_27.json",
+      "bytes": 144027,
+      "sha256": "b8d89f674c82732b7fd4585b3b9de64a43eb0b47c6f762525d9a69a7c70e9ef3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_28.json",
+      "bytes": 144189,
+      "sha256": "694847e5644f81e876ac0a940221b3d69fb79d20d17f022f1580d68107318fdd"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_29.json",
+      "bytes": 144674,
+      "sha256": "7bd29553986dede4923ecd9e2df2ece1b9bf54c9617a561dae3f700be3a51a49"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_3.json",
+      "bytes": 143396,
+      "sha256": "0e60d4e0d597fea4b804fba6e42d36627dd8f2badafcf2a618c5a13897d56f70"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_30.json",
+      "bytes": 144357,
+      "sha256": "83badb72f5939d7a11f853d69fa81bbedf658da041c427c49d18fdb417b23a01"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_31.json",
+      "bytes": 144164,
+      "sha256": "68d3ef55b201698edda6b372ba1e20c56eb532b6503f68b40e95789f5fa8b0cb"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_32.json",
+      "bytes": 144338,
+      "sha256": "6be52222056bc5769ac1d6c841ab9aa6f95fefde41c902dfd992f4df8fec7441"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_33.json",
+      "bytes": 145678,
+      "sha256": "5668a10ed3bf5c648304a0271f14b8d3d812f665095e8dffce7137fee79bc3e5"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_34.json",
+      "bytes": 144363,
+      "sha256": "a351591dc0f015b30d390959494c389cd2ba6242638d409ce0d83f113f53c048"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_35.json",
+      "bytes": 144103,
+      "sha256": "f3ab2bd7beb64abc50a37370191640771811bb4f741111c0cc1867daf78d7f59"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_36.json",
+      "bytes": 143685,
+      "sha256": "e1c1555c05e7af98ffb3d28447f6e8dba5ff39616288e33fff08be45e5bbe318"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_37.json",
+      "bytes": 144608,
+      "sha256": "f69a362963f866f4c76d17078dc708b3a7474549c2b6f0dd1d0a3ac34f2fd3c9"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_38.json",
+      "bytes": 143865,
+      "sha256": "224867fcb89ac8b14ea6af8951f1b9f99aa0c451094f7442823af5f14c7c64ff"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_39.json",
+      "bytes": 145259,
+      "sha256": "952034eb7522a97957b23d8c3465c877a0850f12fc5e9e8d70a69daacdd56e8a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_4.json",
+      "bytes": 143379,
+      "sha256": "f070ac7a5c0211d30a11eb130d96e0b2171abc68e02438602c23f494cc4c8308"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_40.json",
+      "bytes": 144465,
+      "sha256": "549a6cb32352ef0afd96f55c2e254ab41f896c7eedeacf0ee8940294a12c8c96"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_41.json",
+      "bytes": 145236,
+      "sha256": "a7f1e197ee7f81adef1ab820e53d5c4eae440106765d249dcc09ea05517c1b13"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_42.json",
+      "bytes": 144562,
+      "sha256": "a89ee1e51b1180380aac96abe9214fa76792be7411420b2a853d95f5f65396a8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_43.json",
+      "bytes": 145196,
+      "sha256": "33ebde83d0c272917d34e4975152d6954a3866016bbefa783db7d53dad94bd54"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_44.json",
+      "bytes": 144124,
+      "sha256": "debce4e20f2fb436b7e96c9f28e0ab846c374840487f1e7cb63118d523e07d12"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_45.json",
+      "bytes": 145448,
+      "sha256": "5e835b3de781dd7ad3a279f05b805fea245ff191788d8e8b3a6a0f8f1d7c5d5a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_46.json",
+      "bytes": 143910,
+      "sha256": "cfd82a977d09b7e07b9003d0654d09279f5a5b02a62de6425ff4f0626d3a1191"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_47.json",
+      "bytes": 144479,
+      "sha256": "440c4c01ce0d78f78a900ddbb4da2b2a8ed45ae935d03f98df0f533bc93715d7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_48.json",
+      "bytes": 144361,
+      "sha256": "e01c61c925e96fb05bd93d0b20a3ff524a115d887ca329c9383e167898cfe162"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_49.json",
+      "bytes": 144313,
+      "sha256": "d6ee90c96adb0a5b87bf158dc26f7445da47cdac871b8d153feff7a1d28fa4d8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_5.json",
+      "bytes": 143077,
+      "sha256": "6eab97a75799c2377869dcb3790d1f41423968fbbfecc482862adb8106de0ae8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_50.json",
+      "bytes": 144059,
+      "sha256": "d1786c99eb004a4f5fb09fcfba1c43f37feaf450cba9b34bcd7a896cfaa89a06"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_51.json",
+      "bytes": 143855,
+      "sha256": "9cd903bd44580923cc24142a1da617fa797454a3c8ac242f7cdb283e504f25c4"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_52.json",
+      "bytes": 144504,
+      "sha256": "4af8693c536e4cbe1a129cc57ab6269dadf6d4a7afac1eefe439e7da187fcbb3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_53.json",
+      "bytes": 144365,
+      "sha256": "f9180e2c6c8b05903f8f4fe5c9f2e80b60969c812a6921c6cb4da01e4d70c8ff"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_54.json",
+      "bytes": 144164,
+      "sha256": "7dc2d8f0c8c8cfcb0d5153c5e32314224a195e673b915d58bd6bd3e1bdf454e4"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_55.json",
+      "bytes": 143711,
+      "sha256": "a98da96961b7b0bf8e03c3a589730d3293dfdc05c98da1b4d71db6409de7c34f"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_56.json",
+      "bytes": 144226,
+      "sha256": "2fd36651f7f0c331514ef79be720f5e21564ffc757805cfb5ea400956d1d4795"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_57.json",
+      "bytes": 144364,
+      "sha256": "e687c6ac0c7474193c6494d549992acf96ab2ade760ba2540c0476f9a2e6ecbf"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_58.json",
+      "bytes": 144061,
+      "sha256": "2c86eaa06c8450b00183621a386afbd33d7401b38c5d2a7d90699848539122d4"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_59.json",
+      "bytes": 143732,
+      "sha256": "9043582d00c200a9677d92f5055cf43e6d4f1ecfdf2b1eb1063124d62c17dac6"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_6.json",
+      "bytes": 143304,
+      "sha256": "606a207cc05dade04a05140139cb9015b82ad3188f79e1a6f78882e0defaff6c"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_60.json",
+      "bytes": 143886,
+      "sha256": "88be63c93a3037eb14fb2f439000a09040e1d4ff558fa5d626028146c22a1579"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_61.json",
+      "bytes": 144059,
+      "sha256": "079566027eb10ddfe7264e9dffe1274a6c025d2795d34998a86b966082a9280e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_62.json",
+      "bytes": 144493,
+      "sha256": "b8e7a22cd72f25863c8b802c477efc31726e4b205fc0151940924c195fb21a14"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_63.json",
+      "bytes": 143756,
+      "sha256": "cefddfd1e3373216db49248aa1c1779813608fce9e64c0f706046f4b3fcc9cfe"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_64.json",
+      "bytes": 144050,
+      "sha256": "c6c2e56d5786e06b553686532366e548c64c122b9fbc9697ca39fcba3aaaa599"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_65.json",
+      "bytes": 143664,
+      "sha256": "e13bda2c2800867a97f26be89d4ec1cd4fb38196e0faedebcd96845c0654b107"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_66.json",
+      "bytes": 143758,
+      "sha256": "a00318178039e4ef64676e6b364aba0830551166fdfa9443cd1c79912dfb86d3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_67.json",
+      "bytes": 144869,
+      "sha256": "841e1f32b00297f61a1ead907d958e5f7b53041793fd6cd92b392ecc4383c6fe"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_68.json",
+      "bytes": 144293,
+      "sha256": "9e1118534d4c4f45284a4e296f4c30caa79a4a4b90e85e63438630592f24a61b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_69.json",
+      "bytes": 144874,
+      "sha256": "475cbd7ad88c0c03234c77a3fdf294ffb828f90efbc6141d8f7f308fd2d8de1e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_7.json",
+      "bytes": 142776,
+      "sha256": "770b934b531e556b61c9cb2b3e962298355748852876f790661d67ddd6be126a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_70.json",
+      "bytes": 145326,
+      "sha256": "74d2d2119718f97b040296113627c797d2a1354a74e763af2edcb0600ea3cd01"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_71.json",
+      "bytes": 144759,
+      "sha256": "0d7cccc97aedd815647c620dc3d653224b12b4e77b5639f7277f70b1ccf36167"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_72.json",
+      "bytes": 143946,
+      "sha256": "bc450fdafbcb3984740c3c1af1e1a2e150de7cb8297a948c42ee1b978f833038"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_73.json",
+      "bytes": 144077,
+      "sha256": "47f53b7953e79556a336bbc76d7099c0b4b8df97d7bfa77ae39dd0ec0d6a2469"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_74.json",
+      "bytes": 143987,
+      "sha256": "a1b81d258eca81fbdd62f0f22f54b72b968625207aa60b8d05b576b57e12b95a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_75.json",
+      "bytes": 22642,
+      "sha256": "84873aed4d3e518fd26c725e72930ea6be70079ac44ab6fd6572f29eaf22dfe5"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_8.json",
+      "bytes": 143178,
+      "sha256": "795cf0e38ebdc589d844ff2954bb0a6075d06d108cd45727fa4888a646d88916"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_adult_9.json",
+      "bytes": 144255,
+      "sha256": "100f69afcb15c2d1da36d8f3a9f966344099cf1524e46fb1203cad9df7a5b1a7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_0.json",
+      "bytes": 154085,
+      "sha256": "5b88b2355dee60f37411ea9601a19e3b1e489ffc86db141b955c8d21f150ba6b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_1.json",
+      "bytes": 152456,
+      "sha256": "5bbbf2761bf2ecb8e9ca8d93e81f56d74de68d094281393d96b8b1372b7c4b65"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_10.json",
+      "bytes": 155751,
+      "sha256": "22e2674634a3aa7a53450f202cb98d51e8c8001d1b05d70643f77c469e931692"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_11.json",
+      "bytes": 153766,
+      "sha256": "1ef35d912c1ee7f70e7cab16a6eb0c3fe23822355c13640bb839df86d65c5da9"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_12.json",
+      "bytes": 153798,
+      "sha256": "2bf0f4e23a0972e831348301b8c3c9ac228f2d78f6d6a0c1fdb3a74b1130d855"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_13.json",
+      "bytes": 154893,
+      "sha256": "a100b9b26ab46d4c8854aeca3f97bfbde132291454aa16484080adcac55e7e1e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_14.json",
+      "bytes": 152355,
+      "sha256": "ccc24d4ecd3bb1d012581955d3e3454d9cfb8a8deca2c1fb9a5f80e2e8c1d4c2"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_15.json",
+      "bytes": 154530,
+      "sha256": "a8d76207b4ac2f4a80b995881909f6d477389592f0a3a775203f358248037d0a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_16.json",
+      "bytes": 153931,
+      "sha256": "d6dad479cccb5b0557ae58331f3f3d54cb4b847393bebabb0dec1b407245c59a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_17.json",
+      "bytes": 154102,
+      "sha256": "5eff8639157053ed642a63282cd096af6f6cb61ced7b93bb2c7c1c492c4edf83"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_18.json",
+      "bytes": 155245,
+      "sha256": "5f22244d6d940a60e042c15006019404eda1e3af9c447efc93e9765eb3397120"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_19.json",
+      "bytes": 153948,
+      "sha256": "470ebd945bbd5b598d005b2f71bc2d018226af588f58fb91a03d94ed7cb45dbe"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_2.json",
+      "bytes": 151964,
+      "sha256": "81195093fb62263b71167370caec6536320555bfac2cc37b2ed06a0dc86efc31"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_20.json",
+      "bytes": 155233,
+      "sha256": "9caed967eaad42076307d496bc39d8de9e54b4ff8f704782138e34ebe40311ec"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_21.json",
+      "bytes": 154421,
+      "sha256": "80100afa20aabc287a7742459731a729f9b0e9b93cdec52750709c5eb011969f"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_22.json",
+      "bytes": 153085,
+      "sha256": "4d01868ccda1f0a7366bbd5f51f0d467528886f14a0a687e1c93c67a97de106f"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_23.json",
+      "bytes": 152998,
+      "sha256": "e552f250d97f9ed06102d0dc8398e2653fcf12cedce27644dd5b25c69bd656eb"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_24.json",
+      "bytes": 154729,
+      "sha256": "5ee2936c3b1e1008451b90e8f12f5367b228a2c931cfa5a308c5bee6d4cf8ef8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_25.json",
+      "bytes": 154801,
+      "sha256": "5f6383f287a220303d40ac2ebecfd9b07cb892a681437e09843fc50b69c23b54"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_26.json",
+      "bytes": 154761,
+      "sha256": "58e5962d16eaea4d6c6d7fa4a19d7c9707667d4b9d8b03dddebc11e2cd2eacee"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_27.json",
+      "bytes": 154839,
+      "sha256": "b6cedb1173f75da50f21fac1505f60bad5c7a5402364c1bfc7337cd51848ec34"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_28.json",
+      "bytes": 153701,
+      "sha256": "a2331d05c0e4937fb65cdafb9bc7f94e0ed284f8e54f13cd4af7b39631355407"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_29.json",
+      "bytes": 14142,
+      "sha256": "c25a7bffaef28ccb5e13562a3608f931f5535ccdec32bb5a286105eac045c21d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_3.json",
+      "bytes": 152275,
+      "sha256": "d19ca83916342a5a661196c4a804145c814cebffdf4b7b9ffd7f2e3b736bebe0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_4.json",
+      "bytes": 153863,
+      "sha256": "c5e473a30fb5ae24d080c4eed0271941c727583c2e0de8859ea351014426ef88"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_5.json",
+      "bytes": 152688,
+      "sha256": "4616d4742fbbf3ff2371715b32d23c53ef4d52e79d973ea3a9aa6721060bf33e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_6.json",
+      "bytes": 152643,
+      "sha256": "349e2ab3f0097deff16d31c143f72e2d345f6c0ae00279df1603c4696cdd1155"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_7.json",
+      "bytes": 152163,
+      "sha256": "ffb33c906205ace73dae546ba48f45cb85fec211a99cd07af3099429a6c07217"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_8.json",
+      "bytes": 151965,
+      "sha256": "c6a3c92ee588481510fda7d3a19469c2d8e2b29323b74252741ac4f408ddaab0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_female_cercaria_9.json",
+      "bytes": 153104,
+      "sha256": "37f51ae13671b763275899b1639ddc7b8c848ad88ed604c3057b1187bf0a8250"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_0.json",
+      "bytes": 139998,
+      "sha256": "9dafa73ea4e7cc87f916dfdb765d102c7d3285f4004c951c7d1d4243f2445d71"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_1.json",
+      "bytes": 141711,
+      "sha256": "672fb5c75bc62fc4b115a4b8e59eee286477fcd8ffed592612bf9f9dadd2f6d6"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_10.json",
+      "bytes": 140992,
+      "sha256": "5a63e4868e43e39e88b19d44a4e360a13f3ab04dcd31ccc2d171ef9b7193e8bc"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_11.json",
+      "bytes": 140873,
+      "sha256": "aa5bc8410341240652d6d3a3ec5c815eb76ae1ccded03d9fec90585b652318c2"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_12.json",
+      "bytes": 142428,
+      "sha256": "146d73549e7c0d71a15e192db73cdc523a805cbb8f81a7e0e43fdd80c133c38f"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_13.json",
+      "bytes": 142529,
+      "sha256": "ca2f448d22caebff4b6e18de4dcf470aef1923b1ebd941392a3185548377b7e0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_14.json",
+      "bytes": 141623,
+      "sha256": "c41f53943c0dd1c870d938f64056593f008232b7941780e84185607ec14c7482"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_15.json",
+      "bytes": 141267,
+      "sha256": "7e2a93bf51a57f7a789153967ee1966c387178961c86e3550e8ea8b23b3abcec"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_16.json",
+      "bytes": 141873,
+      "sha256": "ed80d00c94a2af5ae76ad498d00cab5a6d7e15e6d79da2f590959cf9f8152df3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_17.json",
+      "bytes": 141747,
+      "sha256": "b9b7a03bd51abac13408203ac1ae0bb5e64bfb76dcd4d1950a946f4bfc366569"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_18.json",
+      "bytes": 141481,
+      "sha256": "ebb130beeb4a2b9a4272fe1c3f1dee17404a536e666118c23f89dc1b9978a374"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_19.json",
+      "bytes": 142148,
+      "sha256": "d891ff42eb73cd57a0093a44d7c84417da567ba8b27c327f1a1adc4ae7816ccf"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_2.json",
+      "bytes": 140268,
+      "sha256": "c5864123e7208da9c49fc7349ea762c517b8d1b40e9dc0f3ab86dea2bbdde761"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_20.json",
+      "bytes": 141715,
+      "sha256": "a1f028a72aea4b1f0392442fda6f8c560de02008724051e53844110c146aea97"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_21.json",
+      "bytes": 141680,
+      "sha256": "c918bb85a746699a81eda77290ffbcfb4e7fa85e9f575eef1272a0838b0ad893"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_22.json",
+      "bytes": 142545,
+      "sha256": "9d92424063d61e1f60598564a3f80190020aa125e74a644a90b53940ad215721"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_23.json",
+      "bytes": 141114,
+      "sha256": "f03dc07d53515924008a367d60192ea3b14ae863441f67f18483edfa78f78550"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_24.json",
+      "bytes": 141408,
+      "sha256": "1e11a537f6b976caece00347e3c94ad213ef218673a5f07a70b86e5162a7afc4"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_25.json",
+      "bytes": 142278,
+      "sha256": "1bb2b4bd0d9120c51669c3a496de2fe170e437ed08a23c84b9a5f4aef3c59dbc"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_26.json",
+      "bytes": 141195,
+      "sha256": "aec580dcdbdfc512ea0a8f8c0953a7de6b66df6c56fc5fbc16c94e9ad2b0af6b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_27.json",
+      "bytes": 141382,
+      "sha256": "31e7e79ab5af72d8dade6beb3072eb468be04db3abefcc9cb3c0bd32fec8c908"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_28.json",
+      "bytes": 141023,
+      "sha256": "6b517a8a74b90c667901f767fae85655f8627a6acda259fd0375294ea218ef87"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_29.json",
+      "bytes": 140844,
+      "sha256": "8d0b3fd63228d03fa798bdb4e55337bc8763772ca28ed2d7b3160a5900cfcbaa"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_3.json",
+      "bytes": 140060,
+      "sha256": "e0f654ba50a715d4a7184e24eb2e85dd3b1164ab9809aa11aa7c693b6a7d9aba"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_30.json",
+      "bytes": 140937,
+      "sha256": "187b44d83a2613076991acf26f5c17c39af5617dce462cdd7532265ceee93a37"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_31.json",
+      "bytes": 140893,
+      "sha256": "9cf16990775a4df1d7f44f8af00df339de3aac909eff992bcb117e5a22b394d4"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_32.json",
+      "bytes": 141160,
+      "sha256": "f2db101eb94a7532789ccf54538d588f4905f59606bd9e52409149ccd3df953e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_33.json",
+      "bytes": 143103,
+      "sha256": "215d3e41ae7f3b4620498a985be6837f0295a385400a615c310df6f64353b0a2"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_34.json",
+      "bytes": 142550,
+      "sha256": "9d3682c008a795e1dee13e7ea38a0009f9be9b4d8ce62e6de7097c45f0a60396"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_35.json",
+      "bytes": 140796,
+      "sha256": "882cbd229f66fee0296db319a09c0eccfa0284f3cdfff13771be502436ff13a3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_36.json",
+      "bytes": 141117,
+      "sha256": "81d9b42addc8169b31fecb268607f486f716aceaba57a54dbbb6fbf417003cef"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_37.json",
+      "bytes": 142933,
+      "sha256": "07c834a8f247c1b2ed661bfa083bcb856912e0db075cbf694188dc4a9e5ca963"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_38.json",
+      "bytes": 141298,
+      "sha256": "4f2d1b85e7f5e5a57be752abfceaa7c96a98645c9527a12e10576370148a9ba2"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_39.json",
+      "bytes": 119173,
+      "sha256": "1a0b6114f36154fcfcdc296ae00300d3095f2fb6bd019e57a986f22b45f6d2f7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_4.json",
+      "bytes": 140652,
+      "sha256": "8f2a16c251faf7f9f1becc89327f2706bb878c7997f20880684cb75acdec920b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_5.json",
+      "bytes": 141638,
+      "sha256": "3a81972d39027ab6de39b61c975ac7e59d753baf83be3ae352b381ee7d058c9e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_6.json",
+      "bytes": 140594,
+      "sha256": "77a0a6b2b19e65469ba56269b6d9d943cf4879dffeed954cd002cb1285a711d9"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_7.json",
+      "bytes": 139963,
+      "sha256": "46c263d008a83342a5497e1e79feac626a35b3c1672197c5134337d30310cfd8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_8.json",
+      "bytes": 139870,
+      "sha256": "259b6a36ff8e80fa0d06ca8d6868f8acce2ffb281857cada9f1d7f48ab545e4d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_adult_9.json",
+      "bytes": 140148,
+      "sha256": "19ac1fb5375a5b775baca8d37b399e66d3b192acc18ba7d34201fc1e58826761"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_0.json",
+      "bytes": 150572,
+      "sha256": "3d2d046bbdb9d3d37ee3326a55ae6194cc06e72666d51d7760de3c8f0ff806be"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_1.json",
+      "bytes": 150483,
+      "sha256": "6de4c26481a7e3952242a8e8141ce4c53145c9cdb7e74fa0f8cf9f86dc251b2f"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_10.json",
+      "bytes": 151181,
+      "sha256": "6ed4884a1b4c0958219f74d5a04655f59894cab2c02cbbe0994cdff0509673e7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_11.json",
+      "bytes": 151379,
+      "sha256": "d164200bb66475be318b8b8ce25846b231b173bc8905f37e99d3e7969c0abf06"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_12.json",
+      "bytes": 150905,
+      "sha256": "05ab3e8edf82d3712b2058e8a715618b68b0e0a511325255a0068cc9d15b6a4c"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_13.json",
+      "bytes": 151521,
+      "sha256": "a8fbffff30fdbc440ca8d95e125d8e4a8627971982a1c51b58e7a521998ee9eb"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_14.json",
+      "bytes": 150819,
+      "sha256": "e9ca8014d3ccf984b41f6415e45a0c0da442e2bfda489a3aeb769778f87a1573"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_15.json",
+      "bytes": 152695,
+      "sha256": "cb3c50151820963e85a0e2b7a0580f339db96833b2bc46c9f308a6009b3ef7d3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_16.json",
+      "bytes": 153132,
+      "sha256": "1530465cddef1052201cafb15be3ba1e66a8970e67ea3e41e9a3c9955e0f52ec"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_17.json",
+      "bytes": 151947,
+      "sha256": "8734c1fdc7a4da09ebe5da07457651e0de8d22465a98cfac3202b96e34d299e0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_18.json",
+      "bytes": 151439,
+      "sha256": "42d0ddfef88f989bd4c254cb5add021dd21faa1e0a29d6e7c45ce021d307d34b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_19.json",
+      "bytes": 151902,
+      "sha256": "39f6be1a22fc00b891ae6e9dbbf0b408f1337334790cb79269a220460ef1e7a7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_2.json",
+      "bytes": 150470,
+      "sha256": "82ae0debe60ea94e7865abcdf9bb4100a2f96c5ccb38afcc29816c32c7048f5e"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_20.json",
+      "bytes": 152310,
+      "sha256": "3e778cb21a4a68c668554d85077e7926f28f34d2f921483fe9f4c4c37ab29b1b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_21.json",
+      "bytes": 151078,
+      "sha256": "a86ed57ff195aceb7ffbd935349fd65aa359734fce25fe7c11a77ae0952d65a0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_22.json",
+      "bytes": 151604,
+      "sha256": "b48108018f47102724f2242457f574fa7e476430fd6b66c486213233ddfe13df"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_23.json",
+      "bytes": 152025,
+      "sha256": "a43956698d53b0924701460a66b1074469d4bbf6f4ffe2ee0077dea3cf9d2093"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_24.json",
+      "bytes": 151803,
+      "sha256": "121e1ed49b64066bbced3f2a0cd8408f592b28e57a03701ee92e68beefe4f538"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_25.json",
+      "bytes": 152301,
+      "sha256": "d1827202358efaaed571773647c50f791eea596050c22e32d6d15811a9b5295a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_26.json",
+      "bytes": 152224,
+      "sha256": "d8e5b5ff6cea2d1ca61fd604fbf2edd53654b5dbf651ed24cd8b47af362b6918"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_27.json",
+      "bytes": 152701,
+      "sha256": "1d1dc7a7f7e0125647e66fd3e1682fc46c36b5e7fcd0d000ce04cfda245a0212"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_28.json",
+      "bytes": 149726,
+      "sha256": "983aa75ccc8faaaf24e620c98c15ea87f8a80da6ff3db3cd984665b6d568f35f"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_29.json",
+      "bytes": 151858,
+      "sha256": "92f6ecddfb23a87355d801347a4d14b19a60e67bba2321ca6700bfbe07a67e8b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_3.json",
+      "bytes": 151027,
+      "sha256": "5be26352248cc4a14a7664d0dd1ae0b41354ab7ab45b58af6a88632c46682602"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_30.json",
+      "bytes": 152243,
+      "sha256": "5ace1806618ced373acc06358e398adbb34206ce33e85edb637ea7e44d90a11c"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_31.json",
+      "bytes": 152564,
+      "sha256": "53abc021656e0904a2c50fb38b3386e17db1e2f2f9997a37b90fd75029141a61"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_32.json",
+      "bytes": 151321,
+      "sha256": "d353c57efe451219e92a653f7c011b09e010527f67c36a78e4dd4d32a98df3f6"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_33.json",
+      "bytes": 151625,
+      "sha256": "d36e14d50b46b5d1f20f6c8edfcee5c5aba6e7e6c608172ba22d51fc9b890554"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_34.json",
+      "bytes": 152586,
+      "sha256": "f31b4e134cc063b15885009f11510db1126e3290eaaf773bcfb40a263f7fc2f8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_35.json",
+      "bytes": 150518,
+      "sha256": "d2503ddcc5bdfa60201a274d74aaa91b3ea049b025e40efe610a800688a9955d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_36.json",
+      "bytes": 153049,
+      "sha256": "514acfe30982d487b5050755b639d4be549ebc426aafb83fbdbc2f4acce1db83"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_37.json",
+      "bytes": 151277,
+      "sha256": "22a0049895c2fa0b60ce93d176181874295794a749a1d35f99b975e58ec4505b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_38.json",
+      "bytes": 150765,
+      "sha256": "5e65008ca460a261bc357afa653119d26f82d11432949834fac51a1966cb30e3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_39.json",
+      "bytes": 152224,
+      "sha256": "e98471cf02a7b67eb799bcd92d418a53279402ce5371deb11fc41b61ede200a7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_4.json",
+      "bytes": 149431,
+      "sha256": "86889c42f71d94a3dd7a6aac9809a762858016bc12af965cb2780a81f1be39da"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_40.json",
+      "bytes": 153813,
+      "sha256": "6aa4e5c5b5c6c849d7d19591cb6f6b4788b0a58ac14ad115e2910633d4717b79"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_41.json",
+      "bytes": 152749,
+      "sha256": "023ca9c46238ad2644ef7e9ad39bd8d61041aae7778ce8b328e133dcf49fc6b4"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_42.json",
+      "bytes": 150838,
+      "sha256": "670059fc09d1b011492683cf57588248b4b514cb4ee473f765c0c88872c6e7e7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_43.json",
+      "bytes": 150985,
+      "sha256": "ef530e08c656ac3b7d813102cf05bf8f98cb9f8f712bdadaa5fcc0dd9ed78d7d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_44.json",
+      "bytes": 27118,
+      "sha256": "1592aaa0a30b4292ddaa2b0d350cb9eb75d500f3905f7dfb2e0e9b7fd8e520e5"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_5.json",
+      "bytes": 149794,
+      "sha256": "24cf72899b03d717fda1c62e59c13d492fbca30110913ac969dc316c79b89f44"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_6.json",
+      "bytes": 152312,
+      "sha256": "a4dd20397c61b57d96a32357a615ba9bcfa4baa2f89c40e73f0629ebe2eac00b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_7.json",
+      "bytes": 150587,
+      "sha256": "0c351c0105288d50b8b8055dfadd9d80d86ddf15ce1896450b4cc162cd3a778a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_8.json",
+      "bytes": 150190,
+      "sha256": "402fe3464044ee1085310024503a4d778601266230692fcf286fbaeeb025195c"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K27me3_male_cercaria_9.json",
+      "bytes": 149644,
+      "sha256": "02788d38392ae8f6ccf394dc16d56a42cb83ed7902a9bcc130488e1df7310396"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_0.json",
+      "bytes": 153305,
+      "sha256": "c2fe6a84addc5e169ce1ffadb4845c292b7655504161fa08c2516446dda04cc5"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_1.json",
+      "bytes": 154876,
+      "sha256": "e1a4cdb590fb652253c52947ff408ede320d73bd7fb950276dc076ef0e3a4c77"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_10.json",
+      "bytes": 154842,
+      "sha256": "732b6cd0f95c4cd868f3e6cb069470a694f178ce9575c893051c624fde03d977"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_11.json",
+      "bytes": 154997,
+      "sha256": "a7a2e77fb77970106b2662bf04f5baf9db4eba108a830f69b4ce996ba76a1582"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_12.json",
+      "bytes": 100556,
+      "sha256": "00fbc6fad8177252b384800eb9a4bd38921c1299c462b28deeaeeb12a0e00954"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_2.json",
+      "bytes": 153236,
+      "sha256": "52f15c31188da28ff3b1e917e67b375e2425376720b0962eda7e646b16b0842d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_3.json",
+      "bytes": 154225,
+      "sha256": "f1ae9c42bac30ac4f686c7ce162743f197e33ff4d717d3e253c31c98e12559e0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_4.json",
+      "bytes": 153665,
+      "sha256": "d1bfaec3dbf4a543da1e750515bd61bd1b896ad1357f7d171118d70edf58285d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_5.json",
+      "bytes": 154668,
+      "sha256": "f1b6bd1ce13051aab6d70f807a3f567470c09032c58b2464e1f134f898dcd555"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_6.json",
+      "bytes": 154318,
+      "sha256": "261359e3a9262a396d6abdd974015cacccdfac3fe7b6bb34a1a30a384d73dcc2"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_7.json",
+      "bytes": 153621,
+      "sha256": "767e61c9c37824af5607a8c55923cb4cfb4ad2f35692e7c444db0f95517563d9"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_8.json",
+      "bytes": 153850,
+      "sha256": "96c5a70ee65b9acf028d819cb912fd92413a81fa1f8bd369fd27b78a6facb091"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_adult_9.json",
+      "bytes": 153065,
+      "sha256": "193ca9f593e4de4c215538de7d471c0d3811063859dbaf24c5dc62e2f3158f77"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_0.json",
+      "bytes": 157590,
+      "sha256": "7ffe5765edc581fef844d81d04bbe78ebe4600228513c037c703cb95aca1eee7"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_1.json",
+      "bytes": 159533,
+      "sha256": "c5f923f03dc8460355ec48364ef71e5954dee0cc0fd33fb5ca1d488d291b1c2d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_10.json",
+      "bytes": 160172,
+      "sha256": "f3f6a2cd9af3773dfb6a55e119ba06b70e6c2bee59b57d10a362d8b6cbba3ad2"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_11.json",
+      "bytes": 161040,
+      "sha256": "1c6c216067f3ce71c5a43b82eed5186e35ca678f134e1868c69e4e8b4dfe59f6"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_12.json",
+      "bytes": 151123,
+      "sha256": "f9db52f9d50b21c6cb6dc04505db40ffaffd369068d34c2b9f65fa3050148f71"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_2.json",
+      "bytes": 158079,
+      "sha256": "48ed95b77ef186b37bc471168cc8eba5dc4693941079f21fb2abce410fece625"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_3.json",
+      "bytes": 158169,
+      "sha256": "1c4b371460aa88ee476c68a0439cda36307218ba1ee583a0cc833cbe5dbe09cf"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_4.json",
+      "bytes": 159082,
+      "sha256": "cd894f28bc89cef8df60d6264aa4f5bfc67e5cee9fd89adca502f99f8c8bd43c"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_5.json",
+      "bytes": 158945,
+      "sha256": "321d7fd56e80ea9672691ab015646e4a46b3ad93426672f71a90a41a3917d2d1"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_6.json",
+      "bytes": 158795,
+      "sha256": "e339ab3ea13dbe90c08e5e98413d1fc7998f1a7839ca8fc9c6f925cafed67706"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_7.json",
+      "bytes": 159200,
+      "sha256": "88a095d153b015cc71b18aeaef01e460f98ef1810a564365ed9cdd3bc49a75b0"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_8.json",
+      "bytes": 158519,
+      "sha256": "ddf5547e1523b1f0802cabca94e1d8299387bb9ff967773614ef49609452ff66"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_female_cercaria_9.json",
+      "bytes": 157873,
+      "sha256": "5a51a321d63a1ecd38288473902d4c38a00f1b79630f745bea08a137f4bcc64a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_0.json",
+      "bytes": 148992,
+      "sha256": "ef2530d42a1388933c6d1d35dff59c010460b010e640a867ccbc770caef49bee"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_1.json",
+      "bytes": 150458,
+      "sha256": "bf6dc75b3eee5becda8546f64f5cbe1e583e9a7583f57587cb22e5aa28e9c5c1"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_10.json",
+      "bytes": 149462,
+      "sha256": "fafbba7d952a145147d5c2293d4708b0bee0a427316e54a8e9596c7485116d56"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_11.json",
+      "bytes": 151664,
+      "sha256": "1fd97572085609af55f9f85b1ac88a37932071cbb880b4855b8a9d8f29b9892b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_12.json",
+      "bytes": 151882,
+      "sha256": "9707f83790f789bec80696ab991c76c0b6a162b99f423a683c80919899bdfa57"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_13.json",
+      "bytes": 149887,
+      "sha256": "32b00b5010873994f9eaac4d3fa625f633b33a3d2122ae4311e791f1c02e2ae5"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_14.json",
+      "bytes": 13638,
+      "sha256": "2183d8d6ebe97bbd12a29c77b0d797413dccbab0954d214bbc809c52459ee3df"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_2.json",
+      "bytes": 149660,
+      "sha256": "2ced108003ab2b8e3028738e921491cfb93d32932944e31225b4434ea3d2815d"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_3.json",
+      "bytes": 148636,
+      "sha256": "53df6e4718e33bb09dd8aff0396f7f7334786739dfd273d1d9e312a01488ae73"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_4.json",
+      "bytes": 150393,
+      "sha256": "e92dee31f93c90127bbfd7e4663f67b50a0a02b2fb5ebdb07507c0f3501a0b13"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_5.json",
+      "bytes": 149710,
+      "sha256": "dbc3a34c8154967f0d66e8849d4fc5aa4b199308bb9bc5d72c6fb52c667c4755"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_6.json",
+      "bytes": 149895,
+      "sha256": "cff68bd472108d54b1a1ab666c07faf7654902caa17605a0095ef59a80f62880"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_7.json",
+      "bytes": 150379,
+      "sha256": "223898128a92002fd15cd6d8800d2d81051ce60d784542b0775c1f77dadd3d3b"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_8.json",
+      "bytes": 149671,
+      "sha256": "db6244a358063467aa78a37ef9ac9f238ff01121467a53b49dde3e56828a2410"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_adult_9.json",
+      "bytes": 149894,
+      "sha256": "59fba6ef701aabc69be0cb194f3b67fcd0f46b66fcb66bff39e638604ad1e469"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_0.json",
+      "bytes": 154790,
+      "sha256": "155076a31e6d2ed445775152bf1be79131cba743f9600e531bd7a4b7cc3d98e8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_1.json",
+      "bytes": 156953,
+      "sha256": "fa5d8a2f7b2f77a0c972849608a87aa8149d87d84d61efe24f79c2b03a95c2f3"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_10.json",
+      "bytes": 156597,
+      "sha256": "28daebf3694d6cfe4f5cd85d1588a16a24a2cf1375cec8e0387bcdbd23847fa5"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_11.json",
+      "bytes": 157980,
+      "sha256": "ead6ba7980e54f23ee1ac06a5d2808c1b04002a1607340d1720a621de544a2bb"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_12.json",
+      "bytes": 158539,
+      "sha256": "a707aa8b944714b4493299bebe44255c9e50016a00280c136501887a8f4152fd"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_13.json",
+      "bytes": 157196,
+      "sha256": "f05e6b23b117d25e601b982f3773764c6cb1e12887730634f509fb674a74971f"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_14.json",
+      "bytes": 24029,
+      "sha256": "7fd2c8b03a658242542996bd259e4606ee9f386c8fbddde9e580f311858c97af"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_2.json",
+      "bytes": 156677,
+      "sha256": "ada6f8a67603641756bcecf025eba2d9d1b125082d23be36fe179e8c19f10cef"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_3.json",
+      "bytes": 156293,
+      "sha256": "a92db48d101edbeb3aa9662de87d704ff84798eb36c59c5db07f99429805a79a"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_4.json",
+      "bytes": 157116,
+      "sha256": "2ad51710c7dee0378d480a9cf0bbeefad59cdd2a064fe0c75ecc3c10693aecd9"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_5.json",
+      "bytes": 156183,
+      "sha256": "0a16625adf071c8c652f3561c3895912961646494e15431d0dc9c5d366b005a8"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_6.json",
+      "bytes": 156511,
+      "sha256": "3a3008c55bcfda72e70059fa77a2617fb9e6e3d1f4f21eddf217c8024778cf33"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_7.json",
+      "bytes": 156574,
+      "sha256": "f76a306532f97335ef50d4538df9824c4a16ff1d970b8a80a7edef2656cdd127"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_8.json",
+      "bytes": 156254,
+      "sha256": "da81723426f2e90b4489faa61472ffb7a4449ae36d371e2168320110713d9472"
+    },
+    {
+      "path": "data/chipseq/support/PRJNA312093_H3K4me3_male_cercaria_9.json",
+      "bytes": 155963,
+      "sha256": "f08aad7249ebc5c6673268bd12f9961c103e0b526faf89d5da2c74c96e05ce67"
+    },
+    {
+      "path": "data/chipseq_all_consensus_segments.tsv.gz",
+      "bytes": 6535513,
+      "sha256": "541b499883ee4f9953af8784093b8ae6281494e5ac6870bbe409b52d5a4b3c9d"
+    },
+    {
+      "path": "data/chipseq_gene_mark_stage_evidence.tsv",
+      "bytes": 10400832,
+      "sha256": "16d492037080de67d86abab8d732d387703de4df9c340dba7bc98de9aa179474"
+    },
+    {
+      "path": "data/chipseq_gene_peak_loci.tsv.gz",
+      "bytes": 7149303,
+      "sha256": "6fca4e8f3abfdd7cee5b72a483bf578900f955e3bbee2ffa3311ecdf7f6a6a0a"
+    },
+    {
+      "path": "data/chipseq_gene_position_mark.tsv.gz",
+      "bytes": 313560,
+      "sha256": "5144cd74464bb14a676aa986007fc39b51d45cfc607725948d317ae6668055c8"
+    },
+    {
+      "path": "data/chipseq_idr.tsv.gz",
+      "bytes": 385873,
+      "sha256": "3e9e36bd64b99aa6ea9ca6adf85e6dd5067f5635e88ffd872ac12d823a9feda0"
+    },
+    {
+      "path": "data/chipseq_mark_stage_inventory.tsv",
+      "bytes": 2094,
+      "sha256": "d8609d61c012f257a48c2dcd0db52de38a51a98787c73a700e6066365e02c218"
+    },
+    {
+      "path": "data/chipseq_PRJNA1090249.json",
+      "bytes": 20332,
+      "sha256": "7be5c1ce93b12faa7a39790a3ac44680936a6250a0d8eea971584ed67861166d"
+    },
+    {
+      "path": "data/chipseq_PRJNA1090249_qc.tsv",
+      "bytes": 1087,
+      "sha256": "09371e2606f9fcce23f9069650cb6daaff637426eee8f9c86738166583a98f12"
+    },
+    {
+      "path": "data/chipseq_PRJNA312093.json",
+      "bytes": 72563,
+      "sha256": "be60dde78b0265cf5e51396afa8c7fb8cc0b4ee5d3e1c9ee08a0d34e8742447f"
+    },
+    {
+      "path": "data/chipseq_PRJNA312093_qc.tsv",
+      "bytes": 2066,
+      "sha256": "386fd9384c680f0da0dc9b1afaf0d3fd2a6532ad11fe891c7932ff8ea3fab57c"
+    },
+    {
+      "path": "data/chipseq_regional_candidates.tsv.gz",
+      "bytes": 6535513,
+      "sha256": "541b499883ee4f9953af8784093b8ae6281494e5ac6870bbe409b52d5a4b3c9d"
+    },
+    {
+      "path": "data/chipseq_regional_library_support.tsv.gz",
+      "bytes": 4456078,
+      "sha256": "b4687fd6b2943ec4918ec9d68f16c9e829de07c572971fe7fffbd11c67d58fde"
+    },
+    {
+      "path": "data/chipseq_shared_core.bed",
+      "bytes": 6612701,
+      "sha256": "07474adc476d4af2f6b571fc2ce507e8eb4e42fcf20831c4575cf6b66ced3307"
+    },
+    {
+      "path": "data/contrast_catalog.tsv",
+      "bytes": 21240,
+      "sha256": "146a6ca2eb9e802b406467c53b4c479626cfcf3fd8c68415d7322687870498be"
+    },
+    {
+      "path": "data/external_annotation_evidence.tsv",
+      "bytes": 4756400,
+      "sha256": "1c9c92f446008010b6755a8d7dbe32e618970bd990dde296266123d2b6f04bbc"
+    },
+    {
+      "path": "data/gene_annotations.tsv",
+      "bytes": 2073952,
+      "sha256": "50b5cd4a13fb0a459e9d3133b677d28fe859f523dacd7c044fb7dbc815b5a0d2"
+    },
+    {
+      "path": "data/gene_collections.json",
+      "bytes": 299368,
+      "sha256": "33630c4ac3817f1415136819e08c20b8b24f1f20e7ce691dd7f2efd45b979c19"
+    },
+    {
+      "path": "data/gene_contrast_log2fc.tsv",
+      "bytes": 7887965,
+      "sha256": "a39f7ccc191127092a9c59e85c269c31054823b9017f418704f8df293a45d994"
+    },
+    {
+      "path": "data/gene_contrast_padj.tsv",
+      "bytes": 7370459,
+      "sha256": "3acb6bc28238edb94778f51d0c0fc12dcee4380e40498d2c8f076334c9e45062"
+    },
+    {
+      "path": "data/gene_expression_summary.tsv",
+      "bytes": 10826453,
+      "sha256": "9e5b15e54c0ea769fd11e9e82350a578f3cc87966d76eed740c899efd6ea2404"
+    },
+    {
+      "path": "data/gene_models.json",
+      "bytes": 3104627,
+      "sha256": "5b596d2213bb8f071bf696d4860864a517afa7e4d9677aa744ebd4983a57b5c7"
+    },
+    {
+      "path": "data/histone_modifier_gene_set_v2.tsv",
+      "bytes": 39448,
+      "sha256": "db840956ffd2251cfe03f7ac9a264c49da753ff264598f16ec61a9d630b841bd"
+    },
+    {
+      "path": "data/legacy_transcript_evidence.tsv",
+      "bytes": 7358472,
+      "sha256": "9ea732fdb4e1691e0caf9369cecdaf23fd9ca19224edf36f3dafcdcd77060b16"
+    },
+    {
+      "path": "data/lncrna_annotation_evidence.tsv",
+      "bytes": 4710049,
+      "sha256": "88568b53d9b7a7f8e9a66962bb78328ff512b917d7c31fec0a26b21d46416861"
+    },
+    {
+      "path": "data/pca_coordinates.tsv",
+      "bytes": 98371,
+      "sha256": "b00ece82b0fbcfa6b798558c203c995fb1ddaa5148f5687bf92d0b6d410a9428"
+    },
+    {
+      "path": "data/rna_chip_stage_compatibility.tsv",
+      "bytes": 19885,
+      "sha256": "a75154892386dc16b9180da0aa6ec8061ad0a64e6fa3b7202d59342fb73f0ad4"
+    },
+    {
+      "path": "data/sample_correlation.tsv",
+      "bytes": 663635,
+      "sha256": "30d7786ea6942b4e29f137cb2b8e11ac9f9ec6cd1cbf067870efb20eaad01c86"
+    },
+    {
+      "path": "data/sample_inventory.tsv",
+      "bytes": 68913,
+      "sha256": "8b7fad8ac4b41821c638011ad84010eb7787e6c28279f531bd8533d5466a92bf"
+    },
+    {
+      "path": "data/selected_genes.tsv",
+      "bytes": 46979,
+      "sha256": "7632874111abe389db673dc4ccde3132430e48217410af575ce99e04230548cd"
+    },
+    {
+      "path": "data/study_E-ERAD-478.json",
+      "bytes": 76525,
+      "sha256": "8faaa7e128fa57f27bbda793e81aa26bed440b330b6587f13668c2c560e0962d"
+    },
+    {
+      "path": "data/study_E-MTAB-451.json",
+      "bytes": 11818,
+      "sha256": "5e5dc2b20139b0816caed10545080711cb94dbee02e3f464ecc6c2b5f27ebfb3"
+    },
+    {
+      "path": "data/study_PRJEB14695.json",
+      "bytes": 24423,
+      "sha256": "618d7c5454bab5af8b67f79c6d822b478931c25bbb57b3f61ab3d2998c41cbc7"
+    },
+    {
+      "path": "data/study_PRJEB3190.json",
+      "bytes": 22964,
+      "sha256": "47971759ef251501e56d2186ecdf3e1adb2c18ac3f87e1d59d1d9978892f5aa2"
+    },
+    {
+      "path": "data/study_PRJEB32839.json",
+      "bytes": 67419,
+      "sha256": "276bd6d49018b7a2ef648da56b11b196cce8953b1f83dc17fb6e3279acf51559"
+    },
+    {
+      "path": "data/study_PRJNA1150591.json",
+      "bytes": 14182,
+      "sha256": "855b4df1c9e0efe9f7fddef2a3911a7e10e4809f93f5465a976b7207b6cdfb65"
+    },
+    {
+      "path": "data/study_PRJNA1177852.json",
+      "bytes": 7283,
+      "sha256": "b45eabcd7ff6bfd4a320445b94d5812b2489212af9e8a3101b340fc5648286c4"
+    },
+    {
+      "path": "data/study_PRJNA312093.json",
+      "bytes": 16263,
+      "sha256": "51439f84cf93e016f517aac5c904e6f052a883f1e5df81dc1f02e7fd04940550"
+    },
+    {
+      "path": "data/study_PRJNA428470.json",
+      "bytes": 7812,
+      "sha256": "56404a0284c1b0930748f8a1ae110fedec7574bbbcefd5bf7fe291f1cd22b9fe"
+    },
+    {
+      "path": "data/study_PRJNA597909.json",
+      "bytes": 19381,
+      "sha256": "b38b8ee824a76811123b1fa348ee1e3e3fbaf188524c77485ed0ce81b01b90a2"
+    },
+    {
+      "path": "data/study_PRJNA602528.json",
+      "bytes": 8348,
+      "sha256": "2d263e1cb4e2237c260051224f642a2c4a00f44d453bfcbc518ddfc10ba3c47e"
+    },
+    {
+      "path": "data/study_PRJNA704646.json",
+      "bytes": 8314,
+      "sha256": "4895b847d2a582b22a2de4da54648c2502ca1a1d4efab374ffd0cee76fccc100"
+    },
+    {
+      "path": "data/study_summary.tsv",
+      "bytes": 2684,
+      "sha256": "dd61a8c2d7f348d27e5d3ffc5e833197c768206ebf6c56fbf494ede5e02f151f"
+    },
+    {
+      "path": "expression_chromatin.js",
+      "bytes": 13244,
+      "sha256": "8df4862d27b1afea0722be6dfac290a17f5a06557059debc996caa8edba65ebc"
+    },
+    {
+      "path": "figures/chipseq_assay_inventory.svg",
+      "bytes": 6990,
+      "sha256": "76ffa414337a725a7b2473f4bfb8216f39ca55649419d90a4d30e699ce6b09e8"
+    },
+    {
+      "path": "figures/contrast_significance_summary.svg",
+      "bytes": 24620,
+      "sha256": "3b2a1a7bc9c955f26abe8c300721a7753ec113c3ba18b15522a326ac86cd6d38"
+    },
+    {
+      "path": "figures/E-ERAD-478_candidate_expression_heatmap.svg",
+      "bytes": 394176,
+      "sha256": "9a3eab95218667da894f7fbd5e57b1ef0a095aaf88748e46698b907970342064"
+    },
+    {
+      "path": "figures/E-ERAD-478_pca_by_condition.svg",
+      "bytes": 15362,
+      "sha256": "2fab3511bef2067a3d7c68f724f3b3501a94e3a49ccf5e7688661bd42db376e5"
+    },
+    {
+      "path": "figures/E-MTAB-451_candidate_expression_heatmap.svg",
+      "bytes": 139748,
+      "sha256": "a787630a215f0de43f85d198e55eef0cfd69ee603173a74234c952e6b5499622"
+    },
+    {
+      "path": "figures/E-MTAB-451_pca_by_condition.svg",
+      "bytes": 5115,
+      "sha256": "e99ff57cce249062c9f956661f8240eb86a7aef389d6bc1e09b52dc8e43dc6f9"
+    },
+    {
+      "path": "figures/global_pca_by_stage.svg",
+      "bytes": 52584,
+      "sha256": "d10b97aeef7db5683a0acb2f2d2e0c00eb188f6917a29f9fca9dddcb30008601"
+    },
+    {
+      "path": "figures/global_pca_by_study.svg",
+      "bytes": 51103,
+      "sha256": "94349da75cbaf171097c45df436496b9a7065685a3bf214d0a4b08ce141553c7"
+    },
+    {
+      "path": "figures/PRJEB14695_candidate_expression_heatmap.svg",
+      "bytes": 211739,
+      "sha256": "97253d3817f9c700dc8eda76e67371b16d9cafb520fd64109fa27d6934764df3"
+    },
+    {
+      "path": "figures/PRJEB14695_pca_by_condition.svg",
+      "bytes": 7788,
+      "sha256": "0cb92ddae3fa60c8af752d3d5fa0427cd8dccbb317e39782335555a2352fbb72"
+    },
+    {
+      "path": "figures/PRJEB3190_candidate_expression_heatmap.svg",
+      "bytes": 187499,
+      "sha256": "b0fdaf0d83a9e501c24c7e5ea0261b5d85cdce71589a4c359e251964f749d299"
+    },
+    {
+      "path": "figures/PRJEB3190_pca_by_condition.svg",
+      "bytes": 7033,
+      "sha256": "218ce05718035a2f0d2275a848bd5e54d731422bae6e95ec5f4f105c51d7bee1"
+    },
+    {
+      "path": "figures/PRJEB32839_candidate_expression_heatmap.svg",
+      "bytes": 372265,
+      "sha256": "a3ae053d50e21333af2590a6de3d53f8c0d1560deb9b5049af3bd573956e63f3"
+    },
+    {
+      "path": "figures/PRJEB32839_pca_by_condition.svg",
+      "bytes": 17766,
+      "sha256": "9ef8350470a309bbbc087ac3f1ad56a54da8f7f7bbafc7af8878b479ec9d3e77"
+    },
+    {
+      "path": "figures/PRJNA1150591_candidate_expression_heatmap.svg",
+      "bytes": 94676,
+      "sha256": "38efbcee830124c37b1ea40a7cf68906d592452e79d4ef70c130a413b1a516ee"
+    },
+    {
+      "path": "figures/PRJNA1150591_pca_by_condition.svg",
+      "bytes": 5675,
+      "sha256": "281c9afeff44369083dd1bc662a42074d3e35d1ea0412f6783907180faa3fcdd"
+    },
+    {
+      "path": "figures/PRJNA1177852_candidate_expression_heatmap.svg",
+      "bytes": 206015,
+      "sha256": "1229bd0434981bce13b7072bae8769e27ed5a8cfdcf3839e454838745d2e06cc"
+    },
+    {
+      "path": "figures/PRJNA1177852_pca_by_condition.svg",
+      "bytes": 4819,
+      "sha256": "b265bdb3fda3845f64d64e35b1bc217c9dd3faf2562b35335e0d3c6248bcd284"
+    },
+    {
+      "path": "figures/PRJNA312093_candidate_expression_heatmap.svg",
+      "bytes": 171925,
+      "sha256": "e9fcf9059bf5dd6c948da4ab24d3bd3d9b60688f7460a159c69498d4e6970c17"
+    },
+    {
+      "path": "figures/PRJNA312093_pca_by_condition.svg",
+      "bytes": 5791,
+      "sha256": "eb591a04b2f206b7754b49f84f9971bf581b0417962c55b06ff8af6c3d1977e8"
+    },
+    {
+      "path": "figures/PRJNA428470_candidate_expression_heatmap.svg",
+      "bytes": 71485,
+      "sha256": "c509cd19b6b7b388767e05e1c591eb9c685025ad28873ce80c2d34af4feb3b47"
+    },
+    {
+      "path": "figures/PRJNA428470_pca_by_condition.svg",
+      "bytes": 3946,
+      "sha256": "4af2c19414db9466be5d3e85ed098f80956ec47c05dfce6b6d30d0245d00ad02"
+    },
+    {
+      "path": "figures/PRJNA597909_candidate_expression_heatmap.svg",
+      "bytes": 115917,
+      "sha256": "d12a232bd10ac19f4ce4f731cfbfcfe404a9fb38b1993554ea6465882cb3a559"
+    },
+    {
+      "path": "figures/PRJNA597909_pca_by_condition.svg",
+      "bytes": 6525,
+      "sha256": "eabe820717685f595d8051de69486a13b8c7d6c2310f56f77153cd541f90a97f"
+    },
+    {
+      "path": "figures/PRJNA602528_candidate_expression_heatmap.svg",
+      "bytes": 245132,
+      "sha256": "c6c17e2dc65ac8162715b102bbfdb3513e8069edc1ef37b2b41b8baca8446ec5"
+    },
+    {
+      "path": "figures/PRJNA602528_pca_by_condition.svg",
+      "bytes": 5202,
+      "sha256": "34e0d6bdd4b1db6566518fd2b01fb4338db726ae73e75708722def8b0fa3a7fb"
+    },
+    {
+      "path": "figures/PRJNA704646_candidate_expression_heatmap.svg",
+      "bytes": 223801,
+      "sha256": "2aad874be28a89f12a7fd171be9294222a754b46dac4d1c202527d84ea8b1d00"
+    },
+    {
+      "path": "figures/PRJNA704646_pca_by_condition.svg",
+      "bytes": 5261,
+      "sha256": "aa32f4414d3f055e6a9996a10d315b16d9a6a40bf71a83d0c931637176e0aa79"
+    },
+    {
+      "path": "figures/qc_classification.svg",
+      "bytes": 6947,
+      "sha256": "7e7d31ddc155455831a72e24a9bad90fa5f31cb5eec80d90bd964783f303dc3c"
+    },
+    {
+      "path": "figures/rna_chip_stage_coverage.svg",
+      "bytes": 18652,
+      "sha256": "2a4d6c50540543fab00fec3fe27c3736c6438cd06a0df0024bb4a0da1dc3882a"
+    },
+    {
+      "path": "figures/sample_correlation.svg",
+      "bytes": 13825768,
+      "sha256": "feaf79fcb8b8306df6f11ade9e4ba3ec2a535d21ee2b9d3c7d37b3028f077a44"
+    },
+    {
+      "path": "figures/selected_gene_contrast_matrix.svg",
+      "bytes": 1717035,
+      "sha256": "622ddb41f9b0023f9ac5c62cea28687f88a68cbcc17f4e3eb9b144f38a7137ba"
+    },
+    {
+      "path": "figures/selected_gene_expression_heatmap.svg",
+      "bytes": 2350943,
+      "sha256": "db5d21f76708581f4261f0bfa2afb4d9a13bdee9f15a11cde0b7de958de18b79"
+    },
+    {
+      "path": "figures/study_composition.svg",
+      "bytes": 5735,
+      "sha256": "b5820561d6b658f9a1f177206df43fd3ec2dde315ca65004a1923cc1c9de074c"
+    },
+    {
+      "path": "fonts/IBMPlexSans-Medium.woff2",
+      "bytes": 66740,
+      "sha256": "5660f8a658f8bb50dbc005232f885eadffd2bc1c235c4f6fbb63469d1f9cde6d"
+    },
+    {
+      "path": "fonts/IBMPlexSans-Regular.woff2",
+      "bytes": 63020,
+      "sha256": "ba711a3085ff9f27440b6b9c4550cfc47c97bf36591d5da958b975bb3add8c1a"
+    },
+    {
+      "path": "fonts/IBMPlexSans-SemiBold.woff2",
+      "bytes": 67060,
+      "sha256": "f78048030eab62e860efa39a0df79e2e5581bf122eb95b9bc42c0b8a4988d205"
+    },
+    {
+      "path": "fonts/LICENSE.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "fonts/provenance.json",
+      "bytes": 1411,
+      "sha256": "7c617b02520348b7ca34511f89d3573249f8d1a19bbbe85cf03135de894e797c"
+    },
+    {
+      "path": "gene_collections.css",
+      "bytes": 4900,
+      "sha256": "3c2911f57e685b223a8ac7fe002db20af90d41d3abe445c5318faf8bf10d0790"
+    },
+    {
+      "path": "gene_collections.js",
+      "bytes": 10851,
+      "sha256": "99da68d2c1b3b58c3a561672d28c38e89901f81db705019cbc0589fb95193044"
+    },
+    {
+      "path": "machinery.html",
+      "bytes": 462,
+      "sha256": "cb24cdc3b3ad2ac9e87e454ee6c403a3f20dbf0b379f270f94f0eebc609cf68b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2044,
+      "sha256": "e65c4c310112533c62232bb32d60cc2e257e928e53381d4f26485872b1b8593c"
+    },
+    {
+      "path": "rna_collections.js",
+      "bytes": 10164,
+      "sha256": "09e473bfd678a4309d88663d94943eeeb0ae4ac55f04af57e403743fcaeb4b1c"
+    },
+    {
+      "path": "size_report.json",
+      "bytes": 626,
+      "sha256": "e13440ca6c1a0cb245afbabbab849e391a4d8a910a160ee6b862bd0aad2c8fbc"
+    },
+    {
+      "path": "study_E-ERAD-478.html",
+      "bytes": 156464,
+      "sha256": "365fb78aa4c0d44a87c603379d3a895eee4ce83e142d0b1caa68282b8a5011bd"
+    },
+    {
+      "path": "study_E-MTAB-451.html",
+      "bytes": 156464,
+      "sha256": "9237a8f822810c0cd3498507cd679e9bd5ad92e8c10a33250241e84fa9a6d9b4"
+    },
+    {
+      "path": "study_PRJEB14695.html",
+      "bytes": 156464,
+      "sha256": "d8fdc053f4e84f7bbc4234fc87bd3ccf2aeb5cadac865739900d7fd539393660"
+    },
+    {
+      "path": "study_PRJEB3190.html",
+      "bytes": 156461,
+      "sha256": "31313d0793a0a7a3d2e8157b2f8c5bee35ec6c70acc0096d7f274a9dcee9a7fb"
+    },
+    {
+      "path": "study_PRJEB32839.html",
+      "bytes": 156464,
+      "sha256": "a6c0610bfa28fbd6d2aea029bedecaf94e0400db96bf0b716a09027338744c80"
+    },
+    {
+      "path": "study_PRJNA1150591.html",
+      "bytes": 156470,
+      "sha256": "777482559abc5a421d8d90b817deb227ff19e67381e8bb2069393b8968acb16f"
+    },
+    {
+      "path": "study_PRJNA1177852.html",
+      "bytes": 156470,
+      "sha256": "bfffb6317f42f6e7bbede125223eb36f4d1099f9ea0887a0db7ea36e04cbef13"
+    },
+    {
+      "path": "study_PRJNA312093.html",
+      "bytes": 156467,
+      "sha256": "022215913059f68a3c09b7aff104e712664686a2795c53af61ded87277bfc6e3"
+    },
+    {
+      "path": "study_PRJNA428470.html",
+      "bytes": 156467,
+      "sha256": "9dd6615f4d4f9dbb0ff8d07d40ef4969791d208a1e0425cf0177b90ab37f7265"
+    },
+    {
+      "path": "study_PRJNA597909.html",
+      "bytes": 156467,
+      "sha256": "a99ff8f33f9048bd4bc43feb6ba744f82bff22f52569e4f41a1c70df0cd525d5"
+    },
+    {
+      "path": "study_PRJNA602528.html",
+      "bytes": 156467,
+      "sha256": "f5b0339ffa15c0df44e2cb3e99f05f2aaaaa4431f0030d2f7801c19130c06bdc"
+    },
+    {
+      "path": "study_PRJNA704646.html",
+      "bytes": 156467,
+      "sha256": "a4977868447a5f4a69e83017e5acbbf468f4001f6a86f3f17613aaa0f43ee414"
+    },
+    {
+      "path": "vendor/chipseq/bbi_reader.js",
+      "bytes": 75225,
+      "sha256": "4d9b2b5e8a0e40e06ac37c5193979b0996224714858978539a600a4e7610606b"
+    },
+    {
+      "path": "vendor/chipseq/gmod_bbi_LICENSE",
+      "bytes": 1068,
+      "sha256": "39184c73ba247598eb44725216007bb74c6e8fde788b4737a2b3cec65f1b1aa3"
+    },
+    {
+      "path": "vendor/chipseq/gmod_shared-read-cache_LICENSE",
+      "bytes": 1068,
+      "sha256": "87f4ab5e72012ee4f455001c56fba264fc7f12a5f09be13b56cd2e8d87ceb150"
+    },
+    {
+      "path": "vendor/chipseq/package.json",
+      "bytes": 33,
+      "sha256": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035"
+    },
+    {
+      "path": "vendor/chipseq/provenance.json",
+      "bytes": 407,
+      "sha256": "a034c6d2e7af51062000033a2635fc31298cca603d7090df21d53f57b7d2e882"
+    }
+  ]
+}

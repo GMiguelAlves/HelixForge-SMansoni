@@ -1,0 +1,16 @@
+{
+  "scope": "static_bundle_with_gzip_downloads",
+  "payload_bytes": 56788826,
+  "chip_payload_bytes": 3426541,
+  "chip_studies": 2,
+  "chip_associations": 244788,
+  "all_gene_scope": true,
+  "chip_explorer_json_bytes": 4753479,
+  "chip_explorer_library_peaks": 3080,
+  "chip_explorer_initial_asset_bytes": 5362455,
+  "shared_collection_asset_bytes": 542493,
+  "collection_reference_genes": 9920,
+  "collection_preset_genes": 118,
+  "bundle_content_bytes": 313351675,
+  "note": "Sparse observed associations only; no dense all-genes \u00d7 marks \u00d7 stages matrix. Browser timing is measured separately."
+}

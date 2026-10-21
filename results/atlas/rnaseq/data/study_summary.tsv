@@ -1,0 +1,13 @@
+study	biological_samples	technical_runs	conditions	stages	qc_pass	qc_review	qc_fail	qc_not_recorded	mapping_mean_percent	mapping_min_percent	mapping_max_percent	trim_retention_mean_percent	trim_retention_min_percent	trim_retention_max_percent	differential_expression	interpretation_warning
+PRJNA602528	10	10	10	1	10	0	0	0	82.46	68.55	89.495	99.93	99.897	99.948	NO_DESCRIPTIVE_ONLY	
+PRJNA597909	20	20	4	2	20	0	0	0	87.955	85.776	89.918	100.0	100.0	100.0	YES	
+PRJEB14695	23	138	8	1	20	3	0	0	71.069	39.186	85.668	94.719	86.126	98.889	YES	
+PRJEB32839	75	150	15	8	54	21	0	0	69.886	17.247	86.957	92.261	43.363	98.68	YES	
+E-MTAB-451	11	12	5	4	11	0	0	0	73.334	62.261	78.873	97.114	95.555	99.09	YES	
+PRJEB3190	20	20	7	7	20	0	0	0	82.239	63.14	88.954	99.453	97.981	99.948	YES	
+E-ERAD-478	60	120	16	4	60	0	0	0	85.528	75.026	91.841	99.179	97.801	99.638	YES	
+PRJNA704646	8	24	8	2	5	3	0	0	67.823	53.739	80.002	99.213	96.516	99.765	NO_DESCRIPTIVE_ONLY	Descriptive expression only. Three of eight biological pools are QC REVIEW for Salmon mapping below 60%; the 24 runs are technical repeats, not biological replicates. No differential-expression inference is supported.
+PRJNA1150591	15	15	3	2	15	0	0	0	77.53	67.795	88.354	99.783	99.668	99.867	YES	Only the prespecified 7-week adult meclonazepam-versus-control contrast is inferential. Five treated 4-week juveniles remain in the fitted ~ condition model by project decision; this does not estimate an age effect. Biological interpretation of individual genes remains provisional.
+PRJNA312093	12	12	6	3	12	0	0	0	77.415	67.593	82.633	96.383	88.776	98.253	YES	RESTRICTED_REFIT; TWO_REPLICATES_PER_GROUP; SOURCE_IDENTITY_LIMITATION. Only the 12 approved schistosomulum libraries and three reviewed sex contrasts from the restricted refit are included. Adult and cercaria libraries and contrasts are NOT_EVALUABLE and excluded. Do not substitute the original 20-sample DE results or relabel libraries.
+PRJNA1177852	8	8	8	1	8	0	0	0	76.285	66.989	82.525	99.875	99.835	99.937	NO_DESCRIPTIVE_ONLY	Descriptive meclonazepam time series only: eight time points, one biological library per time point and no parallel control. Expression trends are not statistically supported treatment effects; no DE contrasts are included.
+PRJNA428470	6	6	2	1	2	4	0	0	48.594	34.612	60.826	98.912	98.621	99.175	YES	CODING_GENE_SCOPE; REVIEW_4_OF_6. The frozen adult-female 5-azacitidine-versus-control contrast is retained with Salmon mRNA mapping of 34.61–60.83%. Leave-one-out fits support effect stability but do not replace the full fit. Claims are restricted to quantified coding genes; the unquantified read fraction, lncRNAs and drug-target identity are not established.

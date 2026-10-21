@@ -1,0 +1,206 @@
+{
+  "study": "PRJNA428470",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "differential_expression": true,
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "provider": "deseq2",
+  "test": "wald",
+  "analysis_id": "smansoni_prjna428470_primary",
+  "blocked_reason": "",
+  "interpretation_warning": "CODING_GENE_SCOPE; REVIEW_4_OF_6. The frozen adult-female 5-azacitidine-versus-control contrast is retained with Salmon mRNA mapping of 34.61–60.83%. Leave-one-out fits support effect stability but do not replace the full fit. Claims are restricted to quantified coding genes; the unquantified read fraction, lncRNAs and drug-target identity are not established.",
+  "samples": [
+    {
+      "study": "PRJNA428470",
+      "sample_id": "female_adult_5azac_r1",
+      "sample_key": "PRJNA428470__female_adult_5azac_r1",
+      "source_sample_name": "5-AzaC1",
+      "biosample": "SAMN08291406",
+      "condition": "female_adult_5azac",
+      "stage": "adult",
+      "tissue": "whole_organism",
+      "sex": "female",
+      "infection_mode": "not_declared",
+      "treatment": "5_azacitidine",
+      "time_hours": "not_applicable",
+      "batch": "not_declared",
+      "replicate": "1",
+      "technical_runs": 1,
+      "qc_classification": "REVIEW",
+      "trim_retention_percent": 98.72,
+      "salmon_mapping_percent": 45.804,
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "qc_reason": "salmon_mapping_below_review_threshold"
+    },
+    {
+      "study": "PRJNA428470",
+      "sample_id": "female_adult_5azac_r2",
+      "sample_key": "PRJNA428470__female_adult_5azac_r2",
+      "source_sample_name": "5-AzaC2",
+      "biosample": "SAMN08291485",
+      "condition": "female_adult_5azac",
+      "stage": "adult",
+      "tissue": "whole_organism",
+      "sex": "female",
+      "infection_mode": "not_declared",
+      "treatment": "5_azacitidine",
+      "time_hours": "not_applicable",
+      "batch": "not_declared",
+      "replicate": "2",
+      "technical_runs": 1,
+      "qc_classification": "REVIEW",
+      "trim_retention_percent": 99.03,
+      "salmon_mapping_percent": 34.612,
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "qc_reason": "salmon_mapping_below_review_threshold"
+    },
+    {
+      "study": "PRJNA428470",
+      "sample_id": "female_adult_5azac_r3",
+      "sample_key": "PRJNA428470__female_adult_5azac_r3",
+      "source_sample_name": "5-AzaC3",
+      "biosample": "SAMN08291486",
+      "condition": "female_adult_5azac",
+      "stage": "adult",
+      "tissue": "whole_organism",
+      "sex": "female",
+      "infection_mode": "not_declared",
+      "treatment": "5_azacitidine",
+      "time_hours": "not_applicable",
+      "batch": "not_declared",
+      "replicate": "3",
+      "technical_runs": 1,
+      "qc_classification": "PASS",
+      "trim_retention_percent": 99.175,
+      "salmon_mapping_percent": 60.826,
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "qc_reason": "none"
+    },
+    {
+      "study": "PRJNA428470",
+      "sample_id": "female_adult_control_r1",
+      "sample_key": "PRJNA428470__female_adult_control_r1",
+      "source_sample_name": "Control1",
+      "biosample": "SAMN08291589",
+      "condition": "female_adult_control",
+      "stage": "adult",
+      "tissue": "whole_organism",
+      "sex": "female",
+      "infection_mode": "not_declared",
+      "treatment": "control",
+      "time_hours": "not_applicable",
+      "batch": "not_declared",
+      "replicate": "1",
+      "technical_runs": 1,
+      "qc_classification": "REVIEW",
+      "trim_retention_percent": 98.962,
+      "salmon_mapping_percent": 49.661,
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "qc_reason": "salmon_mapping_below_review_threshold"
+    },
+    {
+      "study": "PRJNA428470",
+      "sample_id": "female_adult_control_r2",
+      "sample_key": "PRJNA428470__female_adult_control_r2",
+      "source_sample_name": "Control2",
+      "biosample": "SAMN08291559",
+      "condition": "female_adult_control",
+      "stage": "adult",
+      "tissue": "whole_organism",
+      "sex": "female",
+      "infection_mode": "not_declared",
+      "treatment": "control",
+      "time_hours": "not_applicable",
+      "batch": "not_declared",
+      "replicate": "2",
+      "technical_runs": 1,
+      "qc_classification": "REVIEW",
+      "trim_retention_percent": 98.963,
+      "salmon_mapping_percent": 40.451,
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "qc_reason": "salmon_mapping_below_review_threshold"
+    },
+    {
+      "study": "PRJNA428470",
+      "sample_id": "female_adult_control_r3",
+      "sample_key": "PRJNA428470__female_adult_control_r3",
+      "source_sample_name": "Control3",
+      "biosample": "SAMN08291590",
+      "condition": "female_adult_control",
+      "stage": "adult",
+      "tissue": "whole_organism",
+      "sex": "female",
+      "infection_mode": "not_declared",
+      "treatment": "control",
+      "time_hours": "not_applicable",
+      "batch": "not_declared",
+      "replicate": "3",
+      "technical_runs": 1,
+      "qc_classification": "PASS",
+      "trim_retention_percent": 98.621,
+      "salmon_mapping_percent": 60.209,
+      "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+      "qc_reason": "none"
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast_key": "PRJNA428470:condition__female_adult_5azac_vs_female_adult_control",
+      "display_id": "PRJNA428470:C01",
+      "study": "PRJNA428470",
+      "factor": "condition",
+      "numerator": "female_adult_5azac",
+      "denominator": "female_adult_control",
+      "direction": "female_adult_5azac/female_adult_control",
+      "description": "female_adult_5azac versus female_adult_control",
+      "tested_genes": 9307,
+      "significant_genes": 1454,
+      "upregulated": 468,
+      "downregulated": 986,
+      "alpha": 0.05,
+      "absolute_log2_fold_change": 1.0,
+      "interpretation_warning": "CODING_GENE_SCOPE; REVIEW_4_OF_6. The frozen adult-female 5-azacitidine-versus-control contrast is retained with Salmon mRNA mapping of 34.61–60.83%. Leave-one-out fits support effect stability but do not replace the full fit. Claims are restricted to quantified coding genes; the unquantified read fraction, lncRNAs and drug-target identity are not established.",
+      "analysis_id": "smansoni_prjna428470_primary"
+    }
+  ],
+  "sources": [
+    {
+      "path": "config/PRJNA428470/de_spec.json",
+      "sha256": "190bae5a419636ab11a96482b071d1d9422f1c409f4615f25490bbb8671a0d19"
+    },
+    {
+      "path": "metadata/PRJNA428470/samples.tsv",
+      "sha256": "1059cc5c8b6a6866b841b0c705108fbe94925f578693cc32c2b1b0f9ec306418"
+    },
+    {
+      "path": "results/PRJNA428470/differential_expression/contrasts/DEG_condition__female_adult_5azac_vs_female_adult_control.tsv",
+      "sha256": "13ce0ecd3faf8256e961f0eaceb2503f33d725afb981074e12748b4f19a6f4bd"
+    },
+    {
+      "path": "results/PRJNA428470/expression/tpm_matrix.tsv",
+      "sha256": "21cb9af8c886b5b54569db37af8a13e401ae97323cdfd0a09cf9860740d683b3"
+    },
+    {
+      "path": "results/PRJNA428470/qc/qc_sample_summary.tsv",
+      "sha256": "9029a62608437ec145453bff986dc3933efb321f3d0398c8d78fe3d05dfc53a7"
+    },
+    {
+      "path": "results/PRJNA428470/qc/qc_summary.json",
+      "sha256": "bff57984a731e98d54e6a485c5a54beac5557f422265915894ade1a2f2f25927"
+    }
+  ]
+}
