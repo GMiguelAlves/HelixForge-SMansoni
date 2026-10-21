@@ -1,5 +1,7 @@
 {
   "core_min_libraries": 2,
+  "differential_binding_review": "../../../../config/chipseq/PRJNA312093/db_review.json",
+  "differential_binding_status": "HOLD",
   "gene_assignment_ambiguity": "not_assessed",
   "gene_assignment_ambiguity_reason": "source_execution_predates_tss_snapshot",
   "groups": [
@@ -56,11 +58,15 @@
       "total_library_count": 2
     }
   ],
-  "pending_arms": [
-    "H3K4me3"
-  ],
+  "h3k4me3_execution_summary": "narrow/manifests/native_execution_summary.json",
+  "older_h3k27me3_comparison_record_unchanged": true,
+  "pending_arms": [],
   "public_copy_is_self_contained_reentry_package": false,
   "publication_checks": "PASS",
+  "published_arms": [
+    "H3K27me3",
+    "H3K4me3"
+  ],
   "published_representation": "nfcore_2_1_min1_homer_4_11",
   "regional_min_libraries": 1,
   "replaces": "atomic_support_segments_and_python_interval_annotation",

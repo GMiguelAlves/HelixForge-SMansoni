@@ -104,6 +104,15 @@ and [non-estimable designs](https://bioconductor.org/packages/release/bioc/vigne
 
 ## Retention before cleanup
 
+### PRJNA312093
+
+Both marks completed peak processing. The
+[study-specific review](prjna312093_differential_binding.md) records unpaired
+comparisons and a **HOLD** for DB, with evidence from the publication, frozen
+ENA instrument assignments and measured QC. The peaks remain accepted for
+atlas use. Per-library BAMs and Inputs remain protected until biological-unit
+and comparison-specific model issues are resolved.
+
 Preserve final **BAM/BAI per library and confirmed biological unit**, control BAM/BAI, producer
 manifests/checksums, normalized metadata, control maps, the peak plan, reference
 identity, peaks/consensus manifests, QC, parameters and versions until DB is
