@@ -203,6 +203,12 @@ class ProjectContracts(unittest.TestCase):
         for path in ROOT.rglob("*"):
             if not path.is_file():
                 continue
+            # Tiny upstream parser fixture, never admitted as biological evidence.
+            if path.relative_to(ROOT).as_posix() == "tests/fixtures/chipseq_parser_volvox.bw":
+                self.assertLess(path.stat().st_size, 256 * 1024)
+                self.assertEqual("1f6c7ef998f8392457eaec3f2466c09d9405ce5dddb28659b486b8c338ac2b18",
+                                 hashlib.sha256(path.read_bytes()).hexdigest())
+                continue
             lower = path.name.lower()
             if path.suffix.lower() in forbidden or lower.endswith(fastq_suffixes):
                 offenders.append(str(path.relative_to(ROOT)))

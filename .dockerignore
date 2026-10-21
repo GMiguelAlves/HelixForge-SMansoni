@@ -2,9 +2,13 @@
 **
 !LICENSE
 !scripts/
+scripts/**
 !scripts/atlas/
+scripts/atlas/**
 !scripts/atlas/runtime.py
 !results/
+results/**
 !results/atlas/
+results/atlas/**
 !results/atlas/rnaseq/
 !results/atlas/rnaseq/**
