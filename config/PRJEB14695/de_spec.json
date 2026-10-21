@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJEB14695",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjeb14695_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJEB14695",
+  "contrasts": [
+    {
+      "id": "condition__ovary_mixed_sex_vs_ovary_single_sex",
+      "factor": "condition",
+      "numerator": "ovary_mixed_sex",
+      "denominator": "ovary_single_sex",
+      "description": "ovary_mixed_sex versus ovary_single_sex",
+      "direction": "ovary_mixed_sex/ovary_single_sex"
+    },
+    {
+      "id": "condition__testis_mixed_sex_vs_testis_single_sex",
+      "factor": "condition",
+      "numerator": "testis_mixed_sex",
+      "denominator": "testis_single_sex",
+      "description": "testis_mixed_sex versus testis_single_sex",
+      "direction": "testis_mixed_sex/testis_single_sex"
+    },
+    {
+      "id": "condition__whole_female_mixed_sex_vs_whole_female_single_sex",
+      "factor": "condition",
+      "numerator": "whole_female_mixed_sex",
+      "denominator": "whole_female_single_sex",
+      "description": "whole_female_mixed_sex versus whole_female_single_sex",
+      "direction": "whole_female_mixed_sex/whole_female_single_sex"
+    },
+    {
+      "id": "condition__whole_male_mixed_sex_vs_whole_male_single_sex",
+      "factor": "condition",
+      "numerator": "whole_male_mixed_sex",
+      "denominator": "whole_male_single_sex",
+      "description": "whole_male_mixed_sex versus whole_male_single_sex",
+      "direction": "whole_male_mixed_sex/whole_male_single_sex"
+    },
+    {
+      "id": "condition__whole_female_mixed_sex_vs_whole_male_mixed_sex",
+      "factor": "condition",
+      "numerator": "whole_female_mixed_sex",
+      "denominator": "whole_male_mixed_sex",
+      "description": "whole_female_mixed_sex versus whole_male_mixed_sex",
+      "direction": "whole_female_mixed_sex/whole_male_mixed_sex"
+    },
+    {
+      "id": "condition__whole_female_single_sex_vs_whole_male_single_sex",
+      "factor": "condition",
+      "numerator": "whole_female_single_sex",
+      "denominator": "whole_male_single_sex",
+      "description": "whole_female_single_sex versus whole_male_single_sex",
+      "direction": "whole_female_single_sex/whole_male_single_sex"
+    }
+  ]
+}

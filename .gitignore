@@ -57,3 +57,10 @@ __pycache__/
 # Keep intentional empty structure
 !**/.gitkeep
 
+
+# Atlas delivery and temporary build work
+.codex*/
+.atlas/
+# The frozen, reviewed atlas data are part of the distributable snapshot.
+!results/atlas/rnaseq/data/
+!results/atlas/rnaseq/data/**

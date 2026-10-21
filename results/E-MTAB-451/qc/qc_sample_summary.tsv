@@ -1,0 +1,12 @@
+sample_id	raw_reads_both_mates	trimmed_reads_both_mates	trim_retention_percent	salmon_mapping_percent	classification	reason
+adult_mixed_r1	21042510	20107202	95.555150	77.895950	PASS	none
+cercaria_whole_r1	33692780	32363470	96.054615	65.444101	PASS	none
+cercaria_whole_r2	61554460	60712942	98.632889	72.070611	PASS	none
+cercaria_whole_r3	43748766	43350644	99.089981	72.361702	PASS	none
+cercarial_tail_r1	25995126	25003696	96.186093	78.872555	PASS	none
+schistosomulum_24h_r1	50616612	49412070	97.620263	76.265686	PASS	none
+schistosomulum_24h_r2	50441286	48619012	96.387336	75.176476	PASS	none
+schistosomulum_24h_r3	44496358	43338290	97.397387	74.423689	PASS	none
+schistosomulum_24h_r4	48970182	46944790	95.864030	75.945220	PASS	none
+schistosomulum_3h_r1	61551098	60620396	98.487920	62.261147	PASS	none
+schistosomulum_3h_r2	58628978	56859492	96.981892	75.952093	PASS	none

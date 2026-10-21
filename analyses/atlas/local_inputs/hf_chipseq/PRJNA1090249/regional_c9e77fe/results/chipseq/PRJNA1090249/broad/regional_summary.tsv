@@ -1,0 +1,3 @@
+study	condition	target	regions	region_bp	associated_gene_ids	core_bp	total_library_count	single_library_regions	multiple_library_regions	all_library_regions
+PRJNA1090249	cercaria	HP1	1816	549790	1480	60657	3	1589	227	80
+PRJNA1090249	sporocyst	HP1	867	268249	771	21643	3	793	74	14

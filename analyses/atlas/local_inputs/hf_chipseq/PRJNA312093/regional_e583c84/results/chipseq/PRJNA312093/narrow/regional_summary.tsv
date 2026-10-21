@@ -1,0 +1,5 @@
+study	condition	target	regions	region_bp	associated_gene_ids	core_bp	total_library_count	single_library_regions	all_library_regions	idr_regions	ambiguous_gene_assignments	unassessed_gene_assignments
+PRJNA312093	female_adult	H3K4me3	12652	13082736	7031	10817183	2	3620	9032	4348	5	257
+PRJNA312093	female_cercaria	H3K4me3	12946	13161746	6933	10242067	2	4249	8697	4461	5	291
+PRJNA312093	male_adult	H3K4me3	14088	15177965	7128	12636375	2	4291	9797	4719	7	290
+PRJNA312093	male_cercaria	H3K4me3	14151	14869260	7103	12538636	2	3966	10185	4651	5	333

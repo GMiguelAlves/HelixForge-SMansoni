@@ -1,0 +1,106 @@
+{
+  "arm": "H3K4me3",
+  "completed_tasks": {
+    "idr": 9,
+    "peaks_qc_regional": 51,
+    "post_consensus": 84,
+    "qc_alignment_bam": 82
+  },
+  "differential_binding": "HOLD_NOT_EXECUTED",
+  "groups": [
+    {
+      "all_library_regions": 9032,
+      "ambiguous_gene_assignments": 5,
+      "associated_gene_ids": 7031,
+      "condition": "female_adult",
+      "core_bp": 10817183,
+      "idr_regions": 4348,
+      "region_bp": 13082736,
+      "regions": 12652,
+      "single_library_regions": 3620,
+      "study": "PRJNA312093",
+      "target": "H3K4me3",
+      "total_library_count": 2,
+      "unassessed_gene_assignments": 257
+    },
+    {
+      "all_library_regions": 8697,
+      "ambiguous_gene_assignments": 5,
+      "associated_gene_ids": 6933,
+      "condition": "female_cercaria",
+      "core_bp": 10242067,
+      "idr_regions": 4461,
+      "region_bp": 13161746,
+      "regions": 12946,
+      "single_library_regions": 4249,
+      "study": "PRJNA312093",
+      "target": "H3K4me3",
+      "total_library_count": 2,
+      "unassessed_gene_assignments": 291
+    },
+    {
+      "all_library_regions": 9797,
+      "ambiguous_gene_assignments": 7,
+      "associated_gene_ids": 7128,
+      "condition": "male_adult",
+      "core_bp": 12636375,
+      "idr_regions": 4719,
+      "region_bp": 15177965,
+      "regions": 14088,
+      "single_library_regions": 4291,
+      "study": "PRJNA312093",
+      "target": "H3K4me3",
+      "total_library_count": 2,
+      "unassessed_gene_assignments": 290
+    },
+    {
+      "all_library_regions": 10185,
+      "ambiguous_gene_assignments": 5,
+      "associated_gene_ids": 7103,
+      "condition": "male_cercaria",
+      "core_bp": 12538636,
+      "idr_regions": 4651,
+      "region_bp": 14869260,
+      "regions": 14151,
+      "single_library_regions": 3966,
+      "study": "PRJNA312093",
+      "target": "H3K4me3",
+      "total_library_count": 2,
+      "unassessed_gene_assignments": 333
+    }
+  ],
+  "helixforge_commit": "2833442eb01edbe2e090870ba945fc074bc4d564",
+  "idr_is_separate_evidence": true,
+  "native_terminal_id": "ecstatic_goodall.chipseq",
+  "native_terminal_manifest_sha256": "635edf686e049f921292b9ecb88ac451a76e8080bfed64fe0d07c9d0c3e59ab6",
+  "native_terminal_validation": {
+    "filesystem": "tracked_inputs_verified",
+    "schema": "valid",
+    "semantic": "valid"
+  },
+  "public_copy_is_self_contained_reentry_package": false,
+  "reports": [
+    {
+      "formatting_changes": [
+        "private runtime prefixes replaced with symbolic placeholders"
+      ],
+      "path": "reports/PRJNA312093_H3K4me3.html",
+      "sha256": "c07a12069c4f8a654c8f6afe5e50eab467b862851565d2f9fe0222d1cd99043f",
+      "source_sha256": "622d7a2e5002e4d593668364cda310a6cdbb45da25a4959e5a8d3e2b93731093"
+    },
+    {
+      "formatting_changes": [
+        "private runtime prefixes replaced with symbolic placeholders"
+      ],
+      "path": "reports/PRJNA312093_H3K4me3_multiqc.html",
+      "sha256": "3178805954b0dce256dd99988b13ec1d7fc239d74e4e8420306fc232a777f834",
+      "source_sha256": "3b2613a29bff11640b1dd6d90d7d7178d591544ae41fd8138cc223b7ac251378"
+    }
+  ],
+  "schema_version": "1.0",
+  "selected_annotation_catalog": "nfcore_2_1_min1",
+  "source_archive_sha256": "6d8326bf4c3784d8fb3c8cdfffd8d8ec11227f5f42d1fb9e205887a22d528ffe",
+  "study": "PRJNA312093",
+  "tracks": 20,
+  "upstream_alignment_manifests_in_post_consensus_report": false
+}

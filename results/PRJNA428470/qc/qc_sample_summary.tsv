@@ -1,0 +1,7 @@
+sample_id	raw_reads_both_mates	trimmed_reads_both_mates	trim_retention_percent	salmon_mapping_percent	classification	reason
+female_adult_5azac_r1	73555708	72614208	98.720018	45.803513	REVIEW	salmon_mapping_below_review_threshold
+female_adult_5azac_r2	104219378	103208258	99.029816	34.611905	REVIEW	salmon_mapping_below_review_threshold
+female_adult_5azac_r3	41794134	41449400	99.175162	60.826000	PASS	none
+female_adult_control_r1	95452498	94461500	98.961789	49.660605	REVIEW	salmon_mapping_below_review_threshold
+female_adult_control_r2	92404210	91445682	98.962679	40.451213	REVIEW	salmon_mapping_below_review_threshold
+female_adult_control_r3	83888308	82731586	98.621117	60.209386	PASS	none

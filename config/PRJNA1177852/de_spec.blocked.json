@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJNA1177852",
+  "status": "BLOCKED",
+  "reason_code": "UNREPLICATED_TIMECOURSE_WITHOUT_PARALLEL_CONTROL",
+  "reason": "Há uma biblioteca por tempo e nenhum controle paralelo replicado; a série é apenas descritiva.",
+  "allowed_outputs": [
+    "FASTQC",
+    "TRIM_GALORE",
+    "SALMON_QUANT",
+    "TXIMPORT_COUNTS",
+    "TPM"
+  ],
+  "forbidden_outputs": [
+    "DESEQ2_INFERENCE"
+  ]
+}

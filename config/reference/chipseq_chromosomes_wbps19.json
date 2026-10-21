@@ -1,0 +1,18 @@
+{
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "reference_fasta_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "source": "Retained HF alignment chromosome header; FASTA compatibility checked in native BAM_SELECT",
+  "source_diagnostic_sha256": "af5a7b2cdd4100150daff60d1d0fb60d45713dee0cf5355c7ee2841355ba335c",
+  "chromosomes": {
+    "SM_V10_1": 87984048,
+    "SM_V10_Z": 86692428,
+    "SM_V10_3": 49793710,
+    "SM_V10_4": 46471573,
+    "SM_V10_2": 45716244,
+    "SM_V10_6": 24696076,
+    "SM_V10_5": 24128858,
+    "SM_V10_7": 19942475,
+    "SM_V10_WSR": 5969970,
+    "SM_V10_MITO": 26917
+  }
+}

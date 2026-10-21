@@ -1,0 +1,7 @@
+dataset	sample_id	source_sample_name	biosample	condition	stage	tissue	sex	infection_mode	treatment	time_hours	batch	replicate	technical_runs
+PRJNA428470	female_adult_5azac_r1	5-AzaC1	SAMN08291406	female_adult_5azac	adult	whole_organism	female	not_declared	5_azacitidine	not_applicable	not_declared	1	1
+PRJNA428470	female_adult_5azac_r2	5-AzaC2	SAMN08291485	female_adult_5azac	adult	whole_organism	female	not_declared	5_azacitidine	not_applicable	not_declared	2	1
+PRJNA428470	female_adult_5azac_r3	5-AzaC3	SAMN08291486	female_adult_5azac	adult	whole_organism	female	not_declared	5_azacitidine	not_applicable	not_declared	3	1
+PRJNA428470	female_adult_control_r1	Control1	SAMN08291589	female_adult_control	adult	whole_organism	female	not_declared	control	not_applicable	not_declared	1	1
+PRJNA428470	female_adult_control_r2	Control2	SAMN08291559	female_adult_control	adult	whole_organism	female	not_declared	control	not_applicable	not_declared	2	1
+PRJNA428470	female_adult_control_r3	Control3	SAMN08291590	female_adult_control	adult	whole_organism	female	not_declared	control	not_applicable	not_declared	3	1

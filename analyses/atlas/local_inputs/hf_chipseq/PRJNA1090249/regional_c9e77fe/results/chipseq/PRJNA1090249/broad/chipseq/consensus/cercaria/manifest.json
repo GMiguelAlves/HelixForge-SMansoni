@@ -1,0 +1,140 @@
+{
+  "annotation_provider": "homer_4_11",
+  "annotation_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+  "artifacts": {
+    "annotated_peaks.tsv": {
+      "bytes": 116146,
+      "path": "broad/chipseq/peak_annotation/cercaria/annotated_peaks.tsv.gz",
+      "sha256": "b2e8e8619dea60152f6597e12fe5d0bdda5903dc170115d3b9e7d36de49e6f0c",
+      "source_sha256": "c0b74f550b6e6051a2aca954e70a3f633915fb3bef0002886ad84594fc16e411"
+    },
+    "consolidated_peaks.bed": {
+      "bytes": 22066,
+      "path": "broad/chipseq/consensus/cercaria/consolidated_peaks.bed.gz",
+      "sha256": "038b227a6c433d6f3d6721041e445fa0df10cccc4c5c0b0fefd88aedc57b9382",
+      "source_sha256": "4c1cc03a970fea66c3e775f2fe281f41b2069a8ee7f3c4641daa13cef2f2045f"
+    },
+    "consolidated_peaks.tsv": {
+      "bytes": 30446,
+      "path": "broad/chipseq/consensus/cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "d529273713db6942f0e6f2434975b4dcfb6128049ddb58bcbc451bc431d145a6",
+      "source_sha256": "d1187e953db32bbb890515ad6dce976c7abc4f0b0e745d6d714e8b9c4e65a011"
+    },
+    "excluded_regions.tsv": {
+      "bytes": 74,
+      "path": "broad/chipseq/consensus/cercaria/excluded_regions.tsv.gz",
+      "sha256": "5cd6303d451b0333c56c83459b8dbd81554f8b11c929650e41ed71266380228a",
+      "source_sha256": "c7e99762e7755cc12d28eb549d6e38266adb071da58ffa561f5410909836a1a5"
+    },
+    "homer_native": {
+      "bytes": 55041,
+      "formatting_changes": [
+        "command-bearing PeakID header normalized to PeakID",
+        "gzip compression"
+      ],
+      "path": "broad/chipseq/peak_annotation/cercaria/homer_native.tsv.gz",
+      "sha256": "9652841c568e90a14695781d9efef25f3cd1c74d11b653a28c67535492a06f09",
+      "source_sha256": "027aa29ca6c4135334a0252817d4aae5f7e53bd304475219ac020c7a6bcadced"
+    },
+    "peak_gene_associations.tsv": {
+      "bytes": 95041,
+      "path": "broad/chipseq/peak_annotation/cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "38dac5810f5d6f38d73676ab8559aebdafb05e28e5eb7df9ac98320e8b05fcfa",
+      "source_sha256": "f09bf69a3a18b78454987e21f625b4ff531d44bf4ac5e438b6bb9c98d6a60eac"
+    },
+    "source_peak_mapping.tsv": {
+      "bytes": 11740,
+      "path": "broad/chipseq/consensus/cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "ba02422b9f8b5c05c77fe5a66997e9ed1c114b6b045e1c2504d11d4f8cb74d15",
+      "source_sha256": "752968db21c0520f5c83e3a26a69365e13da12ad5868193cc8ec71499d89477b"
+    },
+    "support_by_library.tsv": {
+      "bytes": 37586,
+      "path": "broad/chipseq/consensus/cercaria/support_by_library.tsv.gz",
+      "sha256": "cc7a5a45392f2c1fec696048225a736060aa0753f71a95e0842f00133532e0d6",
+      "source_sha256": "03e84a430cf82bf3220928ef5757d61565b87249ebcc14e783a8002187c3b218"
+    },
+    "support_core.bed": {
+      "bytes": 2782,
+      "path": "broad/chipseq/consensus/cercaria/support_core.bed.gz",
+      "sha256": "72224061cf21a9dc505b17fdec5cc91d60a2a082f67b69616aaab04d95d07f76",
+      "source_sha256": "b8ff7142b6d9888b1435f4b6b3e9f6a8ec2977b711cf7373db5a6a9ebdd34097"
+    },
+    "unfiltered_peaks.bed": {
+      "bytes": 22066,
+      "path": "broad/chipseq/consensus/cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "038b227a6c433d6f3d6721041e445fa0df10cccc4c5c0b0fefd88aedc57b9382",
+      "source_sha256": "4c1cc03a970fea66c3e775f2fe281f41b2069a8ee7f3c4641daa13cef2f2045f"
+    },
+    "upstream.boolean.txt": {
+      "bytes": 63645,
+      "path": "broad/chipseq/consensus/cercaria/upstream.boolean.txt.gz",
+      "sha256": "405ac1db5d710b354a579036f2e68e815cb27d144312e77474dfeba23596d497",
+      "source_sha256": "36ec6cffe420aa158439a431bb859a3557b8c3af0f5c85bed75e31a4406eff05"
+    }
+  },
+  "bedtools_version": "2.30.0",
+  "biological_assignments_changed": false,
+  "condition": "cercaria",
+  "core_min_libraries": 2,
+  "formatting_changes": [
+    "gzip compression",
+    "flattened existing library membership",
+    "explicit unassessed ambiguity"
+  ],
+  "gene_assignment_ambiguity": "not_assessed",
+  "gene_assignment_ambiguity_reason": "source_execution_predates_tss_snapshot",
+  "group_id": "PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad",
+  "helixforge_execution_commit": "cd390a0650cfb4b6555f0635a76f7ce158359b78",
+  "library_metadata": [
+    {
+      "biological_replicate": "1",
+      "control_record_id": "SRR28402821",
+      "record_id": "SRR28402826",
+      "sample_id": "cercaria_hp1_r1",
+      "technical_replicate": "1"
+    },
+    {
+      "biological_replicate": "2",
+      "control_record_id": "SRR28402821",
+      "record_id": "SRR28402825",
+      "sample_id": "cercaria_hp1_r2",
+      "technical_replicate": "1"
+    },
+    {
+      "biological_replicate": "3",
+      "control_record_id": "SRR28402821",
+      "record_id": "SRR28402822",
+      "sample_id": "cercaria_hp1_r3",
+      "technical_replicate": "1"
+    }
+  ],
+  "metrics": {
+    "all_library_regions": 80,
+    "associated_gene_ids": 1480,
+    "condition": "cercaria",
+    "core_bp": 60657,
+    "multiple_library_regions": 227,
+    "region_bp": 549790,
+    "regions": 1816,
+    "single_library_regions": 1589,
+    "study": "PRJNA1090249",
+    "target": "HP1",
+    "total_library_count": 3
+  },
+  "occupancy_status": "not_assessed",
+  "provider": "nfcore_chipseq_2.1.0",
+  "public_copy_is_self_contained_reentry_package": false,
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "reference_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "regional_min_libraries": 1,
+  "schema_version": "1.0",
+  "source_annotation_manifest_sha256": "4fb5489dbbc6a31075e314e6773da50d2a1432f5580a9e4e900e1e37d9144e1d",
+  "source_archive_sha256": "aa17a6662349b850fcad405207cbaf47f12884583105efa99dfa5720f38fd87b",
+  "source_consensus_manifest_sha256": "c01b18a6761e127ca3336e5a569939746cd4c6df024fa5148f4c0994f91e6bf9",
+  "status": "PUBLISHED",
+  "study": "PRJNA1090249",
+  "target": "HP1",
+  "type": "published_chipseq_regional_catalog",
+  "upstream_commit": "76e2382b6d443db4dc2396e6831d1243256d80b0"
+}
