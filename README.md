@@ -6,9 +6,25 @@ Reproducible RNA-seq, ChIP-seq, and cross-omic integration analyses of
 
 ## Explore the atlas
 
-The [atlas release](https://github.com/GMiguelAlves/HelixForge-SMansoni/releases/tag/atlas-v2026.10.21) provides a ready-to-open RNA/ChIP atlas. Extract `atlas-init.zip` and run `python atlas.py init` for Docker, or extract `atlas-local.zip` and run `python atlas.py init --local` without Docker. Both open **http://127.0.0.1:8765/**. Python 3.10+ is required; no analysis dependencies are needed.
+The atlas is ready to use; you do not need to clone this repository or rerun any analyses.
 
-From a clone, the same commands work directly; `docker compose up --build -d` also builds and starts the atlas. See [installation, scientific scope and size notes](ATLAS.md). The frozen atlas is a consultation layer over the accepted results below; it does not rerun or broaden their scientific analyses.
+**Quick start on Windows, without Docker:**
+
+1. Install [Python for Windows](https://www.python.org/downloads/windows/) if needed (version 3.10 or later).
+2. Open the [atlas release](https://github.com/GMiguelAlves/HelixForge-SMansoni/releases/tag/atlas-v2026.10.21), expand **Assets** and download **atlas-local.zip** (about 82 MB).
+3. In File Explorer, right-click the downloaded ZIP, select **Extract All… / Extrair tudo…**, then **Extract / Extrair**. Open the extracted `HelixForge-SMansoni-Atlas` folder. You should see **atlas.py** inside it.
+4. In that folder, click File Explorer's address bar, type `powershell` and press **Enter**. This opens a terminal in the correct folder.
+5. Paste the following command into that terminal and press **Enter**:
+
+```powershell
+py -3 atlas.py init --local
+```
+
+The browser opens at **http://127.0.0.1:8765/**. Keep the terminal open while using the atlas; press **Ctrl+C** there to stop it. If `py` is unavailable but `python --version` reports Python 3.10+, use `python atlas.py init --local` instead.
+
+**Already using Docker?** Download **atlas-init.zip** from the same release, extract it and open PowerShell in its `HelixForge-SMansoni-Atlas` folder as above. Start Docker Desktop or Docker in your default WSL distribution, then run `py -3 atlas.py init`. The first launch downloads and verifies the Docker image (about 124 MB).
+
+See the **[complete Windows step-by-step guide](ATLAS.md#windows-step-by-step)** for Python setup, Docker/WSL, reopening the atlas and troubleshooting. Linux/macOS and source-build instructions are also in [ATLAS.md](ATLAS.md). The frozen atlas is a consultation layer over the accepted results below; it does not rerun or broaden their scientific analyses.
 
 ```text
 PROJECT_STATUS = ACTIVE

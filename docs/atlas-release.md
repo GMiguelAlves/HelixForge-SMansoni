@@ -10,4 +10,4 @@ Includes 12 RNA studies, 9,914 quantified genes and 244,788 ChIP regional candid
 
 `SHA256SUMS` records artifact checksums. `docker-image.json` identifies the built image and its layers. The image can also be imported manually with `docker load --input atlas-docker-2026.10.21.tar.gz`.
 
-See [ATLAS.md](https://github.com/GMiguelAlves/HelixForge-SMansoni/blob/atlas-v2026.10.21/ATLAS.md) for full installation, scientific scope and size notes.
+See the [current Windows step-by-step guide](https://github.com/GMiguelAlves/HelixForge-SMansoni/blob/master/ATLAS.md#windows-step-by-step) for downloading, extracting the ZIP, opening PowerShell and starting the atlas with Python or Docker/WSL. The [versioned guide](https://github.com/GMiguelAlves/HelixForge-SMansoni/blob/atlas-v2026.10.21/ATLAS.md) records the original release instructions, scientific scope and size notes.
