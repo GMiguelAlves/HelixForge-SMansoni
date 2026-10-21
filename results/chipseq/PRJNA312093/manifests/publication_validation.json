@@ -7,8 +7,8 @@
   "files": [
     {
       "path": "results/README.md",
-      "bytes": 3810,
-      "sha256": "7f229b0fb233ee7fa75e6cc87ae1b6b5cb3b565e1ca02c805fd65234edf42e57"
+      "bytes": 6299,
+      "sha256": "419deb092070cce10f8cc7f4fa27305f15cd3ae489ba584463a6e1008031b2b9"
     },
     {
       "path": "results/broad/chipseq/consensus/female_adult/consolidated_peaks.bed.gz",
@@ -277,13 +277,448 @@
     },
     {
       "path": "results/manifests/regional_publication.json",
-      "bytes": 5245,
-      "sha256": "080f8465dab13892bfff5cb03fa7f57a548b8abd548d117235b6f1c2c51bc0f9"
+      "bytes": 5551,
+      "sha256": "f269f638b35ab10cb5c31242043aa0e180c223592a03afe2dbdba7bc9dbc37af"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/consolidated_peaks.bed.gz",
+      "bytes": 149586,
+      "sha256": "04d00fb0e88a618f0b711ff39e9d91aae378552a5e5833a377b253d56545e22e"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/consolidated_peaks.tsv.gz",
+      "bytes": 202988,
+      "sha256": "b5c06938882805543464889b9f412a78611267a30625103c8292bb0bc11bc2e7"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/excluded_regions.tsv.gz",
+      "bytes": 105,
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/manifest.json",
+      "bytes": 8209,
+      "sha256": "86c977be03d4f39030f1be237304d797ff2569719ebab2935fe50884979442f6"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/source_peak_mapping.tsv.gz",
+      "bytes": 134640,
+      "sha256": "59ba7a1085b8b53a69804396bcf1c06e9cf5b5ce9b850763193965ae0833991e"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/statistics.json",
+      "bytes": 270,
+      "sha256": "77ccbbfdb0a92f0bbff91612dba8de816646062eead2dc34f7c72e29ac6cfe81"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/support_by_library.tsv.gz",
+      "bytes": 324029,
+      "sha256": "dfee00bb5bf0e03f2f2108e5a9012cce8b254c6680f16eb39ef2f2aef6d58670"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/support_core.bed.gz",
+      "bytes": 91994,
+      "sha256": "aa0fff826fb8153f0dee21aa8a523004629218a8b9fa35e3493fe7a08443a979"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/unfiltered_peaks.bed.gz",
+      "bytes": 149586,
+      "sha256": "04d00fb0e88a618f0b711ff39e9d91aae378552a5e5833a377b253d56545e22e"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/upstream.boolean.txt.gz",
+      "bytes": 626506,
+      "sha256": "689168b45dea4f654a1e6a601784f895ae777aa3602d68370c30cf87c21c1da3"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_adult/upstream.unfiltered.boolean.txt.gz",
+      "bytes": 626506,
+      "sha256": "689168b45dea4f654a1e6a601784f895ae777aa3602d68370c30cf87c21c1da3"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/consolidated_peaks.bed.gz",
+      "bytes": 152330,
+      "sha256": "62b87e402df974224681037ce9b9b863adfff129021ae6c32c012d6972563987"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/consolidated_peaks.tsv.gz",
+      "bytes": 207708,
+      "sha256": "039a5752ba3f625fffba2a9da6df817299bd46f3e131e9324c289ca2c31e1dbc"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/excluded_regions.tsv.gz",
+      "bytes": 105,
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/manifest.json",
+      "bytes": 8278,
+      "sha256": "b7a638102f42468984060806bc9086df08920eba52f13b92f649c03b20d9f144"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/source_peak_mapping.tsv.gz",
+      "bytes": 138025,
+      "sha256": "a60ce3198a1f69f4524f4b54423a02bb98d68bec921ed7a6bfc873d2b3fdb036"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/statistics.json",
+      "bytes": 270,
+      "sha256": "7ffc8827b3700280a1ba011f51af5fe8e54d87db5f9cf929263351fd9a160f5a"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/support_by_library.tsv.gz",
+      "bytes": 319034,
+      "sha256": "d1fd611cc93a8f61e705edfc7f22422347fffb9ce1efe570489a0625398a1c1e"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/support_core.bed.gz",
+      "bytes": 94283,
+      "sha256": "13e0bddc1560dca30a064da74502c98cbc0395c1e20c28124f625dd996c746f1"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/unfiltered_peaks.bed.gz",
+      "bytes": 152330,
+      "sha256": "62b87e402df974224681037ce9b9b863adfff129021ae6c32c012d6972563987"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/upstream.boolean.txt.gz",
+      "bytes": 642787,
+      "sha256": "ad2139fb09c9ffdfae045e462c92a1ba5c7ea38bab1183eff1cd76ec2104965c"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/female_cercaria/upstream.unfiltered.boolean.txt.gz",
+      "bytes": 642787,
+      "sha256": "ad2139fb09c9ffdfae045e462c92a1ba5c7ea38bab1183eff1cd76ec2104965c"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/consolidated_peaks.bed.gz",
+      "bytes": 166107,
+      "sha256": "6b85ef977fc3f63ad70094d6ecfefe3b93198dd93a2c692886c597d89e50c713"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/consolidated_peaks.tsv.gz",
+      "bytes": 226022,
+      "sha256": "7e6adf43965c5a0e8a56284c0fd75956e4fb91f4c649e5454de7c6f6b3ae0696"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/excluded_regions.tsv.gz",
+      "bytes": 105,
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/manifest.json",
+      "bytes": 8165,
+      "sha256": "98af814e615d413694e9c8f59e40b5e5621767bb8971ecf16066eb595d3cfcc6"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/source_peak_mapping.tsv.gz",
+      "bytes": 148652,
+      "sha256": "12f2b9dd98a2078e7dba3d7e5f47b7b534beb0247e53c14bc15343a69f957cfe"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/statistics.json",
+      "bytes": 270,
+      "sha256": "94bcbbc3742314d119f3bf355b5559fcacc091625d0e6ce2b868a57af17ba02d"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/support_by_library.tsv.gz",
+      "bytes": 361813,
+      "sha256": "c8f3999cc5fb8fbdc32addff76a934e3f794e4f0e0f5cf5769f0608490de5791"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/support_core.bed.gz",
+      "bytes": 100219,
+      "sha256": "0e8458d22399785efcd08ffedcdb37eb4bd8fea5333bdd4ba91532e85b5ed57f"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/unfiltered_peaks.bed.gz",
+      "bytes": 166107,
+      "sha256": "6b85ef977fc3f63ad70094d6ecfefe3b93198dd93a2c692886c597d89e50c713"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/upstream.boolean.txt.gz",
+      "bytes": 700780,
+      "sha256": "fbab3499c29bf7192e4e0c545cd98210b71f92f40271570e47e7cd9a5263831f"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_adult/upstream.unfiltered.boolean.txt.gz",
+      "bytes": 700780,
+      "sha256": "fbab3499c29bf7192e4e0c545cd98210b71f92f40271570e47e7cd9a5263831f"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/consolidated_peaks.bed.gz",
+      "bytes": 166732,
+      "sha256": "c0eb0b7d6d12148f01bffd167fbc2d2633a7fdbefab7b1cb944ca9622103f8a8"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/consolidated_peaks.tsv.gz",
+      "bytes": 226881,
+      "sha256": "6e88e692abd80b3b463ed1ae48616daf2011c60d49cf32b80d98f808df404566"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/excluded_regions.tsv.gz",
+      "bytes": 105,
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/manifest.json",
+      "bytes": 8235,
+      "sha256": "f8bf58819b6c49260e1a7d6ac318ef14055b1fa6ad1faecfd636d421ce9426c0"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/source_peak_mapping.tsv.gz",
+      "bytes": 149844,
+      "sha256": "353fb5acbf9cd0272d365bc4cbaf0c6fd1ab09360aec44d74b151bc7bea8aa05"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/statistics.json",
+      "bytes": 271,
+      "sha256": "bf38eb95a43c88d7a5072710cbe8fa95b1586fa430ab78c010f7c7710ad1adb6"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/support_by_library.tsv.gz",
+      "bytes": 371866,
+      "sha256": "5f6bebe474641e02e7596f127ea73c082e89a49f2674e00722b35fa0f35e0b02"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/support_core.bed.gz",
+      "bytes": 101478,
+      "sha256": "087756a6148ca4ff3eb99d9bc2b5affbdc5cb2d5d7cff63a14267ca665767fe1"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/unfiltered_peaks.bed.gz",
+      "bytes": 166732,
+      "sha256": "c0eb0b7d6d12148f01bffd167fbc2d2633a7fdbefab7b1cb944ca9622103f8a8"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/upstream.boolean.txt.gz",
+      "bytes": 702211,
+      "sha256": "d34fc5cc9470f36f7140d629caa5c113e6d1cc6505e798c4f56bb38859adbd1e"
+    },
+    {
+      "path": "results/narrow/chipseq/consensus/male_cercaria/upstream.unfiltered.boolean.txt.gz",
+      "bytes": 702211,
+      "sha256": "d34fc5cc9470f36f7140d629caa5c113e6d1cc6505e798c4f56bb38859adbd1e"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_adult/consolidated_peaks.bed.gz",
+      "bytes": 56784,
+      "sha256": "f6cea798941ce6556e78a3022e03ce14c5cf43ddb509f35076d092531894ac85"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_adult/consolidated_peaks.tsv.gz",
+      "bytes": 199294,
+      "sha256": "9d190935effa718c4c06184b8b126553b1fedbaed70a0596fbf49d7fd17243c8"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_adult/idr_output.narrowPeak.gz",
+      "bytes": 209969,
+      "sha256": "ae252094b9b4250d310928f42ef209070aad96795a7dae6f47967d236545134a"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_adult/replicate_evidence.tsv.gz",
+      "bytes": 213,
+      "sha256": "df759403b2ad00814493911a63af3eb09d65a98ea1f6f0282c0892e22258a5b3"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_adult/statistics.json",
+      "bytes": 333,
+      "sha256": "afacb954237b5963834faaad90e7459935c92f60b61588aeb04a3ffca6851e7f"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_cercaria/consolidated_peaks.bed.gz",
+      "bytes": 58148,
+      "sha256": "560fe6fb0f734647fe03a805a8150de7153d4cb53acf9d6c3c0b235d7b49f9d2"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_cercaria/consolidated_peaks.tsv.gz",
+      "bytes": 204784,
+      "sha256": "0b282acfa3dd2035273eb6f09fccff4a5866f285c872b38c7a8f523f88a7f449"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_cercaria/idr_output.narrowPeak.gz",
+      "bytes": 216943,
+      "sha256": "9799d9a69e13afdc74926d2c2290a68b70ed197b52d93ba0d08a0d80652e4e76"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_cercaria/replicate_evidence.tsv.gz",
+      "bytes": 211,
+      "sha256": "f5e1a9a08930bae803057ee695b71129c22bed8350d23d072660d4647ddfeb5a"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/female_cercaria/statistics.json",
+      "bytes": 336,
+      "sha256": "e6819e83d7d0fffa94644264cd471da7e6071412c7b29a14c3aae1707fc542d6"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_adult/consolidated_peaks.bed.gz",
+      "bytes": 61652,
+      "sha256": "c7ad4d92c0daee5f1c33c92cbbfc2dd64bbe9ce6eb72bd445c5b63861e594c84"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_adult/consolidated_peaks.tsv.gz",
+      "bytes": 216515,
+      "sha256": "b3aac2ed0e7805868ee718075c64561a6db22f8ea56bdc32f7482c37d10743c6"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_adult/idr_output.narrowPeak.gz",
+      "bytes": 229275,
+      "sha256": "33f2873663bdf8e2e55089eee7c92b277e1ce0190fe95d2c643e920c71753a06"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_adult/replicate_evidence.tsv.gz",
+      "bytes": 212,
+      "sha256": "a2dfc86b9f9f175dbe79d829c380f789b2400d775a741e783d419d27cca61912"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_adult/statistics.json",
+      "bytes": 331,
+      "sha256": "3fa631417945a3dc9fdc7d941817bc0827770c196f4f3587d4d21562f3862895"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_cercaria/consolidated_peaks.bed.gz",
+      "bytes": 60725,
+      "sha256": "23bf6bea1becd046ea0edfabfb4884be378dd66626aa451cc0d94a777e4b68ab"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_cercaria/consolidated_peaks.tsv.gz",
+      "bytes": 212526,
+      "sha256": "2530cc2f93e4df5b70465cbd28261dcfcd0d0c6cbad5ce3030553433c35de2e6"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_cercaria/idr_output.narrowPeak.gz",
+      "bytes": 225279,
+      "sha256": "ad0a1d6b0e0bb5dfabf0156567aec8465f31dbfbddd1ea05940e1b9e08eb0963"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_cercaria/replicate_evidence.tsv.gz",
+      "bytes": 211,
+      "sha256": "dce3f62cce36a3099a6335fb6607e598c33aee23154d7907d1f8916bb6c67d62"
+    },
+    {
+      "path": "results/narrow/chipseq/idr/male_cercaria/statistics.json",
+      "bytes": 334,
+      "sha256": "bb618228f9b9cce50c36498fc11fd05c7b5c10088ac03fde6ea77abab8184dbe"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_adult/annotated_peaks.tsv.gz",
+      "bytes": 878511,
+      "sha256": "8bd7f2183fedcf5a39626024d662a40e29eafff006365dbc1171b76819d083a9"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_adult/homer_native.tsv.gz",
+      "bytes": 406924,
+      "sha256": "f48353630f92d66877129450b04b873b9e2f39490cb03faf8393770c075302e6"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_adult/homer_tss.tsv.gz",
+      "bytes": 124501,
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_adult/peak_gene_associations.tsv.gz",
+      "bytes": 736054,
+      "sha256": "6990c4716831786ff8ef00e2d1dc6f4ef2148659880a2a2af978aeb97d011536"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_cercaria/annotated_peaks.tsv.gz",
+      "bytes": 899435,
+      "sha256": "f62489794cd4b289b4a33acad8994a1e2ffd7f037107b2d0b2c65d06ed35f77c"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_cercaria/homer_native.tsv.gz",
+      "bytes": 417497,
+      "sha256": "58d485c452bdf21863af1ab3fceb7eea1d4f0875e4d801cc989b4389aec84bb3"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_cercaria/homer_tss.tsv.gz",
+      "bytes": 124501,
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/female_cercaria/peak_gene_associations.tsv.gz",
+      "bytes": 752945,
+      "sha256": "1bcb1a483375def752723bd4c98875dc3f59213ed8960a03c60fdd057388453a"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_adult/annotated_peaks.tsv.gz",
+      "bytes": 1001880,
+      "sha256": "ab314d1678b989583079f735ba242797a0757bae5066e398796a867188fe7d6f"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_adult/homer_native.tsv.gz",
+      "bytes": 454289,
+      "sha256": "e6148281e41477ffa61af5849cd09a2868624db6c54bf97a73c860397ed396a9"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_adult/homer_tss.tsv.gz",
+      "bytes": 124501,
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_adult/peak_gene_associations.tsv.gz",
+      "bytes": 846654,
+      "sha256": "4dc45a87c0bda4f3d4c2f196d55f365b7598bb23f174d891d1af7722865c3ece"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_cercaria/annotated_peaks.tsv.gz",
+      "bytes": 1020842,
+      "sha256": "1aab33b77d5062e29de907eeef45186d82f914e6ceae2d35577e3fe1b5d5593d"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_cercaria/homer_native.tsv.gz",
+      "bytes": 455938,
+      "sha256": "6302ecd121a3fac3ecb32bf6e3ea4957df8666ce74ceb27fb52b7d792103a462"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_cercaria/homer_tss.tsv.gz",
+      "bytes": 124501,
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad"
+    },
+    {
+      "path": "results/narrow/chipseq/peak_annotation/male_cercaria/peak_gene_associations.tsv.gz",
+      "bytes": 859856,
+      "sha256": "25f028eb202e5d1587fc93a0d88af102be441ab8089d441d7b02fb808545a1a1"
+    },
+    {
+      "path": "results/narrow/manifests/native_execution_summary.json",
+      "bytes": 3395,
+      "sha256": "28be85f29351afe7e29f38bbf391f5959e72d700c92a081e5a7e940ebe4ad4c8"
+    },
+    {
+      "path": "results/narrow/qc/peak_qc_summary.json",
+      "bytes": 7832,
+      "sha256": "eb1475014218d46331289c801e810f5e6d64fd45be022cf7866751f1e5dc114a"
+    },
+    {
+      "path": "results/narrow/qc/peak_qc_summary.tsv.gz",
+      "bytes": 1032,
+      "sha256": "134061fe8649a7c3ecdcb8ff0095be660ef1a373497339a16e7617ba130736a5"
+    },
+    {
+      "path": "results/narrow/regional_summary.tsv",
+      "bytes": 542,
+      "sha256": "e34134223d21ca909bdd5e75075559ef547903d32b445b1d84d8c56b86424da6"
+    },
+    {
+      "path": "results/narrow/tracks/tracks.tsv.gz",
+      "bytes": 1790,
+      "sha256": "3ee4c1dfd48591f91a1f57c501af1f9c54c7ca1429b4ddb6f62e1e5898a3b714"
+    },
+    {
+      "path": "results/reports/PRJNA312093_H3K4me3.html",
+      "bytes": 79523,
+      "sha256": "c07a12069c4f8a654c8f6afe5e50eab467b862851565d2f9fe0222d1cd99043f"
+    },
+    {
+      "path": "results/reports/PRJNA312093_H3K4me3_multiqc.html",
+      "bytes": 2437885,
+      "sha256": "3178805954b0dce256dd99988b13ec1d7fc239d74e4e8420306fc232a777f834"
     },
     {
       "path": "results/reports/PRJNA312093_execution_report.md",
-      "bytes": 1846,
-      "sha256": "9c348d31299a03ac0db747b8c4862a8e6c490ee3a10e12dfbb8c28718934ed35"
+      "bytes": 2874,
+      "sha256": "01458ba44a074742fc840d6b3eec451b455b82db535a1cac180b97e6c0fc9bcd"
     }
   ]
 }

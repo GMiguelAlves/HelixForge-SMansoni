@@ -26,6 +26,24 @@ assessment was not available in this source execution and remains explicitly
 unassessed. More regions or associations do not prove improved biological
 accuracy or equivalence to a publication's processing strategy.
 
-The H3K4me3 arm, whole-study terminal report, final combined QC review and DB
-eligibility review are not certified by this publication. See the
-[result index](../README.md) and group manifests for provenance and artifact hashes.
+## H3K4me3 completion
+
+The narrow arm completed 226 native tasks: 82 QC/alignment/BAM, 51
+MACS3/Peak QC/regional consolidation, nine IDR and 84 post-consensus tasks.
+The existing Bowtie2 index and matched Input BAMs were reused. Per-library
+FRiP is 0.278–0.571, and four groups retain 4,348–4,719 IDR regions.
+Native HOMER annotation, 20 coverage tracks, the continuation HTML report and
+the terminal manifest were produced. Schema, semantic and tracked-file
+validation passed. These are processing/contract checks, not a new independent
+biological benchmark or a direct-tool comparison.
+
+The H3K4me3 source commit and assessed/unassessed ambiguity states are recorded
+in its [execution summary](../narrow/manifests/native_execution_summary.json).
+The earlier H3K27me3 comparison outcome above remains unchanged. There is no
+new combined native terminal report for both marks.
+
+DB is [on HOLD](../../../../docs/chipseq/prjna312093_differential_binding.md):
+adult sex–instrument confounding, unresolved selected female source-pool
+mapping and comparison-specific QC/model concerns prevent certification of
+an inferential contrast. Peak results remain accepted; no differential sex
+effect is claimed. See the [result index](../README.md) for both arms.

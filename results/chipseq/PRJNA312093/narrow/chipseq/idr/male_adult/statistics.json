@@ -1,0 +1,14 @@
+{
+  "consolidated_peaks": 4719,
+  "id": "PRJNA312093.PRJNA312093.H3K4me3.male_adult.H3K4me3.Schistosoma_mansoni_SM_V10_WBPS19.narrow",
+  "idr_threshold": 0.05,
+  "input_peaks": [
+    13033,
+    13199
+  ],
+  "random_seed": 0,
+  "rank_metric": "signal_value",
+  "schema_version": "1.0",
+  "status": "complete",
+  "strategy": "idr"
+}

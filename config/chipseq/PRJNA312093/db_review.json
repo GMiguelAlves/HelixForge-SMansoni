@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA312093",
+  "review_date": "2026-10-21",
+  "status": "HOLD",
+  "peak_processing_status": "COMPLETE",
+  "atlas_peak_inclusion": "ACCEPTED",
+  "differential_binding_executed": false,
+  "pairing_decision": "unpaired",
+  "pairing_rationale": "Male and female parasite pools are distinct samples. Neither matching replicate numbers nor the shared generic BioSample establishes matched biological units across sex.",
+  "biological_unit_definition": "Independently collected parasite pool and chromatin preparation, not an individual sequenced read, sequencing run or Input library.",
+  "library_to_biological_source_mapping": "UNRESOLVED_FOR_SELECTED_FEMALE_LIBRARIES",
+  "biological_independence_status": "The publications describe biological replication, including two male replicates, but an exact source-pool mapping for the two selected female libraries per stage has not been established. A shared BioSample is not evidence of either independence or pseudoreplication.",
+  "publication_source_and_methods_section": [
+    {"doi": "10.1371/journal.pntd.0004930", "sections": ["Parasite culture and sample preparation", "Chromatin ImmunoPrecipiation assay", "Illumina library construction and high-throughput sequencing"], "url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004930"},
+    {"doi": "10.1093/gbe/evz133", "sections": ["Publicly Available RNA-Seq and ChIP-Seq Reads", "Newly Generated H3K4me3 ChIP-Seq Data in Males"], "url": "https://doi.org/10.1093/gbe/evz133"}
+  ],
+  "metadata_sources": [
+    "provenance/source_package/frozen/chipseq/PRJNA312093/ena_read_run.tsv",
+    "metadata/chipseq/PRJNA312093/design.tsv",
+    "https://www.ebi.ac.uk/ena/browser/view/SAMN04493444"
+  ],
+  "comparisons": [
+    {"mark": "H3K4me3", "stage": "adult", "contrast": "male_vs_female", "status": "HOLD", "reasons": ["sex_and_sequencing_instrument_completely_confounded", "selected_female_source_pool_mapping_unresolved"], "sex_platform_design_rank": 2, "sex_platform_design_columns": 3},
+    {"mark": "H3K27me3", "stage": "adult", "contrast": "male_vs_female", "status": "HOLD", "reasons": ["sex_and_sequencing_instrument_completely_confounded", "selected_female_source_pool_mapping_unresolved"], "sex_platform_design_rank": 2, "sex_platform_design_columns": 3},
+    {"mark": "H3K4me3", "stage": "cercaria", "contrast": "male_vs_female", "status": "HOLD", "reasons": ["selected_female_source_pool_mapping_unresolved"], "instrument": "Illumina HiSeq 2500 for all four IP libraries", "enrichment_review": "FAVORABLE; FRiP and IDR do not establish biological independence"},
+    {"mark": "H3K27me3", "stage": "cercaria", "contrast": "male_vs_female", "status": "HOLD", "reasons": ["selected_female_source_pool_mapping_unresolved", "instrument_imbalance_and_low_residual_degrees_of_freedom_require_review"], "sex_platform_design_rank": 3, "sex_platform_design_columns": 3, "residual_degrees_of_freedom": 1}
+  ],
+  "h3k4me3_qc": {
+    "individual_frip_range": [0.27826687852573023, 0.5712292416964493],
+    "final_selected_reads_range": [9813603, 26681341],
+    "idr_threshold": 0.05,
+    "idr_rank": "signal_value",
+    "idr_regions": {"female_adult": 4348, "female_cercaria": 4461, "male_adult": 4719, "male_cercaria": 4651},
+    "duplicates_removed": false,
+    "unmarked_duplicate_flag_counts_are_library_complexity_evidence": false
+  },
+  "h3k27me3_qc": {
+    "individual_frip_range": [0.02057031500734464, 0.21301993171474443],
+    "female_adult_frip": [0.1941131971483494, 0.02057031500734464],
+    "male_adult_frip": [0.09247435077924031, 0.030213979505998398],
+    "interpretation": "Marked between-library variation requires review before inferential DB; no universal broad-mark FRiP pass threshold was imposed. Minimum-one regional inclusion is not replication certification."
+  },
+  "confounding_and_scope_of_inference": "The adult male-versus-female effect cannot be separated from sequencing instrument in the selected libraries. A group-only model would estimate a combined difference, not an isolated sex effect. Do not label deposited Adult libraries as paired or sexually mature paired worms; the publications describe unisexual infections and distinguish somatic differentiation from sexual maturity.",
+  "normalization_review": "PENDING_IF_DB_BECOMES_ELIGIBLE; no claim of absolute occupancy, spike-in calibration or validated invariant regions.",
+  "release_conditions": ["Reconcile selected libraries with independently collected biological source pools", "Resolve or explicitly redesign instrument-confounded comparisons", "Complete replicate/counting/normalization and executable-model review"],
+  "retention": {"ip_bam_bai": "PROTECTED", "input_bam_bai": "PROTECTED", "metadata_and_peak_evidence": "PROTECTED", "verified_home_copies_allow_disposable_workdir_cleanup": true},
+  "negative_qc_or_biological_failure_claimed": false
+}

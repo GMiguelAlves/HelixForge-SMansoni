@@ -87,7 +87,10 @@ class PublishedH3k27Tests(unittest.TestCase):
 
     def test_partial_scope_and_comparison_failure_are_preserved(self):
         doc=json.loads((ROOT/'manifests/regional_publication.json').read_text())
-        self.assertEqual(doc['pending_arms'],['H3K4me3'])
+        self.assertEqual(doc['pending_arms'],[])
+        self.assertEqual(set(doc['published_arms']), {'H3K4me3', 'H3K27me3'})
+        self.assertEqual(doc['differential_binding_status'], 'HOLD')
+        self.assertTrue((ROOT/doc['h3k4me3_execution_summary']).is_file())
         self.assertEqual(doc['source_direct_equivalence'],'FAIL_DIRECT_EQUIVALENCE')
         self.assertFalse(doc['strict_gate_redefined'])
         self.assertFalse(doc['public_copy_is_self_contained_reentry_package'])
