@@ -1,0 +1,6 @@
+{
+  "source": "https://raw.githubusercontent.com/GMOD/bbi-js/main/test/data/volvox.bw",
+  "retrieved": "2026-10-20",
+  "sha256": "1f6c7ef998f8392457eaec3f2466c09d9405ce5dddb28659b486b8c338ac2b18",
+  "purpose": "Upstream Volvox BigWig parser fixture, not S. mansoni evidence and never included in the atlas."
+}
