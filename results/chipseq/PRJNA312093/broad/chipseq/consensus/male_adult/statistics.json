@@ -1,0 +1,11 @@
+{
+  "candidate_bp": 9901810,
+  "candidate_with_library_support": 5680,
+  "consolidated_peaks": 39845,
+  "core_bp": 1113689,
+  "core_min_libraries": 2,
+  "excluded_regions": 0,
+  "regional_min_libraries": 1,
+  "unfiltered_bp": 9901810,
+  "unfiltered_regions": 39845
+}

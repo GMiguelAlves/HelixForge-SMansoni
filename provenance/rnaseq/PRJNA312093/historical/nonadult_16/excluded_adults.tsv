@@ -1,0 +1,5 @@
+__rowname	stage	sex	condition	replicate
+PRJNA312093__female_adult_r1	adult	female	adult_female	1
+PRJNA312093__female_adult_r2	adult	female	adult_female	2
+PRJNA312093__male_adult_r1	adult	male	adult_male	1
+PRJNA312093__male_adult_r2	adult	male	adult_male	2
