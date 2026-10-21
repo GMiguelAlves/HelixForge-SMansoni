@@ -64,3 +64,4 @@ __pycache__/
 # The frozen, reviewed atlas data are part of the distributable snapshot.
 !results/atlas/rnaseq/data/
 !results/atlas/rnaseq/data/**
+!tests/fixtures/chipseq_parser_volvox.bw

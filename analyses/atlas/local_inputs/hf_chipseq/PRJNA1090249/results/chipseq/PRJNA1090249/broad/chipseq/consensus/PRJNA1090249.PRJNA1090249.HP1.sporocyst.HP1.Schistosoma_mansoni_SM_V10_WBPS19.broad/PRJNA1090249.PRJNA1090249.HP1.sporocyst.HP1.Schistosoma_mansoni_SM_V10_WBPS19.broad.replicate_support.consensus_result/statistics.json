@@ -1,0 +1,15 @@
+{
+  "atomic_segments": 1024,
+  "consolidated_peaks": 98,
+  "id": "PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad",
+  "replicate_count": 3,
+  "schema_version": "1.0",
+  "status": "complete",
+  "strategy": "replicate_support",
+  "support_distribution": {
+    "1": 926,
+    "2": 84,
+    "3": 14
+  },
+  "support_threshold": 2
+}

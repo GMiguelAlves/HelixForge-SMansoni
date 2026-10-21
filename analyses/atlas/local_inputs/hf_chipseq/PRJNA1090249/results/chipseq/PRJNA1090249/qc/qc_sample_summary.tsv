@@ -1,0 +1,9 @@
+sample_id	run_accession	condition	target	is_control	final_bam_reads	peak_count	frip	qc_status	review_reason
+cercaria_input	SRR28402821	cercaria	input	true	9891828	NA	NA	CONTROL	matched_input_control
+sporocyst_input	SRR28402817	sporocyst	input	true	21522014	NA	NA	CONTROL	matched_input_control
+cercaria_hp1_r3	SRR28402822	cercaria	HP1	false	9046740	1240	0.005364031684341542	REVIEW	extension_sensitivity_and_enrichment_review
+cercaria_hp1_r2	SRR28402825	cercaria	HP1	false	10208147	267	0.0022358612194749937	REVIEW	extension_sensitivity_and_enrichment_review
+cercaria_hp1_r1	SRR28402826	cercaria	HP1	false	8354288	618	0.003926247215801035	REVIEW	extension_sensitivity_and_enrichment_review
+sporocyst_hp1_r3	SRR28402818	sporocyst	HP1	false	4972807	48	0.03160669617783276	REVIEW	extension_sensitivity_and_enrichment_review
+sporocyst_hp1_r2	SRR28402819	sporocyst	HP1	false	8616693	407	0.0020099358303701897	REVIEW	extension_sensitivity_and_enrichment_review
+sporocyst_hp1_r1	SRR28402820	sporocyst	HP1	false	8015541	500	0.002422169632717243	REVIEW	extension_sensitivity_and_enrichment_review

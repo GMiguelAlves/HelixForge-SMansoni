@@ -21,6 +21,7 @@ from build_rnaseq_atlas import version_report_assets
 class NativeChipTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        (Path(tempfile.gettempdir())).mkdir(exist_ok=True)
         atlas = json.loads((ROOT / "analyses/atlas/atlas_config.json").read_text(encoding="utf-8"))
         cls.config = {**atlas["chipseq_integration"], "reference_id": atlas["reference_id"], "studies": [atlas["chipseq_integration"]["studies"][0]]}
         with (ROOT / atlas["gene_annotations"]).open(encoding="utf-8") as handle:

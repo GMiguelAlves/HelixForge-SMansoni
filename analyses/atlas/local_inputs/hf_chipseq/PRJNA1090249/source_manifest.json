@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "study_id": "PRJNA1090249",
+  "repository": "https://github.com/GMiguelAlves/HelixForge-SMansoni",
+  "commit": "a46707208b6ac326f6836a77c353f86319e5f550",
+  "scope": "small_published_HF_artifacts_no_reads_or_tracks",
+  "files": [
+    {
+      "path": "docs/chipseq/differential_binding_review.md",
+      "sha256": "d33d1060b20a0c041785c0a62b056b3347443dca869941f039da947a931def3a",
+      "bytes": 7920
+    },
+    {
+      "path": "docs/chipseq/prjna1090249_peak_policy.md",
+      "sha256": "6ca6cbd251cc56f1950018b5c77234d121b02a70c8f0e4d21e124840ab8ef38e",
+      "bytes": 13711
+    },
+    {
+      "path": "provenance/chipseq/PRJNA1090249/execution_provenance.json",
+      "sha256": "6b59d2b79de84f13baa1c986806ef1b419cb020ade1d55e2737f3399c80ab147",
+      "bytes": 61226
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/README.md",
+      "sha256": "1240ff219a5d710ac40be6359c28d470f2d57feb95a2831759932a9e837833b4",
+      "bytes": 3429
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/chipseq_run_manifest.json",
+      "sha256": "4cfaa1111b93dcb88f413d9b3220fbd8af1a4771cbd4ee70d2862c5eea7473cf",
+      "bytes": 34602
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/consolidated_peaks.bed",
+      "sha256": "622d2f89cb115a596ea07c758e493e7bd8a2a91af7e948dcbed41d84c0c69020",
+      "bytes": 49297
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/consolidated_peaks.tsv",
+      "sha256": "f55f92a5bfcdcb23d8aa88527d38d1d2fd8f6dceb4408da8bd389f1192a7c9a0",
+      "bytes": 51710
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/manifest.json",
+      "sha256": "974105f52cc5c0e2b93b9ca8d37e1abee5f7f5c3726f13378f58e4dac04f3ea4",
+      "bytes": 7793
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/replicate_evidence.tsv",
+      "sha256": "a321ac518e4fe8e4249a6b010c9e3602b56ee1affb6f8d1e6c59e5898fa73be1",
+      "bytes": 261723
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/statistics.json",
+      "sha256": "9f0b44205bd379f6191da72aa4cbdbd71f3c06073367bf5e48a0689d0aa272ae",
+      "bytes": 363
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/consolidated_peaks.bed",
+      "sha256": "f6a6786caf28a0af7166ae26010268c66ef83aa0e4996374fe2e9c4b952584f4",
+      "bytes": 13256
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/consolidated_peaks.tsv",
+      "sha256": "2bc8c57239f27a1556f8cea2fd32368d7f7d421c7ef0c4f17db2a27f5741bc14",
+      "bytes": 13923
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/manifest.json",
+      "sha256": "5623e8fa9c91505522192434a63d04fc6c187b364cba01be3fb756d3ed1038f2",
+      "bytes": 7807
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/replicate_evidence.tsv",
+      "sha256": "4c7ca4024656304c04717fe4e54301473fb25666da50e9cb4a9171e289c94845",
+      "bytes": 117550
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.replicate_support.consensus_result/statistics.json",
+      "sha256": "9434eb97c6398343e82e071b4e3a6470b39eb58b475532ad138e98d411916520",
+      "bytes": 361
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/consolidation_summary.json",
+      "sha256": "5a1b9a61128e2a4ab55cf8e6ea32ea06e20335cdb3e4d0b0564b72b8cbb9f048",
+      "bytes": 1561
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/consensus/consolidation_summary.tsv",
+      "sha256": "c06010de5434c5bace3b714215687de99031cb1bd47c04f25c3adbb7941ed15b",
+      "bytes": 749
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/annotated_peaks.tsv",
+      "sha256": "cf966f9e6d2d2c8a435576c96cd5d9de7d91aaa8c31c413c0c76716b7bcee6c8",
+      "bytes": 88135
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/manifest.json",
+      "sha256": "150140468306e1274aaae8f97287bb8e4e4660038497f8bb4d35c03c8431acff",
+      "bytes": 4331
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/peak_gene_associations.tsv",
+      "sha256": "ecfcdd2b726836acc6a1ccb1fffc744100db20811b9b26a8b081310585f91d2f",
+      "bytes": 19698
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/provider_reports/annotation_features.tsv",
+      "sha256": "5c6486cd7989caa221e4e14db27b64aedffcbf2cbc3a8d72ae4a664f98e034fd",
+      "bytes": 78
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.cercaria.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/provider_reports/category_counts.tsv",
+      "sha256": "3861783d91d87e20a49b3ae0511ea4739fc51065b9776485e81d05d5867cd7af",
+      "bytes": 73
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/annotated_peaks.tsv",
+      "sha256": "997a9eccbbc93194d6e1beb22dd6c9ae24ddfc4167be7e2a52992ac751596aa5",
+      "bytes": 23894
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/manifest.json",
+      "sha256": "34d6bf8582e47dd069718ba0071b2d1239c10e6f12dc0fe858908170441ca9c1",
+      "bytes": 4342
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/peak_gene_associations.tsv",
+      "sha256": "f94ad9a199e0a619ffd300f2725e4efee9b9b6dfb6c0492bbca1f79aedff7764",
+      "bytes": 7970
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/provider_reports/annotation_features.tsv",
+      "sha256": "5c6486cd7989caa221e4e14db27b64aedffcbf2cbc3a8d72ae4a664f98e034fd",
+      "bytes": 78
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/PRJNA1090249.PRJNA1090249.HP1.sporocyst.HP1.Schistosoma_mansoni_SM_V10_WBPS19.broad.annotation.peak_annotation/provider_reports/category_counts.tsv",
+      "sha256": "d8c1ac8bfb6de8a1725816f6505fe8b06b5dfa033522dd056e6ee875f4088cfb",
+      "bytes": 70
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/peak_annotation_aggregate/annotated_peaks.tsv",
+      "sha256": "e6bb687b85990bda1cfecae1fc485c9c649decff9b8dde043d9c49ffc160a49e",
+      "bytes": 155753
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/peak_annotation_aggregate/manifest.json",
+      "sha256": "58c671cc22694eda231abcf63d4760824c44c276cab99f4338e5724ae996b970",
+      "bytes": 1431
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/peak_annotation_aggregate/peak_gene_associations.tsv",
+      "sha256": "b77ffb6470cbcf00478f804fa684d9a8b30ab4f722238bff74b54ca8d5ee93ae",
+      "bytes": 39878
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/peak_annotation_aggregate/statistics.tsv",
+      "sha256": "1d48524cbe7ed61a5dfe348ed90c871231ea72f365e860c6822c128b24ced61f",
+      "bytes": 563
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/broad/chipseq/peak_qc/peak_qc_summary.tsv",
+      "sha256": "0a1ee16cda5d2ba37ec6e721b3127c4896f6d0249d0afa53487d5a9bf6b5a286",
+      "bytes": 1881
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/manifests/publication_validation.json",
+      "sha256": "76c5c99141679ef1a0bf3b5002e1cac0915857d6edabdcb8e324b8d0dd5cb868",
+      "bytes": 48979
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/manifests/reference_bundle.manifest.json",
+      "sha256": "2b037061e52bf9a253d63805727a56227de074335d215987e30ecb285783ce36",
+      "bytes": 760
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/qc/qc_sample_summary.tsv",
+      "sha256": "09371e2606f9fcce23f9069650cb6daaff637426eee8f9c86738166583a98f12",
+      "bytes": 1087
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/qc/qc_summary.json",
+      "sha256": "808464d7c004e6e9235033237853dbf27e225e193d3cd502827b2c11a4a35f8c",
+      "bytes": 638
+    },
+    {
+      "path": "results/chipseq/PRJNA1090249/reports/PRJNA1090249_execution_report.md",
+      "sha256": "10787c7e6402051bf47df83b0bb6951ed7e7da3dd08d163a8940e4ffc0cdb33c",
+      "bytes": 3947
+    }
+  ]
+}
