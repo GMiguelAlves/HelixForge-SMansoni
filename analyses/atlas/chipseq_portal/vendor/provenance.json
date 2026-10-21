@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "@gmod/bbi": "11.3.2",
+    "generic-filehandle2": "2.5.1",
+    "@gmod/shared-read-cache": "2.1.0"
+  },
+  "bundle_sha256": "4d9b2b5e8a0e40e06ac37c5193979b0996224714858978539a600a4e7610606b",
+  "build": "esbuild 0.25.12; browser ESM; minified",
+  "source": "https://github.com/GMOD/bbi-js",
+  "purpose": "Read local BigWig files; loaded only when signal tracks are opened."
+}
