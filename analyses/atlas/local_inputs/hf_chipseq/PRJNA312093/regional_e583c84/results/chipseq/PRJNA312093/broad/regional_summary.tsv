@@ -1,0 +1,5 @@
+study	condition	target	regions	region_bp	associated_gene_ids	core_bp	total_library_count	single_library_regions	multiple_library_regions	all_library_regions
+PRJNA312093	female_adult	H3K27me3	75155	19954038	6120	1134941	2	71400	3755	3755
+PRJNA312093	female_cercaria	H3K27me3	29089	11484061	4326	4608011	2	20537	8552	8552
+PRJNA312093	male_adult	H3K27me3	39845	9901810	5031	1113689	2	34165	5680	5680
+PRJNA312093	male_cercaria	H3K27me3	44179	30338539	5455	16524733	2	29716	14463	14463

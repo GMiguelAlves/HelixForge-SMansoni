@@ -5,3 +5,17 @@ provenance/source_package/frozen/** -text
 
 # Keep published RNA-seq result bytes identical to their SHA256SUMS manifest.
 results/rnaseq/PRJNA428470/** -text
+
+# Preserve atlas provenance checksums across Windows and Linux checkouts.
+analyses/atlas/** -text
+scripts/atlas/** -text
+scripts/reference/extract_transcript_models.py -text
+results/atlas/** -text
+results/*/expression/** -text
+results/*/differential_expression/** -text
+results/*/qc/** -text
+results/*/restricted_refit/** -text
+metadata/*/samples.tsv -text
+config/*/de_spec*.json -text
+config/reference/** -text
+config/candidates/histone_modifier_gene_set_v2.tsv -text

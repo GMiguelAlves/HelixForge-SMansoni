@@ -1,0 +1,24 @@
+{
+  "artifacts": {
+    "annotation": {
+      "available": true,
+      "path": "schistosoma_mansoni.PRJEA36577.WBPS19.canonical_geneset.gtf",
+      "sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e"
+    },
+    "blacklist": {
+      "available": false
+    },
+    "reference": {
+      "available": true,
+      "path": "schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa",
+      "sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3"
+    }
+  },
+  "build": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "id": "Schistosoma_mansoni_SM_V10_WBPS19.reference",
+  "organism": "Schistosoma mansoni",
+  "schema_version": "1.0",
+  "status": "complete",
+  "type": "reference_bundle"
+}

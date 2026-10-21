@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJNA312093",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjna312093_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJNA312093",
+  "contrasts": [
+    {
+      "id": "condition__cercaria_female_vs_cercaria_male",
+      "factor": "condition",
+      "numerator": "cercaria_female",
+      "denominator": "cercaria_male",
+      "description": "cercaria_female versus cercaria_male",
+      "direction": "cercaria_female/cercaria_male"
+    },
+    {
+      "id": "condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male",
+      "factor": "condition",
+      "numerator": "schistosomulum_stage_1_female",
+      "denominator": "schistosomulum_stage_1_male",
+      "description": "schistosomulum_stage_1_female versus schistosomulum_stage_1_male",
+      "direction": "schistosomulum_stage_1_female/schistosomulum_stage_1_male"
+    },
+    {
+      "id": "condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male",
+      "factor": "condition",
+      "numerator": "schistosomulum_stage_2_female",
+      "denominator": "schistosomulum_stage_2_male",
+      "description": "schistosomulum_stage_2_female versus schistosomulum_stage_2_male",
+      "direction": "schistosomulum_stage_2_female/schistosomulum_stage_2_male"
+    },
+    {
+      "id": "condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male",
+      "factor": "condition",
+      "numerator": "schistosomulum_stage_3_female",
+      "denominator": "schistosomulum_stage_3_male",
+      "description": "schistosomulum_stage_3_female versus schistosomulum_stage_3_male",
+      "direction": "schistosomulum_stage_3_female/schistosomulum_stage_3_male"
+    },
+    {
+      "id": "condition__adult_female_vs_adult_male",
+      "factor": "condition",
+      "numerator": "adult_female",
+      "denominator": "adult_male",
+      "description": "adult_female versus adult_male",
+      "direction": "adult_female/adult_male"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJEB3190",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjeb3190_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJEB3190",
+  "contrasts": [
+    {
+      "id": "condition__schistosomulum_3h_vs_schistosomulum_0h",
+      "factor": "condition",
+      "numerator": "schistosomulum_3h",
+      "denominator": "schistosomulum_0h",
+      "description": "schistosomulum_3h versus schistosomulum_0h",
+      "direction": "schistosomulum_3h/schistosomulum_0h"
+    },
+    {
+      "id": "condition__schistosomulum_6h_vs_schistosomulum_3h",
+      "factor": "condition",
+      "numerator": "schistosomulum_6h",
+      "denominator": "schistosomulum_3h",
+      "description": "schistosomulum_6h versus schistosomulum_3h",
+      "direction": "schistosomulum_6h/schistosomulum_3h"
+    },
+    {
+      "id": "condition__schistosomulum_12h_vs_schistosomulum_6h",
+      "factor": "condition",
+      "numerator": "schistosomulum_12h",
+      "denominator": "schistosomulum_6h",
+      "description": "schistosomulum_12h versus schistosomulum_6h",
+      "direction": "schistosomulum_12h/schistosomulum_6h"
+    },
+    {
+      "id": "condition__schistosomulum_24h_vs_schistosomulum_12h",
+      "factor": "condition",
+      "numerator": "schistosomulum_24h",
+      "denominator": "schistosomulum_12h",
+      "description": "schistosomulum_24h versus schistosomulum_12h",
+      "direction": "schistosomulum_24h/schistosomulum_12h"
+    },
+    {
+      "id": "condition__schistosomulum_48h_vs_schistosomulum_24h",
+      "factor": "condition",
+      "numerator": "schistosomulum_48h",
+      "denominator": "schistosomulum_24h",
+      "description": "schistosomulum_48h versus schistosomulum_24h",
+      "direction": "schistosomulum_48h/schistosomulum_24h"
+    },
+    {
+      "id": "condition__schistosomulum_72h_vs_schistosomulum_48h",
+      "factor": "condition",
+      "numerator": "schistosomulum_72h",
+      "denominator": "schistosomulum_48h",
+      "description": "schistosomulum_72h versus schistosomulum_48h",
+      "direction": "schistosomulum_72h/schistosomulum_48h"
+    },
+    {
+      "id": "condition__schistosomulum_24h_vs_schistosomulum_0h",
+      "factor": "condition",
+      "numerator": "schistosomulum_24h",
+      "denominator": "schistosomulum_0h",
+      "description": "schistosomulum_24h versus schistosomulum_0h",
+      "direction": "schistosomulum_24h/schistosomulum_0h"
+    },
+    {
+      "id": "condition__schistosomulum_48h_vs_schistosomulum_0h",
+      "factor": "condition",
+      "numerator": "schistosomulum_48h",
+      "denominator": "schistosomulum_0h",
+      "description": "schistosomulum_48h versus schistosomulum_0h",
+      "direction": "schistosomulum_48h/schistosomulum_0h"
+    },
+    {
+      "id": "condition__schistosomulum_72h_vs_schistosomulum_0h",
+      "factor": "condition",
+      "numerator": "schistosomulum_72h",
+      "denominator": "schistosomulum_0h",
+      "description": "schistosomulum_72h versus schistosomulum_0h",
+      "direction": "schistosomulum_72h/schistosomulum_0h"
+    }
+  ]
+}

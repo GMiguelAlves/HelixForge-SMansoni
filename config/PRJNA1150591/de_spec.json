@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJNA1150591",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjna1150591_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJNA1150591",
+  "contrasts": [
+    {
+      "id": "condition__adult_7wk_mclz_vs_adult_7wk_control",
+      "factor": "condition",
+      "numerator": "adult_7wk_mclz",
+      "denominator": "adult_7wk_control",
+      "description": "adult_7wk_mclz versus adult_7wk_control",
+      "direction": "adult_7wk_mclz/adult_7wk_control"
+    }
+  ]
+}

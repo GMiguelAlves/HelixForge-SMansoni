@@ -1,0 +1,179 @@
+{
+  "annotation_provider": "homer_4_11",
+  "annotation_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+  "artifacts": {
+    "annotated_peaks.tsv": {
+      "bytes": 1020842,
+      "path": "narrow/chipseq/peak_annotation/male_cercaria/annotated_peaks.tsv.gz",
+      "sha256": "1aab33b77d5062e29de907eeef45186d82f914e6ceae2d35577e3fe1b5d5593d",
+      "source_sha256": "a53a0a84a74ccace6cbc0c1845636ab63cb1932d49eb11e0951302c6508655cc"
+    },
+    "consolidated_peaks.bed": {
+      "bytes": 166732,
+      "path": "narrow/chipseq/consensus/male_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "c0eb0b7d6d12148f01bffd167fbc2d2633a7fdbefab7b1cb944ca9622103f8a8",
+      "source_sha256": "f305b073c1e5e8a6346a4aeef197ff110421e8220b5133d17a1c7929aa977b8e"
+    },
+    "consolidated_peaks.tsv": {
+      "bytes": 226881,
+      "path": "narrow/chipseq/consensus/male_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "6e88e692abd80b3b463ed1ae48616daf2011c60d49cf32b80d98f808df404566",
+      "source_sha256": "cce5dfc8b82d4b6d9c3b6b7ff6f2b4afec0cc03409a9fc8ac686ffecd7539a19"
+    },
+    "excluded_regions.tsv": {
+      "bytes": 105,
+      "path": "narrow/chipseq/consensus/male_cercaria/excluded_regions.tsv.gz",
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748",
+      "source_sha256": "615758b96186ef4575297444b9a0c31495a372403f20b1795d7b1d22bc2f33ee"
+    },
+    "homer_native": {
+      "bytes": 455938,
+      "path": "narrow/chipseq/peak_annotation/male_cercaria/homer_native.tsv.gz",
+      "sha256": "6302ecd121a3fac3ecb32bf6e3ea4957df8666ce74ceb27fb52b7d792103a462",
+      "source_sha256": "cb4be59a33b4ca08e16df8034a32440b25f3de8de8651598546bc75e2efdfbcb"
+    },
+    "homer_tss": {
+      "bytes": 124501,
+      "path": "narrow/chipseq/peak_annotation/male_cercaria/homer_tss.tsv.gz",
+      "sha256": "8ddc62d3377282498ffdff3d8c32d8f0853955c020c04e2e0ab31bd8ff7f21ad",
+      "source_sha256": "5deb9c5bd3dbe029f0f5c4da719453f18e3deae7f37af4987de552202a3ae7ba"
+    },
+    "idr_consolidated_peaks.bed": {
+      "bytes": 60725,
+      "path": "narrow/chipseq/idr/male_cercaria/consolidated_peaks.bed.gz",
+      "sha256": "23bf6bea1becd046ea0edfabfb4884be378dd66626aa451cc0d94a777e4b68ab",
+      "source_sha256": "46531da55bcac352a302f4224509d52cfcb8ebf6762e33e57dceabe267b55b44"
+    },
+    "idr_consolidated_peaks.tsv": {
+      "bytes": 212526,
+      "path": "narrow/chipseq/idr/male_cercaria/consolidated_peaks.tsv.gz",
+      "sha256": "2530cc2f93e4df5b70465cbd28261dcfcd0d0c6cbad5ce3030553433c35de2e6",
+      "source_sha256": "2bb5484cff21538d4eba6b3409a532dae5f1eb22b8b9cc95c768c19cf6b7bb53"
+    },
+    "idr_idr_output.narrowPeak": {
+      "bytes": 225279,
+      "path": "narrow/chipseq/idr/male_cercaria/idr_output.narrowPeak.gz",
+      "sha256": "ad0a1d6b0e0bb5dfabf0156567aec8465f31dbfbddd1ea05940e1b9e08eb0963",
+      "source_sha256": "2d2c35e94fceda6f0a11f74462dec202909887cf531cf357492506c0ea52eef5"
+    },
+    "idr_replicate_evidence.tsv": {
+      "bytes": 211,
+      "path": "narrow/chipseq/idr/male_cercaria/replicate_evidence.tsv.gz",
+      "sha256": "dce3f62cce36a3099a6335fb6607e598c33aee23154d7907d1f8916bb6c67d62",
+      "source_sha256": "e576cba245ee37dcdd81a6c2d8d38f4f454d136968a88c790b856f82d3a5d916"
+    },
+    "peak_gene_associations.tsv": {
+      "bytes": 859856,
+      "path": "narrow/chipseq/peak_annotation/male_cercaria/peak_gene_associations.tsv.gz",
+      "sha256": "25f028eb202e5d1587fc93a0d88af102be441ab8089d441d7b02fb808545a1a1",
+      "source_sha256": "b90ff9809ec184d572467f0d7b67909e486156ba1e2a7a44102f77679d7ac5ab"
+    },
+    "source_peak_mapping.tsv": {
+      "bytes": 149844,
+      "path": "narrow/chipseq/consensus/male_cercaria/source_peak_mapping.tsv.gz",
+      "sha256": "353fb5acbf9cd0272d365bc4cbaf0c6fd1ab09360aec44d74b151bc7bea8aa05",
+      "source_sha256": "3eb402f6796dad1dd3179c839add56d024e77eb7e04c50132d6a08796847b712"
+    },
+    "support_by_library.tsv": {
+      "bytes": 371866,
+      "path": "narrow/chipseq/consensus/male_cercaria/support_by_library.tsv.gz",
+      "sha256": "5f6bebe474641e02e7596f127ea73c082e89a49f2674e00722b35fa0f35e0b02",
+      "source_sha256": "7b9febf1e4a7bca7b6d54d401268812e9c0924865b3543e39155ffdde3c1b8ed"
+    },
+    "support_core.bed": {
+      "bytes": 101478,
+      "path": "narrow/chipseq/consensus/male_cercaria/support_core.bed.gz",
+      "sha256": "087756a6148ca4ff3eb99d9bc2b5affbdc5cb2d5d7cff63a14267ca665767fe1",
+      "source_sha256": "afb3d46afcf82996c4d4b53c1026c51ec3cc759ccdfd7bc4151b1f9cd6a1efd6"
+    },
+    "unfiltered_peaks.bed": {
+      "bytes": 166732,
+      "path": "narrow/chipseq/consensus/male_cercaria/unfiltered_peaks.bed.gz",
+      "sha256": "c0eb0b7d6d12148f01bffd167fbc2d2633a7fdbefab7b1cb944ca9622103f8a8",
+      "source_sha256": "f305b073c1e5e8a6346a4aeef197ff110421e8220b5133d17a1c7929aa977b8e"
+    },
+    "upstream.boolean.txt": {
+      "bytes": 702211,
+      "path": "narrow/chipseq/consensus/male_cercaria/upstream.boolean.txt.gz",
+      "sha256": "d34fc5cc9470f36f7140d629caa5c113e6d1cc6505e798c4f56bb38859adbd1e",
+      "source_sha256": "69bf89a5904e60b768bddd2c11bf04c4ae250a99a560a763d7d418c9420bf483"
+    },
+    "upstream.unfiltered.boolean.txt": {
+      "bytes": 702211,
+      "path": "narrow/chipseq/consensus/male_cercaria/upstream.unfiltered.boolean.txt.gz",
+      "sha256": "d34fc5cc9470f36f7140d629caa5c113e6d1cc6505e798c4f56bb38859adbd1e",
+      "source_sha256": "69bf89a5904e60b768bddd2c11bf04c4ae250a99a560a763d7d418c9420bf483"
+    }
+  },
+  "bedtools_version": "2.30.0",
+  "biological_assignments_changed": false,
+  "condition": "male_cercaria",
+  "core_min_libraries": 2,
+  "dataset": "PRJNA312093",
+  "formatting_changes": [
+    "deterministic gzip",
+    "HOMER command-bearing column heading normalized to PeakID"
+  ],
+  "gene_assignment_ambiguity": {
+    "annotation_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+    "changes_provider_assignment": false,
+    "counts": {
+      "false": 13813,
+      "not_assessed": 333,
+      "true": 5
+    },
+    "scope": "homer_nearest_tss_distance_ties_v1",
+    "tss_sha256": "5deb9c5bd3dbe029f0f5c4da719453f18e3deae7f37af4987de552202a3ae7ba"
+  },
+  "genome_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "group_id": "PRJNA312093.PRJNA312093.H3K4me3.male_cercaria.H3K4me3.Schistosoma_mansoni_SM_V10_WBPS19.narrow",
+  "helixforge_execution_commit": "2833442eb01edbe2e090870ba945fc074bc4d564",
+  "id": "PRJNA312093.PRJNA312093.H3K4me3.male_cercaria.H3K4me3.Schistosoma_mansoni_SM_V10_WBPS19.narrow",
+  "library_metadata": [
+    {
+      "biological_replicate": "1",
+      "control_record_id": "SRR3224865",
+      "record_id": "SRR3224816",
+      "sample_id": "male_cercaria_r1_h3k4me3",
+      "technical_replicate": "1"
+    },
+    {
+      "biological_replicate": "2",
+      "control_record_id": "SRR3224905",
+      "record_id": "SRR3224820",
+      "sample_id": "male_cercaria_r2_h3k4me3",
+      "technical_replicate": "1"
+    }
+  ],
+  "metrics": {
+    "all_library_regions": 10185,
+    "ambiguous_gene_assignments": 5,
+    "associated_gene_ids": 7103,
+    "condition": "male_cercaria",
+    "core_bp": 12538636,
+    "idr_regions": 4651,
+    "region_bp": 14869260,
+    "regions": 14151,
+    "single_library_regions": 3966,
+    "study": "PRJNA312093",
+    "target": "H3K4me3",
+    "total_library_count": 2,
+    "unassessed_gene_assignments": 333
+  },
+  "occupancy_status": "not_assessed",
+  "peak_type": "narrow",
+  "provider": "nfcore_chipseq_2.1.0",
+  "provider_version": "2.1.0",
+  "public_copy_is_self_contained_reentry_package": false,
+  "reference_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "regional_min_libraries": 1,
+  "schema_version": "1.0",
+  "source_annotation_manifest_sha256": "7c0864646ddc4844efce0d7f5fec1d28b3d6d880f0bf4c3db4304a01284fab73",
+  "source_archive_sha256": "6d8326bf4c3784d8fb3c8cdfffd8d8ec11227f5f42d1fb9e205887a22d528ffe",
+  "source_consensus_manifest_sha256": "45af7ebe04276e309aff2d35d245f01e8e2d68ace218dab0a1216308717b25f5",
+  "status": "PUBLISHED",
+  "study": "PRJNA312093",
+  "target": "H3K4me3",
+  "type": "published_chipseq_regional_catalog",
+  "upstream_commit": "76e2382b6d443db4dc2396e6831d1243256d80b0"
+}

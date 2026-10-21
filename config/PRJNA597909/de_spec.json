@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "scope": "PRJNA597909",
+  "correction": "raw",
+  "provider": "deseq2",
+  "test": "wald",
+  "design": {
+    "variable": "condition",
+    "covariates": [],
+    "formula": "~ condition"
+  },
+  "filter": {
+    "method": "total_count",
+    "operator": ">=",
+    "threshold": 10
+  },
+  "parameters": {
+    "alpha": 0.05,
+    "lfc_threshold": 1.0,
+    "min_replicates": 2,
+    "non_integer_counts": "round"
+  },
+  "analysis_id": "smansoni_prjna597909_primary",
+  "target_dir": "results/rnaseq/differential_expression/PRJNA597909",
+  "contrasts": [
+    {
+      "id": "condition__juvenile_pzq_vs_juvenile_control",
+      "factor": "condition",
+      "numerator": "juvenile_pzq",
+      "denominator": "juvenile_control",
+      "description": "juvenile_pzq versus juvenile_control",
+      "direction": "juvenile_pzq/juvenile_control"
+    },
+    {
+      "id": "condition__adult_pzq_vs_adult_control",
+      "factor": "condition",
+      "numerator": "adult_pzq",
+      "denominator": "adult_control",
+      "description": "adult_pzq versus adult_control",
+      "direction": "adult_pzq/adult_control"
+    },
+    {
+      "id": "condition__adult_control_vs_juvenile_control",
+      "factor": "condition",
+      "numerator": "adult_control",
+      "denominator": "juvenile_control",
+      "description": "adult_control versus juvenile_control",
+      "direction": "adult_control/juvenile_control"
+    },
+    {
+      "id": "condition__adult_pzq_vs_juvenile_pzq",
+      "factor": "condition",
+      "numerator": "adult_pzq",
+      "denominator": "juvenile_pzq",
+      "description": "adult_pzq versus juvenile_pzq",
+      "direction": "adult_pzq/juvenile_pzq"
+    }
+  ]
+}
