@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "atlas_id": "smansoni_rnaseq_atlas_v1",
+  "title": "HelixForge-SMansoni RNA-seq Atlas",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "expression_display": "log2(TPM + 1)",
+  "pca_top_variable_genes": 2000,
+  "significance": {
+    "alpha": 0.05,
+    "absolute_log2_fold_change": 1.0
+  },
+  "selected_genes": "config/candidates/histone_modifier_gene_set_v2.tsv",
+  "gene_annotations": "config/reference/gene_annotations_wbps19.tsv",
+  "gene_models": "config/reference/transcript_models_wbps19.json",
+  "locus_display": {
+    "outside_flank_bp": 2000,
+    "inside_gene_bp": 500,
+    "basis": "STRAND_AWARE_DISPLAY_WINDOWS_NATIVE_SOURCE_CLASS_PRESERVED",
+    "reclassify_source_peaks": false
+  },
+  "studies": [
+    {
+      "id": "PRJNA602528",
+      "differential_expression": false,
+      "qc_table": "results/PRJNA602528/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJNA597909",
+      "differential_expression": true,
+      "trajectory_group_by": "condition",
+      "qc_table": "results/PRJNA597909/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJEB14695",
+      "differential_expression": true,
+      "qc_table": "results/PRJEB14695/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJEB32839",
+      "differential_expression": true,
+      "qc_table": "results/PRJEB32839/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "E-MTAB-451",
+      "differential_expression": true,
+      "qc_table": "results/E-MTAB-451/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJEB3190",
+      "differential_expression": true,
+      "qc_table": "results/PRJEB3190/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "E-ERAD-478",
+      "differential_expression": true,
+      "trajectory_group_by": "condition",
+      "qc_table": "results/E-ERAD-478/qc/qc_sample_summary.tsv"
+    },
+    {
+      "id": "PRJNA704646",
+      "differential_expression": false,
+      "qc_table": "results/PRJNA704646/qc/qc_sample_summary.tsv",
+      "interpretation_warning": "Descriptive expression only. Three of eight biological pools are QC REVIEW for Salmon mapping below 60%; the 24 runs are technical repeats, not biological replicates. No differential-expression inference is supported."
+    },
+    {
+      "id": "PRJNA1150591",
+      "differential_expression": true,
+      "trajectory_group_by": "condition",
+      "qc_table": "results/PRJNA1150591/qc/qc_sample_summary.tsv",
+      "interpretation_warning": "Only the prespecified 7-week adult meclonazepam-versus-control contrast is inferential. Five treated 4-week juveniles remain in the fitted ~ condition model by project decision; this does not estimate an age effect. Biological interpretation of individual genes remains provisional."
+    },
+    {
+      "id": "PRJNA312093",
+      "differential_expression": true,
+      "trajectory_group_by": "condition",
+      "qc_table": "results/PRJNA312093/qc/qc_sample_summary.tsv",
+      "sample_allowlist": "results/PRJNA312093/restricted_refit/included_samples.tsv",
+      "admission_manifest": "results/PRJNA312093/restricted_refit/manifest.json",
+      "analysis_id": "smansoni_prjna312093_restricted12_schistosomula",
+      "contrast_sources": {
+        "condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male": {
+          "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+          "sha256": "18e9492378c3c79a8903a32c1b7b52d860976ce2dd9914c55916254b7d118adb"
+        },
+        "condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male": {
+          "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+          "sha256": "c91c36c0f33944429651436d76f6eef8fc2f594c496cceb9b018b82b41fd7f62"
+        },
+        "condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male": {
+          "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
+          "sha256": "4b07126453f7b2c5c6d0ff71faa2b558b61e010fd1fbdae03f09764209dc4ea7"
+        }
+      },
+      "interpretation_warning": "RESTRICTED_REFIT; TWO_REPLICATES_PER_GROUP; SOURCE_IDENTITY_LIMITATION. Only the 12 approved schistosomulum libraries and three reviewed sex contrasts from the restricted refit are included. Adult and cercaria libraries and contrasts are NOT_EVALUABLE and excluded. Do not substitute the original 20-sample DE results or relabel libraries."
+    },
+    {
+      "id": "PRJNA1177852",
+      "differential_expression": false,
+      "trajectory_group_by": "condition",
+      "qc_table": "results/PRJNA1177852/qc/qc_sample_summary.tsv",
+      "interpretation_warning": "Descriptive meclonazepam time series only: eight time points, one biological library per time point and no parallel control. Expression trends are not statistically supported treatment effects; no DE contrasts are included."
+    },
+    {
+      "id": "PRJNA428470",
+      "differential_expression": true,
+      "trajectory_group_by": "condition",
+      "qc_table": "results/PRJNA428470/qc/qc_sample_summary.tsv",
+      "interpretation_warning": "CODING_GENE_SCOPE; REVIEW_4_OF_6. The frozen adult-female 5-azacitidine-versus-control contrast is retained with Salmon mRNA mapping of 34.61–60.83%. Leave-one-out fits support effect stability but do not replace the full fit. Claims are restricted to quantified coding genes; the unquantified read fraction, lncRNAs and drug-target identity are not established."
+    }
+  ],
+  "statistical_scope": "descriptive_cross_study_with_per_study_differential_expression",
+  "batch_effect_assessment": "DEFERRED",
+  "chipseq_integration": {
+    "status": "HF_PROCESSED_REVIEWED",
+    "scope": "all_atlas_genes",
+    "studies": [
+      {
+        "id": "PRJNA1090249",
+        "commit": "c9e77fee805d73e0527a02f83217c7a2763d270c",
+        "source_manifest": "analyses/atlas/local_inputs/hf_chipseq/PRJNA1090249/regional_c9e77fe/source_manifest.json",
+        "interpretation_warning": "Descriptive HP1 regional candidates. MACS3 calls are unchanged; nf-core/chipseq 2.1.0 merges overlapping or bookended intervals, retaining candidates with at least one calling library. Single-library and multiple-library evidence remain distinct; shared core requires at least two libraries and does not crop candidate regions. HOMER 4.11 assigns the nearest promoter, including for intergenic regions; this is not proof of regulation. Gene-assignment ambiguity is not assessed because these source executions predate the TSS snapshot. Stage and strain are confounded (cercaria SmVEN; sporocyst SmDFO); biological independence of deposited libraries is not established. FRiP is 0.201–3.161%; the 200 bp extension is operational. Occupancy significance and differential binding were not assessed."
+      },
+      {
+        "id": "PRJNA312093",
+        "commit": "e583c84ef5cd37edd2f4df8450f17cc42c39c279",
+        "source_manifest": "analyses/atlas/local_inputs/hf_chipseq/PRJNA312093/regional_e583c84/source_manifest.json",
+        "admission_scope": "published_descriptive_catalog_only",
+        "interpretation_warning": "Published descriptive regional catalogs: H3K27me3 broad and H3K4me3 narrow; two deposited IP libraries per sex/stage/mark, with matched Input IDs. This compact publication is not certification of complete upstream QC or a combined terminal run. DB remains HOLD: adult sex/instrument confounding and unresolved source-pool relationships. H3K27me3 strict direct comparison failed for one nearest-gene assignment in each male group (shared TSS, Smp_095580/Smp_341610); original assignments retained and ambiguity not assessed. H3K4me3 preserves assessed and unassessed ambiguity, and IDR <=0.05 is separate evidence, not the annotation catalog. No regulation or occupancy significance is inferred. BAMs, individual peak coordinates and bigWig signals are not published in this compact package. Adult/cercaria RNA from this accession remain excluded; use compatible approved RNA studies without sample pairing."
+      }
+    ],
+    "interpretation": "descriptive_stage_matched_independent_experiments"
+  }
+}
