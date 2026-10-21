@@ -18,7 +18,7 @@ def check(url):
             with urlopen(url + "healthz", timeout=3) as response:
                 health = json.load(response)
             break
-        except URLError:
+        except (OSError, ValueError):
             if attempt == 29:
                 raise
             time.sleep(1)
