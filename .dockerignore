@@ -1,0 +1,10 @@
+# Only the frozen snapshot and the small server enter the image build context.
+**
+!LICENSE
+!scripts/
+!scripts/atlas/
+!scripts/atlas/runtime.py
+!results/
+!results/atlas/
+!results/atlas/rnaseq/
+!results/atlas/rnaseq/**

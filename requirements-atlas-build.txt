@@ -1,0 +1,4 @@
+# Building/validating the atlas only. Running the frozen atlas needs Python's stdlib.
+numpy==2.3.5
+openpyxl==3.1.5
+xlrd==2.0.2

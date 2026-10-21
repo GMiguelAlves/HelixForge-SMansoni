@@ -1,0 +1,9 @@
+services:
+  atlas:
+    image: helixforge-smansoni-atlas:2026.10.21
+    build: .
+    ports:
+      - "127.0.0.1:8765:8080"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
