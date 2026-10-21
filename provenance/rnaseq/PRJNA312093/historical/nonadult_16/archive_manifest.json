@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "type": "superseded_rnaseq_sensitivity_archive",
+  "study": "PRJNA312093",
+  "status": "AUDIT_ONLY",
+  "superseded": true,
+  "atlas_eligible": false,
+  "source_commit": "92b5d4ff6ebd44151a2d3c2df9ae5e9cde46e161",
+  "current_approved_refit": "results/rnaseq/PRJNA312093/restricted_refit/manifest.json",
+  "current_sample_count": 12,
+  "current_contrast_count": 3,
+  "files": [
+    {
+      "path": "comparison_to_original.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/comparison_to_original.tsv",
+      "sha256": "4d1591db74eb065ae07743524fe524dec42a002298d56b562d680eb92f15bd62",
+      "bytes": 688
+    },
+    {
+      "path": "contrasts/condition__cercaria_female_vs_cercaria_male.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/contrasts/condition__cercaria_female_vs_cercaria_male.tsv",
+      "sha256": "74d4112bf94f05a2c84de71b22172e1dd51525a1acaf379e51e1531ab346aea4",
+      "bytes": 1134065
+    },
+    {
+      "path": "contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+      "sha256": "12d079cb856f62dd02d737239b03781a64b58aba57a2f4437d54a132bcfd0487",
+      "bytes": 1111182
+    },
+    {
+      "path": "contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+      "sha256": "4f835aae7e95040ad013ddbae50668f5507a91b760408af144970d35adc7e247",
+      "bytes": 1113388
+    },
+    {
+      "path": "contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
+      "sha256": "cefc6c2d2414c48d5d30d9049acb445c4c0f015689a15eb33d6c5cc930af535f",
+      "bytes": 1113657
+    },
+    {
+      "path": "decision.json",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/decision.json",
+      "sha256": "d0c485d79980f627a444882a34419ec7e5e9bffc5568cdae3702255205de54bf",
+      "bytes": 1126
+    },
+    {
+      "path": "excluded_adults.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/excluded_adults.tsv",
+      "sha256": "f1030882c85cf06e49ed115517ae25198cfd747152d853c936420aeefa721fda",
+      "bytes": 256
+    },
+    {
+      "path": "included_samples.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/included_samples.tsv",
+      "sha256": "96e286460459ad656946e3650d745027e0bbe1b6382c8c85cfa05d0b5a71f584",
+      "bytes": 1552
+    },
+    {
+      "path": "nonadult_pca.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/nonadult_pca.tsv",
+      "sha256": "14d4cb387a87df2e5e93a2bf4b31cf5c48198721570bf673b5d7a6fc4aab23ff",
+      "bytes": 1646
+    },
+    {
+      "path": "nonadult_replicate_correlations.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/nonadult_replicate_correlations.tsv",
+      "sha256": "07abd337aa1f9c454ae8915da23a621da963d2960d1fa60e21aa47eeffc3a9cb",
+      "bytes": 1054
+    },
+    {
+      "path": "original_readme.md",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/README.md",
+      "sha256": "f5df51f22287d7c01c065dd9baa92ac4a68d667298a531cffbbcd5e3c958717f",
+      "bytes": 2266
+    },
+    {
+      "path": "vst_correlation_matrix.tsv",
+      "source_path": "results/PRJNA312093/reanalysis/nonadult_16/vst_correlation_matrix.tsv",
+      "sha256": "f88d68c42f3d1302cb9e83a91ada3dce6bbe11252b7ce0e01f99406ea5a278dd",
+      "bytes": 5663
+    }
+  ]
+}

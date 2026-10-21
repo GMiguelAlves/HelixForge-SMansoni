@@ -1,0 +1,30 @@
+{
+  "study": "PRJNA312093",
+  "analysis": "nonadult_16_sample_refit",
+  "status": "PASS_WITH_LIMITATIONS",
+  "source_import_samples": 20,
+  "included_samples": 16,
+  "excluded_adult_samples": 4,
+  "genes_after_filter": 9501,
+  "design": "~ condition",
+  "test": "Wald",
+  "alpha": 0.05,
+  "reported_abs_log2fc_min": 1,
+  "total_count_filter_min": 10,
+  "deseq2_version": "1.42.1",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "salmon_fragment_prior_mean": 200,
+  "salmon_fragment_prior_sd": 80,
+  "accepted_contrasts": [
+    "contrasts/condition__cercaria_female_vs_cercaria_male.tsv",
+    "contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+    "contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+    "contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv"
+  ],
+  "original_20_sample_contrasts": "AUDIT_ONLY",
+  "adult_female_vs_male": "NOT_EVALUABLE",
+  "nonadult_replicate_concordance": "PASS",
+  "effect_direction": "PASS",
+  "significant_gene_set_stability": "LIMITATION",
+  "atlas_wiring": "PENDING"
+}
