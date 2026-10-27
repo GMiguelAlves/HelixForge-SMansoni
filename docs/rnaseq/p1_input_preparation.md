@@ -42,8 +42,6 @@ studies' provenance.
 
 Derived artifacts and source snapshots are frozen. There is no active P1
 generator in this repository; regeneration requires explicit new curation.
-`tests/test_p1_preparation.py` checks counts, layouts, download contracts,
-contrast replication, and source hashes.
 
 ## Single-end input
 
