@@ -1,0 +1,19 @@
+{
+  "differential_binding": "SUSPENDED",
+  "idr_new_layers": "NOT_EXECUTED",
+  "layers": [
+    "mapq30",
+    "mapq0"
+  ],
+  "native_batches": 4,
+  "native_processes": 464,
+  "no_antibody_libraries_qc_only": 2,
+  "occupancy_status": "not_assessed",
+  "qc_table_rows": 48,
+  "raw_study_libraries": 24,
+  "regional_groups": 20,
+  "status": "COMPLETE_WITH_LIMITATIONS",
+  "study": "PRJNA602708",
+  "table_repeats_shared_inputs_by_policy_and_mark": true,
+  "unique_ip_and_input_libraries": 22
+}

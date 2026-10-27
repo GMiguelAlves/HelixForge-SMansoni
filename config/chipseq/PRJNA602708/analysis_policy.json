@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "study": "PRJNA602708",
+  "assay": "chipseq",
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "helixforge_execution_commit": "2833442eb01edbe2e090870ba945fc074bc4d564",
+  "result_layers": {
+    "mapq30": {"min_mapq": 30, "exclude_flags": 2308},
+    "mapq0": {"min_mapq": 0, "exclude_flags": 2308}
+  },
+  "layers_are_not_combined": true,
+  "duplicates": "remove_per_library_in_both_ip_and_input",
+  "mitochondrial_exclusion": "read_or_mate_on_SM_V10_MITO_before_calling",
+  "caller": {"tool": "macs3", "version": "3.0.4", "format": "BAMPE", "pvalue": 0.01,
+    "broad_weak_pvalue": 0.1, "effective_genome_size": 391422299, "keep_dup": "all_after_bam_deduplication"},
+  "controls": {"type": "individual_shared_inputs", "replicate_1": "SRR10961878", "replicate_2": "SRR10961877",
+    "authors_command_level_matching_recovered": false, "pooled_input_sensitivity_adopted": false},
+  "regional_policy": {"provider": "nfcore_chipseq_2.1.0", "minimum_calling_libraries": 1, "shared_core_is_separate": true},
+  "annotation_provider": "homer_4_11",
+  "differential_binding": "SUSPENDED",
+  "idr_for_reanalysis_layers": "NOT_EXECUTED",
+  "historical_idr": "NOT_EVALUABLE_ON_ORIGINAL_SPARSE_QVALUE_CALLS",
+  "investigation": "CLOSED_WITH_LIMITATIONS",
+  "public_delivery_status": "PUBLISHED_WITH_LIMITATIONS",
+  "independent_occupancy_truth_validated": false,
+  "exact_publication_reproduction_claimed": false
+}

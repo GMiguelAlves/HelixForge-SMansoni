@@ -1,0 +1,145 @@
+{
+  "arms": {
+    "broad": {
+      "q0_peaks": 429300,
+      "q30_peaks": 377974
+    },
+    "narrow": {
+      "q0_peaks": 14532,
+      "q30_peaks": 22672
+    }
+  },
+  "groups": [
+    {
+      "after_bp": 895239,
+      "arm": "narrow",
+      "before_bp": 1066237,
+      "before_bp_recovered": 0.13645746677333465,
+      "condition": "hm7w",
+      "jaccard_bp": 0.08011982510820603,
+      "q0_replicate_jaccard_bp": 0.19827889535643553,
+      "q0_union_regions": 2221,
+      "q30_replicate_jaccard_bp": 0.00320847991581609,
+      "q30_union_regions": 4330,
+      "shared_bp": 145496
+    },
+    {
+      "after_bp": 1826950,
+      "arm": "narrow",
+      "before_bp": 2644423,
+      "before_bp_recovered": 0.3531851749890241,
+      "condition": "rh0w",
+      "jaccard_bp": 0.2640273850696076,
+      "q0_replicate_jaccard_bp": 0.06362188346698049,
+      "q0_union_regions": 5278,
+      "q30_replicate_jaccard_bp": 0.0006666860785887886,
+      "q30_union_regions": 8080,
+      "shared_bp": 933971
+    },
+    {
+      "after_bp": 468632,
+      "arm": "narrow",
+      "before_bp": 447040,
+      "before_bp_recovered": 0.14854151753758052,
+      "condition": "rh10w",
+      "jaccard_bp": 0.07818968806077704,
+      "q0_replicate_jaccard_bp": 0.3197604943751174,
+      "q0_union_regions": 881,
+      "q30_replicate_jaccard_bp": 0.0027156406585540443,
+      "q30_union_regions": 1722,
+      "shared_bp": 66404
+    },
+    {
+      "after_bp": 1249177,
+      "arm": "narrow",
+      "before_bp": 2170714,
+      "before_bp_recovered": 0.33416424273303624,
+      "condition": "rh12w",
+      "jaccard_bp": 0.2692041910309681,
+      "q0_replicate_jaccard_bp": 0.11108754003635994,
+      "q0_union_regions": 3653,
+      "q30_replicate_jaccard_bp": 0.0013972361167800089,
+      "q30_union_regions": 7001,
+      "shared_bp": 725375
+    },
+    {
+      "after_bp": 738051,
+      "arm": "narrow",
+      "before_bp": 313342,
+      "before_bp_recovered": 0.0702938003842447,
+      "condition": "rh8w",
+      "jaccard_bp": 0.021397616204910395,
+      "q0_replicate_jaccard_bp": 0.2939823941705925,
+      "q0_union_regions": 1385,
+      "q30_replicate_jaccard_bp": 0.004538172348424406,
+      "q30_union_regions": 1472,
+      "shared_bp": 22026
+    },
+    {
+      "after_bp": 74021594,
+      "arm": "broad",
+      "before_bp": 51898413,
+      "before_bp_recovered": 0.8801978010387331,
+      "condition": "hm7w",
+      "jaccard_bp": 0.5693090695964356,
+      "q0_replicate_jaccard_bp": 0.10540471473770208,
+      "q0_union_regions": 93100,
+      "q30_replicate_jaccard_bp": 0.07899420739512786,
+      "q30_union_regions": 75351,
+      "shared_bp": 45680869
+    },
+    {
+      "after_bp": 69202695,
+      "arm": "broad",
+      "before_bp": 44399420,
+      "before_bp_recovered": 0.8641992620624324,
+      "condition": "rh0w",
+      "jaccard_bp": 0.5100204674412617,
+      "q0_replicate_jaccard_bp": 0.08711988745525012,
+      "q0_union_regions": 84539,
+      "q30_replicate_jaccard_bp": 0.058652230141745094,
+      "q30_union_regions": 66549,
+      "shared_bp": 38369946
+    },
+    {
+      "after_bp": 31243994,
+      "arm": "broad",
+      "before_bp": 35162347,
+      "before_bp_recovered": 0.5582391016162829,
+      "condition": "rh10w",
+      "jaccard_bp": 0.41962615491807315,
+      "q0_replicate_jaccard_bp": 0.04870724914362741,
+      "q0_union_regions": 52613,
+      "q30_replicate_jaccard_bp": 0.045848987270388976,
+      "q30_union_regions": 57827,
+      "shared_bp": 19628997
+    },
+    {
+      "after_bp": 32250942,
+      "arm": "broad",
+      "before_bp": 45571839,
+      "before_bp_recovered": 0.4813469783389694,
+      "condition": "rh12w",
+      "jaccard_bp": 0.39250453156171766,
+      "q0_replicate_jaccard_bp": 0.04414875695723865,
+      "q0_union_regions": 48907,
+      "q30_replicate_jaccard_bp": 0.051437314171148545,
+      "q30_union_regions": 65094,
+      "shared_bp": 21935867
+    },
+    {
+      "after_bp": 75111311,
+      "arm": "broad",
+      "before_bp": 48047804,
+      "before_bp_recovered": 0.896771015799182,
+      "condition": "rh8w",
+      "jaccard_bp": 0.5381192999428747,
+      "q0_replicate_jaccard_bp": 0.09630299223508428,
+      "q0_union_regions": 95945,
+      "q30_replicate_jaccard_bp": 0.0486556055714846,
+      "q30_union_regions": 73876,
+      "shared_bp": 43087878
+    }
+  ],
+  "status": "TECHNICAL_PASS"
+}

@@ -1,0 +1,119 @@
+{
+  "annotation_provider": "homer_4_11",
+  "annotation_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+  "artifacts": {
+    "annotated_peaks.tsv": {
+      "bytes": 418470,
+      "path": "mapq30/narrow/chipseq/peak_annotation/rh0w/annotated_peaks.tsv.gz",
+      "sha256": "dbd2294e969365245d2d78425fad28ed9925a4538c76a66d18942c0698d62b38",
+      "source_sha256": "6646837128e82a3f033bf504fbc760fee1838dda783039376b86353a9cccd1f1"
+    },
+    "consolidated_peaks.bed": {
+      "bytes": 94113,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/consolidated_peaks.bed.gz",
+      "sha256": "f64519d4050b0c79e25fcafa9791b02ea7ad4af1a2cee350cfdda6fa06487a3a",
+      "source_sha256": "eabb03b27d9b558c533f4e961f642fe73976e51d3f54a31d4a6092ec0d1866ec"
+    },
+    "consolidated_peaks.tsv": {
+      "bytes": 125253,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/consolidated_peaks.tsv.gz",
+      "sha256": "72fc6c9d57fdb65b7041ded402c074d93cd877a32d9beaa8fe067ccfab7786cd",
+      "source_sha256": "b69dc70f5b88cfa339f67a3b64f762bd5300a45d63370531ee956e939522f856"
+    },
+    "excluded_regions.tsv": {
+      "bytes": 105,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/excluded_regions.tsv.gz",
+      "sha256": "c0e414bce8e6316619d313efb8bf1f56e24ced7529505e50262ff4c7bde2a748",
+      "source_sha256": "615758b96186ef4575297444b9a0c31495a372403f20b1795d7b1d22bc2f33ee"
+    },
+    "homer_native": {
+      "bytes": 251230,
+      "path": "mapq30/narrow/chipseq/peak_annotation/rh0w/homer_annotatePeaks.txt.gz",
+      "sha256": "c39818b0e73b2dd87a7cecae1665ca5cd33f02d39d4d0af3343fe2119dd2b3aa",
+      "source_sha256": "11208623873b4efe032a597557c94720072ee92e2a916efb250188adfb26d257"
+    },
+    "peak_gene_associations.tsv": {
+      "bytes": 330807,
+      "path": "mapq30/narrow/chipseq/peak_annotation/rh0w/peak_gene_associations.tsv.gz",
+      "sha256": "cf2368ffefe77b5a974726aee0ef503e3d12e2e7e34bd6dfda4d73e8fd24a53d",
+      "source_sha256": "ea4a8745b3670f4602bb5f8e8c0a8da5c51986231269d32c1ed34b99d8d690cb"
+    },
+    "source_peak_mapping.tsv": {
+      "bytes": 46482,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/source_peak_mapping.tsv.gz",
+      "sha256": "70fa5e1d75d3a7375459568ab145aaed8b0f7f7be999e066c28929fe3a217191",
+      "source_sha256": "8b21c08a8f3f2820a25893e9b9584abba1a052988213bad367a5eaa67f677e5d"
+    },
+    "support_by_library.tsv": {
+      "bytes": 98774,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/support_by_library.tsv.gz",
+      "sha256": "6e070c75bb75a0bb2e630eeb43e804e624cca98384566e8d254341795dde3880",
+      "source_sha256": "31c55008cb65d0f4d8305f2ba6e859cd21665605ae6b6b5aea40eed6228c1400"
+    },
+    "support_core.bed": {
+      "bytes": 145,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/support_core.bed.gz",
+      "sha256": "47ca2788ca851b63e11e183f69b89517e9f38d504c630479a53beadac32a402d",
+      "source_sha256": "21c7053ba86b12c53c481f0d84e8253833da3ae79b878c741ab7d9308829cf7f"
+    },
+    "unfiltered_peaks.bed": {
+      "bytes": 94113,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/unfiltered_peaks.bed.gz",
+      "sha256": "f64519d4050b0c79e25fcafa9791b02ea7ad4af1a2cee350cfdda6fa06487a3a",
+      "source_sha256": "eabb03b27d9b558c533f4e961f642fe73976e51d3f54a31d4a6092ec0d1866ec"
+    },
+    "upstream.boolean.txt": {
+      "bytes": 184655,
+      "path": "mapq30/narrow/chipseq/consensus/rh0w/upstream.boolean.txt.gz",
+      "sha256": "f89df807b519d89f9359aaca3cc4e6221ee2f36146500b55d6590d28965378ad",
+      "source_sha256": "655a908edbe33d89fa0c898cf8be87eff13f04e71131acb03b6012d36f036e4b"
+    }
+  },
+  "biological_assignments_changed": false,
+  "condition": "rh0w",
+  "core_min_libraries": 2,
+  "gene_assignment_ambiguity_scope": "homer_nearest_tss_distance_ties_v1",
+  "helixforge_execution_commit": "2833442eb01edbe2e090870ba945fc074bc4d564",
+  "libraries": [
+    {
+      "biological_replicate": "1",
+      "control_record_id": "SRR10961878",
+      "record_id": "SRR10961876",
+      "sample_id": "rh0w_r1_h3k4me3",
+      "technical_replicate": "1"
+    },
+    {
+      "biological_replicate": "2",
+      "control_record_id": "SRR10961877",
+      "record_id": "SRR10961898",
+      "sample_id": "rh0w_r2_h3k4me3",
+      "technical_replicate": "1"
+    }
+  ],
+  "mapping_policy": "mapq30",
+  "metrics": {
+    "associated_gene_ids": 4723,
+    "both_library_regions": 10,
+    "condition": "rh0w",
+    "mapping_policy": "mapq30",
+    "peak_type": "narrow",
+    "region_bp": 2644423,
+    "regions": 8080,
+    "single_library_regions": 8070,
+    "target": "H3K4me3"
+  },
+  "occupancy_status": "not_assessed",
+  "peak_type": "narrow",
+  "provider": "nfcore_chipseq_2.1.0",
+  "public_copy_is_self_contained_reentry_package": false,
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "reference_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "regional_min_libraries": 1,
+  "schema_version": "1.0",
+  "source_annotation_manifest_sha256": "8b1d2f9b40570ef647bea898eb6189ce31c94073c4ae6350566c1edd4606b13a",
+  "source_consensus_manifest_sha256": "1e7f9df1a247e96a783fa5ad67324ad161af6b3bde9e35b3b1100d9f6adfe88e",
+  "study": "PRJNA602708",
+  "target": "H3K4me3",
+  "type": "published_chipseq_regional_catalog",
+  "upstream_commit": "76e2382b6d443db4dc2396e6831d1243256d80b0"
+}

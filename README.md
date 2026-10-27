@@ -124,12 +124,12 @@ epigenomic integration. Each requires its own reviewed execution contract.
 
 ## Administrative validation
 
-The repository checks metadata cardinality and identity, the conservative
-master manifest, reference identity, the frozen source-package checksums,
-shell syntax, JSON syntax, and exclusion of sequencing-scale files. Run:
+The repository validates curated metadata and reference contracts. Versioned
+tests cover the atlas application and its evidence loaders; study execution
+and publication-audit tests are not part of this results repository. Run:
 
 ```bash
-python -m unittest discover -s tests -p 'test_*.py'
+python -m unittest discover -s tests -p 'test_atlas*.py'
 python scripts/validate/validate_project.py
 ```
 
