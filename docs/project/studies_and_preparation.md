@@ -213,10 +213,11 @@ run sets, duplicate-deposit exclusions, and publication links are indexed in
 decisions are under [`config/chipseq/`](../../config/chipseq/), with the scientific
 preparation record in
 [ChIP-seq core preparation record](../chipseq/chipseq_core_preparation.md).
-The upcoming ChIP-seq runs pin HelixForge `v1.2.0` and complete eligible
-consensus/IDR paths through annotation, tracks, reporting, and a terminal
-manifest without Differential Binding. Alignment-only studies retain their
-restricted scope; previous RNA-seq execution pins are unchanged.
+The frozen ChIP-seq preparation contract pins HelixForge `v1.2.0`; actual
+execution commits and later study-specific policies are recorded with each
+delivery. Eligible consensus/IDR paths support annotation, tracks and reporting
+without Differential Binding. Alignment-only studies retain their restricted
+scope; previous RNA-seq execution pins are unchanged.
 `PRJNA1090249` has completed native processing and is accepted for atlas
 inclusion. Its [public results](../../results/chipseq/PRJNA1090249/README.md)
 include per-library peaks, minimum-one-library regional catalogs with HOMER
@@ -225,6 +226,15 @@ figures and reports. DB is not eligible in the current analysis; measured
 enrichment/model sensitivity and source-independence limitations remain
 documented. Updating the atlas presentation is separate from publication of
 these accepted results.
+
+`PRJNA602708` has completed processing and its controlled peak-calling review.
+The [public results](../../results/chipseq/PRJNA602708/README.md) retain separate
+MAPQ30 and no-minimum-MAPQ layers, with individual Inputs, per-library duplicate
+removal, MACS3 p=0.01, regional evidence and independent HOMER annotations for
+each layer. The [analysis policy](../chipseq/prjna602708_analysis.md) documents
+the measured sensitivity and remaining limitations. DB is suspended, and no
+new IDR or exact reproduction of the article is claimed. Atlas presentation
+remains separate from publication of these results.
 
 Differential Binding remains a planned follow-up for eligible comparisons;
 see the [per-study DB review and artifact-retention policy](../chipseq/differential_binding_review.md).
