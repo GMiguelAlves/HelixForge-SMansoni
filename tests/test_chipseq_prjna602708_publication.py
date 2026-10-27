@@ -101,7 +101,7 @@ class PublishedPlasmaTests(unittest.TestCase):
 
     def test_checksums_privacy_and_no_heavy_binaries(self):
         forbidden=re.compile(r'/home/|/scratch/|/mnt/[a-z]/|[A-Z]:[/\\]Users[/\\]|ra\d{6}|srv-slurm',re.I)
-        email=re.compile(r'[\w.-]+@[\w.-]+\.(?:br|edu)',re.I)
+        email=re.compile(r'@[a-z0-9.-]{1,253}\.(?:br|edu)\b',re.I)
         self.assertTrue((RESULT/'SHA256SUMS').is_file())
         for line in (RESULT/'SHA256SUMS').read_text().splitlines():
             digest,name=line.split('  ',1)
