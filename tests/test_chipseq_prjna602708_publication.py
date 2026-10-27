@@ -100,7 +100,8 @@ class PublishedPlasmaTests(unittest.TestCase):
         self.assertEqual(len(rows(RESULT/'tracks/track_inventory.tsv')),48)
 
     def test_checksums_privacy_and_no_heavy_binaries(self):
-        forbidden=re.compile(r'/home/|/scratch/|/mnt/[a-z]/|[A-Z]:[/\\]Users[/\\]|ra\d{6}|srv-slurm|[\w.-]+@[\w.-]+\.(?:br|edu)',re.I)
+        forbidden=re.compile(r'/home/|/scratch/|/mnt/[a-z]/|[A-Z]:[/\\]Users[/\\]|ra\d{6}|srv-slurm',re.I)
+        email=re.compile(r'[\w.-]+@[\w.-]+\.(?:br|edu)',re.I)
         self.assertTrue((RESULT/'SHA256SUMS').is_file())
         for line in (RESULT/'SHA256SUMS').read_text().splitlines():
             digest,name=line.split('  ',1)
@@ -111,7 +112,10 @@ class PublishedPlasmaTests(unittest.TestCase):
                 self.assertNotIn(p.suffix.lower(),{'.bam','.bai','.bw','.bigwig','.fastq','.fq'})
                 opener=gzip.open if p.suffix=='.gz' else open
                 with opener(p,'rt',encoding='utf-8') as f:
-                    for line in f: self.assertIsNone(forbidden.search(line),p.name)
+                    for line in f:
+                        self.assertIsNone(forbidden.search(line),p.name)
+                        if '@' in line:
+                            self.assertIsNone(email.search(line),p.name)
 
     def test_layer_policy_does_not_claim_truth_or_new_idr(self):
         p=json.loads((ROOT/'config/chipseq/PRJNA602708/analysis_policy.json').read_text())
