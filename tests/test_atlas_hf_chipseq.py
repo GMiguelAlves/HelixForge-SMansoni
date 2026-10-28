@@ -21,7 +21,6 @@ from build_rnaseq_atlas import version_report_assets
 class NativeChipTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        (Path(tempfile.gettempdir())).mkdir(exist_ok=True)
         atlas = json.loads((ROOT / "analyses/atlas/atlas_config.json").read_text(encoding="utf-8"))
         cls.config = {**atlas["chipseq_integration"], "reference_id": atlas["reference_id"], "studies": [atlas["chipseq_integration"]["studies"][0]]}
         with (ROOT / atlas["gene_annotations"]).open(encoding="utf-8") as handle:
@@ -62,9 +61,9 @@ class NativeChipTests(unittest.TestCase):
     def test_changed_source_cannot_silently_enter_the_atlas(self):
         entry = self.config["studies"][0]
         source = ROOT / entry["source_manifest"]
-        with tempfile.TemporaryDirectory(dir=Path(tempfile.gettempdir())) as directory:
+        with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            self.assertTrue(root.resolve().is_relative_to((Path(tempfile.gettempdir())).resolve()))
+            self.assertTrue(root.resolve().is_relative_to(Path(tempfile.gettempdir()).resolve()))
             copied = root / entry["source_manifest"]
             shutil.copytree(source.parent, copied.parent)
             native = copied.parent / "results/chipseq/PRJNA1090249/broad/chipseq/peak_annotation/cercaria/peak_gene_associations.tsv.gz"
@@ -87,7 +86,7 @@ class NativeChipTests(unittest.TestCase):
     def mutate_regional_table(self,role,change):
         entry=self.config["studies"][0]
         source_path=ROOT/entry["source_manifest"]
-        with tempfile.TemporaryDirectory(dir=Path(tempfile.gettempdir())) as folder:
+        with tempfile.TemporaryDirectory() as folder:
             base=Path(folder)/"snapshot"
             shutil.copytree(source_path.parent,base)
             result=base/"results/chipseq/PRJNA1090249"
@@ -119,9 +118,9 @@ class NativeChipTests(unittest.TestCase):
             self.mutate_regional_table("annotated_peaks.tsv",change)
 
     def test_changed_scientific_figure_gets_a_new_browser_url(self):
-        with tempfile.TemporaryDirectory(dir=Path(tempfile.gettempdir())) as directory:
+        with tempfile.TemporaryDirectory() as directory:
             output = Path(directory).resolve()
-            self.assertTrue(output.is_relative_to((Path(tempfile.gettempdir())).resolve()))
+            self.assertTrue(output.is_relative_to(Path(tempfile.gettempdir()).resolve()))
             (output / "figures").mkdir()
             figure = output / "figures/study.svg"
             figure.write_text('<svg>historical</svg>', encoding="utf-8")

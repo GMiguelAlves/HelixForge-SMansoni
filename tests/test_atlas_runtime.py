@@ -17,12 +17,9 @@ from types import SimpleNamespace
 from scripts.atlas import runtime
 from scripts.atlas.package_release import verify
 
-TEST_TEMP = Path(tempfile.gettempdir())
-TEST_TEMP.mkdir(exist_ok=True)
-
 class DeliveryTests(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory(dir=TEST_TEMP)
+        self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         (self.root / "atlas.html").write_text("<h1>Frozen atlas</h1>", encoding="utf-8")
@@ -71,7 +68,7 @@ class DockerTests(unittest.TestCase):
     def test_corrupt_release_archive_is_never_loaded(self):
         filename = f"atlas-docker-{runtime.VERSION}.tar.gz"
         checksum = hashlib.sha256(b"original image").hexdigest()
-        with patch.object(runtime.tempfile, "tempdir", str(TEST_TEMP)), patch.object(runtime, "urlopen", side_effect=[io.BytesIO(f"{checksum}  {filename}\n".encode()), io.BytesIO(b"corrupt image")]), patch.object(runtime.subprocess, "run") as process:
+        with tempfile.TemporaryDirectory() as temp_dir, patch.object(runtime.tempfile, "tempdir", temp_dir), patch.object(runtime, "urlopen", side_effect=[io.BytesIO(f"{checksum}  {filename}\n".encode()), io.BytesIO(b"corrupt image")]), patch.object(runtime.subprocess, "run") as process:
             with self.assertRaisesRegex(ValueError, "checksum failed"):
                 runtime.load_released_image(["docker"])
             process.assert_not_called()
