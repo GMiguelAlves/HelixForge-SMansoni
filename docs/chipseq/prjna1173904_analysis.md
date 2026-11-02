@@ -13,8 +13,9 @@ identifies every run, control, sampling seed and selected-fragment count.
 This result adopts the paper's processing approach, **not its downstream
 eight-mark chromatin-state analysis**. It does not claim that every library
 in the BioProject was reprocessed with ChromstaR or that the historical peak
-catalogue was recovered. The previously completed HF processing is retained
-separately and must not be relabelled as this method-following panel.
+catalogue was recovered. Earlier HF processing attempts are not part of the
+accepted or retained result set and must not be relabelled as this
+method-following panel.
 
 ## Processing policy
 

@@ -74,6 +74,8 @@ criteria. Convergence alone does not establish biological validity.
 
 The panel is accepted as the method-following result. No new gene annotation,
 Differential Binding, IDR or eight-mark combinatorial result is claimed.
-Independent per-library BAMs, Inputs, tracks, fitted models and full audit are
-retained separately. FASTQs, BAMs, bigWigs, execution scripts, private logs and
-workdirs are excluded from Git. This is not a standalone re-entry package.
+Native final interval tables, fit figures, fitted ChromstaR objects and
+processing metadata are retained separately. Earlier processing attempts and
+their intermediate alignments are not part of the retained result set.
+FASTQs, BAMs, bigWigs, execution scripts, private logs and workdirs are excluded
+from Git. This is not a standalone re-entry package.
