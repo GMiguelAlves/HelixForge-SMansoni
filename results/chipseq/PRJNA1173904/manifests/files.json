@@ -32,28 +32,28 @@
     },
     {
       "file": "manifests/software_versions.tsv",
-      "bytes": 126,
-      "sha256": "db8aa4cd679c6b5c6da79136dbebcfbf6c4bf5fc82d9fbfb91e9c2afc272c481"
+      "bytes": 118,
+      "sha256": "928e312928dca2801f91daca564b4138affb2dffa58d44eda48c5413ad7c7a30"
     },
     {
       "file": "manifests/source_peaksets.tsv",
-      "bytes": 1939,
-      "sha256": "4c31b9543c72ee81573bd1dd73cadf34ddb4328f42b0c0f48de8651fd7e076b3"
+      "bytes": 1926,
+      "sha256": "3eae6976e4b18888084786c96ad451cc44d236d4393b3d8916631cc7b72e5979"
     },
     {
       "file": "metadata/sample_table.tsv",
-      "bytes": 933,
-      "sha256": "1ee0503ed75d4c6376185e61d9ddc268f27943f57536da819c3cf77198d49e36"
+      "bytes": 927,
+      "sha256": "a8977b41189fc5a5995e02496668da2af80e29da13feb671e96b5e4139e657c1"
     },
     {
       "file": "metrics/caller_overlap.tsv",
-      "bytes": 539,
-      "sha256": "a610b414d2d42225e6ed9449ba25ef544bb629e577e9757b8dba3f8c495800d9"
+      "bytes": 530,
+      "sha256": "c72a85647966f53e30bebaf46663c7011db117e5ff91f93a1bdeb7b9ed971661"
     },
     {
       "file": "metrics/caller_peak_counts.tsv",
-      "bytes": 607,
-      "sha256": "83aaa570e79357f60a62a1b110fcdd2a6f1bba3c0a6d793ac7932bed702117a0"
+      "bytes": 598,
+      "sha256": "23b4b1097660ee0c7c93da28dcf7658c36aff12189d3bcab90553f9da4f246b4"
     },
     {
       "file": "metrics/chromstar_chromosome_mapping.tsv",
@@ -62,13 +62,13 @@
     },
     {
       "file": "metrics/chromstar_overlap.tsv",
-      "bytes": 735,
-      "sha256": "2c0c680f4726d0ece5768aebc5632d683823da4b9f7e4b2dae446fe9fe42ecc2"
+      "bytes": 724,
+      "sha256": "5e198545cb5446afe745774a98fe848a3416ef372a90bc7c54664ee619e97fbc"
     },
     {
       "file": "metrics/chromstar_univariate_summary.tsv",
-      "bytes": 461,
-      "sha256": "429a0a2f3bdfed13bca3adb0078d48429d6b568fa77ec4f9e9e48e9f4119bdf0"
+      "bytes": 456,
+      "sha256": "025af00c3a92eaa9a3c22702ddd566d6d0348a961f65404faec0a721ef924232"
     },
     {
       "file": "peaks/chromstar_univariate/SRR31021582.bed.gz",
@@ -132,8 +132,8 @@
     },
     {
       "file": "qc/qc_sample_summary.tsv",
-      "bytes": 932,
-      "sha256": "5f65bed2e47207ccebdefb8150f796499a3215515949d83f9fa4498ec4c064dd"
+      "bytes": 926,
+      "sha256": "c4a3ec0a7c54dae944125474cea6786596744560d20d94e7f7c3569a1830dc47"
     },
     {
       "file": "qc/qc_summary.json",
