@@ -1,0 +1,5 @@
+record_id	model	regions	union_coverage_bp	eps	loglik_delta	iterations	native_univariate_convergence
+SRR31021582	H3K4me3-OvaryExperienced-rep2	6779	19231000	0.1	0.0998571128584445	408	True
+SRR31021583	H3K4me3-OvaryExperienced-rep1	7555	21932250	0.1	0.0997329237870872	596	True
+SRR31021601	H3K4me3-OvaryInexperienced-rep2	7409	21744750	0.1	0.0993734325747937	631	True
+SRR31021602	H3K4me3-OvaryInexperienced-rep1	8034	22364750	0.1	0.0999224011320621	811	True

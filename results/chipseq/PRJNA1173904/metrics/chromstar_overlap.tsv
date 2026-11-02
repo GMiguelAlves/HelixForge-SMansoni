@@ -1,0 +1,11 @@
+comparison	intersection	union	jaccard	n_intersections
+OvaryExperienced_univariate_replicates	17121250	24042000	0.712139	6410
+OvaryInexperienced_univariate_replicates	16912250	27197250	0.621837	6532
+SRR31021582_univariate_vs_macs2	9685245	19247250	0.503201	8020
+SRR31021582_univariate_vs_peakranger	13529250	19696950	0.68687	6740
+SRR31021583_univariate_vs_macs2	13473345	21933291	0.614287	7491
+SRR31021583_univariate_vs_peakranger	20604250	24917400	0.826902	8070
+SRR31021601_univariate_vs_macs2	8541893	21754461	0.39265	8111
+SRR31021601_univariate_vs_peakranger	11510950	21964650	0.524067	6377
+SRR31021602_univariate_vs_macs2	5847981	22370013	0.261421	7729
+SRR31021602_univariate_vs_peakranger	6873450	22508650	0.305369	5501

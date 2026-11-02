@@ -1,0 +1,9 @@
+record_id	group	tool	peak_count	sum_peak_widths_bp	union_coverage_bp	model_fragment_length_bp
+SRR31021582	OvaryExperienced	macs2	8064	9701495	9701495	293
+SRR31021582	OvaryExperienced	peakranger	6901	13995200	13995200	
+SRR31021583	OvaryExperienced	macs2	7492	13474386	13474386	307
+SRR31021583	OvaryExperienced	peakranger	9607	23589400	23589400	
+SRR31021601	OvaryInexperienced	macs2	8136	8551604	8551604	307
+SRR31021601	OvaryInexperienced	peakranger	6459	11730850	11730850	
+SRR31021602	OvaryInexperienced	macs2	7743	5853244	5853244	309
+SRR31021602	OvaryInexperienced	peakranger	5579	7017350	7017350	
