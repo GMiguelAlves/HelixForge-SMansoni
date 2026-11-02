@@ -1,0 +1,9 @@
+comparison	intersection	union	jaccard	n_intersections
+OvaryExperienced_replicates_macs2	9428700	13747181	0.685864	7783
+OvaryExperienced_replicates_peakranger	13791500	23793100	0.579643	6756
+SRR31021582_methods	9619173	14077522	0.6833	7885
+SRR31021583_methods	13474386	23589400	0.571205	7492
+OvaryInexperienced_replicates_macs2	5109169	9295679	0.549628	7637
+OvaryInexperienced_replicates_peakranger	6696000	12052200	0.555583	5507
+SRR31021601_methods	8277228	12005226	0.689469	7618
+SRR31021602_methods	4983797	7886797	0.631916	6394

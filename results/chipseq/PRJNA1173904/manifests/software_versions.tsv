@@ -1,0 +1,8 @@
+software	version
+Bowtie2	2.5.5
+SAMtools	1.23.1
+MACS2	2.2.7.1
+Peakranger	1.18
+chromstaR	1.28.0
+R	4.3.3
+BEDTools	2.30.0

@@ -238,5 +238,13 @@ remains separate from publication of these results.
 
 Differential Binding remains a planned follow-up for eligible comparisons;
 see the [per-study DB review and artifact-retention policy](../chipseq/differential_binding_review.md).
+
+`PRJNA1173904` now has an accepted
+[H3K4me3 ovary processing panel](../../results/chipseq/PRJNA1173904/README.md)
+following the 2025 article's methods, adapted to SM_V10/WBPS19. Four IPs and
+one common Input were reviewed with MACS2, Peakranger and ChromstaR. The
+[analysis policy](../chipseq/prjna1173904_analysis.md) identifies the exact
+scope and adaptations. This panel is not a complete eight-mark reanalysis;
+no new gene annotation, DB, IDR or combinatorial-state result is claimed.
 Preserve biological-replicate BAMs/BAIs and their metadata until QC and model
 review and any approved DB analysis are resolved.

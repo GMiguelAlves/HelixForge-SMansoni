@@ -1,0 +1,144 @@
+{
+  "files": [
+    {
+      "file": "figures/SRR31021582_chromstar_fit.png",
+      "bytes": 132866,
+      "sha256": "aa02466e37d574ce590b4cde6fe026d8a60252fa36108bde41d1fe0da592306a"
+    },
+    {
+      "file": "figures/SRR31021583_chromstar_fit.png",
+      "bytes": 118982,
+      "sha256": "2982553c90840fe720a80f3c98ecbecfcdadeb641a84e8cbe2370d81729f2298"
+    },
+    {
+      "file": "figures/SRR31021601_chromstar_fit.png",
+      "bytes": 139379,
+      "sha256": "c72881c9aca2186cac67d7502405ec4a763426b2390c3a29b384cd81c70960b8"
+    },
+    {
+      "file": "figures/SRR31021602_chromstar_fit.png",
+      "bytes": 138215,
+      "sha256": "dbfa9ef6b2459a8fd7cef63602add2c586651b11d13aa073a3b9e5de7e386914"
+    },
+    {
+      "file": "manifests/parameters.json",
+      "bytes": 1698,
+      "sha256": "7e946da13f441855d5cff4c457838d3e367adbafdc35f138efd8f8c0a1712389"
+    },
+    {
+      "file": "manifests/publication.json",
+      "bytes": 578,
+      "sha256": "74029f183e62be86769b617dca637afa3461f896ee98812fb53c2d4d6319d84c"
+    },
+    {
+      "file": "manifests/software_versions.tsv",
+      "bytes": 118,
+      "sha256": "928e312928dca2801f91daca564b4138affb2dffa58d44eda48c5413ad7c7a30"
+    },
+    {
+      "file": "manifests/source_peaksets.tsv",
+      "bytes": 1926,
+      "sha256": "3eae6976e4b18888084786c96ad451cc44d236d4393b3d8916631cc7b72e5979"
+    },
+    {
+      "file": "metadata/sample_table.tsv",
+      "bytes": 927,
+      "sha256": "a8977b41189fc5a5995e02496668da2af80e29da13feb671e96b5e4139e657c1"
+    },
+    {
+      "file": "metrics/caller_overlap.tsv",
+      "bytes": 530,
+      "sha256": "c72a85647966f53e30bebaf46663c7011db117e5ff91f93a1bdeb7b9ed971661"
+    },
+    {
+      "file": "metrics/caller_peak_counts.tsv",
+      "bytes": 598,
+      "sha256": "23b4b1097660ee0c7c93da28dcf7658c36aff12189d3bcab90553f9da4f246b4"
+    },
+    {
+      "file": "metrics/chromstar_chromosome_mapping.tsv",
+      "bytes": 314,
+      "sha256": "833c65c4b18803f500fce29145ce4dad0e77c1802d2b4c9c84c1a14cb3f0518b"
+    },
+    {
+      "file": "metrics/chromstar_overlap.tsv",
+      "bytes": 724,
+      "sha256": "5e198545cb5446afe745774a98fe848a3416ef372a90bc7c54664ee619e97fbc"
+    },
+    {
+      "file": "metrics/chromstar_univariate_summary.tsv",
+      "bytes": 456,
+      "sha256": "025af00c3a92eaa9a3c22702ddd566d6d0348a961f65404faec0a721ef924232"
+    },
+    {
+      "file": "peaks/chromstar_univariate/SRR31021582.bed.gz",
+      "bytes": 45610,
+      "sha256": "9ed3399e004ce1caf5b3256bcf0338e79156c620413e79a60c69b7082f181d01"
+    },
+    {
+      "file": "peaks/chromstar_univariate/SRR31021583.bed.gz",
+      "bytes": 50919,
+      "sha256": "770918967aeee924429baa9a6757098434aeb9fcd1fdae7808a07a010504d4b5"
+    },
+    {
+      "file": "peaks/chromstar_univariate/SRR31021601.bed.gz",
+      "bytes": 49686,
+      "sha256": "17a310520368af8e616dd9ac7611d56e2cbeaf450f5af09d47799f850d1ebc0e"
+    },
+    {
+      "file": "peaks/chromstar_univariate/SRR31021602.bed.gz",
+      "bytes": 53581,
+      "sha256": "9ae68edc664c13b7bd5b96792ecd2ab47925122f4a9260ebd2b1b9d0e5cee654"
+    },
+    {
+      "file": "peaks/macs2/SRR31021582.bed.gz",
+      "bytes": 69132,
+      "sha256": "ab815d63c2027a406e6de8e1fc8312f7e2432041257ad8796b7035f18e8f387c"
+    },
+    {
+      "file": "peaks/macs2/SRR31021583.bed.gz",
+      "bytes": 65447,
+      "sha256": "d1ef9d68a7edd42ad6ba49d607e53ef96edd4e0f8283cde36756557995a396d9"
+    },
+    {
+      "file": "peaks/macs2/SRR31021601.bed.gz",
+      "bytes": 69436,
+      "sha256": "391cc5d549ddb80922950058d7c735c1eb3f95d697bbddd2a43aa534602bd114"
+    },
+    {
+      "file": "peaks/macs2/SRR31021602.bed.gz",
+      "bytes": 65213,
+      "sha256": "694e60d4017016c9e911b711759a70656eac119d2f03c68f8a1bbb41a9ed04d6"
+    },
+    {
+      "file": "peaks/peakranger/SRR31021582.bed.gz",
+      "bytes": 54539,
+      "sha256": "2e100205bd527284275d9cbff85ca1d6220a650f39634a07f1d404a342eb5ebf"
+    },
+    {
+      "file": "peaks/peakranger/SRR31021583.bed.gz",
+      "bytes": 75107,
+      "sha256": "8169c7924fc5e6d1cb2032cce0c747a7fa615bbdae7aa907177bd1f4f47d1baa"
+    },
+    {
+      "file": "peaks/peakranger/SRR31021601.bed.gz",
+      "bytes": 50887,
+      "sha256": "88e402b9840595c8c011bca72da475e49fb675cea18123cc7d0dcec2e6d9de03"
+    },
+    {
+      "file": "peaks/peakranger/SRR31021602.bed.gz",
+      "bytes": 43862,
+      "sha256": "924ff84e6d0604bb41ac0fe10ff6d0c94cc25568af160c2fd0be1c15a0e58dfe"
+    },
+    {
+      "file": "qc/qc_sample_summary.tsv",
+      "bytes": 926,
+      "sha256": "c4a3ec0a7c54dae944125474cea6786596744560d20d94e7f7c3569a1830dc47"
+    },
+    {
+      "file": "qc/qc_summary.json",
+      "bytes": 867,
+      "sha256": "43d5e4168b719ce36ebf1fe19e0a54c087056326bd07151a6ab521736523c4ef"
+    }
+  ]
+}

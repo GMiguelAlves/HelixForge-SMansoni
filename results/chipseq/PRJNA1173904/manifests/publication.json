@@ -1,0 +1,15 @@
+{
+  "study": "PRJNA1173904",
+  "status": "ACCEPTED_METHOD_PANEL",
+  "scope": "four_H3K4me3_ovary_IPs_one_common_Input",
+  "date": "2026-11-02",
+  "complete_study_reanalysis": false,
+  "private_native_results_preserved_separately": true,
+  "includes_workdir": false,
+  "includes_scripts": false,
+  "includes_alignments": false,
+  "self_contained_reentry_package": false,
+  "scientific_acceptance": "user_accepted_adapted_processing_panel",
+  "gene_associations": "NOT_GENERATED_FOR_THIS_PANEL",
+  "caveat": "Larger_coverage_and_higher_Jaccard_are_not_proof_of_higher_accuracy"
+}

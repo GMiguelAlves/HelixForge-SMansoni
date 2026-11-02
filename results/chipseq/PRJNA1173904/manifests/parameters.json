@@ -1,0 +1,57 @@
+{
+  "reference": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "alignment": "existing_Bowtie2_2.5.5",
+  "mapq_minimum": 30,
+  "duplicate_removal": "SAMtools_1.23.1_template_coordinate",
+  "sampling": "2500000_complete_fragments_per_IP_with_both_mates",
+  "input": "SRR31021585_all_4509411_eligible_fragments",
+  "macs2": {
+    "version": "2.2.7.1",
+    "format": "BAM",
+    "gsize": 350000000,
+    "qvalue": 0.05,
+    "mfold": [
+      5,
+      50
+    ],
+    "bandwidth": 300,
+    "keep_dup": "all after explicit template deduplication",
+    "model": "enabled; no automatic nomodel fallback"
+  },
+  "peakranger": {
+    "version": "1.18",
+    "mode": "ccat",
+    "extension_bp": 300,
+    "fdr": 0.05,
+    "threads": 1,
+    "caveat": "CCAT operationalizes low-resolution calling; paper does not name subcommand or full thresholds; default window=500, step=50, min_count=4, min_score=5"
+  },
+  "chromstar": {
+    "chromstar_version": "1.28.0",
+    "R_version": "4.3.3",
+    "seed": 2026110201,
+    "binsize": 500,
+    "stepsize": 250,
+    "pairedEndReads": true,
+    "min_mapq": 30,
+    "remove_duplicate_reads": false,
+    "mode": "differential",
+    "numCPU": 2,
+    "max_iter": 5000,
+    "max_time": null,
+    "read_cutoff_absolute": 500,
+    "eps_univariate": 0.1,
+    "eps_multivariate": 0.01,
+    "max_states": 128
+  },
+  "coordinates": "BED_0_based_half_open",
+  "export": "BED3_comparison_views_keep_native_interval_boundaries_remove_headers_normalize_verified_contig_aliases",
+  "does_not_include": [
+    "gene_annotation",
+    "differential_binding",
+    "IDR",
+    "eight_mark_combinatorial_states"
+  ],
+  "source_method_doi": "10.3390/ncrna11020025",
+  "adaptation_not_exact_reproduction": true
+}

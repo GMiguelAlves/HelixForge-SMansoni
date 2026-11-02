@@ -1,0 +1,40 @@
+{
+  "study": "PRJNA1173904",
+  "scope": "H3K4me3_ovary_method_panel",
+  "ip_libraries": 4,
+  "input_libraries": 1,
+  "reference": "SM_V10/WBPS19",
+  "status": "METHOD_REVIEW_COMPLETE",
+  "biological_occupancy_certified": false,
+  "full_eight_mark_reanalysis": false,
+  "db": "NOT_EXECUTED",
+  "idr": "NOT_EXECUTED",
+  "univariate_native_convergence": [
+    {
+      "record_id": "SRR31021582",
+      "converged": true
+    },
+    {
+      "record_id": "SRR31021583",
+      "converged": true
+    },
+    {
+      "record_id": "SRR31021601",
+      "converged": true
+    },
+    {
+      "record_id": "SRR31021602",
+      "converged": true
+    }
+  ],
+  "multivariate_native_convergence": [
+    {
+      "model": "multivariate",
+      "part": "1",
+      "eps": "0.01",
+      "delta": "0.00744597017541082",
+      "iterations": "3",
+      "native_convergence": "TRUE"
+    }
+  ]
+}
