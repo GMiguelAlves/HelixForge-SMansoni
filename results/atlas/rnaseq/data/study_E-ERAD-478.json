@@ -1935,143 +1935,143 @@
       "sha256": "67a11d03f7d4364c1bc20e32c49c94d246a80968d36fd1cd5e5ac6487a1602ce"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_female_unpaired.tsv",
       "sha256": "a78025b47590a81d0a1d981776319e36dfb475d5dadca5117b982621489b1a20"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_paired_vs_d21_male_paired.tsv",
       "sha256": "7bbfde91002008255311a3052686d00cb1660eadb6b8cf70a599fbe585990406"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_unpaired_vs_d21_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_female_unpaired_vs_d21_male_unpaired.tsv",
       "sha256": "1c0192000499dfdc9c421b34e0ea33c7f111356712c09ac316c594693b03e49c"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_male_paired_vs_d21_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d21_male_paired_vs_d21_male_unpaired.tsv",
       "sha256": "57e3d33709a70e2b9271227d3c13a0d8fabf9d512dbd0c4cdac10d77df3cb151"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d21_female_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d21_female_paired.tsv",
       "sha256": "210a6684e21df53fa688b24c302513af38980ff09185a64c4499f3f6d6ea0f88"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_female_unpaired.tsv",
       "sha256": "76b96cc826ce4056b4ae2be5e335dc0d5fc13ed34ca82d066064ab88fff8be86"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_paired_vs_d28_male_paired.tsv",
       "sha256": "467f4443d352b6d5d586e1fc36a92fc00007c1cf6185389f1a0638734ea94884"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d21_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d21_female_unpaired.tsv",
       "sha256": "123eed296052559c41ff5a92e98be096004425abce57df4f71b5705ccaba34e8"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d28_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_female_unpaired_vs_d28_male_unpaired.tsv",
       "sha256": "3db7b7bbf3e673d9103165430e03093a8bc7377a4041e97a0c0a473107052d3c"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d21_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d21_male_paired.tsv",
       "sha256": "7618af843884c58b58045eb8ec25fcaa9bb67fa444a09aa6ecede15c8b25e47d"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d28_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_paired_vs_d28_male_unpaired.tsv",
       "sha256": "e8be56f880c0195584478380897aefd3bd650b6d1d4a209b96f9e4f1c6b45487"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_unpaired_vs_d21_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d28_male_unpaired_vs_d21_male_unpaired.tsv",
       "sha256": "5369b3233ee6ef9544da1c280832c97af2217cb99d67d268f6a84173f05a48e4"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d28_female_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d28_female_paired.tsv",
       "sha256": "cd31276b811c61170bdd9e8903f1cb7c160534eb5349ccd861a533ba1df386b0"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_female_unpaired.tsv",
       "sha256": "1d48e771e3beece6cdcc332c1752b0281ab0abbde44054c95789af3ad753dfae"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_paired_vs_d35_male_paired.tsv",
       "sha256": "7087bbd15847b5364e6416c872da0c50233478c6c0adeea474375ae545f4bf75"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d28_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d28_female_unpaired.tsv",
       "sha256": "8a76799d5d5aabb78752a56e1d71fad24b86f962b27b014a89c864ed47025952"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d35_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_female_unpaired_vs_d35_male_unpaired.tsv",
       "sha256": "80a695cdb037979a26785eab6e1c4e704aa77c2a118b9751158c7ff01abbf50d"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d28_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d28_male_paired.tsv",
       "sha256": "4264ff5902d7d426e5305a1364756a274f63c27ee92ba9254e169a3afe27a9ad"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d35_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_paired_vs_d35_male_unpaired.tsv",
       "sha256": "94fbb0f9971f264f8b54c5988b6f43ee2a3372fc29fc8da166bd95bc78394329"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_unpaired_vs_d28_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d35_male_unpaired_vs_d28_male_unpaired.tsv",
       "sha256": "6ab63076b7d7f059fbc09d4bb0028da252911c4aaaab016b1e975e0eb348e27c"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d21_female_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d21_female_paired.tsv",
       "sha256": "43353896de1a647d37b2ad0d418b0a176d3988db5bd9fbaca4e39df3e6e82847"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d35_female_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d35_female_paired.tsv",
       "sha256": "3fbc7e97d77d3652c59e67892992d25f0fe283c06c6c5519897146a070a61cbc"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_female_unpaired.tsv",
       "sha256": "deaed1393c34140465ab75099114b3c4d4b3f1d8f99adb7f11085f19eb83da85"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_paired_vs_d38_male_paired.tsv",
       "sha256": "b11fd139670eb8f7a79b6ed52db99af3add7e43bc0fa05d764c901c694efd542"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d21_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d21_female_unpaired.tsv",
       "sha256": "3f5019adf393cbf3400f3ed41093beb06df3378afef4c727c94cf3c2c993407a"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d35_female_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d35_female_unpaired.tsv",
       "sha256": "ec06c7c52e48132fca209c609fc131af4e758f3f2cb991429de63fb43851e06e"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d38_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_female_unpaired_vs_d38_male_unpaired.tsv",
       "sha256": "3e6b4036535895b0faebe8edca8a6b0145a53eb555ed41a7389214854caf18a2"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d21_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d21_male_paired.tsv",
       "sha256": "7d508432446a707f373c5dd68994a462e0d2872fa48ba09e6ea6b0d3121f866e"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d35_male_paired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d35_male_paired.tsv",
       "sha256": "28a70008b9a04b248ecae9a45837261fc64870d7f2d01a3d7eea9f3d68f31edd"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d38_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_paired_vs_d38_male_unpaired.tsv",
       "sha256": "2fd7e1fe872e9d364c7b455620075919596c344575d3d58915a191f21e395527"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d21_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d21_male_unpaired.tsv",
       "sha256": "30178accd157e12fb522dbdc5ddd7e468f9ca53e7291d36336df1f4f04decfcf"
     },
     {
-      "path": "results/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d35_male_unpaired.tsv",
+      "path": "results/rnaseq/E-ERAD-478/differential_expression/contrasts/DEG_condition__d38_male_unpaired_vs_d35_male_unpaired.tsv",
       "sha256": "67ce9fe3c87f1cafd461cf6b76347dcfb728cb9022b7d2b8a6c8bcf833b9410e"
     },
     {
-      "path": "results/E-ERAD-478/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/E-ERAD-478/expression/tpm_matrix.tsv",
       "sha256": "c9d78f5192ca03af1850fea5883b8b48bffd0b20eab528b66f6d1b7db389fbb9"
     },
     {
-      "path": "results/E-ERAD-478/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/E-ERAD-478/qc/qc_sample_summary.tsv",
       "sha256": "8e3b887cfb2fb6995f1915a47df78566bebcb5770392412f029906f668786f7d"
     },
     {
-      "path": "results/E-ERAD-478/qc/qc_summary.json",
+      "path": "results/rnaseq/E-ERAD-478/qc/qc_summary.json",
       "sha256": "60d66b2eecc435c3d30cd1239052ddeb6b0269d01ab978fb136777e458774863"
     }
   ]

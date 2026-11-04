@@ -355,31 +355,31 @@
       "sha256": "655fe1e9cc761c385c4538fb56c3f7a872e52c9af0f59faf39cb429ffb216ba2"
     },
     {
-      "path": "results/PRJNA312093/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/PRJNA312093/expression/tpm_matrix.tsv",
       "sha256": "7d62b795ba6525d1f96bfc5f36aedee1375dbdda1c2b2ddb2a0701a6d8a1272c"
     },
     {
-      "path": "results/PRJNA312093/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/PRJNA312093/qc/qc_sample_summary.tsv",
       "sha256": "4818663f23d816a9de5f47a23a00dc51dfddbf7ffd13ca89cb978aae6f8ebdee"
     },
     {
-      "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+      "path": "results/rnaseq/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
       "sha256": "18e9492378c3c79a8903a32c1b7b52d860976ce2dd9914c55916254b7d118adb"
     },
     {
-      "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+      "path": "results/rnaseq/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
       "sha256": "c91c36c0f33944429651436d76f6eef8fc2f594c496cceb9b018b82b41fd7f62"
     },
     {
-      "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
+      "path": "results/rnaseq/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
       "sha256": "4b07126453f7b2c5c6d0ff71faa2b558b61e010fd1fbdae03f09764209dc4ea7"
     },
     {
-      "path": "results/PRJNA312093/restricted_refit/included_samples.tsv",
+      "path": "results/rnaseq/PRJNA312093/restricted_refit/included_samples.tsv",
       "sha256": "7ba10bc3bf07d7165fd27b06b4e3a57c5377fa2678225022b610cf56653993f2"
     },
     {
-      "path": "results/PRJNA312093/restricted_refit/manifest.json",
+      "path": "results/rnaseq/PRJNA312093/restricted_refit/manifest.json",
       "sha256": "02239b6fa0581146c9ffe85cd9693a8e2ab1f5c1743368eed509c0828414a3c8"
     }
   ]

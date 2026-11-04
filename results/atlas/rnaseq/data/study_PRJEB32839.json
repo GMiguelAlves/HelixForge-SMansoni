@@ -1903,19 +1903,19 @@
       "sha256": "ba8716b1be555362206f5037d91b43675b656653b07c35c7184f7c4110f1fa6a"
     },
     {
-      "path": "results/PRJEB32839/differential_expression/DEGs_all_results.tsv",
+      "path": "results/rnaseq/PRJEB32839/differential_expression/DEGs_all_results.tsv",
       "sha256": "aa38009a6aa6790fdb54d28e66b0355212b2c0369620057f652d946d52daf208"
     },
     {
-      "path": "results/PRJEB32839/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/PRJEB32839/expression/tpm_matrix.tsv",
       "sha256": "4bb89484e7814dc4c8a3b94710634263fb3cd29d9dbe98093d6e4f2e06fa286a"
     },
     {
-      "path": "results/PRJEB32839/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/PRJEB32839/qc/qc_sample_summary.tsv",
       "sha256": "808f28789bd9a9ab1fe25b4f39f03df5da233b53ec1ddd52b92ec6ca30fad056"
     },
     {
-      "path": "results/PRJEB32839/qc/qc_summary.json",
+      "path": "results/rnaseq/PRJEB32839/qc/qc_summary.json",
       "sha256": "1c73f5d5ab1c0db0ee116daa2a4c62ed94103ef917a3404d5be96106ad0c219a"
     }
   ]

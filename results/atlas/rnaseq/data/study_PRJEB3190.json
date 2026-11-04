@@ -639,19 +639,19 @@
       "sha256": "adb3736c15c42d593d5d51fb97150186c502655882d9c75ac30830de6df91be9"
     },
     {
-      "path": "results/PRJEB3190/differential_expression/DEGs_all_results.tsv",
+      "path": "results/rnaseq/PRJEB3190/differential_expression/DEGs_all_results.tsv",
       "sha256": "ca69251c629b4f82670c8221456060aefdfe87f7491c82b7cade5517a23d189e"
     },
     {
-      "path": "results/PRJEB3190/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/PRJEB3190/expression/tpm_matrix.tsv",
       "sha256": "f2d2adabd78a50857df067b96e97060f48ef30eb42c7728e8fb0e6dfdcbcc611"
     },
     {
-      "path": "results/PRJEB3190/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/PRJEB3190/qc/qc_sample_summary.tsv",
       "sha256": "6a30b8ae7aca46fce954af8e9e873501f7c43772aa1a84662437f0b64027078b"
     },
     {
-      "path": "results/PRJEB3190/qc/qc_summary.json",
+      "path": "results/rnaseq/PRJEB3190/qc/qc_summary.json",
       "sha256": "3b693a26dae0dbe01396bdecffcd08766c56d1269c45caeec685da66b9e9b83b"
     }
   ]

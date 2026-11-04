@@ -187,19 +187,19 @@
       "sha256": "1059cc5c8b6a6866b841b0c705108fbe94925f578693cc32c2b1b0f9ec306418"
     },
     {
-      "path": "results/PRJNA428470/differential_expression/contrasts/DEG_condition__female_adult_5azac_vs_female_adult_control.tsv",
+      "path": "results/rnaseq/PRJNA428470/differential_expression/contrasts/DEG_condition__female_adult_5azac_vs_female_adult_control.tsv",
       "sha256": "13ce0ecd3faf8256e961f0eaceb2503f33d725afb981074e12748b4f19a6f4bd"
     },
     {
-      "path": "results/PRJNA428470/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/PRJNA428470/expression/tpm_matrix.tsv",
       "sha256": "21cb9af8c886b5b54569db37af8a13e401ae97323cdfd0a09cf9860740d683b3"
     },
     {
-      "path": "results/PRJNA428470/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/PRJNA428470/qc/qc_sample_summary.tsv",
       "sha256": "9029a62608437ec145453bff986dc3933efb321f3d0398c8d78fe3d05dfc53a7"
     },
     {
-      "path": "results/PRJNA428470/qc/qc_summary.json",
+      "path": "results/rnaseq/PRJNA428470/qc/qc_summary.json",
       "sha256": "bff57984a731e98d54e6a485c5a54beac5557f422265915894ade1a2f2f25927"
     }
   ]

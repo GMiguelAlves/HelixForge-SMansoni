@@ -777,7 +777,7 @@ def main() -> int:
     column_start = 0
     for study_entry in config["studies"]:
         study = study_entry["id"]
-        tpm_path = root / "results" / study / "expression/tpm_matrix.tsv"
+        tpm_path = root / "results/rnaseq" / study / "expression/tpm_matrix.tsv"
         metadata_path = root / "metadata" / study / "samples.tsv"
         input_files.extend([tpm_path, metadata_path])
         genes, columns, tpm = load_matrix(tpm_path)
@@ -916,7 +916,7 @@ def main() -> int:
         qc_counts = Counter(str(row["qc_classification"]) for row in selected)
         mapping_values = [float(row["salmon_mapping_percent"]) for row in selected if row["salmon_mapping_percent"] is not None]
         retention_values = [float(row["trim_retention_percent"]) for row in selected if row["trim_retention_percent"] is not None]
-        aggregate_qc_path = root / "results" / study / "qc/qc_summary.json"
+        aggregate_qc_path = root / "results/rnaseq" / study / "qc/qc_summary.json"
         aggregate_qc = {}
         if aggregate_qc_path.is_file() and not study_entry.get("sample_allowlist"):
             input_files.append(aggregate_qc_path)
@@ -1193,7 +1193,7 @@ def main() -> int:
             continue
         study = study_entry["id"]
         spec_path, spec = study_spec(root, study_entry)
-        results_path = root / "results" / study / "differential_expression/DEGs_all_results.tsv"
+        results_path = root / "results/rnaseq" / study / "differential_expression/DEGs_all_results.tsv"
         input_files.append(spec_path)
         specs = {item["id"]: item for item in spec["contrasts"]}
         lfc_for_study = {key: np.full(len(all_genes), np.nan) for key in specs}
@@ -1205,7 +1205,7 @@ def main() -> int:
             input_files.append(results_path)
             result_sources = [(None, results_path)]
         else:
-            contrast_dir = root / "results" / study / "differential_expression/contrasts"
+            contrast_dir = root / "results/rnaseq" / study / "differential_expression/contrasts"
             result_sources = [
                 (contrast_id, contrast_dir / f"DEG_{contrast_id}.tsv")
                 for contrast_id in specs

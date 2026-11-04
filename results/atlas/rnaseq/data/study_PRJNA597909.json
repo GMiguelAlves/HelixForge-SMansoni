@@ -549,19 +549,19 @@
       "sha256": "4dcf229766ecc06564f967e441c92e7776c06f0bb18b63e7e6b746dd7bc5635b"
     },
     {
-      "path": "results/PRJNA597909/differential_expression/DEGs_all_results.tsv",
+      "path": "results/rnaseq/PRJNA597909/differential_expression/DEGs_all_results.tsv",
       "sha256": "ace17c9e9cdd9e1f19fb53f52bbb32e17646db7c08da7d4b895b4adabd7f64ed"
     },
     {
-      "path": "results/PRJNA597909/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/PRJNA597909/expression/tpm_matrix.tsv",
       "sha256": "1cfd1bf790d1c3dc7385897a9ec04fa1af452197fe0e507ffae6d26865a504d6"
     },
     {
-      "path": "results/PRJNA597909/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/PRJNA597909/qc/qc_sample_summary.tsv",
       "sha256": "1d7ab86b70679d452ce287e182df47198f04bf14dfcb2506edc4cf5edd52f465"
     },
     {
-      "path": "results/PRJNA597909/qc/qc_summary.json",
+      "path": "results/rnaseq/PRJNA597909/qc/qc_summary.json",
       "sha256": "735a160918f2b71d92ab54826c21417866ab79b6fe122cc41f241713b0d21b3e"
     }
   ]
