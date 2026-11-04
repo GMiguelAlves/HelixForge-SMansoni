@@ -202,10 +202,8 @@ The ChIP-seq study inventory is curated in this same project with
 assay-specific control relationships. Five Q1 studies have controls suitable
 for peak calling
 (`PRJNA1173904`, `PRJNA236156`, `PRJNA312093`, `PRJNA602708`, and
-`PRJNA1090249`). `PRJNA219440` is retained for QC/alignment only because
-its public historical subexperiments do not provide a uniform matched-control
-design. `PRJNA384372` is P2/Q2, and `PRJNA816041` is a technical benchmark
-rather than atlas evidence.
+`PRJNA1090249`). `PRJNA816041` is a technical benchmark rather than atlas
+evidence.
 
 The metadata, download checksums, explicit IP/control mapping, narrow/broad
 run sets, duplicate-deposit exclusions, and publication links are indexed in
