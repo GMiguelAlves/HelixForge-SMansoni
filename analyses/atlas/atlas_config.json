@@ -22,72 +22,72 @@
     {
       "id": "PRJNA602528",
       "differential_expression": false,
-      "qc_table": "results/PRJNA602528/qc/qc_sample_summary.tsv"
+      "qc_table": "results/rnaseq/PRJNA602528/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJNA597909",
       "differential_expression": true,
       "trajectory_group_by": "condition",
-      "qc_table": "results/PRJNA597909/qc/qc_sample_summary.tsv"
+      "qc_table": "results/rnaseq/PRJNA597909/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJEB14695",
       "differential_expression": true,
-      "qc_table": "results/PRJEB14695/qc/qc_sample_summary.tsv"
+      "qc_table": "results/rnaseq/PRJEB14695/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJEB32839",
       "differential_expression": true,
-      "qc_table": "results/PRJEB32839/qc/qc_sample_summary.tsv"
+      "qc_table": "results/rnaseq/PRJEB32839/qc/qc_sample_summary.tsv"
     },
     {
       "id": "E-MTAB-451",
       "differential_expression": true,
-      "qc_table": "results/E-MTAB-451/qc/qc_sample_summary.tsv"
+      "qc_table": "results/rnaseq/E-MTAB-451/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJEB3190",
       "differential_expression": true,
-      "qc_table": "results/PRJEB3190/qc/qc_sample_summary.tsv"
+      "qc_table": "results/rnaseq/PRJEB3190/qc/qc_sample_summary.tsv"
     },
     {
       "id": "E-ERAD-478",
       "differential_expression": true,
       "trajectory_group_by": "condition",
-      "qc_table": "results/E-ERAD-478/qc/qc_sample_summary.tsv"
+      "qc_table": "results/rnaseq/E-ERAD-478/qc/qc_sample_summary.tsv"
     },
     {
       "id": "PRJNA704646",
       "differential_expression": false,
-      "qc_table": "results/PRJNA704646/qc/qc_sample_summary.tsv",
+      "qc_table": "results/rnaseq/PRJNA704646/qc/qc_sample_summary.tsv",
       "interpretation_warning": "Descriptive expression only. Three of eight biological pools are QC REVIEW for Salmon mapping below 60%; the 24 runs are technical repeats, not biological replicates. No differential-expression inference is supported."
     },
     {
       "id": "PRJNA1150591",
       "differential_expression": true,
       "trajectory_group_by": "condition",
-      "qc_table": "results/PRJNA1150591/qc/qc_sample_summary.tsv",
+      "qc_table": "results/rnaseq/PRJNA1150591/qc/qc_sample_summary.tsv",
       "interpretation_warning": "Only the prespecified 7-week adult meclonazepam-versus-control contrast is inferential. Five treated 4-week juveniles remain in the fitted ~ condition model by project decision; this does not estimate an age effect. Biological interpretation of individual genes remains provisional."
     },
     {
       "id": "PRJNA312093",
       "differential_expression": true,
       "trajectory_group_by": "condition",
-      "qc_table": "results/PRJNA312093/qc/qc_sample_summary.tsv",
-      "sample_allowlist": "results/PRJNA312093/restricted_refit/included_samples.tsv",
-      "admission_manifest": "results/PRJNA312093/restricted_refit/manifest.json",
+      "qc_table": "results/rnaseq/PRJNA312093/qc/qc_sample_summary.tsv",
+      "sample_allowlist": "results/rnaseq/PRJNA312093/restricted_refit/included_samples.tsv",
+      "admission_manifest": "results/rnaseq/PRJNA312093/restricted_refit/manifest.json",
       "analysis_id": "smansoni_prjna312093_restricted12_schistosomula",
       "contrast_sources": {
         "condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male": {
-          "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
+          "path": "results/rnaseq/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_1_female_vs_schistosomulum_stage_1_male.tsv",
           "sha256": "18e9492378c3c79a8903a32c1b7b52d860976ce2dd9914c55916254b7d118adb"
         },
         "condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male": {
-          "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
+          "path": "results/rnaseq/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_2_female_vs_schistosomulum_stage_2_male.tsv",
           "sha256": "c91c36c0f33944429651436d76f6eef8fc2f594c496cceb9b018b82b41fd7f62"
         },
         "condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male": {
-          "path": "results/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
+          "path": "results/rnaseq/PRJNA312093/restricted_refit/contrasts/condition__schistosomulum_stage_3_female_vs_schistosomulum_stage_3_male.tsv",
           "sha256": "4b07126453f7b2c5c6d0ff71faa2b558b61e010fd1fbdae03f09764209dc4ea7"
         }
       },
@@ -97,14 +97,14 @@
       "id": "PRJNA1177852",
       "differential_expression": false,
       "trajectory_group_by": "condition",
-      "qc_table": "results/PRJNA1177852/qc/qc_sample_summary.tsv",
+      "qc_table": "results/rnaseq/PRJNA1177852/qc/qc_sample_summary.tsv",
       "interpretation_warning": "Descriptive meclonazepam time series only: eight time points, one biological library per time point and no parallel control. Expression trends are not statistically supported treatment effects; no DE contrasts are included."
     },
     {
       "id": "PRJNA428470",
       "differential_expression": true,
       "trajectory_group_by": "condition",
-      "qc_table": "results/PRJNA428470/qc/qc_sample_summary.tsv",
+      "qc_table": "results/rnaseq/PRJNA428470/qc/qc_sample_summary.tsv",
       "interpretation_warning": "CODING_GENE_SCOPE; REVIEW_4_OF_6. The frozen adult-female 5-azacitidine-versus-control contrast is retained with Salmon mRNA mapping of 34.61–60.83%. Leave-one-out fits support effect stability but do not replace the full fit. Claims are restricted to quantified coding genes; the unquantified read fraction, lncRNAs and drug-target identity are not established."
     }
   ],

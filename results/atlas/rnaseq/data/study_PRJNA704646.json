@@ -199,15 +199,15 @@
       "sha256": "4aa760b81b38e685a1c5ff1d8859021011743d6f309958d37a91de6e2571b5d1"
     },
     {
-      "path": "results/PRJNA704646/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/PRJNA704646/expression/tpm_matrix.tsv",
       "sha256": "cdcd36e36a062aa4a2255e6408b118adbc1c93de9823ff2971ae79df285ae0eb"
     },
     {
-      "path": "results/PRJNA704646/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/PRJNA704646/qc/qc_sample_summary.tsv",
       "sha256": "359c356e60c35be92481c055950bf094639c5e008a32ec5151a229aa6a3711ad"
     },
     {
-      "path": "results/PRJNA704646/qc/qc_summary.json",
+      "path": "results/rnaseq/PRJNA704646/qc/qc_summary.json",
       "sha256": "c8259f5df59b95bf482a11c1902705be9a9934db72c1b41835d0e61bb0913808"
     }
   ]

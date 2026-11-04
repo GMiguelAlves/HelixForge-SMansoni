@@ -333,19 +333,19 @@
       "sha256": "033a4d3dcdf0d573a47c9d2f1df31309ede762082e5324e2ee6babbc5ff85845"
     },
     {
-      "path": "results/E-MTAB-451/differential_expression/DEGs_all_results.tsv",
+      "path": "results/rnaseq/E-MTAB-451/differential_expression/DEGs_all_results.tsv",
       "sha256": "ae6fd9849ed2a3ea864b9970e63f201a0d4f1046305ea86bfde2fb4446f0a824"
     },
     {
-      "path": "results/E-MTAB-451/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/E-MTAB-451/expression/tpm_matrix.tsv",
       "sha256": "67bd8831b8381dbd528079bd8bba3401e610f0be078768987856aa7348846c03"
     },
     {
-      "path": "results/E-MTAB-451/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/E-MTAB-451/qc/qc_sample_summary.tsv",
       "sha256": "a5261248ecf4ae46f24b4420b53af425e16bfae73c35a563b69591cb117b5d48"
     },
     {
-      "path": "results/E-MTAB-451/qc/qc_summary.json",
+      "path": "results/rnaseq/E-MTAB-451/qc/qc_summary.json",
       "sha256": "114491f346babec1e5526444c107f559c7022c0fe06784de3654071cc6e5ac6a"
     }
   ]

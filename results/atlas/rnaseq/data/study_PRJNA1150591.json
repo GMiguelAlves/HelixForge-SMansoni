@@ -385,19 +385,19 @@
       "sha256": "36f1028af020e1743aa961dfa8a438d83dd9d37b673f2a382260a012bb99a002"
     },
     {
-      "path": "results/PRJNA1150591/differential_expression/contrasts/DEG_condition__adult_7wk_mclz_vs_adult_7wk_control.tsv",
+      "path": "results/rnaseq/PRJNA1150591/differential_expression/contrasts/DEG_condition__adult_7wk_mclz_vs_adult_7wk_control.tsv",
       "sha256": "3ea4ef6a39b2b32bae19de8a0c9dbc0c4db6126cf0f928938e4ed801aa607f53"
     },
     {
-      "path": "results/PRJNA1150591/expression/tpm_matrix.tsv",
+      "path": "results/rnaseq/PRJNA1150591/expression/tpm_matrix.tsv",
       "sha256": "3c0522765d3db761f94feef173b2a2405016eb361d36593c670fcc02ba7d97ff"
     },
     {
-      "path": "results/PRJNA1150591/qc/qc_sample_summary.tsv",
+      "path": "results/rnaseq/PRJNA1150591/qc/qc_sample_summary.tsv",
       "sha256": "7e48505483742fb3561149e6de96a16879f99c63a283c327a4e55afa716cf0e4"
     },
     {
-      "path": "results/PRJNA1150591/qc/qc_summary.json",
+      "path": "results/rnaseq/PRJNA1150591/qc/qc_summary.json",
       "sha256": "1a50bdeb1e666a637c1fc3476e4652aa19c2f3916b01c59b95fbf21d1b37eb3e"
     }
   ]

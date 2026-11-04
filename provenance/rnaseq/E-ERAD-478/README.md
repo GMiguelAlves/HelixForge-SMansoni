@@ -15,6 +15,6 @@ repository-size policy.
   to 60 biological samples.
 - `source_snapshots/`: frozen public metadata used to curate the study.
 
-The versioned results under `results/E-ERAD-478/` have their own `SHA256SUMS`.
+The versioned results under `results/rnaseq/E-ERAD-478/` have their own `SHA256SUMS`.
 The larger private work audit is retained outside Git and can be used for
 controlled review if necessary.

@@ -1,5 +1,13 @@
 # Results policy
 
+The top level contains only assay directories: `rnaseq/`, `chipseq/`, and
+`atlas/`. Keep study results under their assay directory, not in
+`results/<study>/`. The atlas reads the accepted RNA products directly from
+`results/rnaseq/<study>/`; it must not publish a second copy at the top level.
+`results/atlas/rnaseq/` is the generated, versioned website snapshot, not a
+second set of study results. Its sources and rebuild instructions are in
+`analyses/atlas/README.md`.
+
 Every study exposes the same compact public interface under
 `results/rnaseq/<study>/`:
 

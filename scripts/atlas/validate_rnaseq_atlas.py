@@ -116,7 +116,7 @@ def validate(root: Path, atlas: Path | None = None) -> list[str]:
     if {row["study"] for row in contrasts} != {"PRJNA597909", "PRJEB14695", "PRJEB32839", "E-MTAB-451", "PRJEB3190", "E-ERAD-478", "PRJNA1150591", "PRJNA312093", "PRJNA428470"}:
         errors.append("unexpected studies in differential-expression catalog")
 
-    allowed = {row["__rowname"] for row in read_tsv(root / "results/PRJNA312093/restricted_refit/included_samples.tsv")}
+    allowed = {row["__rowname"] for row in read_tsv(root / "results/rnaseq/PRJNA312093/restricted_refit/included_samples.tsv")}
     observed = {row["sample_key"] for row in samples if row["study"] == "PRJNA312093"}
     if len(allowed) != 12 or observed != allowed:
         errors.append("PRJNA312093 expression does not match the 12 approved libraries")
@@ -126,7 +126,7 @@ def validate(root: Path, atlas: Path | None = None) -> list[str]:
             errors.append(f"admission scope differs for {study}")
         if any(not row.get("interpretation_warning") for row in rows):
             errors.append(f"contrast warning missing for {study}")
-    refit = json.loads((root / "results/PRJNA312093/restricted_refit/manifest.json").read_text(encoding="utf-8"))
+    refit = json.loads((root / "results/rnaseq/PRJNA312093/restricted_refit/manifest.json").read_text(encoding="utf-8"))
     refit_rows = [row for row in contrasts if row["study"] == "PRJNA312093"]
     if [int(row["significant_genes"]) for row in refit_rows] != [290, 1045, 437]:
         errors.append("PRJNA312093 significant-gene counts differ from the reviewed refit")
@@ -136,7 +136,7 @@ def validate(root: Path, atlas: Path | None = None) -> list[str]:
     for filename, source_field in (("gene_contrast_log2fc.tsv", "log2FoldChange"), ("gene_contrast_padj.tsv", "padj")):
         exported = {row["gene_id"]: row for row in read_tsv(atlas / "data" / filename)}
         for record in refit["contrasts"]:
-            source = root / "results/PRJNA312093/restricted_refit" / record["path"]
+            source = root / "results/rnaseq/PRJNA312093/restricted_refit" / record["path"]
             if sha256(source) != record["sha256"]:
                 errors.append(f"frozen refit checksum differs: {record['path']}")
                 continue
@@ -496,7 +496,7 @@ def validate(root: Path, atlas: Path | None = None) -> list[str]:
         for study in ("PRJNA312093", "PRJNA1177852", "PRJNA428470"):
             if not profiles.get(study, {}).get("interpretation_warning"):
                 errors.append(f"browser admission warning missing: {study}")
-        source_tpm = {row["gene_id"]: row for row in read_tsv(root / "results/PRJNA312093/expression/tpm_matrix.tsv")}
+        source_tpm = {row["gene_id"]: row for row in read_tsv(root / "results/rnaseq/PRJNA312093/expression/tpm_matrix.tsv")}
         sample_fields = payload["sample_fields"]
         refit_columns = []
         for column, record in enumerate(payload["samples"]):
