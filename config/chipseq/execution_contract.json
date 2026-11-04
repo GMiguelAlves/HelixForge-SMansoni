@@ -39,7 +39,6 @@
   },
   "limitations": [
     "No validated S. mansoni blacklist is frozen; no blacklist filtering is applied.",
-    "PRJNA219440 and PRJNA384372 are alignment-only because public matched controls are absent.",
     "The current HelixForge ChIP API applies one peak_type per run, so mixed-mark studies are split into narrow and broad invocations.",
     "Native trimming follows the registered ChIP policy; raw/post-trim QC and adapter-detection reports require review, including possible poly-G artifacts on two-colour instruments."
   ]

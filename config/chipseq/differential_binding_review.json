@@ -46,6 +46,6 @@
     "verified_persistent_artifacts_and_private_audit",
     "retained_consumers_no_longer_depend_on_workdir_locations"
   ],
-  "no_automatic_db_studies": ["PRJNA219440", "PRJNA384372", "PRJNA816041"],
+  "no_automatic_db_studies": ["PRJNA816041"],
   "candidate_registry": "differential_binding_candidates.tsv"
 }

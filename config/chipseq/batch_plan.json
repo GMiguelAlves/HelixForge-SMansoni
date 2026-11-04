@@ -21,17 +21,9 @@
       "studies": [
         "PRJNA312093",
         "PRJNA602708",
-        "PRJNA1090249",
-        "PRJNA219440"
+        "PRJNA1090249"
       ],
       "policy": "combined P1 staging below 150 GB; independent outputs/workdirs"
-    },
-    {
-      "batch": "CHIP-D",
-      "studies": [
-        "PRJNA384372"
-      ],
-      "policy": "P2 only if time remains"
     },
     {
       "batch": "CHIP-T",

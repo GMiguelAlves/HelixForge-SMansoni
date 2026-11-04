@@ -25,8 +25,6 @@ package did not introduce another genome copy.
 | `PRJNA312093` | 24 single-end runs; H3K4me3/H3K27me3 | 34.70 GB | Q1/P1; sex and life cycle, two replicates |
 | `PRJNA602708` | 24 paired-end runs; H3K4me3/H3K27me3 | 13.73 GB | Q1/P1; plasma/treatment, two replicates |
 | `PRJNA1090249` | Eight *S. mansoni* single-end runs; HP1 | 6.19 GB | Specialized Q1/P1; four *Drosophila* runs excluded |
-| `PRJNA219440` | 29 mixed-layout runs; historical collection | 49.43 GB | Q2/P1; QC/alignment only |
-| `PRJNA384372` | Three single-end H3K9ac runs | 0.47 GB | Q2/P2; QC/alignment only; publication linkage remains ambiguous |
 | `PRJNA816041` | Eight paired-end ChIPmentation runs | 7.24 GB | Technical benchmark, outside the biological atlas |
 
 For `PRJNA1173904`, the primary account identified during preparation was a
@@ -64,9 +62,6 @@ The highest-impact decisions were:
 - `PRJNA1173904`: A/A2 and B/B2 are normalized as replicates 1 and 2,
   respectively; each gonad/sexual-experiment group uses its public input.
 - `PRJNA1090249`: only the eight *S. mansoni* runs are retained.
-- `PRJNA219440`: two schistosomulum runs have unresolved targets in the
-  deposit and retain that label. No run from this study advances to peak
-  calling without a public control.
 
 ## HelixForge compatibility and frozen execution decisions
 
@@ -137,8 +132,6 @@ Frozen parameters and policies:
 - IDR applies only to exactly two biological narrowPeak replicates.
 - Broad marks and three-replicate sets use consensus supported by at least
   two replicates.
-- `PRJNA219440` and `PRJNA384372` produce descriptive QC/BAM outputs only;
-  calling peaks without public inputs would be methodologically weak.
 - Differential Binding is disabled in the initial peak-processing execution,
   not excluded from the study. Follow the [DB review and retention policy](differential_binding_review.md):
   review QC and model eligibility per study, preserve replicate BAMs/BAIs and
@@ -153,7 +146,6 @@ authorize staging multiple studies concurrently. Heavy storage is occupied by
 one study at a time. BAMs, indexes, tracks, and work directories count toward
 the complete storage budget, and available capacity must be checked before
 staging each study. Each run set keeps an independent result directory.
-`PRJNA384372` remains an optional P2 batch.
 
 ## Project–atlas boundary
 

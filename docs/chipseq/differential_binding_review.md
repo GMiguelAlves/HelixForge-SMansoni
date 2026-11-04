@@ -20,8 +20,7 @@ Record `ELIGIBLE`, `HOLD` or `NOT_ELIGIBLE`, the evidence, any exclusions and
 their rationale. Technical libraries and shared Inputs are not additional
 biological observations. Batch or pairing may be used only when supported by
 metadata and an estimable model; do not infer pairs from matching replicate
-numbers. PRJNA219440 and PRJNA384372 remain QC/alignment-only without a separate
-design review. The PRJNA816041 technical benchmark is not an automatic DB study.
+numbers. The PRJNA816041 technical benchmark is not an automatic DB study.
 
 ### Required final design review for every study
 
