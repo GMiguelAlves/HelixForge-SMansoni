@@ -1,0 +1,12 @@
+{
+  "study": "PRJNA236156",
+  "status": "ACCEPTED_PROCESSING_PANEL",
+  "date": "2026-11-03",
+  "scope": "48_IP_four_histone_marks_12_matched_UB0_controls",
+  "scientific_acceptance": "user_accepted_final_selected_results",
+  "superseded_H3K4_cercaria_calls_not_published": true,
+  "private_native_results_preserved_separately": true,
+  "includes_alignments": false,
+  "includes_scripts": false,
+  "self_contained_reentry_package": false
+}

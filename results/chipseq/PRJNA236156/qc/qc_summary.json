@@ -1,0 +1,28 @@
+{
+  "study": "PRJNA236156",
+  "status": "ACCEPTED_PROCESSING_PANEL",
+  "ip_libraries": 48,
+  "input_libraries": 12,
+  "total_regions": 558359,
+  "updated_final_depth_QC": true,
+  "warnings": [
+    {
+      "record_id": "SRR2529614",
+      "note": "S2_low_quality_replicate"
+    },
+    {
+      "record_id": "SRR2529617",
+      "note": "S2_low_quality_replicate"
+    },
+    {
+      "record_id": "SRR2529620",
+      "note": "S2_low_quality_replicate"
+    }
+  ],
+  "no_automatic_FRIP_exclusions": true,
+  "biological_occupancy_certified": false,
+  "db": "NOT_EXECUTED",
+  "idr": "NOT_EXECUTED",
+  "gene_annotation": "NOT_GENERATED",
+  "atlas": "NOT_UPDATED"
+}
