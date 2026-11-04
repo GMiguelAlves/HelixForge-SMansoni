@@ -1,0 +1,36 @@
+{
+  "reference_id": "Schistosoma_mansoni_SM_V10_WBPS19",
+  "reference_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "annotation_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+  "helixforge_commit": "2833442eb01edbe2e090870ba945fc074bc4d564",
+  "alignment_options": "--end-to-end --sensitive --gbar 4",
+  "trim_quality": 20,
+  "minimum_length": 25,
+  "mapq_minimum": 40,
+  "exclude_XS_tag": true,
+  "pyicos_revision": "dd9b071327320395d9e30d325c885b70f7c08705",
+  "pyicos_duplicates_argument": 3,
+  "maximum_total_identical_locus_strand_copies": 4,
+  "sampling_seed": "20261103",
+  "sampling_method": "GNU shuf without replacement; AES-256-CTR stream keyed by SHA256(study|seed|run.depth); coordinate sorting afterward",
+  "ip_input_depth_policy": "equal_depth_per_call; historical_Input_depth_not_provided_in_S2",
+  "exact_depths_file": "metadata/sample_table.tsv",
+  "peakranger": {
+    "FDR": "0.01",
+    "bandwidth": 99,
+    "delta": 1,
+    "ext_length": 200,
+    "pval": "0.0001",
+    "threads": 4
+  },
+  "source_method_doi": "10.1111/mec.13555",
+  "adaptation_not_exact_reproduction": true,
+  "public_export": "BED3 preserving native called interval boundaries without merging or coordinate shifts",
+  "excludes": [
+    "differential_binding",
+    "IDR",
+    "EpiCSeg",
+    "gene_annotation",
+    "atlas_update"
+  ]
+}

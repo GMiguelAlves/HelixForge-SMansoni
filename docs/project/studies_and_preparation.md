@@ -246,5 +246,17 @@ one common Input were reviewed with MACS2, Peakranger and ChromstaR. The
 [analysis policy](../chipseq/prjna1173904_analysis.md) identifies the exact
 scope and adaptations. This panel is not a complete eight-mark reanalysis;
 no new gene annotation, DB, IDR or combinatorial-state result is claimed.
+
+`PRJNA236156` has an accepted
+[four-mark result panel](../../results/chipseq/PRJNA236156/README.md): 48 IP
+libraries with 12 matched UB0 controls, processed with standard HF QC/Bowtie2
+and the article-guided Pyicos/PeakRanger method. The
+[analysis policy](../chipseq/prjna236156_analysis.md) records actual depths,
+the corrected H3K4me3 cercaria targets, software/reference adaptations and
+the two flagged Fb8 libraries. Individual peaksets, QC and the Appendix S3
+comparison are published; no new annotation, DB, IDR, chromatin-state or atlas
+result is included. Its accepted retention scope is final results and
+provenance, not alignments or workdirs.
+
 Preserve biological-replicate BAMs/BAIs and their metadata until QC and model
 review and any approved DB analysis are resolved.

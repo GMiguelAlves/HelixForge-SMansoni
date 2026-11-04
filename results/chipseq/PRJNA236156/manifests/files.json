@@ -1,0 +1,294 @@
+{
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3661,
+      "sha256": "4342dd6e3207ed4316169a420f8c4dd60dc6f58b0855b160d31a03846fb764dc"
+    },
+    {
+      "file": "manifests/parameters.json",
+      "bytes": 1386,
+      "sha256": "fbcc92c9175469423d1c1a4719517467f5cfbe3a38d2ec76012cde464cf04151"
+    },
+    {
+      "file": "manifests/publication.json",
+      "bytes": 439,
+      "sha256": "797306d6ef6ee918ca9052c56477034a82b23d5306668c2c0a6874bf15274386"
+    },
+    {
+      "file": "manifests/software_versions.tsv",
+      "bytes": 296,
+      "sha256": "7ff016c9e3b443098d9c48e7a4d956580e084fe4a5325ab31cd0794e5f265ce8"
+    },
+    {
+      "file": "manifests/source_peaksets.tsv",
+      "bytes": 8221,
+      "sha256": "b04e291184d39488791dfd88f20bcb77effea4c333d07fe8fc95c02c11aff74c"
+    },
+    {
+      "file": "metadata/sample_table.tsv",
+      "bytes": 10756,
+      "sha256": "179583209f9e7af162f06c59edfa751f52875dcc59d6b4d14a7f679556f3a021"
+    },
+    {
+      "file": "metrics/paper_comparison.tsv",
+      "bytes": 5389,
+      "sha256": "c80df97da64abf7e14e473b4ebec75870cc036a7671edbab91f47a0b03076bdf"
+    },
+    {
+      "file": "metrics/peak_summary.tsv",
+      "bytes": 10705,
+      "sha256": "9a04ff92b9dc5bee3a20c4186cc299fb39bd4e15634879c53d6d2100cc77a8f8"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2529485.bed.gz",
+      "bytes": 13352,
+      "sha256": "9e092270bcb1ce62f4e48e0c243e746860b4554d7fb53907afd43dffefb006bf"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2529490.bed.gz",
+      "bytes": 23432,
+      "sha256": "ebfddc89e95aa3fff74b8d7afa01e088e0a373464b1ec7e16bb884002631e84d"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2529504.bed.gz",
+      "bytes": 7036,
+      "sha256": "197892b818f901e3002d2c218a76a4f9198f63b3a78ba16df8e35f1a17dad813"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2529607.bed.gz",
+      "bytes": 7223,
+      "sha256": "dea505d434982b26addaeb8e0bf0d84e4d274a25ecece69960a8086376b1c707"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2529612.bed.gz",
+      "bytes": 15740,
+      "sha256": "d6801d08c26898fad5712e02a4d65fbca26b67aedc49decdecb328051bc6baff"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2529617.bed.gz",
+      "bytes": 700672,
+      "sha256": "2e505f9736035d7d5814127e66ee89446cd2b70e514001ffd2d7cfe6378ba4bb"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2530110.bed.gz",
+      "bytes": 64053,
+      "sha256": "0188a25db3f2dbff15669910cc864a04bcf8b8fef334d86cce8102075cdbaa68"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2530133.bed.gz",
+      "bytes": 51771,
+      "sha256": "87e450cd07081dabd38216c2fef15cd67331296bbd01ef0dfc8a51701a26f23d"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2530138.bed.gz",
+      "bytes": 23503,
+      "sha256": "5b88e8c31b3104b459edfacb0aef55badb9ed642fd9ca57e74bfa6fc65bd0b16"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2530359.bed.gz",
+      "bytes": 50489,
+      "sha256": "693504ec97b8ebe5b7a4487ab000b08fb563a23881576cd1a9c9c0435e87e6ba"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2530364.bed.gz",
+      "bytes": 122196,
+      "sha256": "d66126bffa693ce33b46a525012416318b5abfcd4b34dc0bbd0b7ef3ebf0ba19"
+    },
+    {
+      "file": "peaks/peakranger/H3K27ac/SRR2530369.bed.gz",
+      "bytes": 13668,
+      "sha256": "29603dfba61d5d5c2b4443c1c0a80bc08432f05af6abc1bb36907bb6b43746a0"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2529484.bed.gz",
+      "bytes": 136989,
+      "sha256": "9788c44cdd3893ffdc1bea90c3e12003263cce69ee2066dc8313b4e738933c20"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2529491.bed.gz",
+      "bytes": 141976,
+      "sha256": "fca084aa72b3122bcdb46819f619e1da8b8b9175c19b4ee229cd336a9702ab21"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2529505.bed.gz",
+      "bytes": 92460,
+      "sha256": "dfd7b2c79f37903dd05946be429917c5d9450f594a3b85ffd3389ceda29516c2"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2529613.bed.gz",
+      "bytes": 24084,
+      "sha256": "523013635c7243c8d923f1193bd6a59e16bc417ae026059624a5cf867dc9e16f"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2529618.bed.gz",
+      "bytes": 121716,
+      "sha256": "defb157a0de6e6526ce4e02c9c9512ca54ab7d289b9ce0e054dabe6fdc9d15c9"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2530111.bed.gz",
+      "bytes": 92251,
+      "sha256": "5f275abe90ed6b0836f51011ca1b3252e00bd30c4ccdd7a179240959821d72c6"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2530134.bed.gz",
+      "bytes": 112543,
+      "sha256": "bdf0b119679e214b9f08505fd09e32226308b522b3f61a14bab65ca78f095f47"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2530139.bed.gz",
+      "bytes": 88094,
+      "sha256": "8902f425e1f967a80bdd8d73646806af7585eeab53645f68b32cafdc8380d7db"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2530360.bed.gz",
+      "bytes": 74713,
+      "sha256": "c729804133081a6acee93dc638f1c75e5e359fd83a98072d4293495bacfdb84b"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2530365.bed.gz",
+      "bytes": 87683,
+      "sha256": "922511daec3383baaa020b932c7bcc4734bfcf8fc60d52ff156641ac96bb6cd4"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR2530370.bed.gz",
+      "bytes": 67570,
+      "sha256": "c82c05b35282672afc1b9e9b553a7837188d1969ff0cb52098b9c33f0f32725e"
+    },
+    {
+      "file": "peaks/peakranger/H3K27me3/SRR3212079.bed.gz",
+      "bytes": 82160,
+      "sha256": "4925d05ae1c9cee42dfb9df580ad19ae1390135824def11a1048b18aa3572174"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2529486.bed.gz",
+      "bytes": 110511,
+      "sha256": "0c7c02ba3baf4d9a0509b8a45a68db8252c377af75630c149737677e652339a0"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2529492.bed.gz",
+      "bytes": 121613,
+      "sha256": "2d964e21590d12c283f4442d31fd7d76ee6fe22886d4fb316c1f8cf6cd47ffe2"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2529506.bed.gz",
+      "bytes": 117170,
+      "sha256": "bbe73157b9d8d113ec16a0ad088ed081f3a96037b29b52c19173100a1bf6fbfd"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2529609.bed.gz",
+      "bytes": 130185,
+      "sha256": "d9cdaccd136168561bb2317aa39e7e013dad0a86ea4b728c6c02b89c23cc66b7"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2529614.bed.gz",
+      "bytes": 79880,
+      "sha256": "72ca553e14bd77bd4cc0c777ec08f156b0932c9b575d4de3403d3ddcadbd1a43"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2529619.bed.gz",
+      "bytes": 111174,
+      "sha256": "5b1ee3b2cc8ae4c77ba907d80f0a39d953a7f13b1038c60002de787a72abb274"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2530112.bed.gz",
+      "bytes": 69922,
+      "sha256": "2152cf8fef4f81f5cea5a0227ed5039596cdf57b8811b21586821eb93957d54c"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2530135.bed.gz",
+      "bytes": 71383,
+      "sha256": "f5fdc68274aae58d9f7d05bc852cb02432c9aacbbdf881660ff5f2d36fa31f63"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2530140.bed.gz",
+      "bytes": 74922,
+      "sha256": "af2634380d815d667d4ec7e1076f09507b13ee8c3c94e4549b15bba6ab54c2c9"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2530361.bed.gz",
+      "bytes": 71295,
+      "sha256": "7a24729a4327aaeb20ef2efc86df08bb322498e9a7b089cba7570275e842a4dd"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2530366.bed.gz",
+      "bytes": 78092,
+      "sha256": "75b72965b7d7952e398cfec799f1729eeafb4f3c07f426e3e10a750b231e455c"
+    },
+    {
+      "file": "peaks/peakranger/H3K4me3/SRR2530371.bed.gz",
+      "bytes": 79107,
+      "sha256": "a4013dd077398d4a9e03d296fdf577658ce24054d81b701a2d745df571456d71"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2529487.bed.gz",
+      "bytes": 136225,
+      "sha256": "eee7fccb262456274b3f6ce9d811bfe32b5b7b69ef11e05c4df275ae3e11389d"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2529493.bed.gz",
+      "bytes": 167647,
+      "sha256": "20a6c39da66a0ed33cba02a9bf61107f9b38c67bcc2d7eb8a09a7dfb45de3c84"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2529507.bed.gz",
+      "bytes": 99428,
+      "sha256": "42a269080cd7312e30ad7aa870c22462756cd5b2cbd45a2dea66aff882254a3f"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2529610.bed.gz",
+      "bytes": 91265,
+      "sha256": "69dfae36dd845ab6d5f9d71c1d123b939526606db281c8fc01ef883736655808"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2529615.bed.gz",
+      "bytes": 61303,
+      "sha256": "c0a1ac24aef486935b777e5b54bcaaa3bfac51f095fd6f553d81441c75b3bfd6"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2529620.bed.gz",
+      "bytes": 517998,
+      "sha256": "c5b979802ae2939259f3d76ed7e8a4616944d4420f677271705955e432b07753"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2530113.bed.gz",
+      "bytes": 45146,
+      "sha256": "f97cb696af9af0788773fb1671b0a822647ea805c11b242ada394ce701747522"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2530136.bed.gz",
+      "bytes": 55084,
+      "sha256": "5a836a3a9323bccda06d19b994e299c796cf8428839685b1da9052d6ab731a17"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2530141.bed.gz",
+      "bytes": 54447,
+      "sha256": "d59dd40657ac8f98e98e2426b466468d6f4a265180baf654faedcc8169028377"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2530362.bed.gz",
+      "bytes": 29338,
+      "sha256": "70b813f67fb6c78ffb5fde829462d07aa14cfc1a4bf27902b607adfc4c11b5d9"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2530367.bed.gz",
+      "bytes": 177427,
+      "sha256": "74b71a4351eea64a17c24a5ebbeb3a65a75ee11bb40a20481ecac476b3b931c4"
+    },
+    {
+      "file": "peaks/peakranger/H4K20me1/SRR2530372.bed.gz",
+      "bytes": 46663,
+      "sha256": "cb074ed79a9ea1f23e4e5aed95cfbe8c5b1e8d92b29f9ecfb2a68ffda91610c8"
+    },
+    {
+      "file": "qc/qc_sample_summary.tsv",
+      "bytes": 19068,
+      "sha256": "a27c106864b3e2bdcb35538e7f3988fd09134f1bf7efdf0144788ad0e9ac4eff"
+    },
+    {
+      "file": "qc/qc_summary.json",
+      "bytes": 655,
+      "sha256": "6cbe11f52125392f419de1bc708572cd03ea78aa020808b53b3ccb56051332b0"
+    }
+  ]
+}

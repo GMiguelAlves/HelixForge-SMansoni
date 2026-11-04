@@ -1,0 +1,16 @@
+software	version
+HelixForge	2833442eb01edbe2e090870ba945fc074bc4d564
+Nextflow	25.10.7
+Java	21.0.12
+FastQC	0.12.1
+Trim Galore	0.6.10
+Cutadapt	5.1
+MultiQC	1.35
+Bowtie2	2.5.5
+SAMtools	1.23.1
+Pyicos	2.0.7
+Pyicos Python	2.7.15
+PeakRanger	1.18
+BEDTools	bedtools v2.31.1
+GNU coreutils	9.7
+OpenSSL	3.6.3
