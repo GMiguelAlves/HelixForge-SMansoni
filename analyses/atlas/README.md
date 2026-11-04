@@ -4,7 +4,7 @@ The atlas is a static consultation layer over accepted RNA and ChIP results. See
 
 `atlas_config.json` declares 12 RNA studies and two frozen ChIP snapshots. HP1 is pinned to `c9e77fee805d73e0527a02f83217c7a2763d270c`; PRJNA312093 H3K27me3/H3K4me3 is pinned to `e583c84ef5cd37edd2f4df8450f17cc42c39c279`. Compact source publications are retained under `local_inputs/hf_chipseq/`, with manifests and checksums. The historical atomic HP1 snapshot is retained solely as a regression fixture, outside the active catalog.
 
-Curated RNA inputs are under `config/<study>/`, `metadata/<study>/` and `results/<study>/`. They preserve accepted values, frozen DE contrasts and QC summaries. Literature supplements remain separate from measured bulk RNA expression. Current-reference transcript models and chromosome lengths are under `config/reference/`.
+Curated RNA inputs are under `config/<study>/`, `metadata/<study>/` and `results/rnaseq/<study>/`. They preserve accepted values, frozen DE contrasts and QC summaries. Literature supplements remain separate from measured bulk RNA expression. Current-reference transcript models and chromosome lengths are under `config/reference/`.
 
 See [PRJNA312093 incorporation](PRJNA312093_incorporation_2026-10-21.md) for its scientific admission. Source ambiguity and QC limitations remain visible; no atlas command refits a model or establishes causal regulation or differential binding.
 

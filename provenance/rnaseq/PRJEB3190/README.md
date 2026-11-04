@@ -14,6 +14,6 @@ repository-size policy.
   20-sample mapping.
 - `source_snapshots/`: frozen public metadata used to curate the study.
 
-The versioned results under `results/PRJEB3190/` have their own `SHA256SUMS`.
+The versioned results under `results/rnaseq/PRJEB3190/` have their own `SHA256SUMS`.
 The larger private work audit is retained outside Git and can be used for
 controlled review if necessary.
