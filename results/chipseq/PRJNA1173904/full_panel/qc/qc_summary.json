@@ -1,0 +1,21 @@
+{
+  "status": "ACCEPTED_WITH_WARNINGS",
+  "libraries": 68,
+  "ip_libraries": 64,
+  "matched_ovary_input_ips": 32,
+  "no_input_testis_ips": 32,
+  "restricted_controls": [
+    "SRR31021603",
+    "SRR31021623"
+  ],
+  "discordant_groups": [
+    "mating_experienced_testis:H3K4me3",
+    "mating_inexperienced_testis:H3K4me3",
+    "mating_experienced_testis:H3K9me3"
+  ],
+  "sparse_model_review_required": [
+    "SRR31021631"
+  ],
+  "qc_status_definition": "REVIEW preserves existing FastQC alerts or the explicit control restriction; no new mapping threshold is introduced",
+  "meaning": "Acceptance for descriptive use with warnings, not certification of every called region"
+}

@@ -237,13 +237,16 @@ remains separate from publication of these results.
 Differential Binding remains a planned follow-up for eligible comparisons;
 see the [per-study DB review and artifact-retention policy](../chipseq/differential_binding_review.md).
 
-`PRJNA1173904` now has an accepted
-[H3K4me3 ovary processing panel](../../results/chipseq/PRJNA1173904/README.md)
-following the 2025 article's methods, adapted to SM_V10/WBPS19. Four IPs and
-one common Input were reviewed with MACS2, Peakranger and ChromstaR. The
-[analysis policy](../chipseq/prjna1173904_analysis.md) identifies the exact
-scope and adaptations. This panel is not a complete eight-mark reanalysis;
-no new gene annotation, DB, IDR or combinatorial-state result is claimed.
+`PRJNA1173904` has an accepted
+[eight-mark gonad panel](../../results/chipseq/PRJNA1173904/README.md): all 64 IPs
+are included with warnings. Independent ChromstaR fits preserve per-library
+intervals, and HOMER supplies gene annotations with library, QC and ambiguity
+fields. Ovary IPs use condition-matched Inputs; testis IPs are a separately
+labelled no-Input alternative because their Inputs are restricted. The
+[analysis policy](../chipseq/prjna1173904_analysis.md) documents the discordant
+libraries and adaptations. The earlier four-IP H3K4me3 calibration remains
+separate. DB is on hold, with final BAMs/metadata protected; no new IDR,
+combinatorial-state or atlas result is claimed.
 
 `PRJNA236156` has an accepted
 [four-mark result panel](../../results/chipseq/PRJNA236156/README.md): 48 IP

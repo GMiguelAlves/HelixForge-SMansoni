@@ -125,6 +125,24 @@ normal storage policy. Finish the review/DB cycle study by study; if an
 unresolved hold would exceed storage capacity, request a retention decision
 rather than deleting the evidence or staging the next heavy study blindly.
 
+### PRJNA1173904: accepted peak panel; DB on hold
+
+The [eight-mark processing review](prjna1173904_analysis.md) accepts all 64 IPs
+with warnings, not automatic eligibility for Differential Binding. The review
+outcome is **HOLD**: testis Inputs are restricted, some testis replicate models
+are strongly discordant, and the mapping of labelled replicates to independent
+biological sources must be confirmed before specifying an inferential model.
+
+The [source publication](https://doi.org/10.3390/ncrna11020025) distinguishes
+gonads and mating experience; matching A/B or replicate-number labels alone
+does not document cross-condition pairing. No paired model is approved from
+these labels. Mating-experience comparisons must remain within each gonad and
+mark; the no-Input testis branch must not be treated as equivalent background
+control to the ovary branch. No DB or IDR was performed in this panel.
+Final BAMs/BAIs for all 68 libraries, including restricted Inputs, and their
+metadata remain protected. Removing replaceable FASTQs/workdirs does not
+release or discard these preserved alignments.
+
 The current HelixForge DB subworkflow accepts declared BAM, consensus and
 metadata channels. The `post_consensus` entry point performs annotation/tracks/
 reporting, **not DB**. Re-entry for DB must use the existing DB subworkflow

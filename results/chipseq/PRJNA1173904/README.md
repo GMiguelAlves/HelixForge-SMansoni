@@ -1,4 +1,34 @@
-# PRJNA1173904 — H3K4me3 ovary results
+# PRJNA1173904 — eight-mark gonad ChIP-seq results
+
+The [full panel](full_panel/README.md) contains **64 IP libraries**, eight marks,
+four gonad/mating-experience conditions and two labelled replicates per group,
+processed against **SM_V10/WBPS19**. All libraries are included **with warnings**;
+this acceptance does not certify every called region as true occupancy.
+
+- [Per-library ChromstaR calls](full_panel/peaks/) retain the complete native
+  interval boundaries; no replicate consensus recuts the regions.
+- [HOMER gene annotations](full_panel/annotation/) retain library, condition,
+  mark, control policy, QC/review warnings and gene-assignment ambiguity.
+- [Samples](full_panel/metadata/sample_table.tsv),
+  [QC](full_panel/qc/qc_sample_summary.tsv),
+  [model metrics](full_panel/metrics/model_summary.tsv),
+  [annotation metrics](full_panel/metrics/annotation_summary.tsv),
+  [replicate overlap](full_panel/metrics/replicate_region_overlap.tsv),
+  [fit figures](full_panel/figures/) and
+  [parameters](full_panel/manifests/parameters.json) describe the full panel.
+
+There are **1,923,296 per-library regional records**, not unique genomic loci
+or validated regulatory interactions. Ovary IPs use the Input for their mating
+condition. Testis IPs are a **separate no-Input alternative** because the two
+testis Inputs are restricted; they are not a controlled reproduction of the
+article. Discordant H3K4me3/H3K9me3 testis libraries remain explicitly flagged.
+See the [processing policy](../../../docs/chipseq/prjna1173904_analysis.md).
+
+## Earlier H3K4me3 ovary calibration panel
+
+The results below describe the earlier four-IP calibration, retained separately.
+Its downsampling, common Input and three-tool comparison do not describe the
+new full panel.
 
 Accepted processing-method panel following the H3K4me3 ovary procedure in
 [Augusto et al. (2025)](https://doi.org/10.3390/ncrna11020025), adapted to
@@ -13,7 +43,7 @@ complete fragments; the common Input contributes all 4,509,411 eligible
 fragments. Reference, sampling-unit, software and control-policy adaptations
 are explicit in the [analysis policy](../../../docs/chipseq/prjna1173904_analysis.md).
 
-## Results
+### Calibration results
 
 | Library | Mating experience | Replicate | MACS2 regions | Peakranger regions | ChromstaR univariate regions |
 |---|---|---:|---:|---:|---:|
@@ -45,7 +75,7 @@ sequence names without shifting coordinates. Native scores, complete native
 outputs and fitted objects are preserved separately, not reconstructed from
 these BED3 files.
 
-## Replicate concordance
+### Calibration replicate concordance
 
 Jaccard measures overlap of covered bases, not biological accuracy.
 
@@ -60,7 +90,7 @@ coverage is not independently established as true occupancy. Only separately
 fitted **univariate** models were used for replicate comparisons, not the
 jointly inferred per-replicate exports.
 
-## Fit diagnostics
+### Calibration fit diagnostics
 
 All four univariate models and the joint model met their native convergence
 criteria. Convergence alone does not establish biological validity.
