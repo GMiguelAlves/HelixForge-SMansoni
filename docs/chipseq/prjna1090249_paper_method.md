@@ -82,9 +82,11 @@ the historical Galaxy execution.
 6. **Broad score:** generate a documented negative-log10 Poisson p-score track
    with MACS2 `bdgcmp -m ppois`, then call `bdgbroadcall` at 2 and 5. The intermediate
    score-generation command is an explicit reconstruction step, not a recovered
-   historical command. Freeze the installed tool's unreported length/gap/link
-   defaults before calls; do not reuse earlier sensitivity overrides as if the
-   article specified them. Do not relabel a treatment pileup, fold-enrichment
+   historical command. MACS2 2.2.9.1's inspected native defaults are link cutoff
+   1, minimum length 200 bp, strong-peak gap 30 bp and broad linking gap 800 bp.
+   They coincide with the earlier pooled comparison's declared settings;
+   their verification does not make them recovered historical parameters.
+   Freeze these defaults before calls. Do not relabel a treatment pileup, fold-enrichment
    track or q-score as this p-score.
 
 All native regions and both thresholds remain separately identified. No HF
