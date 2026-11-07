@@ -67,9 +67,11 @@ the historical Galaxy execution.
    reads per library before Picard downsampling. The target remains 4,700,000;
    use Picard's HighAccuracy strategy with reconstruction seed 20261107 and
    record the actual retained counts. These sampling details are not reported
-   by the article. If a library
-   has fewer reads, report the shortfall before choosing a depth exception.
-   Do not upsample or silently reduce all libraries to the smallest count.
+   by the article. The recorded depth exception is **SRR28402818**, which retains
+   all **3,868,021** available reads after filtering/deduplication. The other
+   seven libraries retain the 4,700,000 target; actual sampled counts must be
+   reported. This is a depth adaptation, not the paper's original configuration.
+   Do not upsample or reduce all libraries to the smallest count.
 4. **Pooling:** retain per-library QC and include all three IP libraries per
    stage in the pooled call. Use that stage's shared Input once. Pooling is
    for region detection, not extra biological replication. The paper does not
