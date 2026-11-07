@@ -139,9 +139,13 @@ does not document cross-condition pairing. No paired model is approved from
 these labels. Mating-experience comparisons must remain within each gonad and
 mark; the no-Input testis branch must not be treated as equivalent background
 control to the ovary branch. No DB or IDR was performed in this panel.
-Final BAMs/BAIs for all 68 libraries, including restricted Inputs, and their
-metadata remain protected. Removing replaceable FASTQs/workdirs does not
-release or discard these preserved alignments.
+The accepted full panel has a **results-only retention scope**, rather than
+an alignment-ready DB handoff. Final intervals, annotations, figures, metrics,
+peak posteriors and compact provenance are retained; BAM/BAI, FASTQs, workdirs
+and fitted RDS objects are not retained. No DB analysis is included in this
+archived deliverable. This explicit scope replaces the general BAM-hold policy
+for this full panel; any future DB work requires new alignments and a renewed
+design/QC review.
 
 The current HelixForge DB subworkflow accepts declared BAM, consensus and
 metadata channels. The `post_consensus` entry point performs annotation/tracks/

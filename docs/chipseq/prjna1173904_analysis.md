@@ -33,7 +33,8 @@ Each native interval is retained separately. No shared-core intersection,
 regional union, arbitrary gap filling or automatic replicate pooling changes
 the regions. ChromstaR's exported `chr` aliases are explicitly mapped back to
 the reference names without changing zero-based half-open BED coordinates.
-The native models, exports and fit figures remain preserved separately.
+Native exports, final per-peak posterior values and fit figures are preserved;
+heavy fitted objects and bin-level arrays are not part of the retained full panel.
 
 ### Input policy
 
@@ -94,8 +95,10 @@ test; broad genomic coverage can itself increase overlap.
 Annotation acceptance does not authorize unqualified inferential comparisons.
 Differential Binding remains **HOLD** pending appropriate control, replicate,
 biological-unit and model review. No paired design is inferred from replicate
-labels. Final per-library BAMs/BAIs and metadata remain protected for that review;
-FASTQs/workdirs are not required for consulting the published intervals.
+labels. The retained full panel is a results-only product: intervals, annotations,
+figures, metrics, final peak posteriors and compact provenance. It does not retain
+BAM/BAI, FASTQs, workdirs or fitted RDS objects. A future DB analysis would require
+new alignments; the archive does not promise BAM-based re-entry.
 No new DB, IDR, combinatorial-state or atlas result is claimed.
 
 ## Earlier H3K4me3 ovary calibration panel

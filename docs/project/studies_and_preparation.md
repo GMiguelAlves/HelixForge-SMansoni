@@ -245,8 +245,9 @@ fields. Ovary IPs use condition-matched Inputs; testis IPs are a separately
 labelled no-Input alternative because their Inputs are restricted. The
 [analysis policy](../chipseq/prjna1173904_analysis.md) documents the discordant
 libraries and adaptations. The earlier four-IP H3K4me3 calibration remains
-separate. DB is on hold, with final BAMs/metadata protected; no new IDR,
-combinatorial-state or atlas result is claimed.
+separate. DB is on hold and is not included in the results-only archive;
+future DB would require new alignments. No new IDR, combinatorial-state or
+atlas result is claimed.
 
 `PRJNA236156` has an accepted
 [four-mark result panel](../../results/chipseq/PRJNA236156/README.md): 48 IP
