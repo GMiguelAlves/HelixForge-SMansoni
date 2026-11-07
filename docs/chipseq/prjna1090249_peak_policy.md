@@ -1,5 +1,10 @@
 # HP1 peak-calling policy: PRJNA1090249
 
+For the prospective article-guided reanalysis, see the
+[paper-method specification](prjna1090249_paper_method.md). The results and
+sensitivity comparisons below describe the earlier accepted processing and
+are not new results from that specification.
+
 ## Scope and rationale
 
 HP1 domains are processed descriptively against SM_V10/WBPS19 with matched

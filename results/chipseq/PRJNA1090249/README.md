@@ -8,6 +8,10 @@ BEDTools `2.30.0`, support from **at least one library**, and HOMER `4.11`.
 
 ## Current results
 
+A separate [article-guided reanalysis specification](../../../docs/chipseq/prjna1090249_paper_method.md)
+defines prospective pooled MACS2/bdgbroadcall processing on SM_V10. It does not
+replace or relabel the accepted results indexed below before new result review.
+
 - [Regional and gene-association summary](broad/regional_summary.tsv).
 - [Cercarial catalog and evidence](broad/chipseq/consensus/cercaria/manifest.json)
   and [sporocyst catalog and evidence](broad/chipseq/consensus/sporocyst/manifest.json).
