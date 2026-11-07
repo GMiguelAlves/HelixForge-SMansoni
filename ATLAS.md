@@ -1,12 +1,20 @@
-# HelixForge-SMansoni Atlas
+# HelixForge-SMansoni Atlas (publication paused)
 
-Explore RNA expression, biological contexts, study designs and chromatin regions on the frozen SM_V10 / WBPS19 reference. No sequencing pipeline or analysis software is needed to consult the atlas.
+**Public download withdrawn on 7 November 2026 pending scientific review.**
+The release ZIP files and Docker archive are unavailable. The setup notes
+below are retained for existing local copies and maintainers; they are not
+instructions to obtain a new public release.
 
-## Windows step-by-step
+The atlas combines RNA expression, biological contexts, study designs and
+chromatin regions on the frozen SM_V10 / WBPS19 reference. No sequencing
+pipeline is needed to consult an existing local copy.
 
-You can consult the atlas without Git, R, Conda or any analysis packages. Choose one of these two ways to run it:
+## Archived Windows guide (existing copies only)
 
-| Mode | What to download from the release | Requirements | First launch |
+Existing local copies can be consulted without Git, R, Conda or analysis
+packages. The two previously distributed modes were:
+
+| Mode | Previously distributed archive | Requirements | First launch |
 | --- | --- | --- | --- |
 | **Local Python** — simplest if you only want to explore | `atlas-local.zip` (about 82 MB) | Python 3.10+ | `py -3 atlas.py init --local` |
 | **Docker** — if you already use Docker | `atlas-init.zip` (about 11 KB) | Python 3.10+ and a running Linux Docker engine | `py -3 atlas.py init` |
@@ -27,10 +35,9 @@ If `py` is not recognized but `python --version` shows a suitable version, repla
 
 ### 2. Download the correct ZIP
 
-Open the [Atlas 2026.10.21 release](https://github.com/GMiguelAlves/HelixForge-SMansoni/releases/tag/atlas-v2026.10.21), expand **Assets** if necessary, and choose:
-
-- **[atlas-local.zip](https://github.com/GMiguelAlves/HelixForge-SMansoni/releases/download/atlas-v2026.10.21/atlas-local.zip)** for local Python.
-- **[atlas-init.zip](https://github.com/GMiguelAlves/HelixForge-SMansoni/releases/download/atlas-v2026.10.21/atlas-init.zip)** for Docker.
+No public ZIP is currently available. If you already have a verified copy of
+`atlas-local.zip` or `atlas-init.zip`, the remaining steps describe how that
+copy was used.
 
 Save the ZIP in a folder you can easily find, such as **Downloads**. You only need one of these ZIPs. The automatic **Source code (zip)** download is for the full repository and is not needed for these steps. Docker users do not need to download or manually extract the `.tar.gz` image: `init` handles it.
 
@@ -133,7 +140,7 @@ Both modes bind only to this computer by default. The server exposes the static 
 
 ## Linux and macOS
 
-Download and extract the same ZIP for your chosen mode. Open a terminal in the extracted folder containing `atlas.py`. With Python 3.10+, run `python3 atlas.py init --local` for the local ZIP, or `python3 atlas.py init` for the Docker initializer with a running Linux Docker engine. Docker users stop it with `python3 atlas.py stop`; local users keep the terminal open and stop with **Ctrl+C**. The prebuilt Docker image is Linux x86-64; ARM users can use local Python or build the image from source for their architecture.
+If you already have a verified ZIP, extract it and open a terminal in the folder containing `atlas.py`. With Python 3.10+, run `python3 atlas.py init --local` for the local ZIP. The Docker initializer requires an image already present locally because the release download has been withdrawn. Docker users stop it with `python3 atlas.py stop`; local users keep the terminal open and stop with **Ctrl+C**. The previously distributed Docker image targeted Linux x86-64.
 
 Use `--no-browser` on a headless machine and open the printed URL on that same computer. By default, this is a local-only server, not a remotely hosted website.
 
@@ -165,8 +172,8 @@ Study pages and downloadable tables retain QC, source commits and interpretation
 
 The static snapshot is **313,521,726 bytes** (about 314 MB before ZIP/image compression), including its manifest. The largest browser payload is about 56.8 MB. The independent ChIP explorer starts with roughly 5.4 MB of assets and loads large catalogs only as needed. Archive size and initial page-transfer size are different quantities.
 
-For this first release the snapshot is versioned under `results/atlas/rnaseq/`, alongside frozen inputs and build code. This makes a clone self-contained and permits byte-for-byte checks. It increases repository size: future large updates should move immutable snapshots to release assets or object storage instead of accumulating every full snapshot in Git. Temporary build artifacts are excluded.
+The withdrawn snapshot remains versioned under `results/atlas/rnaseq/`, alongside frozen inputs and build code. This makes a clone self-contained and permits byte-for-byte checks. It increases repository size: future large updates should move immutable snapshots to release assets or object storage instead of accumulating every full snapshot in Git. Temporary build artifacts are excluded.
 
-`manifest.json` records 450 output checksums and 354 frozen input checksums. Packaging refuses missing, modified or unexpected output files. Git attributes preserve checksum-bearing bytes on Windows and Linux. **SHA256SUMS** covers downloadable ZIPs and the Docker archive. The release's image-inspection JSON records the built container and base layers.
+`manifest.json` records 450 output checksums and 354 frozen input checksums. Packaging refuses missing, modified or unexpected output files. Git attributes preserve checksum-bearing bytes on Windows and Linux. The withdrawn release used **SHA256SUMS** for its ZIPs and Docker archive; its image-inspection JSON recorded the built container and base layers.
 
 For maintenance, see [the build notes](analyses/atlas/README.md) in the repository. Running the atlas needs none of those analysis dependencies. Packaging copies the accepted snapshot; it never refreshes scientific data from a mutable remote branch.

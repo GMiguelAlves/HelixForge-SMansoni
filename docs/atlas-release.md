@@ -1,3 +1,6 @@
+Withdrawn on 7 November 2026 pending scientific review. No public atlas
+download is currently available. These notes describe the former release.
+
 Explore RNA expression, chromatin regions and user-defined gene collections on SM_V10 / WBPS19. Includes the unified design and light/dark/system themes.
 
 **Docker:** extract `atlas-init.zip`, start Docker and run `python atlas.py init`. The first launch downloads and verifies the image, then opens the atlas. Python 3.10+ and Docker with Linux containers are required; the prebuilt image targets Linux x86-64.
@@ -10,4 +13,4 @@ Includes 12 RNA studies, 9,914 quantified genes and 244,788 ChIP regional candid
 
 `SHA256SUMS` records artifact checksums. `docker-image.json` identifies the built image and its layers. The image can also be imported manually with `docker load --input atlas-docker-2026.10.21.tar.gz`.
 
-See the [current Windows step-by-step guide](https://github.com/GMiguelAlves/HelixForge-SMansoni/blob/master/ATLAS.md#windows-step-by-step) for downloading, extracting the ZIP, opening PowerShell and starting the atlas with Python or Docker/WSL. The [versioned guide](https://github.com/GMiguelAlves/HelixForge-SMansoni/blob/atlas-v2026.10.21/ATLAS.md) records the original release instructions, scientific scope and size notes.
+See [ATLAS.md](../ATLAS.md) for the scientific scope and archived setup notes.
