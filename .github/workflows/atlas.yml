@@ -1,9 +1,8 @@
-name: Validate and publish atlas
+name: Validate atlas
 
 on:
   push:
     branches: [master, atlas/publish]
-    tags: ['atlas-v*']
   pull_request:
     paths: ['analyses/atlas/**', 'scripts/atlas/**', 'results/atlas/**', 'tests/*atlas*', 'Dockerfile', 'atlas.py', '.github/workflows/atlas.yml']
 
@@ -45,31 +44,3 @@ jobs:
       - name: Logs on failure
         if: failure()
         run: docker logs atlas-ci || true
-
-  release:
-    if: startsWith(github.ref, 'refs/tags/atlas-v')
-    needs: validate
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
-        with:
-          python-version: '3.12'
-      - name: Package verified snapshot and Docker image
-        run: |
-          test "$GITHUB_REF_NAME" = "atlas-v$(python -c 'from scripts.atlas.runtime import VERSION; print(VERSION)')"
-          python scripts/atlas/package_release.py
-          docker build --tag helixforge-smansoni-atlas:2026.10.21 .
-          docker run --detach --name atlas-ci --read-only --cap-drop ALL --security-opt no-new-privileges --publish 127.0.0.1:8765:8080 helixforge-smansoni-atlas:2026.10.21
-          python scripts/atlas/smoke_server.py http://127.0.0.1:8765/
-          docker rm --force atlas-ci
-          docker image inspect helixforge-smansoni-atlas:2026.10.21 > .atlas/release/docker-image.json
-          docker save helixforge-smansoni-atlas:2026.10.21 | gzip -n > .atlas/release/atlas-docker-2026.10.21.tar.gz
-          cd .atlas/release
-          sha256sum atlas-init.zip atlas-local.zip atlas-docker-2026.10.21.tar.gz docker-image.json > SHA256SUMS
-      - name: Publish versioned release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" .atlas/release/* --verify-tag --title "Atlas 2026.10.21" --notes-file docs/atlas-release.md
