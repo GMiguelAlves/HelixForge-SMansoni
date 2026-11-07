@@ -1,0 +1,7 @@
+tool	version
+FastQC	0.12.1
+Bowtie2	2.5.5
+SAMtools	1.23.1
+chromstaR	1.28.0
+R	4.3.3
+HOMER	4.11

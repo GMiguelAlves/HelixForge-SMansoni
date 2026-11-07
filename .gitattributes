@@ -5,6 +5,8 @@ provenance/source_package/frozen/** -text
 
 # Keep published RNA-seq result bytes identical to their SHA256SUMS manifests.
 results/rnaseq/** -text
+# Preserve the full-panel file inventory checksums across Windows/Linux.
+results/chipseq/PRJNA1173904/full_panel/** -text
 
 # Preserve atlas provenance checksums across Windows and Linux checkouts.
 analyses/atlas/** -text

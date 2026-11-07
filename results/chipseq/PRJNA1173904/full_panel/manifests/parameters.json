@@ -1,0 +1,55 @@
+{
+  "reference": "SM_V10/WBPS19",
+  "fasta_sha256": "64061ee54997f652dccf1a05718ae941843b762aed4bf96b0c0f699ecbf01fb3",
+  "annotation_sha256": "0ba2e3ff9a6328080a20f7b91bc7aa66c558eda5fdb6c382349d5e1f1a5f2d0e",
+  "alignment": {
+    "tool": "Bowtie2",
+    "mode": "end-to-end",
+    "sensitivity": "sensitive",
+    "gbar": 4,
+    "seed": 20261104,
+    "unique_filter": "proper pairs, primary QC-pass alignments, MAPQ>=30, MAPQ!=255, no XS tag; whole-pair retention",
+    "duplicate_policy": "samtools fixmate -m followed by markdup -r; no duplicate removal inside chromstaR"
+  },
+  "chromstar": {
+    "bin_bp": 500,
+    "step_bp": 250,
+    "paired_end": true,
+    "mode": "per_library_univariate",
+    "seed": 20261107,
+    "short": true,
+    "eps": 0.1,
+    "max_iter": 5000,
+    "prefit_on_chr": null,
+    "init": "standard",
+    "num_trials": 1,
+    "read_cutoff": true,
+    "read_cutoff_quantile": 1,
+    "read_cutoff_absolute": 500,
+    "post_cutoff": 0.5,
+    "keep_posteriors": true,
+    "min_mapq": 30,
+    "remove_duplicate_reads": false,
+    "max_fragment_width": 1000,
+    "consensus": "none",
+    "downsampling": "none"
+  },
+  "annotation": {
+    "provider": "homer_4_11",
+    "genome": "matching reference FASTA",
+    "gtf": "matching WBPS19 GTF",
+    "gid": true,
+    "association": "native nearest-promoter",
+    "ambiguity_scope": "homer_nearest_tss_distance_ties_v1",
+    "helper_source_commit": "529846631d6f59f9c1e719a6e3d8e5ae70a2d32a"
+  },
+  "control_policy": {
+    "ovary": "Input matched to condition",
+    "testis": "no-Input alternative",
+    "restricted_runs": [
+      "SRR31021603",
+      "SRR31021623"
+    ]
+  },
+  "biological_acceptance": "All 64 IP libraries included with warnings; discordant libraries not excluded"
+}
